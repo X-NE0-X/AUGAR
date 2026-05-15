@@ -12,6 +12,8 @@ Mock provider, full index universe:
 python AUGAR.py --period 2026-04-M --all-indexes --provider mock
 ```
 
+`mock` is only a dev/test fixture. It first tries to reuse immutable non-mock history from `runs/<run_id>/debug`; if no real LLM history exists for the same period/ticker/engine, it falls back to a deterministic local fixture.
+
 By default, existing cards are reused to avoid unnecessary LLM cost. Regenerate everything or one engine with:
 
 ```powershell
@@ -36,6 +38,12 @@ OpenAI API or OpenAI-compatible providers:
 ```powershell
 python AUGAR.py --period 2026-04-M --symbols SPX --provider openai --model gpt-5.5 --reasoning-effort low
 python AUGAR.py --period 2026-04-M --symbols SPX --provider openai_compatible --base-url http://localhost:8000/v1 --model local-model
+```
+
+Replay an existing debug run without calling an LLM:
+
+```powershell
+python AUGAR.py --period 2026-04-M --symbols SPX --engines tarot --provider history --history-run-id 9e3792908386 --force
 ```
 
 ## Read Existing Output

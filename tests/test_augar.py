@@ -53,6 +53,39 @@ class AugarTests(unittest.TestCase):
         finally:
             shutil.rmtree(temp, ignore_errors=True)
 
+    def test_history_provider_replays_debug_cards(self) -> None:
+        source_temp = Path(tempfile.mkdtemp(prefix="augar-history-source-"))
+        temp = Path(tempfile.mkdtemp(prefix="augar-history-test-"))
+        try:
+            source = run_generation(
+                GenerateRequest(
+                    period="2026-04-M",
+                    symbols=["SPX"],
+                    engines=["tarot"],
+                    output_root=str(source_temp),
+                    provider="mock",
+                    force=True,
+                )
+            )
+            replay = run_generation(
+                GenerateRequest(
+                    period="2026-04-M",
+                    symbols=["SPX"],
+                    engines=["tarot"],
+                    output_root=str(temp),
+                    provider="history",
+                    history_run_id=str(source["run_id"]),
+                    force=True,
+                )
+            )
+            self.assertEqual(replay["generated_cards"], 1)
+            card = json.loads((temp / "cards" / "2026-04-M" / "SPX" / "tarot.json").read_text(encoding="utf-8"))
+            self.assertIn("raw_ref", card)
+            self.assertIn("Tarot reads SPX", card["result"]["headline"])
+        finally:
+            shutil.rmtree(source_temp, ignore_errors=True)
+            shutil.rmtree(temp, ignore_errors=True)
+
 
 if __name__ == "__main__":
     unittest.main()

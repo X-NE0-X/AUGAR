@@ -12,6 +12,8 @@ from typing import Any, Dict, Optional
 
 import requests
 
+from .constants import PROJECT_ROOT
+
 
 @dataclass
 class LLMParams:
@@ -27,6 +29,7 @@ class LLMParams:
     codex_auth_path: Optional[str] = None
     codex_home: Optional[str] = None
     codex_path: Optional[str] = None
+    history_run_id: Optional[str] = None
 
     def public_dict(self) -> Dict[str, Any]:
         return asdict(self)
@@ -37,13 +40,75 @@ class LLMClient:
         self.params = params
 
     def interpret(self, engine_id: str, raw_artifact: Dict[str, Any]) -> Dict[str, Any]:
+        if self.params.provider in {"history", "replay"}:
+            return self._history_interpret(engine_id, raw_artifact, allow_mock_history=True)
         if self.params.provider == "mock":
+            historical = self._history_interpret(engine_id, raw_artifact, allow_mock_history=False, required=False)
+            if historical is not None:
+                return historical
             return self._mock_interpret(engine_id, raw_artifact)
         if self.params.provider == "chatgpt_oauth":
             return self._chatgpt_oauth(engine_id, raw_artifact)
         if self.params.provider in {"openai", "openai_compatible", "local", "custom"}:
             return self._openai_compatible(engine_id, raw_artifact)
         raise ValueError(f"Unsupported LLM provider: {self.params.provider}")
+
+    def _history_interpret(
+        self,
+        engine_id: str,
+        raw_artifact: Dict[str, Any],
+        *,
+        allow_mock_history: bool,
+        required: bool = True,
+    ) -> Optional[Dict[str, Any]]:
+        period_id = str(raw_artifact.get("period", {}).get("id", ""))
+        ticker = str(raw_artifact.get("asset", {}).get("ticker", ""))
+        candidates = self._history_candidates(period_id, ticker, engine_id, allow_mock_history=allow_mock_history)
+        for path in candidates:
+            try:
+                card = json.loads(path.read_text(encoding="utf-8"))
+                result = dict(card.get("result", {}))
+                if not result:
+                    continue
+                result["symbols"] = card.get("symbols", [])
+                result["risk_tags"] = card.get("risk_tags", [])
+                result["visual"] = card.get("visual", {})
+                return result
+            except Exception:
+                continue
+        if required:
+            raise FileNotFoundError(f"No historical LLM card found for {period_id}/{ticker}/{engine_id}")
+        return None
+
+    def _history_candidates(self, period_id: str, ticker: str, engine_id: str, *, allow_mock_history: bool) -> list[Path]:
+        runs_root = PROJECT_ROOT / "runs"
+        if not runs_root.exists():
+            return []
+        manifests = []
+        for manifest_path in runs_root.glob("*/manifest.json"):
+            try:
+                manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            except Exception:
+                continue
+            if self.params.history_run_id and manifest.get("run_id") != self.params.history_run_id:
+                continue
+            if manifest.get("period") != period_id:
+                continue
+            if ticker not in set(manifest.get("symbols", [])):
+                continue
+            if engine_id not in set(manifest.get("engines", [])):
+                continue
+            provider = str(manifest.get("request", {}).get("provider", ""))
+            if not allow_mock_history and provider in {"mock", "history", "replay"}:
+                continue
+            card_path = manifest_path.parent / "debug" / "cards" / period_id / ticker / f"{engine_id}.json"
+            if not card_path.exists():
+                continue
+            manifests.append((provider in {"mock", "history", "replay"}, str(manifest.get("generated_at", "")), card_path))
+        manifests.sort(key=lambda item: (item[0], item[1]))
+        manifests.reverse()
+        manifests.sort(key=lambda item: item[0])
+        return [item[2] for item in manifests]
 
     def _mock_interpret(self, engine_id: str, raw_artifact: Dict[str, Any]) -> Dict[str, Any]:
         ctx = raw_artifact.get("market_context", {})

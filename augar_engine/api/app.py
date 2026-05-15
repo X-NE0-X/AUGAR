@@ -32,6 +32,7 @@ class GenerateBody(BaseModel):
     codex_auth_path: Optional[str] = None
     codex_home: Optional[str] = None
     codex_path: Optional[str] = None
+    history_run_id: Optional[str] = None
     language: str = "zh-CN"
     tone: str = "calm_analytical"
     reading_depth: str = "standard"
@@ -51,12 +52,13 @@ def health() -> dict:
 def metadata_options() -> dict:
     return {
         "engines": list(ALL_ENGINES),
-        "providers": ["mock", "openai", "chatgpt_oauth", "openai_compatible", "local", "custom"],
+        "providers": ["history", "mock", "openai", "chatgpt_oauth", "openai_compatible", "local", "custom"],
         "model_params": [
             "model", "provider", "base_url", "temperature", "top_p", "max_output_tokens",
             "reasoning_effort", "timeout", "max_retries",
             "codex_auth_path",
             "codex_home", "codex_path",
+            "history_run_id",
         ],
         "generation_params": [
             "period", "symbols", "engines", "seed", "force", "output_root", "language",

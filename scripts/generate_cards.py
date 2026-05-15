@@ -35,6 +35,7 @@ def main() -> None:
     parser.add_argument("--codex-auth-path")
     parser.add_argument("--codex-home")
     parser.add_argument("--codex-path")
+    parser.add_argument("--history-run-id")
     parser.add_argument("--allow-error-cards", action="store_true")
     parser.add_argument("--include-raw-artifact", action="store_true")
     parser.add_argument("--include-market-context", action="store_true")
@@ -67,6 +68,7 @@ def main() -> None:
         codex_auth_path=args.codex_auth_path or config.get("codex_auth_path"),
         codex_home=args.codex_home or config.get("codex_home"),
         codex_path=args.codex_path or config.get("codex_path"),
+        history_run_id=args.history_run_id or config.get("history_run_id"),
         include_raw_artifact=args.include_raw_artifact or bool(config.get("include_raw_artifact", False)),
         include_market_context=args.include_market_context or bool(config.get("include_market_context", False)),
         allow_error_cards=args.allow_error_cards or bool(config.get("allow_error_cards", False)),

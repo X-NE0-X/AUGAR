@@ -37,6 +37,7 @@ class GenerateRequest:
     codex_auth_path: Optional[str] = None
     codex_home: Optional[str] = None
     codex_path: Optional[str] = None
+    history_run_id: Optional[str] = None
     language: str = "zh-CN"
     tone: str = "calm_analytical"
     reading_depth: str = "standard"
@@ -59,6 +60,7 @@ class GenerateRequest:
             codex_auth_path=self.codex_auth_path,
             codex_home=self.codex_home,
             codex_path=self.codex_path,
+            history_run_id=self.history_run_id,
         )
 
 
