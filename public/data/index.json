@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1",
+  "period": "2026-04-M",
+  "symbols": [
+    "SPX"
+  ],
+  "engines": [
+    "tarot",
+    "wenwang",
+    "bazi",
+    "ziwei",
+    "astrology",
+    "market_pulse"
+  ],
+  "run_id": "10918080f025",
+  "generated_at": "2026-05-15T11:50:56+00:00",
+  "data_coverage": {
+    "SPX": {
+      "data_start": "1927-12-30",
+      "data_end": "2026-03-27",
+      "observations": 24676
+    }
+  },
+  "params": {
+    "period": "2026-04-M",
+    "symbols": [
+      "SPX"
+    ],
+    "engines": [
+      "tarot",
+      "wenwang",
+      "bazi",
+      "ziwei",
+      "astrology",
+      "market_pulse"
+    ],
+    "seed": null,
+    "force": false,
+    "output_root": "C:\\Users\\AndersonMa\\AUGAR\\public\\data",
+    "provider": "mock",
+    "model": "gpt-5.5",
+    "temperature": 0.4,
+    "top_p": 1.0,
+    "max_output_tokens": "***",
+    "reasoning_effort": "low",
+    "timeout": 90,
+    "max_retries": 2,
+    "codex_auth_path": null,
+    "codex_home": null,
+    "codex_path": null,
+    "language": "zh-CN",
+    "tone": "calm_analytical",
+    "reading_depth": "standard",
+    "include_raw_artifact": true,
+    "include_market_context": true,
+    "allow_error_cards": false,
+    "engine_overrides": {}
+  }
+}

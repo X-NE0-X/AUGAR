@@ -1,0 +1,380 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "VIX",
+    "name": "VIX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-04-M",
+    "label": "April 2026",
+    "freq": "M"
+  },
+  "engine": {
+    "id": "ziwei",
+    "name": "Ziwei Doushu",
+    "display_name": "紫微斗数"
+  },
+  "result": {
+    "score": 99,
+    "polarity": "favorable",
+    "intensity": "high",
+    "omen_type": "ziwei_favorable_high",
+    "headline": "Ziwei reads VIX as favorable",
+    "subline": "Momentum is strong_uptrend; volatility is extreme.",
+    "short_reading": "The ziwei artifact is interpreted against the market pulse for VIX.",
+    "long_reading": "This mock interpreter preserves the release pipeline and schema while keeping the engine-specific raw artifact visible for audit and later real-model replacement."
+  },
+  "symbols": [
+    "Wuqu",
+    "Children"
+  ],
+  "risk_tags": [
+    "volatility",
+    "drawdown"
+  ],
+  "raw_artifact": {
+    "seed": "ziwei|VIX|2026-04-M|stable",
+    "engine_id": "ziwei",
+    "asset": {
+      "ticker": "VIX",
+      "name": "VIX",
+      "region": "US",
+      "asset_class": "INDEX"
+    },
+    "period": {
+      "id": "2026-04-M",
+      "label": "April 2026",
+      "freq": "M"
+    },
+    "market_context": {
+      "ticker": "VIX",
+      "region": "US",
+      "asset_class": "INDEX",
+      "data_start": "1990-01-02",
+      "data_end": "2026-03-27",
+      "observations": 9126,
+      "latest_close": 31.049999237060547,
+      "return_21d": 0.6666667007935001,
+      "return_63d": 1.3051223920955057,
+      "volatility_63d": 1.3672435889879109,
+      "drawdown_252d": -0.4066501404432542,
+      "momentum_label": "strong_uptrend",
+      "volatility_label": "extreme",
+      "drawdown_label": "deep"
+    },
+    "sop": "Sanhe + Qintian Sihua: true solar proxy, twelve palaces, life/body palace, five-element bureau, fourteen main stars, auxiliaries, transformations, major limits, annual flow before interpretation",
+    "time_basis": {
+      "clock_proxy": "1990-01-02",
+      "true_solar_note": "asset proxy uses market data_start; precise human birth-time conversion is not applicable for index assets",
+      "lunar_calendar_note": "v0.1 computes deterministic lunar-style palace proxy for assets"
+    },
+    "life_palace": "Children",
+    "body_palace": "Property",
+    "five_element_bureau": "Earth 5",
+    "life_master": "Wuqu",
+    "body_master": "Jumen",
+    "palaces": [
+      {
+        "index": 1,
+        "name": "Life",
+        "branch": "Mao",
+        "stem": "Ding",
+        "main_stars": [],
+        "aux_stars": [
+          "Huoxing"
+        ],
+        "transformations": [
+          {
+            "name": "Hua Ji",
+            "source": "natal"
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Siblings",
+        "branch": "Chen",
+        "stem": "Wu",
+        "main_stars": [
+          "Lianzhen",
+          "Tianliang"
+        ],
+        "aux_stars": [],
+        "transformations": [
+          {
+            "name": "Hua Ji",
+            "source": "period"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Spouse",
+        "branch": "Si",
+        "stem": "Ji",
+        "main_stars": [],
+        "aux_stars": [
+          "Wenqu"
+        ],
+        "transformations": []
+      },
+      {
+        "index": 4,
+        "name": "Children",
+        "branch": "Wu",
+        "stem": "Geng",
+        "main_stars": [
+          "Ziwei",
+          "Tianfu",
+          "Qisha"
+        ],
+        "aux_stars": [
+          "Zuofu",
+          "Lucun"
+        ],
+        "transformations": [
+          {
+            "name": "Hua Lu",
+            "source": "natal"
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "name": "Wealth",
+        "branch": "Wei",
+        "stem": "Xin",
+        "main_stars": [],
+        "aux_stars": [],
+        "transformations": [
+          {
+            "name": "Hua Lu",
+            "source": "period"
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "name": "Health",
+        "branch": "Shen",
+        "stem": "Ren",
+        "main_stars": [
+          "Tianji",
+          "Taiyin",
+          "Pojun"
+        ],
+        "aux_stars": [
+          "Lingxing"
+        ],
+        "transformations": []
+      },
+      {
+        "index": 7,
+        "name": "Travel",
+        "branch": "You",
+        "stem": "Gui",
+        "main_stars": [],
+        "aux_stars": [
+          "Youbi"
+        ],
+        "transformations": [
+          {
+            "name": "Hua Quan",
+            "source": "natal"
+          }
+        ]
+      },
+      {
+        "index": 8,
+        "name": "Friends",
+        "branch": "Xu",
+        "stem": "Jia",
+        "main_stars": [
+          "Taiyang",
+          "Tanlang"
+        ],
+        "aux_stars": [],
+        "transformations": [
+          {
+            "name": "Hua Quan",
+            "source": "period"
+          }
+        ]
+      },
+      {
+        "index": 9,
+        "name": "Career",
+        "branch": "Hai",
+        "stem": "Yi",
+        "main_stars": [],
+        "aux_stars": [
+          "Qingyang",
+          "Tiankui"
+        ],
+        "transformations": []
+      },
+      {
+        "index": 10,
+        "name": "Property",
+        "branch": "Zi",
+        "stem": "Bing",
+        "main_stars": [
+          "Wuqu",
+          "Jumen"
+        ],
+        "aux_stars": [],
+        "transformations": [
+          {
+            "name": "Hua Ke",
+            "source": "natal"
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "name": "Fortune",
+        "branch": "Chou",
+        "stem": "Ding",
+        "main_stars": [],
+        "aux_stars": [],
+        "transformations": [
+          {
+            "name": "Hua Ke",
+            "source": "period"
+          }
+        ]
+      },
+      {
+        "index": 12,
+        "name": "Parents",
+        "branch": "Yin",
+        "stem": "Wu",
+        "main_stars": [
+          "Tiantong",
+          "Tianxiang"
+        ],
+        "aux_stars": [
+          "Wenchang",
+          "Tuoluo",
+          "Tianyue"
+        ],
+        "transformations": []
+      }
+    ],
+    "major_limits": [
+      {
+        "age_range": "2-11",
+        "palace": "Children",
+        "calendar_years": "1992-2001"
+      },
+      {
+        "age_range": "12-21",
+        "palace": "Wealth",
+        "calendar_years": "2002-2011"
+      },
+      {
+        "age_range": "22-31",
+        "palace": "Health",
+        "calendar_years": "2012-2021"
+      },
+      {
+        "age_range": "32-41",
+        "palace": "Travel",
+        "calendar_years": "2022-2031"
+      },
+      {
+        "age_range": "42-51",
+        "palace": "Friends",
+        "calendar_years": "2032-2041"
+      },
+      {
+        "age_range": "52-61",
+        "palace": "Career",
+        "calendar_years": "2042-2051"
+      },
+      {
+        "age_range": "62-71",
+        "palace": "Property",
+        "calendar_years": "2052-2061"
+      },
+      {
+        "age_range": "72-81",
+        "palace": "Fortune",
+        "calendar_years": "2062-2071"
+      },
+      {
+        "age_range": "82-91",
+        "palace": "Parents",
+        "calendar_years": "2072-2081"
+      },
+      {
+        "age_range": "92-101",
+        "palace": "Life",
+        "calendar_years": "2082-2091"
+      },
+      {
+        "age_range": "102-111",
+        "palace": "Siblings",
+        "calendar_years": "2092-2101"
+      },
+      {
+        "age_range": "112-121",
+        "palace": "Spouse",
+        "calendar_years": "2102-2111"
+      }
+    ],
+    "annual_flow": {
+      "period": "2026-04-M",
+      "flow_palace": "Friends",
+      "focus": [
+        "Career",
+        "Wealth",
+        "Fortune"
+      ]
+    },
+    "three_sides_four_orthodox": {
+      "indexes": [
+        4,
+        8,
+        12,
+        10
+      ],
+      "palaces": [
+        "Children",
+        "Friends",
+        "Parents",
+        "Property"
+      ]
+    },
+    "frontend_params": {
+      "language": "zh-CN",
+      "tone": "calm_analytical",
+      "reading_depth": "standard",
+      "engine_overrides": {}
+    }
+  },
+  "visual": {
+    "palette": "ember",
+    "icon": "wuqu",
+    "card_style": "high"
+  },
+  "market_context": {
+    "ticker": "VIX",
+    "region": "US",
+    "asset_class": "INDEX",
+    "data_start": "1990-01-02",
+    "data_end": "2026-03-27",
+    "observations": 9126,
+    "latest_close": 31.049999237060547,
+    "return_21d": 0.6666667007935001,
+    "return_63d": 1.3051223920955057,
+    "volatility_63d": 1.3672435889879109,
+    "drawdown_252d": -0.4066501404432542,
+    "momentum_label": "strong_uptrend",
+    "volatility_label": "extreme",
+    "drawdown_label": "deep"
+  },
+  "error": null
+}

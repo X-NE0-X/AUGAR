@@ -1,0 +1,106 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "DJI",
+    "name": "DJI",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-04-M",
+    "label": "April 2026",
+    "freq": "M"
+  },
+  "engine": {
+    "id": "market_pulse",
+    "name": "Market Pulse",
+    "display_name": "市场脉冲"
+  },
+  "result": {
+    "score": 31,
+    "polarity": "unfavorable",
+    "intensity": "high",
+    "omen_type": "market_pulse_unfavorable_high",
+    "headline": "Market Pulse reads DJI as unfavorable",
+    "subline": "Momentum is strong_downtrend; volatility is normal.",
+    "short_reading": "The market_pulse artifact is interpreted against the market pulse for DJI.",
+    "long_reading": "This mock interpreter preserves the release pipeline and schema while keeping the engine-specific raw artifact visible for audit and later real-model replacement."
+  },
+  "symbols": [
+    "strong_downtrend",
+    "normal"
+  ],
+  "risk_tags": [
+    "drawdown"
+  ],
+  "raw_artifact": {
+    "seed": "market_pulse|DJI|2026-04-M|stable",
+    "engine_id": "market_pulse",
+    "asset": {
+      "ticker": "DJI",
+      "name": "DJI",
+      "region": "US",
+      "asset_class": "INDEX"
+    },
+    "period": {
+      "id": "2026-04-M",
+      "label": "April 2026",
+      "freq": "M"
+    },
+    "market_context": {
+      "ticker": "DJI",
+      "region": "US",
+      "asset_class": "INDEX",
+      "data_start": "1992-01-02",
+      "data_end": "2026-03-27",
+      "observations": 8620,
+      "latest_close": 45166.640625,
+      "return_21d": -0.08752785221036163,
+      "return_63d": -0.0731466174788542,
+      "volatility_63d": 0.13748616915867248,
+      "drawdown_252d": -0.10005351737415558,
+      "momentum_label": "strong_downtrend",
+      "volatility_label": "normal",
+      "drawdown_label": "material"
+    },
+    "sop": "market pulse program: momentum, volatility, drawdown and trend labels before narrative interpretation",
+    "pulse": {
+      "latest_close": 45166.640625,
+      "return_21d": -0.08752785221036163,
+      "return_63d": -0.0731466174788542,
+      "volatility_63d": 0.13748616915867248,
+      "drawdown_252d": -0.10005351737415558,
+      "momentum_label": "strong_downtrend",
+      "volatility_label": "normal",
+      "drawdown_label": "material"
+    },
+    "frontend_params": {
+      "language": "zh-CN",
+      "tone": "calm_analytical",
+      "reading_depth": "standard",
+      "engine_overrides": {}
+    }
+  },
+  "visual": {
+    "palette": "indigo",
+    "icon": "strong_downtrend",
+    "card_style": "high"
+  },
+  "market_context": {
+    "ticker": "DJI",
+    "region": "US",
+    "asset_class": "INDEX",
+    "data_start": "1992-01-02",
+    "data_end": "2026-03-27",
+    "observations": 8620,
+    "latest_close": 45166.640625,
+    "return_21d": -0.08752785221036163,
+    "return_63d": -0.0731466174788542,
+    "volatility_63d": 0.13748616915867248,
+    "drawdown_252d": -0.10005351737415558,
+    "momentum_label": "strong_downtrend",
+    "volatility_label": "normal",
+    "drawdown_label": "material"
+  },
+  "error": null
+}

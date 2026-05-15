@@ -1,0 +1,18 @@
+{
+  "period": "2026-04-M",
+  "symbols": ["SPX"],
+  "engines": ["market_pulse"],
+  "provider": "mock",
+  "model": "gpt-5.5",
+  "base_url": null,
+  "temperature": 0.4,
+  "top_p": 1.0,
+  "max_output_tokens": 1200,
+  "reasoning_effort": "low",
+  "timeout": 90,
+  "max_retries": 2,
+  "codex_auth_path": null,
+  "codex_home": null,
+  "codex_path": null,
+  "allow_error_cards": false
+}

@@ -1,0 +1,169 @@
+from __future__ import annotations
+
+import uuid
+from dataclasses import asdict, dataclass, field
+from pathlib import Path
+from typing import Any, Dict, Iterable, List, Optional
+
+from .constants import ALL_ENGINES, DEFAULT_OUTPUT_ROOT, PROJECT_ROOT
+from .core import parse_period, utc_now_iso
+from .data import DataProcessing
+from .display import build_composite
+from .exports import export_bundle, export_card, export_index, export_manifest
+from .generators import GENERATOR_BY_ENGINE
+from .interpreter import build_card
+from .llm import LLMClient, LLMParams
+from .schemas import AssetRef, ReadingBundle
+
+
+@dataclass
+class GenerateRequest:
+    period: str
+    symbols: Optional[List[str]] = None
+    engines: List[str] = field(default_factory=lambda: list(ALL_ENGINES))
+    seed: Optional[int] = None
+    force: bool = False
+    output_root: str = str(DEFAULT_OUTPUT_ROOT)
+    provider: str = "mock"
+    model: str = "gpt-5.5"
+    base_url: Optional[str] = None
+    temperature: float = 0.4
+    top_p: float = 1.0
+    max_output_tokens: int = 1200
+    reasoning_effort: Optional[str] = "low"
+    timeout: int = 90
+    max_retries: int = 2
+    codex_auth_path: Optional[str] = None
+    codex_home: Optional[str] = None
+    codex_path: Optional[str] = None
+    language: str = "zh-CN"
+    tone: str = "calm_analytical"
+    reading_depth: str = "standard"
+    include_raw_artifact: bool = True
+    include_market_context: bool = True
+    allow_error_cards: bool = False
+    engine_overrides: Dict[str, Any] = field(default_factory=dict)
+
+    def llm_params(self) -> LLMParams:
+        return LLMParams(
+            provider=self.provider,
+            model=self.model,
+            base_url=self.base_url,
+            temperature=self.temperature,
+            top_p=self.top_p,
+            max_output_tokens=self.max_output_tokens,
+            reasoning_effort=self.reasoning_effort,
+            timeout=self.timeout,
+            max_retries=self.max_retries,
+            codex_auth_path=self.codex_auth_path,
+            codex_home=self.codex_home,
+            codex_path=self.codex_path,
+        )
+
+
+def run_generation(request: GenerateRequest) -> Dict[str, Any]:
+    period = parse_period(request.period)
+    engines = _normalize_engines(request.engines)
+    output_root = Path(request.output_root)
+    run_id = uuid.uuid4().hex[:12]
+    generated_at = utc_now_iso()
+    data = DataProcessing(PROJECT_ROOT)
+    available_symbols = data.discover_symbols()
+    symbols = [s.upper() for s in (request.symbols or available_symbols)]
+    unknown = sorted(set(symbols) - set(available_symbols))
+    if unknown:
+        raise ValueError(f"Unknown symbols: {unknown}; available: {available_symbols}")
+
+    llm = LLMClient(request.llm_params())
+    bundles: List[ReadingBundle] = []
+    card_paths: List[str] = []
+    for ticker in symbols:
+        context = data.context_for(ticker).to_dict()
+        asset = AssetRef(ticker=ticker, name=ticker, region=str(context["region"]))
+        cards = []
+        for engine_id in engines:
+            generator = GENERATOR_BY_ENGINE[engine_id]()
+            raw_artifact = generator.generate(asset, period, context, seed=request.seed)
+            raw_artifact["frontend_params"] = {
+                "language": request.language,
+                "tone": request.tone,
+                "reading_depth": request.reading_depth,
+                "engine_overrides": request.engine_overrides.get(engine_id, {}),
+            }
+            card = build_card(
+                engine_id=engine_id,
+                asset=asset,
+                period=period,
+                raw_artifact=raw_artifact,
+                llm=llm,
+                include_market_context=request.include_market_context,
+                allow_error_card=request.allow_error_cards,
+            )
+            cards.append(card)
+            card_paths.append(str(export_card(card, period.id, output_root)))
+
+        bundle = ReadingBundle(
+            schema_version="0.1",
+            asset=asset,
+            period=period,
+            composite=build_composite(cards),
+            cards=cards,
+            run_id=run_id,
+            generation_params=_public_request_dict(request),
+        )
+        export_bundle(bundle, output_root)
+        bundles.append(bundle)
+
+    coverage = {
+        ticker: {
+            "data_start": data.context_for(ticker).data_start,
+            "data_end": data.context_for(ticker).data_end,
+            "observations": data.context_for(ticker).observations,
+        }
+        for ticker in symbols
+    }
+    export_index(
+        period=period.id,
+        symbols=symbols,
+        engines=engines,
+        run_id=run_id,
+        output_root=output_root,
+        generated_at=generated_at,
+        data_coverage=coverage,
+        params=_public_request_dict(request),
+    )
+    manifest = {
+        "run_id": run_id,
+        "generated_at": generated_at,
+        "period": period.id,
+        "symbols": symbols,
+        "engines": engines,
+        "request": _public_request_dict(request),
+        "card_paths": card_paths,
+        "bundle_count": len(bundles),
+    }
+    export_manifest(run_id=run_id, manifest=manifest)
+    return {
+        "run_id": run_id,
+        "period": period.id,
+        "symbols": symbols,
+        "engines": engines,
+        "bundle_count": len(bundles),
+        "card_count": len(card_paths),
+        "output_root": str(output_root),
+    }
+
+
+def _normalize_engines(raw: Iterable[str]) -> List[str]:
+    engines = [str(e).strip().lower() for e in raw if str(e).strip()]
+    invalid = [e for e in engines if e not in ALL_ENGINES]
+    if invalid:
+        raise ValueError(f"Unsupported engines: {invalid}; allowed: {list(ALL_ENGINES)}")
+    return engines or list(ALL_ENGINES)
+
+
+def _public_request_dict(request: GenerateRequest) -> Dict[str, Any]:
+    data = asdict(request)
+    if data.get("base_url") is None:
+        data.pop("base_url", None)
+    return data

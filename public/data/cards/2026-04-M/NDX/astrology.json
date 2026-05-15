@@ -1,0 +1,104 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "NDX",
+    "name": "NDX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-04-M",
+    "label": "April 2026",
+    "freq": "M"
+  },
+  "engine": {
+    "id": "astrology",
+    "name": "Astrology Cycle",
+    "display_name": "占星"
+  },
+  "result": {
+    "score": 25,
+    "polarity": "unfavorable",
+    "intensity": "high",
+    "omen_type": "astrology_unfavorable_high",
+    "headline": "Astrology reads NDX as unfavorable",
+    "subline": "Momentum is strong_downtrend; volatility is normal.",
+    "short_reading": "The astrology artifact is interpreted against the market pulse for NDX.",
+    "long_reading": "This mock interpreter preserves the release pipeline and schema while keeping the engine-specific raw artifact visible for audit and later real-model replacement."
+  },
+  "symbols": [
+    "Aquarius",
+    "full"
+  ],
+  "risk_tags": [
+    "drawdown"
+  ],
+  "raw_artifact": {
+    "seed": "astrology|NDX|2026-04-M|stable",
+    "engine_id": "astrology",
+    "asset": {
+      "ticker": "NDX",
+      "name": "NDX",
+      "region": "US",
+      "asset_class": "INDEX"
+    },
+    "period": {
+      "id": "2026-04-M",
+      "label": "April 2026",
+      "freq": "M"
+    },
+    "market_context": {
+      "ticker": "NDX",
+      "region": "US",
+      "asset_class": "INDEX",
+      "data_start": "1985-10-01",
+      "data_end": "2026-03-27",
+      "observations": 10201,
+      "latest_close": 23132.76953125,
+      "return_21d": -0.07595955778606556,
+      "return_63d": -0.0983538380059179,
+      "volatility_63d": 0.16748650035337917,
+      "drawdown_252d": -0.11436053893100784,
+      "momentum_label": "strong_downtrend",
+      "volatility_label": "normal",
+      "drawdown_label": "material"
+    },
+    "sop": "asset zodiac proxy, zodiac season, moon/cycle tags before market mood interpretation",
+    "asset_zodiac": "Aquarius",
+    "period_zodiac_season": "Aries",
+    "moon_phase_proxy": "full",
+    "cycle_tags": [
+      "strong_downtrend",
+      "normal",
+      "accumulation_cycle"
+    ],
+    "frontend_params": {
+      "language": "zh-CN",
+      "tone": "calm_analytical",
+      "reading_depth": "standard",
+      "engine_overrides": {}
+    }
+  },
+  "visual": {
+    "palette": "indigo",
+    "icon": "aquarius",
+    "card_style": "high"
+  },
+  "market_context": {
+    "ticker": "NDX",
+    "region": "US",
+    "asset_class": "INDEX",
+    "data_start": "1985-10-01",
+    "data_end": "2026-03-27",
+    "observations": 10201,
+    "latest_close": 23132.76953125,
+    "return_21d": -0.07595955778606556,
+    "return_63d": -0.0983538380059179,
+    "volatility_63d": 0.16748650035337917,
+    "drawdown_252d": -0.11436053893100784,
+    "momentum_label": "strong_downtrend",
+    "volatility_label": "normal",
+    "drawdown_label": "material"
+  },
+  "error": null
+}

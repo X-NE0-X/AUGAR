@@ -1,0 +1,106 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "FTSE",
+    "name": "FTSE",
+    "region": "UK",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-04-M",
+    "label": "April 2026",
+    "freq": "M"
+  },
+  "engine": {
+    "id": "market_pulse",
+    "name": "Market Pulse",
+    "display_name": "市场脉冲"
+  },
+  "result": {
+    "score": 46,
+    "polarity": "neutral",
+    "intensity": "low",
+    "omen_type": "market_pulse_neutral_low",
+    "headline": "Market Pulse reads FTSE as neutral",
+    "subline": "Momentum is mixed; volatility is normal.",
+    "short_reading": "The market_pulse artifact is interpreted against the market pulse for FTSE.",
+    "long_reading": "This mock interpreter preserves the release pipeline and schema while keeping the engine-specific raw artifact visible for audit and later real-model replacement."
+  },
+  "symbols": [
+    "mixed",
+    "normal"
+  ],
+  "risk_tags": [
+    "mixed_momentum"
+  ],
+  "raw_artifact": {
+    "seed": "market_pulse|FTSE|2026-04-M|stable",
+    "engine_id": "market_pulse",
+    "asset": {
+      "ticker": "FTSE",
+      "name": "FTSE",
+      "region": "UK",
+      "asset_class": "INDEX"
+    },
+    "period": {
+      "id": "2026-04-M",
+      "label": "April 2026",
+      "freq": "M"
+    },
+    "market_context": {
+      "ticker": "FTSE",
+      "region": "UK",
+      "asset_class": "INDEX",
+      "data_start": "1984-01-03",
+      "data_end": "2026-03-27",
+      "observations": 10670,
+      "latest_close": 9967.400390625,
+      "return_21d": -0.08106611124621088,
+      "return_63d": 0.010226563687731227,
+      "volatility_63d": 0.13673706931447324,
+      "drawdown_252d": -0.0864479728446409,
+      "momentum_label": "mixed",
+      "volatility_label": "normal",
+      "drawdown_label": "shallow"
+    },
+    "sop": "market pulse program: momentum, volatility, drawdown and trend labels before narrative interpretation",
+    "pulse": {
+      "latest_close": 9967.400390625,
+      "return_21d": -0.08106611124621088,
+      "return_63d": 0.010226563687731227,
+      "volatility_63d": 0.13673706931447324,
+      "drawdown_252d": -0.0864479728446409,
+      "momentum_label": "mixed",
+      "volatility_label": "normal",
+      "drawdown_label": "shallow"
+    },
+    "frontend_params": {
+      "language": "zh-CN",
+      "tone": "calm_analytical",
+      "reading_depth": "standard",
+      "engine_overrides": {}
+    }
+  },
+  "visual": {
+    "palette": "indigo",
+    "icon": "mixed",
+    "card_style": "low"
+  },
+  "market_context": {
+    "ticker": "FTSE",
+    "region": "UK",
+    "asset_class": "INDEX",
+    "data_start": "1984-01-03",
+    "data_end": "2026-03-27",
+    "observations": 10670,
+    "latest_close": 9967.400390625,
+    "return_21d": -0.08106611124621088,
+    "return_63d": 0.010226563687731227,
+    "volatility_63d": 0.13673706931447324,
+    "drawdown_252d": -0.0864479728446409,
+    "momentum_label": "mixed",
+    "volatility_label": "normal",
+    "drawdown_label": "shallow"
+  },
+  "error": null
+}

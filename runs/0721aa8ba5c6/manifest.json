@@ -1,0 +1,41 @@
+{
+  "run_id": "0721aa8ba5c6",
+  "generated_at": "2026-05-15T11:14:43+00:00",
+  "period": "2026-04-M",
+  "symbols": [
+    "SPX"
+  ],
+  "engines": [
+    "tarot"
+  ],
+  "request": {
+    "period": "2026-04-M",
+    "symbols": [
+      "SPX"
+    ],
+    "engines": [
+      "tarot"
+    ],
+    "seed": null,
+    "force": false,
+    "output_root": "C:\\Users\\AndersonMa\\AUGAR\\public\\data",
+    "provider": "mock",
+    "model": "mock-oracle-v0",
+    "temperature": 0.4,
+    "top_p": 1.0,
+    "max_output_tokens": "***",
+    "reasoning_effort": null,
+    "timeout": 90,
+    "max_retries": 2,
+    "language": "zh-CN",
+    "tone": "calm_analytical",
+    "reading_depth": "standard",
+    "include_raw_artifact": true,
+    "include_market_context": true,
+    "engine_overrides": {}
+  },
+  "card_paths": [
+    "C:\\Users\\AndersonMa\\AUGAR\\public\\data\\cards\\2026-04-M\\SPX\\tarot.json"
+  ],
+  "bundle_count": 1
+}

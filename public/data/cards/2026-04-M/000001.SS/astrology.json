@@ -1,0 +1,104 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "000001.SS",
+    "name": "000001.SS",
+    "region": "CN",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-04-M",
+    "label": "April 2026",
+    "freq": "M"
+  },
+  "engine": {
+    "id": "astrology",
+    "name": "Astrology Cycle",
+    "display_name": "占星"
+  },
+  "result": {
+    "score": 46,
+    "polarity": "neutral",
+    "intensity": "low",
+    "omen_type": "astrology_neutral_low",
+    "headline": "Astrology reads 000001.SS as neutral",
+    "subline": "Momentum is mixed; volatility is normal.",
+    "short_reading": "The astrology artifact is interpreted against the market pulse for 000001.SS.",
+    "long_reading": "This mock interpreter preserves the release pipeline and schema while keeping the engine-specific raw artifact visible for audit and later real-model replacement."
+  },
+  "symbols": [
+    "Gemini",
+    "new"
+  ],
+  "risk_tags": [
+    "mixed_momentum"
+  ],
+  "raw_artifact": {
+    "seed": "astrology|000001.SS|2026-04-M|stable",
+    "engine_id": "astrology",
+    "asset": {
+      "ticker": "000001.SS",
+      "name": "000001.SS",
+      "region": "CN",
+      "asset_class": "INDEX"
+    },
+    "period": {
+      "id": "2026-04-M",
+      "label": "April 2026",
+      "freq": "M"
+    },
+    "market_context": {
+      "ticker": "000001.SS",
+      "region": "CN",
+      "asset_class": "INDEX",
+      "data_start": "1997-07-02",
+      "data_end": "2026-03-27",
+      "observations": 6960,
+      "latest_close": 3913.72412109375,
+      "return_21d": -0.05616770486205147,
+      "return_63d": 0.009636081386525497,
+      "volatility_63d": 0.14637859046834714,
+      "drawdown_252d": -0.06428233379010329,
+      "momentum_label": "mixed",
+      "volatility_label": "normal",
+      "drawdown_label": "shallow"
+    },
+    "sop": "asset zodiac proxy, zodiac season, moon/cycle tags before market mood interpretation",
+    "asset_zodiac": "Gemini",
+    "period_zodiac_season": "Aries",
+    "moon_phase_proxy": "new",
+    "cycle_tags": [
+      "mixed",
+      "normal",
+      "accumulation_cycle"
+    ],
+    "frontend_params": {
+      "language": "zh-CN",
+      "tone": "calm_analytical",
+      "reading_depth": "standard",
+      "engine_overrides": {}
+    }
+  },
+  "visual": {
+    "palette": "indigo",
+    "icon": "gemini",
+    "card_style": "low"
+  },
+  "market_context": {
+    "ticker": "000001.SS",
+    "region": "CN",
+    "asset_class": "INDEX",
+    "data_start": "1997-07-02",
+    "data_end": "2026-03-27",
+    "observations": 6960,
+    "latest_close": 3913.72412109375,
+    "return_21d": -0.05616770486205147,
+    "return_63d": 0.009636081386525497,
+    "volatility_63d": 0.14637859046834714,
+    "drawdown_252d": -0.06428233379010329,
+    "momentum_label": "mixed",
+    "volatility_label": "normal",
+    "drawdown_label": "shallow"
+  },
+  "error": null
+}

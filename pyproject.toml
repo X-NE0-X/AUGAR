@@ -1,0 +1,16 @@
+[project]
+name = "augar"
+version = "0.1.0"
+description = "AUGAR backend oracle card generation pipeline"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas",
+  "duckdb",
+  "fastapi",
+  "requests",
+  "openai",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

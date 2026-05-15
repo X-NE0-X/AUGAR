@@ -1,0 +1,1 @@
+"""AUGAR FastAPI app package."""
