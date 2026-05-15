@@ -22,9 +22,9 @@
     "intensity": "high",
     "omen_type": "market_pulse_favorable_high",
     "headline": "Market Pulse reads VIX as favorable",
-    "subline": "Momentum is strong_uptrend; volatility is extreme.",
-    "short_reading": "The market_pulse artifact is interpreted against the market pulse for VIX.",
-    "long_reading": "This mock interpreter preserves the release pipeline and schema while keeping the engine-specific raw artifact visible for audit and later real-model replacement."
+    "subline": "strong_uptrend colors the reading; market pulse remains strong_uptrend.",
+    "short_reading": "The mock market_pulse reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
+    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
   },
   "symbols": [
     "strong_uptrend",
@@ -34,74 +34,11 @@
     "volatility",
     "drawdown"
   ],
-  "raw_artifact": {
-    "seed": "market_pulse|VIX|2026-04-M|stable",
-    "engine_id": "market_pulse",
-    "asset": {
-      "ticker": "VIX",
-      "name": "VIX",
-      "region": "US",
-      "asset_class": "INDEX"
-    },
-    "period": {
-      "id": "2026-04-M",
-      "label": "April 2026",
-      "freq": "M"
-    },
-    "market_context": {
-      "ticker": "VIX",
-      "region": "US",
-      "asset_class": "INDEX",
-      "data_start": "1990-01-02",
-      "data_end": "2026-03-27",
-      "observations": 9126,
-      "latest_close": 31.049999237060547,
-      "return_21d": 0.6666667007935001,
-      "return_63d": 1.3051223920955057,
-      "volatility_63d": 1.3672435889879109,
-      "drawdown_252d": -0.4066501404432542,
-      "momentum_label": "strong_uptrend",
-      "volatility_label": "extreme",
-      "drawdown_label": "deep"
-    },
-    "sop": "market pulse program: momentum, volatility, drawdown and trend labels before narrative interpretation",
-    "pulse": {
-      "latest_close": 31.049999237060547,
-      "return_21d": 0.6666667007935001,
-      "return_63d": 1.3051223920955057,
-      "volatility_63d": 1.3672435889879109,
-      "drawdown_252d": -0.4066501404432542,
-      "momentum_label": "strong_uptrend",
-      "volatility_label": "extreme",
-      "drawdown_label": "deep"
-    },
-    "frontend_params": {
-      "language": "zh-CN",
-      "tone": "calm_analytical",
-      "reading_depth": "standard",
-      "engine_overrides": {}
-    }
-  },
   "visual": {
     "palette": "ember",
     "icon": "strong_uptrend",
     "card_style": "high"
   },
-  "market_context": {
-    "ticker": "VIX",
-    "region": "US",
-    "asset_class": "INDEX",
-    "data_start": "1990-01-02",
-    "data_end": "2026-03-27",
-    "observations": 9126,
-    "latest_close": 31.049999237060547,
-    "return_21d": 0.6666667007935001,
-    "return_63d": 1.3051223920955057,
-    "volatility_63d": 1.3672435889879109,
-    "drawdown_252d": -0.4066501404432542,
-    "momentum_label": "strong_uptrend",
-    "volatility_label": "extreme",
-    "drawdown_label": "deep"
-  },
+  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/VIX/market_pulse.json",
   "error": null
 }

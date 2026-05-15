@@ -51,7 +51,7 @@ def stable_seed(*parts: Any) -> int:
 
 
 def scrub_secrets(data: Dict[str, Any]) -> Dict[str, Any]:
-    secret_words = ("key", "token", "secret", "password", "authorization")
+    secret_words = ("key", "token", "secret", "password", "authorization", "auth_path", "codex_home", "codex_path")
     clean: Dict[str, Any] = {}
     for key, value in data.items():
         if any(word in str(key).lower() for word in secret_words):

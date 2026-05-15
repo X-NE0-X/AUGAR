@@ -17,14 +17,14 @@
     "display_name": "占星"
   },
   "result": {
-    "score": 36,
-    "polarity": "unfavorable",
-    "intensity": "medium",
-    "omen_type": "astrology_unfavorable_medium",
-    "headline": "Astrology reads HSI as unfavorable",
-    "subline": "Momentum is falling; volatility is normal.",
-    "short_reading": "The astrology artifact is interpreted against the market pulse for HSI.",
-    "long_reading": "This mock interpreter preserves the release pipeline and schema while keeping the engine-specific raw artifact visible for audit and later real-model replacement."
+    "score": 46,
+    "polarity": "neutral",
+    "intensity": "low",
+    "omen_type": "astrology_neutral_low",
+    "headline": "Astrology reads HSI as neutral",
+    "subline": "Virgo colors the reading; market pulse remains falling.",
+    "short_reading": "The mock astrology reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
+    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
   },
   "symbols": [
     "Virgo",
@@ -33,72 +33,11 @@
   "risk_tags": [
     "drawdown"
   ],
-  "raw_artifact": {
-    "seed": "astrology|HSI|2026-04-M|stable",
-    "engine_id": "astrology",
-    "asset": {
-      "ticker": "HSI",
-      "name": "HSI",
-      "region": "HK",
-      "asset_class": "INDEX"
-    },
-    "period": {
-      "id": "2026-04-M",
-      "label": "April 2026",
-      "freq": "M"
-    },
-    "market_context": {
-      "ticker": "HSI",
-      "region": "HK",
-      "asset_class": "INDEX",
-      "data_start": "1986-12-31",
-      "data_end": "2026-03-27",
-      "observations": 9684,
-      "latest_close": 24951.880859375,
-      "return_21d": -0.05417298865883835,
-      "return_63d": -0.032939162209229544,
-      "volatility_63d": 0.21489464542989045,
-      "drawdown_252d": -0.10784465443388258,
-      "momentum_label": "falling",
-      "volatility_label": "normal",
-      "drawdown_label": "material"
-    },
-    "sop": "asset zodiac proxy, zodiac season, moon/cycle tags before market mood interpretation",
-    "asset_zodiac": "Virgo",
-    "period_zodiac_season": "Aries",
-    "moon_phase_proxy": "waxing",
-    "cycle_tags": [
-      "falling",
-      "normal",
-      "accumulation_cycle"
-    ],
-    "frontend_params": {
-      "language": "zh-CN",
-      "tone": "calm_analytical",
-      "reading_depth": "standard",
-      "engine_overrides": {}
-    }
-  },
   "visual": {
     "palette": "indigo",
     "icon": "virgo",
-    "card_style": "medium"
+    "card_style": "low"
   },
-  "market_context": {
-    "ticker": "HSI",
-    "region": "HK",
-    "asset_class": "INDEX",
-    "data_start": "1986-12-31",
-    "data_end": "2026-03-27",
-    "observations": 9684,
-    "latest_close": 24951.880859375,
-    "return_21d": -0.05417298865883835,
-    "return_63d": -0.032939162209229544,
-    "volatility_63d": 0.21489464542989045,
-    "drawdown_252d": -0.10784465443388258,
-    "momentum_label": "falling",
-    "volatility_label": "normal",
-    "drawdown_label": "material"
-  },
+  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/HSI/astrology.json",
   "error": null
 }

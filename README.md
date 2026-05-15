@@ -1,5 +1,7 @@
 # AUGAR
 
+**Ask Universe, Get A Reading.**
+
 AUGAR is a backend-only multi-oracle card generation pipeline. It reads local index Parquet data, generates engine-specific raw artifacts, asks an LLM interpreter for each engine, and exports static JSON readings.
 
 ## Generate
@@ -8,6 +10,13 @@ Mock provider, full index universe:
 
 ```powershell
 python AUGAR.py --period 2026-04-M --all-indexes --provider mock
+```
+
+By default, existing cards are reused to avoid unnecessary LLM cost. Regenerate everything or one engine with:
+
+```powershell
+python AUGAR.py --period 2026-04-M --all-indexes --provider mock --force
+python AUGAR.py --period 2026-04-M --all-indexes --provider mock --force tarot
 ```
 
 ChatGPT OAuth through Codex CLI:
@@ -73,6 +82,8 @@ Then open:
 http://127.0.0.1:8765/readings/2026-04-M/SPX
 http://127.0.0.1:8765/cards/2026-04-M/SPX/tarot
 ```
+
+Public artifacts are intentionally slim: they include asset, period, composite, card result, symbols, risk tags, visual, and `raw_ref`. Full raw artifacts, market context, and generation params are kept under `runs/<run_id>/debug`.
 
 ## Validation
 

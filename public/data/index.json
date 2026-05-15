@@ -2,7 +2,14 @@
   "schema_version": "0.1",
   "period": "2026-04-M",
   "symbols": [
-    "SPX"
+    "000001.SS",
+    "000300.SS",
+    "DJI",
+    "FTSE",
+    "HSI",
+    "NDX",
+    "SPX",
+    "VIX"
   ],
   "engines": [
     "tarot",
@@ -12,20 +19,53 @@
     "astrology",
     "market_pulse"
   ],
-  "run_id": "10918080f025",
-  "generated_at": "2026-05-15T11:50:56+00:00",
+  "run_id": "9e3792908386",
+  "generated_at": "2026-05-15T12:32:38+00:00",
   "data_coverage": {
+    "000001.SS": {
+      "data_start": "1997-07-02",
+      "data_end": "2026-03-27",
+      "observations": 6960
+    },
+    "000300.SS": {
+      "data_start": "2021-03-11",
+      "data_end": "2026-03-27",
+      "observations": 1223
+    },
+    "DJI": {
+      "data_start": "1992-01-02",
+      "data_end": "2026-03-27",
+      "observations": 8620
+    },
+    "FTSE": {
+      "data_start": "1984-01-03",
+      "data_end": "2026-03-27",
+      "observations": 10670
+    },
+    "HSI": {
+      "data_start": "1986-12-31",
+      "data_end": "2026-03-27",
+      "observations": 9684
+    },
+    "NDX": {
+      "data_start": "1985-10-01",
+      "data_end": "2026-03-27",
+      "observations": 10201
+    },
     "SPX": {
       "data_start": "1927-12-30",
       "data_end": "2026-03-27",
       "observations": 24676
+    },
+    "VIX": {
+      "data_start": "1990-01-02",
+      "data_end": "2026-03-27",
+      "observations": 9126
     }
   },
   "params": {
     "period": "2026-04-M",
-    "symbols": [
-      "SPX"
-    ],
+    "symbols": null,
     "engines": [
       "tarot",
       "wenwang",
@@ -35,7 +75,7 @@
       "market_pulse"
     ],
     "seed": null,
-    "force": false,
+    "force": "all",
     "output_root": "C:\\Users\\AndersonMa\\AUGAR\\public\\data",
     "provider": "mock",
     "model": "gpt-5.5",
@@ -45,14 +85,11 @@
     "reasoning_effort": "low",
     "timeout": 90,
     "max_retries": 2,
-    "codex_auth_path": null,
-    "codex_home": null,
-    "codex_path": null,
     "language": "zh-CN",
     "tone": "calm_analytical",
     "reading_depth": "standard",
-    "include_raw_artifact": true,
-    "include_market_context": true,
+    "include_raw_artifact": false,
+    "include_market_context": false,
     "allow_error_cards": false,
     "engine_overrides": {}
   }

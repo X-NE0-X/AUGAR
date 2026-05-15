@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import hashlib
 import shutil
 import subprocess
 import tempfile
@@ -49,7 +50,8 @@ class LLMClient:
         ret = float(ctx.get("return_63d", 0.0))
         vol = float(ctx.get("volatility_63d", 0.0))
         dd = float(ctx.get("drawdown_252d", 0.0))
-        score = int(max(1, min(99, 50 + ret * 180 - vol * 20 + dd * 30)))
+        engine_signal = self._mock_engine_signal(engine_id, raw_artifact)
+        score = int(max(1, min(99, 50 + ret * 90 - vol * 12 + dd * 18 + engine_signal)))
         polarity = "favorable" if score >= 60 else ("unfavorable" if score <= 42 else "neutral")
         intensity = "high" if abs(score - 50) >= 18 or vol >= 0.25 else ("medium" if abs(score - 50) >= 8 else "low")
         symbols = self._symbols(engine_id, raw_artifact, ctx)
@@ -60,13 +62,37 @@ class LLMClient:
             "intensity": intensity,
             "omen_type": f"{engine_id}_{polarity}_{intensity}",
             "headline": f"{engine_id.replace('_', ' ').title()} reads {ctx.get('ticker', raw_artifact.get('asset', {}).get('ticker', 'asset'))} as {polarity}",
-            "subline": f"Momentum is {ctx.get('momentum_label', 'mixed')}; volatility is {ctx.get('volatility_label', 'normal')}.",
-            "short_reading": f"The {engine_id} artifact is interpreted against the market pulse for {ctx.get('ticker', 'asset')}.",
-            "long_reading": "This mock interpreter preserves the release pipeline and schema while keeping the engine-specific raw artifact visible for audit and later real-model replacement.",
+            "subline": f"{symbols[0]} colors the reading; market pulse remains {ctx.get('momentum_label', 'mixed')}.",
+            "short_reading": f"The mock {engine_id} reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
+            "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output.",
             "symbols": symbols,
             "risk_tags": risks,
             "visual": {"palette": "ember" if polarity == "favorable" else "indigo", "icon": symbols[0].lower().replace(" ", "_"), "card_style": intensity},
         }
+
+    @staticmethod
+    def _mock_engine_signal(engine_id: str, raw_artifact: Dict[str, Any]) -> int:
+        if engine_id == "tarot":
+            key = raw_artifact.get("spread", [{}])[-1]
+        elif engine_id == "wenwang":
+            key = {
+                "moving_lines": raw_artifact.get("moving_lines", []),
+                "image": raw_artifact.get("primary_hexagram", {}).get("image"),
+            }
+        elif engine_id == "bazi":
+            key = raw_artifact.get("useful_gods", {})
+        elif engine_id == "ziwei":
+            palaces = raw_artifact.get("palaces", [])
+            key = [p for p in palaces if p.get("transformations")]
+        elif engine_id == "astrology":
+            key = {
+                "moon": raw_artifact.get("moon_phase_proxy"),
+                "zodiac": raw_artifact.get("asset_zodiac"),
+            }
+        else:
+            key = raw_artifact.get("pulse", {})
+        digest = hashlib.sha256(json.dumps(key, sort_keys=True, default=str).encode("utf-8")).hexdigest()
+        return int(digest[:4], 16) % 45 - 22
 
     @staticmethod
     def _symbols(engine_id: str, raw_artifact: Dict[str, Any], ctx: Dict[str, Any]) -> list[str]:

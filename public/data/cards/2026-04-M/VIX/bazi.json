@@ -22,9 +22,9 @@
     "intensity": "high",
     "omen_type": "bazi_favorable_high",
     "headline": "Bazi reads VIX as favorable",
-    "subline": "Momentum is strong_uptrend; volatility is extreme.",
-    "short_reading": "The bazi artifact is interpreted against the market pulse for VIX.",
-    "long_reading": "This mock interpreter preserves the release pipeline and schema while keeping the engine-specific raw artifact visible for audit and later real-model replacement."
+    "subline": "Earth colors the reading; market pulse remains strong_uptrend.",
+    "short_reading": "The mock bazi reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
+    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
   },
   "symbols": [
     "Earth",
@@ -34,205 +34,11 @@
     "volatility",
     "drawdown"
   ],
-  "raw_artifact": {
-    "seed": "bazi|VIX|2026-04-M|stable",
-    "engine_id": "bazi",
-    "asset": {
-      "ticker": "VIX",
-      "name": "VIX",
-      "region": "US",
-      "asset_class": "INDEX"
-    },
-    "period": {
-      "id": "2026-04-M",
-      "label": "April 2026",
-      "freq": "M"
-    },
-    "market_context": {
-      "ticker": "VIX",
-      "region": "US",
-      "asset_class": "INDEX",
-      "data_start": "1990-01-02",
-      "data_end": "2026-03-27",
-      "observations": 9126,
-      "latest_close": 31.049999237060547,
-      "return_21d": 0.6666667007935001,
-      "return_63d": 1.3051223920955057,
-      "volatility_63d": 1.3672435889879109,
-      "drawdown_252d": -0.4066501404432542,
-      "momentum_label": "strong_uptrend",
-      "volatility_label": "extreme",
-      "drawdown_label": "deep"
-    },
-    "sop": "Zi Ping: true solar proxy, solar-term year/month boundary, four pillars, hidden stems, ten gods, strength, pattern, useful gods before interpretation",
-    "birth_proxy": {
-      "source": "asset data_start plus deterministic ticker offset",
-      "clock_time": "1990-02-08 18:00:00",
-      "longitude": -74.0,
-      "true_solar_time": "1990-02-08 18:04:00",
-      "eot_note": "EoT not applied in v0.1; longitude correction applied as deterministic proxy"
-    },
-    "four_pillars": {
-      "year": {
-        "stem": "Geng",
-        "branch": "Wu"
-      },
-      "month": {
-        "stem": "Ji",
-        "branch": "Mao"
-      },
-      "day": {
-        "stem": "Ji",
-        "branch": "Mao"
-      },
-      "hour": {
-        "stem": "Gui",
-        "branch": "You"
-      }
-    },
-    "hidden_stems": {
-      "year": [
-        "Ding",
-        "Ji"
-      ],
-      "month": [
-        "Yi"
-      ],
-      "day": [
-        "Yi"
-      ],
-      "hour": [
-        "Xin"
-      ]
-    },
-    "ten_gods": {
-      "year": {
-        "heavenly_stem": "Output",
-        "earthly_main_qi": "Resource",
-        "hidden": [
-          "Resource",
-          "Peer"
-        ]
-      },
-      "month": {
-        "heavenly_stem": "Peer",
-        "earthly_main_qi": "Officer",
-        "hidden": [
-          "Officer"
-        ]
-      },
-      "day": {
-        "heavenly_stem": "Peer",
-        "earthly_main_qi": "Officer",
-        "hidden": [
-          "Officer"
-        ]
-      },
-      "hour": {
-        "heavenly_stem": "Wealth",
-        "earthly_main_qi": "Output",
-        "hidden": [
-          "Output"
-        ]
-      }
-    },
-    "element_counts": {
-      "Wood": 2,
-      "Fire": 1,
-      "Earth": 5,
-      "Metal": 3,
-      "Water": 2
-    },
-    "strength_and_roots": {
-      "day_master": "Ji",
-      "day_element": "Earth",
-      "score": 5,
-      "level": "balanced",
-      "month_command": "Mao"
-    },
-    "pattern": {
-      "name": "balanced_day_master_pattern",
-      "basis": "month branch Mao and root score 5"
-    },
-    "useful_gods": {
-      "useful": [
-        "Fire",
-        "balance"
-      ],
-      "harmful": [
-        "excess_Earth"
-      ],
-      "basis": "pattern + support/suppress + seasonal balance"
-    },
-    "luck_cycles": [
-      {
-        "age_range": "8-17",
-        "pillar": "BingMao",
-        "calendar_years": "1998-2007"
-      },
-      {
-        "age_range": "18-27",
-        "pillar": "DingChen",
-        "calendar_years": "2008-2017"
-      },
-      {
-        "age_range": "28-37",
-        "pillar": "WuSi",
-        "calendar_years": "2018-2027"
-      },
-      {
-        "age_range": "38-47",
-        "pillar": "JiWu",
-        "calendar_years": "2028-2037"
-      },
-      {
-        "age_range": "48-57",
-        "pillar": "GengWei",
-        "calendar_years": "2038-2047"
-      },
-      {
-        "age_range": "58-67",
-        "pillar": "XinShen",
-        "calendar_years": "2048-2057"
-      },
-      {
-        "age_range": "68-77",
-        "pillar": "RenYou",
-        "calendar_years": "2058-2067"
-      },
-      {
-        "age_range": "78-87",
-        "pillar": "GuiXu",
-        "calendar_years": "2068-2077"
-      }
-    ],
-    "frontend_params": {
-      "language": "zh-CN",
-      "tone": "calm_analytical",
-      "reading_depth": "standard",
-      "engine_overrides": {}
-    }
-  },
   "visual": {
     "palette": "ember",
     "icon": "earth",
     "card_style": "high"
   },
-  "market_context": {
-    "ticker": "VIX",
-    "region": "US",
-    "asset_class": "INDEX",
-    "data_start": "1990-01-02",
-    "data_end": "2026-03-27",
-    "observations": 9126,
-    "latest_close": 31.049999237060547,
-    "return_21d": 0.6666667007935001,
-    "return_63d": 1.3051223920955057,
-    "volatility_63d": 1.3672435889879109,
-    "drawdown_252d": -0.4066501404432542,
-    "momentum_label": "strong_uptrend",
-    "volatility_label": "extreme",
-    "drawdown_label": "deep"
-  },
+  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/VIX/bazi.json",
   "error": null
 }

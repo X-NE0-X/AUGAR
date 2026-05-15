@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Optional
+from typing import Optional, Union
 
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
@@ -18,7 +18,7 @@ class GenerateBody(BaseModel):
     symbols: Optional[list[str]] = None
     engines: list[str] = Field(default_factory=lambda: list(ALL_ENGINES))
     seed: Optional[int] = None
-    force: bool = False
+    force: Union[bool, str, list[str]] = False
     output_root: str = str(DEFAULT_OUTPUT_ROOT)
     provider: str = "mock"
     model: str = "gpt-5.5"
@@ -35,8 +35,8 @@ class GenerateBody(BaseModel):
     language: str = "zh-CN"
     tone: str = "calm_analytical"
     reading_depth: str = "standard"
-    include_raw_artifact: bool = True
-    include_market_context: bool = True
+    include_raw_artifact: bool = False
+    include_market_context: bool = False
     allow_error_cards: bool = False
     engine_overrides: dict = Field(default_factory=dict)
 

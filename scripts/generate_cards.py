@@ -19,9 +19,9 @@ def main() -> None:
     parser.add_argument("--period")
     parser.add_argument("--all-indexes", action="store_true")
     parser.add_argument("--symbols", default="")
-    parser.add_argument("--engines", default=",".join(ALL_ENGINES))
+    parser.add_argument("--engines")
     parser.add_argument("--seed", type=int)
-    parser.add_argument("--force", action="store_true")
+    parser.add_argument("--force", nargs="?", const="all", default=None, help="Skip existing cards by default. Use --force or --force all to regenerate all, or --force tarot,wenwang for selected engines.")
     parser.add_argument("--output-root", default="")
     parser.add_argument("--provider")
     parser.add_argument("--model")
@@ -36,6 +36,8 @@ def main() -> None:
     parser.add_argument("--codex-home")
     parser.add_argument("--codex-path")
     parser.add_argument("--allow-error-cards", action="store_true")
+    parser.add_argument("--include-raw-artifact", action="store_true")
+    parser.add_argument("--include-market-context", action="store_true")
     args = parser.parse_args()
     config = {}
     if args.config:
@@ -52,7 +54,7 @@ def main() -> None:
         symbols=symbols,
         engines=[e.strip() for e in str(args.engines or ",".join(config.get("engines", ALL_ENGINES))).split(",") if e.strip()],
         seed=args.seed if args.seed is not None else config.get("seed"),
-        force=args.force or bool(config.get("force", False)),
+        force=args.force if args.force is not None else config.get("force", False),
         provider=args.provider or config.get("provider", "mock"),
         model=args.model or config.get("model", "gpt-5.5"),
         base_url=args.base_url or config.get("base_url"),
@@ -65,6 +67,8 @@ def main() -> None:
         codex_auth_path=args.codex_auth_path or config.get("codex_auth_path"),
         codex_home=args.codex_home or config.get("codex_home"),
         codex_path=args.codex_path or config.get("codex_path"),
+        include_raw_artifact=args.include_raw_artifact or bool(config.get("include_raw_artifact", False)),
+        include_market_context=args.include_market_context or bool(config.get("include_market_context", False)),
         allow_error_cards=args.allow_error_cards or bool(config.get("allow_error_cards", False)),
     )
     if args.output_root:

@@ -17,14 +17,14 @@
     "display_name": "市场脉冲"
   },
   "result": {
-    "score": 36,
+    "score": 33,
     "polarity": "unfavorable",
     "intensity": "medium",
     "omen_type": "market_pulse_unfavorable_medium",
     "headline": "Market Pulse reads HSI as unfavorable",
-    "subline": "Momentum is falling; volatility is normal.",
-    "short_reading": "The market_pulse artifact is interpreted against the market pulse for HSI.",
-    "long_reading": "This mock interpreter preserves the release pipeline and schema while keeping the engine-specific raw artifact visible for audit and later real-model replacement."
+    "subline": "falling colors the reading; market pulse remains falling.",
+    "short_reading": "The mock market_pulse reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
+    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
   },
   "symbols": [
     "falling",
@@ -33,74 +33,11 @@
   "risk_tags": [
     "drawdown"
   ],
-  "raw_artifact": {
-    "seed": "market_pulse|HSI|2026-04-M|stable",
-    "engine_id": "market_pulse",
-    "asset": {
-      "ticker": "HSI",
-      "name": "HSI",
-      "region": "HK",
-      "asset_class": "INDEX"
-    },
-    "period": {
-      "id": "2026-04-M",
-      "label": "April 2026",
-      "freq": "M"
-    },
-    "market_context": {
-      "ticker": "HSI",
-      "region": "HK",
-      "asset_class": "INDEX",
-      "data_start": "1986-12-31",
-      "data_end": "2026-03-27",
-      "observations": 9684,
-      "latest_close": 24951.880859375,
-      "return_21d": -0.05417298865883835,
-      "return_63d": -0.032939162209229544,
-      "volatility_63d": 0.21489464542989045,
-      "drawdown_252d": -0.10784465443388258,
-      "momentum_label": "falling",
-      "volatility_label": "normal",
-      "drawdown_label": "material"
-    },
-    "sop": "market pulse program: momentum, volatility, drawdown and trend labels before narrative interpretation",
-    "pulse": {
-      "latest_close": 24951.880859375,
-      "return_21d": -0.05417298865883835,
-      "return_63d": -0.032939162209229544,
-      "volatility_63d": 0.21489464542989045,
-      "drawdown_252d": -0.10784465443388258,
-      "momentum_label": "falling",
-      "volatility_label": "normal",
-      "drawdown_label": "material"
-    },
-    "frontend_params": {
-      "language": "zh-CN",
-      "tone": "calm_analytical",
-      "reading_depth": "standard",
-      "engine_overrides": {}
-    }
-  },
   "visual": {
     "palette": "indigo",
     "icon": "falling",
     "card_style": "medium"
   },
-  "market_context": {
-    "ticker": "HSI",
-    "region": "HK",
-    "asset_class": "INDEX",
-    "data_start": "1986-12-31",
-    "data_end": "2026-03-27",
-    "observations": 9684,
-    "latest_close": 24951.880859375,
-    "return_21d": -0.05417298865883835,
-    "return_63d": -0.032939162209229544,
-    "volatility_63d": 0.21489464542989045,
-    "drawdown_252d": -0.10784465443388258,
-    "momentum_label": "falling",
-    "volatility_label": "normal",
-    "drawdown_label": "material"
-  },
+  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/HSI/market_pulse.json",
   "error": null
 }

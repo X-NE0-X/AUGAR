@@ -14,5 +14,7 @@
   "codex_auth_path": null,
   "codex_home": null,
   "codex_path": null,
+  "include_raw_artifact": false,
+  "include_market_context": false,
   "allow_error_cards": false
 }

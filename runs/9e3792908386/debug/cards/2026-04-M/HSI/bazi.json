@@ -1,0 +1,230 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "HSI",
+    "name": "HSI",
+    "region": "HK",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-04-M",
+    "label": "April 2026",
+    "freq": "M"
+  },
+  "engine": {
+    "id": "bazi",
+    "name": "Zi Ping BaZi",
+    "display_name": "子平八字"
+  },
+  "result": {
+    "score": 36,
+    "polarity": "unfavorable",
+    "intensity": "medium",
+    "omen_type": "bazi_unfavorable_medium",
+    "headline": "Bazi reads HSI as unfavorable",
+    "subline": "Metal colors the reading; market pulse remains falling.",
+    "short_reading": "The mock bazi reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
+    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+  },
+  "symbols": [
+    "Metal",
+    "weak_day_master_pattern"
+  ],
+  "risk_tags": [
+    "drawdown"
+  ],
+  "raw_artifact": {
+    "seed": "bazi|HSI|2026-04-M|stable",
+    "engine_id": "bazi",
+    "asset": {
+      "ticker": "HSI",
+      "name": "HSI",
+      "region": "HK",
+      "asset_class": "INDEX"
+    },
+    "period": {
+      "id": "2026-04-M",
+      "label": "April 2026",
+      "freq": "M"
+    },
+    "market_context": {
+      "ticker": "HSI",
+      "region": "HK",
+      "asset_class": "INDEX",
+      "data_start": "1986-12-31",
+      "data_end": "2026-03-27",
+      "observations": 9684,
+      "latest_close": 24951.880859375,
+      "return_21d": -0.05417298865883835,
+      "return_63d": -0.032939162209229544,
+      "volatility_63d": 0.21489464542989045,
+      "drawdown_252d": -0.10784465443388258,
+      "momentum_label": "falling",
+      "volatility_label": "normal",
+      "drawdown_label": "material"
+    },
+    "sop": "Zi Ping: true solar proxy, solar-term year/month boundary, four pillars, hidden stems, ten gods, strength, pattern, useful gods before interpretation",
+    "birth_proxy": {
+      "source": "asset data_start plus deterministic ticker offset",
+      "clock_time": "1987-05-27 08:00:00",
+      "longitude": 114.2,
+      "true_solar_time": "1987-05-27 07:37:00",
+      "eot_note": "EoT not applied in v0.1; longitude correction applied as deterministic proxy"
+    },
+    "four_pillars": {
+      "year": {
+        "stem": "Ding",
+        "branch": "Mao"
+      },
+      "month": {
+        "stem": "Bing",
+        "branch": "Wu"
+      },
+      "day": {
+        "stem": "Xin",
+        "branch": "Hai"
+      },
+      "hour": {
+        "stem": "Ren",
+        "branch": "Chen"
+      }
+    },
+    "hidden_stems": {
+      "year": [
+        "Yi"
+      ],
+      "month": [
+        "Ding",
+        "Ji"
+      ],
+      "day": [
+        "Ren",
+        "Jia"
+      ],
+      "hour": [
+        "Wu",
+        "Yi",
+        "Gui"
+      ]
+    },
+    "ten_gods": {
+      "year": {
+        "heavenly_stem": "Officer",
+        "earthly_main_qi": "Wealth",
+        "hidden": [
+          "Wealth"
+        ]
+      },
+      "month": {
+        "heavenly_stem": "Officer",
+        "earthly_main_qi": "Officer",
+        "hidden": [
+          "Officer",
+          "Resource"
+        ]
+      },
+      "day": {
+        "heavenly_stem": "Peer",
+        "earthly_main_qi": "Output",
+        "hidden": [
+          "Output",
+          "Wealth"
+        ]
+      },
+      "hour": {
+        "heavenly_stem": "Output",
+        "earthly_main_qi": "Resource",
+        "hidden": [
+          "Resource",
+          "Wealth",
+          "Output"
+        ]
+      }
+    },
+    "element_counts": {
+      "Wood": 3,
+      "Fire": 5,
+      "Earth": 2,
+      "Metal": 2,
+      "Water": 4
+    },
+    "strength_and_roots": {
+      "day_master": "Xin",
+      "day_element": "Metal",
+      "score": 2,
+      "level": "weak",
+      "month_command": "Wu"
+    },
+    "pattern": {
+      "name": "weak_day_master_pattern",
+      "basis": "month branch Wu and root score 2"
+    },
+    "useful_gods": {
+      "useful": [
+        "Resource",
+        "Peer",
+        "Metal"
+      ],
+      "harmful": [
+        "excess_Fire"
+      ],
+      "basis": "pattern + support/suppress + seasonal balance"
+    },
+    "luck_cycles": [
+      {
+        "age_range": "4-13",
+        "pillar": "BingMao",
+        "calendar_years": "1991-2000"
+      },
+      {
+        "age_range": "14-23",
+        "pillar": "DingChen",
+        "calendar_years": "2001-2010"
+      },
+      {
+        "age_range": "24-33",
+        "pillar": "WuSi",
+        "calendar_years": "2011-2020"
+      },
+      {
+        "age_range": "34-43",
+        "pillar": "JiWu",
+        "calendar_years": "2021-2030"
+      },
+      {
+        "age_range": "44-53",
+        "pillar": "GengWei",
+        "calendar_years": "2031-2040"
+      },
+      {
+        "age_range": "54-63",
+        "pillar": "XinShen",
+        "calendar_years": "2041-2050"
+      },
+      {
+        "age_range": "64-73",
+        "pillar": "RenYou",
+        "calendar_years": "2051-2060"
+      },
+      {
+        "age_range": "74-83",
+        "pillar": "GuiXu",
+        "calendar_years": "2061-2070"
+      }
+    ],
+    "frontend_params": {
+      "language": "zh-CN",
+      "tone": "calm_analytical",
+      "reading_depth": "standard",
+      "engine_overrides": {}
+    }
+  },
+  "visual": {
+    "palette": "indigo",
+    "icon": "metal",
+    "card_style": "medium"
+  },
+  "market_context": null,
+  "raw_ref": null,
+  "error": null
+}

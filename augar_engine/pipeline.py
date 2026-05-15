@@ -1,19 +1,20 @@
 from __future__ import annotations
 
+import json
 import uuid
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Optional
+from typing import Any, Dict, Iterable, List, Optional, Union
 
 from .constants import ALL_ENGINES, DEFAULT_OUTPUT_ROOT, PROJECT_ROOT
-from .core import parse_period, utc_now_iso
+from .core import parse_period, scrub_secrets, utc_now_iso
 from .data import DataProcessing
 from .display import build_composite
-from .exports import export_bundle, export_card, export_index, export_manifest
+from .exports import export_bundle, export_card, export_debug_bundle, export_debug_card, export_index, export_manifest, public_card_path
 from .generators import GENERATOR_BY_ENGINE
 from .interpreter import build_card
 from .llm import LLMClient, LLMParams
-from .schemas import AssetRef, ReadingBundle
+from .schemas import AssetRef, CardResult, EngineRef, OracleCard, PeriodRef, ReadingBundle
 
 
 @dataclass
@@ -22,7 +23,7 @@ class GenerateRequest:
     symbols: Optional[List[str]] = None
     engines: List[str] = field(default_factory=lambda: list(ALL_ENGINES))
     seed: Optional[int] = None
-    force: bool = False
+    force: Union[bool, str, List[str]] = False
     output_root: str = str(DEFAULT_OUTPUT_ROOT)
     provider: str = "mock"
     model: str = "gpt-5.5"
@@ -39,8 +40,8 @@ class GenerateRequest:
     language: str = "zh-CN"
     tone: str = "calm_analytical"
     reading_depth: str = "standard"
-    include_raw_artifact: bool = True
-    include_market_context: bool = True
+    include_raw_artifact: bool = False
+    include_market_context: bool = False
     allow_error_cards: bool = False
     engine_overrides: Dict[str, Any] = field(default_factory=dict)
 
@@ -77,11 +78,36 @@ def run_generation(request: GenerateRequest) -> Dict[str, Any]:
     llm = LLMClient(request.llm_params())
     bundles: List[ReadingBundle] = []
     card_paths: List[str] = []
+    skipped_cards = 0
+    generated_cards = 0
+    force_engines = _normalize_force(request.force)
     for ticker in symbols:
         context = data.context_for(ticker).to_dict()
         asset = AssetRef(ticker=ticker, name=ticker, region=str(context["region"]))
         cards = []
         for engine_id in engines:
+            existing_public_path = public_card_path(
+                OracleCard(
+                    schema_version="0.1",
+                    asset=asset,
+                    period=period,
+                    engine=EngineRef(engine_id, engine_id, engine_id),
+                    result=CardResult(50, "neutral", "low", "existing", "", "", "", ""),
+                    symbols=[],
+                    risk_tags=[],
+                    raw_artifact={},
+                    visual={},
+                ),
+                period.id,
+                output_root,
+            )
+            if not _should_force_engine(engine_id, force_engines) and existing_public_path.exists():
+                card = _card_from_public_json(existing_public_path)
+                cards.append(card)
+                card_paths.append(str(existing_public_path))
+                skipped_cards += 1
+                continue
+
             generator = GENERATOR_BY_ENGINE[engine_id]()
             raw_artifact = generator.generate(asset, period, context, seed=request.seed)
             raw_artifact["frontend_params"] = {
@@ -99,8 +125,21 @@ def run_generation(request: GenerateRequest) -> Dict[str, Any]:
                 include_market_context=request.include_market_context,
                 allow_error_card=request.allow_error_cards,
             )
+            debug_path = export_debug_card(run_id=run_id, card=card)
+            card.raw_ref = _relative_posix(debug_path, PROJECT_ROOT)
             cards.append(card)
-            card_paths.append(str(export_card(card, period.id, output_root)))
+            card_paths.append(
+                str(
+                    export_card(
+                        card,
+                        period.id,
+                        output_root,
+                        include_raw_artifact=request.include_raw_artifact,
+                        include_market_context=request.include_market_context,
+                    )
+                )
+            )
+            generated_cards += 1
 
         bundle = ReadingBundle(
             schema_version="0.1",
@@ -109,9 +148,16 @@ def run_generation(request: GenerateRequest) -> Dict[str, Any]:
             composite=build_composite(cards),
             cards=cards,
             run_id=run_id,
-            generation_params=_public_request_dict(request),
+            generation_params=_debug_request_dict(request),
         )
-        export_bundle(bundle, output_root)
+        export_debug_bundle(run_id=run_id, bundle=bundle)
+        export_bundle(
+            bundle,
+            output_root,
+            include_raw_artifact=request.include_raw_artifact,
+            include_market_context=request.include_market_context,
+            include_generation_params=False,
+        )
         bundles.append(bundle)
 
     coverage = {
@@ -138,9 +184,11 @@ def run_generation(request: GenerateRequest) -> Dict[str, Any]:
         "period": period.id,
         "symbols": symbols,
         "engines": engines,
-        "request": _public_request_dict(request),
+        "request": _debug_request_dict(request),
         "card_paths": card_paths,
         "bundle_count": len(bundles),
+        "generated_cards": generated_cards,
+        "skipped_cards": skipped_cards,
     }
     export_manifest(run_id=run_id, manifest=manifest)
     return {
@@ -150,6 +198,8 @@ def run_generation(request: GenerateRequest) -> Dict[str, Any]:
         "engines": engines,
         "bundle_count": len(bundles),
         "card_count": len(card_paths),
+        "generated_cards": generated_cards,
+        "skipped_cards": skipped_cards,
         "output_root": str(output_root),
     }
 
@@ -164,6 +214,56 @@ def _normalize_engines(raw: Iterable[str]) -> List[str]:
 
 def _public_request_dict(request: GenerateRequest) -> Dict[str, Any]:
     data = asdict(request)
-    if data.get("base_url") is None:
-        data.pop("base_url", None)
-    return data
+    for key in ("base_url", "codex_auth_path", "codex_home", "codex_path"):
+        data.pop(key, None)
+    return scrub_secrets(data)
+
+
+def _debug_request_dict(request: GenerateRequest) -> Dict[str, Any]:
+    return scrub_secrets(asdict(request))
+
+
+def _normalize_force(force: Union[bool, str, List[str]]) -> set[str]:
+    if force is True:
+        return {"all"}
+    if not force:
+        return set()
+    if isinstance(force, str):
+        text = force.strip().lower()
+        if not text:
+            return set()
+        return {item.strip() for item in text.split(",") if item.strip()}
+    return {str(item).strip().lower() for item in force if str(item).strip()}
+
+
+def _should_force_engine(engine_id: str, force_engines: set[str]) -> bool:
+    return "all" in force_engines or engine_id in force_engines
+
+
+def _relative_posix(path: Path, root: Path) -> str:
+    try:
+        return path.resolve().relative_to(root.resolve()).as_posix()
+    except ValueError:
+        return path.as_posix()
+
+
+def _card_from_public_json(path: Path) -> OracleCard:
+    data = json.loads(path.read_text(encoding="utf-8"))
+    asset = AssetRef(**data["asset"])
+    period = PeriodRef(**data["period"])
+    engine = EngineRef(**data["engine"])
+    result = CardResult(**data["result"])
+    return OracleCard(
+        schema_version=data.get("schema_version", "0.1"),
+        asset=asset,
+        period=period,
+        engine=engine,
+        result=result,
+        symbols=list(data.get("symbols", [])),
+        risk_tags=list(data.get("risk_tags", [])),
+        raw_artifact=dict(data.get("raw_artifact", {})),
+        visual=dict(data.get("visual", {})),
+        market_context=data.get("market_context"),
+        raw_ref=data.get("raw_ref"),
+        error=data.get("error"),
+    )

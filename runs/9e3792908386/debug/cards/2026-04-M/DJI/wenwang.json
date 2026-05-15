@@ -1,0 +1,248 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "DJI",
+    "name": "DJI",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-04-M",
+    "label": "April 2026",
+    "freq": "M"
+  },
+  "engine": {
+    "id": "wenwang",
+    "name": "Wenwang Liuyao",
+    "display_name": "文王卦"
+  },
+  "result": {
+    "score": 20,
+    "polarity": "unfavorable",
+    "intensity": "high",
+    "omen_type": "wenwang_unfavorable_high",
+    "headline": "Wenwang reads DJI as unfavorable",
+    "subline": "Thunder over Wind colors the reading; market pulse remains strong_downtrend.",
+    "short_reading": "The mock wenwang reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
+    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+  },
+  "symbols": [
+    "Thunder over Wind",
+    "Wealth"
+  ],
+  "risk_tags": [
+    "drawdown"
+  ],
+  "raw_artifact": {
+    "seed": "wenwang|DJI|2026-04-M|stable",
+    "engine_id": "wenwang",
+    "asset": {
+      "ticker": "DJI",
+      "name": "DJI",
+      "region": "US",
+      "asset_class": "INDEX"
+    },
+    "period": {
+      "id": "2026-04-M",
+      "label": "April 2026",
+      "freq": "M"
+    },
+    "market_context": {
+      "ticker": "DJI",
+      "region": "US",
+      "asset_class": "INDEX",
+      "data_start": "1992-01-02",
+      "data_end": "2026-03-27",
+      "observations": 8620,
+      "latest_close": 45166.640625,
+      "return_21d": -0.08752785221036163,
+      "return_63d": -0.0731466174788542,
+      "volatility_63d": 0.13748616915867248,
+      "drawdown_252d": -0.10005351737415558,
+      "momentum_label": "strong_downtrend",
+      "volatility_label": "normal",
+      "drawdown_label": "material"
+    },
+    "sop": "Wenwang Liuyao NaJia: six coin tosses, primary/changed hexagram, palace, self/response, NaJia labels before interpretation",
+    "question": "DJI market tendency during April 2026",
+    "tosses_bottom_to_top": [
+      {
+        "line": 1,
+        "coins": [
+          3,
+          2,
+          3
+        ],
+        "value": 8,
+        "moving": false
+      },
+      {
+        "line": 2,
+        "coins": [
+          2,
+          3,
+          2
+        ],
+        "value": 7,
+        "moving": false
+      },
+      {
+        "line": 3,
+        "coins": [
+          2,
+          2,
+          3
+        ],
+        "value": 7,
+        "moving": false
+      },
+      {
+        "line": 4,
+        "coins": [
+          3,
+          3,
+          3
+        ],
+        "value": 9,
+        "moving": true
+      },
+      {
+        "line": 5,
+        "coins": [
+          2,
+          2,
+          2
+        ],
+        "value": 6,
+        "moving": true
+      },
+      {
+        "line": 6,
+        "coins": [
+          3,
+          2,
+          3
+        ],
+        "value": 8,
+        "moving": false
+      }
+    ],
+    "line_values_bottom_to_top": [
+      8,
+      7,
+      7,
+      9,
+      6,
+      8
+    ],
+    "moving_lines": [
+      4,
+      5
+    ],
+    "primary_hexagram": {
+      "upper_trigram": "Zhen",
+      "lower_trigram": "Xun",
+      "image": "Thunder over Wind",
+      "palace": "Zhen Palace",
+      "element_frame": [
+        "Wood",
+        "Wood"
+      ]
+    },
+    "changed_hexagram": {
+      "upper_trigram": "Kan",
+      "lower_trigram": "Xun",
+      "image": "Water over Wind"
+    },
+    "installed_lines": [
+      {
+        "line": 1,
+        "yin_yang": "yin",
+        "value": 8,
+        "moving": false,
+        "earthly_branch": "Chen",
+        "six_relative": "Officer",
+        "six_spirit": "White Tiger",
+        "role": "supporting"
+      },
+      {
+        "line": 2,
+        "yin_yang": "yang",
+        "value": 7,
+        "moving": false,
+        "earthly_branch": "Si",
+        "six_relative": "Self",
+        "six_spirit": "White Tiger",
+        "role": "supporting"
+      },
+      {
+        "line": 3,
+        "yin_yang": "yang",
+        "value": 7,
+        "moving": false,
+        "earthly_branch": "Wu",
+        "six_relative": "Parents",
+        "six_spirit": "Black Tortoise",
+        "role": "self"
+      },
+      {
+        "line": 4,
+        "yin_yang": "yang",
+        "value": 9,
+        "moving": true,
+        "earthly_branch": "Wei",
+        "six_relative": "Siblings",
+        "six_spirit": "Vermilion Bird",
+        "role": "supporting"
+      },
+      {
+        "line": 5,
+        "yin_yang": "yin",
+        "value": 6,
+        "moving": true,
+        "earthly_branch": "Shen",
+        "six_relative": "Offspring",
+        "six_spirit": "Flying Serpent",
+        "role": "supporting"
+      },
+      {
+        "line": 6,
+        "yin_yang": "yin",
+        "value": 8,
+        "moving": false,
+        "earthly_branch": "You",
+        "six_relative": "Wealth",
+        "six_spirit": "Hook Snake",
+        "role": "response"
+      }
+    ],
+    "month_branch": "Si",
+    "day_branch": "Wu",
+    "xun_kong": [
+      "Si",
+      "Wu"
+    ],
+    "useful_god": {
+      "main": "Wealth",
+      "reason": "market price/return question defaults to Wealth; Officer is pressure/risk reference"
+    },
+    "tags": [
+      "strong_downtrend",
+      "normal"
+    ],
+    "frontend_params": {
+      "language": "zh-CN",
+      "tone": "calm_analytical",
+      "reading_depth": "standard",
+      "engine_overrides": {}
+    }
+  },
+  "visual": {
+    "palette": "indigo",
+    "icon": "thunder_over_wind",
+    "card_style": "high"
+  },
+  "market_context": null,
+  "raw_ref": null,
+  "error": null
+}

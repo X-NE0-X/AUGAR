@@ -1,0 +1,228 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "FTSE",
+    "name": "FTSE",
+    "region": "UK",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-04-M",
+    "label": "April 2026",
+    "freq": "M"
+  },
+  "engine": {
+    "id": "bazi",
+    "name": "Zi Ping BaZi",
+    "display_name": "子平八字"
+  },
+  "result": {
+    "score": 30,
+    "polarity": "unfavorable",
+    "intensity": "high",
+    "omen_type": "bazi_unfavorable_high",
+    "headline": "Bazi reads FTSE as unfavorable",
+    "subline": "Wood colors the reading; market pulse remains mixed.",
+    "short_reading": "The mock bazi reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
+    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+  },
+  "symbols": [
+    "Wood",
+    "strong_day_master_pattern"
+  ],
+  "risk_tags": [
+    "mixed_momentum"
+  ],
+  "raw_artifact": {
+    "seed": "bazi|FTSE|2026-04-M|stable",
+    "engine_id": "bazi",
+    "asset": {
+      "ticker": "FTSE",
+      "name": "FTSE",
+      "region": "UK",
+      "asset_class": "INDEX"
+    },
+    "period": {
+      "id": "2026-04-M",
+      "label": "April 2026",
+      "freq": "M"
+    },
+    "market_context": {
+      "ticker": "FTSE",
+      "region": "UK",
+      "asset_class": "INDEX",
+      "data_start": "1984-01-03",
+      "data_end": "2026-03-27",
+      "observations": 10670,
+      "latest_close": 9967.400390625,
+      "return_21d": -0.08106611124621088,
+      "return_63d": 0.010226563687731227,
+      "volatility_63d": 0.13673706931447324,
+      "drawdown_252d": -0.0864479728446409,
+      "momentum_label": "mixed",
+      "volatility_label": "normal",
+      "drawdown_label": "shallow"
+    },
+    "sop": "Zi Ping: true solar proxy, solar-term year/month boundary, four pillars, hidden stems, ten gods, strength, pattern, useful gods before interpretation",
+    "birth_proxy": {
+      "source": "asset data_start plus deterministic ticker offset",
+      "clock_time": "1984-11-11 21:00:00",
+      "longitude": -0.1,
+      "true_solar_time": "1984-11-11 21:00:00",
+      "eot_note": "EoT not applied in v0.1; longitude correction applied as deterministic proxy"
+    },
+    "four_pillars": {
+      "year": {
+        "stem": "Jia",
+        "branch": "Zi"
+      },
+      "month": {
+        "stem": "Bing",
+        "branch": "Zi"
+      },
+      "day": {
+        "stem": "Jia",
+        "branch": "Shen"
+      },
+      "hour": {
+        "stem": "Yi",
+        "branch": "Hai"
+      }
+    },
+    "hidden_stems": {
+      "year": [
+        "Gui"
+      ],
+      "month": [
+        "Gui"
+      ],
+      "day": [
+        "Geng",
+        "Ren",
+        "Wu"
+      ],
+      "hour": [
+        "Ren",
+        "Jia"
+      ]
+    },
+    "ten_gods": {
+      "year": {
+        "heavenly_stem": "Peer",
+        "earthly_main_qi": "Resource",
+        "hidden": [
+          "Resource"
+        ]
+      },
+      "month": {
+        "heavenly_stem": "Output",
+        "earthly_main_qi": "Resource",
+        "hidden": [
+          "Resource"
+        ]
+      },
+      "day": {
+        "heavenly_stem": "Peer",
+        "earthly_main_qi": "Officer",
+        "hidden": [
+          "Officer",
+          "Resource",
+          "Wealth"
+        ]
+      },
+      "hour": {
+        "heavenly_stem": "Peer",
+        "earthly_main_qi": "Resource",
+        "hidden": [
+          "Resource",
+          "Peer"
+        ]
+      }
+    },
+    "element_counts": {
+      "Wood": 7,
+      "Fire": 2,
+      "Earth": 1,
+      "Metal": 1,
+      "Water": 4
+    },
+    "strength_and_roots": {
+      "day_master": "Jia",
+      "day_element": "Wood",
+      "score": 7,
+      "level": "strong",
+      "month_command": "Zi"
+    },
+    "pattern": {
+      "name": "strong_day_master_pattern",
+      "basis": "month branch Zi and root score 7"
+    },
+    "useful_gods": {
+      "useful": [
+        "Output",
+        "Wealth",
+        "Earth"
+      ],
+      "harmful": [
+        "excess_Wood"
+      ],
+      "basis": "pattern + support/suppress + seasonal balance"
+    },
+    "luck_cycles": [
+      {
+        "age_range": "3-12",
+        "pillar": "BingMao",
+        "calendar_years": "1987-1996"
+      },
+      {
+        "age_range": "13-22",
+        "pillar": "DingChen",
+        "calendar_years": "1997-2006"
+      },
+      {
+        "age_range": "23-32",
+        "pillar": "WuSi",
+        "calendar_years": "2007-2016"
+      },
+      {
+        "age_range": "33-42",
+        "pillar": "JiWu",
+        "calendar_years": "2017-2026"
+      },
+      {
+        "age_range": "43-52",
+        "pillar": "GengWei",
+        "calendar_years": "2027-2036"
+      },
+      {
+        "age_range": "53-62",
+        "pillar": "XinShen",
+        "calendar_years": "2037-2046"
+      },
+      {
+        "age_range": "63-72",
+        "pillar": "RenYou",
+        "calendar_years": "2047-2056"
+      },
+      {
+        "age_range": "73-82",
+        "pillar": "GuiXu",
+        "calendar_years": "2057-2066"
+      }
+    ],
+    "frontend_params": {
+      "language": "zh-CN",
+      "tone": "calm_analytical",
+      "reading_depth": "standard",
+      "engine_overrides": {}
+    }
+  },
+  "visual": {
+    "palette": "indigo",
+    "icon": "wood",
+    "card_style": "high"
+  },
+  "market_context": null,
+  "raw_ref": null,
+  "error": null
+}

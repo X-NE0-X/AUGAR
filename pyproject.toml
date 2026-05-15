@@ -5,11 +5,16 @@ description = "AUGAR backend oracle card generation pipeline"
 requires-python = ">=3.10"
 dependencies = [
   "pandas",
+  "pyarrow",
   "duckdb",
   "fastapi",
+  "uvicorn[standard]",
   "requests",
   "openai",
 ]
+
+[project.optional-dependencies]
+dev = ["pytest"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -17,14 +17,14 @@
     "display_name": "占星"
   },
   "result": {
-    "score": 31,
+    "score": 28,
     "polarity": "unfavorable",
     "intensity": "high",
     "omen_type": "astrology_unfavorable_high",
     "headline": "Astrology reads DJI as unfavorable",
-    "subline": "Momentum is strong_downtrend; volatility is normal.",
-    "short_reading": "The astrology artifact is interpreted against the market pulse for DJI.",
-    "long_reading": "This mock interpreter preserves the release pipeline and schema while keeping the engine-specific raw artifact visible for audit and later real-model replacement."
+    "subline": "Scorpio colors the reading; market pulse remains strong_downtrend.",
+    "short_reading": "The mock astrology reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
+    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
   },
   "symbols": [
     "Scorpio",
@@ -33,72 +33,11 @@
   "risk_tags": [
     "drawdown"
   ],
-  "raw_artifact": {
-    "seed": "astrology|DJI|2026-04-M|stable",
-    "engine_id": "astrology",
-    "asset": {
-      "ticker": "DJI",
-      "name": "DJI",
-      "region": "US",
-      "asset_class": "INDEX"
-    },
-    "period": {
-      "id": "2026-04-M",
-      "label": "April 2026",
-      "freq": "M"
-    },
-    "market_context": {
-      "ticker": "DJI",
-      "region": "US",
-      "asset_class": "INDEX",
-      "data_start": "1992-01-02",
-      "data_end": "2026-03-27",
-      "observations": 8620,
-      "latest_close": 45166.640625,
-      "return_21d": -0.08752785221036163,
-      "return_63d": -0.0731466174788542,
-      "volatility_63d": 0.13748616915867248,
-      "drawdown_252d": -0.10005351737415558,
-      "momentum_label": "strong_downtrend",
-      "volatility_label": "normal",
-      "drawdown_label": "material"
-    },
-    "sop": "asset zodiac proxy, zodiac season, moon/cycle tags before market mood interpretation",
-    "asset_zodiac": "Scorpio",
-    "period_zodiac_season": "Aries",
-    "moon_phase_proxy": "full",
-    "cycle_tags": [
-      "strong_downtrend",
-      "normal",
-      "accumulation_cycle"
-    ],
-    "frontend_params": {
-      "language": "zh-CN",
-      "tone": "calm_analytical",
-      "reading_depth": "standard",
-      "engine_overrides": {}
-    }
-  },
   "visual": {
     "palette": "indigo",
     "icon": "scorpio",
     "card_style": "high"
   },
-  "market_context": {
-    "ticker": "DJI",
-    "region": "US",
-    "asset_class": "INDEX",
-    "data_start": "1992-01-02",
-    "data_end": "2026-03-27",
-    "observations": 8620,
-    "latest_close": 45166.640625,
-    "return_21d": -0.08752785221036163,
-    "return_63d": -0.0731466174788542,
-    "volatility_63d": 0.13748616915867248,
-    "drawdown_252d": -0.10005351737415558,
-    "momentum_label": "strong_downtrend",
-    "volatility_label": "normal",
-    "drawdown_label": "material"
-  },
+  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/DJI/astrology.json",
   "error": null
 }

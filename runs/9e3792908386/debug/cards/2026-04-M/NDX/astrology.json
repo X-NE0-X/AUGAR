@@ -1,0 +1,90 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "NDX",
+    "name": "NDX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-04-M",
+    "label": "April 2026",
+    "freq": "M"
+  },
+  "engine": {
+    "id": "astrology",
+    "name": "Astrology Cycle",
+    "display_name": "占星"
+  },
+  "result": {
+    "score": 53,
+    "polarity": "neutral",
+    "intensity": "low",
+    "omen_type": "astrology_neutral_low",
+    "headline": "Astrology reads NDX as neutral",
+    "subline": "Aquarius colors the reading; market pulse remains strong_downtrend.",
+    "short_reading": "The mock astrology reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
+    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+  },
+  "symbols": [
+    "Aquarius",
+    "full"
+  ],
+  "risk_tags": [
+    "drawdown"
+  ],
+  "raw_artifact": {
+    "seed": "astrology|NDX|2026-04-M|stable",
+    "engine_id": "astrology",
+    "asset": {
+      "ticker": "NDX",
+      "name": "NDX",
+      "region": "US",
+      "asset_class": "INDEX"
+    },
+    "period": {
+      "id": "2026-04-M",
+      "label": "April 2026",
+      "freq": "M"
+    },
+    "market_context": {
+      "ticker": "NDX",
+      "region": "US",
+      "asset_class": "INDEX",
+      "data_start": "1985-10-01",
+      "data_end": "2026-03-27",
+      "observations": 10201,
+      "latest_close": 23132.76953125,
+      "return_21d": -0.07595955778606556,
+      "return_63d": -0.0983538380059179,
+      "volatility_63d": 0.16748650035337917,
+      "drawdown_252d": -0.11436053893100784,
+      "momentum_label": "strong_downtrend",
+      "volatility_label": "normal",
+      "drawdown_label": "material"
+    },
+    "sop": "asset zodiac proxy, zodiac season, moon/cycle tags before market mood interpretation",
+    "asset_zodiac": "Aquarius",
+    "period_zodiac_season": "Aries",
+    "moon_phase_proxy": "full",
+    "cycle_tags": [
+      "strong_downtrend",
+      "normal",
+      "accumulation_cycle"
+    ],
+    "frontend_params": {
+      "language": "zh-CN",
+      "tone": "calm_analytical",
+      "reading_depth": "standard",
+      "engine_overrides": {}
+    }
+  },
+  "visual": {
+    "palette": "indigo",
+    "icon": "aquarius",
+    "card_style": "low"
+  },
+  "market_context": null,
+  "raw_ref": null,
+  "error": null
+}

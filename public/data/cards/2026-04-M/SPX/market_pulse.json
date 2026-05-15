@@ -17,14 +17,14 @@
     "display_name": "市场脉冲"
   },
   "result": {
-    "score": 30,
+    "score": 22,
     "polarity": "unfavorable",
     "intensity": "high",
     "omen_type": "market_pulse_unfavorable_high",
     "headline": "Market Pulse reads SPX as unfavorable",
-    "subline": "Momentum is strong_downtrend; volatility is normal.",
-    "short_reading": "The market_pulse artifact is interpreted against the market pulse for SPX.",
-    "long_reading": "This mock interpreter preserves the release pipeline and schema while keeping the engine-specific raw artifact visible for audit and later real-model replacement."
+    "subline": "strong_downtrend colors the reading; market pulse remains strong_downtrend.",
+    "short_reading": "The mock market_pulse reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
+    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
   },
   "symbols": [
     "strong_downtrend",
@@ -33,74 +33,11 @@
   "risk_tags": [
     "timing_risk"
   ],
-  "raw_artifact": {
-    "seed": "market_pulse|SPX|2026-04-M|stable",
-    "engine_id": "market_pulse",
-    "asset": {
-      "ticker": "SPX",
-      "name": "SPX",
-      "region": "US",
-      "asset_class": "INDEX"
-    },
-    "period": {
-      "id": "2026-04-M",
-      "label": "April 2026",
-      "freq": "M"
-    },
-    "market_context": {
-      "ticker": "SPX",
-      "region": "US",
-      "asset_class": "INDEX",
-      "data_start": "1927-12-30",
-      "data_end": "2026-03-27",
-      "observations": 24676,
-      "latest_close": 6368.85009765625,
-      "return_21d": -0.07816192198296101,
-      "return_63d": -0.08124576754344881,
-      "volatility_63d": 0.12890737119726206,
-      "drawdown_252d": -0.08737425722456615,
-      "momentum_label": "strong_downtrend",
-      "volatility_label": "normal",
-      "drawdown_label": "shallow"
-    },
-    "sop": "market pulse program: momentum, volatility, drawdown and trend labels before narrative interpretation",
-    "pulse": {
-      "latest_close": 6368.85009765625,
-      "return_21d": -0.07816192198296101,
-      "return_63d": -0.08124576754344881,
-      "volatility_63d": 0.12890737119726206,
-      "drawdown_252d": -0.08737425722456615,
-      "momentum_label": "strong_downtrend",
-      "volatility_label": "normal",
-      "drawdown_label": "shallow"
-    },
-    "frontend_params": {
-      "language": "zh-CN",
-      "tone": "calm_analytical",
-      "reading_depth": "standard",
-      "engine_overrides": {}
-    }
-  },
   "visual": {
     "palette": "indigo",
     "icon": "strong_downtrend",
     "card_style": "high"
   },
-  "market_context": {
-    "ticker": "SPX",
-    "region": "US",
-    "asset_class": "INDEX",
-    "data_start": "1927-12-30",
-    "data_end": "2026-03-27",
-    "observations": 24676,
-    "latest_close": 6368.85009765625,
-    "return_21d": -0.07816192198296101,
-    "return_63d": -0.08124576754344881,
-    "volatility_63d": 0.12890737119726206,
-    "drawdown_252d": -0.08737425722456615,
-    "momentum_label": "strong_downtrend",
-    "volatility_label": "normal",
-    "drawdown_label": "shallow"
-  },
+  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/SPX/market_pulse.json",
   "error": null
 }

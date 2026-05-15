@@ -17,14 +17,14 @@
     "display_name": "文王卦"
   },
   "result": {
-    "score": 46,
-    "polarity": "neutral",
-    "intensity": "low",
-    "omen_type": "wenwang_neutral_low",
-    "headline": "Wenwang reads 000001.SS as neutral",
-    "subline": "Momentum is mixed; volatility is normal.",
-    "short_reading": "The wenwang artifact is interpreted against the market pulse for 000001.SS.",
-    "long_reading": "This mock interpreter preserves the release pipeline and schema while keeping the engine-specific raw artifact visible for audit and later real-model replacement."
+    "score": 31,
+    "polarity": "unfavorable",
+    "intensity": "high",
+    "omen_type": "wenwang_unfavorable_high",
+    "headline": "Wenwang reads 000001.SS as unfavorable",
+    "subline": "Fire over Wind colors the reading; market pulse remains mixed.",
+    "short_reading": "The mock wenwang reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
+    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
   },
   "symbols": [
     "Fire over Wind",
@@ -33,227 +33,11 @@
   "risk_tags": [
     "mixed_momentum"
   ],
-  "raw_artifact": {
-    "seed": "wenwang|000001.SS|2026-04-M|stable",
-    "engine_id": "wenwang",
-    "asset": {
-      "ticker": "000001.SS",
-      "name": "000001.SS",
-      "region": "CN",
-      "asset_class": "INDEX"
-    },
-    "period": {
-      "id": "2026-04-M",
-      "label": "April 2026",
-      "freq": "M"
-    },
-    "market_context": {
-      "ticker": "000001.SS",
-      "region": "CN",
-      "asset_class": "INDEX",
-      "data_start": "1997-07-02",
-      "data_end": "2026-03-27",
-      "observations": 6960,
-      "latest_close": 3913.72412109375,
-      "return_21d": -0.05616770486205147,
-      "return_63d": 0.009636081386525497,
-      "volatility_63d": 0.14637859046834714,
-      "drawdown_252d": -0.06428233379010329,
-      "momentum_label": "mixed",
-      "volatility_label": "normal",
-      "drawdown_label": "shallow"
-    },
-    "sop": "Wenwang Liuyao NaJia: six coin tosses, primary/changed hexagram, palace, self/response, NaJia labels before interpretation",
-    "question": "000001.SS market tendency during April 2026",
-    "tosses_bottom_to_top": [
-      {
-        "line": 1,
-        "coins": [
-          3,
-          3,
-          2
-        ],
-        "value": 8,
-        "moving": false
-      },
-      {
-        "line": 2,
-        "coins": [
-          3,
-          2,
-          2
-        ],
-        "value": 7,
-        "moving": false
-      },
-      {
-        "line": 3,
-        "coins": [
-          3,
-          2,
-          2
-        ],
-        "value": 7,
-        "moving": false
-      },
-      {
-        "line": 4,
-        "coins": [
-          3,
-          2,
-          2
-        ],
-        "value": 7,
-        "moving": false
-      },
-      {
-        "line": 5,
-        "coins": [
-          3,
-          3,
-          2
-        ],
-        "value": 8,
-        "moving": false
-      },
-      {
-        "line": 6,
-        "coins": [
-          2,
-          2,
-          3
-        ],
-        "value": 7,
-        "moving": false
-      }
-    ],
-    "line_values_bottom_to_top": [
-      8,
-      7,
-      7,
-      7,
-      8,
-      7
-    ],
-    "moving_lines": [],
-    "primary_hexagram": {
-      "upper_trigram": "Li",
-      "lower_trigram": "Xun",
-      "image": "Fire over Wind",
-      "palace": "Li Palace",
-      "element_frame": [
-        "Fire",
-        "Wood"
-      ]
-    },
-    "changed_hexagram": {
-      "upper_trigram": "Li",
-      "lower_trigram": "Xun",
-      "image": "Fire over Wind"
-    },
-    "installed_lines": [
-      {
-        "line": 1,
-        "yin_yang": "yin",
-        "value": 8,
-        "moving": false,
-        "earthly_branch": "Xu",
-        "six_relative": "Officer",
-        "six_spirit": "White Tiger",
-        "role": "supporting"
-      },
-      {
-        "line": 2,
-        "yin_yang": "yang",
-        "value": 7,
-        "moving": false,
-        "earthly_branch": "Hai",
-        "six_relative": "Self",
-        "six_spirit": "White Tiger",
-        "role": "supporting"
-      },
-      {
-        "line": 3,
-        "yin_yang": "yang",
-        "value": 7,
-        "moving": false,
-        "earthly_branch": "Zi",
-        "six_relative": "Parents",
-        "six_spirit": "Black Tortoise",
-        "role": "self"
-      },
-      {
-        "line": 4,
-        "yin_yang": "yang",
-        "value": 7,
-        "moving": false,
-        "earthly_branch": "Chou",
-        "six_relative": "Siblings",
-        "six_spirit": "Flying Serpent",
-        "role": "supporting"
-      },
-      {
-        "line": 5,
-        "yin_yang": "yin",
-        "value": 8,
-        "moving": false,
-        "earthly_branch": "Yin",
-        "six_relative": "Offspring",
-        "six_spirit": "Vermilion Bird",
-        "role": "supporting"
-      },
-      {
-        "line": 6,
-        "yin_yang": "yang",
-        "value": 7,
-        "moving": false,
-        "earthly_branch": "Mao",
-        "six_relative": "Wealth",
-        "six_spirit": "Vermilion Bird",
-        "role": "response"
-      }
-    ],
-    "month_branch": "Si",
-    "day_branch": "Si",
-    "xun_kong": [
-      "Hai",
-      "Zi"
-    ],
-    "useful_god": {
-      "main": "Wealth",
-      "reason": "market price/return question defaults to Wealth; Officer is pressure/risk reference"
-    },
-    "tags": [
-      "mixed",
-      "normal"
-    ],
-    "frontend_params": {
-      "language": "zh-CN",
-      "tone": "calm_analytical",
-      "reading_depth": "standard",
-      "engine_overrides": {}
-    }
-  },
   "visual": {
     "palette": "indigo",
     "icon": "fire_over_wind",
-    "card_style": "low"
+    "card_style": "high"
   },
-  "market_context": {
-    "ticker": "000001.SS",
-    "region": "CN",
-    "asset_class": "INDEX",
-    "data_start": "1997-07-02",
-    "data_end": "2026-03-27",
-    "observations": 6960,
-    "latest_close": 3913.72412109375,
-    "return_21d": -0.05616770486205147,
-    "return_63d": 0.009636081386525497,
-    "volatility_63d": 0.14637859046834714,
-    "drawdown_252d": -0.06428233379010329,
-    "momentum_label": "mixed",
-    "volatility_label": "normal",
-    "drawdown_label": "shallow"
-  },
+  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000001.SS/wenwang.json",
   "error": null
 }

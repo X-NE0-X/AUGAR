@@ -35,14 +35,21 @@ class AugarTests(unittest.TestCase):
             result = run_generation(GenerateRequest(period="2026-04-M", output_root=str(temp), provider="mock"))
             self.assertEqual(result["bundle_count"], 8)
             self.assertEqual(result["card_count"], 8 * len(ALL_ENGINES))
+            self.assertEqual(result["generated_cards"], 8 * len(ALL_ENGINES))
             index = json.loads((temp / "index.json").read_text(encoding="utf-8"))
             self.assertEqual(len(index["symbols"]), 8)
             self.assertEqual(index["engines"], list(ALL_ENGINES))
             reading = json.loads((temp / "readings" / "2026-04-M" / "SPX.json").read_text(encoding="utf-8"))
             self.assertEqual(len(reading["cards"]), len(ALL_ENGINES))
             for card in reading["cards"]:
-                self.assertIn("raw_artifact", card)
-                self.assertIn("market_context", card)
+                self.assertNotIn("raw_artifact", card)
+                self.assertNotIn("market_context", card)
+                self.assertIn("raw_ref", card)
+            second = run_generation(GenerateRequest(period="2026-04-M", output_root=str(temp), provider="mock"))
+            self.assertEqual(second["generated_cards"], 0)
+            self.assertEqual(second["skipped_cards"], 8 * len(ALL_ENGINES))
+            forced = run_generation(GenerateRequest(period="2026-04-M", output_root=str(temp), provider="mock", force="tarot"))
+            self.assertEqual(forced["generated_cards"], 8)
         finally:
             shutil.rmtree(temp, ignore_errors=True)
 
