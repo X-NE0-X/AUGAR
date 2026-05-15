@@ -19,8 +19,8 @@
     "astrology",
     "market_pulse"
   ],
-  "run_id": "9e3792908386",
-  "generated_at": "2026-05-15T12:32:38+00:00",
+  "run_id": "0b095a8960b2",
+  "generated_at": "2026-05-15T15:24:04+00:00",
   "data_coverage": {
     "000001.SS": {
       "data_start": "1997-07-02",
@@ -75,7 +75,7 @@
       "market_pulse"
     ],
     "seed": null,
-    "force": "all",
+    "force": false,
     "output_root": "C:\\Users\\AndersonMa\\AUGAR\\public\\data",
     "provider": "mock",
     "model": "gpt-5.5",
@@ -85,6 +85,7 @@
     "reasoning_effort": "low",
     "timeout": 90,
     "max_retries": 2,
+    "history_run_id": null,
     "language": "zh-CN",
     "tone": "calm_analytical",
     "reading_depth": "standard",
