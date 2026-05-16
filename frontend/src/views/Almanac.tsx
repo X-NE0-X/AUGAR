@@ -1,19 +1,38 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useToast } from '../components/Toast'
+import { useConfig } from '../context/ConfigContext'
 import { Trophy, TrendingUp, TrendingDown } from 'lucide-react'
+
+const PERIOD = '2026-04-M'
+const fallbackSymbols = ['SPX', 'HSI', 'NDX', 'VIX', 'DJI', 'FTSE', '000300.SS', '000001.SS']
+
+const MONTH_NAMES = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+const formatPeriod = (raw: string): string => {
+  const m = raw.match(/^(\d{4})-(\d{2})-([WMQY])$/)
+  if (!m) return raw
+  const [, year, unit, freq] = m
+  const u = parseInt(unit, 10)
+  if (freq === 'M') return `${MONTH_NAMES[u] || unit} ${year}`
+  if (freq === 'Q') return `Q${u} ${year}`
+  if (freq === 'W') return `W${u} ${year}`
+  return raw
+}
 
 const Almanac = () => {
   const [rankings, setRankings] = useState<any[]>([])
   const { showToast } = useToast()
+  const { t } = useConfig()
+  const navigate = useNavigate()
 
   useEffect(() => {
     fetch('/api/health')
       .then(res => res.json())
       .then(data => {
-        // Mocking some scores for the Almanac
-        const mockRankings = data.symbols.map((s: string) => ({
+        const symbols = data.symbols?.length ? data.symbols : fallbackSymbols
+        const mockRankings = symbols.map((s: string) => ({
           symbol: s,
           score: Math.floor(Math.random() * 60) + 30,
           change: (Math.random() * 4 - 2).toFixed(2)
@@ -23,64 +42,56 @@ const Almanac = () => {
       .catch(() => showToast('Failed to load almanac', 'error'))
   }, [showToast])
 
+  const medalColor = (i: number) => i === 0 ? '#ffd700' : i === 1 ? '#c0c0c0' : i === 2 ? '#cd7f32' : undefined
+
   return (
-    <div style={{ flex: 1, padding: '126px 40px 40px', overflowY: 'auto' }}>
-      <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-        <header style={{ marginBottom: '48px' }}>
-          <h1 style={{ fontSize: '2.5rem', marginBottom: '12px' }}>Period Almanac</h1>
-          <p style={{ color: 'var(--text-secondary)' }}>Universe rankings and omens for 2026-04-M</p>
+    <div className="almanac-page page">
+      <div className="almanac-wrap">
+        <header className="almanac-header">
+          <h1 className="display gold-title">{t('alm.title')}</h1>
+          <p>
+            {t('alm.subtext')}{' '}
+            <span className="period-label-tooltip" title={`Format: YYYY-MM-FREQ (${PERIOD})`}>{formatPeriod(PERIOD)}</span>
+          </p>
         </header>
 
-        <section className="glass" style={{ borderRadius: '24px', padding: '0', overflow: 'hidden' }}>
-          <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-            <thead>
-              <tr style={{ borderBottom: '1px solid var(--glass-border)', background: 'rgba(255,255,255,0.02)' }}>
-                <th style={{ padding: '20px 24px', textAlign: 'left', fontSize: '0.8rem', color: 'var(--text-muted)' }}>RANK</th>
-                <th style={{ padding: '20px 24px', textAlign: 'left', fontSize: '0.8rem', color: 'var(--text-muted)' }}>ASSET</th>
-                <th style={{ padding: '20px 24px', textAlign: 'center', fontSize: '0.8rem', color: 'var(--text-muted)' }}>SCORE</th>
-                <th style={{ padding: '20px 24px', textAlign: 'right', fontSize: '0.8rem', color: 'var(--text-muted)' }}>24H CHANGE</th>
-              </tr>
-            </thead>
-            <tbody>
-              {rankings.map((item, i) => (
-                <motion.tr
-                  key={item.symbol}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.05 }}
-                  style={{ borderBottom: '1px solid var(--glass-border)', cursor: 'pointer' }}
-                  onClick={() => { window.location.href = `/readings/2026-04-M/${item.symbol}` }}
-                >
-                  <td style={{ padding: '20px 24px' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                      {i < 3 ? <Trophy size={16} color={i === 0 ? '#ffd700' : i === 1 ? '#c0c0c0' : '#cd7f32'} /> : <span className="mono" style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{i + 1}</span>}
-                    </div>
-                  </td>
-                  <td style={{ padding: '20px 24px' }}>
-                    <Link to={`/readings/2026-04-M/${item.symbol}`} style={{ fontWeight: 600, textDecoration: 'none' }}>{item.symbol}</Link>
-                  </td>
-                  <td style={{ padding: '20px 24px', textAlign: 'center' }}>
-                    <div style={{ 
-                      display: 'inline-block',
-                      padding: '4px 12px',
-                      borderRadius: '8px',
-                      background: item.score > 60 ? 'rgba(139, 227, 125, 0.1)' : item.score < 45 ? 'rgba(255, 107, 95, 0.1)' : 'rgba(255,255,255,0.05)',
-                      color: item.score > 60 ? 'var(--favorable)' : item.score < 45 ? 'var(--unfavorable)' : 'var(--text-primary)',
-                      fontWeight: 600
-                    }}>
-                      {item.score}
-                    </div>
-                  </td>
-                  <td style={{ padding: '20px 24px', textAlign: 'right' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '8px', color: item.change > 0 ? 'var(--favorable)' : 'var(--unfavorable)' }}>
-                      {item.change > 0 ? <TrendingUp size={14} /> : <TrendingDown size={14} />}
-                      <span className="mono">{item.change}%</span>
-                    </div>
-                  </td>
-                </motion.tr>
-              ))}
-            </tbody>
-          </table>
+        <section className="almanac-table glass">
+          <div className="almanac-thead">
+            <span>{t('alm.rank')}</span>
+            <span>{t('alm.asset')}</span>
+            <span>{t('alm.score')}</span>
+            <span>{t('alm.change')}</span>
+          </div>
+          <div className="almanac-tbody">
+            {rankings.map((item, i) => (
+              <motion.div
+                key={item.symbol}
+                className="almanac-row"
+                initial={{ opacity: 0, x: -8 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: i * 0.04 }}
+                onClick={() => navigate(`/readings/${PERIOD}/${item.symbol}`)}
+              >
+                <span>
+                  {i < 3 ? <Trophy size={16} color={medalColor(i)} /> : <span className="mono rank-num">{i + 1}</span>}
+                </span>
+                <span>
+                  <Link to={`/readings/${PERIOD}/${item.symbol}`} onClick={(e) => e.stopPropagation()} className="almanac-symbol">
+                    {item.symbol}
+                  </Link>
+                </span>
+                <span>
+                  <span className={`almanac-score ${item.score > 60 ? 'high' : item.score < 45 ? 'low' : ''}`}>
+                    {item.score}
+                  </span>
+                </span>
+                <span className={`mono almanac-change ${Number(item.change) >= 0 ? 'up' : 'down'}`}>
+                  {Number(item.change) >= 0 ? <TrendingUp size={14} /> : <TrendingDown size={14} />}
+                  {item.change}%
+                </span>
+              </motion.div>
+            ))}
+          </div>
         </section>
       </div>
     </div>

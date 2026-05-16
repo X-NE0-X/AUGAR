@@ -1,0 +1,18 @@
+{
+  "momentum": {
+    "strong_uptrend": { "ret_21_min": 0.03, "ret_63_min": 0.06 },
+    "rising": { "ret_21_min": 0.0, "ret_63_min": 0.0 },
+    "strong_downtrend": { "ret_21_max": -0.03, "ret_63_max": -0.06 },
+    "falling": { "ret_21_max": 0.0, "ret_63_max": 0.0 }
+  },
+  "volatility": {
+    "extreme": 0.35,
+    "elevated": 0.22,
+    "normal": 0.12
+  },
+  "drawdown": {
+    "deep": -0.25,
+    "material": -0.10,
+    "shallow": -0.03
+  }
+}

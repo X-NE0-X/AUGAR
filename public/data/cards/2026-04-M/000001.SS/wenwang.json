@@ -17,27 +17,35 @@
     "display_name": "文王卦"
   },
   "result": {
-    "score": 31,
-    "polarity": "unfavorable",
-    "intensity": "high",
-    "omen_type": "wenwang_unfavorable_high",
-    "headline": "Wenwang reads 000001.SS as unfavorable",
-    "subline": "Fire over Wind colors the reading; market pulse remains mixed.",
-    "short_reading": "The mock wenwang reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 54,
+    "polarity": "neutral_bullish",
+    "intensity": "moderate",
+    "omen_type": "静卦观望 / Fire-over-Wind consolidation",
+    "headline": "风中有火，势不离场",
+    "subline": "四月倾向不是强攻，而是震荡中保留上行火种；风险来自虚位与压力线未化。",
+    "short_reading": "此卦无动爻，主趋势延续而非剧烈翻转。财富爻居上为应，说明价格端仍有可见牵引，但Self与Parents落入旬空，市场自身信心与基本支撑偏虚。结合近21日回撤、63日轻微正收益与正常波动，四月更像区间修复、反复试探，而不是单边大涨。",
+    "long_reading": "Sir，主卦与变卦同为 Fire over Wind，且无 moving lines，核心信号是 stable but not explosive。Li 火在上、Xun 风在下，表示情绪、政策叙事或资金预期仍能点燃盘面，但底层推进方式偏渗透、渐进，不是直接突破型结构。用神取 Wealth，财富爻在第六爻、为应，说明市场价格的目标感在外部位置，可能受外部预期、政策窗口、资金面或指数权重股表现牵引；但它不动，代表上方吸引存在，却缺少立即兑现的强催化。Self 所在第三爻为 Parents，且 Zi 入旬空；第二爻 Hai 也入旬空。这里的含义是市场自我确认不足，支撑叙事看似存在但实际承载力偏弱，容易出现冲高后回看、消息刺激后缩量、或交易者等待确认的状态。Officer 在初爻并带 White Tiger，压力与风险在低位背景中存在，更多像存量担忧而非突发崩坏。Flying Serpent 落 Siblings，暗示盘中分歧、轮动与资金互相牵制会比较明显。Vermilion Bird 同时临 Offspring 与 Wealth，说明消息、预期表达和风险偏好会直接影响价格读数。综合市场上下文：21日收益为负，63日略正，波动正常，回撤浅，momentum mixed。卦象与数据一致：四月倾向震荡偏修复，低位承接尚可，但上行需要成交与确认配合。更合理的判断是 mild positive bias inside a choppy range，而不是趋势性牛市启动。若月内出现放量突破，则财富爻在应位可被激活；若继续缩量，则旬空会表现为反弹乏力。"
   },
   "symbols": [
     "Fire over Wind",
-    "Wealth"
+    "静卦",
+    "Wealth at response",
+    "Self/Parents in xun kong",
+    "White Tiger Officer",
+    "Vermilion Bird price narrative"
   ],
   "risk_tags": [
-    "mixed_momentum"
+    "false_breakout",
+    "low_conviction_support",
+    "policy_headline_sensitivity",
+    "range_chop",
+    "upside_requires_volume_confirmation"
   ],
   "visual": {
-    "palette": "indigo",
-    "icon": "fire_over_wind",
-    "card_style": "high"
+    "palette": "ember red, wind green, muted charcoal",
+    "icon": "flame-over-reeds",
+    "card_style": "calm analytical oracle card with restrained market-grid texture"
   },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000001.SS/wenwang.json",
+  "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/wenwang.json",
   "error": null
 }

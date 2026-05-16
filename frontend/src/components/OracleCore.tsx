@@ -32,6 +32,7 @@ export const OracleCore = ({ status = 'idle' }: { status?: 'idle' | 'generating'
           }}
           transition={{ duration: status === 'generating' ? 2.2 : 6, repeat: Infinity, ease: 'easeInOut' }}
         >
+          <div className="oracle-meridian" />
           <div className="oracle-constellation">
             <i />
             <i />

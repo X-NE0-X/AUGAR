@@ -17,27 +17,36 @@
     "display_name": "子平八字"
   },
   "result": {
-    "score": 59,
-    "polarity": "neutral",
-    "intensity": "medium",
-    "omen_type": "bazi_neutral_medium",
-    "headline": "Bazi reads 000001.SS as neutral",
-    "subline": "Wood colors the reading; market pulse remains mixed.",
-    "short_reading": "The mock bazi reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 42,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "constraint_pressure",
+    "headline": "官杀偏重，木弱承压",
+    "subline": "April 2026 shows pressure before recovery; structure is defensive, not trend-following.",
+    "short_reading": "此象以弱甲木遇重金为核心。盘中 Metal 最盛，Officer 多现，代表规则、压力、外部约束与估值压制；Wood 根气不足，Resource 与 Peer 虽为用神，但水木支持偏少。结合市场状态，近 21 日回撤明显，63 日仍略正，说明不是完全破局，而是短线承压、方向混杂。",
+    "long_reading": "四柱呈现弱日主格局：Jia Wood 生于 Xu 月，地支土金偏厚，天干又见 Geng、Xin，Officer 气势集中。对指数而言，这更像是 liquidity 与 policy expectation 被压缩后的整理期，而不是顺畅上攻的月份。Wealth 与 Officer 同时偏多，通常意味着资金面对收益预期仍有计算，但交易环境受监管、宏观数据、汇率或外部风险定价牵制，risk appetite 难以自然扩张。\n\n用神落在 Resource、Peer、Wood，说明真正能改善局面的不是更强的金土压力，而是增量流动性、盈利预期修复、政策确认或市场内部共振。当前 market_context 显示 21d return 为负，63d return 小幅为正，volatility normal，drawdown shallow；这组数据与命局一致：并非深度危机，而是上方有压、下方尚有支撑的 compression phase。\n\n因此 April 2026 的读法偏谨慎。若有反弹，更可能是被压后的技术修复，而非趋势确认。若金气继续增强，容易表现为权重指数承压、成交缩量、反弹持续性不足。更好的信号应来自水木之象：资金回流、政策托底、成长或内需板块扩散、以及指数重新站回关键均线后的量能确认。"
   },
   "symbols": [
-    "Wood",
-    "weak_day_master_pattern"
+    "Jia Wood weak day master",
+    "Geng-Xin Officer pressure",
+    "Xu month command",
+    "excess Metal",
+    "Resource and Peer as useful gods",
+    "mixed momentum",
+    "shallow drawdown"
   ],
   "risk_tags": [
-    "mixed_momentum"
+    "short_term_pressure",
+    "policy_sensitivity",
+    "liquidity_constraint",
+    "false_breakout_risk",
+    "range_bound_market"
   ],
   "visual": {
-    "palette": "indigo",
-    "icon": "wood",
-    "card_style": "medium"
+    "palette": "cool steel with muted green accents",
+    "icon": "bent young tree under metal weight",
+    "card_style": "restrained analytical omen card with sharp borders and low saturation"
   },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000001.SS/bazi.json",
+  "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/bazi.json",
   "error": null
 }

@@ -9,7 +9,17 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from augar_engine.constants import ALL_ENGINES
+from augar_engine.constants import (
+    ALL_ENGINES,
+    DEFAULT_MAX_OUTPUT_TOKENS,
+    DEFAULT_MAX_RETRIES,
+    DEFAULT_MODEL,
+    DEFAULT_PROVIDER,
+    DEFAULT_REASONING_EFFORT,
+    DEFAULT_TEMPERATURE,
+    DEFAULT_TIMEOUT,
+    DEFAULT_TOP_P,
+)
 from augar_engine.pipeline import GenerateRequest, run_generation
 
 
@@ -56,15 +66,15 @@ def main() -> None:
         engines=[e.strip() for e in str(args.engines or ",".join(config.get("engines", ALL_ENGINES))).split(",") if e.strip()],
         seed=args.seed if args.seed is not None else config.get("seed"),
         force=args.force if args.force is not None else config.get("force", False),
-        provider=args.provider or config.get("provider", "mock"),
-        model=args.model or config.get("model", "gpt-5.5"),
+        provider=args.provider or config.get("provider", DEFAULT_PROVIDER),
+        model=args.model or config.get("model", DEFAULT_MODEL),
         base_url=args.base_url or config.get("base_url"),
-        temperature=args.temperature if args.temperature is not None else config.get("temperature", 0.4),
-        top_p=args.top_p if args.top_p is not None else config.get("top_p", 1.0),
-        max_output_tokens=args.max_output_tokens if args.max_output_tokens is not None else config.get("max_output_tokens", 1200),
-        reasoning_effort=args.reasoning_effort or config.get("reasoning_effort", "low"),
-        timeout=args.timeout if args.timeout is not None else config.get("timeout", 90),
-        max_retries=args.max_retries if args.max_retries is not None else config.get("max_retries", 2),
+        temperature=args.temperature if args.temperature is not None else config.get("temperature", DEFAULT_TEMPERATURE),
+        top_p=args.top_p if args.top_p is not None else config.get("top_p", DEFAULT_TOP_P),
+        max_output_tokens=args.max_output_tokens if args.max_output_tokens is not None else config.get("max_output_tokens", DEFAULT_MAX_OUTPUT_TOKENS),
+        reasoning_effort=args.reasoning_effort or config.get("reasoning_effort", DEFAULT_REASONING_EFFORT),
+        timeout=args.timeout if args.timeout is not None else config.get("timeout", DEFAULT_TIMEOUT),
+        max_retries=args.max_retries if args.max_retries is not None else config.get("max_retries", DEFAULT_MAX_RETRIES),
         codex_auth_path=args.codex_auth_path or config.get("codex_auth_path"),
         codex_home=args.codex_home or config.get("codex_home"),
         codex_path=args.codex_path or config.get("codex_path"),

@@ -2,6 +2,16 @@ from __future__ import annotations
 
 from typing import Any, Dict
 
+from .constants import (
+    DEFAULT_RISK_TAG,
+    ERROR_CARD_INTENSITY,
+    ERROR_CARD_POLARITY,
+    ERROR_CARD_SCORE,
+    ERROR_CARD_VISUAL,
+    MAX_RISK_TAGS,
+    MAX_SYMBOLS_PER_CARD,
+    SCHEMA_VERSION,
+)
 from .llm import LLMClient
 from .schemas import AssetRef, CardResult, EngineRef, OracleCard, PeriodRef
 
@@ -28,17 +38,17 @@ def build_card(
     try:
         interpreted = llm.interpret(engine_id, raw_artifact)
         result = _coerce_result(interpreted)
-        symbols = [str(x) for x in interpreted.get("symbols", [])][:8] or [engine_id]
-        risks = [str(x) for x in interpreted.get("risk_tags", [])][:8] or ["timing_risk"]
+        symbols = [str(x) for x in interpreted.get("symbols", [])][:MAX_SYMBOLS_PER_CARD] or [engine_id]
+        risks = [str(x) for x in interpreted.get("risk_tags", [])][:MAX_RISK_TAGS] or [DEFAULT_RISK_TAG]
         visual = interpreted.get("visual") if isinstance(interpreted.get("visual"), dict) else {}
         error = None
     except Exception as exc:
         if not allow_error_card:
             raise
         result = CardResult(
-            score=50,
-            polarity="neutral",
-            intensity="low",
+            score=ERROR_CARD_SCORE,
+            polarity=ERROR_CARD_POLARITY,
+            intensity=ERROR_CARD_INTENSITY,
             omen_type=f"{engine_id}_interpreter_error",
             headline=f"{ENGINE_META[engine_id].display_name} interpretation failed",
             subline="Raw artifact was generated, but interpreter failed.",
@@ -47,11 +57,11 @@ def build_card(
         )
         symbols = [engine_id, "interpreter_error"]
         risks = ["interpreter_error"]
-        visual = {"palette": "gray", "icon": "alert", "card_style": "low"}
+        visual = dict(ERROR_CARD_VISUAL)
         error = {"type": type(exc).__name__, "message": str(exc)}
 
     return OracleCard(
-        schema_version="0.1",
+        schema_version=SCHEMA_VERSION,
         asset=asset,
         period=period,
         engine=ENGINE_META[engine_id],

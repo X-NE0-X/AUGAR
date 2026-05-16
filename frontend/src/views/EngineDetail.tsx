@@ -3,6 +3,8 @@ import { Link, useParams } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Check, ChevronLeft, Copy, Share2, Terminal } from 'lucide-react'
 import { useToast } from '../components/Toast'
+import { useConfig } from '../context/ConfigContext'
+import { getTarotImage } from '../lib/tarotAssets'
 
 const engineLabels: Record<string, string> = {
   tarot: 'Tarot',
@@ -13,9 +15,12 @@ const engineLabels: Record<string, string> = {
   market_pulse: 'Market Pulse',
 }
 
+const cleanTag = (value: string): string => String(value).split(':')[0].trim()
+
 const EngineDetail = () => {
   const { period, ticker, engine } = useParams()
   const { showToast } = useToast()
+  const { t, label: trLabel } = useConfig()
   const [card, setCard] = useState<any>(null)
   const [terminalMode, setTerminalMode] = useState(false)
   const [copied, setCopied] = useState(false)
@@ -24,8 +29,8 @@ const EngineDetail = () => {
     fetch(`/api/cards/${period}/${ticker}/${engine}`)
       .then((res) => res.ok ? res.json() : Promise.reject())
       .then((json) => setCard(json))
-      .catch(() => showToast('Failed to load card details', 'error'))
-  }, [period, ticker, engine, showToast])
+      .catch(() => showToast(t('detail.loadFailed'), 'error'))
+  }, [period, ticker, engine, showToast, t])
 
   const rawPayload = useMemo(() => {
     return JSON.stringify(card?.raw_artifact || card?.raw_ref || card || {}, null, 2)
@@ -35,26 +40,26 @@ const EngineDetail = () => {
     try {
       await navigator.clipboard.writeText(rawPayload)
       setCopied(true)
-      showToast('Raw artifact copied to clipboard', 'success')
+      showToast(t('detail.copyOk'), 'success')
       setTimeout(() => setCopied(false), 2000)
     } catch {
-      showToast('Clipboard is blocked in this browser session.', 'info')
+      showToast(t('detail.copyBlocked'), 'info')
     }
   }
 
   const handleShare = async () => {
     try {
       await navigator.clipboard.writeText(window.location.href)
-      showToast('Card link copied.', 'success')
+      showToast(t('detail.shareOk'), 'success')
     } catch {
-      showToast('Share link is ready in the address bar.', 'info')
+      showToast(t('detail.shareFallback'), 'info')
     }
   }
 
   if (!card) {
     return (
       <div className="engine-detail-loading page">
-        <p className="mono">Decoding oracle signal...</p>
+        <p className="mono">{t('detail.loading')}</p>
       </div>
     )
   }
@@ -68,7 +73,7 @@ const EngineDetail = () => {
         <div className="engine-detail-identity">
           <Link to={`/readings/${period}/${ticker}`} className="back-link">
             <ChevronLeft size={18} />
-            <span className="mono">Overview</span>
+            <span className="mono">{t('detail.overview')}</span>
           </Link>
           <div className="identity-rule" />
           <div>
@@ -80,11 +85,11 @@ const EngineDetail = () => {
         <div className="reading-actions">
           <button className="glass-button" onClick={() => setTerminalMode((value) => !value)}>
             <Terminal size={16} />
-            <span>{terminalMode ? 'Visual' : 'Raw'}</span>
+            <span>{terminalMode ? t('detail.visual') : t('detail.raw')}</span>
           </button>
           <button className="glass-button" onClick={handleShare}>
             <Share2 size={16} />
-            <span>Share</span>
+            <span>{t('reading.share')}</span>
           </button>
         </div>
       </header>
@@ -103,7 +108,7 @@ const EngineDetail = () => {
                 <span className="mono">RAW_ARTIFACT.JSON</span>
                 <button onClick={handleCopyRaw}>
                   {copied ? <Check size={15} /> : <Copy size={15} />}
-                  <span>{copied ? 'COPIED' : 'COPY'}</span>
+                  <span>{copied ? t('detail.copied') : t('detail.copy')}</span>
                 </button>
               </div>
               <pre className="mono">{rawPayload}</pre>
@@ -123,8 +128,8 @@ const EngineDetail = () => {
                 <p className="engine-reading">{card.result?.long_reading}</p>
 
                 <div className="engine-meta-grid">
-                  <MetaBlock title="Signals" items={card.symbols || []} />
-                  <MetaBlock title="Risk Tags" items={card.risk_tags || []} danger />
+                  <MetaBlock title={t('detail.signals')} items={card.symbols || []} translate={trLabel} />
+                  <MetaBlock title={t('detail.risks')} items={card.risk_tags || []} translate={trLabel} danger />
                 </div>
               </div>
 
@@ -139,12 +144,12 @@ const EngineDetail = () => {
   )
 }
 
-const MetaBlock = ({ title, items, danger = false }: { title: string; items: string[]; danger?: boolean }) => (
+const MetaBlock = ({ title, items, translate, danger = false }: { title: string; items: string[]; translate: (value: string) => string; danger?: boolean }) => (
   <div className="engine-meta-block">
     <h4 className="mono">{title}</h4>
     <div>
       {items.slice(0, 8).map((item) => (
-        <span className={danger ? 'danger' : ''} key={item}>{item.replaceAll('_', ' ')}</span>
+        <span className={danger ? 'danger' : ''} key={item}>{translate(cleanTag(item))}</span>
       ))}
     </div>
   </div>
@@ -158,13 +163,17 @@ const EngineHeroVisual = ({ card }: { card: any }) => {
     const labels = symbols.slice(0, 3)
     return (
       <div className="hero-tarot">
-        {labels.map((label: string, index: number) => (
-          <div className="hero-tarot-card" key={label}>
-            <small>{String(index + 1).padStart(2, '0')}</small>
-            <b>{label}</b>
-            <i />
-          </div>
-        ))}
+        {labels.map((label: string, index: number) => {
+          const image = getTarotImage(label)
+          return (
+            <div className="hero-tarot-card" key={label}>
+              {image && <img src={image} alt={cleanTag(label)} />}
+              <small>{String(index + 1).padStart(2, '0')}</small>
+              <b>{cleanTag(label)}</b>
+              <i />
+            </div>
+          )
+        })}
       </div>
     )
   }
@@ -173,7 +182,7 @@ const EngineHeroVisual = ({ card }: { card: any }) => {
     return (
       <div className="hero-hexagram">
         {[1, 2, 3, 4, 5, 6].map((line) => <i key={line} className={line % 2 ? 'solid' : 'broken'} />)}
-        <b>{symbols[0]}</b>
+        <b>{cleanTag(symbols[0])}</b>
       </div>
     )
   }
@@ -184,7 +193,7 @@ const EngineHeroVisual = ({ card }: { card: any }) => {
         {['Wood', 'Fire', 'Earth', 'Metal', 'Water'].map((item, index) => (
           <span key={item} style={{ '--i': index } as CSSProperties}>{item}</span>
         ))}
-        <b>{symbols[0]}</b>
+        <b>{cleanTag(symbols[0])}</b>
       </div>
     )
   }
@@ -195,7 +204,7 @@ const EngineHeroVisual = ({ card }: { card: any }) => {
         {Array.from({ length: 12 }).map((_, index) => (
           <i key={index} style={{ '--i': index } as CSSProperties}>{index + 1}</i>
         ))}
-        <b>{symbols[0]}</b>
+        <b>{cleanTag(symbols[0])}</b>
       </div>
     )
   }
@@ -206,7 +215,7 @@ const EngineHeroVisual = ({ card }: { card: any }) => {
         {['Moon', 'Sun', 'Mars', 'Jupiter', 'Saturn'].map((planet, index) => (
           <span key={planet} style={{ '--i': index } as CSSProperties}>{planet}</span>
         ))}
-        <b>{symbols[0]}</b>
+        <b>{cleanTag(symbols[0])}</b>
       </div>
     )
   }
@@ -216,7 +225,7 @@ const EngineHeroVisual = ({ card }: { card: any }) => {
       {Array.from({ length: 34 }).map((_, index) => (
         <i key={index} style={{ height: `${24 + ((index * 23) % 70)}%` }} />
       ))}
-      <b>{symbols[0]}</b>
+      <b>{cleanTag(symbols[0])}</b>
     </div>
   )
 }

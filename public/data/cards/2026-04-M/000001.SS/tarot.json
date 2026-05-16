@@ -17,27 +17,35 @@
     "display_name": "塔罗"
   },
   "result": {
-    "score": 26,
-    "polarity": "unfavorable",
-    "intensity": "high",
-    "omen_type": "tarot_unfavorable_high",
-    "headline": "Tarot reads 000001.SS as unfavorable",
-    "subline": "Five of Swords colors the reading; market pulse remains mixed.",
-    "short_reading": "The mock tarot reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 41,
+    "polarity": "bearish-neutral",
+    "intensity": "moderate",
+    "omen_type": "defensive_consolidation",
+    "headline": "守势未稳，反弹缺少统御力",
+    "subline": "April 2026 的牌面更像震荡修复中的谨慎防守，而不是趋势性上攻。",
+    "short_reading": "这组 Celtic Cross 对 000001.SS 给出偏谨慎的信号：短期下跌后的市场有过渡与修复意图，但主导力量不足，资金更倾向收缩、防守和等待。若有反弹，容易表现为技术性回补，而非清晰趋势 reversal。",
+    "long_reading": "Present 的 Five of Swords reversed 显示前期冲突或杀跌情绪正在退潮，但不是胜利后的扩张，而是市场开始避免继续消耗。Crossing 的 Six of Swords upright 指向迁移、换仓与风险再平衡，说明 April 2026 的核心不是强攻，而是从压力区转向相对稳定区。\n\nRoot 的 Nine of Wands reversed 暗示底层承接疲弱，连续防守后的耐心下降；Past 的 The Empress upright 说明此前仍有流动性、政策预期或估值修复带来的滋养，但 Goal 的 Five of Pentacles upright 把目标层压低到避险、修补损失和寻找安全边际。Near Future 的 Four of Pentacles upright 强化了这个判断：资金会更重视保住已有仓位和控制回撤，而不是主动追高。\n\nYou 位的 The Devil upright 是风险点，代表市场容易被短线诱惑、杠杆情绪或旧有套牢结构牵引。Environment 的 Four of Cups upright 则说明外部环境偏冷淡，增量买盘兴趣有限。Hopes & Fears 的 Three of Swords reversed 有修复伤口的愿望，但 Outcome 的 The Emperor reversed 表明 April 2026 缺少稳定领导性力量，指数即便企稳，也可能表现为上有压力、下有支撑的拉锯。\n\n结合 artifact 中 21d return 为 -5.62%、63d return 小幅正、63d volatility normal、252d drawdown shallow，牌面与市场状态一致：不是深熊崩坏，也不是强趋势突破，更像浅回撤后的 defensive consolidation。策略含义上，应关注关键支撑是否守住、反弹是否有成交与权重板块确认；若缺少确认，追涨的 risk-reward 不佳。"
   },
   "symbols": [
-    "Five of Swords",
-    "The Emperor"
+    "Five of Swords reversed: 冲突降温但信心未复原",
+    "Six of Swords upright: 迁移、换仓、风险再平衡",
+    "Four of Pentacles upright: 防守仓位、流动性收缩",
+    "The Devil upright: 杠杆诱惑、套牢牵引、短线依赖",
+    "The Emperor reversed: 缺少稳定主导与趋势纪律"
   ],
   "risk_tags": [
-    "mixed_momentum"
+    "weak_leadership",
+    "range_bound_market",
+    "low_conviction_rebound",
+    "defensive_positioning",
+    "chasing_risk",
+    "sentiment_fatigue"
   ],
   "visual": {
-    "palette": "indigo",
-    "icon": "five_of_swords",
-    "card_style": "high"
+    "palette": "muted steel blue, graphite, pale gold accent",
+    "icon": "reversed emperor crown over a narrow price channel",
+    "card_style": "calm analytical tarot-market card with restrained contrast and defensive geometry"
   },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000001.SS/tarot.json",
+  "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/tarot.json",
   "error": null
 }

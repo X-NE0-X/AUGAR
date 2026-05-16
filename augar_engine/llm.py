@@ -12,24 +12,37 @@ from typing import Any, Dict, Optional
 
 import requests
 
-from .constants import PROJECT_ROOT
+from .constants import (
+    CODEX_CHECK_TIMEOUT,
+    DEFAULT_MAX_OUTPUT_TOKENS,
+    DEFAULT_MAX_RETRIES,
+    DEFAULT_MODEL,
+    DEFAULT_PROVIDER,
+    DEFAULT_REASONING_EFFORT,
+    DEFAULT_TEMPERATURE,
+    DEFAULT_TIMEOUT,
+    DEFAULT_TOP_P,
+    OPENAI_BASE_URL,
+    PROJECT_ROOT,
+)
 
 
 @dataclass
 class LLMParams:
-    provider: str = "mock"
-    model: str = "gpt-5.5"
+    provider: str = DEFAULT_PROVIDER
+    model: str = DEFAULT_MODEL
     base_url: Optional[str] = None
-    temperature: float = 0.4
-    top_p: float = 1.0
-    max_output_tokens: int = 1200
-    reasoning_effort: Optional[str] = "low"
-    timeout: int = 90
-    max_retries: int = 2
+    temperature: float = DEFAULT_TEMPERATURE
+    top_p: float = DEFAULT_TOP_P
+    max_output_tokens: int = DEFAULT_MAX_OUTPUT_TOKENS
+    reasoning_effort: Optional[str] = DEFAULT_REASONING_EFFORT
+    timeout: int = DEFAULT_TIMEOUT
+    max_retries: int = DEFAULT_MAX_RETRIES
     codex_auth_path: Optional[str] = None
     codex_home: Optional[str] = None
     codex_path: Optional[str] = None
     history_run_id: Optional[str] = None
+    api_key: Optional[str] = None
 
     def public_dict(self) -> Dict[str, Any]:
         return asdict(self)
@@ -49,7 +62,7 @@ class LLMClient:
             return self._mock_interpret(engine_id, raw_artifact)
         if self.params.provider == "chatgpt_oauth":
             return self._chatgpt_oauth(engine_id, raw_artifact)
-        if self.params.provider in {"openai", "openai_compatible", "local", "custom"}:
+        if self.params.provider in {"openai", "openai_compatible", "deepseek", "local", "custom"}:
             return self._openai_compatible(engine_id, raw_artifact)
         raise ValueError(f"Unsupported LLM provider: {self.params.provider}")
 
@@ -185,10 +198,21 @@ class LLMClient:
         return risks or ["timing_risk"]
 
     def _openai_compatible(self, engine_id: str, raw_artifact: Dict[str, Any]) -> Dict[str, Any]:
-        api_key = os.getenv("OPENAI_API_KEY") or os.getenv("AUGAR_LLM_API_KEY")
+        if self.params.api_key:
+            api_key = self.params.api_key
+        elif self.params.provider == "deepseek":
+            api_key = os.getenv("DEEPSEEK_API_KEY") or os.getenv("AUGAR_LLM_API_KEY") or os.getenv("OPENAI_API_KEY")
+            default_base = "https://api.deepseek.com/v1"
+        else:
+            api_key = os.getenv("OPENAI_API_KEY") or os.getenv("AUGAR_LLM_API_KEY")
+            default_base = OPENAI_BASE_URL
+        if self.params.provider == "deepseek" and not self.params.base_url:
+            default_base = "https://api.deepseek.com/v1"
+        else:
+            default_base = OPENAI_BASE_URL
         if not api_key:
-            raise RuntimeError("OPENAI_API_KEY or AUGAR_LLM_API_KEY is required for non-mock providers")
-        base_url = (self.params.base_url or "https://api.openai.com/v1").rstrip("/")
+            raise RuntimeError("OPENAI_API_KEY, DEEPSEEK_API_KEY, or AUGAR_LLM_API_KEY is required for non-mock providers")
+        base_url = (self.params.base_url or default_base).rstrip("/")
         url = f"{base_url}/chat/completions"
         prompt = (
             "You are an AUGAR oracle interpreter. Return strict JSON with keys: "
@@ -206,6 +230,8 @@ class LLMClient:
             "top_p": self.params.top_p,
             "max_tokens": self.params.max_output_tokens,
         }
+        if self.params.provider == "deepseek" and self.params.reasoning_effort:
+            payload["reasoning_effort"] = self.params.reasoning_effort
         last_error: Exception | None = None
         for _ in range(max(1, self.params.max_retries + 1)):
             try:
@@ -272,7 +298,7 @@ class LLMClient:
                     encoding="utf-8",
                     errors="replace",
                     capture_output=True,
-                    timeout=45,
+                    timeout=CODEX_CHECK_TIMEOUT,
                 )
                 if status.returncode != 0:
                     raise RuntimeError(f"Codex ChatGPT OAuth is not logged in for CODEX_HOME={codex_home}: {status.stdout}{status.stderr}")
@@ -282,7 +308,7 @@ class LLMClient:
                     "-m",
                     self.params.model,
                     "-c",
-                    f'model_reasoning_effort="{self.params.reasoning_effort or "low"}"',
+                    f'model_reasoning_effort="{self.params.reasoning_effort or DEFAULT_REASONING_EFFORT}"',
                     "--ephemeral",
                     "--skip-git-repo-check",
                     "-s",

@@ -12,18 +12,18 @@
     "freq": "M"
   },
   "composite": {
-    "score": 40,
-    "polarity": "unfavorable",
-    "intensity": "high",
+    "score": 46,
+    "polarity": "negative",
+    "intensity": "moderate",
     "dominant_symbols": [
-      "Five of Swords",
-      "The Emperor",
-      "Fire over Wind",
-      "Wealth",
-      "Wood",
-      "weak_day_master_pattern"
+      "mixed momentum",
+      "shallow drawdown",
+      "normal volatility",
+      "Five of Swords reversed: 冲突降温但信心未复原",
+      "Six of Swords upright: 迁移、换仓、风险再平衡",
+      "Four of Pentacles upright: 防守仓位、流动性收缩"
     ],
-    "headline": "The oracles lean unfavorable with high intensity"
+    "headline": "The oracles lean negative with moderate intensity"
   },
   "cards": [
     {
@@ -45,28 +45,36 @@
         "display_name": "塔罗"
       },
       "result": {
-        "score": 26,
-        "polarity": "unfavorable",
-        "intensity": "high",
-        "omen_type": "tarot_unfavorable_high",
-        "headline": "Tarot reads 000001.SS as unfavorable",
-        "subline": "Five of Swords colors the reading; market pulse remains mixed.",
-        "short_reading": "The mock tarot reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 41,
+        "polarity": "bearish-neutral",
+        "intensity": "moderate",
+        "omen_type": "defensive_consolidation",
+        "headline": "守势未稳，反弹缺少统御力",
+        "subline": "April 2026 的牌面更像震荡修复中的谨慎防守，而不是趋势性上攻。",
+        "short_reading": "这组 Celtic Cross 对 000001.SS 给出偏谨慎的信号：短期下跌后的市场有过渡与修复意图，但主导力量不足，资金更倾向收缩、防守和等待。若有反弹，容易表现为技术性回补，而非清晰趋势 reversal。",
+        "long_reading": "Present 的 Five of Swords reversed 显示前期冲突或杀跌情绪正在退潮，但不是胜利后的扩张，而是市场开始避免继续消耗。Crossing 的 Six of Swords upright 指向迁移、换仓与风险再平衡，说明 April 2026 的核心不是强攻，而是从压力区转向相对稳定区。\n\nRoot 的 Nine of Wands reversed 暗示底层承接疲弱，连续防守后的耐心下降；Past 的 The Empress upright 说明此前仍有流动性、政策预期或估值修复带来的滋养，但 Goal 的 Five of Pentacles upright 把目标层压低到避险、修补损失和寻找安全边际。Near Future 的 Four of Pentacles upright 强化了这个判断：资金会更重视保住已有仓位和控制回撤，而不是主动追高。\n\nYou 位的 The Devil upright 是风险点，代表市场容易被短线诱惑、杠杆情绪或旧有套牢结构牵引。Environment 的 Four of Cups upright 则说明外部环境偏冷淡，增量买盘兴趣有限。Hopes & Fears 的 Three of Swords reversed 有修复伤口的愿望，但 Outcome 的 The Emperor reversed 表明 April 2026 缺少稳定领导性力量，指数即便企稳，也可能表现为上有压力、下有支撑的拉锯。\n\n结合 artifact 中 21d return 为 -5.62%、63d return 小幅正、63d volatility normal、252d drawdown shallow，牌面与市场状态一致：不是深熊崩坏，也不是强趋势突破，更像浅回撤后的 defensive consolidation。策略含义上，应关注关键支撑是否守住、反弹是否有成交与权重板块确认；若缺少确认，追涨的 risk-reward 不佳。"
       },
       "symbols": [
-        "Five of Swords",
-        "The Emperor"
+        "Five of Swords reversed: 冲突降温但信心未复原",
+        "Six of Swords upright: 迁移、换仓、风险再平衡",
+        "Four of Pentacles upright: 防守仓位、流动性收缩",
+        "The Devil upright: 杠杆诱惑、套牢牵引、短线依赖",
+        "The Emperor reversed: 缺少稳定主导与趋势纪律"
       ],
       "risk_tags": [
-        "mixed_momentum"
+        "weak_leadership",
+        "range_bound_market",
+        "low_conviction_rebound",
+        "defensive_positioning",
+        "chasing_risk",
+        "sentiment_fatigue"
       ],
       "visual": {
-        "palette": "indigo",
-        "icon": "five_of_swords",
-        "card_style": "high"
+        "palette": "muted steel blue, graphite, pale gold accent",
+        "icon": "reversed emperor crown over a narrow price channel",
+        "card_style": "calm analytical tarot-market card with restrained contrast and defensive geometry"
       },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000001.SS/tarot.json",
+      "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/tarot.json",
       "error": null
     },
     {
@@ -88,28 +96,36 @@
         "display_name": "文王卦"
       },
       "result": {
-        "score": 31,
-        "polarity": "unfavorable",
-        "intensity": "high",
-        "omen_type": "wenwang_unfavorable_high",
-        "headline": "Wenwang reads 000001.SS as unfavorable",
-        "subline": "Fire over Wind colors the reading; market pulse remains mixed.",
-        "short_reading": "The mock wenwang reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 54,
+        "polarity": "neutral_bullish",
+        "intensity": "moderate",
+        "omen_type": "静卦观望 / Fire-over-Wind consolidation",
+        "headline": "风中有火，势不离场",
+        "subline": "四月倾向不是强攻，而是震荡中保留上行火种；风险来自虚位与压力线未化。",
+        "short_reading": "此卦无动爻，主趋势延续而非剧烈翻转。财富爻居上为应，说明价格端仍有可见牵引，但Self与Parents落入旬空，市场自身信心与基本支撑偏虚。结合近21日回撤、63日轻微正收益与正常波动，四月更像区间修复、反复试探，而不是单边大涨。",
+        "long_reading": "Sir，主卦与变卦同为 Fire over Wind，且无 moving lines，核心信号是 stable but not explosive。Li 火在上、Xun 风在下，表示情绪、政策叙事或资金预期仍能点燃盘面，但底层推进方式偏渗透、渐进，不是直接突破型结构。用神取 Wealth，财富爻在第六爻、为应，说明市场价格的目标感在外部位置，可能受外部预期、政策窗口、资金面或指数权重股表现牵引；但它不动，代表上方吸引存在，却缺少立即兑现的强催化。Self 所在第三爻为 Parents，且 Zi 入旬空；第二爻 Hai 也入旬空。这里的含义是市场自我确认不足，支撑叙事看似存在但实际承载力偏弱，容易出现冲高后回看、消息刺激后缩量、或交易者等待确认的状态。Officer 在初爻并带 White Tiger，压力与风险在低位背景中存在，更多像存量担忧而非突发崩坏。Flying Serpent 落 Siblings，暗示盘中分歧、轮动与资金互相牵制会比较明显。Vermilion Bird 同时临 Offspring 与 Wealth，说明消息、预期表达和风险偏好会直接影响价格读数。综合市场上下文：21日收益为负，63日略正，波动正常，回撤浅，momentum mixed。卦象与数据一致：四月倾向震荡偏修复，低位承接尚可，但上行需要成交与确认配合。更合理的判断是 mild positive bias inside a choppy range，而不是趋势性牛市启动。若月内出现放量突破，则财富爻在应位可被激活；若继续缩量，则旬空会表现为反弹乏力。"
       },
       "symbols": [
         "Fire over Wind",
-        "Wealth"
+        "静卦",
+        "Wealth at response",
+        "Self/Parents in xun kong",
+        "White Tiger Officer",
+        "Vermilion Bird price narrative"
       ],
       "risk_tags": [
-        "mixed_momentum"
+        "false_breakout",
+        "low_conviction_support",
+        "policy_headline_sensitivity",
+        "range_chop",
+        "upside_requires_volume_confirmation"
       ],
       "visual": {
-        "palette": "indigo",
-        "icon": "fire_over_wind",
-        "card_style": "high"
+        "palette": "ember red, wind green, muted charcoal",
+        "icon": "flame-over-reeds",
+        "card_style": "calm analytical oracle card with restrained market-grid texture"
       },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000001.SS/wenwang.json",
+      "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/wenwang.json",
       "error": null
     },
     {
@@ -131,28 +147,37 @@
         "display_name": "子平八字"
       },
       "result": {
-        "score": 59,
-        "polarity": "neutral",
-        "intensity": "medium",
-        "omen_type": "bazi_neutral_medium",
-        "headline": "Bazi reads 000001.SS as neutral",
-        "subline": "Wood colors the reading; market pulse remains mixed.",
-        "short_reading": "The mock bazi reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 42,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "constraint_pressure",
+        "headline": "官杀偏重，木弱承压",
+        "subline": "April 2026 shows pressure before recovery; structure is defensive, not trend-following.",
+        "short_reading": "此象以弱甲木遇重金为核心。盘中 Metal 最盛，Officer 多现，代表规则、压力、外部约束与估值压制；Wood 根气不足，Resource 与 Peer 虽为用神，但水木支持偏少。结合市场状态，近 21 日回撤明显，63 日仍略正，说明不是完全破局，而是短线承压、方向混杂。",
+        "long_reading": "四柱呈现弱日主格局：Jia Wood 生于 Xu 月，地支土金偏厚，天干又见 Geng、Xin，Officer 气势集中。对指数而言，这更像是 liquidity 与 policy expectation 被压缩后的整理期，而不是顺畅上攻的月份。Wealth 与 Officer 同时偏多，通常意味着资金面对收益预期仍有计算，但交易环境受监管、宏观数据、汇率或外部风险定价牵制，risk appetite 难以自然扩张。\n\n用神落在 Resource、Peer、Wood，说明真正能改善局面的不是更强的金土压力，而是增量流动性、盈利预期修复、政策确认或市场内部共振。当前 market_context 显示 21d return 为负，63d return 小幅为正，volatility normal，drawdown shallow；这组数据与命局一致：并非深度危机，而是上方有压、下方尚有支撑的 compression phase。\n\n因此 April 2026 的读法偏谨慎。若有反弹，更可能是被压后的技术修复，而非趋势确认。若金气继续增强，容易表现为权重指数承压、成交缩量、反弹持续性不足。更好的信号应来自水木之象：资金回流、政策托底、成长或内需板块扩散、以及指数重新站回关键均线后的量能确认。"
       },
       "symbols": [
-        "Wood",
-        "weak_day_master_pattern"
+        "Jia Wood weak day master",
+        "Geng-Xin Officer pressure",
+        "Xu month command",
+        "excess Metal",
+        "Resource and Peer as useful gods",
+        "mixed momentum",
+        "shallow drawdown"
       ],
       "risk_tags": [
-        "mixed_momentum"
+        "short_term_pressure",
+        "policy_sensitivity",
+        "liquidity_constraint",
+        "false_breakout_risk",
+        "range_bound_market"
       ],
       "visual": {
-        "palette": "indigo",
-        "icon": "wood",
-        "card_style": "medium"
+        "palette": "cool steel with muted green accents",
+        "icon": "bent young tree under metal weight",
+        "card_style": "restrained analytical omen card with sharp borders and low saturation"
       },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000001.SS/bazi.json",
+      "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/bazi.json",
       "error": null
     },
     {
@@ -174,28 +199,39 @@
         "display_name": "紫微斗数"
       },
       "result": {
-        "score": 33,
-        "polarity": "unfavorable",
-        "intensity": "medium",
-        "omen_type": "ziwei_unfavorable_medium",
-        "headline": "Ziwei reads 000001.SS as unfavorable",
-        "subline": "Jumen colors the reading; market pulse remains mixed.",
-        "short_reading": "The mock ziwei reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 42,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "结构承压 / 分歧放大",
+        "headline": "根基有星，外缘失衡",
+        "subline": "April 2026 的盘面不是崩坏相，而是重心仍在、交易层面易被分歧与反复消耗。",
+        "short_reading": "此盘以 Property 宫为命，Ziwei、Tianfu、Qisha 同坐并带 natal Hua Lu，说明底层权重、制度性支撑与长期资产锚仍然存在。但流年落 Siblings，Taiyang、Tanlang 带 period Hua Quan，市场话语权、板块轮动和资金分歧会被放大。Friends 宫见 period Hua Ji，Travel 宫又有 natal Hua Ji，外部流动、同侪风险偏好与跨市场扰动是主要压力源。结合近 21 日回撤为负、63 日动量略正，属于短线偏弱但中线未完全破坏的 mixed omen。",
+        "long_reading": "核心结构并不空。命宫落 Property，且 Property 宫有 Ziwei、Tianfu、Qisha 与 natal Hua Lu，这是一种“底盘尚厚、但驱动偏硬”的组合：指数仍有政策、权重与估值锚支撑，真正的问题不是没有承接，而是上行动能需要更强的共识来释放。Qisha 使节奏更像切换与清算，而不是平滑修复。\n\nApril 2026 的年度流焦点落在 Siblings，并牵动 Career、Wealth、Fortune。Siblings 宫 Taiyang、Tanlang 加 period Hua Quan，代表市场内部的表达权增强：热点、叙事、风格轮动会更主动，但也更容易把分歧推到台前。Wealth 宫虽有 Wenchang、Tianyue 和 period Hua Ke，说明资金面并非完全失序，仍有理性定价和修复窗口；但 Tuoluo 同在，使上涨过程更拖滞，容易出现看似有机会、实际推进不顺的状态。\n\n风险点集中在 Friends 与 Travel。Friends 宫 Lianzhen、Tianliang、Wenqu 遇 period Hua Ji，暗示市场同盟、机构共识、外部解释框架容易变成负担；Travel 宫 natal Hua Ji 则指向外围市场、汇率、跨境资金或宏观消息面的干扰。Career 宫仅见 Huoxing，意味着执行层面会有 sudden impulse：急拉、急杀、政策预期或产业消息引发的短促波动都可能出现。\n\n因此此月判断偏谨慎：不是系统性深跌的凶相，但短线风险明显高于顺势收益。较合理的 interpretation 是“守根基、避追逐、等确认”。若指数能守住浅回撤区并重新凝聚 Wealth/Fortune 的正向信号，后续仍有修复余地；若 Friends/Travel 的 Hua Ji 被外部事件触发，则容易出现二次探底或高波动震荡。"
       },
       "symbols": [
-        "Jumen",
-        "Property"
+        "Property 命宫",
+        "Ziwei-Tianfu-Qisha",
+        "natal Hua Lu",
+        "Siblings 流宫",
+        "Taiyang-Tanlang Hua Quan",
+        "Friends Hua Ji",
+        "Travel Hua Ji",
+        "Wealth Hua Ke"
       ],
       "risk_tags": [
-        "mixed_momentum"
+        "short_term_weakness",
+        "rotation_noise",
+        "external_shock",
+        "consensus_fragility",
+        "headline_volatility",
+        "range_bound_market"
       ],
       "visual": {
-        "palette": "indigo",
-        "icon": "jumen",
-        "card_style": "medium"
+        "palette": "deep indigo, muted gold, ash gray, warning red",
+        "icon": "fortified palace under crossing winds",
+        "card_style": "calm analytical oracle card with firm central axis and fractured outer ring"
       },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000001.SS/ziwei.json",
+      "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/ziwei.json",
       "error": null
     },
     {
@@ -217,28 +253,36 @@
         "display_name": "占星"
       },
       "result": {
-        "score": 66,
-        "polarity": "favorable",
-        "intensity": "medium",
-        "omen_type": "astrology_favorable_medium",
-        "headline": "Astrology reads 000001.SS as favorable",
-        "subline": "Gemini colors the reading; market pulse remains mixed.",
-        "short_reading": "The mock astrology reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 58,
+        "polarity": "neutral_positive",
+        "intensity": "moderate",
+        "omen_type": "air_fire_new_cycle",
+        "headline": "新火点燃，风向未定",
+        "subline": "Gemini asset meets Aries season under a new-cycle proxy: initiative exists, but confirmation is still thin.",
+        "short_reading": "此月信号偏向温和建设性。Aries season 带来启动感，Gemini proxy 增强信息流与轮动敏感度；但近21日回撤仍在，说明市场尚未完成方向确认。更像是 accumulation_cycle 的早段，而不是稳定趋势的展开。",
+        "long_reading": "000001.SS 在 April 2026 的占星代理结构里呈现“风遇初火”的组合：Gemini 对应分化、切换、消息驱动，Aries 对应开端、冲动与重新定价。new moon proxy 与 accumulation_cycle 一起，使读数偏向低位重新组织，而非明确突破。\n\n市场上下文给出的现实底色并不极端：63日波动为 normal，252日 drawdown 为 shallow，说明系统性压力有限；但21日收益约为 -5.62%，短线仍有惯性压力。63日收益小幅为正，则提示中期结构并未完全破坏。综合来看，本月更适合解读为“试探性修复窗口”：资金可能寻找重新定价的理由，但价格需要更强确认才能把试探变成趋势。\n\n主要风险在于 Gemini-Aries 组合容易产生快速叙事切换：政策、流动性、风险偏好或行业轮动都可能短时间改变盘面重心。若上涨缺少成交与广度支撑，容易演化为反弹而非反转。若下行扩大，则 shallow drawdown 可能被重新定价为更深的风险释放。"
       },
       "symbols": [
-        "Gemini",
-        "new"
+        "Gemini asset proxy",
+        "Aries season",
+        "new moon proxy",
+        "mixed momentum",
+        "normal volatility",
+        "shallow drawdown",
+        "accumulation_cycle"
       ],
       "risk_tags": [
-        "mixed_momentum"
+        "short_term_pullback",
+        "direction_confirmation_needed",
+        "narrative_rotation",
+        "false_breakout_risk"
       ],
       "visual": {
-        "palette": "ember",
-        "icon": "gemini",
-        "card_style": "medium"
+        "palette": "embers_and_clear_air",
+        "icon": "new_moon_with_twin_winds",
+        "card_style": "calm_analytical_oracle"
       },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000001.SS/astrology.json",
+      "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/astrology.json",
       "error": null
     },
     {
@@ -260,30 +304,38 @@
         "display_name": "市场脉冲"
       },
       "result": {
-        "score": 28,
-        "polarity": "unfavorable",
-        "intensity": "high",
-        "omen_type": "market_pulse_unfavorable_high",
-        "headline": "Market Pulse reads 000001.SS as unfavorable",
-        "subline": "mixed colors the reading; market pulse remains mixed.",
-        "short_reading": "The mock market_pulse reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 42,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "mixed_momentum_pullback",
+        "headline": "短线回撤压住盘面",
+        "subline": "21日动能明显转弱，但63日仍略为正值，结构更像整理而非趋势崩坏。",
+        "short_reading": "000001.SS 在 April 2026 的脉象偏谨慎：近21日回报约 -5.62%，显示短线卖压已经主导；但近63日仍有约 +0.96%，说明中期结构尚未完全转空。波动率处于 normal，252日回撤约 -6.43%，属于 shallow drawdown。整体信号是 mixed momentum：市场在回吐前期涨幅，但还没有进入高波动失控状态。",
+        "long_reading": "这组 artifact 给出的核心不是灾变，而是短线 momentum deterioration。3913.72 的 latest close 配合 -5.62% 的21日回报，说明近期资金行为偏防守，价格正在经历一轮明确的下压或获利回吐。与此同时，63日回报仍维持小幅正值，意味着更长一点的窗口尚未确认趋势破裂。换句话说，短期走势已经变冷，但中期框架还没有完全转成 bear regime。\n\nvolatility_63d 约 14.64%，标签为 normal，这一点很关键。若下跌伴随异常波动，解读会更接近 panic 或 forced liquidation；但当前波动没有显著放大，说明市场更像是在有序降温。drawdown_252d 约 -6.43%，标签为 shallow，也支持这个判断：回撤有压力，但深度还不足以构成严重结构损伤。\n\n因此，oracle reading 应落在 cautious consolidation：短线风险偏负，中期仍保留修复空间。需要警惕的是，如果21日负动能继续延伸，并把63日回报也拖入明显负区间，信号会从 mixed 转向 bearish continuation。反过来，如果价格能在低波动环境中稳定，并重新恢复21日正回报，那么这次回撤可能只是一次 trend digestion。"
       },
       "symbols": [
-        "mixed",
-        "normal"
+        "3913.72 close",
+        "21d return -5.62%",
+        "63d return +0.96%",
+        "normal volatility",
+        "shallow drawdown",
+        "mixed momentum"
       ],
       "risk_tags": [
-        "mixed_momentum"
+        "short_term_downside_pressure",
+        "momentum_divergence",
+        "trend_confirmation_pending",
+        "orderly_pullback",
+        "cn_index_exposure"
       ],
       "visual": {
-        "palette": "indigo",
-        "icon": "mixed",
-        "card_style": "high"
+        "palette": "cool gray with muted red accents",
+        "icon": "waning crescent over index line",
+        "card_style": "calm analytical market oracle card with restrained contrast"
       },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000001.SS/market_pulse.json",
+      "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/market_pulse.json",
       "error": null
     }
   ],
-  "run_id": "0b095a8960b2"
+  "run_id": "8408c2bbf831"
 }

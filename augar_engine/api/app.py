@@ -6,11 +6,31 @@ from typing import Optional, Union
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
-from ..constants import ALL_ENGINES, DEFAULT_OUTPUT_ROOT
+from ..constants import (
+    ALL_ENGINES,
+    ALL_PROVIDERS,
+    API_TITLE,
+    API_VERSION,
+    DEFAULT_ALLOW_ERRORS,
+    DEFAULT_INCLUDE_MARKET,
+    DEFAULT_INCLUDE_RAW,
+    DEFAULT_LANGUAGE,
+    DEFAULT_MAX_OUTPUT_TOKENS,
+    DEFAULT_MAX_RETRIES,
+    DEFAULT_MODEL,
+    DEFAULT_OUTPUT_ROOT,
+    DEFAULT_PROVIDER,
+    DEFAULT_READING_DEPTH,
+    DEFAULT_REASONING_EFFORT,
+    DEFAULT_TEMPERATURE,
+    DEFAULT_TIMEOUT,
+    DEFAULT_TONE,
+    DEFAULT_TOP_P,
+)
 from ..data import DataProcessing
 from ..pipeline import GenerateRequest, run_generation
 
-app = FastAPI(title="AUGAR Backend", version="0.1.0")
+app = FastAPI(title=API_TITLE, version=API_VERSION)
 
 
 class GenerateBody(BaseModel):
@@ -20,28 +40,44 @@ class GenerateBody(BaseModel):
     seed: Optional[int] = None
     force: Union[bool, str, list[str]] = False
     output_root: str = str(DEFAULT_OUTPUT_ROOT)
-    provider: str = "mock"
-    model: str = "gpt-5.5"
+    provider: str = DEFAULT_PROVIDER
+    model: str = DEFAULT_MODEL
     base_url: Optional[str] = None
-    temperature: float = 0.4
-    top_p: float = 1.0
-    max_output_tokens: int = 1200
-    reasoning_effort: Optional[str] = "low"
-    timeout: int = 90
-    max_retries: int = 2
+    temperature: float = DEFAULT_TEMPERATURE
+    top_p: float = DEFAULT_TOP_P
+    max_output_tokens: int = DEFAULT_MAX_OUTPUT_TOKENS
+    reasoning_effort: Optional[str] = DEFAULT_REASONING_EFFORT
+    timeout: int = DEFAULT_TIMEOUT
+    max_retries: int = DEFAULT_MAX_RETRIES
     codex_auth_path: Optional[str] = None
     codex_home: Optional[str] = None
     codex_path: Optional[str] = None
     history_run_id: Optional[str] = None
-    language: str = "zh-CN"
-    tone: str = "calm_analytical"
-    reading_depth: str = "standard"
-    include_raw_artifact: bool = False
-    include_market_context: bool = False
-    allow_error_cards: bool = False
+    language: str = DEFAULT_LANGUAGE
+    tone: str = DEFAULT_TONE
+    reading_depth: str = DEFAULT_READING_DEPTH
+    include_raw_artifact: bool = DEFAULT_INCLUDE_RAW
+    include_market_context: bool = DEFAULT_INCLUDE_MARKET
+    allow_error_cards: bool = DEFAULT_ALLOW_ERRORS
     engine_overrides: dict = Field(default_factory=dict)
+    api_key: Optional[str] = None
 
 
+@app.get("/health/codex")
+def health_codex() -> dict:
+    try:
+        from ..llm import LLMClient
+        path = LLMClient._find_codex_executable()
+        import subprocess, os
+        home = os.getenv("CODEX_HOME", str(Path.home() / ".codex"))
+        result = subprocess.run(
+            [path, "login", "status"],
+            env={**os.environ, "CODEX_HOME": home},
+            capture_output=True, text=True, timeout=15,
+        )
+        return {"available": True, "logged_in": result.returncode == 0, "path": path}
+    except Exception as e:
+        return {"available": False, "reason": str(e)}
 @app.get("/health")
 def health() -> dict:
     data = DataProcessing()
@@ -52,7 +88,7 @@ def health() -> dict:
 def metadata_options() -> dict:
     return {
         "engines": list(ALL_ENGINES),
-        "providers": ["history", "mock", "openai", "chatgpt_oauth", "openai_compatible", "local", "custom"],
+        "providers": list(ALL_PROVIDERS),
         "model_params": [
             "model", "provider", "base_url", "temperature", "top_p", "max_output_tokens",
             "reasoning_effort", "timeout", "max_retries",

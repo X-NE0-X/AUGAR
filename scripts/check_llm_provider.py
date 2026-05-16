@@ -10,13 +10,14 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from augar_engine.constants import DEFAULT_MAX_RETRIES, DEFAULT_MODEL, DEFAULT_PROVIDER, DEFAULT_TIMEOUT
 from augar_engine.llm import LLMClient, LLMParams
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Check AUGAR LLM provider connectivity")
-    parser.add_argument("--provider", default="mock")
-    parser.add_argument("--model", default="gpt-5.5")
+    parser.add_argument("--provider", default=DEFAULT_PROVIDER)
+    parser.add_argument("--model", default=DEFAULT_MODEL)
     parser.add_argument("--base-url")
     parser.add_argument("--codex-auth-path")
     parser.add_argument("--codex-home")
@@ -35,7 +36,7 @@ def main() -> None:
         codex_home=args.codex_home,
         codex_path=args.codex_path,
         max_output_tokens=args.max_output_tokens,
-        timeout=45,
+        timeout=DEFAULT_TIMEOUT,
         max_retries=0,
     ))
     artifact = {

@@ -2,14 +2,7 @@
   "schema_version": "0.1",
   "period": "2026-04-M",
   "symbols": [
-    "000001.SS",
-    "000300.SS",
-    "DJI",
-    "FTSE",
-    "HSI",
-    "NDX",
-    "SPX",
-    "VIX"
+    "000001.SS"
   ],
   "engines": [
     "tarot",
@@ -19,53 +12,20 @@
     "astrology",
     "market_pulse"
   ],
-  "run_id": "0b095a8960b2",
-  "generated_at": "2026-05-15T15:24:04+00:00",
+  "run_id": "8408c2bbf831",
+  "generated_at": "2026-05-16T11:20:11+00:00",
   "data_coverage": {
     "000001.SS": {
       "data_start": "1997-07-02",
       "data_end": "2026-03-27",
       "observations": 6960
-    },
-    "000300.SS": {
-      "data_start": "2021-03-11",
-      "data_end": "2026-03-27",
-      "observations": 1223
-    },
-    "DJI": {
-      "data_start": "1992-01-02",
-      "data_end": "2026-03-27",
-      "observations": 8620
-    },
-    "FTSE": {
-      "data_start": "1984-01-03",
-      "data_end": "2026-03-27",
-      "observations": 10670
-    },
-    "HSI": {
-      "data_start": "1986-12-31",
-      "data_end": "2026-03-27",
-      "observations": 9684
-    },
-    "NDX": {
-      "data_start": "1985-10-01",
-      "data_end": "2026-03-27",
-      "observations": 10201
-    },
-    "SPX": {
-      "data_start": "1927-12-30",
-      "data_end": "2026-03-27",
-      "observations": 24676
-    },
-    "VIX": {
-      "data_start": "1990-01-02",
-      "data_end": "2026-03-27",
-      "observations": 9126
     }
   },
   "params": {
     "period": "2026-04-M",
-    "symbols": null,
+    "symbols": [
+      "000001.SS"
+    ],
     "engines": [
       "tarot",
       "wenwang",
@@ -75,9 +35,9 @@
       "market_pulse"
     ],
     "seed": null,
-    "force": false,
+    "force": true,
     "output_root": "C:\\Users\\AndersonMa\\AUGAR\\public\\data",
-    "provider": "mock",
+    "provider": "chatgpt_oauth",
     "model": "gpt-5.5",
     "temperature": 0.4,
     "top_p": 1.0,
@@ -92,6 +52,7 @@
     "include_raw_artifact": false,
     "include_market_context": false,
     "allow_error_cards": false,
-    "engine_overrides": {}
+    "engine_overrides": {},
+    "api_key": "***"
   }
 }

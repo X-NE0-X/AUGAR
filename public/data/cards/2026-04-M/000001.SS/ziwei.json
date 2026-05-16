@@ -17,27 +17,38 @@
     "display_name": "紫微斗数"
   },
   "result": {
-    "score": 33,
-    "polarity": "unfavorable",
-    "intensity": "medium",
-    "omen_type": "ziwei_unfavorable_medium",
-    "headline": "Ziwei reads 000001.SS as unfavorable",
-    "subline": "Jumen colors the reading; market pulse remains mixed.",
-    "short_reading": "The mock ziwei reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 42,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "结构承压 / 分歧放大",
+    "headline": "根基有星，外缘失衡",
+    "subline": "April 2026 的盘面不是崩坏相，而是重心仍在、交易层面易被分歧与反复消耗。",
+    "short_reading": "此盘以 Property 宫为命，Ziwei、Tianfu、Qisha 同坐并带 natal Hua Lu，说明底层权重、制度性支撑与长期资产锚仍然存在。但流年落 Siblings，Taiyang、Tanlang 带 period Hua Quan，市场话语权、板块轮动和资金分歧会被放大。Friends 宫见 period Hua Ji，Travel 宫又有 natal Hua Ji，外部流动、同侪风险偏好与跨市场扰动是主要压力源。结合近 21 日回撤为负、63 日动量略正，属于短线偏弱但中线未完全破坏的 mixed omen。",
+    "long_reading": "核心结构并不空。命宫落 Property，且 Property 宫有 Ziwei、Tianfu、Qisha 与 natal Hua Lu，这是一种“底盘尚厚、但驱动偏硬”的组合：指数仍有政策、权重与估值锚支撑，真正的问题不是没有承接，而是上行动能需要更强的共识来释放。Qisha 使节奏更像切换与清算，而不是平滑修复。\n\nApril 2026 的年度流焦点落在 Siblings，并牵动 Career、Wealth、Fortune。Siblings 宫 Taiyang、Tanlang 加 period Hua Quan，代表市场内部的表达权增强：热点、叙事、风格轮动会更主动，但也更容易把分歧推到台前。Wealth 宫虽有 Wenchang、Tianyue 和 period Hua Ke，说明资金面并非完全失序，仍有理性定价和修复窗口；但 Tuoluo 同在，使上涨过程更拖滞，容易出现看似有机会、实际推进不顺的状态。\n\n风险点集中在 Friends 与 Travel。Friends 宫 Lianzhen、Tianliang、Wenqu 遇 period Hua Ji，暗示市场同盟、机构共识、外部解释框架容易变成负担；Travel 宫 natal Hua Ji 则指向外围市场、汇率、跨境资金或宏观消息面的干扰。Career 宫仅见 Huoxing，意味着执行层面会有 sudden impulse：急拉、急杀、政策预期或产业消息引发的短促波动都可能出现。\n\n因此此月判断偏谨慎：不是系统性深跌的凶相，但短线风险明显高于顺势收益。较合理的 interpretation 是“守根基、避追逐、等确认”。若指数能守住浅回撤区并重新凝聚 Wealth/Fortune 的正向信号，后续仍有修复余地；若 Friends/Travel 的 Hua Ji 被外部事件触发，则容易出现二次探底或高波动震荡。"
   },
   "symbols": [
-    "Jumen",
-    "Property"
+    "Property 命宫",
+    "Ziwei-Tianfu-Qisha",
+    "natal Hua Lu",
+    "Siblings 流宫",
+    "Taiyang-Tanlang Hua Quan",
+    "Friends Hua Ji",
+    "Travel Hua Ji",
+    "Wealth Hua Ke"
   ],
   "risk_tags": [
-    "mixed_momentum"
+    "short_term_weakness",
+    "rotation_noise",
+    "external_shock",
+    "consensus_fragility",
+    "headline_volatility",
+    "range_bound_market"
   ],
   "visual": {
-    "palette": "indigo",
-    "icon": "jumen",
-    "card_style": "medium"
+    "palette": "deep indigo, muted gold, ash gray, warning red",
+    "icon": "fortified palace under crossing winds",
+    "card_style": "calm analytical oracle card with firm central axis and fractured outer ring"
   },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000001.SS/ziwei.json",
+  "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/ziwei.json",
   "error": null
 }

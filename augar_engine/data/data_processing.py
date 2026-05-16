@@ -6,7 +6,7 @@ from typing import Dict, Iterable, List, Optional
 
 import pandas as pd
 
-from ..constants import DEFAULT_PARQUET_FILES, PROJECT_ROOT, REGION_BY_FILE
+from ..constants import DEFAULT_PARQUET_FILES, MARKET_THRESHOLDS, PROJECT_ROOT, REGION_BY_FILE
 
 
 @dataclass
@@ -126,32 +126,39 @@ class DataProcessing:
 
     @staticmethod
     def _momentum_label(ret_21: float, ret_63: float) -> str:
-        if ret_21 > 0.03 and ret_63 > 0.06:
+        mt = MARKET_THRESHOLDS["momentum"]
+        su = mt["strong_uptrend"]
+        if ret_21 > su["ret_21_min"] and ret_63 > su["ret_63_min"]:
             return "strong_uptrend"
-        if ret_21 > 0 and ret_63 > 0:
+        ri = mt["rising"]
+        if ret_21 > ri["ret_21_min"] and ret_63 > ri["ret_63_min"]:
             return "rising"
-        if ret_21 < -0.03 and ret_63 < -0.06:
+        sd = mt["strong_downtrend"]
+        if ret_21 < sd["ret_21_max"] and ret_63 < sd["ret_63_max"]:
             return "strong_downtrend"
-        if ret_21 < 0 and ret_63 < 0:
+        fa = mt["falling"]
+        if ret_21 < fa["ret_21_max"] and ret_63 < fa["ret_63_max"]:
             return "falling"
         return "mixed"
 
     @staticmethod
     def _volatility_label(volatility: float) -> str:
-        if volatility >= 0.35:
+        vt = MARKET_THRESHOLDS["volatility"]
+        if volatility >= vt["extreme"]:
             return "extreme"
-        if volatility >= 0.22:
+        if volatility >= vt["elevated"]:
             return "elevated"
-        if volatility >= 0.12:
+        if volatility >= vt["normal"]:
             return "normal"
         return "quiet"
 
     @staticmethod
     def _drawdown_label(drawdown: float) -> str:
-        if drawdown <= -0.25:
+        dt = MARKET_THRESHOLDS["drawdown"]
+        if drawdown <= dt["deep"]:
             return "deep"
-        if drawdown <= -0.10:
+        if drawdown <= dt["material"]:
             return "material"
-        if drawdown <= -0.03:
+        if drawdown <= dt["shallow"]:
             return "shallow"
         return "near_high"

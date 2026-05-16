@@ -17,27 +17,35 @@
     "display_name": "市场脉冲"
   },
   "result": {
-    "score": 28,
-    "polarity": "unfavorable",
-    "intensity": "high",
-    "omen_type": "market_pulse_unfavorable_high",
-    "headline": "Market Pulse reads 000001.SS as unfavorable",
-    "subline": "mixed colors the reading; market pulse remains mixed.",
-    "short_reading": "The mock market_pulse reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 42,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "mixed_momentum_pullback",
+    "headline": "短线回撤压住盘面",
+    "subline": "21日动能明显转弱，但63日仍略为正值，结构更像整理而非趋势崩坏。",
+    "short_reading": "000001.SS 在 April 2026 的脉象偏谨慎：近21日回报约 -5.62%，显示短线卖压已经主导；但近63日仍有约 +0.96%，说明中期结构尚未完全转空。波动率处于 normal，252日回撤约 -6.43%，属于 shallow drawdown。整体信号是 mixed momentum：市场在回吐前期涨幅，但还没有进入高波动失控状态。",
+    "long_reading": "这组 artifact 给出的核心不是灾变，而是短线 momentum deterioration。3913.72 的 latest close 配合 -5.62% 的21日回报，说明近期资金行为偏防守，价格正在经历一轮明确的下压或获利回吐。与此同时，63日回报仍维持小幅正值，意味着更长一点的窗口尚未确认趋势破裂。换句话说，短期走势已经变冷，但中期框架还没有完全转成 bear regime。\n\nvolatility_63d 约 14.64%，标签为 normal，这一点很关键。若下跌伴随异常波动，解读会更接近 panic 或 forced liquidation；但当前波动没有显著放大，说明市场更像是在有序降温。drawdown_252d 约 -6.43%，标签为 shallow，也支持这个判断：回撤有压力，但深度还不足以构成严重结构损伤。\n\n因此，oracle reading 应落在 cautious consolidation：短线风险偏负，中期仍保留修复空间。需要警惕的是，如果21日负动能继续延伸，并把63日回报也拖入明显负区间，信号会从 mixed 转向 bearish continuation。反过来，如果价格能在低波动环境中稳定，并重新恢复21日正回报，那么这次回撤可能只是一次 trend digestion。"
   },
   "symbols": [
-    "mixed",
-    "normal"
+    "3913.72 close",
+    "21d return -5.62%",
+    "63d return +0.96%",
+    "normal volatility",
+    "shallow drawdown",
+    "mixed momentum"
   ],
   "risk_tags": [
-    "mixed_momentum"
+    "short_term_downside_pressure",
+    "momentum_divergence",
+    "trend_confirmation_pending",
+    "orderly_pullback",
+    "cn_index_exposure"
   ],
   "visual": {
-    "palette": "indigo",
-    "icon": "mixed",
-    "card_style": "high"
+    "palette": "cool gray with muted red accents",
+    "icon": "waning crescent over index line",
+    "card_style": "calm analytical market oracle card with restrained contrast"
   },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000001.SS/market_pulse.json",
+  "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/market_pulse.json",
   "error": null
 }

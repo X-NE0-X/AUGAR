@@ -17,27 +17,35 @@
     "display_name": "占星"
   },
   "result": {
-    "score": 66,
-    "polarity": "favorable",
-    "intensity": "medium",
-    "omen_type": "astrology_favorable_medium",
-    "headline": "Astrology reads 000001.SS as favorable",
-    "subline": "Gemini colors the reading; market pulse remains mixed.",
-    "short_reading": "The mock astrology reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 58,
+    "polarity": "neutral_positive",
+    "intensity": "moderate",
+    "omen_type": "air_fire_new_cycle",
+    "headline": "新火点燃，风向未定",
+    "subline": "Gemini asset meets Aries season under a new-cycle proxy: initiative exists, but confirmation is still thin.",
+    "short_reading": "此月信号偏向温和建设性。Aries season 带来启动感，Gemini proxy 增强信息流与轮动敏感度；但近21日回撤仍在，说明市场尚未完成方向确认。更像是 accumulation_cycle 的早段，而不是稳定趋势的展开。",
+    "long_reading": "000001.SS 在 April 2026 的占星代理结构里呈现“风遇初火”的组合：Gemini 对应分化、切换、消息驱动，Aries 对应开端、冲动与重新定价。new moon proxy 与 accumulation_cycle 一起，使读数偏向低位重新组织，而非明确突破。\n\n市场上下文给出的现实底色并不极端：63日波动为 normal，252日 drawdown 为 shallow，说明系统性压力有限；但21日收益约为 -5.62%，短线仍有惯性压力。63日收益小幅为正，则提示中期结构并未完全破坏。综合来看，本月更适合解读为“试探性修复窗口”：资金可能寻找重新定价的理由，但价格需要更强确认才能把试探变成趋势。\n\n主要风险在于 Gemini-Aries 组合容易产生快速叙事切换：政策、流动性、风险偏好或行业轮动都可能短时间改变盘面重心。若上涨缺少成交与广度支撑，容易演化为反弹而非反转。若下行扩大，则 shallow drawdown 可能被重新定价为更深的风险释放。"
   },
   "symbols": [
-    "Gemini",
-    "new"
+    "Gemini asset proxy",
+    "Aries season",
+    "new moon proxy",
+    "mixed momentum",
+    "normal volatility",
+    "shallow drawdown",
+    "accumulation_cycle"
   ],
   "risk_tags": [
-    "mixed_momentum"
+    "short_term_pullback",
+    "direction_confirmation_needed",
+    "narrative_rotation",
+    "false_breakout_risk"
   ],
   "visual": {
-    "palette": "ember",
-    "icon": "gemini",
-    "card_style": "medium"
+    "palette": "embers_and_clear_air",
+    "icon": "new_moon_with_twin_winds",
+    "card_style": "calm_analytical_oracle"
   },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000001.SS/astrology.json",
+  "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/astrology.json",
   "error": null
 }

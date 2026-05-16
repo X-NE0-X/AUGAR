@@ -6,7 +6,27 @@ from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Union
 
-from .constants import ALL_ENGINES, DEFAULT_OUTPUT_ROOT, PROJECT_ROOT
+from .constants import (
+    ALL_ENGINES,
+    DEFAULT_ALLOW_ERRORS,
+    DEFAULT_INCLUDE_MARKET,
+    DEFAULT_INCLUDE_RAW,
+    DEFAULT_LANGUAGE,
+    DEFAULT_MAX_OUTPUT_TOKENS,
+    DEFAULT_MAX_RETRIES,
+    DEFAULT_MODEL,
+    DEFAULT_OUTPUT_ROOT,
+    DEFAULT_PROVIDER,
+    DEFAULT_READING_DEPTH,
+    DEFAULT_REASONING_EFFORT,
+    DEFAULT_TEMPERATURE,
+    DEFAULT_TIMEOUT,
+    DEFAULT_TONE,
+    DEFAULT_TOP_P,
+    PROJECT_ROOT,
+    RUN_ID_LENGTH,
+    SCHEMA_VERSION,
+)
 from .core import parse_period, scrub_secrets, utc_now_iso
 from .data import DataProcessing
 from .display import build_composite
@@ -25,26 +45,27 @@ class GenerateRequest:
     seed: Optional[int] = None
     force: Union[bool, str, List[str]] = False
     output_root: str = str(DEFAULT_OUTPUT_ROOT)
-    provider: str = "mock"
-    model: str = "gpt-5.5"
+    provider: str = DEFAULT_PROVIDER
+    model: str = DEFAULT_MODEL
     base_url: Optional[str] = None
-    temperature: float = 0.4
-    top_p: float = 1.0
-    max_output_tokens: int = 1200
-    reasoning_effort: Optional[str] = "low"
-    timeout: int = 90
-    max_retries: int = 2
+    temperature: float = DEFAULT_TEMPERATURE
+    top_p: float = DEFAULT_TOP_P
+    max_output_tokens: int = DEFAULT_MAX_OUTPUT_TOKENS
+    reasoning_effort: Optional[str] = DEFAULT_REASONING_EFFORT
+    timeout: int = DEFAULT_TIMEOUT
+    max_retries: int = DEFAULT_MAX_RETRIES
     codex_auth_path: Optional[str] = None
     codex_home: Optional[str] = None
     codex_path: Optional[str] = None
     history_run_id: Optional[str] = None
-    language: str = "zh-CN"
-    tone: str = "calm_analytical"
-    reading_depth: str = "standard"
-    include_raw_artifact: bool = False
-    include_market_context: bool = False
-    allow_error_cards: bool = False
+    language: str = DEFAULT_LANGUAGE
+    tone: str = DEFAULT_TONE
+    reading_depth: str = DEFAULT_READING_DEPTH
+    include_raw_artifact: bool = DEFAULT_INCLUDE_RAW
+    include_market_context: bool = DEFAULT_INCLUDE_MARKET
+    allow_error_cards: bool = DEFAULT_ALLOW_ERRORS
     engine_overrides: Dict[str, Any] = field(default_factory=dict)
+    api_key: Optional[str] = None
 
     def llm_params(self) -> LLMParams:
         return LLMParams(
@@ -61,6 +82,7 @@ class GenerateRequest:
             codex_home=self.codex_home,
             codex_path=self.codex_path,
             history_run_id=self.history_run_id,
+            api_key=self.api_key,
         )
 
 
@@ -68,7 +90,7 @@ def run_generation(request: GenerateRequest) -> Dict[str, Any]:
     period = parse_period(request.period)
     engines = _normalize_engines(request.engines)
     output_root = Path(request.output_root)
-    run_id = uuid.uuid4().hex[:12]
+    run_id = uuid.uuid4().hex[:RUN_ID_LENGTH]
     generated_at = utc_now_iso()
     data = DataProcessing(PROJECT_ROOT)
     available_symbols = data.discover_symbols()
@@ -90,7 +112,7 @@ def run_generation(request: GenerateRequest) -> Dict[str, Any]:
         for engine_id in engines:
             existing_public_path = public_card_path(
                 OracleCard(
-                    schema_version="0.1",
+                    schema_version=SCHEMA_VERSION,
                     asset=asset,
                     period=period,
                     engine=EngineRef(engine_id, engine_id, engine_id),
@@ -144,7 +166,7 @@ def run_generation(request: GenerateRequest) -> Dict[str, Any]:
             generated_cards += 1
 
         bundle = ReadingBundle(
-            schema_version="0.1",
+            schema_version=SCHEMA_VERSION,
             asset=asset,
             period=period,
             composite=build_composite(cards),
@@ -184,6 +206,7 @@ def run_generation(request: GenerateRequest) -> Dict[str, Any]:
         "run_id": run_id,
         "generated_at": generated_at,
         "period": period.id,
+        "period_label": period.label,
         "symbols": symbols,
         "engines": engines,
         "request": _debug_request_dict(request),
@@ -256,7 +279,7 @@ def _card_from_public_json(path: Path) -> OracleCard:
     engine = EngineRef(**data["engine"])
     result = CardResult(**data["result"])
     return OracleCard(
-        schema_version=data.get("schema_version", "0.1"),
+        schema_version=data.get("schema_version", SCHEMA_VERSION),
         asset=asset,
         period=period,
         engine=engine,

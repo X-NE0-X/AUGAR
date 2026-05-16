@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import { Moon, Sun } from 'lucide-react'
 import { useMousePosition } from '../hooks/useMousePosition'
 import { useConfig } from '../context/ConfigContext'
@@ -7,16 +7,18 @@ import { useConfig } from '../context/ConfigContext'
 export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { x, y } = useMousePosition()
   const { lang, setLang, theme, setTheme, t } = useConfig()
+  const location = useLocation()
+  const isHome = location.pathname === '/'
 
   return (
     <div
       className="app-shell"
-      style={{
+      style={isHome ? {
         '--mx': `${x}px`,
         '--my': `${y}px`,
-      } as React.CSSProperties}
+      } as React.CSSProperties : undefined}
     >
-      <div className="spatial-light" style={{ left: x, top: y }} />
+      {isHome && <div className="spatial-light" style={{ left: x, top: y }} />}
       <header className="app-topbar">
         <Link to="/" className="wordmark text-only" aria-label="AUGAR home">
           <span className="wordmark-text">AUGAR</span>
