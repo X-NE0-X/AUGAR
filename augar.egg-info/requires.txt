@@ -1,0 +1,10 @@
+pandas
+pyarrow
+duckdb
+fastapi
+uvicorn[standard]
+requests
+openai
+
+[dev]
+pytest

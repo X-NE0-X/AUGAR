@@ -1,0 +1,27 @@
+include pyproject.toml
+include README.md
+include LICENSE
+recursive-include configs *.json
+recursive-include data *.parquet
+
+# frontend source (so augar build / augar serve works from pip install)
+recursive-include frontend/package.json *
+recursive-include frontend/package-lock.json *
+recursive-include frontend/index.html *
+recursive-include frontend/vite.config.ts *
+recursive-include frontend/tsconfig.json *
+recursive-include frontend/tsconfig.node.json *
+graft frontend/src
+graft frontend/public
+
+# frontend source (so augar build / augar serve works from pip install)
+recursive-include frontend/package.json *
+recursive-include frontend/package-lock.json *
+recursive-include frontend/index.html *
+recursive-include frontend/vite.config.ts *
+recursive-include frontend/tsconfig.json *
+recursive-include frontend/tsconfig.node.json *
+recursive-include frontend/src *
+recursive-include frontend/public *
+graft frontend/src
+graft frontend/public

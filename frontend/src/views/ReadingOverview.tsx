@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { ChevronDown, ChevronLeft, RefreshCw, Share2, SlidersHorizontal, Sparkles, X } from 'lucide-react'
 import { useToast } from '../components/Toast'
 import { useConfig } from '../context/ConfigContext'
+import { readReading } from '../lib/artifacts'
 import { getTarotImage } from '../lib/tarotAssets'
 
 const MONTHS = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -86,17 +87,20 @@ const ReadingOverview = () => {
   }, [generating])
 
   useEffect(() => {
+    let cancelled = false
     setLoading(true)
-    fetch(`/api/readings/${period}/${ticker}`)
-      .then((res) => res.ok ? res.json() : Promise.reject())
+    readReading(period, ticker)
       .then((json) => {
+        if (cancelled) return
         setData(json)
         setLoading(false)
       })
       .catch(() => {
+        if (cancelled) return
         showToast(t('reading.notFound'), 'error')
         setLoading(false)
       })
+    return () => { cancelled = true }
   }, [period, ticker, showToast, t])
 
   const composite = data?.composite || {}

@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 import { useToast } from '../components/Toast'
 import { useConfig } from '../context/ConfigContext'
 import { Trophy, TrendingUp, TrendingDown } from 'lucide-react'
+import { FALLBACK_SYMBOLS, readAvailableSymbols } from '../lib/artifacts'
 
 const PERIOD = '2026-04-M'
-const fallbackSymbols = ['SPX', 'HSI', 'NDX', 'VIX', 'DJI', 'FTSE', '000300.SS', '000001.SS']
 
 const MONTH_NAMES = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
@@ -28,10 +28,8 @@ const Almanac = () => {
   const navigate = useNavigate()
 
   useEffect(() => {
-    fetch('/api/health')
-      .then(res => res.json())
-      .then(data => {
-        const symbols = data.symbols?.length ? data.symbols : fallbackSymbols
+    readAvailableSymbols()
+      .then(symbols => {
         const mockRankings = symbols.map((s: string) => ({
           symbol: s,
           score: Math.floor(Math.random() * 60) + 30,
@@ -39,7 +37,15 @@ const Almanac = () => {
         })).sort((a: any, b: any) => b.score - a.score)
         setRankings(mockRankings)
       })
-      .catch(() => showToast('Failed to load almanac', 'error'))
+      .catch(() => {
+        const mockRankings = FALLBACK_SYMBOLS.map((s: string) => ({
+          symbol: s,
+          score: Math.floor(Math.random() * 60) + 30,
+          change: (Math.random() * 4 - 2).toFixed(2)
+        })).sort((a: any, b: any) => b.score - a.score)
+        setRankings(mockRankings)
+        showToast('Failed to load almanac', 'error')
+      })
   }, [showToast])
 
   const medalColor = (i: number) => i === 0 ? '#ffd700' : i === 1 ? '#c0c0c0' : i === 2 ? '#cd7f32' : undefined

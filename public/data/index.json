@@ -2,42 +2,32 @@
   "schema_version": "0.1",
   "period": "2026-04-M",
   "symbols": [
-    "000001.SS"
+    "SPX"
   ],
   "engines": [
-    "tarot",
-    "wenwang",
-    "bazi",
-    "ziwei",
-    "astrology",
-    "market_pulse"
+    "tarot"
   ],
-  "run_id": "8408c2bbf831",
-  "generated_at": "2026-05-16T11:20:11+00:00",
+  "run_id": "499a3d267c56",
+  "generated_at": "2026-05-16T19:23:23+00:00",
   "data_coverage": {
-    "000001.SS": {
-      "data_start": "1997-07-02",
+    "SPX": {
+      "data_start": "1927-12-30",
       "data_end": "2026-03-27",
-      "observations": 6960
+      "observations": 24676
     }
   },
   "params": {
     "period": "2026-04-M",
     "symbols": [
-      "000001.SS"
+      "SPX"
     ],
     "engines": [
-      "tarot",
-      "wenwang",
-      "bazi",
-      "ziwei",
-      "astrology",
-      "market_pulse"
+      "tarot"
     ],
     "seed": null,
-    "force": true,
+    "force": false,
     "output_root": "C:\\Users\\AndersonMa\\AUGAR\\public\\data",
-    "provider": "chatgpt_oauth",
+    "provider": "mock",
     "model": "gpt-5.5",
     "temperature": 0.4,
     "top_p": 1.0,

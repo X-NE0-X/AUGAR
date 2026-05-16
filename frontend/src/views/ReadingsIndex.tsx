@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import { ArrowUpRight, Orbit, Search } from 'lucide-react'
 import { CommandBar } from '../components/CommandBar'
 import { useConfig } from '../context/ConfigContext'
+import { FALLBACK_SYMBOLS, readAvailableSymbols } from '../lib/artifacts'
 
-const fallbackSymbols = ['SPX', 'HSI', 'NDX', 'VIX', 'DJI', 'FTSE', '000300.SS', '000001.SS']
 const period = '2026-04-M'
 
 const MONTH_NAMES = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -23,14 +23,11 @@ const formatPeriod = (raw: string): string => {
 const intensityLabels = ['intensity.High intensity', 'intensity.Neutral field', 'intensity.Volatile field'] as const
 
 const ReadingsIndex = () => {
-  const [symbols, setSymbols] = useState<string[]>(fallbackSymbols)
+  const [symbols, setSymbols] = useState<string[]>(FALLBACK_SYMBOLS)
   const { t, lang } = useConfig()
 
   useEffect(() => {
-    fetch('/api/health')
-      .then((res) => res.ok ? res.json() : Promise.reject())
-      .then((data) => setSymbols(data.symbols?.length ? data.symbols : fallbackSymbols))
-      .catch(() => setSymbols(fallbackSymbols))
+    readAvailableSymbols().then(setSymbols).catch(() => setSymbols(FALLBACK_SYMBOLS))
   }, [])
 
   return (

@@ -33,6 +33,20 @@ from ..pipeline import GenerateRequest, run_generation
 app = FastAPI(title=API_TITLE, version=API_VERSION)
 
 
+# Middleware: strip /api prefix so the production build
+# (which calls /api/readings/...) works without Vite's proxy.
+from starlette.middleware.base import BaseHTTPMiddleware
+from starlette.requests import Request
+
+class _StripAPIPrefix(BaseHTTPMiddleware):
+    async def dispatch(self, request: Request, call_next):
+        if request.url.path.startswith("/api/"):
+            request.scope["path"] = request.url.path[4:]  # /api/xxx → /xxx
+        return await call_next(request)
+
+app.add_middleware(_StripAPIPrefix)
+
+
 class GenerateBody(BaseModel):
     period: str
     symbols: Optional[list[str]] = None

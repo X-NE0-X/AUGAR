@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { Check, ChevronLeft, Copy, Share2, Terminal } from 'lucide-react'
 import { useToast } from '../components/Toast'
 import { useConfig } from '../context/ConfigContext'
+import { readCard } from '../lib/artifacts'
 import { getTarotImage } from '../lib/tarotAssets'
 
 const engineLabels: Record<string, string> = {
@@ -26,10 +27,15 @@ const EngineDetail = () => {
   const [copied, setCopied] = useState(false)
 
   useEffect(() => {
-    fetch(`/api/cards/${period}/${ticker}/${engine}`)
-      .then((res) => res.ok ? res.json() : Promise.reject())
-      .then((json) => setCard(json))
-      .catch(() => showToast(t('detail.loadFailed'), 'error'))
+    let cancelled = false
+    readCard(period, ticker, engine)
+      .then((json) => {
+        if (!cancelled) setCard(json)
+      })
+      .catch(() => {
+        if (!cancelled) showToast(t('detail.loadFailed'), 'error')
+      })
+    return () => { cancelled = true }
   }, [period, ticker, engine, showToast, t])
 
   const rawPayload = useMemo(() => {

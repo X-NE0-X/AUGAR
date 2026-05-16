@@ -1,8 +1,9 @@
 [project]
 name = "augar"
 version = "0.1.0"
-description = "AUGAR backend oracle card generation pipeline"
+description = "AUGAR — Ask Universe, Get A Reading. Multi-oracle market cycle reading engine."
 requires-python = ">=3.10"
+license = {text = "MIT"}
 dependencies = [
   "pandas",
   "pyarrow",
@@ -13,8 +14,14 @@ dependencies = [
   "openai",
 ]
 
+[project.scripts]
+augar = "augar_engine.entry:main"
+
 [project.optional-dependencies]
 dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["augar_engine*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

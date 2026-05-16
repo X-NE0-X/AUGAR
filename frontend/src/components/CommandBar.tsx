@@ -2,6 +2,7 @@ import { FormEvent, useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowRight, Loader2, Search, Sparkles } from 'lucide-react'
 import { useConfig } from '../context/ConfigContext'
+import { FALLBACK_SYMBOLS, readAvailableSymbols } from '../lib/artifacts'
 
 interface CommandBarProps {
   onAsk: (ticker: string) => void
@@ -9,20 +10,15 @@ interface CommandBarProps {
   compact?: boolean
 }
 
-const fallbackSymbols = ['SPX', 'HSI', 'NDX', 'VIX', 'DJI', 'FTSE', '000300.SS', '000001.SS']
-
 export const CommandBar = ({ onAsk, loading = false, compact = false }: CommandBarProps) => {
   const [value, setValue] = useState('')
-  const [symbols, setSymbols] = useState<string[]>(fallbackSymbols)
+  const [symbols, setSymbols] = useState<string[]>(FALLBACK_SYMBOLS)
   const [open, setOpen] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
   const { t } = useConfig()
 
   useEffect(() => {
-    fetch('/api/health')
-      .then((res) => res.ok ? res.json() : Promise.reject())
-      .then((data) => setSymbols(data.symbols?.length ? data.symbols : fallbackSymbols))
-      .catch(() => setSymbols(fallbackSymbols))
+    readAvailableSymbols().then(setSymbols).catch(() => setSymbols(FALLBACK_SYMBOLS))
   }, [])
 
   useEffect(() => {

@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: augar
+Version: 0.1.0
+Summary: AUGAR — Ask Universe, Get A Reading. Multi-oracle market cycle reading engine.
+Requires-Python: >=3.10
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: duckdb
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: requests
+Requires-Dist: openai
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"

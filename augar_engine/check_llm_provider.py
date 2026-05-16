@@ -4,18 +4,13 @@ import argparse
 import base64
 import json
 from pathlib import Path
-import sys
 
-ROOT = Path(__file__).resolve().parents[1]
-if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
-
-from augar_engine.constants import DEFAULT_MAX_RETRIES, DEFAULT_MODEL, DEFAULT_PROVIDER, DEFAULT_TIMEOUT
-from augar_engine.llm import LLMClient, LLMParams
+from .constants import DEFAULT_MAX_RETRIES, DEFAULT_MODEL, DEFAULT_PROVIDER, DEFAULT_TIMEOUT
+from .llm import LLMClient, LLMParams
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Check AUGAR LLM provider connectivity")
+def main(argv: list[str] | None = None) -> None:
+    parser = argparse.ArgumentParser(prog="augar check", description="Check AUGAR LLM provider connectivity")
     parser.add_argument("--provider", default=DEFAULT_PROVIDER)
     parser.add_argument("--model", default=DEFAULT_MODEL)
     parser.add_argument("--base-url")
@@ -23,7 +18,7 @@ def main() -> None:
     parser.add_argument("--codex-home")
     parser.add_argument("--codex-path")
     parser.add_argument("--max-output-tokens", type=int, default=200)
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     if args.provider == "chatgpt_oauth":
         print_chatgpt_oauth_scope(args.codex_auth_path)

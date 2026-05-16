@@ -1,7 +1,23 @@
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
 import { CSSProperties, useEffect } from 'react'
 
-const engines = ['Tarot', 'Wenwang', 'BaZi', 'Ziwei', 'Astro', 'Pulse']
+const engines = [
+  { name: 'Tarot', glyph: 'Sun' },
+  { name: 'Wenwang', glyph: 'Hex' },
+  { name: 'BaZi', glyph: 'Five' },
+  { name: 'Ziwei', glyph: 'Star' },
+  { name: 'Astrology', glyph: 'Orbit' },
+  { name: 'Market Pulse', glyph: 'Wave' },
+]
+
+const engineOrbits = [
+  { angle: '205deg', duration: '38s', delay: '0s', radius: '29rem' },
+  { angle: '175deg', duration: '42s', delay: '-8s', radius: '31rem' },
+  { angle: '145deg', duration: '36s', delay: '-16s', radius: '28rem' },
+  { angle: '-35deg', duration: '40s', delay: '-24s', radius: '28rem' },
+  { angle: '5deg', duration: '44s', delay: '-30s', radius: '31rem' },
+  { angle: '35deg', duration: '37s', delay: '-12s', radius: '29rem' },
+]
 
 export const OracleCore = ({ status = 'idle' }: { status?: 'idle' | 'generating' | 'success' }) => {
   const mouseX = useMotionValue(typeof window === 'undefined' ? 0 : window.innerWidth / 2)
@@ -21,6 +37,7 @@ export const OracleCore = ({ status = 'idle' }: { status?: 'idle' | 'generating'
   return (
     <div className="oracle-core" aria-label="Liquid oracle core">
       <motion.div className="oracle-stage" style={{ rotateX, rotateY }}>
+        <div className="oracle-pedestal" />
         <div className="oracle-ring ring-a" />
         <div className="oracle-ring ring-b" />
         <div className="oracle-ring ring-c" />
@@ -50,17 +67,20 @@ export const OracleCore = ({ status = 'idle' }: { status?: 'idle' | 'generating'
         </motion.div>
 
         {engines.map((engine, index) => {
-          const angle = (360 / engines.length) * index
+          const orbit = engineOrbits[index]
           return (
-            <motion.div
-              key={engine}
-              className={`engine-token ${status !== 'idle' ? 'visible' : ''}`}
-              style={{ '--angle': `${angle}deg` } as CSSProperties}
-              animate={{ rotate: [angle, angle + 360] }}
-              transition={{ duration: 28, repeat: Infinity, ease: 'linear' }}
+            <div
+              key={engine.name}
+              className="engine-token visible"
+              style={{
+                '--angle': orbit.angle,
+                '--duration': orbit.duration,
+                '--delay': orbit.delay,
+                '--radius': orbit.radius,
+              } as CSSProperties}
             >
-              <span>{engine}</span>
-            </motion.div>
+              <span><i>{engine.glyph}</i>{engine.name}</span>
+            </div>
           )
         })}
       </motion.div>

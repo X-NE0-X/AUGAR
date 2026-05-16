@@ -3,13 +3,8 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
-import sys
 
-ROOT = Path(__file__).resolve().parents[1]
-if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
-
-from augar_engine.constants import (
+from .constants import (
     ALL_ENGINES,
     DEFAULT_MAX_OUTPUT_TOKENS,
     DEFAULT_MAX_RETRIES,
@@ -20,18 +15,24 @@ from augar_engine.constants import (
     DEFAULT_TIMEOUT,
     DEFAULT_TOP_P,
 )
-from augar_engine.pipeline import GenerateRequest, run_generation
+from .pipeline import GenerateRequest, run_generation
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Generate AUGAR oracle cards. Main entrypoint: python AUGAR.py ...")
+def main(argv: list[str] | None = None) -> None:
+    parser = argparse.ArgumentParser(
+        prog="augar generate",
+        description="Generate AUGAR oracle cards.",
+    )
     parser.add_argument("--config", help="Optional JSON config file. CLI flags override config values.")
-    parser.add_argument("--period")
+    parser.add_argument("--period", required=False)
     parser.add_argument("--all-indexes", action="store_true")
     parser.add_argument("--symbols", default="")
     parser.add_argument("--engines")
     parser.add_argument("--seed", type=int)
-    parser.add_argument("--force", nargs="?", const="all", default=None, help="Skip existing cards by default. Use --force or --force all to regenerate all, or --force tarot,wenwang for selected engines.")
+    parser.add_argument(
+        "--force", nargs="?", const="all", default=None,
+        help="Skip existing cards by default. Use --force or --force all to regenerate all, or --force tarot,wenwang for selected engines.",
+    )
     parser.add_argument("--output-root", default="")
     parser.add_argument("--provider")
     parser.add_argument("--model")
@@ -49,7 +50,7 @@ def main() -> None:
     parser.add_argument("--allow-error-cards", action="store_true")
     parser.add_argument("--include-raw-artifact", action="store_true")
     parser.add_argument("--include-market-context", action="store_true")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     config = {}
     if args.config:
         config = json.loads(Path(args.config).read_text(encoding="utf-8"))

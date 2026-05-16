@@ -5,6 +5,7 @@ import { CommandBar } from '../components/CommandBar'
 import { OracleCore } from '../components/OracleCore'
 import { useToast } from '../components/Toast'
 import { useConfig } from '../context/ConfigContext'
+import { readReading } from '../lib/artifacts'
 
 const suggested = ['SPX', 'HSI', 'NDX', 'VIX', 'DJI', 'FTSE']
 
@@ -20,11 +21,13 @@ const Ask = () => {
     setStatus('generating')
 
     try {
-      const reading = await fetch(`/api/readings/${period}/${normalized}`)
-      if (reading.ok) {
+      try {
+        await readReading(period, normalized)
         setStatus('success')
         setTimeout(() => navigate(`/readings/${period}/${normalized}`), 420)
         return
+      } catch {
+        // Fall through to live generation when no historical artifact exists.
       }
 
       const generate = await fetch('/api/generate', {
