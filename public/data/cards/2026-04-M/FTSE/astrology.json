@@ -17,27 +17,26 @@
     "display_name": "占星"
   },
   "result": {
-    "score": 69,
-    "polarity": "favorable",
-    "intensity": "high",
-    "omen_type": "astrology_favorable_high",
-    "headline": "Astrology reads FTSE as favorable",
-    "subline": "Aquarius colors the reading; market pulse remains mixed.",
-    "short_reading": "The mock astrology reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 62,
+    "polarity": "positive",
+    "intensity": "mild",
+    "omen_type": "auspicious",
+    "headline": "稳步积累",
+    "subline": "四月FTSE指数在稳定中蕴藏机遇",
+    "short_reading": "当前市场情绪谨慎，但积累周期显现，长期向好。",
+    "long_reading": "基于星象分析，FTSE指数在2026年4月呈现稳定积累的格局。水瓶座资产星位与白羊座周期季节形成调合，月亮渐亏暗示短期情绪回落，但积累周期标签表明主力资金正在低位布局。波动率正常、回撤浅幅，适合稳健型投资者逐步建仓。整体看，本月是整理蓄势的窗口，耐心等待突破信号。"
   },
   "symbols": [
-    "Aquarius",
-    "waning"
+    "水瓶",
+    "白羊",
+    "残月"
   ],
   "risk_tags": [
-    "mixed_momentum"
+    "波动正常",
+    "浅幅回调",
+    "积累阶段"
   ],
-  "visual": {
-    "palette": "ember",
-    "icon": "aquarius",
-    "card_style": "high"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/FTSE/astrology.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/astrology.json",
   "error": null
 }

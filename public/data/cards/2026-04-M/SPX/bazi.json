@@ -17,27 +17,31 @@
     "display_name": "子平八字"
   },
   "result": {
-    "score": 55,
-    "polarity": "neutral",
-    "intensity": "low",
-    "omen_type": "bazi_neutral_low",
-    "headline": "Bazi reads SPX as neutral",
-    "subline": "Earth colors the reading; market pulse remains strong_downtrend.",
-    "short_reading": "The mock bazi reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 28,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "caution",
+    "headline": "Heavy Earth, Weary Path",
+    "subline": "The missing Metal element clouds the horizon; patience and prudence are essential.",
+    "short_reading": "April 2026 finds SPX under the weight of excess Earth energy. The Day Master Wu (Earth) is extremely strong, yet without the refining influence of Metal (Output), the energy becomes stuck. The month pillar Ren Chen adds both Wealth (Water) and more Earth, creating a paradox of opportunity trapped by inertia. The market may show moments of hope (from Ren Water) but lacks the catalyst to sustain momentum. The recent downtrend reflects this congestion. The path forward requires a Metal trigger, which may not appear until a later cycle. Investors should avoid forced moves and wait for clearer signals.",
+    "long_reading": "Based on the Zi Ping BaZi analysis of SPX's birth chart, the Day Master is Wu Earth, scoring 10 in strength—robust and dominant. The chart is flooded with Earth and Fire elements, making it solid but inflexible. The useful god is Metal (Output and Wealth), but it is critically scarce. The current year pillar Bing Wu (Fire, Earth) and month pillar Ren Chen (Water, Earth) intensify the Earth element without introducing Metal. This creates a condition known as 'Earth buried in Earth'—too much of a good thing leads to stagnation. The Ren Water stem offers a glimpse of Wealth, but without Metal to channel it, it dissipates. Historically, such configurations precede periods of low volatility and grinding sideways or downward moves. The market may test lower support levels. The hidden stems offer little relief: Chen contains Yi Wood (Officer) but is weak. The best course is to recognize the structural imbalance and await the appearance of Metal in a future month. This is a time for conservation, not aggression."
   },
   "symbols": [
-    "Earth",
-    "strong_day_master_pattern"
+    "Mountain without stream",
+    "Dry riverbed",
+    "Clay in kiln",
+    "Anvil without hammer",
+    "Clouded mirror"
   ],
   "risk_tags": [
-    "timing_risk"
+    "stagnation",
+    "inertia",
+    "lack_of_catalyst",
+    "excess_earth",
+    "missing_metal",
+    "low_volatility_trap"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "earth",
-    "card_style": "low"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/SPX/bazi.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/SPX/bazi.json",
   "error": null
 }

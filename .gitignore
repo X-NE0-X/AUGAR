@@ -10,3 +10,5 @@ runs/
 .gemini/
 frontend/node_modules/
 frontend/dist/
+frontend/public/data/
+frontend/public/tarots/

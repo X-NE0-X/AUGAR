@@ -17,27 +17,45 @@
     "display_name": "塔罗"
   },
   "result": {
-    "score": 28,
-    "polarity": "unfavorable",
-    "intensity": "high",
-    "omen_type": "tarot_unfavorable_high",
-    "headline": "Tarot reads FTSE as unfavorable",
-    "subline": "Knight of Pentacles colors the reading; market pulse remains mixed.",
-    "short_reading": "The mock tarot reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 62,
+    "polarity": "neutral",
+    "intensity": "medium",
+    "omen_type": "ambiguous",
+    "headline": "Grounding Energies Meet Sudden Spark: FTSE Eyes Cautious Optimism",
+    "subline": "A foundation of patience and new potential is disturbed by a wave of inspiration, but emotional disconnects urge restraint.",
+    "short_reading": "The FTSE is poised between steady accumulation and a sudden energetic shift. While the ground is fertile for gains, internal and external dissonance call for a measured approach.",
+    "long_reading": "The Celtic Cross reveals a market deeply rooted in earthy discipline (Ace of Pentacles, Knight of Pentacles) yet facing a restful pause (Four of Swords) before a burst of creative energy (Ace of Wands). The reversal of Two of Cups and Knight of Cups suggests that investor sentiment is out of sync, possibly ignoring fundamental signals. Hopes & Fears show a release of anxiety (Nine of Swords reversed), paving the way for a more open stance. The outcome reversed Four of Pentacles indicates a reluctance to hold tightly, hinting at profit-taking or distribution. Overall, the period is one of transition: old patterns are loosening, new impulses are arriving, and the index may oscillate before finding direction. Patience and adaptability will serve better than rigid expectations."
   },
   "symbols": [
-    "Knight of Pentacles",
-    "Four of Pentacles"
+    "pentacle",
+    "knight",
+    "sword",
+    "ace of wands",
+    "two of cups reversed",
+    "four of pentacles reversed",
+    "nine of swords reversed"
   ],
   "risk_tags": [
-    "mixed_momentum"
+    "market pause",
+    "emotional disconnect",
+    "new opportunity",
+    "profit-taking",
+    "transition"
   ],
   "visual": {
-    "palette": "indigo",
-    "icon": "knight_of_pentacles",
-    "card_style": "high"
+    "primary_color": "#8B7355",
+    "secondary_color": "#FFD700",
+    "shape": "circle",
+    "pattern": "concentric",
+    "elements": [
+      "sword",
+      "coin",
+      "wand",
+      "cup",
+      "knot"
+    ],
+    "mood": "grounded yet dynamic"
   },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/FTSE/tarot.json",
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/tarot.json",
   "error": null
 }

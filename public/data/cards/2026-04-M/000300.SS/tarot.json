@@ -17,27 +17,32 @@
     "display_name": "塔罗"
   },
   "result": {
-    "score": 38,
-    "polarity": "unfavorable",
-    "intensity": "medium",
-    "omen_type": "tarot_unfavorable_medium",
-    "headline": "Tarot reads 000300.SS as unfavorable",
-    "subline": "Temperance colors the reading; market pulse remains falling.",
-    "short_reading": "The mock tarot reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 65,
+    "polarity": "positive",
+    "intensity": "moderate",
+    "omen_type": "opportunity",
+    "headline": "Shift from Chaos to Clarity: CSI 300 Seeks Stability in April",
+    "subline": "Revisiting fundamentals and institutional guidance after a period of imbalance.",
+    "short_reading": "The Celtic Cross reveals a market moving from hasty reactions and indecision toward a grounded, intuition-led recovery. April 2026 likely sees the index consolidating with a cautious upward bias, guided by traditional indicators and policy signals.",
+    "long_reading": "The present card Temperance reversed indicates an imbalance or overreaction in the market, while the crossing card The World upright suggests a major cycle completing. The root of the situation is a release from stalemate (Two of Swords reversed), and past impulsive moves (Knight of Swords reversed) are being replaced by a goal of deep intuition (The High Priestess). The near future calls for realism and choosiness (Seven of Cups reversed), and the querent's own stance shifts from apathy to renewal (Four of Cups reversed). The environment is analytical and clear (Queen of Swords upright), hopes are for collective joy and rally (Three of Cups upright), but the outcome leans toward tradition and established rules (The Hierophant upright). Overall, April 2026 is a period of recalibration: while volatility may persist early in the month, the path clarifies toward a more orderly and fundamentals-driven market. The falling momentum label and shallow drawdown support a potential bottoming process. Expect defensive sectors and policy-led moves to gain favour."
   },
   "symbols": [
-    "Temperance",
-    "The Hierophant"
+    "Temperance reversed",
+    "The World upright",
+    "Two of Swords reversed",
+    "Knight of Swords reversed",
+    "The High Priestess upright",
+    "Seven of Cups reversed",
+    "Four of Cups reversed",
+    "Queen of Swords upright"
   ],
   "risk_tags": [
-    "timing_risk"
+    "volatility",
+    "regulatory shifts",
+    "sentiment overreaction",
+    "global macro events"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "temperance",
-    "card_style": "medium"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000300.SS/tarot.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/000300.SS/tarot.json",
   "error": null
 }

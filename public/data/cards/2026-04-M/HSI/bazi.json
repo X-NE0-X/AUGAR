@@ -17,27 +17,27 @@
     "display_name": "子平八字"
   },
   "result": {
-    "score": 36,
-    "polarity": "unfavorable",
-    "intensity": "medium",
-    "omen_type": "bazi_unfavorable_medium",
-    "headline": "Bazi reads HSI as unfavorable",
-    "subline": "Metal colors the reading; market pulse remains falling.",
-    "short_reading": "The mock bazi reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 1,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "caution",
+    "headline": "HSI 2026年4月：火势威胁但土有支撑——谨慎稳定",
+    "subline": "弱金日主在辰月得土助，但年度火势依然压制",
+    "short_reading": "壬辰月带来土和水，为弱辛金提供一定支持。然而，年度和运势的过旺火势持续施压。走势可能混杂，若土元素增强则有望反弹。",
+    "long_reading": "根据HSI的八字，日主辛金弱，根气不足。当前大运己未提供土（印星），但也带来火（官星）。2026年丙午年火势极旺，形成克制。4月壬辰柱引入土（印）和水（食伤）。土有利，但水可能进一步耗泄日主。辰中藏戊、乙、癸。总体本月略有缓解但未完全逆转。格局仍为弱日主，喜用神为土和金。投资者应关注政策变动（火）并寻求防御性板块（土）。"
   },
   "symbols": [
-    "Metal",
-    "weak_day_master_pattern"
+    "土龙",
+    "水龙",
+    "火马",
+    "弱金"
   ],
   "risk_tags": [
-    "drawdown"
+    "政策风险",
+    "波动性",
+    "流动性紧缩"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "metal",
-    "card_style": "medium"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/HSI/bazi.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/HSI/bazi.json",
   "error": null
 }

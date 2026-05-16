@@ -12,18 +12,18 @@
     "freq": "M"
   },
   "composite": {
-    "score": 46,
-    "polarity": "unfavorable",
-    "intensity": "medium",
+    "score": 30,
+    "polarity": "negative",
+    "intensity": "high",
     "dominant_symbols": [
-      "Temperance",
-      "The Hierophant",
-      "Wind over Mountain",
-      "Wealth",
-      "Metal",
-      "strong_day_master_pattern"
+      "Temperance reversed",
+      "The World upright",
+      "Two of Swords reversed",
+      "Knight of Swords reversed",
+      "The High Priestess upright",
+      "Seven of Cups reversed"
     ],
-    "headline": "The oracles lean unfavorable with medium intensity"
+    "headline": "The oracles lean negative with high intensity"
   },
   "cards": [
     {
@@ -45,28 +45,33 @@
         "display_name": "塔罗"
       },
       "result": {
-        "score": 38,
-        "polarity": "unfavorable",
-        "intensity": "medium",
-        "omen_type": "tarot_unfavorable_medium",
-        "headline": "Tarot reads 000300.SS as unfavorable",
-        "subline": "Temperance colors the reading; market pulse remains falling.",
-        "short_reading": "The mock tarot reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 65,
+        "polarity": "positive",
+        "intensity": "moderate",
+        "omen_type": "opportunity",
+        "headline": "Shift from Chaos to Clarity: CSI 300 Seeks Stability in April",
+        "subline": "Revisiting fundamentals and institutional guidance after a period of imbalance.",
+        "short_reading": "The Celtic Cross reveals a market moving from hasty reactions and indecision toward a grounded, intuition-led recovery. April 2026 likely sees the index consolidating with a cautious upward bias, guided by traditional indicators and policy signals.",
+        "long_reading": "The present card Temperance reversed indicates an imbalance or overreaction in the market, while the crossing card The World upright suggests a major cycle completing. The root of the situation is a release from stalemate (Two of Swords reversed), and past impulsive moves (Knight of Swords reversed) are being replaced by a goal of deep intuition (The High Priestess). The near future calls for realism and choosiness (Seven of Cups reversed), and the querent's own stance shifts from apathy to renewal (Four of Cups reversed). The environment is analytical and clear (Queen of Swords upright), hopes are for collective joy and rally (Three of Cups upright), but the outcome leans toward tradition and established rules (The Hierophant upright). Overall, April 2026 is a period of recalibration: while volatility may persist early in the month, the path clarifies toward a more orderly and fundamentals-driven market. The falling momentum label and shallow drawdown support a potential bottoming process. Expect defensive sectors and policy-led moves to gain favour."
       },
       "symbols": [
-        "Temperance",
-        "The Hierophant"
+        "Temperance reversed",
+        "The World upright",
+        "Two of Swords reversed",
+        "Knight of Swords reversed",
+        "The High Priestess upright",
+        "Seven of Cups reversed",
+        "Four of Cups reversed",
+        "Queen of Swords upright"
       ],
       "risk_tags": [
-        "timing_risk"
+        "volatility",
+        "regulatory shifts",
+        "sentiment overreaction",
+        "global macro events"
       ],
-      "visual": {
-        "palette": "indigo",
-        "icon": "temperance",
-        "card_style": "medium"
-      },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000300.SS/tarot.json",
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/000300.SS/tarot.json",
       "error": null
     },
     {
@@ -88,28 +93,30 @@
         "display_name": "文王卦"
       },
       "result": {
-        "score": 46,
-        "polarity": "neutral",
-        "intensity": "low",
-        "omen_type": "wenwang_neutral_low",
-        "headline": "Wenwang reads 000300.SS as neutral",
-        "subline": "Wind over Mountain colors the reading; market pulse remains falling.",
-        "short_reading": "The mock wenwang reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 1,
+        "polarity": "negative",
+        "intensity": "0.6",
+        "omen_type": "transitional",
+        "headline": "Gradual descent, fleeting Wealth",
+        "subline": "Wind over Mountain: obstacles slow the climb",
+        "short_reading": "April 2026 continues the existing falling momentum. The Wealth line at the top moves and weakens, signaling fleeting gains. The empty self position (line 2) reflects a lack of conviction. Overall, a gradual decline with limited opportunities for reversal.",
+        "long_reading": "The primary hexagram is Jian (Gradual, Wind over Mountain), indicating a slow, step-by-step process. The changed hexagram Xian (Influence, Lake over Mountain) suggests external attractions that may distract rather than support. Moving line 4 (Siblings) changes from yin to yang, hinting at increased competition or shared burdens. Moving line 6 (Wealth) transforms from yang to yin, directly weakening the useful god. The day branch You (Metal) controls the Wealth branch Mao (Wood), further pressuring returns. Although the month branch Si (Fire) is generated by Wealth, the overall picture is one of erosion. The Self (line 2) is empty due to Xun Kong (Hai, Zi), reinforcing a lack of initiative. Thus, downward pressure persists, and any rallies are likely short-lived. The 'falling' momentum label aligns with the oracle, while 'normal' volatility suggests no extreme swings, but the trend remains unfavorable."
       },
       "symbols": [
-        "Wind over Mountain",
-        "Wealth"
+        "Wind",
+        "Mountain",
+        "Lake",
+        "Gradual",
+        "Influence"
       ],
       "risk_tags": [
-        "timing_risk"
+        "falling",
+        "normal_volatility",
+        "wealth_risk",
+        "empty_self"
       ],
-      "visual": {
-        "palette": "indigo",
-        "icon": "wind_over_mountain",
-        "card_style": "low"
-      },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000300.SS/wenwang.json",
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/000300.SS/wenwang.json",
       "error": null
     },
     {
@@ -131,28 +138,27 @@
         "display_name": "子平八字"
       },
       "result": {
-        "score": 55,
-        "polarity": "neutral",
-        "intensity": "low",
-        "omen_type": "bazi_neutral_low",
-        "headline": "Bazi reads 000300.SS as neutral",
-        "subline": "Metal colors the reading; market pulse remains falling.",
-        "short_reading": "The mock bazi reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 75,
+        "polarity": "positive",
+        "intensity": "medium",
+        "omen_type": "auspicious",
+        "headline": "Favorable Winds for CSI 300 in April 2026",
+        "subline": "Luck cycle BingMao brings Fire and Wood, vitalizing the market.",
+        "short_reading": "The strong Xin Metal day master benefits from the BingMao luck cycle's Fire and Wood, which are its useful gods. This combination should reverse the recent falling trend and bring positive momentum to the CSI 300 in April 2026.",
+        "long_reading": "BaZi analysis reveals a strong Xin Metal day master with Earth and Metal excess. The pattern calls for Output (Wood) and Officer (Fire) to regulate and release the energy. The current luck cycle BingMao (Bing Fire, Mao Wood) precisely supplies these elements. Fire controls Metal, preventing stagnation, while Wood channels Metal's productivity. In the context of the CSI 300, this suggests a shift from the recent negative momentum to a period of recovery and growth. However, the strong Earth base may cause resistance, and the excess Metal could lead to sudden volatility. Overall, the outlook for April 2026 is auspicious, with moderate intensity."
       },
       "symbols": [
-        "Metal",
-        "strong_day_master_pattern"
+        "Wood (Output)",
+        "Fire (Officer)",
+        "Metal (Day Master)"
       ],
       "risk_tags": [
-        "timing_risk"
+        "market volatility",
+        "period excess",
+        "earth stability"
       ],
-      "visual": {
-        "palette": "indigo",
-        "icon": "metal",
-        "card_style": "low"
-      },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000300.SS/bazi.json",
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/000300.SS/bazi.json",
       "error": null
     },
     {
@@ -174,28 +180,111 @@
         "display_name": "紫微斗数"
       },
       "result": {
-        "score": 39,
-        "polarity": "unfavorable",
-        "intensity": "medium",
-        "omen_type": "ziwei_unfavorable_medium",
-        "headline": "Ziwei reads 000300.SS as unfavorable",
-        "subline": "Wuqu colors the reading; market pulse remains falling.",
-        "short_reading": "The mock ziwei reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 1,
+        "polarity": "neutral",
+        "intensity": "moderate",
+        "omen_type": "mixed",
+        "headline": "Foundation Strong but Core Obstructed; External Influence Key in April",
+        "subline": "Children Palace Lu Fuels Underlying Strength, But Life Palace Ji Signals Caution; Annual Flow in Friends with Quan Indicates Social/External Dynamics",
+        "short_reading": "For April 2026, the CSI 300 index shows a mixed omen. The major limit in Children Palace with Ziwei, Tianfu, Qisha and Hua Lu suggests underlying strength and potential for growth, but the Life Palace's Hua Ji and the falling momentum warns of core obstacles. The annual flow in Friends Palace with Taiyang, Tanlang, and Hua Quan highlights the importance of external factors and social dynamics. Market may experience volatility but could find support from property-related sectors.",
+        "long_reading": "The Ziwei chart for 000300.SS in April 2026 reveals a nuanced outlook. The current major limit, centered on the Children Palace (palace 4), is anchored by the triple stellar combination of Ziwei, Tianfu, and Qisha, with a natal Hua Lu. This configuration typically denotes a period of structural consolidation and potential expansion—Ziwei as the emperor provides authority, Tianfu adds stability, and Qisha brings assertive action. The Hua Lu transformation amplifies gains, particularly in areas related to future growth and investments. However, the Life Palace (palace 1) is empty of main stars and carries a natal Hua Ji, indicating a fundamental weakness or hidden obstruction at the core of the entity. This duality creates a tension between outward strength and internal fragility.\n\nThe annual flow for April 2026 lands on the Friends Palace (palace 8), where Taiyang and Tanlang meet a period Hua Quan. Taiyang symbolizes visibility, leadership, and openness, while Tanlang represents desire, networking, and sudden changes. Hua Quan gives control over these forces, suggesting that external relationships, market sentiment, or policy moves will be decisive. The three sides four orthodox (Children, Friends, Parents, Property) highlight the interplay: Property Palace (palace 10) with Wuqu, Jumen, and natal Hua Ke points to recognition in asset valuation and real estate, but the Parents Palace (palace 12) with Tiantong, Tianxiang, and Tuoluo hints at bureaucratic delays or conservative influences.\n\nMarket context shows a recent decline with nearly -5% over 21 days and -1.1% over 63 days, with normal volatility. The chart indicates that while the underlying trend may find a floor due to the strong Children Palace, the Life Palace's Ji could cause false breaks or internal issues. The wealth sector (palace 5) receives a period Hua Lu, offering a short-term boost, but the falling momentum suggests caution. April may see choppy trading with possible late-month recovery if external factors turn favorable. Risk management is advised, particularly around mid-month when the transformational energies conflict."
       },
       "symbols": [
+        "Ziwei",
+        "Tianfu",
+        "Qisha",
+        "Taiyang",
+        "Tanlang",
         "Wuqu",
-        "Children"
+        "Jumen",
+        "Hua Lu"
       ],
       "risk_tags": [
-        "timing_risk"
+        "volatility",
+        "structural weakness",
+        "external dependency",
+        "mixed signals"
       ],
       "visual": {
-        "palette": "indigo",
-        "icon": "wuqu",
-        "card_style": "medium"
+        "chart_type": "palace_grid",
+        "highlight_palaces": [
+          4,
+          8,
+          12,
+          10
+        ],
+        "flow_palace": 8,
+        "major_limit_palace": 4,
+        "body_palace": 10,
+        "life_palace": 1,
+        "transformations": {
+          "natal": {
+            "Lu": [
+              4
+            ],
+            "Quan": [
+              7
+            ],
+            "Ke": [
+              10
+            ],
+            "Ji": [
+              1
+            ]
+          },
+          "period": {
+            "Lu": [
+              5
+            ],
+            "Quan": [
+              8
+            ],
+            "Ke": [
+              11
+            ],
+            "Ji": [
+              2
+            ]
+          }
+        },
+        "stars": {
+          "main": {
+            "4": [
+              "Ziwei",
+              "Tianfu",
+              "Qisha"
+            ],
+            "8": [
+              "Taiyang",
+              "Tanlang"
+            ],
+            "10": [
+              "Wuqu",
+              "Jumen"
+            ],
+            "12": [
+              "Tiantong",
+              "Tianxiang"
+            ]
+          },
+          "aux": {
+            "8": [
+              "Youbi"
+            ],
+            "10": [
+              "Wenchang"
+            ],
+            "12": [
+              "Tuoluo",
+              "Tianyue"
+            ]
+          }
+        },
+        "momentum": "falling",
+        "volatility": "normal",
+        "drawdown": "shallow"
       },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000300.SS/ziwei.json",
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/000300.SS/ziwei.json",
       "error": null
     },
     {
@@ -217,28 +306,34 @@
         "display_name": "占星"
       },
       "result": {
-        "score": 62,
-        "polarity": "favorable",
-        "intensity": "medium",
-        "omen_type": "astrology_favorable_medium",
-        "headline": "Astrology reads 000300.SS as favorable",
-        "subline": "Aquarius colors the reading; market pulse remains falling.",
-        "short_reading": "The mock astrology reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 1,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "warning",
+        "headline": "白羊座满月下的积蓄期",
+        "subline": "短线偏弱，中线筑底",
+        "short_reading": "4月沪深300指数处于白羊座满月周期，水瓶座资产受火象冲动影响，市场情绪波动较大。虽然短期趋势偏弱，但积累周期暗示底部区域正在形成，宜耐心观察支撑位。",
+        "long_reading": "当前宇宙配置显示，000300.SS作为水瓶座象征资产，在Aries季节满月下，短期动能衰减与积累周期叠加。月亮相位放大了市场情绪的起伏，但深层次上，这是在为下一轮上升积蓄力量。技术层面，近期下跌属于正常回调，波动率处于正常水平，回撤尚浅，并未破坏长期结构。投资者应保持冷静，关注4200-4300点区域的支撑有效性，若该区间企稳，则中期反弹可期。风险方面，需警惕外部流动性变化及政策预期落差引发的短线扰动。"
       },
       "symbols": [
-        "Aquarius",
-        "full"
+        "水瓶座",
+        "白羊座",
+        "满月",
+        "积累周期",
+        "支撑位"
       ],
       "risk_tags": [
-        "timing_risk"
+        "短期波动",
+        "流动性风险",
+        "政策预期差"
       ],
       "visual": {
-        "palette": "ember",
-        "icon": "aquarius",
-        "card_style": "medium"
+        "color": "深蓝与浅灰",
+        "element": "空气与火交织",
+        "shape": "圆形与波浪",
+        "lunar": "满月"
       },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000300.SS/astrology.json",
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/000300.SS/astrology.json",
       "error": null
     },
     {
@@ -260,30 +355,33 @@
         "display_name": "市场脉冲"
       },
       "result": {
-        "score": 36,
-        "polarity": "unfavorable",
+        "score": 35,
+        "polarity": "negative",
         "intensity": "medium",
-        "omen_type": "market_pulse_unfavorable_medium",
-        "headline": "Market Pulse reads 000300.SS as unfavorable",
-        "subline": "falling colors the reading; market pulse remains falling.",
-        "short_reading": "The mock market_pulse reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "omen_type": "caution",
+        "headline": "市场短期承压，震荡格局延续",
+        "subline": "沪深300指数近月回落，波动率正常，回撤浅",
+        "short_reading": "指数短期回落，但波动率和回撤均处于正常水平，市场情绪偏弱但未现恐慌。动量指标显示下跌趋势，但幅度有限，维持震荡判断。",
+        "long_reading": "根据市场脉冲引擎分析，沪深300指数最新收盘价4502.57，近21日回报-4.75%，近63日回报-1.10%，显示短期下跌但中期企稳。波动率63日为14.65%，处于正常范围；252日最大回撤6.01%，属于浅回撤。动量标签为'下跌'，波动率标签'正常'，回撤标签'浅'。综合来看，市场处于震荡下行通道，但未触发极端风险。4月展望：需关注政策面及资金面变化，短期支撑位4400附近，阻力位4600。操作上建议谨慎，控制仓位。"
       },
       "symbols": [
-        "falling",
-        "normal"
+        "📉",
+        "⚠️",
+        "📊"
       ],
       "risk_tags": [
-        "timing_risk"
+        "短期下跌",
+        "震荡行情",
+        "正常波动"
       ],
       "visual": {
-        "palette": "indigo",
-        "icon": "falling",
-        "card_style": "medium"
+        "color": "orange",
+        "shape": "circle",
+        "icon": "caution"
       },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000300.SS/market_pulse.json",
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/000300.SS/market_pulse.json",
       "error": null
     }
   ],
-  "run_id": "0b095a8960b2"
+  "run_id": "e071b65d59c4"
 }

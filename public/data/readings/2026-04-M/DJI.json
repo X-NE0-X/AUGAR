@@ -12,18 +12,18 @@
     "freq": "M"
   },
   "composite": {
-    "score": 34,
-    "polarity": "unfavorable",
-    "intensity": "high",
+    "score": 40,
+    "polarity": "negative",
+    "intensity": "medium",
     "dominant_symbols": [
+      "Water",
       "King of Wands",
-      "Seven of Pentacles",
-      "Thunder over Wind",
-      "Wealth",
-      "Metal",
-      "balanced_day_master_pattern"
+      "Nine of Wands",
+      "The Magician",
+      "Four of Wands reversed",
+      "Eight of Cups"
     ],
-    "headline": "The oracles lean unfavorable with high intensity"
+    "headline": "The oracles lean negative with medium intensity"
   },
   "cards": [
     {
@@ -45,28 +45,36 @@
         "display_name": "塔罗"
       },
       "result": {
-        "score": 26,
-        "polarity": "unfavorable",
-        "intensity": "high",
-        "omen_type": "tarot_unfavorable_high",
-        "headline": "Tarot reads DJI as unfavorable",
-        "subline": "King of Wands colors the reading; market pulse remains strong_downtrend.",
-        "short_reading": "The mock tarot reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 35,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "bearish transition",
+        "headline": "Resilience Under Siege",
+        "subline": "Transformation and caution define April's path.",
+        "short_reading": "The cards suggest a month of continued defense and transformation. King of Wands indicates strong leadership but facing the Nine of Wands' last stand. Death signals necessary endings, while the outcome of Seven of Pentacles calls for patience. The market may see further decline before stabilising.",
+        "long_reading": "The Celtic Cross reveals a market caught in a painful yet necessary transformation. The King of Wands in the present shows that influential forces are trying to steer the market, but the crossing Nine of Wands warns of exhaustion and defensive battles. The Magician at the root suggests that the underlying skills to manage this are present, but the reversed Four of Wands indicates that the past foundation of growth is shaky. The goal of Eight of Cups hints that investors may want to walk away from current positions, seeking deeper value elsewhere. Near future Six of Cups brings a nostalgic pull, perhaps a bounce tied to past support levels, but the Death card in the 'You' position reinforces that the previous structure must die. The environment of Seven of Swords cautions against deception or hidden moves. Meanwhile, reversed Six of Wands in hopes and fears shows a fear of failure or lack of recognition. Finally, the outcome Seven of Pentacles advises patience and long-term assessment. The DJI is likely to experience further downside or a period of low volatility as it finds a new base. A recovery is not imminent; the month is for reevaluation."
       },
       "symbols": [
         "King of Wands",
-        "Seven of Pentacles"
+        "Nine of Wands",
+        "The Magician",
+        "Four of Wands reversed",
+        "Eight of Cups",
+        "Six of Cups",
+        "Death",
+        "Seven of Swords"
       ],
       "risk_tags": [
-        "drawdown"
+        "bearish",
+        "decline",
+        "transformation",
+        "defensive",
+        "volatility",
+        "deception",
+        "patience"
       ],
-      "visual": {
-        "palette": "indigo",
-        "icon": "king_of_wands",
-        "card_style": "high"
-      },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/DJI/tarot.json",
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/tarot.json",
       "error": null
     },
     {
@@ -88,28 +96,31 @@
         "display_name": "文王卦"
       },
       "result": {
-        "score": 20,
-        "polarity": "unfavorable",
-        "intensity": "high",
-        "omen_type": "wenwang_unfavorable_high",
-        "headline": "Wenwang reads DJI as unfavorable",
-        "subline": "Thunder over Wind colors the reading; market pulse remains strong_downtrend.",
-        "short_reading": "The mock wenwang reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 25,
+        "polarity": "slightly_bullish",
+        "intensity": "medium",
+        "omen_type": "transition",
+        "headline": "Thunder stirs the wind: a shift in momentum",
+        "subline": "From sibling rivalry to offspring emergence",
+        "short_reading": "Primary hexagram Thunder over Wind suggests agitation and penetration. Moving lines indicate competition (Siblings) transforming into creative drive (Offspring), potentially sparking a reversal. Wealth line remains stable but passive, awaiting activation. The changed hexagram Water over Wind warns of underlying danger but also adaptability. Overall, April 2026 may see a bottoming process with tentative upside.",
+        "long_reading": "The reading begins with Zhen (Thunder) over Xun (Wind), a configuration of sudden movement meeting gentle penetration. The market is in a strong downtrend, yet the moving lines reveal a shift: line 4 (Siblings, Vermilion Bird) changes from yang to yin, dissolving competitive pressure and panic; line 5 (Offspring, Flying Serpent) changes from yin to yang, awakening speculative energy and new capital inflows. The useful god Wealth (line 6) sits quietly in the response position, not yet engaged but supported by Parents (line 3, Black Tortoise) – indicating fundamental or policy backing. The changed hexagram Kan over Xun (Water over Wind) brings a theme of danger navigated by flexibility. This is not a full-fledged bull signal but a transitional omen: the worst of the drawdown may pass, giving way to a volatile consolidation or tentative recovery. The month branch Si and day branch Wu, with xun_kong (Si, Wu) cautioning that the near term may still feel empty – low confidence. Yet the offspring energy breaking through suggests young bulls testing the waters. Risk tags: continued volatility, potential for false breakout."
       },
       "symbols": [
-        "Thunder over Wind",
-        "Wealth"
+        "Thunder",
+        "Wind",
+        "Water",
+        "Siblings",
+        "Offspring",
+        "Wealth",
+        "Parents"
       ],
       "risk_tags": [
-        "drawdown"
+        "volatility",
+        "trend_reversal",
+        "bottoming_process"
       ],
-      "visual": {
-        "palette": "indigo",
-        "icon": "thunder_over_wind",
-        "card_style": "high"
-      },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/DJI/wenwang.json",
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/wenwang.json",
       "error": null
     },
     {
@@ -131,28 +142,31 @@
         "display_name": "子平八字"
       },
       "result": {
-        "score": 50,
-        "polarity": "neutral",
-        "intensity": "low",
-        "omen_type": "bazi_neutral_low",
-        "headline": "Bazi reads DJI as neutral",
-        "subline": "Metal colors the reading; market pulse remains strong_downtrend.",
-        "short_reading": "The mock bazi reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 30,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "warning",
+        "headline": "Downtrend persists amidst overwhelming Water energy",
+        "subline": "Metal star struggles against flood of Output, seeking Wood balance",
+        "short_reading": "The current month of April 2026 is dominated by Water elements, overwhelming the Day Master Geng Metal. The useful gods of Wood are weak, making recovery difficult. Caution advised.",
+        "long_reading": "In April 2026, the Dow's BaZi chart is heavily influenced by the Water element, which acts as Output draining the Metal Day Master. The Metal star is balanced but struggles to assert itself against the flood. The current luck cycle JiWu brings some stabilizing Earth and Fire, but it is not enough to counteract the strong Water. The asset continues its downtrend with material drawdown. The imbalance suggests volatility and further downside risk unless Wood energy appears to regulate the cycle. Investors should remain defensive."
       },
       "symbols": [
+        "Water",
+        "Output",
+        "Downtrend",
         "Metal",
-        "balanced_day_master_pattern"
+        "Balance"
       ],
       "risk_tags": [
-        "drawdown"
+        "downtrend",
+        "oversold",
+        "bear_market",
+        "protective_strategy",
+        "volatility"
       ],
-      "visual": {
-        "palette": "indigo",
-        "icon": "metal",
-        "card_style": "low"
-      },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/DJI/bazi.json",
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/bazi.json",
       "error": null
     },
     {
@@ -174,28 +188,33 @@
         "display_name": "紫微斗数"
       },
       "result": {
-        "score": 30,
-        "polarity": "unfavorable",
+        "score": 68,
+        "polarity": "positive",
         "intensity": "high",
-        "omen_type": "ziwei_unfavorable_high",
-        "headline": "Ziwei reads DJI as unfavorable",
-        "subline": "Jumen colors the reading; market pulse remains strong_downtrend.",
-        "short_reading": "The mock ziwei reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "omen_type": "propitious",
+        "headline": "Empowered asset palace with strong financial stars, but turbulence persists",
+        "subline": "Ziwei Tianfu Qisha with Hua Lu in Property suggests wealth opportunity, while annual flow Taiyang Tanlang with Hua Quan indicates dynamic competition",
+        "short_reading": "April 2026 brings favorable alignment for the Dow Jones, with strong wealth stars in the asset palace and empowerment in the current limit. However, aggressive stars warn of volatility and sharp moves. This is a time for strategic action rather than passive holding.",
+        "long_reading": "The chart for the Dow Jones in April 2026 reveals a powerful configuration. The Property palace, which serves as the Life palace for this index, hosts the sovereign stars Ziwei and Tianfu alongside the executioner Qisha, all blessed by the natal Hua Lu transformation. This indicates a strong foundation for assets and potential for accumulation. The current major limit is the Life palace itself, which, though empty of main stars, carries the natal Hua Quan empowerment, lending decisive force to the market’s direction. The annual flow falls in the Siblings palace, where Taiyang (Sun) and Tanlang (Greedy Wolf) combine with a period Hua Quan, signifying active competition and possible sudden moves. The three sides and four orthodox include Property, Siblings, Health (Tiantong Tianxiang), and Children (Wuqu Jumen with Hua Ke), reinforcing themes of wealth, partnerships, stability, and analytical support. Minor stars like Lingxing in Fortune bring friction, but are offset by Lucun and period Hua Lu. Overall, the astrological signals are positive for a turn or at least a strong volatile rebound, though the market’s recent downtrend suggests that this energy may manifest as sharp reversals rather than smooth ascent. Investors should watch for opportunities in destabilized conditions."
       },
       "symbols": [
-        "Jumen",
-        "Property"
+        "Ziwei",
+        "Tianfu",
+        "Qisha",
+        "Hua Lu",
+        "Taiyang",
+        "Tanlang",
+        "Hua Quan",
+        "Lucun"
       ],
       "risk_tags": [
-        "drawdown"
+        "volatility",
+        "trend reversal",
+        "opportunity",
+        "competition"
       ],
-      "visual": {
-        "palette": "indigo",
-        "icon": "jumen",
-        "card_style": "high"
-      },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/DJI/ziwei.json",
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/ziwei.json",
       "error": null
     },
     {
@@ -217,28 +236,27 @@
         "display_name": "占星"
       },
       "result": {
-        "score": 28,
-        "polarity": "unfavorable",
-        "intensity": "high",
-        "omen_type": "astrology_unfavorable_high",
-        "headline": "Astrology reads DJI as unfavorable",
-        "subline": "Scorpio colors the reading; market pulse remains strong_downtrend.",
-        "short_reading": "The mock astrology reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 45,
+        "polarity": "bearish",
+        "intensity": "medium",
+        "omen_type": "transition",
+        "headline": "四月展望：调整中的积累机遇",
+        "subline": "天蝎座资产在白羊座季节面临考验",
+        "short_reading": "当前市场处于强烈下行趋势，但波动正常，显示积累周期特征。满月相位暗示情绪高点，需关注转折。",
+        "long_reading": "资产星座为天蝎座，本月进入白羊座季节，火象与固定水象形成张力，预示深层调整与潜在转变。满月周期放大市场情绪，配合积累周期标签，表明当前下跌可能为底部吸筹阶段。尽管21日跌幅超8%，但63日波动率正常，252日回撤仅10%，尚未进入极端区域。投资者应保持冷静，避免情绪化决策，关注技术支撑是否守住。"
       },
       "symbols": [
-        "Scorpio",
-        "full"
+        "天蝎座",
+        "白羊座",
+        "满月"
       ],
       "risk_tags": [
-        "drawdown"
+        "下行趋势",
+        "波动正常",
+        "积累周期"
       ],
-      "visual": {
-        "palette": "indigo",
-        "icon": "scorpio",
-        "card_style": "high"
-      },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/DJI/astrology.json",
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/astrology.json",
       "error": null
     },
     {
@@ -260,30 +278,29 @@
         "display_name": "市场脉冲"
       },
       "result": {
-        "score": 49,
-        "polarity": "neutral",
-        "intensity": "low",
-        "omen_type": "market_pulse_neutral_low",
-        "headline": "Market Pulse reads DJI as neutral",
-        "subline": "strong_downtrend colors the reading; market pulse remains strong_downtrend.",
-        "short_reading": "The mock market_pulse reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 35,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "caution",
+        "headline": "道指四月展望：跌势延续，警惕回撤加深",
+        "subline": "短期动能疲弱，波动率可控，关注关键支撑",
+        "short_reading": "当前道指处于强势下跌趋势中，21日跌幅达8.75%，回撤超10%。波动率正常，但下行风险持续。",
+        "long_reading": "基于2026年3月27日数据，道指报45166.64，近一个月下跌8.75%，近三个月下跌7.31%，呈现强劲下行趋势。尽管波动率处于正常水平（13.75%），但252日回撤已达10%，属于实质性回撤。动量标签为'strong_downtrend'，表明空头主导。四月进入财报季与联储会议窗口，若关键支撑（如44000点）失守，可能加速下行。当前应保持防御姿态，等待趋势反转信号。"
       },
       "symbols": [
-        "strong_downtrend",
-        "normal"
+        "🐻",
+        "⏳",
+        "📉"
       ],
       "risk_tags": [
-        "drawdown"
+        "下跌趋势",
+        "回撤风险",
+        "动能减弱"
       ],
-      "visual": {
-        "palette": "indigo",
-        "icon": "strong_downtrend",
-        "card_style": "low"
-      },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/DJI/market_pulse.json",
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/market_pulse.json",
       "error": null
     }
   ],
-  "run_id": "0b095a8960b2"
+  "run_id": "e071b65d59c4"
 }

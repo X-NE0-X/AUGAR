@@ -13,6 +13,19 @@ import sys
 import textwrap
 from pathlib import Path
 
+# Auto-load .env if present (so users don't need to set env vars manually)
+_ENV_PATH = Path(__file__).resolve().parents[1] / ".env"
+if _ENV_PATH.exists():
+    with open(_ENV_PATH, encoding="utf-8") as _fh:
+        for _line in _fh:
+            _line = _line.strip()
+            if _line and not _line.startswith("#") and "=" in _line:
+                _key, _, _val = _line.partition("=")
+                _key = _key.strip()
+                _val = _val.strip().strip('"').strip("'")
+                if _key and _key not in os.environ:
+                    os.environ[_key] = _val
+
 
 def _repo_root() -> Path:
     pkg = Path(__file__).resolve().parent          # augar_engine/

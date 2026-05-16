@@ -17,27 +17,26 @@
     "display_name": "市场脉冲"
   },
   "result": {
-    "score": 49,
-    "polarity": "neutral",
-    "intensity": "low",
-    "omen_type": "market_pulse_neutral_low",
-    "headline": "Market Pulse reads DJI as neutral",
-    "subline": "strong_downtrend colors the reading; market pulse remains strong_downtrend.",
-    "short_reading": "The mock market_pulse reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 35,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "caution",
+    "headline": "道指四月展望：跌势延续，警惕回撤加深",
+    "subline": "短期动能疲弱，波动率可控，关注关键支撑",
+    "short_reading": "当前道指处于强势下跌趋势中，21日跌幅达8.75%，回撤超10%。波动率正常，但下行风险持续。",
+    "long_reading": "基于2026年3月27日数据，道指报45166.64，近一个月下跌8.75%，近三个月下跌7.31%，呈现强劲下行趋势。尽管波动率处于正常水平（13.75%），但252日回撤已达10%，属于实质性回撤。动量标签为'strong_downtrend'，表明空头主导。四月进入财报季与联储会议窗口，若关键支撑（如44000点）失守，可能加速下行。当前应保持防御姿态，等待趋势反转信号。"
   },
   "symbols": [
-    "strong_downtrend",
-    "normal"
+    "🐻",
+    "⏳",
+    "📉"
   ],
   "risk_tags": [
-    "drawdown"
+    "下跌趋势",
+    "回撤风险",
+    "动能减弱"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "strong_downtrend",
-    "card_style": "low"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/DJI/market_pulse.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/market_pulse.json",
   "error": null
 }

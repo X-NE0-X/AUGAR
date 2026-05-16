@@ -17,27 +17,30 @@
     "display_name": "文王卦"
   },
   "result": {
-    "score": 27,
-    "polarity": "unfavorable",
-    "intensity": "high",
-    "omen_type": "wenwang_unfavorable_high",
-    "headline": "Wenwang reads NDX as unfavorable",
-    "subline": "Thunder over Mountain colors the reading; market pulse remains strong_downtrend.",
-    "short_reading": "The mock wenwang reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 55,
+    "polarity": "neutral",
+    "intensity": "moderate",
+    "omen_type": "transformation",
+    "headline": "Thunder Stirring the Mountain, Earth Receiving the Sky",
+    "subline": "Moving lines signal a shift from shock to acceptance",
+    "short_reading": "April 2026 for NDX shows a market in transition. Initial turbulence gives way to a calmer, more receptive phase. Caution is warranted but the groundwork for recovery may be laid.",
+    "long_reading": "The primary hexagram Thunder over Mountain (Zhen above Gen) depicts sudden movement atop stillness — a volatile breakout or shock. Meanwhile, the changed hexagram Earth over Heaven (Kun above Qian) indicates the macro environment turning receptive and creative. Three moving lines (1, 2, 4) underscore this shift: the first two yin lines turning yang resolve early downside pressure, while the fourth yang turning yin tempers overreaction. The static Wealth line in the response position suggests underlying value, but the self line remains parents (information), urging reliance on data. Given the strong downtrend and normal volatility, NDX may experience a volatile first half of April before finding a bottom, with gradual stabilization toward month-end. The overall message is one of cautious optimism — a necessary clearing before a potential change in trend."
   },
   "symbols": [
-    "Thunder over Mountain",
-    "Wealth"
+    "Zhen (Thunder)",
+    "Gen (Mountain)",
+    "Kun (Earth)",
+    "Qian (Heaven)",
+    "Chen (Dragon)",
+    "Si (Serpent)"
   ],
   "risk_tags": [
+    "volatility",
+    "transition",
+    "uncertainty",
     "drawdown"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "thunder_over_mountain",
-    "card_style": "high"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/NDX/wenwang.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/NDX/wenwang.json",
   "error": null
 }

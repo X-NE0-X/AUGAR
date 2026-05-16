@@ -17,27 +17,33 @@
     "display_name": "文王卦"
   },
   "result": {
-    "score": 58,
-    "polarity": "neutral",
+    "score": 35,
+    "polarity": "negative",
     "intensity": "medium",
-    "omen_type": "wenwang_neutral_medium",
-    "headline": "Wenwang reads SPX as neutral",
-    "subline": "Earth over Water colors the reading; market pulse remains strong_downtrend.",
-    "short_reading": "The mock wenwang reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "omen_type": "caution",
+    "headline": "Waters Recede, Mountain Rises – A Market at a Standstill",
+    "subline": "From the Army to the Mountain: a period of consolidation and potential further downside if forced action is taken.",
+    "short_reading": "The primary hexagram Shi (Army) suggests collective movement, but moving lines indicate internal difficulties and lack of momentum. The change to Gen (Mountain) calls for stillness and caution. The market may experience a pause, but risk remains elevated.",
+    "long_reading": "The reading begins with Hexagram 7 (Shi, The Army) – Earth over Water, suggesting a time of organized effort but also potential conflict. The moving lines at positions 2, 3, and 6 highlight key dynamics. Line 2 (Self) is moving from yang to yin and falls in the empty branch Si, indicating that the market's internal drive is lacking substance. Line 3 (Parents) moves from yin to yang, warning of misfortune if pressing forward – akin to 'the army with many wagons' leading to trouble. Line 6 (Wealth) moves from yin to yang, offering a glimmer of eventual stabilization as the 'great prince' establishes order. However, the resulting Hexagram 52 (Gen, Keeping Still) represents a mountain, a time to stop and reflect. The market, already in a strong downtrend, may find a temporary bottom or slow decline, but the risk of further drops remains unless patience is exercised. The empty Self and the month/day branches in Si and Chen suggest that current conditions are unstable. Overall, the oracle advises against aggressive action and recommends waiting for clearer signs."
   },
   "symbols": [
-    "Earth over Water",
-    "Wealth"
+    "Water",
+    "Earth",
+    "Mountain",
+    "Army",
+    "Stillness",
+    "Caution",
+    "Consolidation",
+    "Downtrend"
   ],
   "risk_tags": [
-    "timing_risk"
+    "downtrend risk",
+    "consolidation",
+    "lack of momentum",
+    "empty self",
+    "caution advised"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "earth_over_water",
-    "card_style": "medium"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/SPX/wenwang.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/SPX/wenwang.json",
   "error": null
 }

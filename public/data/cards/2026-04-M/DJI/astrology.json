@@ -17,27 +17,26 @@
     "display_name": "占星"
   },
   "result": {
-    "score": 28,
-    "polarity": "unfavorable",
-    "intensity": "high",
-    "omen_type": "astrology_unfavorable_high",
-    "headline": "Astrology reads DJI as unfavorable",
-    "subline": "Scorpio colors the reading; market pulse remains strong_downtrend.",
-    "short_reading": "The mock astrology reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 45,
+    "polarity": "bearish",
+    "intensity": "medium",
+    "omen_type": "transition",
+    "headline": "四月展望：调整中的积累机遇",
+    "subline": "天蝎座资产在白羊座季节面临考验",
+    "short_reading": "当前市场处于强烈下行趋势，但波动正常，显示积累周期特征。满月相位暗示情绪高点，需关注转折。",
+    "long_reading": "资产星座为天蝎座，本月进入白羊座季节，火象与固定水象形成张力，预示深层调整与潜在转变。满月周期放大市场情绪，配合积累周期标签，表明当前下跌可能为底部吸筹阶段。尽管21日跌幅超8%，但63日波动率正常，252日回撤仅10%，尚未进入极端区域。投资者应保持冷静，避免情绪化决策，关注技术支撑是否守住。"
   },
   "symbols": [
-    "Scorpio",
-    "full"
+    "天蝎座",
+    "白羊座",
+    "满月"
   ],
   "risk_tags": [
-    "drawdown"
+    "下行趋势",
+    "波动正常",
+    "积累周期"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "scorpio",
-    "card_style": "high"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/DJI/astrology.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/astrology.json",
   "error": null
 }

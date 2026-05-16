@@ -17,28 +17,27 @@
     "display_name": "占星"
   },
   "result": {
-    "score": 99,
-    "polarity": "favorable",
+    "score": 65,
+    "polarity": "neutral",
     "intensity": "high",
-    "omen_type": "astrology_favorable_high",
-    "headline": "Astrology reads VIX as favorable",
-    "subline": "Sagittarius colors the reading; market pulse remains strong_uptrend.",
-    "short_reading": "The mock astrology reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "omen_type": "stable",
+    "headline": "市场波动率维持高位，趋势稳定",
+    "subline": "恐惧指数处于极端区间，但稳定型征兆暗示风险可控",
+    "short_reading": "VIX在4月处于高位，月相满月叠加白羊座季节，市场情绪极张但趋向平衡。",
+    "long_reading": "基于星相学代理模型，VIX（射手座资产）在2026年4月（白羊座季节）呈现稳定征兆。全月相位加剧短期波动，但积累周期标签表明此轮恐慌可能为吸筹阶段的一部分。技术面上，极端波动率和强上升趋势共存，深回撤已消化，市场正在寻找新的平衡点。建议保持警惕但不过度悲观。"
   },
   "symbols": [
     "Sagittarius",
-    "full"
+    "Aries",
+    "Full Moon"
   ],
   "risk_tags": [
     "volatility",
-    "drawdown"
+    "fear",
+    "accumulation",
+    "trend_shifting"
   ],
-  "visual": {
-    "palette": "ember",
-    "icon": "sagittarius",
-    "card_style": "high"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/VIX/astrology.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/VIX/astrology.json",
   "error": null
 }

@@ -12,18 +12,18 @@
     "freq": "M"
   },
   "composite": {
-    "score": 34,
-    "polarity": "unfavorable",
-    "intensity": "high",
+    "score": 48,
+    "polarity": "mixed",
+    "intensity": "medium",
     "dominant_symbols": [
-      "Ace of Cups",
-      "Three of Wands",
-      "Thunder over Mountain",
-      "Wealth",
-      "Fire",
-      "weak_day_master_pattern"
+      "Ace of Cups (emotional renewal)",
+      "King of Pentacles (financial security)",
+      "Eight of Cups reversed (fear of change)",
+      "Chariot reversed (loss of direction)",
+      "Queen of Wands reversed (self-doubt)",
+      "Ten of Wands (burden)"
     ],
-    "headline": "The oracles lean unfavorable with high intensity"
+    "headline": "The oracles lean mixed with medium intensity"
   },
   "cards": [
     {
@@ -45,28 +45,32 @@
         "display_name": "塔罗"
       },
       "result": {
-        "score": 41,
-        "polarity": "unfavorable",
-        "intensity": "medium",
-        "omen_type": "tarot_unfavorable_medium",
-        "headline": "Tarot reads NDX as unfavorable",
-        "subline": "Ace of Cups colors the reading; market pulse remains strong_downtrend.",
-        "short_reading": "The mock tarot reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 45,
+        "polarity": "mixed",
+        "intensity": "6",
+        "omen_type": "caution",
+        "headline": "Burden and Expansion: NDX Faces Stressful Road to Recovery",
+        "subline": "Despite emotional renewal, heavy responsibilities and conflict cloud the path.",
+        "short_reading": "The Ace of Cups suggests a fresh emotional start, but is undercut by the King of Pentacles' material stability and the oppressive Ten of Wands. Past indecision (reversed Chariot) and stubbornness (reversed Eight of Cups) weigh on progress. The outcome Three of Wands hints at eventual expansion after navigating conflict and self-doubt.",
+        "long_reading": "The Celtic Cross for NDX in April 2026 reveals a market caught between emotional renewal and material strain. At present, the Ace of Cups signals a potential uplift in sentiment, but the crossing King of Pentacles reminds us that financial foundations are solid yet cautious. Deep-rooted resistance to change (Eight of Cups reversed) and a history of lost momentum (Chariot reversed) create a heavy ground. The goal of confident leadership (Queen of Wands reversed) is hampered by self-doubt, while the near future Ten of Wands warns of increasing burdens. With the High Priestess as your guide, intuition is key to navigating the competitive, conflict-ridden environment (Five of Wands). Hopes for joyful cooperation (Three of Cups) may be tested, but the final card, Three of Wands, points to cautious expansion and foresight—success will come after sustained effort. Overall, the reading suggests a grinding, volatile month with a chance of stabilization late in the period."
       },
       "symbols": [
-        "Ace of Cups",
-        "Three of Wands"
+        "Ace of Cups (emotional renewal)",
+        "King of Pentacles (financial security)",
+        "Eight of Cups reversed (fear of change)",
+        "Chariot reversed (loss of direction)",
+        "Queen of Wands reversed (self-doubt)",
+        "Ten of Wands (burden)",
+        "High Priestess (intuition)",
+        "Five of Wands (conflict)"
       ],
       "risk_tags": [
-        "drawdown"
+        "downside_risk",
+        "volatility",
+        "resolution_needed"
       ],
-      "visual": {
-        "palette": "indigo",
-        "icon": "ace_of_cups",
-        "card_style": "medium"
-      },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/NDX/tarot.json",
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/NDX/tarot.json",
       "error": null
     },
     {
@@ -88,28 +92,31 @@
         "display_name": "文王卦"
       },
       "result": {
-        "score": 27,
-        "polarity": "unfavorable",
-        "intensity": "high",
-        "omen_type": "wenwang_unfavorable_high",
-        "headline": "Wenwang reads NDX as unfavorable",
-        "subline": "Thunder over Mountain colors the reading; market pulse remains strong_downtrend.",
-        "short_reading": "The mock wenwang reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 55,
+        "polarity": "neutral",
+        "intensity": "moderate",
+        "omen_type": "transformation",
+        "headline": "Thunder Stirring the Mountain, Earth Receiving the Sky",
+        "subline": "Moving lines signal a shift from shock to acceptance",
+        "short_reading": "April 2026 for NDX shows a market in transition. Initial turbulence gives way to a calmer, more receptive phase. Caution is warranted but the groundwork for recovery may be laid.",
+        "long_reading": "The primary hexagram Thunder over Mountain (Zhen above Gen) depicts sudden movement atop stillness — a volatile breakout or shock. Meanwhile, the changed hexagram Earth over Heaven (Kun above Qian) indicates the macro environment turning receptive and creative. Three moving lines (1, 2, 4) underscore this shift: the first two yin lines turning yang resolve early downside pressure, while the fourth yang turning yin tempers overreaction. The static Wealth line in the response position suggests underlying value, but the self line remains parents (information), urging reliance on data. Given the strong downtrend and normal volatility, NDX may experience a volatile first half of April before finding a bottom, with gradual stabilization toward month-end. The overall message is one of cautious optimism — a necessary clearing before a potential change in trend."
       },
       "symbols": [
-        "Thunder over Mountain",
-        "Wealth"
+        "Zhen (Thunder)",
+        "Gen (Mountain)",
+        "Kun (Earth)",
+        "Qian (Heaven)",
+        "Chen (Dragon)",
+        "Si (Serpent)"
       ],
       "risk_tags": [
+        "volatility",
+        "transition",
+        "uncertainty",
         "drawdown"
       ],
-      "visual": {
-        "palette": "indigo",
-        "icon": "thunder_over_mountain",
-        "card_style": "high"
-      },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/NDX/wenwang.json",
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/NDX/wenwang.json",
       "error": null
     },
     {
@@ -131,28 +138,29 @@
         "display_name": "子平八字"
       },
       "result": {
-        "score": 19,
-        "polarity": "unfavorable",
-        "intensity": "high",
-        "omen_type": "bazi_unfavorable_high",
-        "headline": "Bazi reads NDX as unfavorable",
-        "subline": "Fire colors the reading; market pulse remains strong_downtrend.",
-        "short_reading": "The mock bazi reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 55,
+        "polarity": "mixed",
+        "intensity": "medium",
+        "omen_type": "transition",
+        "headline": "Fire's Ascent Amidst Earth's Weight",
+        "subline": "April 2026 brings supportive Fire energy but lingering Earth drag",
+        "short_reading": "The NDX faces a critical juncture where strong Fire from the year offers a rebound potential, but Earth excess from the month and luck cycle may cap gains. Caution is warranted.",
+        "long_reading": "The natal chart shows a Bing Fire day master weakened by excessive Earth (output). The useful gods are Wood and Fire to support the weak flame. Currently in the JiWu luck cycle (2020-2029), both Earth (Ji) and Fire (Wu) are present – Fire helps, Earth aggravates. The year 2026 BingWu pours in even more Fire, creating a temporary surge of strength. However, the month of April (GengChen) adds Metal (wealth) and Earth (output), which can drain Fire through overwork and bring unexpected losses. The market context reflects a strong downtrend and material drawdown, aligning with Earth's heavy influence. This month may see attempted rallies (Fire) that fail to sustain due to underlying Earth pressure. Traders should look for quick moves but be ready for reversals. The hidden stems hint at opportunities from Resource (Wood) sectors like technology or innovation, but avoid overexposure to real estate or commodity-linked names. Overall, a month of high potential but high risk."
       },
       "symbols": [
         "Fire",
-        "weak_day_master_pattern"
+        "Phoenix",
+        "Earth",
+        "Scale",
+        "Sunrise"
       ],
       "risk_tags": [
-        "drawdown"
+        "volatility",
+        "reversal risk",
+        "earnings season"
       ],
-      "visual": {
-        "palette": "indigo",
-        "icon": "fire",
-        "card_style": "high"
-      },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/NDX/bazi.json",
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/NDX/bazi.json",
       "error": null
     },
     {
@@ -174,28 +182,34 @@
         "display_name": "紫微斗数"
       },
       "result": {
-        "score": 41,
-        "polarity": "unfavorable",
-        "intensity": "medium",
-        "omen_type": "ziwei_unfavorable_medium",
-        "headline": "Ziwei reads NDX as unfavorable",
-        "subline": "Tianxiang colors the reading; market pulse remains strong_downtrend.",
-        "short_reading": "The mock ziwei reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 60,
+        "polarity": "neutral-positive",
+        "intensity": "high",
+        "omen_type": "transformative volatility",
+        "headline": "Transformative Winds: Fortune Favors the Prepared",
+        "subline": "Wealth Palace receives Ke; Fortune Palace receives Lu – but Qisha and Pojun warn of upheaval.",
+        "short_reading": "April 2026 brings a potent mix of auspicious transformations and destabilizing forces. The Wealth Palace's Wuqu-Jumen with Hua Ke signals financial recognition through skill, but the Life Palace's Pojun and auxiliary stars suggest abrupt shifts. The Fortune Palace's Ziwei-Tianfu-Qisha with Hua Lu points to gains from bold moves, yet Lingxing implies hidden friction. The annual flow into the Spouse Palace (Taiyang-Tanlang with Hua Quan) emphasizes partnerships and external catalysts. Overall, a month of high-stakes opportunity requiring careful navigation.",
+        "long_reading": "The Ziwei chart for NDX in April 2026 paints a complex picture. The asset's recent strong downtrend (21d -7.6%, 63d -9.8%) aligns with the Life Palace's Pojun (upheaval) and Taiyin (hidden currents) with Tianji (strategy). The presence of Zuofu (assistance) suggests that support from institutional or algorithmic forces may emerge. The Wealth Palace (Wuqu, Jumen, Hua Ke) indicates that monetary gains are tied to intellectual property, tech, or legal clarity – a positive sign for NDX constituents. The Fortune Palace (Ziwei, Tianfu, Qisha, Lucun, Lingxing, Hua Lu) is remarkably strong: Ziwei as emperor grants leadership, Tianfu stability, Qisha daring, Lucun wealth, but Lingxing injects unexpected disruptions. Hua Lu here amplifies fortune, yet the combination is like a double-edged sword – gains may come with sudden reversals. The annual flow touches the Spouse Palace (Taiyang, Tanlang, Hua Quan) – external partnerships, regulatory news, or market sentiment shifts (Sun) combined with speculative fervor (Tanlang) and empowerment (Hua Quan) could trigger sharp moves. The Three Sides and Four Orthodox include Fortune, Spouse, Travel, and Wealth - reinforcing that external relations and bold financial actions will dominate. Risk is elevated, but the potential for a significant rebound exists if key support holds. Watch for volatility around earnings season and macro events. This is not a time for complacency but for strategic agility."
       },
       "symbols": [
-        "Tianxiang",
-        "Fortune"
+        "Ziwei",
+        "Tianfu",
+        "Qisha",
+        "Lucun",
+        "Lingxing",
+        "Wuqu",
+        "Jumen",
+        "Pojun"
       ],
       "risk_tags": [
-        "drawdown"
+        "volatility",
+        "correction",
+        "opportunity",
+        "partnership",
+        "regulation"
       ],
-      "visual": {
-        "palette": "indigo",
-        "icon": "tianxiang",
-        "card_style": "medium"
-      },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/NDX/ziwei.json",
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/NDX/ziwei.json",
       "error": null
     },
     {
@@ -217,28 +231,29 @@
         "display_name": "占星"
       },
       "result": {
-        "score": 53,
-        "polarity": "neutral",
-        "intensity": "low",
-        "omen_type": "astrology_neutral_low",
-        "headline": "Astrology reads NDX as neutral",
-        "subline": "Aquarius colors the reading; market pulse remains strong_downtrend.",
-        "short_reading": "The mock astrology reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 45,
+        "polarity": "bearish",
+        "intensity": "medium",
+        "omen_type": "caution",
+        "headline": "白羊座满月加剧波动，积累周期暗示底部",
+        "subline": "技术性下跌趋势持续，但月相和行星周期显示筑底迹象",
+        "short_reading": "四月满月落在白羊座，可能放大短期波动，但积累周期和正常波动率暗示市场正在寻找底部支撑。",
+        "long_reading": "当前NDX处于强烈下跌趋势中，但波动率正常、回撤幅度尚可接受。占星层面，资产星座水瓶座与周期星座白羊座形成风火互动，暗示创新与冲动的交织。满月往往带来情绪高潮和趋势转折点，配合积累周期标签，提示4月份可能是一个关键筑底期。建议投资者保持谨慎，关注技术面支撑确认，不要急于追空。"
       },
       "symbols": [
-        "Aquarius",
-        "full"
+        "full_moon",
+        "aries",
+        "aquarius",
+        "volatility",
+        "accumulation_cycle"
       ],
       "risk_tags": [
-        "drawdown"
+        "down_trend",
+        "volatility",
+        "uncertainty"
       ],
-      "visual": {
-        "palette": "indigo",
-        "icon": "aquarius",
-        "card_style": "low"
-      },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/NDX/astrology.json",
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/NDX/astrology.json",
       "error": null
     },
     {
@@ -260,30 +275,31 @@
         "display_name": "市场脉冲"
       },
       "result": {
-        "score": 22,
-        "polarity": "unfavorable",
-        "intensity": "high",
-        "omen_type": "market_pulse_unfavorable_high",
-        "headline": "Market Pulse reads NDX as unfavorable",
-        "subline": "strong_downtrend colors the reading; market pulse remains strong_downtrend.",
-        "short_reading": "The mock market_pulse reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 25,
+        "polarity": "negative",
+        "intensity": "strong",
+        "omen_type": "ominous",
+        "headline": "纳斯达克100指数四月展望：持续下跌趋势",
+        "subline": "动量显示强烈下跌，波动正常，回撤幅度较大",
+        "short_reading": "指数在近期大幅下跌，21天跌幅7.6%，63天跌幅9.8%，动量标签为强烈下跌趋势。波动率正常但回撤达到11.4%，市场情绪悲观。",
+        "long_reading": "根据市场脉冲数据，纳斯达克100指数在2026年4月面临持续下跌压力。最近21天和63天回报均为负，且跌幅加深，动量确认强烈下跌趋势。波动率处于正常水平，表明当前下跌并非由极端恐慌引起，而是趋势性下跌。252天回撤11.4%属于实质性回调。投资者应警惕进一步下行风险，短期内可能难以突破下降通道。"
       },
       "symbols": [
-        "strong_downtrend",
-        "normal"
+        "📉",
+        " ",
+        "🌪",
+        "️"
       ],
       "risk_tags": [
+        "bearish",
+        "trend_down",
+        "momentum_weak",
         "drawdown"
       ],
-      "visual": {
-        "palette": "indigo",
-        "icon": "strong_downtrend",
-        "card_style": "high"
-      },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/NDX/market_pulse.json",
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/NDX/market_pulse.json",
       "error": null
     }
   ],
-  "run_id": "0b095a8960b2"
+  "run_id": "e071b65d59c4"
 }

@@ -17,28 +17,25 @@
     "display_name": "市场脉冲"
   },
   "result": {
-    "score": 99,
-    "polarity": "favorable",
+    "score": 80,
+    "polarity": "negative",
     "intensity": "high",
-    "omen_type": "market_pulse_favorable_high",
-    "headline": "Market Pulse reads VIX as favorable",
-    "subline": "strong_uptrend colors the reading; market pulse remains strong_uptrend.",
-    "short_reading": "The mock market_pulse reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "omen_type": "warning",
+    "headline": "VIX飙升至30以上，极端波动预警",
+    "subline": "短期动量强劲，市场情绪恐慌",
+    "short_reading": "市场恐慌加剧，波动性维持极端水平",
+    "long_reading": "VIX指数当前报31.05，21天回报达66.7%，63天回报达130.5%，显示短期和中期均处于强势上升趋势。63天波动率高达136.7%，属于极端水平。尽管过去252天有40.7%的回撤，但近期上涨速度和幅度表明市场避险情绪浓厚。融资压力或不确定性事件可能推高了波动率。建议密切关注市场动向。"
   },
   "symbols": [
-    "strong_uptrend",
-    "extreme"
+    "VIX",
+    "SPX"
   ],
   "risk_tags": [
-    "volatility",
-    "drawdown"
+    "极端波动",
+    "恐慌",
+    "强势上涨"
   ],
-  "visual": {
-    "palette": "ember",
-    "icon": "strong_uptrend",
-    "card_style": "high"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/VIX/market_pulse.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/VIX/market_pulse.json",
   "error": null
 }

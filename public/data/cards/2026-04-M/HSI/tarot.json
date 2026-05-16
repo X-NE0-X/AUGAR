@@ -17,27 +17,31 @@
     "display_name": "塔罗"
   },
   "result": {
-    "score": 20,
-    "polarity": "unfavorable",
-    "intensity": "high",
-    "omen_type": "tarot_unfavorable_high",
-    "headline": "Tarot reads HSI as unfavorable",
-    "subline": "Two of Wands colors the reading; market pulse remains falling.",
-    "short_reading": "The mock tarot reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 45,
+    "polarity": "neutral",
+    "intensity": "moderate",
+    "omen_type": "warning",
+    "headline": "Steady undercurrents with surface calm",
+    "subline": "Patience required as market digests prior gains",
+    "short_reading": "A mixed April for HSI, with underlying strength but lacking momentum. Expect a period of consolidation and methodical progress rather than sharp moves.",
+    "long_reading": "The Celtic Cross spread reveals a market rooted in growth (The Empress upright) and past clarity (Ace of Swords), yet currently facing a challenge of waning enthusiasm (Page of Wands reversed). The goal of a full rally (Ten of Cups reversed) may not be realized, suggesting a degree of disappointment. The near future calls for patience and assessment (Seven of Pentacles), while the environment is heavy with material concerns (The Devil upright). Hopes lean toward recovery (Five of Pentacles reversed), and the final outcome is steady, diligent progress (Knight of Pentacles). Overall, the tendency is cautious, with no strong directional bias—slow accumulation rather than exuberance."
   },
   "symbols": [
-    "Two of Wands",
-    "Knight of Pentacles"
+    "T",
+    "h",
+    "e",
+    " ",
+    "E",
+    "m",
+    "p",
+    "r"
   ],
   "risk_tags": [
-    "drawdown"
+    "consolidation",
+    "lack of momentum",
+    "fear environment"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "two_of_wands",
-    "card_style": "high"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/HSI/tarot.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/HSI/tarot.json",
   "error": null
 }

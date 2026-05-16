@@ -17,27 +17,28 @@
     "display_name": "文王卦"
   },
   "result": {
-    "score": 44,
-    "polarity": "neutral",
-    "intensity": "low",
-    "omen_type": "wenwang_neutral_low",
-    "headline": "Wenwang reads FTSE as neutral",
-    "subline": "Mountain over Wind colors the reading; market pulse remains mixed.",
-    "short_reading": "The mock wenwang reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 60,
+    "polarity": "positive",
+    "intensity": "medium",
+    "omen_type": "mixed",
+    "headline": "Mountain Wind Dispersion — Corrective Phase Shifts to Expansion",
+    "subline": "Wealth anchored above, but inner support may waver.",
+    "short_reading": "The Gu hexagram of correction evolves into Huan dispersion. Wealth stays firm at the top, but emptiness near the self and moving support lines suggest a volatile shift. Expect initial turbulence, then gradual improvement.",
+    "long_reading": "The primary hexagram Gu (Work on the Decayed) indicates a market that has been correcting or dealing with accumulated problems. The moving lines at the third and fifth positions mark key transitions. Line 3 (Parents, moving from yang to yin) suggests that fundamental support may weaken or change nature. Line 5 (Offspring, moving from yin to yang) suggests increased trading activity or speculation that could lead to a breakout. The change to Huan (Dispersion) implies that this energy will spread out, perhaps leading to a broader rally. However, the self line (line 2) is in the Xun Kong (void), indicating a lack of clear direction or confidence initially. Wealth line (line 6) is strong and unchanging, providing a solid foundation for prices. Overall, the omen favors a bullish tendency for April 2026, but warns of a shaky start and the need to clear out old positions."
   },
   "symbols": [
-    "Mountain over Wind",
-    "Wealth"
+    "Mountain",
+    "Wind",
+    "Water",
+    "Dispersion",
+    "Correction"
   ],
   "risk_tags": [
-    "mixed_momentum"
+    "void_self",
+    "support_change",
+    "volatility"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "mountain_over_wind",
-    "card_style": "low"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/FTSE/wenwang.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/wenwang.json",
   "error": null
 }

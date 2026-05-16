@@ -17,27 +17,30 @@
     "display_name": "文王卦"
   },
   "result": {
-    "score": 20,
-    "polarity": "unfavorable",
-    "intensity": "high",
-    "omen_type": "wenwang_unfavorable_high",
-    "headline": "Wenwang reads DJI as unfavorable",
-    "subline": "Thunder over Wind colors the reading; market pulse remains strong_downtrend.",
-    "short_reading": "The mock wenwang reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 25,
+    "polarity": "slightly_bullish",
+    "intensity": "medium",
+    "omen_type": "transition",
+    "headline": "Thunder stirs the wind: a shift in momentum",
+    "subline": "From sibling rivalry to offspring emergence",
+    "short_reading": "Primary hexagram Thunder over Wind suggests agitation and penetration. Moving lines indicate competition (Siblings) transforming into creative drive (Offspring), potentially sparking a reversal. Wealth line remains stable but passive, awaiting activation. The changed hexagram Water over Wind warns of underlying danger but also adaptability. Overall, April 2026 may see a bottoming process with tentative upside.",
+    "long_reading": "The reading begins with Zhen (Thunder) over Xun (Wind), a configuration of sudden movement meeting gentle penetration. The market is in a strong downtrend, yet the moving lines reveal a shift: line 4 (Siblings, Vermilion Bird) changes from yang to yin, dissolving competitive pressure and panic; line 5 (Offspring, Flying Serpent) changes from yin to yang, awakening speculative energy and new capital inflows. The useful god Wealth (line 6) sits quietly in the response position, not yet engaged but supported by Parents (line 3, Black Tortoise) – indicating fundamental or policy backing. The changed hexagram Kan over Xun (Water over Wind) brings a theme of danger navigated by flexibility. This is not a full-fledged bull signal but a transitional omen: the worst of the drawdown may pass, giving way to a volatile consolidation or tentative recovery. The month branch Si and day branch Wu, with xun_kong (Si, Wu) cautioning that the near term may still feel empty – low confidence. Yet the offspring energy breaking through suggests young bulls testing the waters. Risk tags: continued volatility, potential for false breakout."
   },
   "symbols": [
-    "Thunder over Wind",
-    "Wealth"
+    "Thunder",
+    "Wind",
+    "Water",
+    "Siblings",
+    "Offspring",
+    "Wealth",
+    "Parents"
   ],
   "risk_tags": [
-    "drawdown"
+    "volatility",
+    "trend_reversal",
+    "bottoming_process"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "thunder_over_wind",
-    "card_style": "high"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/DJI/wenwang.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/wenwang.json",
   "error": null
 }

@@ -17,28 +17,32 @@
     "display_name": "文王卦"
   },
   "result": {
-    "score": 99,
-    "polarity": "favorable",
-    "intensity": "high",
-    "omen_type": "wenwang_favorable_high",
-    "headline": "Wenwang reads VIX as favorable",
-    "subline": "Lake over Lake colors the reading; market pulse remains strong_uptrend.",
-    "short_reading": "The mock wenwang reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 55,
+    "polarity": "mixed",
+    "intensity": "moderate",
+    "omen_type": "transformation",
+    "headline": "Lake Stirred by Wind: Volatility in Transition",
+    "subline": "Static Wealth anchors yet moving Officer and Parents signal underlying shifts.",
+    "short_reading": "The primary hexagram Dui (Lake) with moving lines 1 and 3 transforms into Dui over Xun (Wind). Wealth line sits static as Response, indicating the VIX level may hold, but moving Officer (risk) and Parents (foundation) suggest increasing turbulence. The void month and day branches (Si, Wu) empty the fire control, allowing Metal elements to move. Expect a volatile period with potential sharp moves, yet the core level may remain range-bound.",
+    "long_reading": "This reading for VIX in April 2026 reveals a scene of stillness beneath a stirring wind. The primary hexagram, Dui double lake, represents joy and openness but also the danger of shallows. Moving lines at the bottom (Officer) and third (Parents) indicate that the pressure of risk and the foundation of information are undergoing change. Officer changing from yang to yin suggests a softening of risk? Actually moving from old yang to yin: the risk could become less aggressive? But then Parents moving from yin to yang indicates strengthening of support/ news. The changed hexagram 'Lake over Wind' (Dui over Xun) is known as 'The Joyful Lake with Wind beneath' - implies that the surface appears calm but winds blow underneath, creating waves. The Wealth line (line 6) is static and occupies the response position, suggesting the ultimate outcome (market level) may stay relatively stable, but the path could be choppy. The month and day branches Si and Wu (Fire) are in the void (xun kong), meaning the controlling element is empty, which may allow the Metal of the Wealth line and other lines to express more freely, possibly leading to erratic moves. Given VIX's recent strong uptrend and extreme volatility, this reading warns to expect continued high volatility but not necessarily a breakout to new highs; rather a sideways volatile pattern. The moving Officer line at the bottom suggests that initial risk may diminish, but the moving Parents indicates that fundamentals or news will drive subsequent action. The self line (line3) is moving, indicating the querent's own position (or the market's internal dynamics) are in flux. Overall, a period of transformation where old patterns break and new ones form. Caution advised, but not alarm."
   },
   "symbols": [
-    "Lake over Lake",
-    "Wealth"
+    "Lake",
+    "Wind",
+    "Officer",
+    "Parents",
+    "Wealth",
+    "Void Fire",
+    "Metal"
   ],
   "risk_tags": [
+    "strong_uptrend",
+    "extreme",
     "volatility",
-    "drawdown"
+    "transformation",
+    "uncertainty"
   ],
-  "visual": {
-    "palette": "ember",
-    "icon": "lake_over_lake",
-    "card_style": "high"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/VIX/wenwang.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/VIX/wenwang.json",
   "error": null
 }

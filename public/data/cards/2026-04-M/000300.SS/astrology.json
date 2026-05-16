@@ -17,27 +17,33 @@
     "display_name": "占星"
   },
   "result": {
-    "score": 62,
-    "polarity": "favorable",
-    "intensity": "medium",
-    "omen_type": "astrology_favorable_medium",
-    "headline": "Astrology reads 000300.SS as favorable",
-    "subline": "Aquarius colors the reading; market pulse remains falling.",
-    "short_reading": "The mock astrology reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 1,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "warning",
+    "headline": "白羊座满月下的积蓄期",
+    "subline": "短线偏弱，中线筑底",
+    "short_reading": "4月沪深300指数处于白羊座满月周期，水瓶座资产受火象冲动影响，市场情绪波动较大。虽然短期趋势偏弱，但积累周期暗示底部区域正在形成，宜耐心观察支撑位。",
+    "long_reading": "当前宇宙配置显示，000300.SS作为水瓶座象征资产，在Aries季节满月下，短期动能衰减与积累周期叠加。月亮相位放大了市场情绪的起伏，但深层次上，这是在为下一轮上升积蓄力量。技术层面，近期下跌属于正常回调，波动率处于正常水平，回撤尚浅，并未破坏长期结构。投资者应保持冷静，关注4200-4300点区域的支撑有效性，若该区间企稳，则中期反弹可期。风险方面，需警惕外部流动性变化及政策预期落差引发的短线扰动。"
   },
   "symbols": [
-    "Aquarius",
-    "full"
+    "水瓶座",
+    "白羊座",
+    "满月",
+    "积累周期",
+    "支撑位"
   ],
   "risk_tags": [
-    "timing_risk"
+    "短期波动",
+    "流动性风险",
+    "政策预期差"
   ],
   "visual": {
-    "palette": "ember",
-    "icon": "aquarius",
-    "card_style": "medium"
+    "color": "深蓝与浅灰",
+    "element": "空气与火交织",
+    "shape": "圆形与波浪",
+    "lunar": "满月"
   },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000300.SS/astrology.json",
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/000300.SS/astrology.json",
   "error": null
 }

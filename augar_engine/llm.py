@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import json
 import os
-import hashlib
 import shutil
 import subprocess
 import tempfile
@@ -56,10 +55,15 @@ class LLMClient:
         if self.params.provider in {"history", "replay"}:
             return self._history_interpret(engine_id, raw_artifact, allow_mock_history=True)
         if self.params.provider == "mock":
-            historical = self._history_interpret(engine_id, raw_artifact, allow_mock_history=False, required=False)
-            if historical is not None:
-                return historical
-            return self._mock_interpret(engine_id, raw_artifact)
+            raise RuntimeError(
+                "Mock provider requires at least one previous real-LLM run for the same "
+                f"period/ticker/engine. No historical data found for "
+                f"{raw_artifact.get('period',{}).get('id','?')}/"
+                f"{raw_artifact.get('asset',{}).get('ticker','?')}/"
+                f"{engine_id}. "
+                "Run with --provider openai/deepseek/chatgpt_oauth first, "
+                "then mock can replay that history."
+            )
         if self.params.provider == "chatgpt_oauth":
             return self._chatgpt_oauth(engine_id, raw_artifact)
         if self.params.provider in {"openai", "openai_compatible", "deepseek", "local", "custom"}:
@@ -123,93 +127,19 @@ class LLMClient:
         manifests.sort(key=lambda item: item[0])
         return [item[2] for item in manifests]
 
-    def _mock_interpret(self, engine_id: str, raw_artifact: Dict[str, Any]) -> Dict[str, Any]:
-        ctx = raw_artifact.get("market_context", {})
-        ret = float(ctx.get("return_63d", 0.0))
-        vol = float(ctx.get("volatility_63d", 0.0))
-        dd = float(ctx.get("drawdown_252d", 0.0))
-        engine_signal = self._mock_engine_signal(engine_id, raw_artifact)
-        score = int(max(1, min(99, 50 + ret * 90 - vol * 12 + dd * 18 + engine_signal)))
-        polarity = "favorable" if score >= 60 else ("unfavorable" if score <= 42 else "neutral")
-        intensity = "high" if abs(score - 50) >= 18 or vol >= 0.25 else ("medium" if abs(score - 50) >= 8 else "low")
-        symbols = self._symbols(engine_id, raw_artifact, ctx)
-        risks = self._risks(ctx)
-        return {
-            "score": score,
-            "polarity": polarity,
-            "intensity": intensity,
-            "omen_type": f"{engine_id}_{polarity}_{intensity}",
-            "headline": f"{engine_id.replace('_', ' ').title()} reads {ctx.get('ticker', raw_artifact.get('asset', {}).get('ticker', 'asset'))} as {polarity}",
-            "subline": f"{symbols[0]} colors the reading; market pulse remains {ctx.get('momentum_label', 'mixed')}.",
-            "short_reading": f"The mock {engine_id} reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-            "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output.",
-            "symbols": symbols,
-            "risk_tags": risks,
-            "visual": {"palette": "ember" if polarity == "favorable" else "indigo", "icon": symbols[0].lower().replace(" ", "_"), "card_style": intensity},
-        }
-
-    @staticmethod
-    def _mock_engine_signal(engine_id: str, raw_artifact: Dict[str, Any]) -> int:
-        if engine_id == "tarot":
-            key = raw_artifact.get("spread", [{}])[-1]
-        elif engine_id == "wenwang":
-            key = {
-                "moving_lines": raw_artifact.get("moving_lines", []),
-                "image": raw_artifact.get("primary_hexagram", {}).get("image"),
-            }
-        elif engine_id == "bazi":
-            key = raw_artifact.get("useful_gods", {})
-        elif engine_id == "ziwei":
-            palaces = raw_artifact.get("palaces", [])
-            key = [p for p in palaces if p.get("transformations")]
-        elif engine_id == "astrology":
-            key = {
-                "moon": raw_artifact.get("moon_phase_proxy"),
-                "zodiac": raw_artifact.get("asset_zodiac"),
-            }
-        else:
-            key = raw_artifact.get("pulse", {})
-        digest = hashlib.sha256(json.dumps(key, sort_keys=True, default=str).encode("utf-8")).hexdigest()
-        return int(digest[:4], 16) % 45 - 22
-
-    @staticmethod
-    def _symbols(engine_id: str, raw_artifact: Dict[str, Any], ctx: Dict[str, Any]) -> list[str]:
-        if engine_id == "tarot":
-            return [raw_artifact["spread"][0]["card"], raw_artifact["spread"][-1]["card"]]
-        if engine_id == "wenwang":
-            return [raw_artifact["primary_hexagram"]["image"], raw_artifact["useful_god"]["main"]]
-        if engine_id == "bazi":
-            return [raw_artifact["strength_and_roots"]["day_element"], raw_artifact["pattern"]["name"]]
-        if engine_id == "ziwei":
-            return [raw_artifact["life_master"], raw_artifact["life_palace"]]
-        if engine_id == "astrology":
-            return [raw_artifact["asset_zodiac"], raw_artifact["moon_phase_proxy"]]
-        return [ctx.get("momentum_label", "mixed"), ctx.get("volatility_label", "normal")]
-
-    @staticmethod
-    def _risks(ctx: Dict[str, Any]) -> list[str]:
-        risks = []
-        if "elevated" in str(ctx.get("volatility_label")) or "extreme" in str(ctx.get("volatility_label")):
-            risks.append("volatility")
-        if ctx.get("drawdown_label") in {"deep", "material"}:
-            risks.append("drawdown")
-        if ctx.get("momentum_label") == "mixed":
-            risks.append("mixed_momentum")
-        return risks or ["timing_risk"]
-
     def _openai_compatible(self, engine_id: str, raw_artifact: Dict[str, Any]) -> Dict[str, Any]:
         if self.params.api_key:
             api_key = self.params.api_key
         elif self.params.provider == "deepseek":
             api_key = os.getenv("DEEPSEEK_API_KEY") or os.getenv("AUGAR_LLM_API_KEY") or os.getenv("OPENAI_API_KEY")
-            default_base = "https://api.deepseek.com/v1"
         else:
             api_key = os.getenv("OPENAI_API_KEY") or os.getenv("AUGAR_LLM_API_KEY")
-            default_base = OPENAI_BASE_URL
-        if self.params.provider == "deepseek" and not self.params.base_url:
-            default_base = "https://api.deepseek.com/v1"
+
+        if self.params.provider == "deepseek":
+            default_base = "https://api.deepseek.com"
         else:
             default_base = OPENAI_BASE_URL
+
         if not api_key:
             raise RuntimeError("OPENAI_API_KEY, DEEPSEEK_API_KEY, or AUGAR_LLM_API_KEY is required for non-mock providers")
         base_url = (self.params.base_url or default_base).rstrip("/")
@@ -220,7 +150,7 @@ class LLMClient:
             "Do not include markdown. Raw artifact:\n"
             + json.dumps(raw_artifact, ensure_ascii=False, default=str)
         )
-        payload = {
+        payload: Dict[str, Any] = {
             "model": self.params.model,
             "messages": [
                 {"role": "system", "content": "Return only valid JSON for the requested schema."},
@@ -230,15 +160,27 @@ class LLMClient:
             "top_p": self.params.top_p,
             "max_tokens": self.params.max_output_tokens,
         }
-        if self.params.provider == "deepseek" and self.params.reasoning_effort:
-            payload["reasoning_effort"] = self.params.reasoning_effort
+        if self.params.provider == "deepseek":
+            if self.params.reasoning_effort:
+                # thinking mode: reasoning eats tokens — double the budget
+                payload["reasoning_effort"] = self.params.reasoning_effort
+                payload["thinking"] = {"type": "enabled"}
+                payload["max_tokens"] = max(payload["max_tokens"], 8000)
+            else:
+                # explicitly disable thinking to prevent hidden reasoning
+                # from consuming the output token budget (DeepSeek V4 default)
+                payload["thinking"] = {"type": "disabled"}
         last_error: Exception | None = None
-        for _ in range(max(1, self.params.max_retries + 1)):
+        raw_content: str = ""
+        for attempt in range(max(1, self.params.max_retries + 1)):
             try:
                 resp = requests.post(url, headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}, json=payload, timeout=self.params.timeout)
                 resp.raise_for_status()
-                content = resp.json()["choices"][0]["message"]["content"]
-                return json.loads(content)
+                body = resp.json()
+                raw_content = body["choices"][0]["message"]["content"]
+                return json.loads(raw_content)
+            except json.JSONDecodeError:
+                last_error = RuntimeError(f"LLM returned invalid JSON (attempt {attempt+1}). Raw: {raw_content[:500]}")
             except Exception as exc:
                 last_error = exc
         raise RuntimeError(f"LLM provider failed for {engine_id}: {last_error}")

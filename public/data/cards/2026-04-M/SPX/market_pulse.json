@@ -17,27 +17,24 @@
     "display_name": "市场脉冲"
   },
   "result": {
-    "score": 22,
-    "polarity": "unfavorable",
-    "intensity": "high",
-    "omen_type": "market_pulse_unfavorable_high",
-    "headline": "Market Pulse reads SPX as unfavorable",
-    "subline": "strong_downtrend colors the reading; market pulse remains strong_downtrend.",
-    "short_reading": "The mock market_pulse reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 1,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "decline",
+    "headline": "SPX in Strong Downtrend with Normal Volatility",
+    "subline": "Index down 7.8% over 21 days, drawdown remains shallow at 8.7%",
+    "short_reading": "The market pulse indicates a strong downtrend, yet volatility and drawdown are contained.",
+    "long_reading": "As of March 27, 2026, SPX closed at 6368.85. Returns over 21 and 63 days are -7.8% and -8.1% respectively, confirming a strong downtrend. However, 63-day volatility is 12.9% (normal) and 252-day drawdown is -8.7% (shallow). This suggests persistent selling without panic. The outlook for April 2026 warrants caution, but moderate drawdown may provide structural support. Watch for stabilization or further acceleration."
   },
   "symbols": [
-    "strong_downtrend",
-    "normal"
+    "SPX"
   ],
   "risk_tags": [
-    "timing_risk"
+    "downtrend",
+    "normal volatility",
+    "shallow drawdown"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "strong_downtrend",
-    "card_style": "high"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/SPX/market_pulse.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/SPX/market_pulse.json",
   "error": null
 }

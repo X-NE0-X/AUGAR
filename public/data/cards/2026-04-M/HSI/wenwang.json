@@ -17,27 +17,28 @@
     "display_name": "文王卦"
   },
   "result": {
-    "score": 31,
-    "polarity": "unfavorable",
-    "intensity": "high",
-    "omen_type": "wenwang_unfavorable_high",
-    "headline": "Wenwang reads HSI as unfavorable",
-    "subline": "Fire over Mountain colors the reading; market pulse remains falling.",
-    "short_reading": "The mock wenwang reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 62,
+    "polarity": "positive",
+    "intensity": "medium",
+    "omen_type": "transitional",
+    "headline": "Pressure transforms into opportunity",
+    "subline": "Officer moves to generate Wealth, market finds support.",
+    "short_reading": "The reading points to initial external pressure or regulatory concerns early in April, but the moving Officer line generates Wealth, indicating that these pressures will likely resolve into favorable conditions. The market may experience volatility but should stabilize and recover.",
+    "long_reading": "The primary hexagram Fire over Mountain (The Wanderer) suggests a transient, cautious phase. The moving line 1 (Officer) indicates that a risk factor is active, possibly related to external policies or market sentiment. However, the Officer (Earth) generates the Wealth (Metal) line at the top, showing that this pressure ultimately supports gains. In the changed hexagram Fire over Fire (The Clinging Fire), the message is to remain adaptable, hold on, and trust the process. The self line (Parents) indicates that news or fundamental support will be key. Overall, the energy is bullish once initial uncertainty passes. Wealth appears in the response position (line 6), confirming a positive outcome. Rating: slightly optimistic."
   },
   "symbols": [
     "Fire over Mountain",
-    "Wealth"
+    "Fire over Fire",
+    "Officer",
+    "Wealth",
+    "Parents"
   ],
   "risk_tags": [
-    "drawdown"
+    "regulatory risk",
+    "volatility",
+    "external shock"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "fire_over_mountain",
-    "card_style": "high"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/HSI/wenwang.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/HSI/wenwang.json",
   "error": null
 }

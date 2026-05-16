@@ -17,27 +17,29 @@
     "display_name": "占星"
   },
   "result": {
-    "score": 46,
+    "score": 45,
     "polarity": "neutral",
-    "intensity": "low",
-    "omen_type": "astrology_neutral_low",
-    "headline": "Astrology reads HSI as neutral",
-    "subline": "Virgo colors the reading; market pulse remains falling.",
-    "short_reading": "The mock astrology reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "intensity": "medium",
+    "omen_type": "transition",
+    "headline": "春月渐盈，恒指待变",
+    "subline": "技术性回调与积累周期共振",
+    "short_reading": "恒指四月处于春季星座转换期，伴随上弦月能量，积累信号浮现。",
+    "long_reading": "基于恒星盘，恒指生肖为处女座，四月正值白羊座季节，火土元素交织。市场短期回落但波动率正常，累计周期暗示底部渐近。上弦月象征行动，宜观察突破信号。"
   },
   "symbols": [
     "Virgo",
-    "waxing"
+    "Aries",
+    "Waxing Moon",
+    "Accumulation",
+    "Normal Volatility"
   ],
   "risk_tags": [
-    "drawdown"
+    "downside momentum",
+    "material drawdown",
+    "accumulation zone",
+    "seasonal transition"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "virgo",
-    "card_style": "low"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/HSI/astrology.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/HSI/astrology.json",
   "error": null
 }

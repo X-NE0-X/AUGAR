@@ -17,27 +17,26 @@
     "display_name": "子平八字"
   },
   "result": {
-    "score": 30,
-    "polarity": "unfavorable",
-    "intensity": "high",
-    "omen_type": "bazi_unfavorable_high",
-    "headline": "Bazi reads FTSE as unfavorable",
-    "subline": "Wood colors the reading; market pulse remains mixed.",
-    "short_reading": "The mock bazi reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 75,
+    "polarity": "positive",
+    "intensity": "strong",
+    "omen_type": "auspicious",
+    "headline": "FTSE April 2026: Auspicious Earth-Fire Support",
+    "subline": "Beneficial elemental alignment reinforces stable growth.",
+    "short_reading": "April 2026 shows favorable cosmic energies for the FTSE. The strong Wood day master benefits from Fire and Earth elements, with current luck cycle JiWu and the month of Chen providing direct support. Expect a positive trend with controlled volatility.",
+    "long_reading": "The BaZi reading for April 2026 indicates a constructive period for the FTSE. The day master Jia Wood is strong (score 7), and the useful gods are Output (Fire) and Wealth (Earth). The current luck cycle JiWu (Earth-Fire, 2017-2026) aligns well with these needs. Furthermore, the year 2026 BingWu (Fire Horse) and the month of Chen (Earth Dragon) add reinforcing Fire and Earth. This combination suggests upward momentum and reduced downside risk, though the strong Wood warns of potential overheating. The market context confirms shallow drawdown and normal volatility, supporting a steady advance. Overall, a bullish outlook tempered by structural checks."
   },
   "symbols": [
-    "Wood",
-    "strong_day_master_pattern"
+    "Fire",
+    "Earth",
+    "Dragon",
+    "Horse"
   ],
   "risk_tags": [
-    "mixed_momentum"
+    "moderate volatility",
+    "overbought potential"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "wood",
-    "card_style": "high"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/FTSE/bazi.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/bazi.json",
   "error": null
 }

@@ -17,27 +17,32 @@
     "display_name": "紫微斗数"
   },
   "result": {
-    "score": 30,
-    "polarity": "unfavorable",
+    "score": 68,
+    "polarity": "positive",
     "intensity": "high",
-    "omen_type": "ziwei_unfavorable_high",
-    "headline": "Ziwei reads DJI as unfavorable",
-    "subline": "Jumen colors the reading; market pulse remains strong_downtrend.",
-    "short_reading": "The mock ziwei reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "omen_type": "propitious",
+    "headline": "Empowered asset palace with strong financial stars, but turbulence persists",
+    "subline": "Ziwei Tianfu Qisha with Hua Lu in Property suggests wealth opportunity, while annual flow Taiyang Tanlang with Hua Quan indicates dynamic competition",
+    "short_reading": "April 2026 brings favorable alignment for the Dow Jones, with strong wealth stars in the asset palace and empowerment in the current limit. However, aggressive stars warn of volatility and sharp moves. This is a time for strategic action rather than passive holding.",
+    "long_reading": "The chart for the Dow Jones in April 2026 reveals a powerful configuration. The Property palace, which serves as the Life palace for this index, hosts the sovereign stars Ziwei and Tianfu alongside the executioner Qisha, all blessed by the natal Hua Lu transformation. This indicates a strong foundation for assets and potential for accumulation. The current major limit is the Life palace itself, which, though empty of main stars, carries the natal Hua Quan empowerment, lending decisive force to the market’s direction. The annual flow falls in the Siblings palace, where Taiyang (Sun) and Tanlang (Greedy Wolf) combine with a period Hua Quan, signifying active competition and possible sudden moves. The three sides and four orthodox include Property, Siblings, Health (Tiantong Tianxiang), and Children (Wuqu Jumen with Hua Ke), reinforcing themes of wealth, partnerships, stability, and analytical support. Minor stars like Lingxing in Fortune bring friction, but are offset by Lucun and period Hua Lu. Overall, the astrological signals are positive for a turn or at least a strong volatile rebound, though the market’s recent downtrend suggests that this energy may manifest as sharp reversals rather than smooth ascent. Investors should watch for opportunities in destabilized conditions."
   },
   "symbols": [
-    "Jumen",
-    "Property"
+    "Ziwei",
+    "Tianfu",
+    "Qisha",
+    "Hua Lu",
+    "Taiyang",
+    "Tanlang",
+    "Hua Quan",
+    "Lucun"
   ],
   "risk_tags": [
-    "drawdown"
+    "volatility",
+    "trend reversal",
+    "opportunity",
+    "competition"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "jumen",
-    "card_style": "high"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/DJI/ziwei.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/ziwei.json",
   "error": null
 }

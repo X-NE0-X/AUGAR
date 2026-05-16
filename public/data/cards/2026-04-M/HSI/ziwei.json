@@ -17,27 +17,30 @@
     "display_name": "紫微斗数"
   },
   "result": {
-    "score": 39,
-    "polarity": "unfavorable",
-    "intensity": "medium",
-    "omen_type": "ziwei_unfavorable_medium",
-    "headline": "Ziwei reads HSI as unfavorable",
-    "subline": "Tiantong colors the reading; market pulse remains falling.",
-    "short_reading": "The mock ziwei reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 65,
+    "polarity": "positive",
+    "intensity": "moderate",
+    "omen_type": "wealth_and_authority",
+    "headline": "财权双发，但需防突发波动",
+    "subline": "2026年4月恒生指数走势前瞻",
+    "short_reading": "本月命盘显示财帛宫紫微化禄，官禄宫太阳化权，财权两旺，指数有望反弹。但迁移宫破军动荡，官禄宫擎羊，需警惕突发事件带来的急涨急跌。",
+    "long_reading": "根据紫微斗数推算，2026年4月恒生指数受财帛宫（紫微天府七杀禄存）化禄影响，资金面充裕，权值股或获支撑。官禄宫（太阳贪狼擎羊天魁）化权，市场情绪乐观，政策或行业利好推动指数上行。然迁移宫天机太阴破军无吉化，且流年夫妻宫化忌，国际关系、汇率或合作问题恐带来干扰。福德宫武曲巨门化科，投资者信心恢复，但需保持理性。整体走势为先调整后上扬，月末或有回调风险。关键点位参考24800支撑，25500压力。"
   },
   "symbols": [
-    "Tiantong",
-    "Wealth"
+    "紫微",
+    "天府",
+    "七杀",
+    "禄存",
+    "太阳",
+    "贪狼",
+    "擎羊"
   ],
   "risk_tags": [
-    "drawdown"
+    "市场波动",
+    "政策突发",
+    "汇率风险"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "tiantong",
-    "card_style": "medium"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/HSI/ziwei.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/HSI/ziwei.json",
   "error": null
 }

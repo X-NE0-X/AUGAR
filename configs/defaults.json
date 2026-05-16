@@ -19,7 +19,7 @@
     "codex_subprocess_timeout": 45
   },
   "engines": ["tarot", "wenwang", "bazi", "ziwei", "astrology", "market_pulse"],
-  "providers": ["history", "mock", "openai", "chatgpt_oauth", "openai_compatible", "deepseek", "local", "custom"],
+  "providers": ["history", "openai", "chatgpt_oauth", "openai_compatible", "deepseek", "local", "custom"],
   "generation": {
     "language": "zh-CN",
     "tone": "calm_analytical",

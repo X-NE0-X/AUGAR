@@ -17,27 +17,28 @@
     "display_name": "占星"
   },
   "result": {
-    "score": 53,
-    "polarity": "neutral",
-    "intensity": "low",
-    "omen_type": "astrology_neutral_low",
-    "headline": "Astrology reads NDX as neutral",
-    "subline": "Aquarius colors the reading; market pulse remains strong_downtrend.",
-    "short_reading": "The mock astrology reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 45,
+    "polarity": "bearish",
+    "intensity": "medium",
+    "omen_type": "caution",
+    "headline": "白羊座满月加剧波动，积累周期暗示底部",
+    "subline": "技术性下跌趋势持续，但月相和行星周期显示筑底迹象",
+    "short_reading": "四月满月落在白羊座，可能放大短期波动，但积累周期和正常波动率暗示市场正在寻找底部支撑。",
+    "long_reading": "当前NDX处于强烈下跌趋势中，但波动率正常、回撤幅度尚可接受。占星层面，资产星座水瓶座与周期星座白羊座形成风火互动，暗示创新与冲动的交织。满月往往带来情绪高潮和趋势转折点，配合积累周期标签，提示4月份可能是一个关键筑底期。建议投资者保持谨慎，关注技术面支撑确认，不要急于追空。"
   },
   "symbols": [
-    "Aquarius",
-    "full"
+    "full_moon",
+    "aries",
+    "aquarius",
+    "volatility",
+    "accumulation_cycle"
   ],
   "risk_tags": [
-    "drawdown"
+    "down_trend",
+    "volatility",
+    "uncertainty"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "aquarius",
-    "card_style": "low"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/NDX/astrology.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/NDX/astrology.json",
   "error": null
 }

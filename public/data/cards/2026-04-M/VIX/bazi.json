@@ -17,28 +17,28 @@
     "display_name": "子平八字"
   },
   "result": {
-    "score": 99,
-    "polarity": "favorable",
-    "intensity": "high",
-    "omen_type": "bazi_favorable_high",
-    "headline": "Bazi reads VIX as favorable",
-    "subline": "Earth colors the reading; market pulse remains strong_uptrend.",
-    "short_reading": "The mock bazi reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 1,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "transition",
+    "headline": "Fire calms the Wood of fear – VIX may ease.",
+    "subline": "April 2026: Stabilizing Qi dampens extreme volatility.",
+    "short_reading": "The Bazi chart reveals a balanced Earth day master (Ji) under strong Wood influence from the Mao month. However, the incoming Fire of the WuSi luck pillar and BingWu year pillar supports Earth and tempers Wood. For VIX, this suggests a moderation of the recent fear-driven surge, with potential for a decline or consolidation.",
+    "long_reading": "This oracle examines the VIX’s Bazi birth chart in the context of April 2026. The day master, Ji Earth, is born in Mao (Wood) month – a controlling relationship (Wood over Earth). The Earth element scores 5, balanced, but the seasonal Wood is strong. The current luck cycle (2018–2027, WuSi) and the year 2026 (BingWu) both bring abundant Fire. Fire is the Resource element for Earth, nourishing the day master and also transforming Wood’s control into creative energy. For a volatility index, Wood often correlates with anxiety and rapid moves, while Fire brings clarity and stability. Therefore, April 2026 likely sees a calming of extreme fear, possibly leading to a decrease in VIX. However, the deep drawdown label warns that underlying market stress remains. The overall reading is a transition from high tension to a more manageable state, but not a complete dissipation of risk. Traders should watch for a volatility crush rather than a spike."
   },
   "symbols": [
+    "Fire",
+    "Wood",
     "Earth",
-    "balanced_day_master_pattern"
+    "Volatility_Crush",
+    "Stabilization"
   ],
   "risk_tags": [
-    "volatility",
-    "drawdown"
+    "volatility crush",
+    "trend reversal",
+    "support"
   ],
-  "visual": {
-    "palette": "ember",
-    "icon": "earth",
-    "card_style": "high"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/VIX/bazi.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/VIX/bazi.json",
   "error": null
 }

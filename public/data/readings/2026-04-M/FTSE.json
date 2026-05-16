@@ -12,18 +12,18 @@
     "freq": "M"
   },
   "composite": {
-    "score": 40,
-    "polarity": "unfavorable",
-    "intensity": "high",
+    "score": 52,
+    "polarity": "positive",
+    "intensity": "medium",
     "dominant_symbols": [
-      "Knight of Pentacles",
-      "Four of Pentacles",
-      "Mountain over Wind",
-      "Wealth",
-      "Wood",
-      "strong_day_master_pattern"
+      "pentacle",
+      "knight",
+      "sword",
+      "ace of wands",
+      "two of cups reversed",
+      "four of pentacles reversed"
     ],
-    "headline": "The oracles lean unfavorable with high intensity"
+    "headline": "The oracles lean positive with medium intensity"
   },
   "cards": [
     {
@@ -45,28 +45,46 @@
         "display_name": "塔罗"
       },
       "result": {
-        "score": 28,
-        "polarity": "unfavorable",
-        "intensity": "high",
-        "omen_type": "tarot_unfavorable_high",
-        "headline": "Tarot reads FTSE as unfavorable",
-        "subline": "Knight of Pentacles colors the reading; market pulse remains mixed.",
-        "short_reading": "The mock tarot reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 62,
+        "polarity": "neutral",
+        "intensity": "medium",
+        "omen_type": "ambiguous",
+        "headline": "Grounding Energies Meet Sudden Spark: FTSE Eyes Cautious Optimism",
+        "subline": "A foundation of patience and new potential is disturbed by a wave of inspiration, but emotional disconnects urge restraint.",
+        "short_reading": "The FTSE is poised between steady accumulation and a sudden energetic shift. While the ground is fertile for gains, internal and external dissonance call for a measured approach.",
+        "long_reading": "The Celtic Cross reveals a market deeply rooted in earthy discipline (Ace of Pentacles, Knight of Pentacles) yet facing a restful pause (Four of Swords) before a burst of creative energy (Ace of Wands). The reversal of Two of Cups and Knight of Cups suggests that investor sentiment is out of sync, possibly ignoring fundamental signals. Hopes & Fears show a release of anxiety (Nine of Swords reversed), paving the way for a more open stance. The outcome reversed Four of Pentacles indicates a reluctance to hold tightly, hinting at profit-taking or distribution. Overall, the period is one of transition: old patterns are loosening, new impulses are arriving, and the index may oscillate before finding direction. Patience and adaptability will serve better than rigid expectations."
       },
       "symbols": [
-        "Knight of Pentacles",
-        "Four of Pentacles"
+        "pentacle",
+        "knight",
+        "sword",
+        "ace of wands",
+        "two of cups reversed",
+        "four of pentacles reversed",
+        "nine of swords reversed"
       ],
       "risk_tags": [
-        "mixed_momentum"
+        "market pause",
+        "emotional disconnect",
+        "new opportunity",
+        "profit-taking",
+        "transition"
       ],
       "visual": {
-        "palette": "indigo",
-        "icon": "knight_of_pentacles",
-        "card_style": "high"
+        "primary_color": "#8B7355",
+        "secondary_color": "#FFD700",
+        "shape": "circle",
+        "pattern": "concentric",
+        "elements": [
+          "sword",
+          "coin",
+          "wand",
+          "cup",
+          "knot"
+        ],
+        "mood": "grounded yet dynamic"
       },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/FTSE/tarot.json",
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/tarot.json",
       "error": null
     },
     {
@@ -88,28 +106,29 @@
         "display_name": "文王卦"
       },
       "result": {
-        "score": 44,
-        "polarity": "neutral",
-        "intensity": "low",
-        "omen_type": "wenwang_neutral_low",
-        "headline": "Wenwang reads FTSE as neutral",
-        "subline": "Mountain over Wind colors the reading; market pulse remains mixed.",
-        "short_reading": "The mock wenwang reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 60,
+        "polarity": "positive",
+        "intensity": "medium",
+        "omen_type": "mixed",
+        "headline": "Mountain Wind Dispersion — Corrective Phase Shifts to Expansion",
+        "subline": "Wealth anchored above, but inner support may waver.",
+        "short_reading": "The Gu hexagram of correction evolves into Huan dispersion. Wealth stays firm at the top, but emptiness near the self and moving support lines suggest a volatile shift. Expect initial turbulence, then gradual improvement.",
+        "long_reading": "The primary hexagram Gu (Work on the Decayed) indicates a market that has been correcting or dealing with accumulated problems. The moving lines at the third and fifth positions mark key transitions. Line 3 (Parents, moving from yang to yin) suggests that fundamental support may weaken or change nature. Line 5 (Offspring, moving from yin to yang) suggests increased trading activity or speculation that could lead to a breakout. The change to Huan (Dispersion) implies that this energy will spread out, perhaps leading to a broader rally. However, the self line (line 2) is in the Xun Kong (void), indicating a lack of clear direction or confidence initially. Wealth line (line 6) is strong and unchanging, providing a solid foundation for prices. Overall, the omen favors a bullish tendency for April 2026, but warns of a shaky start and the need to clear out old positions."
       },
       "symbols": [
-        "Mountain over Wind",
-        "Wealth"
+        "Mountain",
+        "Wind",
+        "Water",
+        "Dispersion",
+        "Correction"
       ],
       "risk_tags": [
-        "mixed_momentum"
+        "void_self",
+        "support_change",
+        "volatility"
       ],
-      "visual": {
-        "palette": "indigo",
-        "icon": "mountain_over_wind",
-        "card_style": "low"
-      },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/FTSE/wenwang.json",
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/wenwang.json",
       "error": null
     },
     {
@@ -131,28 +150,27 @@
         "display_name": "子平八字"
       },
       "result": {
-        "score": 30,
-        "polarity": "unfavorable",
-        "intensity": "high",
-        "omen_type": "bazi_unfavorable_high",
-        "headline": "Bazi reads FTSE as unfavorable",
-        "subline": "Wood colors the reading; market pulse remains mixed.",
-        "short_reading": "The mock bazi reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 75,
+        "polarity": "positive",
+        "intensity": "strong",
+        "omen_type": "auspicious",
+        "headline": "FTSE April 2026: Auspicious Earth-Fire Support",
+        "subline": "Beneficial elemental alignment reinforces stable growth.",
+        "short_reading": "April 2026 shows favorable cosmic energies for the FTSE. The strong Wood day master benefits from Fire and Earth elements, with current luck cycle JiWu and the month of Chen providing direct support. Expect a positive trend with controlled volatility.",
+        "long_reading": "The BaZi reading for April 2026 indicates a constructive period for the FTSE. The day master Jia Wood is strong (score 7), and the useful gods are Output (Fire) and Wealth (Earth). The current luck cycle JiWu (Earth-Fire, 2017-2026) aligns well with these needs. Furthermore, the year 2026 BingWu (Fire Horse) and the month of Chen (Earth Dragon) add reinforcing Fire and Earth. This combination suggests upward momentum and reduced downside risk, though the strong Wood warns of potential overheating. The market context confirms shallow drawdown and normal volatility, supporting a steady advance. Overall, a bullish outlook tempered by structural checks."
       },
       "symbols": [
-        "Wood",
-        "strong_day_master_pattern"
+        "Fire",
+        "Earth",
+        "Dragon",
+        "Horse"
       ],
       "risk_tags": [
-        "mixed_momentum"
+        "moderate volatility",
+        "overbought potential"
       ],
-      "visual": {
-        "palette": "indigo",
-        "icon": "wood",
-        "card_style": "high"
-      },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/FTSE/bazi.json",
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/bazi.json",
       "error": null
     },
     {
@@ -174,28 +192,37 @@
         "display_name": "紫微斗数"
       },
       "result": {
-        "score": 39,
-        "polarity": "unfavorable",
+        "score": 1,
+        "polarity": "mixed",
         "intensity": "medium",
-        "omen_type": "ziwei_unfavorable_medium",
-        "headline": "Ziwei reads FTSE as unfavorable",
-        "subline": "Tanlang colors the reading; market pulse remains mixed.",
-        "short_reading": "The mock ziwei reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "omen_type": "transitional",
+        "headline": "Steady advance under dual suns, yet hidden edge draws near",
+        "subline": "Career and Life palaces brighten, but Health and Travel carry cautionary transformations",
+        "short_reading": "April 2026 presents a period of balanced energies for FTSE. The Life palace gains authority through Taiyang and Tanlang with Hua Quan, while Career sees abundance from Ziwei and Tianfu with Hua Lu. However, Health and Travel contain Hua Ji and Huoxing, suggesting underlying friction and unexpected moves.",
+        "long_reading": "The monthly chart for April 2026 reveals a tapestry of mixed but navigable fortunes. The Life palace, activated as both the annual flow and the current major limit, hosts Taiyang (Sun) and Tanlang (Greedy Wolf) with period power transformation (Hua Quan). This signals a surge in confidence and aggressive positioning, but also a tendency to overreach. The Career palace, fortified by Ziwei (Emperor), Tianfu (Great Wealth), and Qisha (General) receiving natal prosperity (Hua Lu), points to institutional support and long-term structural gains for the index. Wealth palace, though quieter with Tiantong and Tianxiang, is tempered by Tuoluo, indicating that liquidity or momentum may encounter a temporary bottleneck. The three sides form a rounded base around Life, Career, Wealth, and Spouse, with the Spouse palace’s Wuqu and Jumen gaining reputation (Hua Ke), suggesting that partnerships or external endorsements will be favorable. Yet caution is warranted: Health palace carries natal Hua Ji and the presence of Wenqu and Huoxing, a literary-fire combination that can lead to over-analysis or sudden inflammatory events. Travel palace also suffers period Hua Ji with Lianzhen and Tianliang, warning of delays or miscommunications in international or cross-regional transactions. The Fortune palace, featuring Tianji, Taiyin, and Pojun, is volatile and may bring abrupt shifts after mid-month. Overall, the oracle counsels a steady hand, leveraging career and life momentum while guarding against overconfidence and external friction."
       },
       "symbols": [
-        "Tanlang",
-        "Career"
+        "Sun ascending",
+        "Greedy Wolf with golden crown",
+        "Emperor on a chariot",
+        "General's sword sheathed",
+        "Snake coiled around a treasure",
+        "Fire star flickering on a scroll"
       ],
       "risk_tags": [
-        "mixed_momentum"
+        "overconfidence",
+        "liquidity squeeze",
+        "regulatory flare",
+        "travel delays",
+        "health-related volatility"
       ],
       "visual": {
-        "palette": "indigo",
-        "icon": "tanlang",
-        "card_style": "medium"
+        "primary_color": "#C5A55A",
+        "secondary_color": "#8B0000",
+        "shape": "circle with a central diamond",
+        "imagery": "A calm sea under a bright sun with a distant storm cloud"
       },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/FTSE/ziwei.json",
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/ziwei.json",
       "error": null
     },
     {
@@ -217,28 +244,27 @@
         "display_name": "占星"
       },
       "result": {
-        "score": 69,
-        "polarity": "favorable",
-        "intensity": "high",
-        "omen_type": "astrology_favorable_high",
-        "headline": "Astrology reads FTSE as favorable",
-        "subline": "Aquarius colors the reading; market pulse remains mixed.",
-        "short_reading": "The mock astrology reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 62,
+        "polarity": "positive",
+        "intensity": "mild",
+        "omen_type": "auspicious",
+        "headline": "稳步积累",
+        "subline": "四月FTSE指数在稳定中蕴藏机遇",
+        "short_reading": "当前市场情绪谨慎，但积累周期显现，长期向好。",
+        "long_reading": "基于星象分析，FTSE指数在2026年4月呈现稳定积累的格局。水瓶座资产星位与白羊座周期季节形成调合，月亮渐亏暗示短期情绪回落，但积累周期标签表明主力资金正在低位布局。波动率正常、回撤浅幅，适合稳健型投资者逐步建仓。整体看，本月是整理蓄势的窗口，耐心等待突破信号。"
       },
       "symbols": [
-        "Aquarius",
-        "waning"
+        "水瓶",
+        "白羊",
+        "残月"
       ],
       "risk_tags": [
-        "mixed_momentum"
+        "波动正常",
+        "浅幅回调",
+        "积累阶段"
       ],
-      "visual": {
-        "palette": "ember",
-        "icon": "aquarius",
-        "card_style": "high"
-      },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/FTSE/astrology.json",
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/astrology.json",
       "error": null
     },
     {
@@ -260,30 +286,27 @@
         "display_name": "市场脉冲"
       },
       "result": {
-        "score": 33,
-        "polarity": "unfavorable",
+        "score": 50,
+        "polarity": "neutral",
         "intensity": "medium",
-        "omen_type": "market_pulse_unfavorable_medium",
-        "headline": "Market Pulse reads FTSE as unfavorable",
-        "subline": "mixed colors the reading; market pulse remains mixed.",
-        "short_reading": "The mock market_pulse reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "omen_type": "transition",
+        "headline": "FTSE短期承压，长期趋势待明",
+        "subline": "四月行情或现方向选择",
+        "short_reading": "市场短期回调，但长期动能尚存，投资者需谨慎观望。",
+        "long_reading": "FTSE报收9967.4，近21日下跌8.1%，短期抛压明显；但63日仍微涨1.0%，长期趋势未破。波动率正常，回撤仅8.6%，属浅度调整。动量混合，显示市场处于方向抉择期。四月或迎来关键突破，建议关注支撑与阻力位。"
       },
       "symbols": [
-        "mixed",
-        "normal"
+        "天秤",
+        "迷雾"
       ],
       "risk_tags": [
-        "mixed_momentum"
+        "短期波动",
+        "方向不明"
       ],
-      "visual": {
-        "palette": "indigo",
-        "icon": "mixed",
-        "card_style": "medium"
-      },
-      "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/FTSE/market_pulse.json",
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/market_pulse.json",
       "error": null
     }
   ],
-  "run_id": "0b095a8960b2"
+  "run_id": "e071b65d59c4"
 }

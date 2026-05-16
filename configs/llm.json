@@ -1,0 +1,30 @@
+{
+  "_comment": "Provider-specific LLM defaults.  Augar generate --config can override.",
+  "providers": {
+    "chatgpt_oauth": {
+      "model": "gpt-5.5",
+      "reasoning_effort": "low",
+      "_note": "Authenticates via local Codex CLI OAuth — no API key needed."
+    },
+    "openai": {
+      "model": "gpt-5.5",
+      "reasoning_effort": "low",
+      "base_url": "https://api.openai.com/v1",
+      "_note": "Requires OPENAI_API_KEY."
+    },
+    "deepseek": {
+      "model": "deepseek-v4-flash",
+      "base_url": "https://api.deepseek.com",
+      "reasoning_effort": null,
+      "_note": "Set reasoning_effort=low|medium|high|xhigh to enable thinking mode. Requires DEEPSEEK_API_KEY env var."
+    },
+    "openai_compatible": {
+      "base_url": "http://localhost:8000/v1",
+      "_note": "Generic OpenAI-compatible endpoint. Set --model as needed."
+    },
+    "local": {
+      "base_url": "http://localhost:8000/v1",
+      "_note": "Local LLM server (ollama, vllm, llama.cpp, etc). Set --model to match your local model name."
+    }
+  }
+}

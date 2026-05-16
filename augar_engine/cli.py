@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 
 from .constants import (
@@ -50,6 +51,7 @@ def main(argv: list[str] | None = None) -> None:
     parser.add_argument("--allow-error-cards", action="store_true")
     parser.add_argument("--include-raw-artifact", action="store_true")
     parser.add_argument("--include-market-context", action="store_true")
+    parser.add_argument("--api-key", help="API key for LLM provider (falls back to DEEPSEEK_API_KEY / OPENAI_API_KEY / AUGAR_LLM_API_KEY env vars)")
     args = parser.parse_args(argv)
     config = {}
     if args.config:
@@ -83,6 +85,7 @@ def main(argv: list[str] | None = None) -> None:
         include_raw_artifact=args.include_raw_artifact or bool(config.get("include_raw_artifact", False)),
         include_market_context=args.include_market_context or bool(config.get("include_market_context", False)),
         allow_error_cards=args.allow_error_cards or bool(config.get("allow_error_cards", False)),
+        api_key=args.api_key or config.get("api_key") or os.getenv("DEEPSEEK_API_KEY") or os.getenv("OPENAI_API_KEY") or os.getenv("AUGAR_LLM_API_KEY") or None,
     )
     if args.output_root:
         request.output_root = args.output_root

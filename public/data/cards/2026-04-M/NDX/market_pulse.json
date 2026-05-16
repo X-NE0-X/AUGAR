@@ -17,27 +17,28 @@
     "display_name": "市场脉冲"
   },
   "result": {
-    "score": 22,
-    "polarity": "unfavorable",
-    "intensity": "high",
-    "omen_type": "market_pulse_unfavorable_high",
-    "headline": "Market Pulse reads NDX as unfavorable",
-    "subline": "strong_downtrend colors the reading; market pulse remains strong_downtrend.",
-    "short_reading": "The mock market_pulse reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 25,
+    "polarity": "negative",
+    "intensity": "strong",
+    "omen_type": "ominous",
+    "headline": "纳斯达克100指数四月展望：持续下跌趋势",
+    "subline": "动量显示强烈下跌，波动正常，回撤幅度较大",
+    "short_reading": "指数在近期大幅下跌，21天跌幅7.6%，63天跌幅9.8%，动量标签为强烈下跌趋势。波动率正常但回撤达到11.4%，市场情绪悲观。",
+    "long_reading": "根据市场脉冲数据，纳斯达克100指数在2026年4月面临持续下跌压力。最近21天和63天回报均为负，且跌幅加深，动量确认强烈下跌趋势。波动率处于正常水平，表明当前下跌并非由极端恐慌引起，而是趋势性下跌。252天回撤11.4%属于实质性回调。投资者应警惕进一步下行风险，短期内可能难以突破下降通道。"
   },
   "symbols": [
-    "strong_downtrend",
-    "normal"
+    "📉",
+    " ",
+    "🌪",
+    "️"
   ],
   "risk_tags": [
+    "bearish",
+    "trend_down",
+    "momentum_weak",
     "drawdown"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "strong_downtrend",
-    "card_style": "high"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/NDX/market_pulse.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/NDX/market_pulse.json",
   "error": null
 }

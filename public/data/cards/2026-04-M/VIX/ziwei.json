@@ -17,28 +17,33 @@
     "display_name": "紫微斗数"
   },
   "result": {
-    "score": 99,
-    "polarity": "favorable",
+    "score": 65,
+    "polarity": "mixed",
     "intensity": "high",
-    "omen_type": "ziwei_favorable_high",
-    "headline": "Ziwei reads VIX as favorable",
-    "subline": "Wuqu colors the reading; market pulse remains strong_uptrend.",
-    "short_reading": "The mock ziwei reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "omen_type": "mixed",
+    "headline": "Volatility and Opportunity in Shadow of Crisis",
+    "subline": "A period of intense transformation where auspicious forces in property and social circles meet deep-seated fears.",
+    "short_reading": "The chart reveals a powerful convergence of wealth stars in the Property palace, offset by a volatile Life Palace. The VIX index mirrors market anxiety, yet the stars suggest strategic gains through careful positioning.",
+    "long_reading": "The Ziwei chart for VIX in April 2026 shows a complex interplay of forces. The Life Palace, with Huoxing and Hua Ji, indicates an underlying restlessness and potential setbacks, reflecting the index's inherent volatility. However, the Children Palace shines with Ziwei, Tianfu, Qisha, Zuofu, Lucun, and natal Hua Lu, signifying strong support and auspicious beginnings in speculative ventures or new market phases. The Property Palace (body palace) features Wuqu, Jumen, and Hua Ke, pointing to recognition and mastery in wealth management. The annual flow settles in the Friends Palace (Taiyang, Tanlang, period Hua Quan), highlighting the influence of social networks and alliances in career and wealth outcomes (the focus palaces). The current major limit of Travel (Youbi, natal Hua Quan) suggests proactive movement and adaptability are key. The three-sides-four-orthodox grouping (Children, Friends, Parents, Property) forms a solid foundation: Parents with Tiantong, Tianxiang, Wenchang, Tuoluo, Tianyue implies a need to balance talent and obstacles from external authorities or past patterns. Overall, this is a period where high volatility (extreme in market context) is both a risk and an opportunity, with auspicious elements favoring those who navigate with discipline and awareness of emotional triggers."
   },
   "symbols": [
+    "Ziwei",
+    "Tianfu",
+    "Qisha",
     "Wuqu",
-    "Children"
+    "Jumen",
+    "Taiyang",
+    "Tanlang",
+    "Tiantong"
   ],
   "risk_tags": [
     "volatility",
-    "drawdown"
+    "drawdown",
+    "emotional trading",
+    "overconfidence",
+    "external obstacles"
   ],
-  "visual": {
-    "palette": "ember",
-    "icon": "wuqu",
-    "card_style": "high"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/VIX/ziwei.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/VIX/ziwei.json",
   "error": null
 }

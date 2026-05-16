@@ -12,14 +12,18 @@
     "freq": "M"
   },
   "composite": {
-    "score": 28,
-    "polarity": "unfavorable",
+    "score": 72,
+    "polarity": "positive",
     "intensity": "high",
     "dominant_symbols": [
-      "Nine of Swords",
-      "Wheel of Fortune"
+      "Nine of Swords reversed",
+      "Seven of Cups",
+      "Five of Wands",
+      "Page of Cups reversed",
+      "Page of Wands",
+      "Ten of Pentacles"
     ],
-    "headline": "The oracles lean unfavorable with high intensity"
+    "headline": "The oracles lean positive with high intensity"
   },
   "cards": [
     {
@@ -41,30 +45,34 @@
         "display_name": "塔罗"
       },
       "result": {
-        "score": 28,
-        "polarity": "unfavorable",
-        "intensity": "high",
-        "omen_type": "tarot_unfavorable_high",
-        "headline": "Tarot reads SPX as unfavorable",
-        "subline": "Nine of Swords colors the reading; market pulse remains strong_downtrend.",
-        "short_reading": "The mock tarot reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-        "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+        "score": 72,
+        "polarity": "positive",
+        "intensity": "moderate",
+        "omen_type": "transition",
+        "headline": "Turning of the Wheel: From Conflict to Stability",
+        "subline": "Anxiety lifts as new opportunities and social harmony emerge.",
+        "short_reading": "The cards indicate that the recent downtrend's anxiety is fading. Conflicts and illusions give way to a stable outcome. The Wheel of Fortune suggests a positive shift in April.",
+        "long_reading": "The Nine of Swords reversed shows that the market's recent anxiety is dissipating. The Seven of Cups warns against being seduced by false hopes; many options exist but clarity is needed. The root cause is ongoing competition (Five of Wands). Past emotional letdowns (Page of Cups reversed) are behind you. Your goal is fresh energy (Page of Wands). In the near future, tangible stability and wealth emerge (Ten of Pentacles). You are defending your position (Seven of Wands) amid a generally positive environment (Three of Cups). Your hopes for a new start (Ace of Pentacles) are aligned with the outcome: the Wheel of Fortune, indicating a fortunate turn of events. Overall, April 2026 appears to be a month of resolution and positive change for SPX."
       },
       "symbols": [
-        "Nine of Swords",
-        "Wheel of Fortune"
+        "Nine of Swords reversed",
+        "Seven of Cups",
+        "Five of Wands",
+        "Page of Cups reversed",
+        "Page of Wands",
+        "Ten of Pentacles",
+        "Seven of Wands",
+        "Three of Cups"
       ],
       "risk_tags": [
-        "timing_risk"
+        "illusion",
+        "conflict",
+        "overoptimism"
       ],
-      "visual": {
-        "palette": "indigo",
-        "icon": "nine_of_swords",
-        "card_style": "high"
-      },
-      "raw_ref": "runs/8339a1b5ad48/debug/cards/2026-04-M/SPX/tarot.json",
+      "visual": {},
+      "raw_ref": "runs/5e510e5089a1/debug/cards/2026-04-M/SPX/tarot.json",
       "error": null
     }
   ],
-  "run_id": "499a3d267c56"
+  "run_id": "0d9895cd030b"
 }

@@ -17,27 +17,28 @@
     "display_name": "子平八字"
   },
   "result": {
-    "score": 19,
-    "polarity": "unfavorable",
-    "intensity": "high",
-    "omen_type": "bazi_unfavorable_high",
-    "headline": "Bazi reads NDX as unfavorable",
-    "subline": "Fire colors the reading; market pulse remains strong_downtrend.",
-    "short_reading": "The mock bazi reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 55,
+    "polarity": "mixed",
+    "intensity": "medium",
+    "omen_type": "transition",
+    "headline": "Fire's Ascent Amidst Earth's Weight",
+    "subline": "April 2026 brings supportive Fire energy but lingering Earth drag",
+    "short_reading": "The NDX faces a critical juncture where strong Fire from the year offers a rebound potential, but Earth excess from the month and luck cycle may cap gains. Caution is warranted.",
+    "long_reading": "The natal chart shows a Bing Fire day master weakened by excessive Earth (output). The useful gods are Wood and Fire to support the weak flame. Currently in the JiWu luck cycle (2020-2029), both Earth (Ji) and Fire (Wu) are present – Fire helps, Earth aggravates. The year 2026 BingWu pours in even more Fire, creating a temporary surge of strength. However, the month of April (GengChen) adds Metal (wealth) and Earth (output), which can drain Fire through overwork and bring unexpected losses. The market context reflects a strong downtrend and material drawdown, aligning with Earth's heavy influence. This month may see attempted rallies (Fire) that fail to sustain due to underlying Earth pressure. Traders should look for quick moves but be ready for reversals. The hidden stems hint at opportunities from Resource (Wood) sectors like technology or innovation, but avoid overexposure to real estate or commodity-linked names. Overall, a month of high potential but high risk."
   },
   "symbols": [
     "Fire",
-    "weak_day_master_pattern"
+    "Phoenix",
+    "Earth",
+    "Scale",
+    "Sunrise"
   ],
   "risk_tags": [
-    "drawdown"
+    "volatility",
+    "reversal risk",
+    "earnings season"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "fire",
-    "card_style": "high"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/NDX/bazi.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/NDX/bazi.json",
   "error": null
 }

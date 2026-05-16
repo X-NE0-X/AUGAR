@@ -17,27 +17,110 @@
     "display_name": "紫微斗数"
   },
   "result": {
-    "score": 39,
-    "polarity": "unfavorable",
-    "intensity": "medium",
-    "omen_type": "ziwei_unfavorable_medium",
-    "headline": "Ziwei reads 000300.SS as unfavorable",
-    "subline": "Wuqu colors the reading; market pulse remains falling.",
-    "short_reading": "The mock ziwei reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 1,
+    "polarity": "neutral",
+    "intensity": "moderate",
+    "omen_type": "mixed",
+    "headline": "Foundation Strong but Core Obstructed; External Influence Key in April",
+    "subline": "Children Palace Lu Fuels Underlying Strength, But Life Palace Ji Signals Caution; Annual Flow in Friends with Quan Indicates Social/External Dynamics",
+    "short_reading": "For April 2026, the CSI 300 index shows a mixed omen. The major limit in Children Palace with Ziwei, Tianfu, Qisha and Hua Lu suggests underlying strength and potential for growth, but the Life Palace's Hua Ji and the falling momentum warns of core obstacles. The annual flow in Friends Palace with Taiyang, Tanlang, and Hua Quan highlights the importance of external factors and social dynamics. Market may experience volatility but could find support from property-related sectors.",
+    "long_reading": "The Ziwei chart for 000300.SS in April 2026 reveals a nuanced outlook. The current major limit, centered on the Children Palace (palace 4), is anchored by the triple stellar combination of Ziwei, Tianfu, and Qisha, with a natal Hua Lu. This configuration typically denotes a period of structural consolidation and potential expansion—Ziwei as the emperor provides authority, Tianfu adds stability, and Qisha brings assertive action. The Hua Lu transformation amplifies gains, particularly in areas related to future growth and investments. However, the Life Palace (palace 1) is empty of main stars and carries a natal Hua Ji, indicating a fundamental weakness or hidden obstruction at the core of the entity. This duality creates a tension between outward strength and internal fragility.\n\nThe annual flow for April 2026 lands on the Friends Palace (palace 8), where Taiyang and Tanlang meet a period Hua Quan. Taiyang symbolizes visibility, leadership, and openness, while Tanlang represents desire, networking, and sudden changes. Hua Quan gives control over these forces, suggesting that external relationships, market sentiment, or policy moves will be decisive. The three sides four orthodox (Children, Friends, Parents, Property) highlight the interplay: Property Palace (palace 10) with Wuqu, Jumen, and natal Hua Ke points to recognition in asset valuation and real estate, but the Parents Palace (palace 12) with Tiantong, Tianxiang, and Tuoluo hints at bureaucratic delays or conservative influences.\n\nMarket context shows a recent decline with nearly -5% over 21 days and -1.1% over 63 days, with normal volatility. The chart indicates that while the underlying trend may find a floor due to the strong Children Palace, the Life Palace's Ji could cause false breaks or internal issues. The wealth sector (palace 5) receives a period Hua Lu, offering a short-term boost, but the falling momentum suggests caution. April may see choppy trading with possible late-month recovery if external factors turn favorable. Risk management is advised, particularly around mid-month when the transformational energies conflict."
   },
   "symbols": [
+    "Ziwei",
+    "Tianfu",
+    "Qisha",
+    "Taiyang",
+    "Tanlang",
     "Wuqu",
-    "Children"
+    "Jumen",
+    "Hua Lu"
   ],
   "risk_tags": [
-    "timing_risk"
+    "volatility",
+    "structural weakness",
+    "external dependency",
+    "mixed signals"
   ],
   "visual": {
-    "palette": "indigo",
-    "icon": "wuqu",
-    "card_style": "medium"
+    "chart_type": "palace_grid",
+    "highlight_palaces": [
+      4,
+      8,
+      12,
+      10
+    ],
+    "flow_palace": 8,
+    "major_limit_palace": 4,
+    "body_palace": 10,
+    "life_palace": 1,
+    "transformations": {
+      "natal": {
+        "Lu": [
+          4
+        ],
+        "Quan": [
+          7
+        ],
+        "Ke": [
+          10
+        ],
+        "Ji": [
+          1
+        ]
+      },
+      "period": {
+        "Lu": [
+          5
+        ],
+        "Quan": [
+          8
+        ],
+        "Ke": [
+          11
+        ],
+        "Ji": [
+          2
+        ]
+      }
+    },
+    "stars": {
+      "main": {
+        "4": [
+          "Ziwei",
+          "Tianfu",
+          "Qisha"
+        ],
+        "8": [
+          "Taiyang",
+          "Tanlang"
+        ],
+        "10": [
+          "Wuqu",
+          "Jumen"
+        ],
+        "12": [
+          "Tiantong",
+          "Tianxiang"
+        ]
+      },
+      "aux": {
+        "8": [
+          "Youbi"
+        ],
+        "10": [
+          "Wenchang"
+        ],
+        "12": [
+          "Tuoluo",
+          "Tianyue"
+        ]
+      }
+    },
+    "momentum": "falling",
+    "volatility": "normal",
+    "drawdown": "shallow"
   },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/000300.SS/ziwei.json",
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/000300.SS/ziwei.json",
   "error": null
 }

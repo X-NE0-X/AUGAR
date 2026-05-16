@@ -17,27 +17,24 @@
     "display_name": "市场脉冲"
   },
   "result": {
-    "score": 33,
-    "polarity": "unfavorable",
+    "score": 50,
+    "polarity": "neutral",
     "intensity": "medium",
-    "omen_type": "market_pulse_unfavorable_medium",
-    "headline": "Market Pulse reads FTSE as unfavorable",
-    "subline": "mixed colors the reading; market pulse remains mixed.",
-    "short_reading": "The mock market_pulse reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "omen_type": "transition",
+    "headline": "FTSE短期承压，长期趋势待明",
+    "subline": "四月行情或现方向选择",
+    "short_reading": "市场短期回调，但长期动能尚存，投资者需谨慎观望。",
+    "long_reading": "FTSE报收9967.4，近21日下跌8.1%，短期抛压明显；但63日仍微涨1.0%，长期趋势未破。波动率正常，回撤仅8.6%，属浅度调整。动量混合，显示市场处于方向抉择期。四月或迎来关键突破，建议关注支撑与阻力位。"
   },
   "symbols": [
-    "mixed",
-    "normal"
+    "天秤",
+    "迷雾"
   ],
   "risk_tags": [
-    "mixed_momentum"
+    "短期波动",
+    "方向不明"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "mixed",
-    "card_style": "medium"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/FTSE/market_pulse.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/market_pulse.json",
   "error": null
 }

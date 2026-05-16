@@ -17,27 +17,24 @@
     "display_name": "市场脉冲"
   },
   "result": {
-    "score": 33,
-    "polarity": "unfavorable",
-    "intensity": "medium",
-    "omen_type": "market_pulse_unfavorable_medium",
-    "headline": "Market Pulse reads HSI as unfavorable",
-    "subline": "falling colors the reading; market pulse remains falling.",
-    "short_reading": "The mock market_pulse reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "score": 1,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "market_pulse",
+    "headline": "恒生指数四月承压，动能转弱",
+    "subline": "短期跌幅有限，但趋势偏空",
+    "short_reading": "四月恒指或维持震荡下行，支撑关注24500点。",
+    "long_reading": "根据市场脉搏数据，恒生指数在三月末收盘于24952点，21天回报-5.4%，63天回报-3.3%，显示短期和中期动能均处于下降趋势。波动率21.5%处于正常范围，表明市场未出现恐慌性抛售；但252天回撤10.8%已触及重要阈值，提示结构性风险。整体来看，四月市场可能延续弱势震荡，但下行空间受限于正常波动率，不宜过度悲观。关注24500点支撑及动能反转信号。"
   },
   "symbols": [
-    "falling",
-    "normal"
+    "📉",
+    "😐"
   ],
   "risk_tags": [
-    "drawdown"
+    "trend_reversal_risk",
+    "drawdown_risk"
   ],
-  "visual": {
-    "palette": "indigo",
-    "icon": "falling",
-    "card_style": "medium"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/HSI/market_pulse.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/HSI/market_pulse.json",
   "error": null
 }

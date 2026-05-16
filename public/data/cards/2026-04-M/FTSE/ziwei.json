@@ -17,27 +17,36 @@
     "display_name": "紫微斗数"
   },
   "result": {
-    "score": 39,
-    "polarity": "unfavorable",
+    "score": 1,
+    "polarity": "mixed",
     "intensity": "medium",
-    "omen_type": "ziwei_unfavorable_medium",
-    "headline": "Ziwei reads FTSE as unfavorable",
-    "subline": "Tanlang colors the reading; market pulse remains mixed.",
-    "short_reading": "The mock ziwei reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "omen_type": "transitional",
+    "headline": "Steady advance under dual suns, yet hidden edge draws near",
+    "subline": "Career and Life palaces brighten, but Health and Travel carry cautionary transformations",
+    "short_reading": "April 2026 presents a period of balanced energies for FTSE. The Life palace gains authority through Taiyang and Tanlang with Hua Quan, while Career sees abundance from Ziwei and Tianfu with Hua Lu. However, Health and Travel contain Hua Ji and Huoxing, suggesting underlying friction and unexpected moves.",
+    "long_reading": "The monthly chart for April 2026 reveals a tapestry of mixed but navigable fortunes. The Life palace, activated as both the annual flow and the current major limit, hosts Taiyang (Sun) and Tanlang (Greedy Wolf) with period power transformation (Hua Quan). This signals a surge in confidence and aggressive positioning, but also a tendency to overreach. The Career palace, fortified by Ziwei (Emperor), Tianfu (Great Wealth), and Qisha (General) receiving natal prosperity (Hua Lu), points to institutional support and long-term structural gains for the index. Wealth palace, though quieter with Tiantong and Tianxiang, is tempered by Tuoluo, indicating that liquidity or momentum may encounter a temporary bottleneck. The three sides form a rounded base around Life, Career, Wealth, and Spouse, with the Spouse palace’s Wuqu and Jumen gaining reputation (Hua Ke), suggesting that partnerships or external endorsements will be favorable. Yet caution is warranted: Health palace carries natal Hua Ji and the presence of Wenqu and Huoxing, a literary-fire combination that can lead to over-analysis or sudden inflammatory events. Travel palace also suffers period Hua Ji with Lianzhen and Tianliang, warning of delays or miscommunications in international or cross-regional transactions. The Fortune palace, featuring Tianji, Taiyin, and Pojun, is volatile and may bring abrupt shifts after mid-month. Overall, the oracle counsels a steady hand, leveraging career and life momentum while guarding against overconfidence and external friction."
   },
   "symbols": [
-    "Tanlang",
-    "Career"
+    "Sun ascending",
+    "Greedy Wolf with golden crown",
+    "Emperor on a chariot",
+    "General's sword sheathed",
+    "Snake coiled around a treasure",
+    "Fire star flickering on a scroll"
   ],
   "risk_tags": [
-    "mixed_momentum"
+    "overconfidence",
+    "liquidity squeeze",
+    "regulatory flare",
+    "travel delays",
+    "health-related volatility"
   ],
   "visual": {
-    "palette": "indigo",
-    "icon": "tanlang",
-    "card_style": "medium"
+    "primary_color": "#C5A55A",
+    "secondary_color": "#8B0000",
+    "shape": "circle with a central diamond",
+    "imagery": "A calm sea under a bright sun with a distant storm cloud"
   },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/FTSE/ziwei.json",
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/ziwei.json",
   "error": null
 }

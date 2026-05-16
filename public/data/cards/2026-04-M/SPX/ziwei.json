@@ -17,27 +17,33 @@
     "display_name": "紫微斗数"
   },
   "result": {
-    "score": 61,
-    "polarity": "favorable",
+    "score": 62,
+    "polarity": "positive",
     "intensity": "medium",
-    "omen_type": "ziwei_favorable_medium",
-    "headline": "Ziwei reads SPX as favorable",
-    "subline": "Jumen colors the reading; market pulse remains strong_downtrend.",
-    "short_reading": "The mock ziwei reading intentionally mixes market pulse with engine-specific artifact signals for frontend contrast.",
-    "long_reading": "This deterministic mock is not a forecast. It is designed to make cards diverge visually while preserving the same schema as real LLM output."
+    "omen_type": "mixed",
+    "headline": "Resilient Foundation Amid Market Turbulence",
+    "subline": "Property luxuriance and period blessings offer support, but headwinds from Travel limit and market downtrend demand caution.",
+    "short_reading": "April 2026 shows a strong life palace in Property with Ziwei and Tianfu, indicating solid institutional support, but the current Travel major limit carries a Huoxing-Hua Ji combination, suggesting external volatility. The month's flow to Siblings palace with Taiyang and period Hua Quan points to active competition and expansion moves. Focus on Career, Wealth, and Fortune palaces benefits from period Hua Ke and Hua Lu. Overall, auspicious internal strength but mixed external signals.",
+    "long_reading": "The Zi Wei chart for SPX April 2026 places the Life Palace in Property (Wu branch), anchored by Ziwei, Tianfu, Qisha, and Lingxing. The natal Hua Lu in this palace strengthens foundational wealth and asset stability, even as the broader market experiences a strong downtrend (momentum_label: strong_downtrend). The Body Palace in Children (Zi branch) hosts Wuqu, Jumen, Wenchang, Tuoluo, Tianyue, and natal Hua Ke, indicating that the market’s next-phase growth involves step-by-step progress through obstacles, with support from scholarly and noble influences.\n\nCurrently, the market is in the Travel major limit (2019-2028, Palace 7 Mao), where Wenqu (literary talent) and Huoxing (fire) combine with natal Hua Ji. This decade invites strategic but volatile movements; Huoxing’s fire can ignite sudden shocks, while Hua Ji may create stagnation or reversal in planned actions. The 2026 annual flow shifts to Siblings Palace (Xu branch), where Taiyang (Sun) and Tanlang (Wood/Lust) meet period Hua Quan. This suggests increased competitive dynamics, possibly aggressive positioning by peers, but also the power to control expansions. The flow focus on Career, Wealth, and Fortune is bolstered by period Hua Ke in Wealth and period Hua Lu in Fortune, implying that despite external turbulence, the market’s underlying wealth-generation engines and long-term fortune are receiving favorable qi.\n\nThe Three Sides Four Orthodox grouping (Property, Siblings, Health, Children) reinforces a narrative where the core (Property) is strong, but health (current limit’s influence) and children (future growth) require attention to volatile elements. Traders should watch for sudden moves around the Travel and Siblings palaces, which may correspond to policy shifts or competitor actions. Yet the presence of Zuofu and Lucun in Fortune (period Hua Lu) suggests a supportive tailwind for those positioned wisely.\n\nIn essence, the chart portrays a market with solid intrinsic value (Property Hua Lu) facing a period of externally driven volatility (Travel Hua Ji, Huoxing). The April flow encourages engaging competition with controlled aggression (Taiyang + Tanlang + Hua Quan). The reading advises holding core positions while preparing for sharp, short-lived dislocations."
   },
   "symbols": [
-    "Jumen",
-    "Property"
+    "Ziwei",
+    "Tianfu",
+    "Qisha",
+    "Huoxing",
+    "Taiyang",
+    "Tanlang",
+    "Hua Lu",
+    "Hua Ke"
   ],
   "risk_tags": [
-    "timing_risk"
+    "Market downtrend momentum",
+    "Travel limit Hua Ji volatility",
+    "Huoxing in Travel palace",
+    "Tuoluo in Children palace",
+    "Siblings competition pressure"
   ],
-  "visual": {
-    "palette": "ember",
-    "icon": "jumen",
-    "card_style": "medium"
-  },
-  "raw_ref": "runs/9e3792908386/debug/cards/2026-04-M/SPX/ziwei.json",
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/SPX/ziwei.json",
   "error": null
 }
