@@ -22,7 +22,7 @@
 *（答：不是。）*
 
 
-## 🧠 五维引擎架构
+## 🧠 六维引擎架构
 
 | 维度 | 玄学体系 | 市场职责 | 核心逻辑 |
 |------|----------|----------|----------|
@@ -44,7 +44,7 @@
 LLM 以中文 prompt 生成中文解读，后端通过 `translators` 库（Google 优先，Bing fallback）自动英译。每张卡片同时存储 `result`（中文）+ `result_en`（英文），前端按语言切换。
 
 ### 3. 多 Provider 支持
-同一套生成流水线支持 DeepSeek V4 Flash/Pro、OpenAI GPT-5.5、ChatGPT OAuth（本地 Codex CLI）、以及任意 OpenAI-compatible 端点。CLI `--api-key` 参数或 `.env` 环境变量传入 Key。
+同一套生成流水线支持 DeepSeek、OpenAI、ChatGPT OAuth（本地 Codex CLI）、以及任意 OpenAI-compatible 端点。CLI `--api-key` 参数或 `.env` 环境变量传入 Key。
 
 ### 4. 静态 JSON 部署
 所有生成结果落盘为 JSON（`public/data/`），前端纯静态读取。可以部署到 Vercel/Cloudflare Pages，不需要运行时数据库或 LLM 调用。
@@ -63,10 +63,10 @@ augar serve
 
 # 生成全量月度卡片（需要 LLM API Key）
 $env:DEEPSEEK_API_KEY = "sk-xxx"
-augar generate --period 2026-04-M --all-indexes --provider deepseek --model deepseek-v4-flash
+augar generate --all-indexes --provider deepseek --model deepseek-v4-flash
 
 # 生成单个资产的所有引擎卡片
-augar generate --period 2026-04-M --symbols SPX --provider openai --model gpt-5.5
+augar generate --symbols SPX --provider openai --model gpt-5.5
 
 # 查看所有命令
 augar --help
@@ -78,31 +78,22 @@ augar --help
 ## 🏗 实际架构
 
 ```
-命令行 CLI                 Web 前端 (React + Vite)
-    │                             │
-    └──── augar generate          │ fetch /api/readings/...
-          augar serve             │
-    ┌─────────────────────────────┘
-    │
-    ▼
-FastAPI 后端 (:8765)
-    │
-    ├─ Market Data Loader (4× Parquet: CN/HK/UK/US 指数)
-    ├─ 6× Engine Generator (纯代码 RNG，不接 LLM)
-    │   ├─ tarot.py    → Celtic Cross 十张牌
-    │   ├─ wenwang.py  → 六爻钱卦
-    │   ├─ bazi.py     → 四柱八字
-    │   ├─ ziwei.py    → 紫微斗数
-    │   ├─ astrology.py → 占星星座
-    │   └─ market_pulse.py → 动量/波动/回撤量化
-    │
-    ├─ LLM Interpreter (OpenAI / DeepSeek / ChatGPT OAuth)
-    │   → 中文 prompt → 模型输出中文 → translators 英译
-    │   → 中英双语 CardResult 存储
-    │
-    └─ JSON Export
-        public/data/cards/{period}/{ticker}/{engine}.json
-        public/data/readings/{period}/{ticker}.json
+CLI (augar generate / serve)         Web Frontend (React + Vite)
+            │                                    │
+            └────────── FastAPI (:8765) ─────────┘
+                             │
+        ┌────────────────────┼────────────────────┐
+        │                    │                    │
+   Market Loader       6× Generators        LLM Interpreter
+   (4× Parquet)        (pure Python)        (OpenAI / DeepSeek
+   CN/HK/UK/US         tarot, wenwang        / ChatGPT OAuth)
+                        bazi, ziwei               │
+                        astrology,          CN prompt → CN
+                        market_pulse        → translators → EN
+        │                    │                    │
+        └──────────────── JSON Export ───────────┘
+                public/data/cards/{period}/{ticker}/{engine}.json
+                public/data/readings/{period}/{ticker}.json
 ```
 
 每个引擎的 **抽牌/起卦/排盘** 是纯代码（`generators/`），不接 LLM。

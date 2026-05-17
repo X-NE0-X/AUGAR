@@ -20,7 +20,7 @@ It does **not** promise to make you money. It doesn't even promise to outperform
 
 The core philosophy: **if markets are unpredictable, then stacking six unpredictable systems together must cancel out the unpredictability, right?**
 
-*(Answer: no. But the process is delightful.)*
+*(Answer: No.)*
 
 ---
 
@@ -48,7 +48,7 @@ Every engine's Program Generator (`generators/`) is pure Python — no LLM invol
 LLM interprets in Chinese. Backend auto-translates to English via `translators` (Google primary, Bing fallback). Each card stores `result` (Chinese) + `result_en` (English). Frontend switches by language.
 
 ### 3. Multi-Provider Support
-Same pipeline: DeepSeek V4 Flash/Pro, OpenAI GPT-5.5, ChatGPT OAuth (local Codex CLI), any OpenAI-compatible endpoint. Keys via `--api-key` or `.env`.
+Same pipeline: DeepSeek, OpenAI, ChatGPT OAuth (local Codex CLI), any OpenAI-compatible endpoint. Keys via `--api-key` or `.env`.
 
 ### 4. Static JSON Deployment
 All output lands as JSON in `public/data/`. Frontend is pure static — deploy to Vercel or Cloudflare Pages. No runtime database. No live LLM calls.
@@ -68,7 +68,11 @@ augar serve
 
 # Generate readings
 $env:DEEPSEEK_API_KEY = "sk-xxx"
-augar generate --period 2026-04-M --all-indexes --provider deepseek --model deepseek-v4-flash
+augar generate --all-indexes --provider deepseek --model deepseek-v4-flash
+
+augar generate --symbols SPX --provider openai --model gpt-5.5
+
+augar --help
 ```
 
 Copy `.env.example` → `.env`, fill in your keys. `augar` loads `.env` on startup.
@@ -122,6 +126,33 @@ Bilingual storage (`result` + `result_en`). Frontend picks by language.
 
 ---
 
+# Project Structure
+
+```
+AUGAR/
+  augar_engine/           ← Python libs
+    api/app.py            ← FastAPI backend
+    cli.py                ← generate commands
+    entry.py              ← augar entrance（serve/build/check/generate）
+    pipeline.py           ← pipeline
+    interpreter.py        ← LLM + translation
+    llm.py                ← LLM APIs (OpenAI/DeepSeek/ChatGPT OAuth)
+    generators/           ← Coded generators
+    exports.py            ← JSON exports
+    schemas.py            ← OracleCard / ReadingBundle
+    constants.py          ← configs/defaults.json
+  configs/
+    defaults.json         ← LLM Configs
+    llm.json              ← LLM Provider defaults
+    market_thresholds.json ← Something finance
+  public/data/            ← Cards and readings（JSON）
+  frontend/               ← React + TypeScript + Vite
+    src/views/            ← Ask / Readings / Almanac / Methodology
+  data/                   ← Parquet market data (CN/HK/UK/US)
+```
+
+---
+
 ## Supported Providers
 
 | Provider | Auth | Model |
@@ -134,24 +165,9 @@ Bilingual storage (`result` + `result_en`). Frontend picks by language.
 
 ---
 
-## Period Format
-
-Periods use Gregorian calendar in `YYYY-MM-FREQ` format:
-
-| Example | Meaning |
-|---------|---------|
-| `2026-04-M` | April 2026 (monthly) |
-| `2026-01-Q` | Q1 2026 (quarterly) |
-| `2026-15-W` | Week 15, 2026 |
-| `2026-01-Y` | Full year 2026 |
-
-Different periods are stored separately and never overwrite each other — `public/data/cards/2026-04-M/` and `public/data/cards/2026-05-M/` coexist.
-
----
-
 ## License
 
-MIT.
+**[WTFPL](http://www.wtfpl.net/about/) —— Do What The Fuck You Want To Public License**
 
 ---
 
@@ -167,4 +183,4 @@ Entertainment purposes only. Not investment advice.
 
 ## Acknowledgments
 
-Inspired by the **CLSA Feng Shui Index**. All absurd rigor originates there.
+Inspired by the **CLSA Feng Shui Index**.
