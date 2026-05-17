@@ -53,17 +53,7 @@ class LLMClient:
 
     def interpret(self, engine_id: str, raw_artifact: Dict[str, Any]) -> Dict[str, Any]:
         if self.params.provider in {"history", "replay"}:
-            return self._history_interpret(engine_id, raw_artifact, allow_mock_history=True)
-        if self.params.provider == "mock":
-            raise RuntimeError(
-                "Mock provider requires at least one previous real-LLM run for the same "
-                f"period/ticker/engine. No historical data found for "
-                f"{raw_artifact.get('period',{}).get('id','?')}/"
-                f"{raw_artifact.get('asset',{}).get('ticker','?')}/"
-                f"{engine_id}. "
-                "Run with --provider openai/deepseek/chatgpt_oauth first, "
-                "then mock can replay that history."
-            )
+            return self._history_interpret(engine_id, raw_artifact, allow_history=True)
         if self.params.provider == "chatgpt_oauth":
             return self._chatgpt_oauth(engine_id, raw_artifact)
         if self.params.provider in {"openai", "openai_compatible", "deepseek", "local", "custom"}:
@@ -75,12 +65,12 @@ class LLMClient:
         engine_id: str,
         raw_artifact: Dict[str, Any],
         *,
-        allow_mock_history: bool,
+        allow_history: bool,
         required: bool = True,
     ) -> Optional[Dict[str, Any]]:
         period_id = str(raw_artifact.get("period", {}).get("id", ""))
         ticker = str(raw_artifact.get("asset", {}).get("ticker", ""))
-        candidates = self._history_candidates(period_id, ticker, engine_id, allow_mock_history=allow_mock_history)
+        candidates = self._history_candidates(period_id, ticker, engine_id, allow_history=allow_history)
         for path in candidates:
             try:
                 card = json.loads(path.read_text(encoding="utf-8"))
@@ -97,7 +87,7 @@ class LLMClient:
             raise FileNotFoundError(f"No historical LLM card found for {period_id}/{ticker}/{engine_id}")
         return None
 
-    def _history_candidates(self, period_id: str, ticker: str, engine_id: str, *, allow_mock_history: bool) -> list[Path]:
+    def _history_candidates(self, period_id: str, ticker: str, engine_id: str, *, allow_history: bool) -> list[Path]:
         runs_root = PROJECT_ROOT / "runs"
         if not runs_root.exists():
             return []
@@ -116,12 +106,12 @@ class LLMClient:
             if engine_id not in set(manifest.get("engines", [])):
                 continue
             provider = str(manifest.get("request", {}).get("provider", ""))
-            if not allow_mock_history and provider in {"mock", "history", "replay"}:
+            if not allow_history and provider in {"history", "replay"}:
                 continue
             card_path = manifest_path.parent / "debug" / "cards" / period_id / ticker / f"{engine_id}.json"
             if not card_path.exists():
                 continue
-            manifests.append((provider in {"mock", "history", "replay"}, str(manifest.get("generated_at", "")), card_path))
+            manifests.append((provider in {"history", "replay"}, str(manifest.get("generated_at", "")), card_path))
         manifests.sort(key=lambda item: (item[0], item[1]))
         manifests.reverse()
         manifests.sort(key=lambda item: item[0])
@@ -145,15 +135,14 @@ class LLMClient:
         base_url = (self.params.base_url or default_base).rstrip("/")
         url = f"{base_url}/chat/completions"
         prompt = (
-            "You are an AUGAR oracle interpreter. Return strict JSON with keys: "
-            "score, polarity, intensity, omen_type, headline, subline, short_reading, long_reading, symbols, risk_tags, visual. "
-            "Do not include markdown. Raw artifact:\n"
+            "你是AUGAR神谕解读器。根据原始artifact输出严格JSON，键名英文（score, polarity, intensity, omen_type, headline, subline, short_reading, long_reading, symbols, risk_tags, visual）。"
+            "所有文本内容(headline,subline,short_reading,long_reading)必须用中文。不可包含markdown。原始artifact：\n"
             + json.dumps(raw_artifact, ensure_ascii=False, default=str)
         )
         payload: Dict[str, Any] = {
             "model": self.params.model,
             "messages": [
-                {"role": "system", "content": "Return only valid JSON for the requested schema."},
+                {"role": "system", "content": "仅输出合法JSON，所有文本用中文。键名英文。"},
                 {"role": "user", "content": prompt},
             ],
             "temperature": self.params.temperature,
@@ -189,9 +178,8 @@ class LLMClient:
         codex_path = self.params.codex_path or self._find_codex_executable()
         codex_home = Path(self.params.codex_home or os.getenv("CODEX_HOME", Path.home() / ".codex"))
         prompt = (
-            "You are an AUGAR oracle interpreter. Return strict JSON with keys: "
-            "score, polarity, intensity, omen_type, headline, subline, short_reading, long_reading, symbols, risk_tags, visual. "
-            "visual must be an object. symbols and risk_tags must be arrays. Do not include markdown. Raw artifact:\n"
+            "你是AUGAR神谕解读器。根据原始artifact输出严格JSON，键名英文（score, polarity, intensity, omen_type, headline, subline, short_reading, long_reading, symbols, risk_tags, visual）。"
+            "visual是对象，symbols和risk_tags是数组。所有文本必须用中文。不可包含markdown。原始artifact：\n"
             + json.dumps(raw_artifact, ensure_ascii=False, default=str)
         )
         schema = {

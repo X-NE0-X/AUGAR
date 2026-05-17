@@ -12,6 +12,7 @@ dependencies = [
   "uvicorn[standard]",
   "requests",
   "openai",
+  "translators",
 ]
 
 [project.scripts]

@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "SPX",
+    "name": "SPX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "bazi",
+    "name": "Zi Ping BaZi",
+    "display_name": "子平八字"
+  },
+  "result": {
+    "score": 40,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "caution",
+    "headline": "土重金埋，市场承压",
+    "subline": "强土当令，需待金水疏通",
+    "short_reading": "当前市场如五行土过旺，沉重难行，下行压力持续，宜观望。",
+    "long_reading": "日主戊土极强，得令得势，四柱土象密集，显示市场根基沉滞，缺乏流动性。用神金水（Output与Wealth）被厚重土气压制，短期难以发力。结合SPX当前处于强下行趋势，但跌幅尚浅、波动正常，暗示此轮调整可能延续，需警惕趋势加速。大运已入乙丑，官星透干而劫财坐支，外部压力与内部消耗并存。唯有等待金水气运回升，才有转折机会。建议保持防御姿态，关注流动性与政策信号。"
+  },
+  "symbols": [
+    "Earth",
+    "strong_day_master_pattern"
+  ],
+  "risk_tags": [
+    "downside",
+    "liquidity_crunch",
+    "oversold_but_no_bounce"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/SPX/bazi.json",
+  "error": null,
+  "result_en": {
+    "score": 40,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "caution",
+    "headline": "The soil is heavily buried, and the market is under pressure.",
+    "subline": "When strong soil is in order, it needs to be dredged by gold and water.",
+    "short_reading": "The current market, such as the five elements of the soil is too prosperous, heavy and difficult, downward pressure continues, should wait and see.",
+    "long_reading": "The main soil of the day is extremely strong, to make the power, four columns of soil like dense, showing that the market foundation is stagnant, lack of liquidity. With god gold water (Output and Wealth) is heavy earth gas suppression, short-term difficult to force. Combined with the SPX is currently in a strong downward trend, but the decline is still shallow and the volatility is normal, suggesting that this round of adjustment may continue, the need to be wary of trend acceleration. The Universiade has entered the second ugly, the official star through the dry and robbed money to sit on the expenditure, external pressure and internal consumption coexist. Only waiting for the gold and water transport to pick up, there is a turning point. It is recommended to maintain a defensive posture and focus on liquidity and policy signals."
+  }
+}

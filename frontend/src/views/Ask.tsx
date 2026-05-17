@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { ChevronDown } from 'lucide-react'
 import { CommandBar } from '../components/CommandBar'
 import { OracleCore } from '../components/OracleCore'
 import { useToast } from '../components/Toast'
@@ -9,15 +10,17 @@ import { readReading } from '../lib/artifacts'
 
 const suggested = ['SPX', 'HSI', 'NDX', 'VIX', 'DJI', 'FTSE']
 
+const MONTHS = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+
 const Ask = () => {
   const [status, setStatus] = useState<'idle' | 'generating' | 'success'>('idle')
+  const [period, setPeriod] = useState('2026-05-17-1942')
   const navigate = useNavigate()
   const { showToast } = useToast()
   const { t } = useConfig()
 
   const handleAsk = async (ticker: string) => {
     const normalized = ticker.toUpperCase()
-    const period = '2026-04-M'
     setStatus('generating')
 
     try {
@@ -107,3 +110,6 @@ const Ask = () => {
 }
 
 export default Ask
+
+
+

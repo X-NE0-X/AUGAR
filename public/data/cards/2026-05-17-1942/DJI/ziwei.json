@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "DJI",
+    "name": "DJI",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "ziwei",
+    "name": "Ziwei Doushu",
+    "display_name": "紫微斗数"
+  },
+  "result": {
+    "score": 62,
+    "polarity": "neutral",
+    "intensity": "medium",
+    "omen_type": "transitional",
+    "headline": "紫微七杀化禄夫妻，命宫化忌守心",
+    "subline": "财帛破军跃动，官禄武曲化科显机",
+    "short_reading": "当前星盘显示命宫受流年化忌冲击，易有内心压力或计划受阻；但夫妻宫紫微天府七杀得本命化禄，合作与贵人运强。财帛宫天机太阴破军遇禄存铃星，财路波动中藏机遇。官禄宫武曲巨门文昌化科，事业名望可期。迁移宫太阳贪狼化权，出行外拓有利。",
+    "long_reading": "此盘以紫微天府七杀坐夫妻宫为枢纽，本命化禄注入温情与资源，暗示市场虽处下行趋势（近期回撤-10%），但结构性合作或核心资产仍受眷顾。命宫廉贞天梁逢流年化忌，叠加文昌，主情绪敏感与决策反复，不宜激进抄底。财帛宫天机太阴破军配禄存铃星，财路如暗流涌动，短线投机风险高，但长线布局可借破军突破之力。官禄宫武曲巨门化科，文昌加持，专业判断与沟通策略将获认可。迁移宫太阳贪狼化权，主动探索新领域或海外市场可引动转机。当前大限（2024-2033）走到健康宫，虽无主星，但天魁本命化权，暗示需以稳健身心应对风波。综合来看，神谕指向「变中求稳」——利用贵人网络（夫妻宫化禄）化解个人焦虑（命宫化忌），并在财帛波动中保持纪律。"
+  },
+  "symbols": [
+    "Taiyang",
+    "Spouse"
+  ],
+  "risk_tags": [
+    "情绪误判",
+    "市场波动",
+    "合作依赖",
+    "短线风险"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/DJI/ziwei.json",
+  "error": null,
+  "result_en": {
+    "score": 62,
+    "polarity": "neutral",
+    "intensity": "medium",
+    "omen_type": "transitional",
+    "headline": "Ziwei Seven Kills the Husband and Wife of Lu, Life Palace",
+    "subline": "Money and silk break the army leap, official Lu Wuqu branch show machine",
+    "short_reading": "The current astrolabe shows that the palace of life is subject to the impact of the year, and it is easy to have inner pressure or plan blocked. However, the Ziwei Tianfu of the husband and wife palace has been able to kill seven people, and cooperation with noble people will be strong. Caibo Palace Tianji Taiyin Breaking Army Encountered Lu Cun Ling Star, Financial Road Fluctuations Hidden Opportunities. Guanlugong Wuqu Giant Gate Wenchang Chemical Branch, career reputation can be expected. The sun is greedy for the right to move the palace, and it is beneficial to travel outside.",
+    "long_reading": "This disk to the purple micro Tianfu seven kill sit husband and wife palace as the hub, the local life of Lu injected warmth and resources, suggesting that although the market in the downward trend (recent retreat-10%), but structural cooperation or core assets are still favored. Life Palace Lian Zhen Tian Liang meets the time of year taboo, superposition Wenchang, the main emotional sensitivity and decision-making repeated, not aggressive bottom. Caibo palace sky machine Taiyin broken army with Lu save the bell star, financial road such as undercurrent surging, short-term speculation risk is high, but the long-term layout can borrow the force of breaking the army breakthrough. Guan Lu Gong Wu Qu Jumenhua, Wenchang blessing, professional judgment and communication strategy will be recognized. Move the palace sun greedy wolf right, take the initiative to explore new areas or overseas markets can lead to a turnaround. The current deadline (2024-2033) to the health palace, although there is no main star, but the right of the chief of the day, suggesting the need to deal with the storm with a steady body and mind. On the whole, the oracle points to &quot;seeking stability in the midst of change&quot;-using the noble network (husband and wife palace) to resolve personal anxiety (fate palace taboo) and maintain discipline in the fluctuation of wealth."
+  }
+}

@@ -28,7 +28,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
           <NavLink to="/">{t('nav.ask')}</NavLink>
           <NavLink to="/readings">{t('nav.readings')}</NavLink>
           <NavLink to="/almanac">{t('nav.almanac')}</NavLink>
-          <a href="#methodology">{t('nav.methodology')}</a>
+          <NavLink to="/methodology">{t('nav.methodology')}</NavLink>
         </nav>
 
         <div className="settings-cluster">

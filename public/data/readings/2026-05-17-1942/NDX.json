@@ -1,0 +1,354 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "NDX",
+    "name": "NDX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "composite": {
+    "score": 34,
+    "polarity": "negative",
+    "intensity": "high",
+    "dominant_symbols": [
+      "The Chariot",
+      "Two of Cups",
+      "King of Cups",
+      "Ten of Pentacles",
+      "King of Swords",
+      "Page of Swords"
+    ],
+    "headline": "The oracles lean negative with high intensity"
+  },
+  "cards": [
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "NDX",
+        "name": "NDX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "tarot",
+        "name": "Tarot Celtic Cross",
+        "display_name": "塔罗"
+      },
+      "result": {
+        "score": 35,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "cautionary",
+        "headline": "战车推进遇迷雾，月亮浮现需警惕",
+        "subline": "市场情绪摇摆，理性决策应对不确定性",
+        "short_reading": "当前市场虽有反弹动力（战车），但根基不稳（逆位杯王），最终隐藏风险（月亮）。建议保持警惕，避免追高。",
+        "long_reading": "凯尔特十字阵显示：当前位置战车正位，表明市场有强烈方向意图，但跨杯二正位暗示合作消息或情绪干扰；根部逆位杯王指向情绪基础不稳，过去逆位十钱代表财富损失，目标剑王正位要求理性，近未来剑页正位预示新消息或警觉，提问者魔术师正位显示掌控力，环境九杖正位为防守状态，希望与恐惧中教宗正位表示渴望遵循传统，而结果月亮正位提示幻觉与恐惧。综合强下行趋势背景，反弹可能短暂，最终不确定性占优。"
+      },
+      "symbols": [
+        "The Chariot",
+        "Two of Cups",
+        "King of Cups",
+        "Ten of Pentacles",
+        "King of Swords",
+        "Page of Swords",
+        "The Magician",
+        "Nine of Wands"
+      ],
+      "risk_tags": [
+        "下行风险",
+        "情绪波动",
+        "不确定性"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/NDX/tarot.json",
+      "error": null,
+      "result_en": {
+        "score": 35,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "cautionary",
+        "headline": "战车推进遇迷雾，月亮浮现需警惕",
+        "subline": "市场情绪摇摆，理性决策应对不确定性",
+        "short_reading": "当前市场虽有反弹动力（战车），但根基不稳（逆位杯王），最终隐藏风险（月亮）。建议保持警惕，避免追高。",
+        "long_reading": "凯尔特十字阵显示：当前位置战车正位，表明市场有强烈方向意图，但跨杯二正位暗示合作消息或情绪干扰；根部逆位杯王指向情绪基础不稳，过去逆位十钱代表财富损失，目标剑王正位要求理性，近未来剑页正位预示新消息或警觉，提问者魔术师正位显示掌控力，环境九杖正位为防守状态，希望与恐惧中教宗正位表示渴望遵循传统，而结果月亮正位提示幻觉与恐惧。综合强下行趋势背景，反弹可能短暂，最终不确定性占优。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "NDX",
+        "name": "NDX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "wenwang",
+        "name": "Wenwang Liuyao",
+        "display_name": "文王卦"
+      },
+      "result": {
+        "score": 2,
+        "polarity": "positive",
+        "intensity": "5",
+        "omen_type": "shift",
+        "headline": "比合萃聚，动荡中见转机",
+        "subline": "亲比之象，人心思稳；聚集之兆，物极必反",
+        "short_reading": "当前市场虽处下跌趋势，但比卦象征低位承接与团结，变卦萃则预示资金重新聚集。动爻四爻兄弟为阻，然九四大吉，暗示短期震荡后有望企稳。",
+        "long_reading": "本卦水地比，上坎下坤，水附大地，亲比相依。变卦泽地萃，上兑下坤，湖泽汇聚于地。卦象显示尽管NDX处于strong_downtrend，但市场情绪正在酝酿转变。动爻第四爻（六四变九四）对应萃卦九四“大吉无咎”，兄弟爻（未土）发动虽克财爻（酉金），但日辰辰土助财，月建子水与财爻酉金半合，暗示下行空间有限，主力资金或逐步布局。应爻财临勾陈，主缓慢积累。短期需注意兄弟爻带来的资金分流或博弈加剧，但整体趋势偏向筑底转稳。"
+      },
+      "symbols": [
+        "Water over Earth",
+        "Lake over Earth"
+      ],
+      "risk_tags": [
+        "短期波动",
+        "资金博弈",
+        "趋势反转风险"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/NDX/wenwang.json",
+      "error": null,
+      "result_en": {
+        "score": 2,
+        "polarity": "positive",
+        "intensity": "5",
+        "omen_type": "shift",
+        "headline": "比合萃聚，动荡中见转机",
+        "subline": "亲比之象，人心思稳；聚集之兆，物极必反",
+        "short_reading": "当前市场虽处下跌趋势，但比卦象征低位承接与团结，变卦萃则预示资金重新聚集。动爻四爻兄弟为阻，然九四大吉，暗示短期震荡后有望企稳。",
+        "long_reading": "本卦水地比，上坎下坤，水附大地，亲比相依。变卦泽地萃，上兑下坤，湖泽汇聚于地。卦象显示尽管NDX处于strong_downtrend，但市场情绪正在酝酿转变。动爻第四爻（六四变九四）对应萃卦九四“大吉无咎”，兄弟爻（未土）发动虽克财爻（酉金），但日辰辰土助财，月建子水与财爻酉金半合，暗示下行空间有限，主力资金或逐步布局。应爻财临勾陈，主缓慢积累。短期需注意兄弟爻带来的资金分流或博弈加剧，但整体趋势偏向筑底转稳。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "NDX",
+        "name": "NDX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "bazi",
+        "name": "Zi Ping BaZi",
+        "display_name": "子平八字"
+      },
+      "result": {
+        "score": 45,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "警示",
+        "headline": "火弱土重，市场承压",
+        "subline": "日主丙火根基不稳，需防继续下行",
+        "short_reading": "八字显示日主丙火力量薄弱，土势过旺泄火，市场处于下行趋势，短期内难有逆转。",
+        "long_reading": "根据八字分析，日主丙火生于丑月，失令且局中土重，仅得地支寅木及天干丙火帮身，力量偏弱。有用神为火木，但当前大运己未（2020-2029）土旺，加剧耗火。市场状态方面，NDX近期21日跌幅7.6%，63日跌幅9.8%，处于强势下跌趋势，波动率正常但回撤已达11.4%。八字与市场共振，显示指数缺乏上升动能，土重埋火，需警惕进一步下探。建议耐心等待火木流年或金水流月出现转机。"
+      },
+      "symbols": [
+        "Fire",
+        "weak_day_master_pattern"
+      ],
+      "risk_tags": [
+        "下行风险",
+        "反弹乏力",
+        "土重埋火"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/NDX/bazi.json",
+      "error": null,
+      "result_en": {
+        "score": 45,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "警示",
+        "headline": "火弱土重，市场承压",
+        "subline": "日主丙火根基不稳，需防继续下行",
+        "short_reading": "八字显示日主丙火力量薄弱，土势过旺泄火，市场处于下行趋势，短期内难有逆转。",
+        "long_reading": "根据八字分析，日主丙火生于丑月，失令且局中土重，仅得地支寅木及天干丙火帮身，力量偏弱。有用神为火木，但当前大运己未（2020-2029）土旺，加剧耗火。市场状态方面，NDX近期21日跌幅7.6%，63日跌幅9.8%，处于强势下跌趋势，波动率正常但回撤已达11.4%。八字与市场共振，显示指数缺乏上升动能，土重埋火，需警惕进一步下探。建议耐心等待火木流年或金水流月出现转机。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "NDX",
+        "name": "NDX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "ziwei",
+        "name": "Ziwei Doushu",
+        "display_name": "紫微斗数"
+      },
+      "result": {
+        "score": 45,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "volatility",
+        "headline": "紫府禄存护兄弟，七杀擎羊藏风波",
+        "subline": "财权官科父母忌，震荡格局待破局",
+        "short_reading": "当前NDX处于外部环境支撑下的震荡期，兄弟宫紫微天府禄存化禄显现短期资金或政策支持，但七杀擎羊暗示内部剧烈波动与竞争压力。财帛宫化权但擎羊独坐，财务争夺激烈；官禄宫文昌化科，监管层面温和利好。整体多空交织，趋势尚未明确反转，建议观望。",
+        "long_reading": "根据紫微斗数盘，NDX指数命宫为空，借对宫天机太阴破军，身主在交友宫武曲巨门。当前大限（32-41岁）落兄弟宫，流年亦在兄弟宫，双度强化该宫位作用。兄弟宫紫微、天府、七杀、禄存并化禄（本命+流年），显示有强大合作方或市场情绪支撑，但七杀主突变与冲突，禄存虽财星但被七杀冲破，形成“禄逢冲破”格局，暗示支撑并不稳固，易受突发事件干扰。财帛宫空宫借对宫太阳贪狼，本命化权但见擎羊，代表投资融资方面主动进取但伴随风险与对抗。官禄宫文昌化科（流年），政策或指数编制层面出现某些合理化调整。父母宫廉贞天梁化忌（流年），注意外部监管、法规或国际关系方面压制。整体来看，短期兄弟宫化禄提供缓冲，但中期财帛擎羊化权与父母化忌持续施压，指数大概率延续宽幅震荡，待七杀星势消后方能明确方向。"
+      },
+      "symbols": [
+        "Tianji",
+        "Siblings"
+      ],
+      "risk_tags": [
+        "短期反弹风险",
+        "政策监管压制",
+        "波动加剧"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/NDX/ziwei.json",
+      "error": null,
+      "result_en": {
+        "score": 45,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "volatility",
+        "headline": "紫府禄存护兄弟，七杀擎羊藏风波",
+        "subline": "财权官科父母忌，震荡格局待破局",
+        "short_reading": "当前NDX处于外部环境支撑下的震荡期，兄弟宫紫微天府禄存化禄显现短期资金或政策支持，但七杀擎羊暗示内部剧烈波动与竞争压力。财帛宫化权但擎羊独坐，财务争夺激烈；官禄宫文昌化科，监管层面温和利好。整体多空交织，趋势尚未明确反转，建议观望。",
+        "long_reading": "根据紫微斗数盘，NDX指数命宫为空，借对宫天机太阴破军，身主在交友宫武曲巨门。当前大限（32-41岁）落兄弟宫，流年亦在兄弟宫，双度强化该宫位作用。兄弟宫紫微、天府、七杀、禄存并化禄（本命+流年），显示有强大合作方或市场情绪支撑，但七杀主突变与冲突，禄存虽财星但被七杀冲破，形成“禄逢冲破”格局，暗示支撑并不稳固，易受突发事件干扰。财帛宫空宫借对宫太阳贪狼，本命化权但见擎羊，代表投资融资方面主动进取但伴随风险与对抗。官禄宫文昌化科（流年），政策或指数编制层面出现某些合理化调整。父母宫廉贞天梁化忌（流年），注意外部监管、法规或国际关系方面压制。整体来看，短期兄弟宫化禄提供缓冲，但中期财帛擎羊化权与父母化忌持续施压，指数大概率延续宽幅震荡，待七杀星势消后方能明确方向。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "NDX",
+        "name": "NDX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "astrology",
+        "name": "Astrology Cycle",
+        "display_name": "占星"
+      },
+      "result": {
+        "score": 35,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "技术性承压",
+        "headline": "满月照熊途，积累周期暗藏转机",
+        "subline": "NDX 跌势暂缓，但土象 Capricorn 约束火象 Aries 冲动",
+        "short_reading": "当前NDX延续strong_downtrend，但积累周期暗示底部吸筹。满月象征情绪高点，回落风险仍存。",
+        "long_reading": "星象上，Aries（NDX映射）与Capricorn（当前季节）形成土火刑克，市场在冲动回落与结构性支撑间博弈。满月放大了短期情绪，21日跌幅-7.6%证实下行压力。然而，accumulation_cycle标签提示长线资金正在布局，波动率正常为蓄势腾出空间。关键支撑位需关注23000整数关口，若破位则加速下跌；若企稳，反弹目标24300。"
+      },
+      "symbols": [
+        "Aries",
+        "full"
+      ],
+      "risk_tags": [
+        "下行趋势延续",
+        "情绪过载",
+        "支撑破位风险"
+      ],
+      "visual": {
+        "colors": [
+          "dark_red",
+          "grey",
+          "silver"
+        ],
+        "shapes": [
+          "triangle",
+          "circle"
+        ]
+      },
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/NDX/astrology.json",
+      "error": null,
+      "result_en": {
+        "score": 35,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "技术性承压",
+        "headline": "满月照熊途，积累周期暗藏转机",
+        "subline": "NDX 跌势暂缓，但土象 Capricorn 约束火象 Aries 冲动",
+        "short_reading": "当前NDX延续strong_downtrend，但积累周期暗示底部吸筹。满月象征情绪高点，回落风险仍存。",
+        "long_reading": "星象上，Aries（NDX映射）与Capricorn（当前季节）形成土火刑克，市场在冲动回落与结构性支撑间博弈。满月放大了短期情绪，21日跌幅-7.6%证实下行压力。然而，accumulation_cycle标签提示长线资金正在布局，波动率正常为蓄势腾出空间。关键支撑位需关注23000整数关口，若破位则加速下跌；若企稳，反弹目标24300。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "NDX",
+        "name": "NDX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "market_pulse",
+        "name": "Market Pulse",
+        "display_name": "市场脉冲"
+      },
+      "result": {
+        "score": 40,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "market_decline",
+        "headline": "纳指趋势转弱，空头信号增强",
+        "subline": "短期跌幅扩大，中期趋势下行",
+        "short_reading": "NDX当前处于强下跌趋势，21日跌幅达7.6%，63日跌幅9.8%，回撤已超11%。波动率正常，但方向明确偏空。",
+        "long_reading": "根据市场脉冲引擎分析，NDX在2026年5月17日收盘报23132.77点，近一个月累计下跌7.6%，近三个月下跌9.8%，动量标签为强下跌趋势。尽管63日波动率（16.75%）处于正常范围，但252日最大回撤已至11.4%，属于实质性回撤。当前组合显示空头动能持续，短期内反弹动能不足，需警惕进一步下行风险。中长期趋势若无法收复关键均线，可能演变为更大级别的调整。"
+      },
+      "symbols": [
+        "下降箭头",
+        "乌云",
+        "断裂的支撑线"
+      ],
+      "risk_tags": [
+        "趋势风险",
+        "回撤风险",
+        "动量衰减"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/NDX/market_pulse.json",
+      "error": null,
+      "result_en": {
+        "score": 40,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "market_decline",
+        "headline": "纳指趋势转弱，空头信号增强",
+        "subline": "短期跌幅扩大，中期趋势下行",
+        "short_reading": "NDX当前处于强下跌趋势，21日跌幅达7.6%，63日跌幅9.8%，回撤已超11%。波动率正常，但方向明确偏空。",
+        "long_reading": "根据市场脉冲引擎分析，NDX在2026年5月17日收盘报23132.77点，近一个月累计下跌7.6%，近三个月下跌9.8%，动量标签为强下跌趋势。尽管63日波动率（16.75%）处于正常范围，但252日最大回撤已至11.4%，属于实质性回撤。当前组合显示空头动能持续，短期内反弹动能不足，需警惕进一步下行风险。中长期趋势若无法收复关键均线，可能演变为更大级别的调整。"
+      }
+    }
+  ],
+  "run_id": "11d7e8e58760"
+}

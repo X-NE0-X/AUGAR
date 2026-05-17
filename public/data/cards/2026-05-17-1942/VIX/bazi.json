@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "VIX",
+    "name": "VIX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "bazi",
+    "name": "Zi Ping BaZi",
+    "display_name": "子平八字"
+  },
+  "result": {
+    "score": 75,
+    "polarity": "negative",
+    "intensity": "high",
+    "omen_type": "transition",
+    "headline": "熔炉之火：恐慌的锻造",
+    "subline": "火势助燃，平衡之机",
+    "short_reading": "火旺生土，恐慌情绪被放大，但用神火也提供转化力量，警惕极端波动。",
+    "long_reading": "当前八字日元己土坐卯木，月令卯木为官杀，得年干庚金伤官、时柱癸酉偏财，看似压力与机遇共存。但当前大运戊午（28-37岁），流年丙午，干支皆火，印星极旺，生扶日主，使其由平衡转强。火为用神，主热情、动荡、转化，对应VIX恐慌指数飙升。火生土，土为日主，代表市场情绪自我强化，恐慌的“熔炉”正在锻造。然火旺亦生木（官杀），压力不消反增，波动率已至极致。未来需观察火是否过旺转为忌神，警惕情绪极端化后的反转。"
+  },
+  "symbols": [
+    "Earth",
+    "balanced_day_master_pattern"
+  ],
+  "risk_tags": [
+    "极端波动",
+    "情绪驱动"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/VIX/bazi.json",
+  "error": null,
+  "result_en": {
+    "score": 75,
+    "polarity": "negative",
+    "intensity": "high",
+    "omen_type": "transition",
+    "headline": "Furnace Fire: The Forge of Panic",
+    "subline": "Fire-supporting, balancing machine",
+    "short_reading": "Fire flourished earth, panic is magnified, but with god fire also provides transformation power, alert to extreme fluctuations.",
+    "long_reading": "At present, the eight-character yen has its own soil to sit on the base wood, and the month orders the base wood to be killed by officials. It seems that pressure and opportunity coexist. However, the current Universiade Wuwu (28-37 years old), the time of the year Bingwu, the branches are all on fire, the Indian stars are extremely prosperous, and the Japanese Lord is supported, making it from balance to strength. Fire for the use of God, the Lord enthusiasm, turbulence, transformation, corresponding to the VIX panic index soared. Fire-born soil, soil for the Lord, on behalf of the market sentiment self-strengthening, panic &quot;melting pot&quot; is forging. However, the fire is also raw wood (official kill), the pressure is not increased, the volatility has been to the extreme. In the future, we need to observe whether the fire is too strong to avoid God, and be alert to the reversal of emotional extremes."
+  }
+}

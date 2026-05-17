@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "000001.SS",
+    "name": "000001.SS",
+    "region": "CN",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "market_pulse",
+    "name": "Market Pulse",
+    "display_name": "市场脉冲"
+  },
+  "result": {
+    "score": 45,
+    "polarity": "负面",
+    "intensity": "中等",
+    "omen_type": "观望",
+    "headline": "短期承压，中期趋稳",
+    "subline": "动量混杂，波动正常，回撤浅幅",
+    "short_reading": "近期市场动能分歧，短期回调幅度温和，中期仍维持震荡格局。",
+    "long_reading": "根据当前数据，标的近期21日回报为-5.62%，短期下行压力明显；但63日回报转正为+0.96%，显示中期有企稳迹象。63日波动率14.6%处于正常水平，252日最大回撤-6.43%为浅幅回撤，未触发风险警戒。动量标签为“混合”，表明多空力量均衡，趋势尚未明确。结合正常波动与浅幅回撤，当前处于方向待定的观望窗口，短期风险有限但需警惕延续性下跌。"
+  },
+  "symbols": [
+    "天平",
+    "缓流"
+  ],
+  "risk_tags": [
+    "短期下行风险",
+    "震荡持续"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000001.SS/market_pulse.json",
+  "error": null,
+  "result_en": {
+    "score": 45,
+    "polarity": "负面",
+    "intensity": "中等",
+    "omen_type": "观望",
+    "headline": "Short-term pressure, medium-term stabilization.",
+    "subline": "Mixed momentum, normal volatility, shallow retracement",
+    "short_reading": "Recent market momentum divergence, short-term correction is moderate, the medium-term still maintain a volatile pattern.",
+    "long_reading": "According to current data, the target&#39;s near-term 21-day return is -5.62 per cent, with significant short-term downward pressure, but the 63-day return is positive at +0.96 per cent, indicating signs of stabilization in the medium term. 63-day volatility of 14.6 per cent is at normal levels and 252-day maximum retracement of -6.43 per cent is a shallow retracement that does not trigger risk alert. Momentum is labeled &quot;mixed&quot;, indicating that long-short forces are balanced and the trend is not yet clear. Combined with normal volatility and shallow retracement, the current direction is in a wait-and-see window, short-term risk is limited but need to be wary of continued decline."
+  }
+}

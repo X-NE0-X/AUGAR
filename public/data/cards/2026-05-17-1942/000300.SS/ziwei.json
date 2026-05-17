@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "000300.SS",
+    "name": "000300.SS",
+    "region": "CN",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "ziwei",
+    "name": "Ziwei Doushu",
+    "display_name": "紫微斗数"
+  },
+  "result": {
+    "score": 1,
+    "polarity": "mixed",
+    "intensity": "moderate",
+    "omen_type": "mixed",
+    "headline": "紫微化禄掌大权，贪狼化权展宏图",
+    "subline": "迁移化忌需谨慎，健康空宫防暗疾",
+    "short_reading": "当前大限在官禄宫，紫微天府七杀主事，事业有重大发展机遇，但迁移宫廉贞天梁化忌，出行需防是非。命宫太阳贪狼化权，行动力强，但健康宫空宫化忌，注意身体。",
+    "long_reading": "此局以官禄宫为轴心，紫微化禄、天府七杀辅左辅，构成‘紫府朝垣’格局，主掌实权与腾达之机。命宫太阳贪狼化权，社交与扩张欲望强烈，但贪狼带有桃花性质，需注意分寸。迁移宫廉贞天梁化忌，外出易遇官非或情感纠葛，尤其远行需警惕。财帛宫天同天相平稳，无突破但亦无大失。田宅宫禄存+大限化禄，资产积累可期，但铃星暗示暗争。子女宫文昌陀罗+大限化科，教育或投资领域有阻滞中见成效。健康宫空宫带本命化忌，体质偏弱，须防隐疾突发。整体吉凶交织，宜借大限禄权之利推进事业，同时规避迁移、健康之冲。"
+  },
+  "symbols": [
+    "Tanlang",
+    "Career"
+  ],
+  "risk_tags": [
+    "健康隐患",
+    "出行是非",
+    "人际纠纷",
+    "桃花败财"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000300.SS/ziwei.json",
+  "error": null,
+  "result_en": {
+    "score": 1,
+    "polarity": "mixed",
+    "intensity": "moderate",
+    "omen_type": "mixed",
+    "headline": "Purple micro-power Lu in charge, greedy wolf power show grand plan",
+    "subline": "Migration should be cautious, healthy empty palace against dark diseases",
+    "short_reading": "At present, the deadline is in Guanlu Palace. Ziwei Tianfu has killed seven masters. There are great opportunities for the development of the cause. However, the relocation of the palace is not easy, and travel needs to prevent right and wrong. Life palace sun wolf power, strong action, but health palace empty palace taboo, pay attention to the body.",
+    "long_reading": "This bureau to GuanLu Palace as the axis, purple micro-Lu, Tianfu seven kill auxiliary left auxiliary, constitute the &quot;Zifu Chaogangyuan&quot; pattern, the main power and the opportunity to reach. The sun in the palace of life is greedy for wolves and has a strong desire to socialize and expand, but greedy wolves have a peach blossom nature and need to be measured. Relocation palace lianzhen tianliang taboo, go out easy to encounter official or emotional entanglements, especially travel need to be vigilant. The palace of wealth and silk is smooth with the sky, with no breakthroughs but no major losses. Tian house palace Lu deposit limit of Lu, asset accumulation can be expected, but the bell star hints at dark contention. The children&#39;s palace Wenchang Dhara limited chemical department, education or investment in the field of blocking results. Health palace empty palace with local life taboo, weak physique, to prevent sudden hidden diseases. The overall good and bad are intertwined, and it is advisable to use the benefits of the limited power to advance the cause, while avoiding the impact of migration and health."
+  }
+}

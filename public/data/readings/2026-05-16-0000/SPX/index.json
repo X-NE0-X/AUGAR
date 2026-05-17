@@ -1,0 +1,305 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "SPX",
+    "name": "SPX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-04-M",
+    "label": "April 2026",
+    "freq": "M"
+  },
+  "composite": {
+    "score": 40,
+    "polarity": "negative",
+    "intensity": "medium",
+    "dominant_symbols": [
+      "Nine of Swords reversed",
+      "Seven of Cups",
+      "Five of Wands",
+      "Page of Cups reversed",
+      "Page of Wands",
+      "Ten of Pentacles"
+    ],
+    "headline": "The oracles lean negative with medium intensity"
+  },
+  "cards": [
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "SPX",
+        "name": "SPX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-04-M",
+        "label": "April 2026",
+        "freq": "M"
+      },
+      "engine": {
+        "id": "tarot",
+        "name": "Tarot Celtic Cross",
+        "display_name": "塔罗"
+      },
+      "result": {
+        "score": 72,
+        "polarity": "positive",
+        "intensity": "moderate",
+        "omen_type": "transition",
+        "headline": "Turning of the Wheel: From Conflict to Stability",
+        "subline": "Anxiety lifts as new opportunities and social harmony emerge.",
+        "short_reading": "The cards indicate that the recent downtrend's anxiety is fading. Conflicts and illusions give way to a stable outcome. The Wheel of Fortune suggests a positive shift in April.",
+        "long_reading": "The Nine of Swords reversed shows that the market's recent anxiety is dissipating. The Seven of Cups warns against being seduced by false hopes; many options exist but clarity is needed. The root cause is ongoing competition (Five of Wands). Past emotional letdowns (Page of Cups reversed) are behind you. Your goal is fresh energy (Page of Wands). In the near future, tangible stability and wealth emerge (Ten of Pentacles). You are defending your position (Seven of Wands) amid a generally positive environment (Three of Cups). Your hopes for a new start (Ace of Pentacles) are aligned with the outcome: the Wheel of Fortune, indicating a fortunate turn of events. Overall, April 2026 appears to be a month of resolution and positive change for SPX."
+      },
+      "symbols": [
+        "Nine of Swords reversed",
+        "Seven of Cups",
+        "Five of Wands",
+        "Page of Cups reversed",
+        "Page of Wands",
+        "Ten of Pentacles",
+        "Seven of Wands",
+        "Three of Cups"
+      ],
+      "risk_tags": [
+        "illusion",
+        "conflict",
+        "overoptimism"
+      ],
+      "visual": {},
+      "raw_ref": "runs/5e510e5089a1/debug/cards/2026-04-M/SPX/tarot.json",
+      "error": null
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "SPX",
+        "name": "SPX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-04-M",
+        "label": "April 2026",
+        "freq": "M"
+      },
+      "engine": {
+        "id": "wenwang",
+        "name": "Wenwang Liuyao",
+        "display_name": "文王卦"
+      },
+      "result": {
+        "score": 35,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "caution",
+        "headline": "Waters Recede, Mountain Rises – A Market at a Standstill",
+        "subline": "From the Army to the Mountain: a period of consolidation and potential further downside if forced action is taken.",
+        "short_reading": "The primary hexagram Shi (Army) suggests collective movement, but moving lines indicate internal difficulties and lack of momentum. The change to Gen (Mountain) calls for stillness and caution. The market may experience a pause, but risk remains elevated.",
+        "long_reading": "The reading begins with Hexagram 7 (Shi, The Army) – Earth over Water, suggesting a time of organized effort but also potential conflict. The moving lines at positions 2, 3, and 6 highlight key dynamics. Line 2 (Self) is moving from yang to yin and falls in the empty branch Si, indicating that the market's internal drive is lacking substance. Line 3 (Parents) moves from yin to yang, warning of misfortune if pressing forward – akin to 'the army with many wagons' leading to trouble. Line 6 (Wealth) moves from yin to yang, offering a glimmer of eventual stabilization as the 'great prince' establishes order. However, the resulting Hexagram 52 (Gen, Keeping Still) represents a mountain, a time to stop and reflect. The market, already in a strong downtrend, may find a temporary bottom or slow decline, but the risk of further drops remains unless patience is exercised. The empty Self and the month/day branches in Si and Chen suggest that current conditions are unstable. Overall, the oracle advises against aggressive action and recommends waiting for clearer signs."
+      },
+      "symbols": [
+        "Water",
+        "Earth",
+        "Mountain",
+        "Army",
+        "Stillness",
+        "Caution",
+        "Consolidation",
+        "Downtrend"
+      ],
+      "risk_tags": [
+        "downtrend risk",
+        "consolidation",
+        "lack of momentum",
+        "empty self",
+        "caution advised"
+      ],
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/SPX/wenwang.json",
+      "error": null
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "SPX",
+        "name": "SPX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-04-M",
+        "label": "April 2026",
+        "freq": "M"
+      },
+      "engine": {
+        "id": "bazi",
+        "name": "Zi Ping BaZi",
+        "display_name": "子平八字"
+      },
+      "result": {
+        "score": 28,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "caution",
+        "headline": "Heavy Earth, Weary Path",
+        "subline": "The missing Metal element clouds the horizon; patience and prudence are essential.",
+        "short_reading": "April 2026 finds SPX under the weight of excess Earth energy. The Day Master Wu (Earth) is extremely strong, yet without the refining influence of Metal (Output), the energy becomes stuck. The month pillar Ren Chen adds both Wealth (Water) and more Earth, creating a paradox of opportunity trapped by inertia. The market may show moments of hope (from Ren Water) but lacks the catalyst to sustain momentum. The recent downtrend reflects this congestion. The path forward requires a Metal trigger, which may not appear until a later cycle. Investors should avoid forced moves and wait for clearer signals.",
+        "long_reading": "Based on the Zi Ping BaZi analysis of SPX's birth chart, the Day Master is Wu Earth, scoring 10 in strength—robust and dominant. The chart is flooded with Earth and Fire elements, making it solid but inflexible. The useful god is Metal (Output and Wealth), but it is critically scarce. The current year pillar Bing Wu (Fire, Earth) and month pillar Ren Chen (Water, Earth) intensify the Earth element without introducing Metal. This creates a condition known as 'Earth buried in Earth'—too much of a good thing leads to stagnation. The Ren Water stem offers a glimpse of Wealth, but without Metal to channel it, it dissipates. Historically, such configurations precede periods of low volatility and grinding sideways or downward moves. The market may test lower support levels. The hidden stems offer little relief: Chen contains Yi Wood (Officer) but is weak. The best course is to recognize the structural imbalance and await the appearance of Metal in a future month. This is a time for conservation, not aggression."
+      },
+      "symbols": [
+        "Mountain without stream",
+        "Dry riverbed",
+        "Clay in kiln",
+        "Anvil without hammer",
+        "Clouded mirror"
+      ],
+      "risk_tags": [
+        "stagnation",
+        "inertia",
+        "lack_of_catalyst",
+        "excess_earth",
+        "missing_metal",
+        "low_volatility_trap"
+      ],
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/SPX/bazi.json",
+      "error": null
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "SPX",
+        "name": "SPX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-04-M",
+        "label": "April 2026",
+        "freq": "M"
+      },
+      "engine": {
+        "id": "ziwei",
+        "name": "Ziwei Doushu",
+        "display_name": "紫微斗数"
+      },
+      "result": {
+        "score": 62,
+        "polarity": "positive",
+        "intensity": "medium",
+        "omen_type": "mixed",
+        "headline": "Resilient Foundation Amid Market Turbulence",
+        "subline": "Property luxuriance and period blessings offer support, but headwinds from Travel limit and market downtrend demand caution.",
+        "short_reading": "April 2026 shows a strong life palace in Property with Ziwei and Tianfu, indicating solid institutional support, but the current Travel major limit carries a Huoxing-Hua Ji combination, suggesting external volatility. The month's flow to Siblings palace with Taiyang and period Hua Quan points to active competition and expansion moves. Focus on Career, Wealth, and Fortune palaces benefits from period Hua Ke and Hua Lu. Overall, auspicious internal strength but mixed external signals.",
+        "long_reading": "The Zi Wei chart for SPX April 2026 places the Life Palace in Property (Wu branch), anchored by Ziwei, Tianfu, Qisha, and Lingxing. The natal Hua Lu in this palace strengthens foundational wealth and asset stability, even as the broader market experiences a strong downtrend (momentum_label: strong_downtrend). The Body Palace in Children (Zi branch) hosts Wuqu, Jumen, Wenchang, Tuoluo, Tianyue, and natal Hua Ke, indicating that the market’s next-phase growth involves step-by-step progress through obstacles, with support from scholarly and noble influences.\n\nCurrently, the market is in the Travel major limit (2019-2028, Palace 7 Mao), where Wenqu (literary talent) and Huoxing (fire) combine with natal Hua Ji. This decade invites strategic but volatile movements; Huoxing’s fire can ignite sudden shocks, while Hua Ji may create stagnation or reversal in planned actions. The 2026 annual flow shifts to Siblings Palace (Xu branch), where Taiyang (Sun) and Tanlang (Wood/Lust) meet period Hua Quan. This suggests increased competitive dynamics, possibly aggressive positioning by peers, but also the power to control expansions. The flow focus on Career, Wealth, and Fortune is bolstered by period Hua Ke in Wealth and period Hua Lu in Fortune, implying that despite external turbulence, the market’s underlying wealth-generation engines and long-term fortune are receiving favorable qi.\n\nThe Three Sides Four Orthodox grouping (Property, Siblings, Health, Children) reinforces a narrative where the core (Property) is strong, but health (current limit’s influence) and children (future growth) require attention to volatile elements. Traders should watch for sudden moves around the Travel and Siblings palaces, which may correspond to policy shifts or competitor actions. Yet the presence of Zuofu and Lucun in Fortune (period Hua Lu) suggests a supportive tailwind for those positioned wisely.\n\nIn essence, the chart portrays a market with solid intrinsic value (Property Hua Lu) facing a period of externally driven volatility (Travel Hua Ji, Huoxing). The April flow encourages engaging competition with controlled aggression (Taiyang + Tanlang + Hua Quan). The reading advises holding core positions while preparing for sharp, short-lived dislocations."
+      },
+      "symbols": [
+        "Ziwei",
+        "Tianfu",
+        "Qisha",
+        "Huoxing",
+        "Taiyang",
+        "Tanlang",
+        "Hua Lu",
+        "Hua Ke"
+      ],
+      "risk_tags": [
+        "Market downtrend momentum",
+        "Travel limit Hua Ji volatility",
+        "Huoxing in Travel palace",
+        "Tuoluo in Children palace",
+        "Siblings competition pressure"
+      ],
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/SPX/ziwei.json",
+      "error": null
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "SPX",
+        "name": "SPX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-04-M",
+        "label": "April 2026",
+        "freq": "M"
+      },
+      "engine": {
+        "id": "astrology",
+        "name": "Astrology Cycle",
+        "display_name": "占星"
+      },
+      "result": {
+        "score": 40,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "caution",
+        "headline": "四月动荡：白羊座与射手座的转折",
+        "subline": "市场处于积累周期，但下行压力仍存",
+        "short_reading": "SPX在2026年4月面临下行惯性，但积累迹象暗示底部可能正在形成。射手座资产在白羊座季节中需要谨慎。",
+        "long_reading": "根据占星解读，SPX的资产生肖为射手座，而当前期间生肖季节为白羊座。白羊座的主动性与射手座的探索精神相结合，可能引发市场波动。月相渐亏，象征能量衰退，与当前的下行趋势一致。然而，周期标签中的'accumulation_cycle'暗示聪明资金正在布局。建议关注关键支撑位，等待趋势反转信号。"
+      },
+      "symbols": [
+        "🏹",
+        "🐏",
+        "🌘"
+      ],
+      "risk_tags": [
+        "downtrend continuation",
+        "accumulation phase",
+        "volatility normal"
+      ],
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/SPX/astrology.json",
+      "error": null
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "SPX",
+        "name": "SPX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-04-M",
+        "label": "April 2026",
+        "freq": "M"
+      },
+      "engine": {
+        "id": "market_pulse",
+        "name": "Market Pulse",
+        "display_name": "市场脉冲"
+      },
+      "result": {
+        "score": 1,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "decline",
+        "headline": "SPX in Strong Downtrend with Normal Volatility",
+        "subline": "Index down 7.8% over 21 days, drawdown remains shallow at 8.7%",
+        "short_reading": "The market pulse indicates a strong downtrend, yet volatility and drawdown are contained.",
+        "long_reading": "As of March 27, 2026, SPX closed at 6368.85. Returns over 21 and 63 days are -7.8% and -8.1% respectively, confirming a strong downtrend. However, 63-day volatility is 12.9% (normal) and 252-day drawdown is -8.7% (shallow). This suggests persistent selling without panic. The outlook for April 2026 warrants caution, but moderate drawdown may provide structural support. Watch for stabilization or further acceleration."
+      },
+      "symbols": [
+        "SPX"
+      ],
+      "risk_tags": [
+        "downtrend",
+        "normal volatility",
+        "shallow drawdown"
+      ],
+      "visual": {},
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/SPX/market_pulse.json",
+      "error": null
+    }
+  ],
+  "run_id": "4a2f9d91ebf7"
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "SPX",
+    "name": "SPX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "wenwang",
+    "name": "Wenwang Liuyao",
+    "display_name": "文王卦"
+  },
+  "result": {
+    "score": 35,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "warning",
+    "headline": "风雷化水地，高位逢击",
+    "subline": "益卦上九动变比六，财爻受克，谨防急转直下",
+    "short_reading": "益卦初九‘利用为大作’示短期仍有支撑，但上九‘莫益之，或击之’揭示利好耗尽后遭抛售。变卦比卦‘地上有水’却显亲附涣散，市场信心不足。",
+    "long_reading": "本卦风雷益（上巽下震），象征增益、顺势，但六爻中初九与上九皆为老阳而动，显示两端极端能量。初九动变阴，初爻为‘官鬼’临黑虎，压力虽可转化，却埋隐患；上九动变阴，原为‘妻财’临白虎，财爻动而化空（旬空巳午），且变卦比卦上坎下坤，坎为险、坤为众，市场如行于泥沼，财富聚散无常。月令子水冲财，日支酉金生财却逢空，财爻虚浮。结合SPX当前strong_downtrend，卦象提示短期反弹后加速下跌，宜减仓避险。"
+  },
+  "symbols": [
+    "Wind over Thunder",
+    "Water over Earth"
+  ],
+  "risk_tags": [
+    "strong_downtrend"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/SPX/wenwang.json",
+  "error": null,
+  "result_en": {
+    "score": 35,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "warning",
+    "headline": "Wind, thunder and water, high positions hit each other",
+    "subline": "Yi Gua on nine move ratio six, money Yao by grams, beware of sharp turn down",
+    "short_reading": "Yi Gua early nine &#39;use as a master&#39; shows that there is still support in the short term, but the last nine &#39;Mo Yi, or hit it&#39; reveals that the good is exhausted after the sell-off. The change of mind is more than the &quot;water on the ground&quot; of the hexagram, but it shows a lack of affinity and lack of confidence in the market.",
+    "long_reading": "This Gua Feng Lei Yi (Shangxun and Lower Zhen) symbolizes gain and homeopathy, but the ninth and upper nine of the six hexagrams are both moving for the old sun, showing extreme energy at both ends. At the beginning of the ninth day of the month, the first hexagram is an &quot;official ghost&quot; facing the black tiger. Although the pressure can be transformed, it buries hidden dangers. The last nine moves to change to overcast, originally be&#39; wife&#39;s fortune&#39; near the white tiger, the money moves and turns into empty (ten days empty already noon), and the hexagram is more dangerous than the hexagram, which is dangerous and Kun is the public. The market is like moving and wealth is unpredictable. The month makes the child water flush the wealth, the day supports the unitary gold to make the wealth but the sky is empty, and the wealth is empty. Combined with the current strong_downtrend of SPX, the image suggests that the short-term rebound after the acceleration of the decline, it is appropriate to reduce the position to avoid risk."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "DJI",
+    "name": "DJI",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "bazi",
+    "name": "Zi Ping BaZi",
+    "display_name": "子平八字"
+  },
+  "result": {
+    "score": 35,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "inauspicious",
+    "headline": "水势滔天，金沉深渊",
+    "subline": "庚金遇旺水，市场承压未解",
+    "short_reading": "命盘水极旺，庚金日主被泄，市场情绪悲观，短期难以逆转。",
+    "long_reading": "当前八字中水占七分，金占五分，水势远强于金。庚金虽得比肩帮扶，但月令子水当权，年干壬水透出，时支辰土虽为印星却藏癸水，湿土难制水。日主身弱，喜土金而忌水木。流年丙午，流月乙巳，木火齐来，木生火克金，忌神加剧，市场下行压力显著。虽有用神木可泄水，但日主弱不胜财，短期反弹力度有限，需待土金旺势方能企稳。"
+  },
+  "symbols": [
+    "Metal",
+    "balanced_day_master_pattern"
+  ],
+  "risk_tags": [
+    "下行风险",
+    "流动性紧张",
+    "市场恐慌",
+    "趋势延续"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/DJI/bazi.json",
+  "error": null,
+  "result_en": {
+    "score": 35,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "inauspicious",
+    "headline": "The water is monstrous, and the gold sinks into the abyss.",
+    "subline": "Gengjin meets prosperous water, the market is under pressure.",
+    "short_reading": "The fate of the water is very strong, the gold day was released, the market sentiment is pessimistic, short-term difficult to reverse.",
+    "long_reading": "At present, water accounts for seven points and gold accounts for five points in the eight characters. The water potential is far stronger than gold. Although Gengjin has to be helped shoulder to shoulder, the moon makes Zishui in power, and the annual dry water penetrates out. Although Zichen soil is Yinxing, it hides Gui water, and wet soil is difficult to make water. The Japanese Lord is weak, likes earth gold and avoid water wood. The year of the year, the flow of the moon, wood fire together, wood fire gram gold, avoid god intensified, the market downward pressure is significant. Although useful Shenmu can drain water, but the Japanese main weak not win money, short-term rebound strength is limited, need to wait for the earth gold boom to stabilize."
+  }
+}

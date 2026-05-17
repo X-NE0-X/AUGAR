@@ -1,0 +1,347 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "VIX",
+    "name": "VIX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "composite": {
+    "score": 31,
+    "polarity": "negative",
+    "intensity": "high",
+    "dominant_symbols": [
+      "The World",
+      "Page of Cups",
+      "Five of Pentacles",
+      "Temperance",
+      "The Moon",
+      "King of Pentacles"
+    ],
+    "headline": "The oracles lean negative with high intensity"
+  },
+  "cards": [
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "VIX",
+        "name": "VIX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "tarot",
+        "name": "Tarot Celtic Cross",
+        "display_name": "塔罗"
+      },
+      "result": {
+        "score": 55,
+        "polarity": "negative",
+        "intensity": "high",
+        "omen_type": "warning",
+        "headline": "恐慌高位未尽，转折暗藏阻力",
+        "subline": "世界逆位锁局，死亡逆位拒终，市场在极端中挣扎",
+        "short_reading": "当前VIX处于极端波动区间，卡牌显示完整循环受阻（世界逆位），深层恐惧未消（月亮逆位），但财务稳健信号（星币国王）暗示底部基础。整体需警惕进一步恐慌释放，避免过早抄底。",
+        "long_reading": "本次占卜以凯尔特十字揭示VIX在2026年5月17日附近的市场倾向。中心牌世界逆位代表当前状态——恐慌指数虽处高位，但并未完成完整的顶部结构，暗示市场仍可能继续上行或维持剧烈震荡。十字下方五角星五逆位显示财务困难正在缓解，但过去节制牌的正位暗示此前修复已耗散耐心。目标位月亮逆位揭露潜在的欺骗性恐惧，市场情绪可能被误读。近未来星币国王正位带来实际支撑，但环境力量逆位表明多头缺乏持续动力。最终结局死亡逆位，拒绝变化与清算，预示VIX不会立即崩跌，而是以高位盘整或缓慢回落的方式消化。整体需注意风险：VIX若突破前高将引发更大恐慌，反之若跌破28则确认反转。"
+      },
+      "symbols": [
+        "The World",
+        "Page of Cups",
+        "Five of Pentacles",
+        "Temperance",
+        "The Moon",
+        "King of Pentacles",
+        "Judgement",
+        "Strength"
+      ],
+      "risk_tags": [
+        "恐慌继续放大",
+        "误判见顶",
+        "流动性枯竭",
+        "假突破"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/VIX/tarot.json",
+      "error": null,
+      "result_en": {
+        "score": 55,
+        "polarity": "negative",
+        "intensity": "high",
+        "omen_type": "warning",
+        "headline": "恐慌高位未尽，转折暗藏阻力",
+        "subline": "世界逆位锁局，死亡逆位拒终，市场在极端中挣扎",
+        "short_reading": "当前VIX处于极端波动区间，卡牌显示完整循环受阻（世界逆位），深层恐惧未消（月亮逆位），但财务稳健信号（星币国王）暗示底部基础。整体需警惕进一步恐慌释放，避免过早抄底。",
+        "long_reading": "本次占卜以凯尔特十字揭示VIX在2026年5月17日附近的市场倾向。中心牌世界逆位代表当前状态——恐慌指数虽处高位，但并未完成完整的顶部结构，暗示市场仍可能继续上行或维持剧烈震荡。十字下方五角星五逆位显示财务困难正在缓解，但过去节制牌的正位暗示此前修复已耗散耐心。目标位月亮逆位揭露潜在的欺骗性恐惧，市场情绪可能被误读。近未来星币国王正位带来实际支撑，但环境力量逆位表明多头缺乏持续动力。最终结局死亡逆位，拒绝变化与清算，预示VIX不会立即崩跌，而是以高位盘整或缓慢回落的方式消化。整体需注意风险：VIX若突破前高将引发更大恐慌，反之若跌破28则确认反转。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "VIX",
+        "name": "VIX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "wenwang",
+        "name": "Wenwang Liuyao",
+        "display_name": "文王卦"
+      },
+      "result": {
+        "score": 45,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "cautionary",
+        "headline": "火光映水，危机交织",
+        "subline": "兄弟动而夺财，市场恐慌未止",
+        "short_reading": "当前VIX处于极端波动区间，历史高位盘整。动爻显示内部竞争与情绪宣泄，短期或延续震荡，但财星安静反指上行空间有限。",
+        "long_reading": "本卦水火既济，表面功成，实则暗流涌动。变卦火泽睽，背离之象。第四爻兄弟发动，克财夺利，反映市场参与者博弈加剧。官鬼初爻化辰土，压制势头。子孙爻得日辰生扶，但月建子水冲午火，父母爻受损。整体看，恐慌指数短期难以骤降，警惕二次探顶。用神财爻安静，不宜追高。"
+      },
+      "symbols": [
+        "Water over Fire",
+        "Lake over Fire"
+      ],
+      "risk_tags": [
+        "高波动",
+        "回调风险",
+        "情绪极端"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/VIX/wenwang.json",
+      "error": null,
+      "result_en": {
+        "score": 45,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "cautionary",
+        "headline": "火光映水，危机交织",
+        "subline": "兄弟动而夺财，市场恐慌未止",
+        "short_reading": "当前VIX处于极端波动区间，历史高位盘整。动爻显示内部竞争与情绪宣泄，短期或延续震荡，但财星安静反指上行空间有限。",
+        "long_reading": "本卦水火既济，表面功成，实则暗流涌动。变卦火泽睽，背离之象。第四爻兄弟发动，克财夺利，反映市场参与者博弈加剧。官鬼初爻化辰土，压制势头。子孙爻得日辰生扶，但月建子水冲午火，父母爻受损。整体看，恐慌指数短期难以骤降，警惕二次探顶。用神财爻安静，不宜追高。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "VIX",
+        "name": "VIX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "bazi",
+        "name": "Zi Ping BaZi",
+        "display_name": "子平八字"
+      },
+      "result": {
+        "score": 75,
+        "polarity": "negative",
+        "intensity": "high",
+        "omen_type": "transition",
+        "headline": "熔炉之火：恐慌的锻造",
+        "subline": "火势助燃，平衡之机",
+        "short_reading": "火旺生土，恐慌情绪被放大，但用神火也提供转化力量，警惕极端波动。",
+        "long_reading": "当前八字日元己土坐卯木，月令卯木为官杀，得年干庚金伤官、时柱癸酉偏财，看似压力与机遇共存。但当前大运戊午（28-37岁），流年丙午，干支皆火，印星极旺，生扶日主，使其由平衡转强。火为用神，主热情、动荡、转化，对应VIX恐慌指数飙升。火生土，土为日主，代表市场情绪自我强化，恐慌的“熔炉”正在锻造。然火旺亦生木（官杀），压力不消反增，波动率已至极致。未来需观察火是否过旺转为忌神，警惕情绪极端化后的反转。"
+      },
+      "symbols": [
+        "Earth",
+        "balanced_day_master_pattern"
+      ],
+      "risk_tags": [
+        "极端波动",
+        "情绪驱动"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/VIX/bazi.json",
+      "error": null,
+      "result_en": {
+        "score": 75,
+        "polarity": "negative",
+        "intensity": "high",
+        "omen_type": "transition",
+        "headline": "熔炉之火：恐慌的锻造",
+        "subline": "火势助燃，平衡之机",
+        "short_reading": "火旺生土，恐慌情绪被放大，但用神火也提供转化力量，警惕极端波动。",
+        "long_reading": "当前八字日元己土坐卯木，月令卯木为官杀，得年干庚金伤官、时柱癸酉偏财，看似压力与机遇共存。但当前大运戊午（28-37岁），流年丙午，干支皆火，印星极旺，生扶日主，使其由平衡转强。火为用神，主热情、动荡、转化，对应VIX恐慌指数飙升。火生土，土为日主，代表市场情绪自我强化，恐慌的“熔炉”正在锻造。然火旺亦生木（官杀），压力不消反增，波动率已至极致。未来需观察火是否过旺转为忌神，警惕情绪极端化后的反转。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "VIX",
+        "name": "VIX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "ziwei",
+        "name": "Ziwei Doushu",
+        "display_name": "紫微斗数"
+      },
+      "result": {
+        "score": 1,
+        "polarity": "positive",
+        "intensity": "high",
+        "omen_type": "震荡突破",
+        "headline": "紫微七杀掌权，波动暴增之兆",
+        "subline": "太阳贪狼化权引动，市场情绪极端亢奋",
+        "short_reading": "命宫太阳贪狼化权，主变动与扩张；事业宫紫微天府七杀遇禄存，显示核心力量增强。但财帛宫陀罗与铃星暗示延迟与突发干扰，整体为强力突破前的震荡期。",
+        "long_reading": "当前VIX处于极端高位，动能强劲。紫微斗数盘显示流年事业宫为紫微天府七杀组合，且有禄存加持，代表市场主导力量（可能是做市商或大型机构）在推动波动。同时，命宫太阳贪狼化权（流年化权），表明散户情绪狂热，贪婪主导。财帛宫天同天相文昌陀罗，暗示政策面（文昌）带来利好但实施延迟（陀罗），同时存在突然冲击（铃星在事业宫）。夫妻宫武曲巨门化科，显示对冲策略或国际关系（巨门）带来平衡。整体预示着剧烈的市场波动将持续，但需警惕高位反转风险。"
+      },
+      "symbols": [
+        "Tanlang",
+        "Career"
+      ],
+      "risk_tags": [
+        "极端波动",
+        "政策延迟",
+        "情绪过热",
+        "反转风险"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/VIX/ziwei.json",
+      "error": null,
+      "result_en": {
+        "score": 1,
+        "polarity": "positive",
+        "intensity": "high",
+        "omen_type": "震荡突破",
+        "headline": "紫微七杀掌权，波动暴增之兆",
+        "subline": "太阳贪狼化权引动，市场情绪极端亢奋",
+        "short_reading": "命宫太阳贪狼化权，主变动与扩张；事业宫紫微天府七杀遇禄存，显示核心力量增强。但财帛宫陀罗与铃星暗示延迟与突发干扰，整体为强力突破前的震荡期。",
+        "long_reading": "当前VIX处于极端高位，动能强劲。紫微斗数盘显示流年事业宫为紫微天府七杀组合，且有禄存加持，代表市场主导力量（可能是做市商或大型机构）在推动波动。同时，命宫太阳贪狼化权（流年化权），表明散户情绪狂热，贪婪主导。财帛宫天同天相文昌陀罗，暗示政策面（文昌）带来利好但实施延迟（陀罗），同时存在突然冲击（铃星在事业宫）。夫妻宫武曲巨门化科，显示对冲策略或国际关系（巨门）带来平衡。整体预示着剧烈的市场波动将持续，但需警惕高位反转风险。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "VIX",
+        "name": "VIX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "astrology",
+        "name": "Astrology Cycle",
+        "display_name": "占星"
+      },
+      "result": {
+        "score": 8,
+        "polarity": "negative",
+        "intensity": "extreme",
+        "omen_type": "volatility_surge",
+        "headline": "满月照蝎尾，摩羯压恐慌",
+        "subline": "极端波动叠加深层回撤，市场情绪在积累与释放间摇摆",
+        "short_reading": "天蝎代表的深度恐慌在满月下放大，摩羯的季节结构压制反弹空间。VIX处于极端高位，动量强但隐含风险累积。",
+        "long_reading": "当前VIX运行在天蝎座象征的深层恐惧与满月带来的情绪高潮中，同时摩羯座的结构性约束让市场难以突破。21日涨幅66.7%，63日涨幅130.5%，但252日回撤达40.7%，表明这是一轮急促的恐慌性反弹而非趋势反转。极端波动标签与积累周期共存，暗示短期可能剧烈震荡，随后出现方向性选择。持仓者需警惕满月后的情绪回落和摩羯座带来的压力测试。"
+      },
+      "symbols": [
+        "Scorpio",
+        "full"
+      ],
+      "risk_tags": [
+        "波动加剧",
+        "回调风险",
+        "流动性枯竭",
+        "反转陷阱"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/VIX/astrology.json",
+      "error": null,
+      "result_en": {
+        "score": 8,
+        "polarity": "negative",
+        "intensity": "extreme",
+        "omen_type": "volatility_surge",
+        "headline": "满月照蝎尾，摩羯压恐慌",
+        "subline": "极端波动叠加深层回撤，市场情绪在积累与释放间摇摆",
+        "short_reading": "天蝎代表的深度恐慌在满月下放大，摩羯的季节结构压制反弹空间。VIX处于极端高位，动量强但隐含风险累积。",
+        "long_reading": "当前VIX运行在天蝎座象征的深层恐惧与满月带来的情绪高潮中，同时摩羯座的结构性约束让市场难以突破。21日涨幅66.7%，63日涨幅130.5%，但252日回撤达40.7%，表明这是一轮急促的恐慌性反弹而非趋势反转。极端波动标签与积累周期共存，暗示短期可能剧烈震荡，随后出现方向性选择。持仓者需警惕满月后的情绪回落和摩羯座带来的压力测试。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "VIX",
+        "name": "VIX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "market_pulse",
+        "name": "Market Pulse",
+        "display_name": "市场脉冲"
+      },
+      "result": {
+        "score": 1,
+        "polarity": "negative",
+        "intensity": "high",
+        "omen_type": "warning",
+        "headline": "恐慌指数飙升警告",
+        "subline": "VIX处于极端高波动与强上升趋势",
+        "short_reading": "当前VIX报31.05，21日涨幅达66.7%，63日涨幅超130%，波动率极端，市场恐慌情绪急速升温。",
+        "long_reading": "根据市场脉搏数据，VIX于2026年5月17日19:42 UTC收于31.05，近21日大幅上涨66.7%，近63日涨幅高达130.5%，显示恐慌情绪持续快速积聚。波动率标签为极高水平，深度回撤标签提示此前避险资产或已从高点显著回调。当前动量呈现强势上升趋势，意味着市场风险偏好急剧恶化，短期可能承受进一步下行压力。建议密切关注流动性状况及潜在尾部事件。"
+      },
+      "symbols": [
+        "闪电",
+        "火焰",
+        "骷髅"
+      ],
+      "risk_tags": [
+        "极高波动",
+        "深度回撤",
+        "强势恐慌",
+        "市场下行风险"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/VIX/market_pulse.json",
+      "error": null,
+      "result_en": {
+        "score": 1,
+        "polarity": "negative",
+        "intensity": "high",
+        "omen_type": "warning",
+        "headline": "恐慌指数飙升警告",
+        "subline": "VIX处于极端高波动与强上升趋势",
+        "short_reading": "当前VIX报31.05，21日涨幅达66.7%，63日涨幅超130%，波动率极端，市场恐慌情绪急速升温。",
+        "long_reading": "根据市场脉搏数据，VIX于2026年5月17日19:42 UTC收于31.05，近21日大幅上涨66.7%，近63日涨幅高达130.5%，显示恐慌情绪持续快速积聚。波动率标签为极高水平，深度回撤标签提示此前避险资产或已从高点显著回调。当前动量呈现强势上升趋势，意味着市场风险偏好急剧恶化，短期可能承受进一步下行压力。建议密切关注流动性状况及潜在尾部事件。"
+      }
+    }
+  ],
+  "run_id": "11d7e8e58760"
+}

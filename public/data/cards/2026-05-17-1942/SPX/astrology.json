@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "SPX",
+    "name": "SPX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "astrology",
+    "name": "Astrology Cycle",
+    "display_name": "占星"
+  },
+  "result": {
+    "score": 1,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "ordeal",
+    "headline": "满月映射手，摩羯收弓弦",
+    "subline": "趋势下行中，回撤尚浅，波动平稳",
+    "short_reading": "射手座资产在摩羯座时令迎来满月，下行趋势明确但未陷入恐慌。累积周期暗示蓄力，但短期不宜追多。",
+    "long_reading": "当前星象显示，射手座（SPX年度星座）处于摩羯座季节，满月能量放大市场情绪。动量标签为强势下跌，但波动率正常且回撤浅，符合累积周期特征。历史经验表明，满月期间趋势延续性较强，需警惕惯性下探。中长期关注射手座守护星木星相位变化，若与土星形成紧张角度，可能加剧调整幅度。建议保持防御姿态，等待明确反转信号。"
+  },
+  "symbols": [
+    "Sagittarius",
+    "full"
+  ],
+  "risk_tags": [
+    "trend_continuation",
+    "accumulation_trap",
+    "liquidity_risk"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/SPX/astrology.json",
+  "error": null,
+  "result_en": {
+    "score": 1,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "ordeal",
+    "headline": "The full moon reflects the hand, Capricorn receives the bowstring.",
+    "subline": "In the downward trend, the withdrawal is still shallow, the volatility is stable.",
+    "short_reading": "Sagittarius assets have a full moon in Capricorn, with a clear downward trend but no panic. The cumulative cycle implies storage, but it is not appropriate to chase more in the short term.",
+    "long_reading": "The current horoscope shows that Sagittarius (SPX sign of the year) is in Capricorn season, and the full moon energy amplifies market sentiment. The momentum label is a strong decline, but the volatility is normal and the drawdown is shallow, in line with the cumulative cycle characteristics. Historical experience shows that the trend continuity is strong during the full moon, and we need to be alert to the inertia. Medium-and long-term focus on Sagittarius guardian Jupiter phase changes, if the formation of a tense angle with Saturn, may intensify the adjustment range. It is recommended to maintain a defensive posture and wait for a clear reversal signal."
+  }
+}

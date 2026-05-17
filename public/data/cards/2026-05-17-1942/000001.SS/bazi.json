@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "000001.SS",
+    "name": "000001.SS",
+    "region": "CN",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "bazi",
+    "name": "Zi Ping BaZi",
+    "display_name": "子平八字"
+  },
+  "result": {
+    "score": 48,
+    "polarity": "negative",
+    "intensity": "high",
+    "omen_type": "warning",
+    "headline": "官杀重压，弱木难支",
+    "subline": "流年丙午泄身，市场情绪趋于紧张",
+    "short_reading": "日主甲木身弱，四柱官杀混杂，财星耗身，流年丙午火旺又泄木，压力倍增。当前运势宜守不宜攻，谨防突发利空。",
+    "long_reading": "八字甲木生于戌月，土旺木囚，地支申酉戌三会金局之势，天干庚辛金透出，官杀攻身。日主仅得年支丑中藏癸水偏印微弱生扶，月干庚金为七杀直接克制，时干辛金为正官再添压力。时支未土财星耗木，年干丁火伤官泄身，全局金土火势盛，木气衰微。幸当前大运乙未（2020-2029），乙木劫财帮扶，未为燥土仍耗身，但稍有缓解。然2026年流年丙午，午火为伤官大旺，泄木生土，财星更重，加剧木弱之势。从市场形态看，官杀主市场政策或外部压力，伤官主情绪波动，财星主资金外流，旺火主热点切换频繁，但整体不利于指数上行。建议以避险为主，关注有印星（水）加持的行业，如水利、航运等。"
+  },
+  "symbols": [
+    "Wood",
+    "weak_day_master_pattern"
+  ],
+  "risk_tags": [
+    "官杀攻身",
+    "财旺耗木",
+    "火旺泄身",
+    "市场压力"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000001.SS/bazi.json",
+  "error": null,
+  "result_en": {
+    "score": 48,
+    "polarity": "negative",
+    "intensity": "high",
+    "omen_type": "warning",
+    "headline": "Official kill heavy pressure, weak wood difficult to support",
+    "subline": "The market sentiment tends to be tense.",
+    "short_reading": "The Japanese Lord Jiamu is weak, the four-pillar officials kill mixed, the fortune stars consume themselves, the time has elapsed and the fire is flourishing at noon, and the pressure is doubled. The current situation should be guarded and not attacked, and beware of sudden bad news.",
+    "long_reading": "Eight-character Jiamu was born in the month of Xu, Tuwangmu prisoner, and the earth supported Shen Youxu to 3 the situation of the gold bureau. Tiangan Gengxin gold revealed, and the official killed and attacked the body. The Japanese Lord only got a weak life support from the ugly in the year, and the monthly Geng Jin was directly restrained by the seven kills. When Gan Xin Jin added pressure to the official. When the branch is not earth, the wealth star consumes wood, the year dry Ding fire hurts the official body, the overall gold earth fire is flourishing, and the wood gas is declining. Fortunately, the current Universiade B not (2020-2029), B wood robbery help, not for dry soil is still consumed, but slightly relieved. However, in 2026, the year of the year was bingnoon, and the noon fire was a big and prosperous injury to officials. The shed wood gave birth to soil, and the fortune star was heavier, aggravating the weakness of wood. From the market pattern, the official kill the main market policy or external pressure, injury official mood fluctuations, wealth star capital outflow, the main hot spot switch frequently, but the overall is not conducive to the index upward. It is recommended to avoid risk-based, pay attention to the Indian star (water) plus the industry, such as water conservancy, shipping and so on."
+  }
+}

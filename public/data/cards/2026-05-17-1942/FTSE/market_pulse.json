@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "FTSE",
+    "name": "FTSE",
+    "region": "UK",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "market_pulse",
+    "name": "Market Pulse",
+    "display_name": "市场脉冲"
+  },
+  "result": {
+    "score": 55,
+    "polarity": "neutral",
+    "intensity": "moderate",
+    "omen_type": "consolidation",
+    "headline": "震荡蓄力，等待方向",
+    "subline": "短期承压，中期温和，波动常态",
+    "short_reading": "指数近期短期调整，但中期趋势温和，波动率正常。预示市场将在当前区间整理。",
+    "long_reading": "根据FTSE指数的最新脉冲数据，短期21日回报为-8.1%，中期63日回报微正1.02%，显示近期下行压力，但中期走势未破。波动率13.7%处于正常范围，最大回撤-8.6%为浅回撤，表明市场并未进入恐慌。动量标签为'mixed'，多空力量均衡。综合来看，神谕指示当前为震荡蓄力阶段，方向选择在即，需关注后续突破信号。"
+  },
+  "symbols": [
+    "天平",
+    "旋涡",
+    "地平线"
+  ],
+  "risk_tags": [
+    "短期回调可能",
+    "方向不明"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/FTSE/market_pulse.json",
+  "error": null,
+  "result_en": {
+    "score": 55,
+    "polarity": "neutral",
+    "intensity": "moderate",
+    "omen_type": "consolidation",
+    "headline": "Shock storage, waiting for direction",
+    "subline": "Short-term pressure, medium-term moderate, volatility normal.",
+    "short_reading": "The index has recently adjusted in the short term, but the medium-term trend is moderate and volatility is normal. foreshadows that the market will be collated in the current range.",
+    "long_reading": "According to the latest pulse data of the FTSE index, the short-term 21-day return is -8.1, and the medium-term 63-day return is slightly positive 1.02, indicating the recent downward pressure, but the medium-term trend is not broken. Volatility 13.7 per cent is in the normal range and the maximum retracement -8.6 per cent is a shallow retracement, indicating that the market is not in a panic. Momentum label is &#39;mixed&#39;, multi-air power balance. On the whole, the oracle indicates that the current shock storage stage, the direction of choice in the immediate, need to pay attention to the follow-up breakthrough signal."
+  }
+}

@@ -1,0 +1,53 @@
+﻿{
+    "schema_version":  "0.1",
+    "asset":  {
+                  "ticker":  "VIX",
+                  "name":  "VIX",
+                  "region":  "US",
+                  "asset_class":  "INDEX"
+              },
+    "period":  {
+                   "id":  "2026-04-M",
+                   "label":  "April 2026",
+                   "freq":  "M"
+               },
+    "engine":  {
+                   "id":  "tarot",
+                   "name":  "Tarot Celtic Cross",
+                   "display_name":  "塔罗"
+               },
+    "result":  {
+                   "score":  70,
+                   "polarity":  "positive",
+                   "intensity":  "moderate",
+                   "omen_type":  "favorable",
+                   "headline":  "From Suspension to Stability: VIX Set to Decline in April",
+                   "subline":  "The Celtic Cross reveals a turn from crisis to calm, with The Fool signaling a new beginning for volatility.",
+                   "short_reading":  "The Hanged Man in the present suggests a waiting period for VIX, while the reversed Ten of Swords indicates that the worst of the recent spike may be over. Temperance at the root blends extremes, pointing toward balance. The Knight of Cups in the environment and Nine of Cups as the querent\u0027s wish fulfillment suggest rising optimism. The Moon in hopes and fears warns of lingering uncertainty, but the Outcome card, The Fool, heralds a fresh start. Overall, April 2026 likely sees a decline in VIX toward calmer levels.",
+                   "long_reading":  "The Celtic Cross spread for VIX in April 2026 tells a story of transition from a period of deep fear (Five of Pentacles past) to a more balanced and controlled environment. The Present card, The Hanged Man upright, indicates a pause or sacrifice—perhaps the market is waiting for a catalyst. The Crossing card, Ten of Swords reversed, suggests that the worst pain is behind and recovery is underway. The Root is Temperance, emphasizing the need for moderation after extreme volatility. The Past card, Five of Pentacles, confirms recent hardship and a sense of being left out in the cold. The Goal is King of Cups, advocating emotional mastery and steady leadership in these volatile times. The Near Future card, King of Pentacles, promises stability and material success, implying that volatility will subside as markets find solid ground. The You card, Nine of Cups, shows a wish fulfillment—investors\u0027 desire for calm may be granted. The Environment card, Knight of Cups, brings a hopeful sentiment. The Hopes \u0026 Fears card, Moon upright, reveals that the biggest challenge is the fear of the unknown and hidden risks, but the Outcome card, The Fool, encourages a leap of faith into new beginnings. This combination of cards, especially with many Cups and Pentacles, suggests that emotional optimism and practical grounding will prevail over anxiety. For VIX, this means a likely decline from current elevated levels toward a more moderate volatility regime. However, the Moon reminds us that not all is clear, and the Fool advises trusting the process despite uncertainty. Overall, the oracle points to a favorable stability for VIX investors favoring bearish directional bets on the index."
+               },
+    "symbols":  [
+                    "The Hanged Man upright",
+                    "Ten of Swords reversed",
+                    "Temperance upright",
+                    "Five of Pentacles upright",
+                    "King of Cups upright",
+                    "King of Pentacles upright",
+                    "Nine of Cups upright",
+                    "Knight of Cups upright",
+                    "The Moon upright",
+                    "The Fool upright"
+                ],
+    "risk_tags":  [
+                      "volatility decline",
+                      "crisis recovery",
+                      "optimistic sentiment",
+                      "uncertainty",
+                      "fresh start"
+                  ],
+    "visual":  {
+
+               },
+    "raw_ref":  "runs/e071b65d59c4/debug/cards/2026-04-M/VIX/tarot.json",
+    "error":  null
+}

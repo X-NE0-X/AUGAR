@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "HSI",
+    "name": "HSI",
+    "region": "HK",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "market_pulse",
+    "name": "Market Pulse",
+    "display_name": "市场脉冲"
+  },
+  "result": {
+    "score": 40,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "caution",
+    "headline": "恒指动能下滑，回撤幅度显现",
+    "subline": "波动率正常，市场情绪偏谨慎",
+    "short_reading": "近期恒指持续下跌，短期动能转弱，但波动率尚在正常范围内。投资者需关注关键支撑位。",
+    "long_reading": "根据市场脉冲数据，恒指过去21日回报-5.4%，63日回报-3.3%，动量标签为‘下跌’。波动率处于正常水平（21.5%），但252日最大回撤已达-10.8%，标签为‘显著’。这表明市场虽未出现恐慌性波动，但下行趋势已造成可观回撤，需警惕进一步下滑风险。建议关注技术支撑与宏观催化因素。"
+  },
+  "symbols": [
+    "📉",
+    "⚠️"
+  ],
+  "risk_tags": [
+    "drawdown",
+    "momentum_falling"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/HSI/market_pulse.json",
+  "error": null,
+  "result_en": {
+    "score": 40,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "caution",
+    "headline": "HSI momentum slips, retracement appears",
+    "subline": "Volatility is normal and market sentiment is cautious.",
+    "short_reading": "The HSI has continued to fall recently, with short-term momentum weakening, but volatility is still within normal limits. Investors need to focus on key support levels.",
+    "long_reading": "According to market pulse data, the HSI has returned -5.4 per cent over the past 21 days and -3.3 per cent over the 63 days, with momentum labeled &#39;down &#39;. Volatility is at normal levels (21.5 per cent), but the maximum 252-day retracement has reached -10.8 per cent and is labeled &#39;significant &#39;. This indicates that the market, although not panic volatility, but the downward trend has caused a considerable pullback, need to be alert to further downside risks. It is recommended to pay attention to technical support and macro-catalytic factors."
+  }
+}

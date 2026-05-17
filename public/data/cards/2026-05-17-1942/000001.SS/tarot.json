@@ -1,0 +1,57 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "000001.SS",
+    "name": "000001.SS",
+    "region": "CN",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "tarot",
+    "name": "Tarot Celtic Cross",
+    "display_name": "塔罗"
+  },
+  "result": {
+    "score": 55,
+    "polarity": "neutral",
+    "intensity": "moderate",
+    "omen_type": "mixed",
+    "headline": "平衡调整，前路迷雾",
+    "subline": "短期动力与长期回报的张力",
+    "short_reading": "当前市场处于平衡调整期，近未来有积极动力，但环境严峻且结果可能令人失望。",
+    "long_reading": "当前Two of Pentacles正位显示市场在多重因素间灵活平衡，但King of Swords逆位作为交叉牌暗示决策混乱或权力滥用风险。根源Six of Pentacles正位指向之前的流动性支持或政策分配，而过去Five of Wands正位表明近期经历了多头竞争。目标Six of Swords正位引导指数向更平静的水域过渡，近未来The Chariot正位预示明确的上冲动能。然而，环境Queen of Swords逆位带来冷漠与苛刻的监管或舆论，你的Page of Swords正位保持警惕但可能信息过载。希望与恐惧Two of Swords正位暴露了犹豫不决的僵局，最终Seven of Pentacles逆位警告投入可能无法获得预期回报，需警惕过度持仓。"
+  },
+  "symbols": [
+    "Two of Pentacles",
+    "King of Swords",
+    "Six of Pentacles",
+    "Five of Wands",
+    "Six of Swords",
+    "The Chariot",
+    "Page of Swords",
+    "Queen of Swords"
+  ],
+  "risk_tags": [
+    "波动加剧",
+    "政策不确定性",
+    "流动性收缩"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000001.SS/tarot.json",
+  "error": null,
+  "result_en": {
+    "score": 55,
+    "polarity": "neutral",
+    "intensity": "moderate",
+    "omen_type": "mixed",
+    "headline": "Balance adjustment, fog ahead",
+    "subline": "The tension between short-term motivation and long-term returns",
+    "short_reading": "The current market is in a period of balanced adjustment, with positive momentum in the near future, but the environment is grim and the results may be disappointing.",
+    "long_reading": "The current Two of Pentacles position shows that the market is flexibly balanced between multiple factors, but the King of Swords reverse position as a cross-card implies the risk of decision-making confusion or abuse of power. The root Six of Pentacles positive position points to the previous liquidity support or policy allocation, while the past Five of Wands positive position indicates the recent experience of long competition. The positive position of the target Six of Swords leads the index to transition to calmer waters, and the positive position of The Chariot in the near future indicates a clear upward momentum. However, the environment Queen of Swords inversion brings indifference and harsh supervision or public opinion. Your Page of Swords is alert but may be overloaded with information. Hope and fear Two of Swords positive position exposed the hesitant stalemate, and finally Seven of Pentacles reverse position warned that input may not get the expected return, need to be wary of excessive positions."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "NDX",
+    "name": "NDX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "tarot",
+    "name": "Tarot Celtic Cross",
+    "display_name": "塔罗"
+  },
+  "result": {
+    "score": 35,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "cautionary",
+    "headline": "战车推进遇迷雾，月亮浮现需警惕",
+    "subline": "市场情绪摇摆，理性决策应对不确定性",
+    "short_reading": "当前市场虽有反弹动力（战车），但根基不稳（逆位杯王），最终隐藏风险（月亮）。建议保持警惕，避免追高。",
+    "long_reading": "凯尔特十字阵显示：当前位置战车正位，表明市场有强烈方向意图，但跨杯二正位暗示合作消息或情绪干扰；根部逆位杯王指向情绪基础不稳，过去逆位十钱代表财富损失，目标剑王正位要求理性，近未来剑页正位预示新消息或警觉，提问者魔术师正位显示掌控力，环境九杖正位为防守状态，希望与恐惧中教宗正位表示渴望遵循传统，而结果月亮正位提示幻觉与恐惧。综合强下行趋势背景，反弹可能短暂，最终不确定性占优。"
+  },
+  "symbols": [
+    "The Chariot",
+    "Two of Cups",
+    "King of Cups",
+    "Ten of Pentacles",
+    "King of Swords",
+    "Page of Swords",
+    "The Magician",
+    "Nine of Wands"
+  ],
+  "risk_tags": [
+    "下行风险",
+    "情绪波动",
+    "不确定性"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/NDX/tarot.json",
+  "error": null,
+  "result_en": {
+    "score": 35,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "cautionary",
+    "headline": "Chariot propulsion meets fog, moon emerges need vigilance",
+    "subline": "Market sentiment swings, rational decision-making to deal with uncertainty.",
+    "short_reading": "Although the current market has a rebound momentum (chariot), but the foundation is unstable (reverse cup king), and eventually hide the risk (moon). It is recommended to stay vigilant and avoid chasing high.",
+    "long_reading": "Celtic cross array shows that the current position of the chariot indicates that the market has strong directional intention, but the cross-cup 2 position indicates cooperation news or emotional interference. The root reverse position cup king points to unstable emotional foundation, the past reverse position ten dollars represents wealth loss, the target sword king position requires rationality, the near future sword page position indicates new news or vigilance, the questioner magician position shows palm control, and the environment nine staff position is defensive, the religious orthoclasm in hope and fear indicates a desire to follow tradition, while the resulting lunar orthoclasm suggests hallucination and fear. Combined with a strong downward trend background, the rebound may be short-lived, and ultimately uncertainty prevails."
+  }
+}

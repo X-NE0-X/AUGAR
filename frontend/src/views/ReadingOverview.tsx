@@ -33,6 +33,11 @@ const engineLabels: Record<string, string> = {
 const engineOrder = ['tarot', 'wenwang', 'bazi', 'ziwei', 'astrology', 'market_pulse']
 const cleanTag = (value: string): string => String(value).split(':')[0].trim()
 
+const getResult = (card: any, lang: string) => {
+  if (lang === 'en' && card?.result_en?.headline) return card.result_en
+  return card?.result || {}
+}
+
 const ReadingOverview = () => {
   const { period, ticker } = useParams()
   const navigate = useNavigate()
@@ -49,6 +54,7 @@ const ReadingOverview = () => {
   const [configModel, setConfigModel] = useState('gpt-5.5')
   const [configBaseUrl, setConfigBaseUrl] = useState('')
   const [configApiKey, setConfigApiKey] = useState('')
+  const [configPeriod, setConfigPeriod] = useState(period || '2026-04-M')
   const [generating, setGenerating] = useState(false)
   const [generatingElapsed, setGeneratingElapsed] = useState(0)
   const [providerConnected, setProviderConnected] = useState<boolean | null>(null)
@@ -307,8 +313,8 @@ const ReadingOverview = () => {
                   <p className="mono">{engineLabels[card.engine?.id] || card.engine?.display_name}</p>
                   <strong>{card.result.score}</strong>
                 </div>
-                <h3>{card.result.headline}</h3>
-                <p>{card.result.subline}</p>
+                <h3>{getResult(card, lang).headline}</h3>
+                <p>{getResult(card, lang).subline}</p>
                 <div className="symbol-row">
                   {card.symbols?.slice(0, 4).map((symbol: string) => <span key={symbol}>{trLabel(cleanTag(symbol))}</span>)}
                 </div>
@@ -322,48 +328,50 @@ const ReadingOverview = () => {
         {configOpen && (
           <motion.div className="config-backdrop" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setConfigOpen(false)}>
             <motion.div className="config-panel glass" initial={{ y: 28, scale: 0.97 }} animate={{ y: 0, scale: 1 }} exit={{ y: 18, scale: 0.98 }} onClick={(e) => e.stopPropagation()}>
-              <div className="config-head">
-                <div>
-                  <p className="mono panel-kicker">{ui.modelConfig.toUpperCase()}</p>
-                  <h2>{ui.askAgain}</h2>
+              <div className="config-scroll">
+                <div className="config-head">
+                  <div>
+                    <p className="mono panel-kicker">{ui.modelConfig.toUpperCase()}</p>
+                    <h2>{ui.askAgain}</h2>
+                  </div>
+                  <button className="glass-button" onClick={() => setConfigOpen(false)}><X size={16} /></button>
                 </div>
-                <button className="glass-button" onClick={() => setConfigOpen(false)}><X size={16} /></button>
-              </div>
-              <div className="config-grid">
-                <label>
-                  <span className="provider-label-row">
-                    {ui.provider}
-                    {providerChecking ? <span className="provider-dot checking" title="Checking codex...">...</span>
-                     : providerConnected === true ? <span className="provider-dot connected" title="Codex OAuth active">&#10003;</span>
-                     : providerConnected === false ? <span className="provider-dot disconnected" title="Codex not logged in">&#10007;</span>
-                     : null}
-                  </span>
-                  <CustomSelect open={providerOpen} setOpen={setProviderOpen} value={selectedProvider} setValue={setSelectedProvider}
-                    options={[{value:'chatgpt_oauth',label:'ChatGPT OAuth'},{value:'openai',label:'OpenAI API'},{value:'deepseek',label:'DeepSeek API'},{value:'openai_compatible',label:'OpenAI-compatible'},{value:'local',label:'Local LLM'}]}
-                    placeholder={ui.providerPlaceholder} />
-                </label>
-                <label>{ui.model}<input value={configModel} onChange={(e) => setConfigModel(e.target.value)} /></label>
-                <label>{ui.reasoning}
-                  <CustomSelect open={reasoningOpen} setOpen={setReasoningOpen} value={selectedReasoning} setValue={setSelectedReasoning}
-                    options={[{value:'low',label:'Low'},{value:'medium',label:'Medium'},{value:'high',label:'High'},{value:'xhigh',label:'Extra High'},{value:'custom',label:'Custom'}]}
-                    placeholder={ui.reasoningPlaceholder} />
-                </label>
+                <div className="config-grid">
+                  <label>
+                    <span className="provider-label-row">
+                      {ui.provider}
+                      {providerChecking ? <span className="provider-dot checking" title="Checking codex...">...</span>
+                       : providerConnected === true ? <span className="provider-dot connected" title="Codex OAuth active">&#10003;</span>
+                       : providerConnected === false ? <span className="provider-dot disconnected" title="Codex not logged in">&#10007;</span>
+                       : null}
+                    </span>
+                    <CustomSelect open={providerOpen} setOpen={setProviderOpen} value={selectedProvider} setValue={setSelectedProvider}
+                      options={[{value:'chatgpt_oauth',label:'ChatGPT OAuth'},{value:'openai',label:'OpenAI API'},{value:'deepseek',label:'DeepSeek API'},{value:'openai_compatible',label:'OpenAI-compatible'},{value:'local',label:'Local LLM'}]}
+                      placeholder={ui.providerPlaceholder} />
+                  </label>
+                  <label>{ui.model}<input value={configModel} onChange={(e) => setConfigModel(e.target.value)} /></label>
+                  <label>{ui.reasoning}
+                    <CustomSelect open={reasoningOpen} setOpen={setReasoningOpen} value={selectedReasoning} setValue={setSelectedReasoning}
+                      options={[{value:'low',label:'Low'},{value:'medium',label:'Medium'},{value:'high',label:'High'},{value:'xhigh',label:'Extra High'},{value:'custom',label:'Custom'}]}
+                      placeholder={ui.reasoningPlaceholder} />
+                  </label>
+                  {selectedProvider !== 'chatgpt_oauth' && (
+                    <label>{ui.baseUrl}<input placeholder="http://localhost:8000/v1" value={configBaseUrl} onChange={(e) => setConfigBaseUrl(e.target.value)} /></label>
+                  )}
+                </div>
+                {selectedReasoning === 'custom' && (
+                  <div className="config-grid" style={{ marginTop: '0.8rem' }}>
+                    <label style={{ gridColumn: '1 / -1' }}>{t('reading.customReasoning')}
+                      <input value={customReasoning} onChange={(e) => setCustomReasoning(e.target.value)} placeholder="e.g. minimal" />
+                    </label>
+                  </div>
+                )}
                 {selectedProvider !== 'chatgpt_oauth' && (
-                  <label>{ui.baseUrl}<input placeholder="http://localhost:8000/v1" value={configBaseUrl} onChange={(e) => setConfigBaseUrl(e.target.value)} /></label>
+                  <label className="config-api-key">{ui.apiKey}
+                    <input placeholder="OPENAI_API_KEY / DEEPSEEK_API_KEY / AUGAR_LLM_API_KEY" value={configApiKey} onChange={(e) => setConfigApiKey(e.target.value)} />
+                  </label>
                 )}
               </div>
-              {selectedReasoning === 'custom' && (
-                <div className="config-grid" style={{ marginTop: '0.8rem' }}>
-                  <label style={{ gridColumn: '1 / -1' }}>{t('reading.customReasoning')}
-                    <input value={customReasoning} onChange={(e) => setCustomReasoning(e.target.value)} placeholder="e.g. minimal" />
-                  </label>
-                </div>
-              )}
-              {selectedProvider !== 'chatgpt_oauth' && (
-                <label className="config-api-key">{ui.apiKey}
-                  <input placeholder="OPENAI_API_KEY / DEEPSEEK_API_KEY / AUGAR_LLM_API_KEY" value={configApiKey} onChange={(e) => setConfigApiKey(e.target.value)} />
-                </label>
-              )}
               <button className="glass-button primary-button config-submit" onClick={handleRun} disabled={generating}>
                 {generating ? <RefreshCw className="animate-spin" size={16} /> : <Sparkles size={16} />}
                 {generating ? t('reading.generating') : ui.run}

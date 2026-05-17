@@ -1,14 +1,14 @@
 {
   "schema_version": "0.1",
-  "period": "2026-04-M",
+  "period": "2026-05-17-1959",
   "symbols": [
     "SPX"
   ],
   "engines": [
     "tarot"
   ],
-  "run_id": "0d9895cd030b",
-  "generated_at": "2026-05-16T21:58:16+00:00",
+  "run_id": "f54af94a4bf1",
+  "generated_at": "2026-05-17T19:59:46+00:00",
   "data_coverage": {
     "SPX": {
       "data_start": "1927-12-30",
@@ -17,7 +17,7 @@
     }
   },
   "params": {
-    "period": "2026-04-M",
+    "period": "2026-05-17-1959",
     "symbols": [
       "SPX"
     ],
@@ -25,10 +25,10 @@
       "tarot"
     ],
     "seed": null,
-    "force": false,
+    "force": "all",
     "output_root": "C:\\Users\\AndersonMa\\AUGAR\\public\\data",
-    "provider": "mock",
-    "model": "gpt-5.5",
+    "provider": "deepseek",
+    "model": "deepseek-v4-flash",
     "temperature": 0.4,
     "top_p": 1.0,
     "max_output_tokens": "***",

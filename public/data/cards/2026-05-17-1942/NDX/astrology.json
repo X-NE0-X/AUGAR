@@ -1,0 +1,61 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "NDX",
+    "name": "NDX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "astrology",
+    "name": "Astrology Cycle",
+    "display_name": "占星"
+  },
+  "result": {
+    "score": 35,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "技术性承压",
+    "headline": "满月照熊途，积累周期暗藏转机",
+    "subline": "NDX 跌势暂缓，但土象 Capricorn 约束火象 Aries 冲动",
+    "short_reading": "当前NDX延续strong_downtrend，但积累周期暗示底部吸筹。满月象征情绪高点，回落风险仍存。",
+    "long_reading": "星象上，Aries（NDX映射）与Capricorn（当前季节）形成土火刑克，市场在冲动回落与结构性支撑间博弈。满月放大了短期情绪，21日跌幅-7.6%证实下行压力。然而，accumulation_cycle标签提示长线资金正在布局，波动率正常为蓄势腾出空间。关键支撑位需关注23000整数关口，若破位则加速下跌；若企稳，反弹目标24300。"
+  },
+  "symbols": [
+    "Aries",
+    "full"
+  ],
+  "risk_tags": [
+    "下行趋势延续",
+    "情绪过载",
+    "支撑破位风险"
+  ],
+  "visual": {
+    "colors": [
+      "dark_red",
+      "grey",
+      "silver"
+    ],
+    "shapes": [
+      "triangle",
+      "circle"
+    ]
+  },
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/NDX/astrology.json",
+  "error": null,
+  "result_en": {
+    "score": 35,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "技术性承压",
+    "headline": "The full moon shines on the bear path, and the accumulation cycle hides a turning point.",
+    "subline": "NDX decline reprieves, but earth Capricorn constrains fire elephant Aries impulse",
+    "short_reading": "The current NDX continues to strong_downtrend, but the accumulation cycle implies bottom suction. The full moon symbolizes a high emotional point, and the risk of falling back remains.",
+    "long_reading": "On the star, Aries(NDX mapping) and Capricorn (current season) form a fire, the market in the impulse to fall back and structural support between the game. The full moon amplified short-term sentiment, with a 21-day decline of -7.6 per cent confirming downward pressure. However, accumulation_cycle labels suggest that long term funds are being laid out and that volatility is normal to make room for momentum. The key support level needs to focus on the 23000 integer level, if the break is accelerated, if the rebound target is 24300."
+  }
+}

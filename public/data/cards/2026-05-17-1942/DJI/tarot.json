@@ -1,0 +1,58 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "DJI",
+    "name": "DJI",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "tarot",
+    "name": "Tarot Celtic Cross",
+    "display_name": "塔罗"
+  },
+  "result": {
+    "score": 38,
+    "polarity": "-1",
+    "intensity": "6",
+    "omen_type": "warning",
+    "headline": "熊市阴影下的忍耐与修复期",
+    "subline": "希望与挫折共存，短期需谨慎",
+    "short_reading": "当前市场处于下跌后的评估阶段，但潜在希望（星星）与冲突（五剑）交织。逆位钱币一显示财务机会受阻，需耐心学习（八币）提升技能以待时机。",
+    "long_reading": "七枚钱币正位暗示您正仔细审视近期下跌的成果与投资组合，市场需要时间沉淀。但星星正位交叉带来一丝曙光，可能是指标修复或外部利好预期，然而根部双剑揭示内在犹豫与信息不对称。过去皇后象征之前牛市或增长积累，但当前目标三剑直指需要面对亏损或割肉的痛苦抉择。近未来五剑正位预示短期可能出现价格竞争、恐慌抛售或机构博弈导致的进一步下跌。逆位Ace of Pentacles代表财务新机会未能落地，或是您错失了抄底窗口。环境教皇强调传统金融规则、美联储政策或大型机构行为主导市场节奏。逆位Ace of Wands暗示多头能量不足，新资金入场意愿低迷。最终八枚钱币正位鼓励通过专注基础研究、技能提升或分批定投来度过震荡期。整体而言，这是一个需要耐心、纪律和直面损失的阶段，短期不宜激进抄底，而应等待更明确的企稳信号。"
+  },
+  "symbols": [
+    "Seven of Pentacles",
+    "The Star",
+    "Two of Swords",
+    "The Empress",
+    "Three of Swords",
+    "Five of Swords",
+    "Ace of Pentacles",
+    "The Hierophant"
+  ],
+  "risk_tags": [
+    "strong_downtrend",
+    "material_drawdown",
+    "conflict_omen",
+    "opportunity_loss"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/DJI/tarot.json",
+  "error": null,
+  "result_en": {
+    "score": 38,
+    "polarity": "-1",
+    "intensity": "6",
+    "omen_type": "warning",
+    "headline": "The Period of Patience and Repair in the Shadow of a Bear Market",
+    "subline": "Hope and frustration coexist, short-term need to be cautious",
+    "short_reading": "The current market is in the evaluation stage after the decline, but the potential hope (stars) and conflict (5 sword) intertwined. The reverse coin 1 shows that financial opportunities are blocked, and you need to learn patiently (eight coins) to improve your skills to wait for the opportunity.",
+    "long_reading": "The seven coins are in position to suggest that you are carefully examining the results of the recent decline and the portfolio, the market needs time to settle. But the stars are crossing to bring a glimmer of light, may be the indicator repair or external positive expectations, however, the root double sword reveals the inherent hesitation and information asymmetry. In the past, the queen symbolized the previous bull market or growth accumulation, but the current goal three swords directly pointed to the need to face the painful choice of loss or cut meat. The near future 5 sword position indicates that there may be further declines caused by price competition, panic selling or institutional games in the short term. The inverse Ace of Pentacles means that new financial opportunities have not landed, or you have missed the bottom window. The environmental pope emphasized that traditional financial rules, Federal Reserve policy or large institutional behavior dominate the pace of the market. The reverse Ace of Wands suggests that the bulls are short of energy and the willingness to enter new funds is low. The final eight coins are encouraged to survive the shock period by focusing on basic research, skill upgrading or batching. On the whole, this is a stage that requires patience, discipline and face-to-face losses. In the short term, it is not appropriate to aggressively copy the bottom, but to wait for a clearer signal of stabilization."
+  }
+}

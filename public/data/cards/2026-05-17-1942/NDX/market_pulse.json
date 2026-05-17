@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "NDX",
+    "name": "NDX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "market_pulse",
+    "name": "Market Pulse",
+    "display_name": "市场脉冲"
+  },
+  "result": {
+    "score": 40,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "market_decline",
+    "headline": "纳指趋势转弱，空头信号增强",
+    "subline": "短期跌幅扩大，中期趋势下行",
+    "short_reading": "NDX当前处于强下跌趋势，21日跌幅达7.6%，63日跌幅9.8%，回撤已超11%。波动率正常，但方向明确偏空。",
+    "long_reading": "根据市场脉冲引擎分析，NDX在2026年5月17日收盘报23132.77点，近一个月累计下跌7.6%，近三个月下跌9.8%，动量标签为强下跌趋势。尽管63日波动率（16.75%）处于正常范围，但252日最大回撤已至11.4%，属于实质性回撤。当前组合显示空头动能持续，短期内反弹动能不足，需警惕进一步下行风险。中长期趋势若无法收复关键均线，可能演变为更大级别的调整。"
+  },
+  "symbols": [
+    "下降箭头",
+    "乌云",
+    "断裂的支撑线"
+  ],
+  "risk_tags": [
+    "趋势风险",
+    "回撤风险",
+    "动量衰减"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/NDX/market_pulse.json",
+  "error": null,
+  "result_en": {
+    "score": 40,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "market_decline",
+    "headline": "The trend of the nano index weakens and the short signal strengthens.",
+    "subline": "Short-term declines widen, medium-term trend downward",
+    "short_reading": "NDX is currently in a strong downward trend, down 7.6 percent on the 21st and 9.8 percent on the 63rd, with a pullback of more than 11 percent. Volatility is normal, but the direction is clear and short.",
+    "long_reading": "According to market pulse engine analysis, NDX closed at 23132.77 points on May 17, 2026, down 7.6 percent in the last month and 9.8 percent in the last 3 months, with momentum labeled as a strong downtrend. Although 63-day volatility (16.75 per cent) is in the normal range, the 252-day maximum retracement has reached 11.4 per cent, which is a material retracement. The current combination shows that short momentum continues, short-term rebound momentum is insufficient, need to be alert to further downside risks. If the medium-and long-term trend fails to recover the key moving average, it may evolve into a larger level of adjustment."
+  }
+}

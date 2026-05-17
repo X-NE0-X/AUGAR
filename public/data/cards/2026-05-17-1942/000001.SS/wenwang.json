@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "000001.SS",
+    "name": "000001.SS",
+    "region": "CN",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "wenwang",
+    "name": "Wenwang Liuyao",
+    "display_name": "文王卦"
+  },
+  "result": {
+    "score": 55,
+    "polarity": "positive",
+    "intensity": "moderate",
+    "omen_type": "stable_waiting",
+    "headline": "静待时机，财爻旺相",
+    "subline": "市场正值蓄力阶段",
+    "short_reading": "当前卦象稳定无动爻，财爻临应旺相，但世爻空亡，日辰冲击，提示等待时机而非主动出击。",
+    "long_reading": "水天需卦，上坎下乾，象征云上于天，待时而雨。卦中财爻卯木居应位，得月令子水相生，虽被日辰午火泄气，仍显旺相。然世爻父母子水旬空，且日辰午火直冲，形成子午对冲之势，主市场心态空悬，预期与现实存在错位。五爻子孙寅木为元神，暗合日辰，有生财之力但尚未发用。官鬼戌土在初爻得日生，提示监管或风险因素明显，但未成实质性压制。兄弟丑土忌神潜伏于四爻，需防竞争或解锁盘打压。整体格局显示，市场上涨潜力存在，但必须等待世爻填实（亥子日时）或冲空（午日）后方可确认启动，现阶段宜静不宜动。"
+  },
+  "symbols": [
+    "Water over Heaven",
+    "Water over Heaven"
+  ],
+  "risk_tags": [
+    "世爻旬空",
+    "日辰相冲",
+    "官鬼旺相",
+    "兄弟暗伏"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000001.SS/wenwang.json",
+  "error": null,
+  "result_en": {
+    "score": 55,
+    "polarity": "positive",
+    "intensity": "moderate",
+    "omen_type": "stable_waiting",
+    "headline": "Wait for the opportunity, the money is prosperous.",
+    "subline": "The market is in the stage of accumulating power.",
+    "short_reading": "At present, the hexagram image is stable and has no movement, and the financial hexagram is facing the prosperous phase, but the world hexagram is dead and the sun strikes, prompting waiting for the opportunity rather than taking the initiative to attack.",
+    "long_reading": "The water and the sky need hexagrams, and the upper ridge and the lower dry, symbolizing that the clouds are above the sky and the rain is waiting for time. In the hexagram, the wealth of the hexagram and the wood dwelling should be in place, and the moon makes the children and the water live together. Although they are discouraged by the sun and the afternoon fire, they still show a prosperous phase. However, the world&#39;s parents are empty, and the sun noon fire straight, forming a meridian hedging trend, the main market mentality is suspended, expectations and reality there is a dislocation. Yinmu, a descendant of the 5 line, is the yuan god, which coincides with the sun and has the power to make money but has not yet been used. Official ghost soil in the beginning of the day, suggesting that the regulatory or risk factors are obvious, but not a substantial suppression. Brothers ugly soil avoid god lurking in the 4 line, need to prevent competition or unlock the plate to suppress. The overall pattern shows that the market has the potential to rise, but it must wait for the world to fill in the real (Haizi day) or flush (noon day) before the start can be confirmed, at this stage should be quiet and not move."
+  }
+}

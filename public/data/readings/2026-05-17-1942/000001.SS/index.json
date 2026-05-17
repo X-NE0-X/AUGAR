@@ -1,0 +1,350 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "000001.SS",
+    "name": "000001.SS",
+    "region": "CN",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "composite": {
+    "score": 56,
+    "polarity": "neutral",
+    "intensity": "moderate",
+    "dominant_symbols": [
+      "Water over Heaven",
+      "Two of Pentacles",
+      "King of Swords",
+      "Six of Pentacles",
+      "Five of Wands",
+      "Six of Swords"
+    ],
+    "headline": "The oracles lean neutral with moderate intensity"
+  },
+  "cards": [
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "000001.SS",
+        "name": "000001.SS",
+        "region": "CN",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "tarot",
+        "name": "Tarot Celtic Cross",
+        "display_name": "塔罗"
+      },
+      "result": {
+        "score": 55,
+        "polarity": "neutral",
+        "intensity": "moderate",
+        "omen_type": "mixed",
+        "headline": "平衡调整，前路迷雾",
+        "subline": "短期动力与长期回报的张力",
+        "short_reading": "当前市场处于平衡调整期，近未来有积极动力，但环境严峻且结果可能令人失望。",
+        "long_reading": "当前Two of Pentacles正位显示市场在多重因素间灵活平衡，但King of Swords逆位作为交叉牌暗示决策混乱或权力滥用风险。根源Six of Pentacles正位指向之前的流动性支持或政策分配，而过去Five of Wands正位表明近期经历了多头竞争。目标Six of Swords正位引导指数向更平静的水域过渡，近未来The Chariot正位预示明确的上冲动能。然而，环境Queen of Swords逆位带来冷漠与苛刻的监管或舆论，你的Page of Swords正位保持警惕但可能信息过载。希望与恐惧Two of Swords正位暴露了犹豫不决的僵局，最终Seven of Pentacles逆位警告投入可能无法获得预期回报，需警惕过度持仓。"
+      },
+      "symbols": [
+        "Two of Pentacles",
+        "King of Swords",
+        "Six of Pentacles",
+        "Five of Wands",
+        "Six of Swords",
+        "The Chariot",
+        "Page of Swords",
+        "Queen of Swords"
+      ],
+      "risk_tags": [
+        "波动加剧",
+        "政策不确定性",
+        "流动性收缩"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000001.SS/tarot.json",
+      "error": null,
+      "result_en": {
+        "score": 55,
+        "polarity": "neutral",
+        "intensity": "moderate",
+        "omen_type": "mixed",
+        "headline": "平衡调整，前路迷雾",
+        "subline": "短期动力与长期回报的张力",
+        "short_reading": "当前市场处于平衡调整期，近未来有积极动力，但环境严峻且结果可能令人失望。",
+        "long_reading": "当前Two of Pentacles正位显示市场在多重因素间灵活平衡，但King of Swords逆位作为交叉牌暗示决策混乱或权力滥用风险。根源Six of Pentacles正位指向之前的流动性支持或政策分配，而过去Five of Wands正位表明近期经历了多头竞争。目标Six of Swords正位引导指数向更平静的水域过渡，近未来The Chariot正位预示明确的上冲动能。然而，环境Queen of Swords逆位带来冷漠与苛刻的监管或舆论，你的Page of Swords正位保持警惕但可能信息过载。希望与恐惧Two of Swords正位暴露了犹豫不决的僵局，最终Seven of Pentacles逆位警告投入可能无法获得预期回报，需警惕过度持仓。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "000001.SS",
+        "name": "000001.SS",
+        "region": "CN",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "wenwang",
+        "name": "Wenwang Liuyao",
+        "display_name": "文王卦"
+      },
+      "result": {
+        "score": 55,
+        "polarity": "positive",
+        "intensity": "moderate",
+        "omen_type": "stable_waiting",
+        "headline": "静待时机，财爻旺相",
+        "subline": "市场正值蓄力阶段",
+        "short_reading": "当前卦象稳定无动爻，财爻临应旺相，但世爻空亡，日辰冲击，提示等待时机而非主动出击。",
+        "long_reading": "水天需卦，上坎下乾，象征云上于天，待时而雨。卦中财爻卯木居应位，得月令子水相生，虽被日辰午火泄气，仍显旺相。然世爻父母子水旬空，且日辰午火直冲，形成子午对冲之势，主市场心态空悬，预期与现实存在错位。五爻子孙寅木为元神，暗合日辰，有生财之力但尚未发用。官鬼戌土在初爻得日生，提示监管或风险因素明显，但未成实质性压制。兄弟丑土忌神潜伏于四爻，需防竞争或解锁盘打压。整体格局显示，市场上涨潜力存在，但必须等待世爻填实（亥子日时）或冲空（午日）后方可确认启动，现阶段宜静不宜动。"
+      },
+      "symbols": [
+        "Water over Heaven",
+        "Water over Heaven"
+      ],
+      "risk_tags": [
+        "世爻旬空",
+        "日辰相冲",
+        "官鬼旺相",
+        "兄弟暗伏"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000001.SS/wenwang.json",
+      "error": null,
+      "result_en": {
+        "score": 55,
+        "polarity": "positive",
+        "intensity": "moderate",
+        "omen_type": "stable_waiting",
+        "headline": "静待时机，财爻旺相",
+        "subline": "市场正值蓄力阶段",
+        "short_reading": "当前卦象稳定无动爻，财爻临应旺相，但世爻空亡，日辰冲击，提示等待时机而非主动出击。",
+        "long_reading": "水天需卦，上坎下乾，象征云上于天，待时而雨。卦中财爻卯木居应位，得月令子水相生，虽被日辰午火泄气，仍显旺相。然世爻父母子水旬空，且日辰午火直冲，形成子午对冲之势，主市场心态空悬，预期与现实存在错位。五爻子孙寅木为元神，暗合日辰，有生财之力但尚未发用。官鬼戌土在初爻得日生，提示监管或风险因素明显，但未成实质性压制。兄弟丑土忌神潜伏于四爻，需防竞争或解锁盘打压。整体格局显示，市场上涨潜力存在，但必须等待世爻填实（亥子日时）或冲空（午日）后方可确认启动，现阶段宜静不宜动。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "000001.SS",
+        "name": "000001.SS",
+        "region": "CN",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "bazi",
+        "name": "Zi Ping BaZi",
+        "display_name": "子平八字"
+      },
+      "result": {
+        "score": 48,
+        "polarity": "negative",
+        "intensity": "high",
+        "omen_type": "warning",
+        "headline": "官杀重压，弱木难支",
+        "subline": "流年丙午泄身，市场情绪趋于紧张",
+        "short_reading": "日主甲木身弱，四柱官杀混杂，财星耗身，流年丙午火旺又泄木，压力倍增。当前运势宜守不宜攻，谨防突发利空。",
+        "long_reading": "八字甲木生于戌月，土旺木囚，地支申酉戌三会金局之势，天干庚辛金透出，官杀攻身。日主仅得年支丑中藏癸水偏印微弱生扶，月干庚金为七杀直接克制，时干辛金为正官再添压力。时支未土财星耗木，年干丁火伤官泄身，全局金土火势盛，木气衰微。幸当前大运乙未（2020-2029），乙木劫财帮扶，未为燥土仍耗身，但稍有缓解。然2026年流年丙午，午火为伤官大旺，泄木生土，财星更重，加剧木弱之势。从市场形态看，官杀主市场政策或外部压力，伤官主情绪波动，财星主资金外流，旺火主热点切换频繁，但整体不利于指数上行。建议以避险为主，关注有印星（水）加持的行业，如水利、航运等。"
+      },
+      "symbols": [
+        "Wood",
+        "weak_day_master_pattern"
+      ],
+      "risk_tags": [
+        "官杀攻身",
+        "财旺耗木",
+        "火旺泄身",
+        "市场压力"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000001.SS/bazi.json",
+      "error": null,
+      "result_en": {
+        "score": 48,
+        "polarity": "negative",
+        "intensity": "high",
+        "omen_type": "warning",
+        "headline": "官杀重压，弱木难支",
+        "subline": "流年丙午泄身，市场情绪趋于紧张",
+        "short_reading": "日主甲木身弱，四柱官杀混杂，财星耗身，流年丙午火旺又泄木，压力倍增。当前运势宜守不宜攻，谨防突发利空。",
+        "long_reading": "八字甲木生于戌月，土旺木囚，地支申酉戌三会金局之势，天干庚辛金透出，官杀攻身。日主仅得年支丑中藏癸水偏印微弱生扶，月干庚金为七杀直接克制，时干辛金为正官再添压力。时支未土财星耗木，年干丁火伤官泄身，全局金土火势盛，木气衰微。幸当前大运乙未（2020-2029），乙木劫财帮扶，未为燥土仍耗身，但稍有缓解。然2026年流年丙午，午火为伤官大旺，泄木生土，财星更重，加剧木弱之势。从市场形态看，官杀主市场政策或外部压力，伤官主情绪波动，财星主资金外流，旺火主热点切换频繁，但整体不利于指数上行。建议以避险为主，关注有印星（水）加持的行业，如水利、航运等。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "000001.SS",
+        "name": "000001.SS",
+        "region": "CN",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "ziwei",
+        "name": "Ziwei Doushu",
+        "display_name": "紫微斗数"
+      },
+      "result": {
+        "score": 72,
+        "polarity": "positive",
+        "intensity": "medium",
+        "omen_type": "transition",
+        "headline": "武曲文昌智光耀，紫府七杀征远行",
+        "subline": "迁移化禄显机遇，财帛化忌须审慎",
+        "short_reading": "命宫武曲巨门文昌化科，智慧沟通优势明显；迁移宫紫微天府七杀化禄，远行发展有利。但财帛宫廉贞天梁逢大限化忌，财务需防波折。",
+        "long_reading": "盘面以迁移宫为核心，紫微天府七杀坐守，禄存同宫，又逢流年与本命双化禄，外出发展、跨界合作、国际事务大吉。命宫武曲巨门文昌化科，代表理性分析、专业技术与良好表达，可借助文书、沟通、法律或学术路径成功。官禄宫天机太阴破军，左辅铃星，事业创新多变，需把握转型机遇。财帛宫廉贞天梁大限化忌，股票指数相关资产可能有短期波动或回撤，不宜追高。整体看，长线布局有利，尤其关注科技、金融、地产等领域。健康宫文曲，需注意消化系统。福德宫太阳贪狼化权，乐观进取但防过度冲动。"
+      },
+      "symbols": [
+        "Tianfu",
+        "Travel"
+      ],
+      "risk_tags": [
+        "财帛化忌",
+        "巨门口舌",
+        "贪狼化权冲动",
+        "财务波动"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000001.SS/ziwei.json",
+      "error": null,
+      "result_en": {
+        "score": 72,
+        "polarity": "positive",
+        "intensity": "medium",
+        "omen_type": "transition",
+        "headline": "武曲文昌智光耀，紫府七杀征远行",
+        "subline": "迁移化禄显机遇，财帛化忌须审慎",
+        "short_reading": "命宫武曲巨门文昌化科，智慧沟通优势明显；迁移宫紫微天府七杀化禄，远行发展有利。但财帛宫廉贞天梁逢大限化忌，财务需防波折。",
+        "long_reading": "盘面以迁移宫为核心，紫微天府七杀坐守，禄存同宫，又逢流年与本命双化禄，外出发展、跨界合作、国际事务大吉。命宫武曲巨门文昌化科，代表理性分析、专业技术与良好表达，可借助文书、沟通、法律或学术路径成功。官禄宫天机太阴破军，左辅铃星，事业创新多变，需把握转型机遇。财帛宫廉贞天梁大限化忌，股票指数相关资产可能有短期波动或回撤，不宜追高。整体看，长线布局有利，尤其关注科技、金融、地产等领域。健康宫文曲，需注意消化系统。福德宫太阳贪狼化权，乐观进取但防过度冲动。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "000001.SS",
+        "name": "000001.SS",
+        "region": "CN",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "astrology",
+        "name": "Astrology Cycle",
+        "display_name": "占星"
+      },
+      "result": {
+        "score": 58,
+        "polarity": "neutral",
+        "intensity": "2",
+        "omen_type": "accumulation",
+        "headline": "摩羯座的基调：积累中的稳定",
+        "subline": "渐盈月相暗示缓慢上行",
+        "short_reading": "当前星象指向积累周期，市场情绪中性偏稳。",
+        "long_reading": "根据2026年5月17日19:42 UTC的星盘，上证指数处于摩羯座周期与渐盈月相的双重影响下。市场短期动能混合，但长期趋势尚未逆转。波动率正常，回撤浅，表明市场处于有序调整后的积累阶段。摩羯座的土象能量赋予坚韧特质，渐盈月相则支持逐步回暖。建议保持耐心，关注低吸机会，但避免追高。"
+      },
+      "symbols": [
+        "Capricorn",
+        "waxing"
+      ],
+      "risk_tags": [
+        "波动率正常",
+        "浅回撤",
+        "积累期"
+      ],
+      "visual": {
+        "primary_color": "#4A90D9",
+        "shape": "circle",
+        "symbol": "上升阶梯",
+        "animation": "pulse slow"
+      },
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000001.SS/astrology.json",
+      "error": null,
+      "result_en": {
+        "score": 58,
+        "polarity": "neutral",
+        "intensity": "2",
+        "omen_type": "accumulation",
+        "headline": "摩羯座的基调：积累中的稳定",
+        "subline": "渐盈月相暗示缓慢上行",
+        "short_reading": "当前星象指向积累周期，市场情绪中性偏稳。",
+        "long_reading": "根据2026年5月17日19:42 UTC的星盘，上证指数处于摩羯座周期与渐盈月相的双重影响下。市场短期动能混合，但长期趋势尚未逆转。波动率正常，回撤浅，表明市场处于有序调整后的积累阶段。摩羯座的土象能量赋予坚韧特质，渐盈月相则支持逐步回暖。建议保持耐心，关注低吸机会，但避免追高。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "000001.SS",
+        "name": "000001.SS",
+        "region": "CN",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "market_pulse",
+        "name": "Market Pulse",
+        "display_name": "市场脉冲"
+      },
+      "result": {
+        "score": 45,
+        "polarity": "负面",
+        "intensity": "中等",
+        "omen_type": "观望",
+        "headline": "短期承压，中期趋稳",
+        "subline": "动量混杂，波动正常，回撤浅幅",
+        "short_reading": "近期市场动能分歧，短期回调幅度温和，中期仍维持震荡格局。",
+        "long_reading": "根据当前数据，标的近期21日回报为-5.62%，短期下行压力明显；但63日回报转正为+0.96%，显示中期有企稳迹象。63日波动率14.6%处于正常水平，252日最大回撤-6.43%为浅幅回撤，未触发风险警戒。动量标签为“混合”，表明多空力量均衡，趋势尚未明确。结合正常波动与浅幅回撤，当前处于方向待定的观望窗口，短期风险有限但需警惕延续性下跌。"
+      },
+      "symbols": [
+        "天平",
+        "缓流"
+      ],
+      "risk_tags": [
+        "短期下行风险",
+        "震荡持续"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000001.SS/market_pulse.json",
+      "error": null,
+      "result_en": {
+        "score": 45,
+        "polarity": "负面",
+        "intensity": "中等",
+        "omen_type": "观望",
+        "headline": "短期承压，中期趋稳",
+        "subline": "动量混杂，波动正常，回撤浅幅",
+        "short_reading": "近期市场动能分歧，短期回调幅度温和，中期仍维持震荡格局。",
+        "long_reading": "根据当前数据，标的近期21日回报为-5.62%，短期下行压力明显；但63日回报转正为+0.96%，显示中期有企稳迹象。63日波动率14.6%处于正常水平，252日最大回撤-6.43%为浅幅回撤，未触发风险警戒。动量标签为“混合”，表明多空力量均衡，趋势尚未明确。结合正常波动与浅幅回撤，当前处于方向待定的观望窗口，短期风险有限但需警惕延续性下跌。"
+      }
+    }
+  ],
+  "run_id": "11d7e8e58760"
+}

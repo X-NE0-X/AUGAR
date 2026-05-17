@@ -1,0 +1,344 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "SPX",
+    "name": "SPX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "composite": {
+    "score": 32,
+    "polarity": "negative",
+    "intensity": "high",
+    "dominant_symbols": [
+      "The Moon",
+      "Four of Pentacles",
+      "Seven of Swords",
+      "Queen of Pentacles",
+      "Three of Swords",
+      "King of Pentacles"
+    ],
+    "headline": "The oracles lean negative with high intensity"
+  },
+  "cards": [
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "SPX",
+        "name": "SPX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "tarot",
+        "name": "Tarot Celtic Cross",
+        "display_name": "塔罗"
+      },
+      "result": {
+        "score": 25,
+        "polarity": "negative",
+        "intensity": "moderate_high",
+        "omen_type": "warning",
+        "headline": "暗流涌动，迷雾重重",
+        "subline": "虚假希望与财务困境交织",
+        "short_reading": "市场处于混乱期，需警惕虚假信号和固执防守导致的流动性陷阱。多重逆位牌显示内在失衡与外部压力，短期反弹可能只是幻象。",
+        "long_reading": "当前SPX趋势受藏匿的恐惧（逆位月亮）和市场参与者紧缩防守（正位星币四）主导。过去决策失误（逆位星币皇后）与未消解的痛楚（逆位宝剑三）形成背景。未来掌控欲失效（逆位星币国王）和不平等的资源流动（逆位星币六）加剧不确定性。权威结构动摇（逆位皇帝），而竞争白热化（正位权杖五）显示多空激战。然而，逆位圣杯国王暗示情绪管控崩溃，可能引发非理性抛售。整体牌面指向虚假复苏后二次探底，建议保持现金防御。"
+      },
+      "symbols": [
+        "The Moon",
+        "Four of Pentacles",
+        "Seven of Swords",
+        "Queen of Pentacles",
+        "Three of Swords",
+        "King of Pentacles",
+        "Six of Pentacles",
+        "The Emperor"
+      ],
+      "risk_tags": [
+        "下行风险",
+        "流动性陷阱",
+        "情绪失衡",
+        "虚假信号"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/SPX/tarot.json",
+      "error": null,
+      "result_en": {
+        "score": 25,
+        "polarity": "negative",
+        "intensity": "moderate_high",
+        "omen_type": "warning",
+        "headline": "暗流涌动，迷雾重重",
+        "subline": "虚假希望与财务困境交织",
+        "short_reading": "市场处于混乱期，需警惕虚假信号和固执防守导致的流动性陷阱。多重逆位牌显示内在失衡与外部压力，短期反弹可能只是幻象。",
+        "long_reading": "当前SPX趋势受藏匿的恐惧（逆位月亮）和市场参与者紧缩防守（正位星币四）主导。过去决策失误（逆位星币皇后）与未消解的痛楚（逆位宝剑三）形成背景。未来掌控欲失效（逆位星币国王）和不平等的资源流动（逆位星币六）加剧不确定性。权威结构动摇（逆位皇帝），而竞争白热化（正位权杖五）显示多空激战。然而，逆位圣杯国王暗示情绪管控崩溃，可能引发非理性抛售。整体牌面指向虚假复苏后二次探底，建议保持现金防御。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "SPX",
+        "name": "SPX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "wenwang",
+        "name": "Wenwang Liuyao",
+        "display_name": "文王卦"
+      },
+      "result": {
+        "score": 35,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "warning",
+        "headline": "风雷化水地，高位逢击",
+        "subline": "益卦上九动变比六，财爻受克，谨防急转直下",
+        "short_reading": "益卦初九‘利用为大作’示短期仍有支撑，但上九‘莫益之，或击之’揭示利好耗尽后遭抛售。变卦比卦‘地上有水’却显亲附涣散，市场信心不足。",
+        "long_reading": "本卦风雷益（上巽下震），象征增益、顺势，但六爻中初九与上九皆为老阳而动，显示两端极端能量。初九动变阴，初爻为‘官鬼’临黑虎，压力虽可转化，却埋隐患；上九动变阴，原为‘妻财’临白虎，财爻动而化空（旬空巳午），且变卦比卦上坎下坤，坎为险、坤为众，市场如行于泥沼，财富聚散无常。月令子水冲财，日支酉金生财却逢空，财爻虚浮。结合SPX当前strong_downtrend，卦象提示短期反弹后加速下跌，宜减仓避险。"
+      },
+      "symbols": [
+        "Wind over Thunder",
+        "Water over Earth"
+      ],
+      "risk_tags": [
+        "strong_downtrend"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/SPX/wenwang.json",
+      "error": null,
+      "result_en": {
+        "score": 35,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "warning",
+        "headline": "风雷化水地，高位逢击",
+        "subline": "益卦上九动变比六，财爻受克，谨防急转直下",
+        "short_reading": "益卦初九‘利用为大作’示短期仍有支撑，但上九‘莫益之，或击之’揭示利好耗尽后遭抛售。变卦比卦‘地上有水’却显亲附涣散，市场信心不足。",
+        "long_reading": "本卦风雷益（上巽下震），象征增益、顺势，但六爻中初九与上九皆为老阳而动，显示两端极端能量。初九动变阴，初爻为‘官鬼’临黑虎，压力虽可转化，却埋隐患；上九动变阴，原为‘妻财’临白虎，财爻动而化空（旬空巳午），且变卦比卦上坎下坤，坎为险、坤为众，市场如行于泥沼，财富聚散无常。月令子水冲财，日支酉金生财却逢空，财爻虚浮。结合SPX当前strong_downtrend，卦象提示短期反弹后加速下跌，宜减仓避险。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "SPX",
+        "name": "SPX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "bazi",
+        "name": "Zi Ping BaZi",
+        "display_name": "子平八字"
+      },
+      "result": {
+        "score": 40,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "caution",
+        "headline": "土重金埋，市场承压",
+        "subline": "强土当令，需待金水疏通",
+        "short_reading": "当前市场如五行土过旺，沉重难行，下行压力持续，宜观望。",
+        "long_reading": "日主戊土极强，得令得势，四柱土象密集，显示市场根基沉滞，缺乏流动性。用神金水（Output与Wealth）被厚重土气压制，短期难以发力。结合SPX当前处于强下行趋势，但跌幅尚浅、波动正常，暗示此轮调整可能延续，需警惕趋势加速。大运已入乙丑，官星透干而劫财坐支，外部压力与内部消耗并存。唯有等待金水气运回升，才有转折机会。建议保持防御姿态，关注流动性与政策信号。"
+      },
+      "symbols": [
+        "Earth",
+        "strong_day_master_pattern"
+      ],
+      "risk_tags": [
+        "downside",
+        "liquidity_crunch",
+        "oversold_but_no_bounce"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/SPX/bazi.json",
+      "error": null,
+      "result_en": {
+        "score": 40,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "caution",
+        "headline": "土重金埋，市场承压",
+        "subline": "强土当令，需待金水疏通",
+        "short_reading": "当前市场如五行土过旺，沉重难行，下行压力持续，宜观望。",
+        "long_reading": "日主戊土极强，得令得势，四柱土象密集，显示市场根基沉滞，缺乏流动性。用神金水（Output与Wealth）被厚重土气压制，短期难以发力。结合SPX当前处于强下行趋势，但跌幅尚浅、波动正常，暗示此轮调整可能延续，需警惕趋势加速。大运已入乙丑，官星透干而劫财坐支，外部压力与内部消耗并存。唯有等待金水气运回升，才有转折机会。建议保持防御姿态，关注流动性与政策信号。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "SPX",
+        "name": "SPX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "ziwei",
+        "name": "Ziwei Doushu",
+        "display_name": "紫微斗数"
+      },
+      "result": {
+        "score": 65,
+        "polarity": "mixed_positive",
+        "intensity": "high",
+        "omen_type": "wave_opportunity",
+        "headline": "紫府七杀化禄坐迁移，波动中暗藏转机",
+        "subline": "财帛宫流年化忌逢火星，预警短期剧烈震荡",
+        "short_reading": "命盘迁移宫紫微、天府、七杀汇聚，又逢本命化禄，预示外部环境或指数有强力扩张动能。但财帛宫廉贞天梁遇火星、流年化忌，形成破财与失控信号，需警惕急速回调风险。三合方联动，整体格局为大波动下的机遇窗口。",
+        "long_reading": "本命盘以迁移宫（Travel）为枢纽，紫微帝星、天府库星与七杀将星同宫，构建出领袖气质与变革势能。本命化禄进一步强化此宫，显示当前周期（2026年5月17日附近）SPX指数可能面临重大外力推动，如政策转向或资本集中流入。然而财帛宫（Wealth）廉贞天梁属桃花＋清贵组合，遇火星化忌（流年），警示短期过热后的资金撤离或非理性抛售。官禄宫（Career）天机太阴破军，机变与动荡交融，暗示市场情绪极易反转。福德宫（Fortune）太阳贪狼化权（流年），主力资金或有强力控盘意图，但贪狼的投机性与天魁的贵人效应叠加，可能形成快速拉升后派发。命宫本身（Life）武曲巨门化科，理性分析与沟通发挥关键作用。整体而言，这是一段高波动周期，方向取决于外力引爆点；长线看迁移宫吉化仍有支撑，但财帛宫的凶象迫使短线交易者必须严控风险。建议采用趋势跟随策略，等待明确突破信号。"
+      },
+      "symbols": [
+        "Tianfu",
+        "Travel"
+      ],
+      "risk_tags": [
+        "剧烈波动",
+        "资金流出",
+        "短期回调",
+        "政策冲击"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/SPX/ziwei.json",
+      "error": null,
+      "result_en": {
+        "score": 65,
+        "polarity": "mixed_positive",
+        "intensity": "high",
+        "omen_type": "wave_opportunity",
+        "headline": "紫府七杀化禄坐迁移，波动中暗藏转机",
+        "subline": "财帛宫流年化忌逢火星，预警短期剧烈震荡",
+        "short_reading": "命盘迁移宫紫微、天府、七杀汇聚，又逢本命化禄，预示外部环境或指数有强力扩张动能。但财帛宫廉贞天梁遇火星、流年化忌，形成破财与失控信号，需警惕急速回调风险。三合方联动，整体格局为大波动下的机遇窗口。",
+        "long_reading": "本命盘以迁移宫（Travel）为枢纽，紫微帝星、天府库星与七杀将星同宫，构建出领袖气质与变革势能。本命化禄进一步强化此宫，显示当前周期（2026年5月17日附近）SPX指数可能面临重大外力推动，如政策转向或资本集中流入。然而财帛宫（Wealth）廉贞天梁属桃花＋清贵组合，遇火星化忌（流年），警示短期过热后的资金撤离或非理性抛售。官禄宫（Career）天机太阴破军，机变与动荡交融，暗示市场情绪极易反转。福德宫（Fortune）太阳贪狼化权（流年），主力资金或有强力控盘意图，但贪狼的投机性与天魁的贵人效应叠加，可能形成快速拉升后派发。命宫本身（Life）武曲巨门化科，理性分析与沟通发挥关键作用。整体而言，这是一段高波动周期，方向取决于外力引爆点；长线看迁移宫吉化仍有支撑，但财帛宫的凶象迫使短线交易者必须严控风险。建议采用趋势跟随策略，等待明确突破信号。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "SPX",
+        "name": "SPX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "astrology",
+        "name": "Astrology Cycle",
+        "display_name": "占星"
+      },
+      "result": {
+        "score": 1,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "ordeal",
+        "headline": "满月映射手，摩羯收弓弦",
+        "subline": "趋势下行中，回撤尚浅，波动平稳",
+        "short_reading": "射手座资产在摩羯座时令迎来满月，下行趋势明确但未陷入恐慌。累积周期暗示蓄力，但短期不宜追多。",
+        "long_reading": "当前星象显示，射手座（SPX年度星座）处于摩羯座季节，满月能量放大市场情绪。动量标签为强势下跌，但波动率正常且回撤浅，符合累积周期特征。历史经验表明，满月期间趋势延续性较强，需警惕惯性下探。中长期关注射手座守护星木星相位变化，若与土星形成紧张角度，可能加剧调整幅度。建议保持防御姿态，等待明确反转信号。"
+      },
+      "symbols": [
+        "Sagittarius",
+        "full"
+      ],
+      "risk_tags": [
+        "trend_continuation",
+        "accumulation_trap",
+        "liquidity_risk"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/SPX/astrology.json",
+      "error": null,
+      "result_en": {
+        "score": 1,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "ordeal",
+        "headline": "满月映射手，摩羯收弓弦",
+        "subline": "趋势下行中，回撤尚浅，波动平稳",
+        "short_reading": "射手座资产在摩羯座时令迎来满月，下行趋势明确但未陷入恐慌。累积周期暗示蓄力，但短期不宜追多。",
+        "long_reading": "当前星象显示，射手座（SPX年度星座）处于摩羯座季节，满月能量放大市场情绪。动量标签为强势下跌，但波动率正常且回撤浅，符合累积周期特征。历史经验表明，满月期间趋势延续性较强，需警惕惯性下探。中长期关注射手座守护星木星相位变化，若与土星形成紧张角度，可能加剧调整幅度。建议保持防御姿态，等待明确反转信号。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "SPX",
+        "name": "SPX",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "market_pulse",
+        "name": "Market Pulse",
+        "display_name": "市场脉冲"
+      },
+      "result": {
+        "score": 28,
+        "polarity": "负面",
+        "intensity": "中等",
+        "omen_type": "警示",
+        "headline": "强下降趋势延续，市场承压未止",
+        "subline": "波动率正常，回撤尚浅，但动量持续走弱",
+        "short_reading": "标普500指数近21日与63日跌幅均超7%，动量显示强下降趋势。波动率处于正常区间，回撤深度约8.7%属浅层调整，但下行惯性未消，短期风险偏下行。",
+        "long_reading": "当前标普500指数收盘于6368.85点，近21日回报-7.82%，近63日回报-8.12%，动量明确标注为强下降趋势。波动率（63日年化12.89%）处于正常水平，表明市场并未进入恐慌式抛售，但趋势自身强度足以引发持续担忧。252日最大回撤仅-8.74%，属浅层调整，尚未触及深度熊市阈值。综合判断，市场正经历一次趋势性的修正阶段，而非突发性崩溃。投资者需警惕动量进一步衰减可能带来的低位徘徊或加速下行，同时关注波动率是否从正常区间向上突破。"
+      },
+      "symbols": [
+        "下降之箭",
+        "平稳的湖面下的暗流",
+        "未满的沙漏"
+      ],
+      "risk_tags": [
+        "趋势延续风险",
+        "动量衰竭风险",
+        "波动率上行风险"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/SPX/market_pulse.json",
+      "error": null,
+      "result_en": {
+        "score": 28,
+        "polarity": "负面",
+        "intensity": "中等",
+        "omen_type": "警示",
+        "headline": "强下降趋势延续，市场承压未止",
+        "subline": "波动率正常，回撤尚浅，但动量持续走弱",
+        "short_reading": "标普500指数近21日与63日跌幅均超7%，动量显示强下降趋势。波动率处于正常区间，回撤深度约8.7%属浅层调整，但下行惯性未消，短期风险偏下行。",
+        "long_reading": "当前标普500指数收盘于6368.85点，近21日回报-7.82%，近63日回报-8.12%，动量明确标注为强下降趋势。波动率（63日年化12.89%）处于正常水平，表明市场并未进入恐慌式抛售，但趋势自身强度足以引发持续担忧。252日最大回撤仅-8.74%，属浅层调整，尚未触及深度熊市阈值。综合判断，市场正经历一次趋势性的修正阶段，而非突发性崩溃。投资者需警惕动量进一步衰减可能带来的低位徘徊或加速下行，同时关注波动率是否从正常区间向上突破。"
+      }
+    }
+  ],
+  "run_id": "11d7e8e58760"
+}

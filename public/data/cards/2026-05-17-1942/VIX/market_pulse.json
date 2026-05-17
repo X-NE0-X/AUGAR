@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "VIX",
+    "name": "VIX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "market_pulse",
+    "name": "Market Pulse",
+    "display_name": "市场脉冲"
+  },
+  "result": {
+    "score": 1,
+    "polarity": "negative",
+    "intensity": "high",
+    "omen_type": "warning",
+    "headline": "恐慌指数飙升警告",
+    "subline": "VIX处于极端高波动与强上升趋势",
+    "short_reading": "当前VIX报31.05，21日涨幅达66.7%，63日涨幅超130%，波动率极端，市场恐慌情绪急速升温。",
+    "long_reading": "根据市场脉搏数据，VIX于2026年5月17日19:42 UTC收于31.05，近21日大幅上涨66.7%，近63日涨幅高达130.5%，显示恐慌情绪持续快速积聚。波动率标签为极高水平，深度回撤标签提示此前避险资产或已从高点显著回调。当前动量呈现强势上升趋势，意味着市场风险偏好急剧恶化，短期可能承受进一步下行压力。建议密切关注流动性状况及潜在尾部事件。"
+  },
+  "symbols": [
+    "闪电",
+    "火焰",
+    "骷髅"
+  ],
+  "risk_tags": [
+    "极高波动",
+    "深度回撤",
+    "强势恐慌",
+    "市场下行风险"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/VIX/market_pulse.json",
+  "error": null,
+  "result_en": {
+    "score": 1,
+    "polarity": "negative",
+    "intensity": "high",
+    "omen_type": "warning",
+    "headline": "Panic index spikes warning",
+    "subline": "VIX in extreme high volatility and strong uptrend",
+    "short_reading": "The current VIX reported 31.05,21 days up 66.7 percent, 63 days up more than 130 percent, volatility is extreme, the market panic is heating up rapidly.",
+    "long_reading": "According to market pulse data, the VIX closed at 31.05 at 19:42 UTC on May 17, 2026, up 66.7 percent in the last 21 days and up 130.5 percent in the last 63 days, indicating that panic continues to build rapidly. Volatility labels are extremely high and deep retracement labels suggest that previously safe-haven assets may have pulled back significantly from their highs. The current strong upward trend in momentum means that market risk appetite has deteriorated sharply and may be under further downward pressure in the short term. It is recommended to pay close attention to liquidity conditions and potential tail events."
+  }
+}

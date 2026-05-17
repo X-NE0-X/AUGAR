@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "000300.SS",
+    "name": "000300.SS",
+    "region": "CN",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "astrology",
+    "name": "Astrology Cycle",
+    "display_name": "占星"
+  },
+  "result": {
+    "score": 35,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "周期积累中的调整",
+    "headline": "新月照狮宫，震荡蓄势",
+    "subline": "沪深300指数承压，暗藏周期转折",
+    "short_reading": "市场处于回落期，但波动正常，回撤尚浅，可能是低吸机会。",
+    "long_reading": "新月在摩羯座季节开启，强化了结构性压力。资产狮子座（沪深300）短期受制于土星式的约束，21日跌幅约4.8%，但整体波动率和回撤可控。周期标签“falling”明确下行趋势，但“accumulation_cycle”暗示市场正在积蓄下一波动能。当前阶段宜观察而非匆忙行动，等待月相渐盈后的确认信号。"
+  },
+  "symbols": [
+    "Leo",
+    "new"
+  ],
+  "risk_tags": [
+    "短期下行风险",
+    "波动率回升风险"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000300.SS/astrology.json",
+  "error": null,
+  "result_en": {
+    "score": 35,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "周期积累中的调整",
+    "headline": "The new moon shines on the Lion Palace, and the shock is gaining momentum.",
+    "subline": "CSI 300 index under pressure, hidden cycle turn",
+    "short_reading": "The market is in a period of retreat, but the volatility is normal, the retreat is still shallow, may be a low suction opportunity.",
+    "long_reading": "The new moon opens in Capricorn season, intensifying structural stress. Asset Leo (CSI 300) is subject to Saturn-style constraints in the short term, down about 4.8 per cent on the 21st, but overall volatility and pullbacks are manageable. The cyclical label &quot;falling&quot; identifies the downward trend, but &quot;accumulation_cycle&quot; suggests that the market is accumulating the next wave of momentum. The current phase should be observed rather than rushed action, waiting for the confirmation signal after the moon phase is gradually surplus."
+  }
+}

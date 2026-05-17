@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "HSI",
+    "name": "HSI",
+    "region": "HK",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "bazi",
+    "name": "Zi Ping BaZi",
+    "display_name": "子平八字"
+  },
+  "result": {
+    "score": 65,
+    "polarity": "positive",
+    "intensity": "2",
+    "omen_type": "opportunity",
+    "headline": "金弱火炎，土护根基",
+    "subline": "恒指短期震荡，但大运土生金，中长线可期",
+    "short_reading": "辛金日主弱，火旺为忌，然大运己未土生金，如大地护金，虽有波动，根基稳固。",
+    "long_reading": "日主辛金生于午月，火势炎炎，金被克制，力量微弱。八字火旺（5火），水木亦多，金土偏少。身弱喜土金生扶。当前大运为己未（2021-2030），干支皆土，为强印星，能化火生金，为用神运。虽然短期市场因火旺压制（下跌趋势），但大运土力深厚，中长线有支撑，可视为布局机会。需注意火势过猛时仍有回调风险，但整体偏向机会。"
+  },
+  "symbols": [
+    "Metal",
+    "weak_day_master_pattern"
+  ],
+  "risk_tags": [
+    "波动风险",
+    "火旺压制"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/HSI/bazi.json",
+  "error": null,
+  "result_en": {
+    "score": 65,
+    "polarity": "positive",
+    "intensity": "2",
+    "omen_type": "opportunity",
+    "headline": "Gold weak fire inflammation, soil protection foundation",
+    "subline": "HSI short-term volatility, but Universiade native gold, medium and long term can be expected",
+    "short_reading": "Xin Jin Japan Lord weak, fire prosperous for taboo, but the Universiade has not native gold, such as the earth to protect gold, although there are fluctuations, the foundation is solid.",
+    "long_reading": "The Japanese Lord Xin Jin was born in the afternoon and moon. The fire was scorching. Jin was restrained and his strength was weak. Eight-character fire (5 fire), water trees are also more, less gold soil. Weak body like soil Jin Sheng help. At present, the Universiade is not for itself (2021-2030), and all its branches are earthy. It is a strong printing star, which can turn fire into gold and use divine luck. Although the short-term market is suppressed by the fire (downtrend), the Universiade has deep soil strength and support in the medium and long term, which can be regarded as a layout opportunity. It is important to note that there is still a risk of a correction when the fire is too strong, but the overall bias is towards opportunity."
+  }
+}

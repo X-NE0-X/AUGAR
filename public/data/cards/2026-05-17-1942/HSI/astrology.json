@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "HSI",
+    "name": "HSI",
+    "region": "HK",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "astrology",
+    "name": "Astrology Cycle",
+    "display_name": "占星"
+  },
+  "result": {
+    "score": 38,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "warning",
+    "headline": "恒生指数进入天秤座满月周期，熊市迹象显现",
+    "subline": "当前跌势与积累阶段并存，需警惕进一步下行风险",
+    "short_reading": "恒生指数在天蝎座资产下，摩羯座季节与满月相位形成压力，短期动量向下，下跌趋势明显，但波动率正常，暗示调整而非崩盘。",
+    "long_reading": "基于星象引擎，恒生指数作为天蝎座资产，当前处于摩羯座季节（土象奠基）与满月相位（情绪高潮），叠加下跌动量与物质回撤标签。市场正在经历积累周期中的价格压缩，但21日与63日负回报表明卖方主导。满月通常放大波动与清算，而摩羯座季节强化结构性压力。建议观望，等待明确底部信号。"
+  },
+  "symbols": [
+    "Scorpio",
+    "full"
+  ],
+  "risk_tags": [
+    "fallen_angel",
+    "mean_reversion",
+    "selling_climax"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/HSI/astrology.json",
+  "error": null,
+  "result_en": {
+    "score": 38,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "warning",
+    "headline": "Hang Seng Index Enters Libra Full Moon Cycle, Signs of Bear Market Appears",
+    "subline": "The current decline and accumulation phase coexist, need to be alert to further downside risks",
+    "short_reading": "The Hang Seng Index is under Scorpio assets, the Capricorn season is under pressure with the full moon phase, short-term momentum is down, the downward trend is obvious, but the volatility is normal, suggesting a correction rather than a crash.",
+    "long_reading": "Based on the astrological engine, the Hang Seng Index, as a Scorpio asset, is currently in Capricorn season (earth elephant foundation) and full moon phase (emotional climax), superimposed on the downward momentum and material retracement label. The market is experiencing price compression in the accumulation cycle, but negative returns on the 21st and 63rd indicate seller dominance. Full moons usually amplify volatility and liquidation, while the Capricorn season intensifies structural stress. It is recommended to wait and see and wait for a clear bottom signal."
+  }
+}

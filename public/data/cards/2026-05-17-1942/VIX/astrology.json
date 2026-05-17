@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "VIX",
+    "name": "VIX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "astrology",
+    "name": "Astrology Cycle",
+    "display_name": "占星"
+  },
+  "result": {
+    "score": 8,
+    "polarity": "negative",
+    "intensity": "extreme",
+    "omen_type": "volatility_surge",
+    "headline": "满月照蝎尾，摩羯压恐慌",
+    "subline": "极端波动叠加深层回撤，市场情绪在积累与释放间摇摆",
+    "short_reading": "天蝎代表的深度恐慌在满月下放大，摩羯的季节结构压制反弹空间。VIX处于极端高位，动量强但隐含风险累积。",
+    "long_reading": "当前VIX运行在天蝎座象征的深层恐惧与满月带来的情绪高潮中，同时摩羯座的结构性约束让市场难以突破。21日涨幅66.7%，63日涨幅130.5%，但252日回撤达40.7%，表明这是一轮急促的恐慌性反弹而非趋势反转。极端波动标签与积累周期共存，暗示短期可能剧烈震荡，随后出现方向性选择。持仓者需警惕满月后的情绪回落和摩羯座带来的压力测试。"
+  },
+  "symbols": [
+    "Scorpio",
+    "full"
+  ],
+  "risk_tags": [
+    "波动加剧",
+    "回调风险",
+    "流动性枯竭",
+    "反转陷阱"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/VIX/astrology.json",
+  "error": null,
+  "result_en": {
+    "score": 8,
+    "polarity": "negative",
+    "intensity": "extreme",
+    "omen_type": "volatility_surge",
+    "headline": "Full moon shines on scorpion&#39;s tail, Capricorn presses panic",
+    "subline": "Extreme volatility overlaid with deep retracements, market sentiment swings between accumulation and release",
+    "short_reading": "The deep panic represented by Scorpio is amplified under the full moon, and the seasonal structure of Capricorn suppresses the rebound space. The VIX is extremely high, with strong momentum but implied risk accumulation.",
+    "long_reading": "The current VIX is running in the deep fear symbolized by Scorpio and the emotional climax brought by the full moon, while Capricorn&#39;s structural constraints make it difficult for the market to break through. It rose 66.7 per cent on the 21st and 130.5 per cent on the 63rd, but retreated 40.7 per cent on the 252, suggesting that this was a rapid panic rally rather than a trend reversal. Extreme volatility labels coexist with accumulation cycles, suggesting that short-term shocks may be severe, followed by directional choices. Position holders need to be wary of the emotional pullback after the full moon and the stress test brought on by Capricorn."
+  }
+}

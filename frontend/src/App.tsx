@@ -7,6 +7,7 @@ import ReadingsIndex from './views/ReadingsIndex'
 import ReadingOverview from './views/ReadingOverview'
 import EngineDetail from './views/EngineDetail'
 import Almanac from './views/Almanac'
+import Methodology from './views/Methodology'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route path="/readings/:period/:ticker" element={<ReadingOverview />} />
               <Route path="/readings/:period/:ticker/:engine" element={<EngineDetail />} />
               <Route path="/almanac" element={<Almanac />} />
+              <Route path="/methodology" element={<Methodology />} />
             </Routes>
           </Layout>
         </Router>

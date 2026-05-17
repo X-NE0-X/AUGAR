@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "SPX",
+    "name": "SPX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "market_pulse",
+    "name": "Market Pulse",
+    "display_name": "市场脉冲"
+  },
+  "result": {
+    "score": 28,
+    "polarity": "负面",
+    "intensity": "中等",
+    "omen_type": "警示",
+    "headline": "强下降趋势延续，市场承压未止",
+    "subline": "波动率正常，回撤尚浅，但动量持续走弱",
+    "short_reading": "标普500指数近21日与63日跌幅均超7%，动量显示强下降趋势。波动率处于正常区间，回撤深度约8.7%属浅层调整，但下行惯性未消，短期风险偏下行。",
+    "long_reading": "当前标普500指数收盘于6368.85点，近21日回报-7.82%，近63日回报-8.12%，动量明确标注为强下降趋势。波动率（63日年化12.89%）处于正常水平，表明市场并未进入恐慌式抛售，但趋势自身强度足以引发持续担忧。252日最大回撤仅-8.74%，属浅层调整，尚未触及深度熊市阈值。综合判断，市场正经历一次趋势性的修正阶段，而非突发性崩溃。投资者需警惕动量进一步衰减可能带来的低位徘徊或加速下行，同时关注波动率是否从正常区间向上突破。"
+  },
+  "symbols": [
+    "下降之箭",
+    "平稳的湖面下的暗流",
+    "未满的沙漏"
+  ],
+  "risk_tags": [
+    "趋势延续风险",
+    "动量衰竭风险",
+    "波动率上行风险"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/SPX/market_pulse.json",
+  "error": null,
+  "result_en": {
+    "score": 28,
+    "polarity": "负面",
+    "intensity": "中等",
+    "omen_type": "警示",
+    "headline": "Strong downward trend continues, market pressure does not stop",
+    "subline": "Volatility normal, pullback shallow, but momentum continues to weaken",
+    "short_reading": "The S & P 500 index fell more than 7% in both the last 21 and 63 days, with momentum showing a strong downward trend. Volatility is in the normal range, the drawdown depth of about 8.7 is a shallow adjustment, but the downside inertia is not eliminated, short-term risk is on the downside.",
+    "long_reading": "The current S & P 500 index closed at 6368.85, with a return of -7.82 in the last 21 days and -8.12 in the last 63 days. Momentum is clearly marked as a strong downward trend. Volatility (12.89 per cent annualised on 63 days) is at normal levels, indicating that the market is not entering a panic sell-off, but the trend itself is strong enough to cause sustained concern. The 252-day maximum retracement is only -8.74%, a shallow adjustment that has not yet touched the deep bear market threshold. Taken together, the market is going through a trend correction phase, not a sudden collapse. Investors need to be wary of the low or accelerated downside that could result from further momentum decay, while focusing on whether volatility breaks upward from the normal range."
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "DJI",
+    "name": "DJI",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "market_pulse",
+    "name": "Market Pulse",
+    "display_name": "市场脉冲"
+  },
+  "result": {
+    "score": 28,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "downward_trend",
+    "headline": "道指下行趋势持续，实质性回撤信号显现",
+    "subline": "21日跌幅达8.75%，63日波动率正常但回撤超10%",
+    "short_reading": "当前道指处于强下行通道，近期跌幅与中期回撤均属实质性压力，短期反弹动能不足。",
+    "long_reading": "根据市场脉搏引擎分析，道琼斯工业指数（DJI）最新收盘45166.64点，21日回报-8.75%，63日回报-7.31%，呈现强下行趋势标签。63日波动率13.75%处于正常区间，但252日回撤-10.01%被标记为实质性，暗示累积跌幅已触发中期风险警示。波动正常背景下趋势持续走弱，需关注下方支撑有效性及反弹力度。"
+  },
+  "symbols": [
+    "DJI"
+  ],
+  "risk_tags": [
+    "下行趋势延续",
+    "实质性回撤",
+    "动能不足"
+  ],
+  "visual": {
+    "color": "red",
+    "icon": "arrow_down",
+    "gradient": "negative"
+  },
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/DJI/market_pulse.json",
+  "error": null,
+  "result_en": {
+    "score": 28,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "downward_trend",
+    "headline": "The Dow&#39;s downward trend continues, and substantial retracement signals appear.",
+    "subline": "21-day decline of 8.75 per cent, 63-day volatility normal but pullback of more than 10 per cent",
+    "short_reading": "The current Dow is in a strong downward channel, the recent decline and medium-term retracement are substantial pressure, short-term rebound momentum is insufficient.",
+    "long_reading": "According to market pulse engine analysis, the Dow Jones Industrial Average (DJI) recently closed at 45166.64 points, with a 21-day return of -8.75 percent and a 63-day return of -7.31 percent, showing a strong downward trend label. 63-day volatility of 13.75 per cent is in the normal range, but the 252-day pullback of -10.01 per cent is marked as material, suggesting that the cumulative decline has triggered a medium-term risk warning. Under the background of normal fluctuations, the trend continues to weaken, and we need to pay attention to the effectiveness of the support below and the strength of the rebound."
+  }
+}

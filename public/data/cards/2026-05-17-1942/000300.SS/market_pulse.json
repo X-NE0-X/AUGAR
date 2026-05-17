@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "000300.SS",
+    "name": "000300.SS",
+    "region": "CN",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "market_pulse",
+    "name": "Market Pulse",
+    "display_name": "市场脉冲"
+  },
+  "result": {
+    "score": 5,
+    "polarity": "negative",
+    "intensity": "low",
+    "omen_type": "观望",
+    "headline": "沪深300指数短期承压，回撤浅幅",
+    "subline": "21日跌幅4.75%，波动率正常，下行空间有限",
+    "short_reading": "短期动量偏弱，但回撤幅度和波动率均属温和，市场处于调整而非恐慌阶段。",
+    "long_reading": "沪深300指数最新收盘4502.57，21日收益率-4.75%，63日收益率-1.10%，显示短期下跌趋势。63日波动率14.65%处于正常区间，252日最大回撤仅-6.01%属于浅幅，表明市场调整有节制，尚未引发系统性风险。动量标签'falling'确认短期弱势，但回撤浅、波动正常暗示下方支撑可能较强。适合观望等待企稳信号。"
+  },
+  "symbols": [
+    "↘",
+    "→",
+    "▽"
+  ],
+  "risk_tags": [
+    "短期下跌",
+    "波动正常",
+    "回撤可控"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000300.SS/market_pulse.json",
+  "error": null,
+  "result_en": {
+    "score": 5,
+    "polarity": "negative",
+    "intensity": "low",
+    "omen_type": "观望",
+    "headline": "CSI 300 index under short-term pressure, pullback shallow",
+    "subline": "21 days down 4.75 percent, volatility normal, limited downside",
+    "short_reading": "Short-term momentum is weak, but pullbacks and volatility are moderate, and the market is in a correction rather than a panic phase.",
+    "long_reading": "The CSI 300 index recently closed at 4502.57, with a 21-day yield of -4.75 per cent and a 63-day yield of -1.10 per cent, indicating a short-term downward trend. 63-day volatility of 14.65 per cent is in the normal range, and the 252-day maximum retracement is only -6.01 per cent is shallow, indicating that the market adjustment is moderate and has not yet triggered systemic risk. Momentum label &#39;falling&#39; confirms short-term weakness, but shallow retracement and normal volatility suggest that the lower support may be stronger. Suitable for wait-and-see waiting for a stabilization signal."
+  }
+}

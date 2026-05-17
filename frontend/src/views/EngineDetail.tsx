@@ -21,7 +21,7 @@ const cleanTag = (value: string): string => String(value).split(':')[0].trim()
 const EngineDetail = () => {
   const { period, ticker, engine } = useParams()
   const { showToast } = useToast()
-  const { t, label: trLabel } = useConfig()
+  const { t, label: trLabel, lang } = useConfig()
   const [card, setCard] = useState<any>(null)
   const [terminalMode, setTerminalMode] = useState(false)
   const [copied, setCopied] = useState(false)
@@ -72,6 +72,7 @@ const EngineDetail = () => {
 
   const id = card.engine?.id || engine || 'tarot'
   const label = engineLabels[id] || card.engine?.display_name || id
+  const r = lang === 'en' && card?.result_en?.headline ? card.result_en : card.result || {}
 
   return (
     <motion.section className={`engine-detail-page page engine-${id}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
@@ -129,9 +130,9 @@ const EngineDetail = () => {
             >
               <div className="engine-canvas-copy">
                 <p className="mono panel-kicker">{label.toUpperCase()}</p>
-                <h1 className="display gold-title">{card.result?.headline}</h1>
-                <p className="engine-subline">{card.result?.subline}</p>
-                <p className="engine-reading">{card.result?.long_reading}</p>
+                <h1 className="display gold-title">{r.headline}</h1>
+                <p className="engine-subline">{r.subline}</p>
+                <p className="engine-reading">{r.long_reading}</p>
 
                 <div className="engine-meta-grid">
                   <MetaBlock title={t('detail.signals')} items={card.symbols || []} translate={trLabel} />
@@ -166,17 +167,17 @@ const EngineHeroVisual = ({ card }: { card: any }) => {
   const symbols = card.symbols?.length ? card.symbols : ['Signal', 'Cycle', 'Risk']
 
   if (id === 'tarot') {
-    const labels = symbols.slice(0, 3)
+    const labels = symbols.slice(0, 10)
     return (
       <div className="hero-tarot">
         {labels.map((label: string, index: number) => {
           const image = getTarotImage(label)
+          const isReversed = label.toLowerCase().includes('reversed')
           return (
             <div className="hero-tarot-card" key={label}>
               {image && <img src={image} alt={cleanTag(label)} />}
-              <small>{String(index + 1).padStart(2, '0')}</small>
+              <small>{String(index + 1).padStart(2, '0')} · {isReversed ? '逆' : '正'}</small>
               <b>{cleanTag(label)}</b>
-              <i />
             </div>
           )
         })}

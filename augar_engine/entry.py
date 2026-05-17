@@ -99,7 +99,7 @@ def main(argv: list[str] | None = None) -> None:
         epilog=textwrap.dedent("""\
             examples:
               augar serve
-              augar generate --period 2026-04-M --all-indexes --provider mock
+              augar generate --period 2026-04-M --all-indexes --provider openai
               augar check --provider chatgpt_oauth
               augar build
         """),

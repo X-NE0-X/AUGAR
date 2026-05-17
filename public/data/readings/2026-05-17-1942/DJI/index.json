@@ -1,0 +1,349 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "DJI",
+    "name": "DJI",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "composite": {
+    "score": 40,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "dominant_symbols": [
+      "Seven of Pentacles",
+      "The Star",
+      "Two of Swords",
+      "The Empress",
+      "Three of Swords",
+      "Five of Swords"
+    ],
+    "headline": "The oracles lean negative with moderate intensity"
+  },
+  "cards": [
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "DJI",
+        "name": "DJI",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "tarot",
+        "name": "Tarot Celtic Cross",
+        "display_name": "塔罗"
+      },
+      "result": {
+        "score": 38,
+        "polarity": "-1",
+        "intensity": "6",
+        "omen_type": "warning",
+        "headline": "熊市阴影下的忍耐与修复期",
+        "subline": "希望与挫折共存，短期需谨慎",
+        "short_reading": "当前市场处于下跌后的评估阶段，但潜在希望（星星）与冲突（五剑）交织。逆位钱币一显示财务机会受阻，需耐心学习（八币）提升技能以待时机。",
+        "long_reading": "七枚钱币正位暗示您正仔细审视近期下跌的成果与投资组合，市场需要时间沉淀。但星星正位交叉带来一丝曙光，可能是指标修复或外部利好预期，然而根部双剑揭示内在犹豫与信息不对称。过去皇后象征之前牛市或增长积累，但当前目标三剑直指需要面对亏损或割肉的痛苦抉择。近未来五剑正位预示短期可能出现价格竞争、恐慌抛售或机构博弈导致的进一步下跌。逆位Ace of Pentacles代表财务新机会未能落地，或是您错失了抄底窗口。环境教皇强调传统金融规则、美联储政策或大型机构行为主导市场节奏。逆位Ace of Wands暗示多头能量不足，新资金入场意愿低迷。最终八枚钱币正位鼓励通过专注基础研究、技能提升或分批定投来度过震荡期。整体而言，这是一个需要耐心、纪律和直面损失的阶段，短期不宜激进抄底，而应等待更明确的企稳信号。"
+      },
+      "symbols": [
+        "Seven of Pentacles",
+        "The Star",
+        "Two of Swords",
+        "The Empress",
+        "Three of Swords",
+        "Five of Swords",
+        "Ace of Pentacles",
+        "The Hierophant"
+      ],
+      "risk_tags": [
+        "strong_downtrend",
+        "material_drawdown",
+        "conflict_omen",
+        "opportunity_loss"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/DJI/tarot.json",
+      "error": null,
+      "result_en": {
+        "score": 38,
+        "polarity": "-1",
+        "intensity": "6",
+        "omen_type": "warning",
+        "headline": "熊市阴影下的忍耐与修复期",
+        "subline": "希望与挫折共存，短期需谨慎",
+        "short_reading": "当前市场处于下跌后的评估阶段，但潜在希望（星星）与冲突（五剑）交织。逆位钱币一显示财务机会受阻，需耐心学习（八币）提升技能以待时机。",
+        "long_reading": "七枚钱币正位暗示您正仔细审视近期下跌的成果与投资组合，市场需要时间沉淀。但星星正位交叉带来一丝曙光，可能是指标修复或外部利好预期，然而根部双剑揭示内在犹豫与信息不对称。过去皇后象征之前牛市或增长积累，但当前目标三剑直指需要面对亏损或割肉的痛苦抉择。近未来五剑正位预示短期可能出现价格竞争、恐慌抛售或机构博弈导致的进一步下跌。逆位Ace of Pentacles代表财务新机会未能落地，或是您错失了抄底窗口。环境教皇强调传统金融规则、美联储政策或大型机构行为主导市场节奏。逆位Ace of Wands暗示多头能量不足，新资金入场意愿低迷。最终八枚钱币正位鼓励通过专注基础研究、技能提升或分批定投来度过震荡期。整体而言，这是一个需要耐心、纪律和直面损失的阶段，短期不宜激进抄底，而应等待更明确的企稳信号。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "DJI",
+        "name": "DJI",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "wenwang",
+        "name": "Wenwang Liuyao",
+        "display_name": "文王卦"
+      },
+      "result": {
+        "score": 30,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "warning",
+        "headline": "山泽损化夬，承压待变",
+        "subline": "市场延续下行，关注风险释放",
+        "short_reading": "损卦示现当前承压下行，动爻初、二官鬼与自身位，外部压力与内部调整并行。变卦夬，终将决断方向，但短期弱势未改。",
+        "long_reading": "主卦山泽损，上兑下艮，山上有泽，有损下益上之象，对应市场资金流出或利润压缩。动爻在初、二：初爻官鬼辰土动，代表外部监管或利空因素扰动；二爻自身巳火动，但旬空（巳午空），自身信心不足或动能缺失。财星酉金在六爻应位，虽得日建申金相合，但合而不化，财气被牵制。变卦泽天夬，上兑下乾，泽在天上，有决断、打破僵局之意，暗示后续可能加速赶底或出现关键转折。当前标签strong_downtrend与卦象吻合，整体宜观望或减仓，等待夬卦的明确信号。"
+      },
+      "symbols": [
+        "Lake over Mountain",
+        "Lake over Heaven"
+      ],
+      "risk_tags": [
+        "下行风险",
+        "政策扰动",
+        "动能不足"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/DJI/wenwang.json",
+      "error": null,
+      "result_en": {
+        "score": 30,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "warning",
+        "headline": "山泽损化夬，承压待变",
+        "subline": "市场延续下行，关注风险释放",
+        "short_reading": "损卦示现当前承压下行，动爻初、二官鬼与自身位，外部压力与内部调整并行。变卦夬，终将决断方向，但短期弱势未改。",
+        "long_reading": "主卦山泽损，上兑下艮，山上有泽，有损下益上之象，对应市场资金流出或利润压缩。动爻在初、二：初爻官鬼辰土动，代表外部监管或利空因素扰动；二爻自身巳火动，但旬空（巳午空），自身信心不足或动能缺失。财星酉金在六爻应位，虽得日建申金相合，但合而不化，财气被牵制。变卦泽天夬，上兑下乾，泽在天上，有决断、打破僵局之意，暗示后续可能加速赶底或出现关键转折。当前标签strong_downtrend与卦象吻合，整体宜观望或减仓，等待夬卦的明确信号。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "DJI",
+        "name": "DJI",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "bazi",
+        "name": "Zi Ping BaZi",
+        "display_name": "子平八字"
+      },
+      "result": {
+        "score": 35,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "inauspicious",
+        "headline": "水势滔天，金沉深渊",
+        "subline": "庚金遇旺水，市场承压未解",
+        "short_reading": "命盘水极旺，庚金日主被泄，市场情绪悲观，短期难以逆转。",
+        "long_reading": "当前八字中水占七分，金占五分，水势远强于金。庚金虽得比肩帮扶，但月令子水当权，年干壬水透出，时支辰土虽为印星却藏癸水，湿土难制水。日主身弱，喜土金而忌水木。流年丙午，流月乙巳，木火齐来，木生火克金，忌神加剧，市场下行压力显著。虽有用神木可泄水，但日主弱不胜财，短期反弹力度有限，需待土金旺势方能企稳。"
+      },
+      "symbols": [
+        "Metal",
+        "balanced_day_master_pattern"
+      ],
+      "risk_tags": [
+        "下行风险",
+        "流动性紧张",
+        "市场恐慌",
+        "趋势延续"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/DJI/bazi.json",
+      "error": null,
+      "result_en": {
+        "score": 35,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "inauspicious",
+        "headline": "水势滔天，金沉深渊",
+        "subline": "庚金遇旺水，市场承压未解",
+        "short_reading": "命盘水极旺，庚金日主被泄，市场情绪悲观，短期难以逆转。",
+        "long_reading": "当前八字中水占七分，金占五分，水势远强于金。庚金虽得比肩帮扶，但月令子水当权，年干壬水透出，时支辰土虽为印星却藏癸水，湿土难制水。日主身弱，喜土金而忌水木。流年丙午，流月乙巳，木火齐来，木生火克金，忌神加剧，市场下行压力显著。虽有用神木可泄水，但日主弱不胜财，短期反弹力度有限，需待土金旺势方能企稳。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "DJI",
+        "name": "DJI",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "ziwei",
+        "name": "Ziwei Doushu",
+        "display_name": "紫微斗数"
+      },
+      "result": {
+        "score": 62,
+        "polarity": "neutral",
+        "intensity": "medium",
+        "omen_type": "transitional",
+        "headline": "紫微七杀化禄夫妻，命宫化忌守心",
+        "subline": "财帛破军跃动，官禄武曲化科显机",
+        "short_reading": "当前星盘显示命宫受流年化忌冲击，易有内心压力或计划受阻；但夫妻宫紫微天府七杀得本命化禄，合作与贵人运强。财帛宫天机太阴破军遇禄存铃星，财路波动中藏机遇。官禄宫武曲巨门文昌化科，事业名望可期。迁移宫太阳贪狼化权，出行外拓有利。",
+        "long_reading": "此盘以紫微天府七杀坐夫妻宫为枢纽，本命化禄注入温情与资源，暗示市场虽处下行趋势（近期回撤-10%），但结构性合作或核心资产仍受眷顾。命宫廉贞天梁逢流年化忌，叠加文昌，主情绪敏感与决策反复，不宜激进抄底。财帛宫天机太阴破军配禄存铃星，财路如暗流涌动，短线投机风险高，但长线布局可借破军突破之力。官禄宫武曲巨门化科，文昌加持，专业判断与沟通策略将获认可。迁移宫太阳贪狼化权，主动探索新领域或海外市场可引动转机。当前大限（2024-2033）走到健康宫，虽无主星，但天魁本命化权，暗示需以稳健身心应对风波。综合来看，神谕指向「变中求稳」——利用贵人网络（夫妻宫化禄）化解个人焦虑（命宫化忌），并在财帛波动中保持纪律。"
+      },
+      "symbols": [
+        "Taiyang",
+        "Spouse"
+      ],
+      "risk_tags": [
+        "情绪误判",
+        "市场波动",
+        "合作依赖",
+        "短线风险"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/DJI/ziwei.json",
+      "error": null,
+      "result_en": {
+        "score": 62,
+        "polarity": "neutral",
+        "intensity": "medium",
+        "omen_type": "transitional",
+        "headline": "紫微七杀化禄夫妻，命宫化忌守心",
+        "subline": "财帛破军跃动，官禄武曲化科显机",
+        "short_reading": "当前星盘显示命宫受流年化忌冲击，易有内心压力或计划受阻；但夫妻宫紫微天府七杀得本命化禄，合作与贵人运强。财帛宫天机太阴破军遇禄存铃星，财路波动中藏机遇。官禄宫武曲巨门文昌化科，事业名望可期。迁移宫太阳贪狼化权，出行外拓有利。",
+        "long_reading": "此盘以紫微天府七杀坐夫妻宫为枢纽，本命化禄注入温情与资源，暗示市场虽处下行趋势（近期回撤-10%），但结构性合作或核心资产仍受眷顾。命宫廉贞天梁逢流年化忌，叠加文昌，主情绪敏感与决策反复，不宜激进抄底。财帛宫天机太阴破军配禄存铃星，财路如暗流涌动，短线投机风险高，但长线布局可借破军突破之力。官禄宫武曲巨门化科，文昌加持，专业判断与沟通策略将获认可。迁移宫太阳贪狼化权，主动探索新领域或海外市场可引动转机。当前大限（2024-2033）走到健康宫，虽无主星，但天魁本命化权，暗示需以稳健身心应对风波。综合来看，神谕指向「变中求稳」——利用贵人网络（夫妻宫化禄）化解个人焦虑（命宫化忌），并在财帛波动中保持纪律。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "DJI",
+        "name": "DJI",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "astrology",
+        "name": "Astrology Cycle",
+        "display_name": "占星"
+      },
+      "result": {
+        "score": 45,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "transition",
+        "headline": "射手座资产在摩羯季节中迎来新月转折",
+        "subline": "DJI深度回调与积累信号并存",
+        "short_reading": "新月开启新周期，但强下降趋势未消，市场处于筑底积累阶段。",
+        "long_reading": "当前新月相位象征播种与开端，射手座资产（DJI所属黄道）处于摩羯座季节，土象能量压制扩张。市场处于strong_downtrend但波动正常，回撤已至material级别，结合accumulation_cycle标签，暗示主力资金正在低位吸纳。中长期可关注支撑确认，短期仍需警惕下行惯性。"
+      },
+      "symbols": [
+        "Sagittarius",
+        "new"
+      ],
+      "risk_tags": [
+        "下降趋势",
+        "回撤风险",
+        "正常波动"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/DJI/astrology.json",
+      "error": null,
+      "result_en": {
+        "score": 45,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "transition",
+        "headline": "射手座资产在摩羯季节中迎来新月转折",
+        "subline": "DJI深度回调与积累信号并存",
+        "short_reading": "新月开启新周期，但强下降趋势未消，市场处于筑底积累阶段。",
+        "long_reading": "当前新月相位象征播种与开端，射手座资产（DJI所属黄道）处于摩羯座季节，土象能量压制扩张。市场处于strong_downtrend但波动正常，回撤已至material级别，结合accumulation_cycle标签，暗示主力资金正在低位吸纳。中长期可关注支撑确认，短期仍需警惕下行惯性。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "DJI",
+        "name": "DJI",
+        "region": "US",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "market_pulse",
+        "name": "Market Pulse",
+        "display_name": "市场脉冲"
+      },
+      "result": {
+        "score": 28,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "downward_trend",
+        "headline": "道指下行趋势持续，实质性回撤信号显现",
+        "subline": "21日跌幅达8.75%，63日波动率正常但回撤超10%",
+        "short_reading": "当前道指处于强下行通道，近期跌幅与中期回撤均属实质性压力，短期反弹动能不足。",
+        "long_reading": "根据市场脉搏引擎分析，道琼斯工业指数（DJI）最新收盘45166.64点，21日回报-8.75%，63日回报-7.31%，呈现强下行趋势标签。63日波动率13.75%处于正常区间，但252日回撤-10.01%被标记为实质性，暗示累积跌幅已触发中期风险警示。波动正常背景下趋势持续走弱，需关注下方支撑有效性及反弹力度。"
+      },
+      "symbols": [
+        "DJI"
+      ],
+      "risk_tags": [
+        "下行趋势延续",
+        "实质性回撤",
+        "动能不足"
+      ],
+      "visual": {
+        "color": "red",
+        "icon": "arrow_down",
+        "gradient": "negative"
+      },
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/DJI/market_pulse.json",
+      "error": null,
+      "result_en": {
+        "score": 28,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "downward_trend",
+        "headline": "道指下行趋势持续，实质性回撤信号显现",
+        "subline": "21日跌幅达8.75%，63日波动率正常但回撤超10%",
+        "short_reading": "当前道指处于强下行通道，近期跌幅与中期回撤均属实质性压力，短期反弹动能不足。",
+        "long_reading": "根据市场脉搏引擎分析，道琼斯工业指数（DJI）最新收盘45166.64点，21日回报-8.75%，63日回报-7.31%，呈现强下行趋势标签。63日波动率13.75%处于正常区间，但252日回撤-10.01%被标记为实质性，暗示累积跌幅已触发中期风险警示。波动正常背景下趋势持续走弱，需关注下方支撑有效性及反弹力度。"
+      }
+    }
+  ],
+  "run_id": "11d7e8e58760"
+}

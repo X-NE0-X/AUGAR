@@ -1,67 +1,170 @@
-# AUGAR
-
+# A.U.G.A.R.
 **Ask Universe, Get A Reading.**
 
-AUGAR is a multi-oracle market cycle reading engine.  Six oracle engines
-(Tarot, Wenwang Liuyao, Zi Ping BaZi, Ziwei Doushu, Astrology Cycle, Market
-Pulse) read market index data and produce structured interpretative cards
-powered by an LLM interpreter.
+## The Six-Dimension Divination Market Reading Engine
+
+***"When the charts offer no answers, perhaps the stars do."***
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)]()
+
+> 中文版本：[README.zh.md](README.zh.md)
+
+---
+
+## What Is This
+
+AUGAR is a multi-oracle market cycle reading system built on BaZi, Liuyao, Ziwei Doushu, Western astrology, Tarot, and quantitative market pulse analysis.
+
+It does **not** promise to make you money. It doesn't even promise to outperform a chimpanzee with darts.
+
+The core philosophy: **if markets are unpredictable, then stacking six unpredictable systems together must cancel out the unpredictability, right?**
+
+*(Answer: no. But the process is delightful.)*
+
+---
+
+## The Six Engines
+
+| Engine | Tradition | Role | Method |
+|--------|-----------|------|--------|
+| **BaZi** | Four Pillars | Macro tenor | Day Master × Ten Gods × Five Elements |
+| **Ziwei** | Purple Star | Sentiment & capital flow | Annual transformations × 12 Palaces |
+| **Wenwang** | I Ching | Inflection signals | Three-coin toss → moving lines |
+| **Astrology** | Western | Global risk | Planetary aspects → exaltation/fall |
+| **Tarot** | Rider-Waite | Cycle narrative | Celtic Cross (10 cards) |
+| **Market Pulse** | Quantitative | Reality check | Momentum · Volatility · Drawdown |
+
+Six cards displayed side by side. Composite score is arithmetic mean + modal polarity — purely programmatic, no LLM judge.
+
+---
+
+## Actual Features
+
+### 1. Code-Generated Oracles
+Every engine's Program Generator (`generators/`) is pure Python — no LLM involved. Tarot shuffles via RNG and draws ten cards. Liuyao tosses three coins six times. BaZi derives four pillars from listing dates. The LLM only handles interpretation.
+
+### 2. Bilingual Output
+LLM interprets in Chinese. Backend auto-translates to English via `translators` (Google primary, Bing fallback). Each card stores `result` (Chinese) + `result_en` (English). Frontend switches by language.
+
+### 3. Multi-Provider Support
+Same pipeline: DeepSeek V4 Flash/Pro, OpenAI GPT-5.5, ChatGPT OAuth (local Codex CLI), any OpenAI-compatible endpoint. Keys via `--api-key` or `.env`.
+
+### 4. Static JSON Deployment
+All output lands as JSON in `public/data/`. Frontend is pure static — deploy to Vercel or Cloudflare Pages. No runtime database. No live LLM calls.
+
+---
 
 ## Quick Start
 
-```powershell
+```bash
+git clone https://github.com/X-NE0-X/AUGAR.git
+cd AUGAR
 pip install -e .
+
+# Start the full app
 augar serve
+# Open http://127.0.0.1:8765
+
+# Generate readings
+$env:DEEPSEEK_API_KEY = "sk-xxx"
+augar generate --period 2026-04-M --all-indexes --provider deepseek --model deepseek-v4-flash
 ```
 
-Open http://127.0.0.1:8765 — frontend + API, ready to browse.
+Copy `.env.example` → `.env`, fill in your keys. `augar` loads `.env` on startup.
 
-## CLI
+---
+
+## Architecture
 
 ```
-augar                    # start the full application
-augar serve              # same as above
-augar generate ...       # generate oracle cards
-augar check ...          # check LLM provider connectivity
-augar build              # rebuild the frontend static assets
+CLI (augar generate / serve)         Web Frontend (React + Vite)
+            │                                    │
+            └────────── FastAPI (:8765) ─────────┘
+                             │
+        ┌────────────────────┼────────────────────┐
+        │                    │                    │
+   Market Loader       6× Generators        LLM Interpreter
+   (4× Parquet)        (pure Python)        (OpenAI / DeepSeek
+   CN/HK/UK/US         tarot, wenwang        / ChatGPT OAuth)
+                        bazi, ziwei               │
+                        astrology,          CN prompt → CN
+                        market_pulse        → translators → EN
+        │                    │                    │
+        └──────────────── JSON Export ───────────┘
+                public/data/cards/{period}/{ticker}/{engine}.json
+                public/data/readings/{period}/{ticker}.json
 ```
 
-### Generate Cards
+Card-drawing, hexagram-casting, and chart-plotting are pure code. The LLM only interprets, producing standardized OracleCard JSON.
 
-```powershell
-augar generate --period 2026-04-M --all-indexes --provider mock
-augar generate --period 2026-04-M --symbols SPX --provider openai --model gpt-5.5
-augar generate --period 2026-04-M --symbols SPX --provider deepseek --model deepseek-chat
-augar generate --period 2026-04-M --symbols SPX --engines tarot --provider history --history-run-id 9e3792908386 --force
-augar generate --config configs\augar.chatgpt_oauth.example.json
+---
+
+## Standard Output Format
+
+```json
+{
+  "schema_version": "0.1",
+  "asset": { "ticker": "SPX", "name": "SPX", "region": "US" },
+  "engine": { "id": "tarot", "name": "Tarot Celtic Cross", "display_name": "塔罗" },
+  "result": {
+    "score": 72, "polarity": "positive", "intensity": "moderate",
+    "headline": "Turning of the Wheel: From Conflict to Stability",
+    "subline": "...", "short_reading": "...", "long_reading": "..."
+  },
+  "result_en": { "headline": "...", "..." : "..." },
+  "symbols": ["Nine of Swords reversed", "Seven of Cups", "..."],
+  "risk_tags": ["volatility", "mixed_momentum"]
+}
 ```
 
-`mock` reuses real LLM history when available, falling back to deterministic
-fixtures.  `--force` (or `--force tarot,wenwang`) regenerates selected engines.
+Bilingual storage (`result` + `result_en`). Frontend picks by language.
 
-### Dev / Manual Backend
+---
 
-```powershell
-python -m uvicorn augar_engine.api.app:app --host 127.0.0.1 --port 8765
-```
+## Supported Providers
 
-## Read Existing Output
+| Provider | Auth | Model |
+|----------|------|-------|
+| `deepseek` | `DEEPSEEK_API_KEY` | v4-flash / v4-pro |
+| `openai` | `OPENAI_API_KEY` | gpt-5.5 |
+| `chatgpt_oauth` | Codex CLI OAuth | gpt-5.5 (no key needed) |
+| `openai_compatible` | `OPENAI_API_KEY` | Any compatible endpoint |
+| `local` | None | vllm / ollama |
 
-```powershell
-Get-Content public\data\readings\2026-04-M\SPX.json -Encoding UTF8
-Get-Content public\data\cards\2026-04-M\SPX\tarot.json -Encoding UTF8
-```
+---
 
-From Python:
+## Period Format
 
-```python
-import json, pathlib
-reading = json.loads(pathlib.Path("public/data/readings/2026-04-M/SPX.json").read_text("utf-8"))
-print(reading["composite"])
-```
+Periods use Gregorian calendar in `YYYY-MM-FREQ` format:
 
-## Validation
+| Example | Meaning |
+|---------|---------|
+| `2026-04-M` | April 2026 (monthly) |
+| `2026-01-Q` | Q1 2026 (quarterly) |
+| `2026-15-W` | Week 15, 2026 |
+| `2026-01-Y` | Full year 2026 |
 
-```powershell
-python -m pytest -q
-```
+Different periods are stored separately and never overwrite each other — `public/data/cards/2026-04-M/` and `public/data/cards/2026-05-M/` coexist.
+
+---
+
+## License
+
+MIT.
+
+---
+
+## Disclaimer
+
+Entertainment purposes only. Not investment advice.
+
+- If you profit from a reading, that's fate.
+- If you lose, maybe you cloned it wrong.
+- The author accepts no responsibility for financial losses or existential crises.
+
+---
+
+## Acknowledgments
+
+Inspired by the **CLSA Feng Shui Index**. All absurd rigor originates there.

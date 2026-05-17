@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "NDX",
+    "name": "NDX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "bazi",
+    "name": "Zi Ping BaZi",
+    "display_name": "子平八字"
+  },
+  "result": {
+    "score": 45,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "警示",
+    "headline": "火弱土重，市场承压",
+    "subline": "日主丙火根基不稳，需防继续下行",
+    "short_reading": "八字显示日主丙火力量薄弱，土势过旺泄火，市场处于下行趋势，短期内难有逆转。",
+    "long_reading": "根据八字分析，日主丙火生于丑月，失令且局中土重，仅得地支寅木及天干丙火帮身，力量偏弱。有用神为火木，但当前大运己未（2020-2029）土旺，加剧耗火。市场状态方面，NDX近期21日跌幅7.6%，63日跌幅9.8%，处于强势下跌趋势，波动率正常但回撤已达11.4%。八字与市场共振，显示指数缺乏上升动能，土重埋火，需警惕进一步下探。建议耐心等待火木流年或金水流月出现转机。"
+  },
+  "symbols": [
+    "Fire",
+    "weak_day_master_pattern"
+  ],
+  "risk_tags": [
+    "下行风险",
+    "反弹乏力",
+    "土重埋火"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/NDX/bazi.json",
+  "error": null,
+  "result_en": {
+    "score": 45,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "警示",
+    "headline": "The fire is weak and the soil is heavy, and the market is under pressure.",
+    "subline": "Japan&#39;s main fire foundation is unstable, need to prevent continued downward",
+    "short_reading": "The eight characters show that the Japanese main fire power is weak, the soil is too strong to drain the fire, the market is in a downward trend, it is difficult to reverse in the short term.",
+    "long_reading": "根据八字分析，日主丙火生于丑月，失令且局中土重，仅得地支寅木及天干丙火帮身，力量偏弱。有用神为火木，但当前大运己未（2020-2029）土旺，加剧耗火。市场状态方面，NDX近期21日跌幅7.6%，63日跌幅9.8%，处于强势下跌趋势，波动率正常但回撤已达11.4%。八字与市场共振，显示指数缺乏上升动能，土重埋火，需警惕进一步下探。建议耐心等待火木流年或金水流月出现转机。"
+  }
+}

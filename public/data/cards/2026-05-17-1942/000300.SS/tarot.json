@@ -1,0 +1,58 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "000300.SS",
+    "name": "000300.SS",
+    "region": "CN",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "tarot",
+    "name": "Tarot Celtic Cross",
+    "display_name": "塔罗"
+  },
+  "result": {
+    "score": 35,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "warning",
+    "headline": "高塔崩塌，市场面临骤变",
+    "subline": "恐惧与贪婪交织，需警惕短期剧烈波动",
+    "short_reading": "当前市场如高塔轰然倒塌，突发利空或情绪崩溃引发急跌。但十字牌预示调整后需休整，逆位力量暗示信心不足，最终虽缓慢走出困境，过程痛苦。",
+    "long_reading": "牌阵以高塔为首，预示突如其来的转折或黑天鹅事件，可能源自政策、地缘或泡沫破裂。四剑休整表明市场将进入低成交量整理期。根牌六杯指向过去支撑位或惯性思维，但四星币体现投资者死拿不卖，高塔打破僵局。目标牌恶魔警示警惕贪婪陷阱，逆位力量显示多头无力，战车象征盲目加仓。环境八杯逆位表示资金不愿离场，但月亮牌暗示谎言与不确定性。最终五角星五逆位，虽不至于长久困顿，但短期损失不可避免。市场需经历洗盘才能重建。"
+  },
+  "symbols": [
+    "The Tower",
+    "Four of Swords",
+    "Six of Cups",
+    "Four of Pentacles",
+    "The Devil",
+    "Strength",
+    "The Chariot",
+    "Eight of Cups"
+  ],
+  "risk_tags": [
+    "波动加剧",
+    "情绪崩溃",
+    "流动性风险",
+    "破位下行"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000300.SS/tarot.json",
+  "error": null,
+  "result_en": {
+    "score": 35,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "warning",
+    "headline": "The tower collapses and the market faces sudden changes.",
+    "subline": "Fear and greed are intertwined and need to be wary of short-term volatility.",
+    "short_reading": "The current market, such as the collapse of the tower, sudden negative or emotional collapse triggered a sharp fall. However, the cross card indicates the need for rest after adjustment, and the reverse force implies a lack of confidence. In the end, although it is slow to get out of the predicament, the process is painful.",
+    "long_reading": "The card array is headed by a tower, indicating a sudden turn or black swan event that may originate from policy, geography or the bursting of a bubble. The 4 sword rest indicates that the market will enter a period of low volume consolidation. The root brand six cups point to the past support level or inertial thinking, but the four-star currency reflects that investors will not sell, and the tower will break the deadlock. The target card demon warns against the greedy trap, the reverse power shows the weakness of the bulls, and the chariot symbolizes blind positions. The environment eight cup reverse position indicates that the funds are unwilling to leave the market, but the moon card implies lies and uncertainty. In the end, the five-pointed star 5 the reverse position, although not long-term difficulties, but short-term losses are inevitable. The market needs to undergo dish washing to rebuild."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "FTSE",
+    "name": "FTSE",
+    "region": "UK",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "astrology",
+    "name": "Astrology Cycle",
+    "display_name": "占星"
+  },
+  "result": {
+    "score": 45,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "transitional_caution",
+    "headline": "星移斗转，积势待发",
+    "subline": "射手座主宰的FTSE在摩羯季的上弦月下，短期承压但长期积累信号显现",
+    "short_reading": "市场短期动能偏弱，21日回报为负，但63日微正，波动正常，回撤浅。星象上射手与摩羯的土火交替，上弦月指向蓄力阶段，宜观望等待明确方向。",
+    "long_reading": "当前FTSE指数处于射手座（资产本位）与摩羯座（时间季节）的过渡期，上弦月光隐喻前半程已过，力量正在凝聚。21日负回报（-8.1%）与63日微正回报（+1.0%）形成对比，暗示短期抛压来自获利了结或情绪释放，而非结构性恶化。波动率正常，回撤浅，叠加accumulation_cycle标签，表明资金可能在低位吸筹。整体神谕指向：短期谨慎，中期可布局，关键观察能否守住前低并出现放量阳线确认趋势。"
+  },
+  "symbols": [
+    "Sagittarius",
+    "waxing"
+  ],
+  "risk_tags": [
+    "短期回调延续",
+    "情绪扰动",
+    "方向待确认"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/FTSE/astrology.json",
+  "error": null,
+  "result_en": {
+    "score": 45,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "transitional_caution",
+    "headline": "The stars are shifting, the accumulation is ready to go.",
+    "subline": "Sagittarius-dominated FTSE under short-term pressure but long-term accumulation signals appear in the first quarter of Capricorn season",
+    "short_reading": "Market short-term momentum is weak, 21-day returns are negative, but 63-day slightly positive, volatility is normal, retracement shallow. Sagittarius alternates with Capricorn&#39;s earth fire on the astrological signs. The first quarter moon points to the stage of accumulating strength. It is advisable to wait and see for a clear direction.",
+    "long_reading": "The FTSE is currently in a transitional period between Sagittarius (asset-based) and Capricorn (time season), with the first half of the moon light metaphor passing and power gathering. The 21-day negative return (-8.1 per cent) contrasts with the 63-day slightly positive return (+1.0 per cent), suggesting that the short-term sell-off comes from profit-taking or sentiment release, rather than structural deterioration. The volatility is normal, the drawdown is shallow, and the overlay accumulation_cycle label indicates that funds may be sucking at a low level. The overall oracle points to: short-term caution, medium-term layout, the key observation can hold the front low and appear to release the positive line confirmation trend."
+  }
+}

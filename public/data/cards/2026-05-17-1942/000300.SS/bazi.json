@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "000300.SS",
+    "name": "000300.SS",
+    "region": "CN",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "bazi",
+    "name": "Zi Ping BaZi",
+    "display_name": "子平八字"
+  },
+  "result": {
+    "score": 78,
+    "polarity": "positive",
+    "intensity": "medium",
+    "omen_type": "opportunity",
+    "headline": "财官双美，指数趋强",
+    "subline": "火木相生，生机显现",
+    "short_reading": "日主辛金得强根，当前大运乙卯财星当旺，流年丙午官星透出，财官双美，有利市场信心回升。",
+    "long_reading": "基于八字分析，日主辛金生于亥月，亥中壬甲，金泄气而不失根。日主根强（得分7），属强金格局，喜水木火之泄耗克。月令亥水为食伤，內藏甲木正财，配合时支寅木正财，财星有源。当前大运乙卯（2025-2034），干支皆为木财，大大增强财星力量。2026丙午流年，丙火正官透干，午火正官禄地，官星有力，可制比劫护财。财官齐来，且为喜用神，预示指数在2026年有较强的上涨动能，尤其受政策与资金面驱动。但需注意日主辛金金气过旺，流年午火受原局水耗，上行中或有震荡，整体趋势向上。"
+  },
+  "symbols": [
+    "Metal",
+    "strong_day_master_pattern"
+  ],
+  "risk_tags": [
+    "波动风险",
+    "政策变化"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000300.SS/bazi.json",
+  "error": null,
+  "result_en": {
+    "score": 78,
+    "polarity": "positive",
+    "intensity": "medium",
+    "omen_type": "opportunity",
+    "headline": "Financial officials double beauty, index tends to be strong",
+    "subline": "Fire and wood are born together, vitality appears",
+    "short_reading": "Japanese Lord Xin Jin has strong roots, the current Universiade B Mao fortune star when prosperous, the time of the year C noon official star revealed, financial officials double beauty, conducive to market confidence rebound.",
+    "long_reading": "Based on the eight-character analysis, the Japanese Lord Xin Jin was born in the month of Hai, and Jin was discouraged but did not lose his roots. The main root of the day is strong (score 7), which belongs to the strong gold pattern, and likes to drain grams of water and wood fire. Moon order hai water for food injury, hidden Jiamu zhengcai, with the time to support yinmu zhengcai, financial star source. At present, the Dayun Yimao (2025-2034), the main branches are all wood wealth, greatly enhancing the power of fortune stars. 2026 bingwu time, binghuo is official through dry, afternoon fire is official land, official star is powerful, can control than robbery to protect wealth. Financial officials are here, and for the good use of God, indicating that the index has strong upward momentum in 2026, especially driven by policy and capital. However, it is necessary to pay attention to the Japanese Lord Xin Jin gold gas is too strong, the year afternoon fire by the original bureau of water consumption, upward or shock, the overall trend upward."
+  }
+}

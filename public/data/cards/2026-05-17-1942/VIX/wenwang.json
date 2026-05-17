@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "VIX",
+    "name": "VIX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "wenwang",
+    "name": "Wenwang Liuyao",
+    "display_name": "文王卦"
+  },
+  "result": {
+    "score": 45,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "cautionary",
+    "headline": "火光映水，危机交织",
+    "subline": "兄弟动而夺财，市场恐慌未止",
+    "short_reading": "当前VIX处于极端波动区间，历史高位盘整。动爻显示内部竞争与情绪宣泄，短期或延续震荡，但财星安静反指上行空间有限。",
+    "long_reading": "本卦水火既济，表面功成，实则暗流涌动。变卦火泽睽，背离之象。第四爻兄弟发动，克财夺利，反映市场参与者博弈加剧。官鬼初爻化辰土，压制势头。子孙爻得日辰生扶，但月建子水冲午火，父母爻受损。整体看，恐慌指数短期难以骤降，警惕二次探顶。用神财爻安静，不宜追高。"
+  },
+  "symbols": [
+    "Water over Fire",
+    "Lake over Fire"
+  ],
+  "risk_tags": [
+    "高波动",
+    "回调风险",
+    "情绪极端"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/VIX/wenwang.json",
+  "error": null,
+  "result_en": {
+    "score": 45,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "cautionary",
+    "headline": "Fire reflecting water, crisis intertwined",
+    "subline": "Brothers move and take money, the market panic is not over.",
+    "short_reading": "The VIX is currently in an extreme volatility range, with historically high consolidation. Moving the line shows internal competition and emotional catharsis, short-term or continued shock, but the financial star quiet refers to the upward space is limited.",
+    "long_reading": "This hexagram water and fire, the surface success, but in fact undercurrent surging. The image of changing the hexagram and departing from the fire. The fourth line brothers launched, the money to seize profits, reflecting the market participants to intensify the game. Official ghost at the beginning of the line Chen soil, suppress the momentum. The children and grandchildren were supported by the sun and the sun, but the moon built the water and the noon fire, and the parents were damaged. Overall, the panic index is difficult to plunge in the short term, and be wary of a second peak. Quiet with divine wealth, not chasing high."
+  }
+}

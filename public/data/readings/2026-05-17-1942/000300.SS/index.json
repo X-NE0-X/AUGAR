@@ -1,0 +1,344 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "000300.SS",
+    "name": "000300.SS",
+    "region": "CN",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "composite": {
+    "score": 33,
+    "polarity": "negative",
+    "intensity": "high",
+    "dominant_symbols": [
+      "The Tower",
+      "Four of Swords",
+      "Six of Cups",
+      "Four of Pentacles",
+      "The Devil",
+      "Strength"
+    ],
+    "headline": "The oracles lean negative with high intensity"
+  },
+  "cards": [
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "000300.SS",
+        "name": "000300.SS",
+        "region": "CN",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "tarot",
+        "name": "Tarot Celtic Cross",
+        "display_name": "塔罗"
+      },
+      "result": {
+        "score": 35,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "warning",
+        "headline": "高塔崩塌，市场面临骤变",
+        "subline": "恐惧与贪婪交织，需警惕短期剧烈波动",
+        "short_reading": "当前市场如高塔轰然倒塌，突发利空或情绪崩溃引发急跌。但十字牌预示调整后需休整，逆位力量暗示信心不足，最终虽缓慢走出困境，过程痛苦。",
+        "long_reading": "牌阵以高塔为首，预示突如其来的转折或黑天鹅事件，可能源自政策、地缘或泡沫破裂。四剑休整表明市场将进入低成交量整理期。根牌六杯指向过去支撑位或惯性思维，但四星币体现投资者死拿不卖，高塔打破僵局。目标牌恶魔警示警惕贪婪陷阱，逆位力量显示多头无力，战车象征盲目加仓。环境八杯逆位表示资金不愿离场，但月亮牌暗示谎言与不确定性。最终五角星五逆位，虽不至于长久困顿，但短期损失不可避免。市场需经历洗盘才能重建。"
+      },
+      "symbols": [
+        "The Tower",
+        "Four of Swords",
+        "Six of Cups",
+        "Four of Pentacles",
+        "The Devil",
+        "Strength",
+        "The Chariot",
+        "Eight of Cups"
+      ],
+      "risk_tags": [
+        "波动加剧",
+        "情绪崩溃",
+        "流动性风险",
+        "破位下行"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000300.SS/tarot.json",
+      "error": null,
+      "result_en": {
+        "score": 35,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "warning",
+        "headline": "高塔崩塌，市场面临骤变",
+        "subline": "恐惧与贪婪交织，需警惕短期剧烈波动",
+        "short_reading": "当前市场如高塔轰然倒塌，突发利空或情绪崩溃引发急跌。但十字牌预示调整后需休整，逆位力量暗示信心不足，最终虽缓慢走出困境，过程痛苦。",
+        "long_reading": "牌阵以高塔为首，预示突如其来的转折或黑天鹅事件，可能源自政策、地缘或泡沫破裂。四剑休整表明市场将进入低成交量整理期。根牌六杯指向过去支撑位或惯性思维，但四星币体现投资者死拿不卖，高塔打破僵局。目标牌恶魔警示警惕贪婪陷阱，逆位力量显示多头无力，战车象征盲目加仓。环境八杯逆位表示资金不愿离场，但月亮牌暗示谎言与不确定性。最终五角星五逆位，虽不至于长久困顿，但短期损失不可避免。市场需经历洗盘才能重建。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "000300.SS",
+        "name": "000300.SS",
+        "region": "CN",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "wenwang",
+        "name": "Wenwang Liuyao",
+        "display_name": "文王卦"
+      },
+      "result": {
+        "score": 45,
+        "polarity": "neutral",
+        "intensity": "moderate",
+        "omen_type": "transition",
+        "headline": "山雷养正化火泽，市场分歧待调和",
+        "subline": "兄弟动克财，先抑后扬需耐心",
+        "short_reading": "当前趋势偏震荡，多空博弈加剧，短期有下行压力，但中期存在修复机会。",
+        "long_reading": "本卦山雷颐，艮上震下，养正之道。变卦火泽睽，离上兑下，乖离分歧。动爻二、四皆为兄弟，克用神财爻。初则兄弟亥水动化卯木，竞争消耗后或有转机；继则兄弟丑土动化卯木回头克，压制减弱。财爻卯木居应位，月建子水相生而日建戌土合绊，整体迟滞。颐卦自求口实，睽卦小事吉，暗示短期需忍耐，待动爻化气后有望回暖。"
+      },
+      "symbols": [
+        "Mountain over Thunder",
+        "Fire over Lake"
+      ],
+      "risk_tags": [
+        "波动",
+        "分歧",
+        "流动性"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000300.SS/wenwang.json",
+      "error": null,
+      "result_en": {
+        "score": 45,
+        "polarity": "neutral",
+        "intensity": "moderate",
+        "omen_type": "transition",
+        "headline": "山雷养正化火泽，市场分歧待调和",
+        "subline": "兄弟动克财，先抑后扬需耐心",
+        "short_reading": "当前趋势偏震荡，多空博弈加剧，短期有下行压力，但中期存在修复机会。",
+        "long_reading": "本卦山雷颐，艮上震下，养正之道。变卦火泽睽，离上兑下，乖离分歧。动爻二、四皆为兄弟，克用神财爻。初则兄弟亥水动化卯木，竞争消耗后或有转机；继则兄弟丑土动化卯木回头克，压制减弱。财爻卯木居应位，月建子水相生而日建戌土合绊，整体迟滞。颐卦自求口实，睽卦小事吉，暗示短期需忍耐，待动爻化气后有望回暖。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "000300.SS",
+        "name": "000300.SS",
+        "region": "CN",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "bazi",
+        "name": "Zi Ping BaZi",
+        "display_name": "子平八字"
+      },
+      "result": {
+        "score": 78,
+        "polarity": "positive",
+        "intensity": "medium",
+        "omen_type": "opportunity",
+        "headline": "财官双美，指数趋强",
+        "subline": "火木相生，生机显现",
+        "short_reading": "日主辛金得强根，当前大运乙卯财星当旺，流年丙午官星透出，财官双美，有利市场信心回升。",
+        "long_reading": "基于八字分析，日主辛金生于亥月，亥中壬甲，金泄气而不失根。日主根强（得分7），属强金格局，喜水木火之泄耗克。月令亥水为食伤，內藏甲木正财，配合时支寅木正财，财星有源。当前大运乙卯（2025-2034），干支皆为木财，大大增强财星力量。2026丙午流年，丙火正官透干，午火正官禄地，官星有力，可制比劫护财。财官齐来，且为喜用神，预示指数在2026年有较强的上涨动能，尤其受政策与资金面驱动。但需注意日主辛金金气过旺，流年午火受原局水耗，上行中或有震荡，整体趋势向上。"
+      },
+      "symbols": [
+        "Metal",
+        "strong_day_master_pattern"
+      ],
+      "risk_tags": [
+        "波动风险",
+        "政策变化"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000300.SS/bazi.json",
+      "error": null,
+      "result_en": {
+        "score": 78,
+        "polarity": "positive",
+        "intensity": "medium",
+        "omen_type": "opportunity",
+        "headline": "财官双美，指数趋强",
+        "subline": "火木相生，生机显现",
+        "short_reading": "日主辛金得强根，当前大运乙卯财星当旺，流年丙午官星透出，财官双美，有利市场信心回升。",
+        "long_reading": "基于八字分析，日主辛金生于亥月，亥中壬甲，金泄气而不失根。日主根强（得分7），属强金格局，喜水木火之泄耗克。月令亥水为食伤，內藏甲木正财，配合时支寅木正财，财星有源。当前大运乙卯（2025-2034），干支皆为木财，大大增强财星力量。2026丙午流年，丙火正官透干，午火正官禄地，官星有力，可制比劫护财。财官齐来，且为喜用神，预示指数在2026年有较强的上涨动能，尤其受政策与资金面驱动。但需注意日主辛金金气过旺，流年午火受原局水耗，上行中或有震荡，整体趋势向上。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "000300.SS",
+        "name": "000300.SS",
+        "region": "CN",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "ziwei",
+        "name": "Ziwei Doushu",
+        "display_name": "紫微斗数"
+      },
+      "result": {
+        "score": 1,
+        "polarity": "mixed",
+        "intensity": "moderate",
+        "omen_type": "mixed",
+        "headline": "紫微化禄掌大权，贪狼化权展宏图",
+        "subline": "迁移化忌需谨慎，健康空宫防暗疾",
+        "short_reading": "当前大限在官禄宫，紫微天府七杀主事，事业有重大发展机遇，但迁移宫廉贞天梁化忌，出行需防是非。命宫太阳贪狼化权，行动力强，但健康宫空宫化忌，注意身体。",
+        "long_reading": "此局以官禄宫为轴心，紫微化禄、天府七杀辅左辅，构成‘紫府朝垣’格局，主掌实权与腾达之机。命宫太阳贪狼化权，社交与扩张欲望强烈，但贪狼带有桃花性质，需注意分寸。迁移宫廉贞天梁化忌，外出易遇官非或情感纠葛，尤其远行需警惕。财帛宫天同天相平稳，无突破但亦无大失。田宅宫禄存+大限化禄，资产积累可期，但铃星暗示暗争。子女宫文昌陀罗+大限化科，教育或投资领域有阻滞中见成效。健康宫空宫带本命化忌，体质偏弱，须防隐疾突发。整体吉凶交织，宜借大限禄权之利推进事业，同时规避迁移、健康之冲。"
+      },
+      "symbols": [
+        "Tanlang",
+        "Career"
+      ],
+      "risk_tags": [
+        "健康隐患",
+        "出行是非",
+        "人际纠纷",
+        "桃花败财"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000300.SS/ziwei.json",
+      "error": null,
+      "result_en": {
+        "score": 1,
+        "polarity": "mixed",
+        "intensity": "moderate",
+        "omen_type": "mixed",
+        "headline": "紫微化禄掌大权，贪狼化权展宏图",
+        "subline": "迁移化忌需谨慎，健康空宫防暗疾",
+        "short_reading": "当前大限在官禄宫，紫微天府七杀主事，事业有重大发展机遇，但迁移宫廉贞天梁化忌，出行需防是非。命宫太阳贪狼化权，行动力强，但健康宫空宫化忌，注意身体。",
+        "long_reading": "此局以官禄宫为轴心，紫微化禄、天府七杀辅左辅，构成‘紫府朝垣’格局，主掌实权与腾达之机。命宫太阳贪狼化权，社交与扩张欲望强烈，但贪狼带有桃花性质，需注意分寸。迁移宫廉贞天梁化忌，外出易遇官非或情感纠葛，尤其远行需警惕。财帛宫天同天相平稳，无突破但亦无大失。田宅宫禄存+大限化禄，资产积累可期，但铃星暗示暗争。子女宫文昌陀罗+大限化科，教育或投资领域有阻滞中见成效。健康宫空宫带本命化忌，体质偏弱，须防隐疾突发。整体吉凶交织，宜借大限禄权之利推进事业，同时规避迁移、健康之冲。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "000300.SS",
+        "name": "000300.SS",
+        "region": "CN",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "astrology",
+        "name": "Astrology Cycle",
+        "display_name": "占星"
+      },
+      "result": {
+        "score": 35,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "周期积累中的调整",
+        "headline": "新月照狮宫，震荡蓄势",
+        "subline": "沪深300指数承压，暗藏周期转折",
+        "short_reading": "市场处于回落期，但波动正常，回撤尚浅，可能是低吸机会。",
+        "long_reading": "新月在摩羯座季节开启，强化了结构性压力。资产狮子座（沪深300）短期受制于土星式的约束，21日跌幅约4.8%，但整体波动率和回撤可控。周期标签“falling”明确下行趋势，但“accumulation_cycle”暗示市场正在积蓄下一波动能。当前阶段宜观察而非匆忙行动，等待月相渐盈后的确认信号。"
+      },
+      "symbols": [
+        "Leo",
+        "new"
+      ],
+      "risk_tags": [
+        "短期下行风险",
+        "波动率回升风险"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000300.SS/astrology.json",
+      "error": null,
+      "result_en": {
+        "score": 35,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "周期积累中的调整",
+        "headline": "新月照狮宫，震荡蓄势",
+        "subline": "沪深300指数承压，暗藏周期转折",
+        "short_reading": "市场处于回落期，但波动正常，回撤尚浅，可能是低吸机会。",
+        "long_reading": "新月在摩羯座季节开启，强化了结构性压力。资产狮子座（沪深300）短期受制于土星式的约束，21日跌幅约4.8%，但整体波动率和回撤可控。周期标签“falling”明确下行趋势，但“accumulation_cycle”暗示市场正在积蓄下一波动能。当前阶段宜观察而非匆忙行动，等待月相渐盈后的确认信号。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "000300.SS",
+        "name": "000300.SS",
+        "region": "CN",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "market_pulse",
+        "name": "Market Pulse",
+        "display_name": "市场脉冲"
+      },
+      "result": {
+        "score": 5,
+        "polarity": "negative",
+        "intensity": "low",
+        "omen_type": "观望",
+        "headline": "沪深300指数短期承压，回撤浅幅",
+        "subline": "21日跌幅4.75%，波动率正常，下行空间有限",
+        "short_reading": "短期动量偏弱，但回撤幅度和波动率均属温和，市场处于调整而非恐慌阶段。",
+        "long_reading": "沪深300指数最新收盘4502.57，21日收益率-4.75%，63日收益率-1.10%，显示短期下跌趋势。63日波动率14.65%处于正常区间，252日最大回撤仅-6.01%属于浅幅，表明市场调整有节制，尚未引发系统性风险。动量标签'falling'确认短期弱势，但回撤浅、波动正常暗示下方支撑可能较强。适合观望等待企稳信号。"
+      },
+      "symbols": [
+        "↘",
+        "→",
+        "▽"
+      ],
+      "risk_tags": [
+        "短期下跌",
+        "波动正常",
+        "回撤可控"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000300.SS/market_pulse.json",
+      "error": null,
+      "result_en": {
+        "score": 5,
+        "polarity": "negative",
+        "intensity": "low",
+        "omen_type": "观望",
+        "headline": "沪深300指数短期承压，回撤浅幅",
+        "subline": "21日跌幅4.75%，波动率正常，下行空间有限",
+        "short_reading": "短期动量偏弱，但回撤幅度和波动率均属温和，市场处于调整而非恐慌阶段。",
+        "long_reading": "沪深300指数最新收盘4502.57，21日收益率-4.75%，63日收益率-1.10%，显示短期下跌趋势。63日波动率14.65%处于正常区间，252日最大回撤仅-6.01%属于浅幅，表明市场调整有节制，尚未引发系统性风险。动量标签'falling'确认短期弱势，但回撤浅、波动正常暗示下方支撑可能较强。适合观望等待企稳信号。"
+      }
+    }
+  ],
+  "run_id": "11d7e8e58760"
+}

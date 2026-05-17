@@ -5,7 +5,7 @@ import { useToast } from '../components/Toast'
 import { useConfig } from '../context/ConfigContext'
 import { Trophy } from 'lucide-react'
 
-const PERIOD = '2026-04-M'
+const PERIOD = '2026-05-17-1942'
 
 const MONTH_NAMES = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
@@ -107,3 +107,6 @@ const Almanac = () => {
 }
 
 export default Almanac
+
+
+

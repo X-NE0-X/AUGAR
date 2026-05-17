@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "FTSE",
+    "name": "FTSE",
+    "region": "UK",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "ziwei",
+    "name": "Ziwei Doushu",
+    "display_name": "紫微斗数"
+  },
+  "result": {
+    "score": 1,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "challenge",
+    "headline": "星曜暗涌，田宅官禄逢忌",
+    "subline": "紫微坐守父母宫，福泽深厚但需防暗流",
+    "short_reading": "当前运势受田宅宫廉贞天梁化忌影响，家宅或产业易有变动；官禄宫火星化忌，事业面临压力与突发波折。命宫化禄带来转机，但财帛宫擎羊与健康宫陀罗提示需警惕小额损失与慢性消耗。需稳守根基，避免急进。",
+    "long_reading": "本命盘以父母宫为命宫，紫微、天府、七杀携禄存、铃星坐守，并化禄，显示根基深厚、有贵人庇佑。然而田宅宫廉贞天梁化忌，暗示家族产业或不动产可能经历重组或纠纷；官禄宫无主星但火星化忌，事业上易有意外阻力，尤其涉及合作与晋升。财帛宫擎羊独坐，财务流动快但需防破财；健康宫武曲巨门加文昌陀罗，注意肠胃与口舌是非。迁移宫化科，外出或异乡发展有助力，但需结合大限。当前大限在子女宫，太阳贪狼化权，可借团队或创意化解困局。整体需平衡传统根基与创新变革，忌冒进。"
+  },
+  "symbols": [
+    "Tianliang",
+    "Parents"
+  ],
+  "risk_tags": [
+    "资产波动",
+    "事业压力",
+    "家庭纠纷",
+    "健康损耗",
+    "合作关系紧张"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/FTSE/ziwei.json",
+  "error": null,
+  "result_en": {
+    "score": 1,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "challenge",
+    "headline": "Star obsidian undercurrent, Tian Zhai Guan Lu Feng Ji",
+    "subline": "Ziwei is sitting in the parents&#39; palace, Fuze is deep, but it needs to prevent undercurrents.",
+    "short_reading": "The current fortune is affected by the taboo of Tian Zhai Gong Lian Zhen Tian Liang, and the family or industry is prone to changes. Guan Lu Gong Martian taboo, career is facing pressure and sudden twists and turns. The life of the palace to bring a turnaround, but the wealth of the palace to hold the sheep and health of the palace to remind the need to guard against small losses and chronic consumption. It is necessary to stick to the foundation and avoid rushing.",
+    "long_reading": "This natal plate takes the parents&#39; palace as the natal palace, Ziwei, Tianfu, Seven Kills, Lou Cun, Ling Xing, and Lou, showing deep foundation and protection of noble people. However, Tianzhentianliang taboo, suggesting that the family industry or real estate may undergo reorganization or disputes. Guanlu Palace has no main star but is sparkling, which is prone to unexpected resistance in its career, especially involving cooperation and promotion. The palace of wealth and silk holds sheep to sit alone, and the financial flow is fast but needs to be prevented from breaking money. Health Palace Wuqu Giant Gate and Wenchang Dhara, pay attention to intestines and stomach and tongue. Moving to the palace, going out or foreign development is helpful, but it needs to be combined with the limit. At present, the deadline is in the children&#39;s palace. the sun is greedy for wolves and can use teams or creativity to resolve the dilemma. The overall need to balance the traditional roots and innovative change, avoid rash."
+  }
+}

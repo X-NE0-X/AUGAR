@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "NDX",
+    "name": "NDX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "ziwei",
+    "name": "Ziwei Doushu",
+    "display_name": "紫微斗数"
+  },
+  "result": {
+    "score": 45,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "volatility",
+    "headline": "紫府禄存护兄弟，七杀擎羊藏风波",
+    "subline": "财权官科父母忌，震荡格局待破局",
+    "short_reading": "当前NDX处于外部环境支撑下的震荡期，兄弟宫紫微天府禄存化禄显现短期资金或政策支持，但七杀擎羊暗示内部剧烈波动与竞争压力。财帛宫化权但擎羊独坐，财务争夺激烈；官禄宫文昌化科，监管层面温和利好。整体多空交织，趋势尚未明确反转，建议观望。",
+    "long_reading": "根据紫微斗数盘，NDX指数命宫为空，借对宫天机太阴破军，身主在交友宫武曲巨门。当前大限（32-41岁）落兄弟宫，流年亦在兄弟宫，双度强化该宫位作用。兄弟宫紫微、天府、七杀、禄存并化禄（本命+流年），显示有强大合作方或市场情绪支撑，但七杀主突变与冲突，禄存虽财星但被七杀冲破，形成“禄逢冲破”格局，暗示支撑并不稳固，易受突发事件干扰。财帛宫空宫借对宫太阳贪狼，本命化权但见擎羊，代表投资融资方面主动进取但伴随风险与对抗。官禄宫文昌化科（流年），政策或指数编制层面出现某些合理化调整。父母宫廉贞天梁化忌（流年），注意外部监管、法规或国际关系方面压制。整体来看，短期兄弟宫化禄提供缓冲，但中期财帛擎羊化权与父母化忌持续施压，指数大概率延续宽幅震荡，待七杀星势消后方能明确方向。"
+  },
+  "symbols": [
+    "Tianji",
+    "Siblings"
+  ],
+  "risk_tags": [
+    "短期反弹风险",
+    "政策监管压制",
+    "波动加剧"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/NDX/ziwei.json",
+  "error": null,
+  "result_en": {
+    "score": 45,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "volatility",
+    "headline": "Zifu Lu Cun Protecting Brothers, Seven Kills, Holding Sheep and Hidden Stormy",
+    "subline": "Financial power officials, parents taboo, shock pattern to be broken",
+    "short_reading": "The current NDX in the external environment under the support of the shock period, brother Gong Ziwei Tianfu Lu Cunhua Lu show short-term financial or policy support, but seven kill the sheep hinted at internal volatility and competitive pressure. Financial silk palace right but the sheep sit alone, financial competition is fierce. The overall long-short intertwined, the trend has not yet been clearly reversed, it is recommended to wait and see.",
+    "long_reading": "According to the Ziwei Dou count, the NDX index palace is empty, and the master is making friends with the palace martial arts giant gate. The current deadline (32-41 years old) falls into the brother&#39;s palace, and the time is also in the brother&#39;s palace, which strengthens the role of the palace. Brothers Gong Ziwei, Tianfu, Seven Kills, Lu Cun and Lu (this life time) show that there is a strong partner or market sentiment support, but the seven kills the main mutation and conflict, Lu Cun although the fortune star but was seven killed to break through, forming a &quot;Lu Feng break through&quot; pattern, implying that the support is not stable, vulnerable to unexpected interference. Wealth palace empty palace borrow to the palace sun greedy wolf, the right to life but see the sheep, on behalf of investment and financing active progress but accompanied by risk and confrontation. Guanlu Palace Wenchang Chemical Section (year), policy or index compilation level appeared some rationalization adjustment. Parents Gong Lian Zhen Tian Liang taboo (time), pay attention to external supervision, regulations or international relations suppression. On the whole, the short-term brother Gonghua Lu to provide a buffer, but the medium-term financial power of sheep and parents to avoid continued pressure, the index probability of the continuation of a wide range of shocks, to be seven kill star trend after the clear direction."
+  }
+}

@@ -1,67 +1,81 @@
 {
-  "schema_version": "0.1",
-  "api": {
-    "title": "AUGAR Backend",
-    "version": "0.1.0"
-  },
-  "llm": {
-    "provider": "mock",
-    "model": "gpt-5.5",
-    "base_url": null,
-    "temperature": 0.4,
-    "top_p": 1.0,
-    "max_output_tokens": 1200,
-    "reasoning_effort": "low",
-    "timeout": 90,
-    "max_retries": 2,
-    "openai_base_url": "https://api.openai.com/v1",
-    "codex_check_timeout": 45,
-    "codex_subprocess_timeout": 45
-  },
-  "engines": ["tarot", "wenwang", "bazi", "ziwei", "astrology", "market_pulse"],
-  "providers": ["history", "openai", "chatgpt_oauth", "openai_compatible", "deepseek", "local", "custom"],
-  "generation": {
-    "language": "zh-CN",
-    "tone": "calm_analytical",
-    "reading_depth": "standard",
-    "include_raw_artifact": false,
-    "include_market_context": false,
-    "allow_error_cards": false
-  },
-  "paths": {
-    "output_root": "public/data",
-    "runs_root": "runs",
-    "data_root": "data",
-    "parquet_files": [
-      "data/Data_INDEX_CN_D.parquet",
-      "data/Data_INDEX_HK_D.parquet",
-      "data/Data_INDEX_UK_D.parquet",
-      "data/Data_INDEX_US_D.parquet"
-    ],
-    "region_by_file": {
-      "Data_INDEX_CN_D.parquet": "CN",
-      "Data_INDEX_HK_D.parquet": "HK",
-      "Data_INDEX_UK_D.parquet": "UK",
-      "Data_INDEX_US_D.parquet": "US"
-    }
-  },
-  "limits": {
-    "max_symbols_per_card": 8,
-    "max_risk_tags": 8,
-    "default_risk_tag": "timing_risk",
-    "dominant_symbols_count": 6,
-    "score_high_threshold": 65,
-    "score_low_threshold": 35,
-    "run_id_length": 12
-  },
-  "error_card": {
-    "score": 50,
-    "polarity": "neutral",
-    "intensity": "low",
-    "visual": {
-      "palette": "gray",
-      "icon": "alert",
-      "card_style": "low"
-    }
-  }
+    "schema_version":  "0.1",
+    "api":  {
+                "title":  "AUGAR Backend",
+                "version":  "0.1.0"
+            },
+    "llm":  {
+                "provider":  "deepseek",
+                "model":  "gpt-5.5",
+                "base_url":  null,
+                "temperature":  0.4,
+                "top_p":  1.0,
+                "max_output_tokens":  1200,
+                "reasoning_effort":  "low",
+                "timeout":  90,
+                "max_retries":  2,
+                "openai_base_url":  "https://api.openai.com/v1",
+                "codex_check_timeout":  45,
+                "codex_subprocess_timeout":  45
+            },
+    "engines":  [
+                    "tarot",
+                    "wenwang",
+                    "bazi",
+                    "ziwei",
+                    "astrology",
+                    "market_pulse"
+                ],
+    "providers":  [
+                      "chatgpt_oauth",
+                      "openai",
+                      "deepseek",
+                      "openai_compatible",
+                      "local",
+                      "history"
+                  ],
+    "generation":  {
+                       "language":  "zh-CN",
+                       "tone":  "calm_analytical",
+                       "reading_depth":  "standard",
+                       "include_raw_artifact":  false,
+                       "include_market_context":  false,
+                       "allow_error_cards":  false
+                   },
+    "paths":  {
+                  "output_root":  "public/data",
+                  "runs_root":  "runs",
+                  "data_root":  "data",
+                  "parquet_files":  [
+                                        "data/Data_INDEX_CN_D.parquet",
+                                        "data/Data_INDEX_HK_D.parquet",
+                                        "data/Data_INDEX_UK_D.parquet",
+                                        "data/Data_INDEX_US_D.parquet"
+                                    ],
+                  "region_by_file":  {
+                                         "Data_INDEX_CN_D.parquet":  "CN",
+                                         "Data_INDEX_HK_D.parquet":  "HK",
+                                         "Data_INDEX_UK_D.parquet":  "UK",
+                                         "Data_INDEX_US_D.parquet":  "US"
+                                     }
+              },
+    "limits":  {
+                   "max_symbols_per_card":  16,
+                   "max_risk_tags":  8,
+                   "default_risk_tag":  "timing_risk",
+                   "dominant_symbols_count":  6,
+                   "score_high_threshold":  65,
+                   "score_low_threshold":  35,
+                   "run_id_length":  12
+               },
+    "error_card":  {
+                       "score":  50,
+                       "polarity":  "neutral",
+                       "intensity":  "low",
+                       "visual":  {
+                                      "palette":  "gray",
+                                      "icon":  "alert",
+                                      "card_style":  "low"
+                                  }
+                   }
 }

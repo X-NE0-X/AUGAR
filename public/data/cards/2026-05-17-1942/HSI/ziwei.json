@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "HSI",
+    "name": "HSI",
+    "region": "HK",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "ziwei",
+    "name": "Ziwei Doushu",
+    "display_name": "紫微斗数"
+  },
+  "result": {
+    "score": 55,
+    "polarity": "中性",
+    "intensity": "中",
+    "omen_type": "平盤",
+    "headline": "紫微天府坐朋友宮，人際助力與競爭並存",
+    "subline": "流年健康宮化忌，需留意波動中的內在平衡",
+    "short_reading": "當前行運福德宮本命化權，主決策掌控力強，但流年健康宮廉貞天梁遇火星文曲化忌，易因急躁引發隱患。朋友宮紫微天府得祿存，貴人運佳，然七殺暗示合作中的競爭。財帛宮太陰化忌，投資需謹慎。",
+    "long_reading": "此盤以朋友宮為流年命宮，紫微天府雙帝星坐守，輔以祿存，顯示外部環境對指數有支撐，但七殺星帶來突變風險。身宮兄弟宮武曲巨門化科，市場情緒偏向謹慎溝通，但巨門暗藏誤判。健康宮廉貞天梁遇火星文曲，流化忌，提醒市場波動可能引發系統性壓力，尤其流時火星增強波動性。財帛宮太陰化忌，資金流動性面臨考驗。綜合來看，短期震盪偏弱，但紫府格局提供中期支撐，需關注政策或權重股變動。"
+  },
+  "symbols": [
+    "Taiyin",
+    "Friends"
+  ],
+  "risk_tags": [
+    "波動加劇",
+    "流動性風險",
+    "競爭壓力",
+    "政策變化"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/HSI/ziwei.json",
+  "error": null,
+  "result_en": {
+    "score": 55,
+    "polarity": "中性",
+    "intensity": "中",
+    "omen_type": "平盤",
+    "headline": "Ziwei Tianfu sits in the palace of friends, interpersonal assistance and competition coexist.",
+    "subline": "The time of health palace taboo, need to pay attention to the internal balance of fluctuations.",
+    "short_reading": "At present, the local power of the Fude Palace, the main decision-making control is strong, but the time of health, the time of health, the integrity of the palace, the sky beam, the Martian, easy to cause hidden dangers due to impatience. Friends of the palace purple Wei Tianfu Deluxun, noble good luck, but seven kill hint of competition in cooperation. The wealth palace is too yin taboo, investment needs to be cautious.",
+    "long_reading": "This plate to friends palace for the time of life palace, purple micro Tianfu double emperor star sitting, supplemented by Lu Cun, showing that the external environment has support for the index, but seven kill stars bring mutation risk. Body palace brothers palace Wuqu giant door, market sentiment tends to be cautious communication, but the giant door hidden misjudgment. Health Gong Lian Zhen Tian Liang met Mars Wen Qu, flow taboo, remind market fluctuations may cause systemic pressure, especially when the flow of Mars to enhance volatility. The financial palace is too yin taboo, and the liquidity of funds is facing a test. On the whole, the short-term volatility is weak, but the purple pattern provides medium-term support, need to pay attention to policy or weight stock changes."
+  }
+}

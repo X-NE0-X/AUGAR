@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "VIX",
+    "name": "VIX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "ziwei",
+    "name": "Ziwei Doushu",
+    "display_name": "紫微斗数"
+  },
+  "result": {
+    "score": 1,
+    "polarity": "positive",
+    "intensity": "high",
+    "omen_type": "震荡突破",
+    "headline": "紫微七杀掌权，波动暴增之兆",
+    "subline": "太阳贪狼化权引动，市场情绪极端亢奋",
+    "short_reading": "命宫太阳贪狼化权，主变动与扩张；事业宫紫微天府七杀遇禄存，显示核心力量增强。但财帛宫陀罗与铃星暗示延迟与突发干扰，整体为强力突破前的震荡期。",
+    "long_reading": "当前VIX处于极端高位，动能强劲。紫微斗数盘显示流年事业宫为紫微天府七杀组合，且有禄存加持，代表市场主导力量（可能是做市商或大型机构）在推动波动。同时，命宫太阳贪狼化权（流年化权），表明散户情绪狂热，贪婪主导。财帛宫天同天相文昌陀罗，暗示政策面（文昌）带来利好但实施延迟（陀罗），同时存在突然冲击（铃星在事业宫）。夫妻宫武曲巨门化科，显示对冲策略或国际关系（巨门）带来平衡。整体预示着剧烈的市场波动将持续，但需警惕高位反转风险。"
+  },
+  "symbols": [
+    "Tanlang",
+    "Career"
+  ],
+  "risk_tags": [
+    "极端波动",
+    "政策延迟",
+    "情绪过热",
+    "反转风险"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/VIX/ziwei.json",
+  "error": null,
+  "result_en": {
+    "score": 1,
+    "polarity": "positive",
+    "intensity": "high",
+    "omen_type": "震荡突破",
+    "headline": "Ziwei Seven Kills in Power, a Sign of Volatility",
+    "subline": "The sun is greedy for wolves, and the market sentiment is extremely excited.",
+    "short_reading": "Life palace sun greedy wolf power, the main change and expansion; career palace purple micro Tianfu seven kill encounter Lu Cun, showing the core strength. But the money and silk palace dra and bell star suggest delay and sudden interference, the overall strong breakthrough before the shock period.",
+    "long_reading": "The VIX is currently at an extreme high level and has strong momentum. Purple micro bucket number plate shows that the flow of the career palace for the purple micro Tianfu seven-kill combination, and there is a blessing, on behalf of the market leading forces (may be market makers or large institutions) in driving volatility. At the same time, the power of the sun&#39;s greed for wolves (the right to flow years) indicates that retail sentiment is fanatical and greed dominates. The palace of wealth and silk is the same as the sky Wenchang Dhara, suggesting that the policy side (Wenchang) brings benefits but the implementation is delayed (Dhara), and there is a sudden impact (bell star in the career palace). Husband and wife palace wuqu giant door, showing hedging strategies or international relations (giant door) to bring balance. Overall indicates that severe market volatility will continue, but need to be wary of high reversal risk."
+  }
+}

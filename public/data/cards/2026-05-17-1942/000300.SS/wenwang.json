@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "000300.SS",
+    "name": "000300.SS",
+    "region": "CN",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "wenwang",
+    "name": "Wenwang Liuyao",
+    "display_name": "文王卦"
+  },
+  "result": {
+    "score": 45,
+    "polarity": "neutral",
+    "intensity": "moderate",
+    "omen_type": "transition",
+    "headline": "山雷养正化火泽，市场分歧待调和",
+    "subline": "兄弟动克财，先抑后扬需耐心",
+    "short_reading": "当前趋势偏震荡，多空博弈加剧，短期有下行压力，但中期存在修复机会。",
+    "long_reading": "本卦山雷颐，艮上震下，养正之道。变卦火泽睽，离上兑下，乖离分歧。动爻二、四皆为兄弟，克用神财爻。初则兄弟亥水动化卯木，竞争消耗后或有转机；继则兄弟丑土动化卯木回头克，压制减弱。财爻卯木居应位，月建子水相生而日建戌土合绊，整体迟滞。颐卦自求口实，睽卦小事吉，暗示短期需忍耐，待动爻化气后有望回暖。"
+  },
+  "symbols": [
+    "Mountain over Thunder",
+    "Fire over Lake"
+  ],
+  "risk_tags": [
+    "波动",
+    "分歧",
+    "流动性"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000300.SS/wenwang.json",
+  "error": null,
+  "result_en": {
+    "score": 45,
+    "polarity": "neutral",
+    "intensity": "moderate",
+    "omen_type": "transition",
+    "headline": "Shan Lei Yangzheng Huoze, Market Differences to be Reconciled",
+    "subline": "Brothers move money, first suppress and then raise need patience.",
+    "short_reading": "The current trend is volatile, the long-short game intensifies, there is downward pressure in the short term, but there are repair opportunities in the medium term.",
+    "long_reading": "This Gua Shan Lei Yi, Gen on the earthquake, raise the right way. The change of divination is full of fire, away from the upper and lower, and away from differences. Moving hexagram 2. 4 are all brothers, and the magic money hexagram is used. At the beginning of the brothers hai water dynamic Mao Mu, competition after consumption or a turn for the better; then the brothers ugly soil dynamic Mao Mu back to grams, suppression weakened. Caiyao Mao Mu should be in place, the moon is built with water and water, and the day is built with earth, and the whole is sluggish. Eating hexagrams for self-explanation, hexagrams for small things, suggesting that short-term patience is needed, and it is expected to warm up after moving hexagrams."
+  }
+}

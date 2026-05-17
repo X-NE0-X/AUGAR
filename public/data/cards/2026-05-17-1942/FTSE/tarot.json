@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "FTSE",
+    "name": "FTSE",
+    "region": "UK",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "tarot",
+    "name": "Tarot Celtic Cross",
+    "display_name": "塔罗"
+  },
+  "result": {
+    "score": 1,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "mixed",
+    "headline": "FTSE 呈盘整守势，谨慎应对波动",
+    "subline": "星币四预示锁定利润，权杖国王逆位暗示动能减弱",
+    "short_reading": "当前FTSE处于盘整阶段，市场参与者趋向保守，关注关键支撑位。短期可能存在波动，但长期价值仍在。",
+    "long_reading": "凯尔特十字牌阵显示，FTSE当前面临动能退潮（权杖国王逆位），但基础工作扎实（星币八正位）。过去逆位倒吊人暗示市场曾抵触调整，而目标星币国王正位指向长期稳定收益。近未来权杖四逆位预示短期不确定性，但战车正位表明意志力可驾驭波动。环境教皇正位强调传统分析框架有效，但逆位宝剑女王提醒警惕情绪化决策。最终星币四正位强化保守控盘、固守成果的趋势，市场进入‘守住’阶段。"
+  },
+  "symbols": [
+    "King of Wands",
+    "Eight of Pentacles",
+    "Page of Cups",
+    "The Hanged Man",
+    "King of Pentacles",
+    "Four of Wands",
+    "The Chariot",
+    "The Hierophant"
+  ],
+  "risk_tags": [
+    "市场情绪转弱",
+    "短期回调风险",
+    "获利回吐压力",
+    "支撑位考验",
+    "谨慎观望"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/FTSE/tarot.json",
+  "error": null,
+  "result_en": {
+    "score": 1,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "mixed",
+    "headline": "FTSE on consolidation defensive, cautious about volatility",
+    "subline": "Star coin 4 heralds locked profits, scepter king inversion hints at weakening momentum",
+    "short_reading": "The FTSE is currently in a consolidation phase, with market participants tending to be conservative and focusing on key support levels. There may be short-term volatility, but long-term value remains.",
+    "long_reading": "Celtic Cross card array shows that the FTSE is currently facing a kinetic energy ebb (scepter king inversion), but the basic work is solid (star coin eight positive position). In the past, the upside-down person suggested that the market had resisted the adjustment, while the target star coin king is pointing to long-term stable earnings. The near future scepter 4 inversion indicates short-term uncertainty, but the chariot positive position indicates that the will force can control fluctuations. The environmental pope emphasizes the validity of the traditional analytical framework, but the queen of the inverse sword cautions against emotional decision-making. In the end, the four positive positions of the star currency strengthened the trend of conservative control and adherence to the results, and the market entered the &#39;conservation&#39; stage."
+  }
+}

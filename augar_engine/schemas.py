@@ -52,6 +52,7 @@ class OracleCard:
     market_context: Optional[Dict[str, Any]] = None
     raw_ref: Optional[str] = None
     error: Optional[Dict[str, Any]] = None
+    result_en: Optional[CardResult] = None
 
     def to_dict(self, *, include_raw_artifact: bool = True, include_market_context: bool = True) -> Dict[str, Any]:
         data = asdict(self)

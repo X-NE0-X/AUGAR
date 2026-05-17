@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "HSI",
+    "name": "HSI",
+    "region": "HK",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "wenwang",
+    "name": "Wenwang Liuyao",
+    "display_name": "文王卦"
+  },
+  "result": {
+    "score": 45,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "transitional",
+    "headline": "市场承压，转机隐现",
+    "subline": "兄弟动克财，子孙动生财",
+    "short_reading": "当前恒指短期承压，兄弟爻动暗示抛压或竞争。但子孙爻动预示后续买盘或修复力量，中期有转机窗口。",
+    "long_reading": "本卦天火同人（上乾下离），变卦山火贲。动爻第四、五爻均老阳变阴。兄弟爻（第四爻旺动）克妻财用神，对应市场抛压或资金分流；子孙爻（第五爻旺动）生妻财，预示后续利多因素或技术修复。月支子水，日支亥水，妻财申金得生，但旬空巳午火削弱官鬼压力。整体多空交织，短期偏弱，但底部支撑渐显，建议观望至动爻能量释放完毕。"
+  },
+  "symbols": [
+    "Heaven over Fire",
+    "Mountain over Fire"
+  ],
+  "risk_tags": [
+    "波动风险",
+    "趋势弱势",
+    "流动性压力"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/HSI/wenwang.json",
+  "error": null,
+  "result_en": {
+    "score": 45,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "transitional",
+    "headline": "Market under pressure, turning point looming",
+    "subline": "Brothers move money, children move money",
+    "short_reading": "The current Hang Seng index short-term pressure, brothers move implied selling pressure or competition. But the descendants of the move foreshadowed the follow-up buying or repair power, the medium-term there is a turnaround window.",
+    "long_reading": "This hexagram skyfire colleagues (up and down), change hexagram mountain fire Ben. Moving the fourth and 5 lines are all old yang and yin. Brother Yao (the fourth Yao Wang move) gram wife financial god, corresponding to the market pressure or capital diversion. The monthly branch water, the daily branch hai water, the wife&#39;s wealth Shen Jin have to live, but the ten-day empty afternoon fire weakened the pressure of officials and ghosts. The overall multi-empty intertwined, short-term weak, but the bottom support gradually, it is recommended to wait and see until the release of moving line energy is completed."
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "HSI",
+    "name": "HSI",
+    "region": "HK",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "composite": {
+    "score": 41,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "dominant_symbols": [
+      "Strength",
+      "The Sun",
+      "Queen of Swords",
+      "Seven of Pentacles",
+      "Ace of Wands",
+      "Three of Cups"
+    ],
+    "headline": "The oracles lean negative with moderate intensity"
+  },
+  "cards": [
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "HSI",
+        "name": "HSI",
+        "region": "HK",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "tarot",
+        "name": "Tarot Celtic Cross",
+        "display_name": "塔罗"
+      },
+      "result": {
+        "score": 1,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "caution",
+        "headline": "市场面临内外阻力，需以内在智慧与灵活应对",
+        "subline": "旧日投资回报未显，新机会与失望并存",
+        "short_reading": "当前恒生指数处于下跌趋势，但牌阵显示内在力量（Strength正位）与清断思考（Queen of Swords正位）将支撑决策。然而外部乐观受阻（Sun逆位），环境弥漫失望（Five of Cups正位），近期合作可能不顺（Three of Cups逆位）。最终需要像Two of Pentacles正位一样灵活调整，平衡风险。",
+        "long_reading": "Celtic Cross十张牌阵揭示当前市场动能的内在张力。Strength正位代表虽处下跌但意志坚定，但Crossing的Sun逆位暗示短期乐观情绪被压制，外部利好信号缺失。Root Queen of Swords提示需理性分析而非情绪化交易。Past Seven of Pentacles表明此前耐心持仓但回报未兑现，引发焦虑。Goal Ace of Wands显示新趋势萌芽，但Near Future Three of Cups逆位预示阶段性合作或流动性事件受挫。You位置Six of Wands逆位反映市场信心受创、领导力遭质疑。Environment Five of Cups正位强化损失感，而Hopes & Fears High Priestess逆位表明隐藏信息或监管不确定性干扰判断。最终Outcome Two of Pentacles呼吁动态平衡仓位，灵活应对波动。综合而言，市场将在修正中寻求支撑，但反弹需等待明确催化剂。"
+      },
+      "symbols": [
+        "Strength",
+        "The Sun",
+        "Queen of Swords",
+        "Seven of Pentacles",
+        "Ace of Wands",
+        "Three of Cups",
+        "Six of Wands",
+        "Five of Cups"
+      ],
+      "risk_tags": [
+        "回撤持续",
+        "市场信心脆弱",
+        "合作破裂风险",
+        "信息不透明"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/HSI/tarot.json",
+      "error": null,
+      "result_en": {
+        "score": 1,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "caution",
+        "headline": "市场面临内外阻力，需以内在智慧与灵活应对",
+        "subline": "旧日投资回报未显，新机会与失望并存",
+        "short_reading": "当前恒生指数处于下跌趋势，但牌阵显示内在力量（Strength正位）与清断思考（Queen of Swords正位）将支撑决策。然而外部乐观受阻（Sun逆位），环境弥漫失望（Five of Cups正位），近期合作可能不顺（Three of Cups逆位）。最终需要像Two of Pentacles正位一样灵活调整，平衡风险。",
+        "long_reading": "Celtic Cross十张牌阵揭示当前市场动能的内在张力。Strength正位代表虽处下跌但意志坚定，但Crossing的Sun逆位暗示短期乐观情绪被压制，外部利好信号缺失。Root Queen of Swords提示需理性分析而非情绪化交易。Past Seven of Pentacles表明此前耐心持仓但回报未兑现，引发焦虑。Goal Ace of Wands显示新趋势萌芽，但Near Future Three of Cups逆位预示阶段性合作或流动性事件受挫。You位置Six of Wands逆位反映市场信心受创、领导力遭质疑。Environment Five of Cups正位强化损失感，而Hopes & Fears High Priestess逆位表明隐藏信息或监管不确定性干扰判断。最终Outcome Two of Pentacles呼吁动态平衡仓位，灵活应对波动。综合而言，市场将在修正中寻求支撑，但反弹需等待明确催化剂。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "HSI",
+        "name": "HSI",
+        "region": "HK",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "wenwang",
+        "name": "Wenwang Liuyao",
+        "display_name": "文王卦"
+      },
+      "result": {
+        "score": 45,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "transitional",
+        "headline": "市场承压，转机隐现",
+        "subline": "兄弟动克财，子孙动生财",
+        "short_reading": "当前恒指短期承压，兄弟爻动暗示抛压或竞争。但子孙爻动预示后续买盘或修复力量，中期有转机窗口。",
+        "long_reading": "本卦天火同人（上乾下离），变卦山火贲。动爻第四、五爻均老阳变阴。兄弟爻（第四爻旺动）克妻财用神，对应市场抛压或资金分流；子孙爻（第五爻旺动）生妻财，预示后续利多因素或技术修复。月支子水，日支亥水，妻财申金得生，但旬空巳午火削弱官鬼压力。整体多空交织，短期偏弱，但底部支撑渐显，建议观望至动爻能量释放完毕。"
+      },
+      "symbols": [
+        "Heaven over Fire",
+        "Mountain over Fire"
+      ],
+      "risk_tags": [
+        "波动风险",
+        "趋势弱势",
+        "流动性压力"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/HSI/wenwang.json",
+      "error": null,
+      "result_en": {
+        "score": 45,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "transitional",
+        "headline": "市场承压，转机隐现",
+        "subline": "兄弟动克财，子孙动生财",
+        "short_reading": "当前恒指短期承压，兄弟爻动暗示抛压或竞争。但子孙爻动预示后续买盘或修复力量，中期有转机窗口。",
+        "long_reading": "本卦天火同人（上乾下离），变卦山火贲。动爻第四、五爻均老阳变阴。兄弟爻（第四爻旺动）克妻财用神，对应市场抛压或资金分流；子孙爻（第五爻旺动）生妻财，预示后续利多因素或技术修复。月支子水，日支亥水，妻财申金得生，但旬空巳午火削弱官鬼压力。整体多空交织，短期偏弱，但底部支撑渐显，建议观望至动爻能量释放完毕。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "HSI",
+        "name": "HSI",
+        "region": "HK",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "bazi",
+        "name": "Zi Ping BaZi",
+        "display_name": "子平八字"
+      },
+      "result": {
+        "score": 65,
+        "polarity": "positive",
+        "intensity": "2",
+        "omen_type": "opportunity",
+        "headline": "金弱火炎，土护根基",
+        "subline": "恒指短期震荡，但大运土生金，中长线可期",
+        "short_reading": "辛金日主弱，火旺为忌，然大运己未土生金，如大地护金，虽有波动，根基稳固。",
+        "long_reading": "日主辛金生于午月，火势炎炎，金被克制，力量微弱。八字火旺（5火），水木亦多，金土偏少。身弱喜土金生扶。当前大运为己未（2021-2030），干支皆土，为强印星，能化火生金，为用神运。虽然短期市场因火旺压制（下跌趋势），但大运土力深厚，中长线有支撑，可视为布局机会。需注意火势过猛时仍有回调风险，但整体偏向机会。"
+      },
+      "symbols": [
+        "Metal",
+        "weak_day_master_pattern"
+      ],
+      "risk_tags": [
+        "波动风险",
+        "火旺压制"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/HSI/bazi.json",
+      "error": null,
+      "result_en": {
+        "score": 65,
+        "polarity": "positive",
+        "intensity": "2",
+        "omen_type": "opportunity",
+        "headline": "金弱火炎，土护根基",
+        "subline": "恒指短期震荡，但大运土生金，中长线可期",
+        "short_reading": "辛金日主弱，火旺为忌，然大运己未土生金，如大地护金，虽有波动，根基稳固。",
+        "long_reading": "日主辛金生于午月，火势炎炎，金被克制，力量微弱。八字火旺（5火），水木亦多，金土偏少。身弱喜土金生扶。当前大运为己未（2021-2030），干支皆土，为强印星，能化火生金，为用神运。虽然短期市场因火旺压制（下跌趋势），但大运土力深厚，中长线有支撑，可视为布局机会。需注意火势过猛时仍有回调风险，但整体偏向机会。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "HSI",
+        "name": "HSI",
+        "region": "HK",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "ziwei",
+        "name": "Ziwei Doushu",
+        "display_name": "紫微斗数"
+      },
+      "result": {
+        "score": 55,
+        "polarity": "中性",
+        "intensity": "中",
+        "omen_type": "平盤",
+        "headline": "紫微天府坐朋友宮，人際助力與競爭並存",
+        "subline": "流年健康宮化忌，需留意波動中的內在平衡",
+        "short_reading": "當前行運福德宮本命化權，主決策掌控力強，但流年健康宮廉貞天梁遇火星文曲化忌，易因急躁引發隱患。朋友宮紫微天府得祿存，貴人運佳，然七殺暗示合作中的競爭。財帛宮太陰化忌，投資需謹慎。",
+        "long_reading": "此盤以朋友宮為流年命宮，紫微天府雙帝星坐守，輔以祿存，顯示外部環境對指數有支撐，但七殺星帶來突變風險。身宮兄弟宮武曲巨門化科，市場情緒偏向謹慎溝通，但巨門暗藏誤判。健康宮廉貞天梁遇火星文曲，流化忌，提醒市場波動可能引發系統性壓力，尤其流時火星增強波動性。財帛宮太陰化忌，資金流動性面臨考驗。綜合來看，短期震盪偏弱，但紫府格局提供中期支撐，需關注政策或權重股變動。"
+      },
+      "symbols": [
+        "Taiyin",
+        "Friends"
+      ],
+      "risk_tags": [
+        "波動加劇",
+        "流動性風險",
+        "競爭壓力",
+        "政策變化"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/HSI/ziwei.json",
+      "error": null,
+      "result_en": {
+        "score": 55,
+        "polarity": "中性",
+        "intensity": "中",
+        "omen_type": "平盤",
+        "headline": "紫微天府坐朋友宮，人際助力與競爭並存",
+        "subline": "流年健康宮化忌，需留意波動中的內在平衡",
+        "short_reading": "當前行運福德宮本命化權，主決策掌控力強，但流年健康宮廉貞天梁遇火星文曲化忌，易因急躁引發隱患。朋友宮紫微天府得祿存，貴人運佳，然七殺暗示合作中的競爭。財帛宮太陰化忌，投資需謹慎。",
+        "long_reading": "此盤以朋友宮為流年命宮，紫微天府雙帝星坐守，輔以祿存，顯示外部環境對指數有支撐，但七殺星帶來突變風險。身宮兄弟宮武曲巨門化科，市場情緒偏向謹慎溝通，但巨門暗藏誤判。健康宮廉貞天梁遇火星文曲，流化忌，提醒市場波動可能引發系統性壓力，尤其流時火星增強波動性。財帛宮太陰化忌，資金流動性面臨考驗。綜合來看，短期震盪偏弱，但紫府格局提供中期支撐，需關注政策或權重股變動。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "HSI",
+        "name": "HSI",
+        "region": "HK",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "astrology",
+        "name": "Astrology Cycle",
+        "display_name": "占星"
+      },
+      "result": {
+        "score": 38,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "warning",
+        "headline": "恒生指数进入天秤座满月周期，熊市迹象显现",
+        "subline": "当前跌势与积累阶段并存，需警惕进一步下行风险",
+        "short_reading": "恒生指数在天蝎座资产下，摩羯座季节与满月相位形成压力，短期动量向下，下跌趋势明显，但波动率正常，暗示调整而非崩盘。",
+        "long_reading": "基于星象引擎，恒生指数作为天蝎座资产，当前处于摩羯座季节（土象奠基）与满月相位（情绪高潮），叠加下跌动量与物质回撤标签。市场正在经历积累周期中的价格压缩，但21日与63日负回报表明卖方主导。满月通常放大波动与清算，而摩羯座季节强化结构性压力。建议观望，等待明确底部信号。"
+      },
+      "symbols": [
+        "Scorpio",
+        "full"
+      ],
+      "risk_tags": [
+        "fallen_angel",
+        "mean_reversion",
+        "selling_climax"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/HSI/astrology.json",
+      "error": null,
+      "result_en": {
+        "score": 38,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "warning",
+        "headline": "恒生指数进入天秤座满月周期，熊市迹象显现",
+        "subline": "当前跌势与积累阶段并存，需警惕进一步下行风险",
+        "short_reading": "恒生指数在天蝎座资产下，摩羯座季节与满月相位形成压力，短期动量向下，下跌趋势明显，但波动率正常，暗示调整而非崩盘。",
+        "long_reading": "基于星象引擎，恒生指数作为天蝎座资产，当前处于摩羯座季节（土象奠基）与满月相位（情绪高潮），叠加下跌动量与物质回撤标签。市场正在经历积累周期中的价格压缩，但21日与63日负回报表明卖方主导。满月通常放大波动与清算，而摩羯座季节强化结构性压力。建议观望，等待明确底部信号。"
+      }
+    },
+    {
+      "schema_version": "0.1",
+      "asset": {
+        "ticker": "HSI",
+        "name": "HSI",
+        "region": "HK",
+        "asset_class": "INDEX"
+      },
+      "period": {
+        "id": "2026-05-17-1942",
+        "label": "2026-05-17 19:42 UTC",
+        "freq": "T"
+      },
+      "engine": {
+        "id": "market_pulse",
+        "name": "Market Pulse",
+        "display_name": "市场脉冲"
+      },
+      "result": {
+        "score": 40,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "caution",
+        "headline": "恒指动能下滑，回撤幅度显现",
+        "subline": "波动率正常，市场情绪偏谨慎",
+        "short_reading": "近期恒指持续下跌，短期动能转弱，但波动率尚在正常范围内。投资者需关注关键支撑位。",
+        "long_reading": "根据市场脉冲数据，恒指过去21日回报-5.4%，63日回报-3.3%，动量标签为‘下跌’。波动率处于正常水平（21.5%），但252日最大回撤已达-10.8%，标签为‘显著’。这表明市场虽未出现恐慌性波动，但下行趋势已造成可观回撤，需警惕进一步下滑风险。建议关注技术支撑与宏观催化因素。"
+      },
+      "symbols": [
+        "📉",
+        "⚠️"
+      ],
+      "risk_tags": [
+        "drawdown",
+        "momentum_falling"
+      ],
+      "visual": {},
+      "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/HSI/market_pulse.json",
+      "error": null,
+      "result_en": {
+        "score": 40,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "caution",
+        "headline": "恒指动能下滑，回撤幅度显现",
+        "subline": "波动率正常，市场情绪偏谨慎",
+        "short_reading": "近期恒指持续下跌，短期动能转弱，但波动率尚在正常范围内。投资者需关注关键支撑位。",
+        "long_reading": "根据市场脉冲数据，恒指过去21日回报-5.4%，63日回报-3.3%，动量标签为‘下跌’。波动率处于正常水平（21.5%），但252日最大回撤已达-10.8%，标签为‘显著’。这表明市场虽未出现恐慌性波动，但下行趋势已造成可观回撤，需警惕进一步下滑风险。建议关注技术支撑与宏观催化因素。"
+      }
+    }
+  ],
+  "run_id": "11d7e8e58760"
+}

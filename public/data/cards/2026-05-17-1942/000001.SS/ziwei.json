@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "000001.SS",
+    "name": "000001.SS",
+    "region": "CN",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "ziwei",
+    "name": "Ziwei Doushu",
+    "display_name": "紫微斗数"
+  },
+  "result": {
+    "score": 72,
+    "polarity": "positive",
+    "intensity": "medium",
+    "omen_type": "transition",
+    "headline": "武曲文昌智光耀，紫府七杀征远行",
+    "subline": "迁移化禄显机遇，财帛化忌须审慎",
+    "short_reading": "命宫武曲巨门文昌化科，智慧沟通优势明显；迁移宫紫微天府七杀化禄，远行发展有利。但财帛宫廉贞天梁逢大限化忌，财务需防波折。",
+    "long_reading": "盘面以迁移宫为核心，紫微天府七杀坐守，禄存同宫，又逢流年与本命双化禄，外出发展、跨界合作、国际事务大吉。命宫武曲巨门文昌化科，代表理性分析、专业技术与良好表达，可借助文书、沟通、法律或学术路径成功。官禄宫天机太阴破军，左辅铃星，事业创新多变，需把握转型机遇。财帛宫廉贞天梁大限化忌，股票指数相关资产可能有短期波动或回撤，不宜追高。整体看，长线布局有利，尤其关注科技、金融、地产等领域。健康宫文曲，需注意消化系统。福德宫太阳贪狼化权，乐观进取但防过度冲动。"
+  },
+  "symbols": [
+    "Tianfu",
+    "Travel"
+  ],
+  "risk_tags": [
+    "财帛化忌",
+    "巨门口舌",
+    "贪狼化权冲动",
+    "财务波动"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000001.SS/ziwei.json",
+  "error": null,
+  "result_en": {
+    "score": 72,
+    "polarity": "positive",
+    "intensity": "medium",
+    "omen_type": "transition",
+    "headline": "Wuqu Wenchang Zhi Guangyao, Zifu Seven Killing Expedites",
+    "subline": "Migration shows opportunities, wealth and silks should be cautious.",
+    "short_reading": "The martial arts giant gate of the life palace, Wenchang, has obvious advantages in wisdom and communication. Moving to the palace, Ziwei, Tianfu, seven kills Hualu, is beneficial to the development of long-distance travel. However, the wealth and silk palace is cheap and the sky beam is too limited to avoid, and the finance needs to prevent twists and turns.",
+    "long_reading": "The disk is centered on the relocation of the palace. Ziwei Tianfu is guarded by seven killings, and Lu is saved in the same palace. It is also a double fortune for the current year and the original life. It goes out for development, cross-border cooperation and international affairs. The Wenchang Chemical Department, which represents rational analysis, professional skills and good expression, can be successful with the help of documents, communication, law or academic paths. Guan Lu Gong Tianji Taiyin Broken Army, Zuo Fu Ling Xing, career innovation and changeable, need to grasp the opportunity of transformation. Wealth palace Lian Zhen Tianliang big limit taboo, stock index-related assets may have short-term fluctuations or withdrawal, should not chase high. Overall, the long-term layout is favorable, with particular attention to science and technology, finance, real estate and other fields. Health palace Wenqu, need to pay attention to the digestive system. The Ford Palace sun is greedy for wolf power, optimistic and enterprising but prevents excessive impulse."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "DJI",
+    "name": "DJI",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "wenwang",
+    "name": "Wenwang Liuyao",
+    "display_name": "文王卦"
+  },
+  "result": {
+    "score": 30,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "warning",
+    "headline": "山泽损化夬，承压待变",
+    "subline": "市场延续下行，关注风险释放",
+    "short_reading": "损卦示现当前承压下行，动爻初、二官鬼与自身位，外部压力与内部调整并行。变卦夬，终将决断方向，但短期弱势未改。",
+    "long_reading": "主卦山泽损，上兑下艮，山上有泽，有损下益上之象，对应市场资金流出或利润压缩。动爻在初、二：初爻官鬼辰土动，代表外部监管或利空因素扰动；二爻自身巳火动，但旬空（巳午空），自身信心不足或动能缺失。财星酉金在六爻应位，虽得日建申金相合，但合而不化，财气被牵制。变卦泽天夬，上兑下乾，泽在天上，有决断、打破僵局之意，暗示后续可能加速赶底或出现关键转折。当前标签strong_downtrend与卦象吻合，整体宜观望或减仓，等待夬卦的明确信号。"
+  },
+  "symbols": [
+    "Lake over Mountain",
+    "Lake over Heaven"
+  ],
+  "risk_tags": [
+    "下行风险",
+    "政策扰动",
+    "动能不足"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/DJI/wenwang.json",
+  "error": null,
+  "result_en": {
+    "score": 30,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "warning",
+    "headline": "Yamazawa damaged block, pressure bearing to be changed",
+    "subline": "Market Continues Downturn, Focus on Risk Release",
+    "short_reading": "The loss of the hexagram shows the current pressure downward, moving the beginning, 2 the official ghost and its own position, external pressure and internal adjustment in parallel. The change will eventually decide the direction, but the short-term weakness has not changed.",
+    "long_reading": "The main gua mountain ze loss, up against the next gen, the mountain has ze, damage to the next benefit on the image, corresponding to the market capital outflow or profit compression. Moving the line at the beginning and 2: the first line official ghost Chen earth movement, on behalf of external supervision or negative factors disturbance; Two lines themselves have been on fire, but ten days empty (afternoon empty), their own confidence is insufficient or lack of kinetic energy. The financial star Youjin should be in the position of Liuyao. Although it is necessary to build and apply gold on the day, it is not combined, and wealth is restrained. The change of divination and Ze Tianyuan, up and down, Ze in the sky, has the meaning of decision-making and breaking the deadlock, suggesting that the follow-up may accelerate the bottom or a key turning point. The current label strong_downtrend is consistent with the divination, so it is advisable to wait and see or reduce the position as a whole, waiting for a clear signal from the divination."
+  }
+}

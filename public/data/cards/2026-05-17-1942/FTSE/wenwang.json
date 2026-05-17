@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "FTSE",
+    "name": "FTSE",
+    "region": "UK",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "wenwang",
+    "name": "Wenwang Liuyao",
+    "display_name": "文王卦"
+  },
+  "result": {
+    "score": 40,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "warning",
+    "headline": "坎险入涣散，财爻动而难聚",
+    "subline": "FTSE短期波动加剧，注意风险管控",
+    "short_reading": "本卦坎为水，双坎重叠如临深渊，险阻重重。动爻上六财爻化巽为风，风行水上成涣卦，有散财之象。财爻虽动，但处高位且变卦涣散，力量难以凝聚，预示市场短期或有资金外流、波动加剧的风险。建议投资者保持谨慎，勿盲目追涨，以防御性策略为主。",
+    "long_reading": "此卦得于FTSE 2026年5月17日19:42 UTC。本卦坎为水，上下皆坎，代表连续险境，如涉大川而无舟楫。动爻唯一在第六爻（应爻、财富爻），从阴变阳，使卦变为风水涣。涣卦象曰：风行水上，涣散离析。动爻辞曰：上六，涣其血，去逖出，无咎。此爻居极位，以阴变阳，有脱离险境、远走高飞之机，但亦暗示需主动避开危险才能无咎。结合市场背景，FTSE近21日跌幅8.1%，动量混合，波动正常，回撤不深。卦象显示当前虽处低位，但变卦涣散表明后续资金可能继续外逃，反弹难以持续。财富爻动本为利好，但涣卦如风吹水，财来财去，难以锁定利润。从六亲看，财富爻对应市场价格，动而受月建子水（坎）相合，日辰未土（父母）克制，力量受制。六神青龙主吉庆，但动爻化出巽风，青龙乘风而去，吉庆不驻。风险标签强调波动与流动性，建议投资者严格控制仓位，等待市场明确信号再行入场。"
+  },
+  "symbols": [
+    "Water over Water",
+    "Wind over Water"
+  ],
+  "risk_tags": [
+    "波动风险",
+    "流动性风险"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/FTSE/wenwang.json",
+  "error": null,
+  "result_en": {
+    "score": 40,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "warning",
+    "headline": "The hurdles are dangerous and the money is moving and difficult to gather.",
+    "subline": "FTSE short-term volatility intensifies, pay attention to risk management",
+    "short_reading": "This hexagram ridge is water, and the double ridge overlaps like an abyss, with many dangers. Moving hexagram on the six financial hexagram into the wind, popular water into Huan Gua, there is the image of scattered wealth. Although the money is moving, but in a high position and change, the power is difficult to gather, indicating that the market short-term or capital outflow, the risk of increased volatility. Investors are advised to remain cautious, do not blindly chase the rise, and focus on defensive strategies.",
+    "long_reading": "This hexagram was obtained on FTSE 17 May 2026 at 19:42 UTC. This hexagram is water, up and down all sides, representing continuous danger, such as wading a great river without a boat. The only moving hexagram is in the sixth hexagram (yingyao and fortune hexagram), which changes from yin to yang and changes the hexagram to feng shui. Huan divination said: popular water, lax segregation. The moving line said: on the 6th, the blood will be removed, and there will be no blame. This line is in the extreme position, changing from yin to yang, and has the opportunity to get out of danger and fly away, but it also implies that you need to actively avoid danger in order to be free from blame. Combined with the market background, the FTSE is down 8.1 in the last 21 days, with mixed momentum, normal volatility and a not deep pullback. Diagrams show that although the current low, but the change of divination shows that the follow-up funds may continue to flee, the rebound is difficult to sustain. Wealth is originally good, but Huan Gua is like wind blowing water, money to money, it is difficult to lock in profits. From the perspective of the six relatives, wealth corresponds to the market price, which is subject to the combination of the moon and the water (ridge), the sun and the earth (parents) are restrained and the strength is constrained. Six gods Qinglong Lord auspicious celebration, but moving hexagram out of the wind, Qinglong ride the wind, auspicious celebration does not stay. The risk label emphasizes volatility and liquidity, and investors are advised to strictly control their positions and wait for a clear signal from the market before entering."
+  }
+}

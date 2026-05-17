@@ -27,7 +27,7 @@ from .constants import (
     RUN_ID_LENGTH,
     SCHEMA_VERSION,
 )
-from .core import parse_period, scrub_secrets, utc_now_iso
+from .core import now_period, parse_period, scrub_secrets, utc_now_iso
 from .data import DataProcessing
 from .display import build_composite
 from .exports import export_bundle, export_card, export_debug_bundle, export_debug_card, export_index, export_manifest, public_card_path

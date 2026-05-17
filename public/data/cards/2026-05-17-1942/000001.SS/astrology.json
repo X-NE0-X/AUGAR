@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "000001.SS",
+    "name": "000001.SS",
+    "region": "CN",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "astrology",
+    "name": "Astrology Cycle",
+    "display_name": "占星"
+  },
+  "result": {
+    "score": 58,
+    "polarity": "neutral",
+    "intensity": "2",
+    "omen_type": "accumulation",
+    "headline": "摩羯座的基调：积累中的稳定",
+    "subline": "渐盈月相暗示缓慢上行",
+    "short_reading": "当前星象指向积累周期，市场情绪中性偏稳。",
+    "long_reading": "根据2026年5月17日19:42 UTC的星盘，上证指数处于摩羯座周期与渐盈月相的双重影响下。市场短期动能混合，但长期趋势尚未逆转。波动率正常，回撤浅，表明市场处于有序调整后的积累阶段。摩羯座的土象能量赋予坚韧特质，渐盈月相则支持逐步回暖。建议保持耐心，关注低吸机会，但避免追高。"
+  },
+  "symbols": [
+    "Capricorn",
+    "waxing"
+  ],
+  "risk_tags": [
+    "波动率正常",
+    "浅回撤",
+    "积累期"
+  ],
+  "visual": {
+    "primary_color": "#4A90D9",
+    "shape": "circle",
+    "symbol": "上升阶梯",
+    "animation": "pulse slow"
+  },
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/000001.SS/astrology.json",
+  "error": null,
+  "result_en": {
+    "score": 58,
+    "polarity": "neutral",
+    "intensity": "2",
+    "omen_type": "accumulation",
+    "headline": "Tone of Capricorn: stability in accumulation",
+    "subline": "The gradual moon suggests a slow upward trend.",
+    "short_reading": "The current star is pointing to the accumulation cycle, and market sentiment is neutral and stable.",
+    "long_reading": "According to the chart at 19:42 UTC on May 17, 2026, the Shanghai Composite Index is under the dual influence of the Capricorn cycle and the gradual moon phase. The short-term momentum of the market is mixed, but the long-term trend has not yet reversed. The volatility is normal and the drawdown is shallow, indicating that the market is in an orderly adjustment and accumulation phase. Capricorn&#39;s earth elephant energy gives tenacity, while the moon phase supports gradual warming. It is recommended to be patient and focus on low suction opportunities, but avoid chasing high."
+  }
+}

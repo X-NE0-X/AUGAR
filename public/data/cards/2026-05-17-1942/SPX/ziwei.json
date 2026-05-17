@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "SPX",
+    "name": "SPX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "ziwei",
+    "name": "Ziwei Doushu",
+    "display_name": "紫微斗数"
+  },
+  "result": {
+    "score": 65,
+    "polarity": "mixed_positive",
+    "intensity": "high",
+    "omen_type": "wave_opportunity",
+    "headline": "紫府七杀化禄坐迁移，波动中暗藏转机",
+    "subline": "财帛宫流年化忌逢火星，预警短期剧烈震荡",
+    "short_reading": "命盘迁移宫紫微、天府、七杀汇聚，又逢本命化禄，预示外部环境或指数有强力扩张动能。但财帛宫廉贞天梁遇火星、流年化忌，形成破财与失控信号，需警惕急速回调风险。三合方联动，整体格局为大波动下的机遇窗口。",
+    "long_reading": "本命盘以迁移宫（Travel）为枢纽，紫微帝星、天府库星与七杀将星同宫，构建出领袖气质与变革势能。本命化禄进一步强化此宫，显示当前周期（2026年5月17日附近）SPX指数可能面临重大外力推动，如政策转向或资本集中流入。然而财帛宫（Wealth）廉贞天梁属桃花＋清贵组合，遇火星化忌（流年），警示短期过热后的资金撤离或非理性抛售。官禄宫（Career）天机太阴破军，机变与动荡交融，暗示市场情绪极易反转。福德宫（Fortune）太阳贪狼化权（流年），主力资金或有强力控盘意图，但贪狼的投机性与天魁的贵人效应叠加，可能形成快速拉升后派发。命宫本身（Life）武曲巨门化科，理性分析与沟通发挥关键作用。整体而言，这是一段高波动周期，方向取决于外力引爆点；长线看迁移宫吉化仍有支撑，但财帛宫的凶象迫使短线交易者必须严控风险。建议采用趋势跟随策略，等待明确突破信号。"
+  },
+  "symbols": [
+    "Tianfu",
+    "Travel"
+  ],
+  "risk_tags": [
+    "剧烈波动",
+    "资金流出",
+    "短期回调",
+    "政策冲击"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/SPX/ziwei.json",
+  "error": null,
+  "result_en": {
+    "score": 65,
+    "polarity": "mixed_positive",
+    "intensity": "high",
+    "omen_type": "wave_opportunity",
+    "headline": "Zifu seven kill, Lu sit migration, fluctuations hidden in the turnaround",
+    "subline": "The annualization of the palace of wealth and silk is not on Mars, warning of short-term violent shocks.",
+    "short_reading": "The fate of the migration of the palace purple micro, Tianfu, seven kill convergence, and the local fate of the Lu, indicating that the external environment or index has a strong expansion of momentum. But the wealth palace lianzhen Tianliang encountered Mars, the flow of years of taboo, the formation of broken money and out of control signal, need to be alert to the risk of rapid correction. Three-party linkage, the overall pattern is a window of opportunity under large fluctuations.",
+    "long_reading": "This natal plate takes the Migration Palace (Travel) as the hub, and Ziwei Emperor Star, Tianfu Ku Star and Seven Killing General Star share the same palace, building a leadership temperament and transformational potential. This house is further strengthened, indicating that the SPX index in the current cycle (near May 17, 2026) may face a significant external push, such as a policy shift or concentrated capital inflows. However, the wealth palace (Wealth) Lian Zhen Tianliang belongs to the peach blossom + noble combination, in case of Mars taboo (time), warning of short-term overheating after the withdrawal of funds or irrational selling. Guan Lu Gong (Career) sky is too overcast to break the army, machine change and turbulence blend, suggesting that market sentiment is very easy to reverse. Ford Palace (Fortune) Sun greedy wolf power (time), the main funds or a strong control of the intention, but the speculative nature of the greedy wolf and Tiankui&#39;s noble effect superimposed, may form a rapid pull up after the distribution. Life Palace itself (Life) Wuqu giant discipline, rational analysis and communication play a key role. On the whole, this is a period of high volatility cycle, the direction depends on the external force tipping point, the long-term view of the migration of the palace of Jihua still has support, but the financial palace of the fierce phenomenon forced short-term traders must strictly control the risk. It is recommended to adopt a trend following strategy and wait for a clear breakout signal."
+  }
+}

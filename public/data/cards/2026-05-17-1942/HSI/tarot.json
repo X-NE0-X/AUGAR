@@ -1,0 +1,58 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "HSI",
+    "name": "HSI",
+    "region": "HK",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "tarot",
+    "name": "Tarot Celtic Cross",
+    "display_name": "塔罗"
+  },
+  "result": {
+    "score": 1,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "caution",
+    "headline": "市场面临内外阻力，需以内在智慧与灵活应对",
+    "subline": "旧日投资回报未显，新机会与失望并存",
+    "short_reading": "当前恒生指数处于下跌趋势，但牌阵显示内在力量（Strength正位）与清断思考（Queen of Swords正位）将支撑决策。然而外部乐观受阻（Sun逆位），环境弥漫失望（Five of Cups正位），近期合作可能不顺（Three of Cups逆位）。最终需要像Two of Pentacles正位一样灵活调整，平衡风险。",
+    "long_reading": "Celtic Cross十张牌阵揭示当前市场动能的内在张力。Strength正位代表虽处下跌但意志坚定，但Crossing的Sun逆位暗示短期乐观情绪被压制，外部利好信号缺失。Root Queen of Swords提示需理性分析而非情绪化交易。Past Seven of Pentacles表明此前耐心持仓但回报未兑现，引发焦虑。Goal Ace of Wands显示新趋势萌芽，但Near Future Three of Cups逆位预示阶段性合作或流动性事件受挫。You位置Six of Wands逆位反映市场信心受创、领导力遭质疑。Environment Five of Cups正位强化损失感，而Hopes & Fears High Priestess逆位表明隐藏信息或监管不确定性干扰判断。最终Outcome Two of Pentacles呼吁动态平衡仓位，灵活应对波动。综合而言，市场将在修正中寻求支撑，但反弹需等待明确催化剂。"
+  },
+  "symbols": [
+    "Strength",
+    "The Sun",
+    "Queen of Swords",
+    "Seven of Pentacles",
+    "Ace of Wands",
+    "Three of Cups",
+    "Six of Wands",
+    "Five of Cups"
+  ],
+  "risk_tags": [
+    "回撤持续",
+    "市场信心脆弱",
+    "合作破裂风险",
+    "信息不透明"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/HSI/tarot.json",
+  "error": null,
+  "result_en": {
+    "score": 1,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "caution",
+    "headline": "The market faces internal and external resistance and needs to respond with internal wisdom and flexibility.",
+    "subline": "Old investment returns not apparent, new opportunities and disappointments coexist.",
+    "short_reading": "The Hang Seng Index is currently in a downtrend, but the card array shows that internal strength (Strength positive position) and clear thinking (Queen of Swords positive position) will support the decision. However, external optimism is blocked (Sun inverse position), the environment is filled with disappointment (Five of Cups positive position), and the near-term cooperation may not go well (Three of Cups inverse position). Ultimately, it needs to be as flexible as the Two of Pentacles positive position to balance the risks.",
+    "long_reading": "Celtic Cross ten card array reveals the inherent tension of the current market momentum. Strength the positive representative is down but firm, but the Crossing Sun inverse suggests that short-term optimism is suppressed and external positive signals are missing. Root Queen of Swords suggests rational analysis rather than emotional trading. The Past Seven of Pentacles shows that previously patiently held positions but the returns have not materialized, causing anxiety. Goal Ace of Wands shows the emergence of a new trend, but the reversal of the Near Future Three of Cups indicates a setback in phase cooperation or liquidity events. The reversal of You position Six of Wands reflects the damage to market confidence and the questioning of leadership. Environment Five of Cups positive bits reinforce loss perception, while Hopes & Fears High Priestess inverse bits indicate hidden information or regulatory uncertainty that interferes with judgments. The final Outcome Two of Pentacles calls for dynamic balancing of positions and flexibility to respond to volatility. On balance, the market will seek support in the correction, but the rebound needs to wait for a clear catalyst."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "NDX",
+    "name": "NDX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "wenwang",
+    "name": "Wenwang Liuyao",
+    "display_name": "文王卦"
+  },
+  "result": {
+    "score": 2,
+    "polarity": "positive",
+    "intensity": "5",
+    "omen_type": "shift",
+    "headline": "比合萃聚，动荡中见转机",
+    "subline": "亲比之象，人心思稳；聚集之兆，物极必反",
+    "short_reading": "当前市场虽处下跌趋势，但比卦象征低位承接与团结，变卦萃则预示资金重新聚集。动爻四爻兄弟为阻，然九四大吉，暗示短期震荡后有望企稳。",
+    "long_reading": "本卦水地比，上坎下坤，水附大地，亲比相依。变卦泽地萃，上兑下坤，湖泽汇聚于地。卦象显示尽管NDX处于strong_downtrend，但市场情绪正在酝酿转变。动爻第四爻（六四变九四）对应萃卦九四“大吉无咎”，兄弟爻（未土）发动虽克财爻（酉金），但日辰辰土助财，月建子水与财爻酉金半合，暗示下行空间有限，主力资金或逐步布局。应爻财临勾陈，主缓慢积累。短期需注意兄弟爻带来的资金分流或博弈加剧，但整体趋势偏向筑底转稳。"
+  },
+  "symbols": [
+    "Water over Earth",
+    "Lake over Earth"
+  ],
+  "risk_tags": [
+    "短期波动",
+    "资金博弈",
+    "趋势反转风险"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/NDX/wenwang.json",
+  "error": null,
+  "result_en": {
+    "score": 2,
+    "polarity": "positive",
+    "intensity": "5",
+    "omen_type": "shift",
+    "headline": "Bihe extraction, turbulence sees a turnaround",
+    "subline": "The image of the pro-comparison, the person&#39;s mind is stable; the sign of gathering, the extreme will reverse",
+    "short_reading": "Although the current market is in a downward trend, but than the hexagram symbolizes the low to undertake and unity, the change of the divination heralds the re-gathering of funds. Move the 4 of the line brothers for the resistance, but the 94 good, suggesting that short-term shocks are expected to stabilize.",
+    "long_reading": "This hexagram is more than water and land, upper kan and lower kun, water is attached to the earth, and relatives are more dependent than each other. The change of hexagrams and the extraction of land, the exchange of upper and lower Kun, and the convergence of Huze to the ground. Diagrams show that despite the NDX in the strong_downtrend, but the market sentiment is brewing change. The fourth hexagram of the moving hexagram (June 4 to September 4) corresponds to the &quot;good fortune without blame&quot; of the extraction hexagram of September 4. Although the brother hexagram (not earth) launches the fortune hexagram (unitary gold), the earth in the morning will help the fortune, and the moon will build the water and the fortune hexagram and unitary gold, implying that the downward space is limited and the main capital may be gradually laid out. Ying Yao Cai Lin Gou Chen, the Lord slowly accumulated. In the short term, we need to pay attention to the diversion of funds or the intensification of the game brought about by the brothers, but the overall trend tends to bottom out and stabilize."
+  }
+}

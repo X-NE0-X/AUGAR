@@ -25,7 +25,7 @@ def main(argv: list[str] | None = None) -> None:
         description="Generate AUGAR oracle cards.",
     )
     parser.add_argument("--config", help="Optional JSON config file. CLI flags override config values.")
-    parser.add_argument("--period", required=False)
+    parser.add_argument("--period", required=False, help="Period identifier (YYYY-MM-DD-HHMM or YYYY-MM-FREQ). Default: current UTC timestamp.")
     parser.add_argument("--all-indexes", action="store_true")
     parser.add_argument("--symbols", default="")
     parser.add_argument("--engines")
@@ -56,9 +56,10 @@ def main(argv: list[str] | None = None) -> None:
     config = {}
     if args.config:
         config = json.loads(Path(args.config).read_text(encoding="utf-8"))
-    period = args.period or config.get("period")
+    period = args.period or config.get("period") or None
     if not period:
-        parser.error("--period is required unless provided by --config")
+        from .core import now_period
+        period = now_period().id
 
     symbols = None if args.all_indexes or not (args.symbols or config.get("symbols")) else [
         s.strip().upper() for s in str(args.symbols or ",".join(config.get("symbols", []))).split(",") if s.strip()

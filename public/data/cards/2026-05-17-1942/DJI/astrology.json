@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "DJI",
+    "name": "DJI",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-17-1942",
+    "label": "2026-05-17 19:42 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "astrology",
+    "name": "Astrology Cycle",
+    "display_name": "占星"
+  },
+  "result": {
+    "score": 45,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "transition",
+    "headline": "射手座资产在摩羯季节中迎来新月转折",
+    "subline": "DJI深度回调与积累信号并存",
+    "short_reading": "新月开启新周期，但强下降趋势未消，市场处于筑底积累阶段。",
+    "long_reading": "当前新月相位象征播种与开端，射手座资产（DJI所属黄道）处于摩羯座季节，土象能量压制扩张。市场处于strong_downtrend但波动正常，回撤已至material级别，结合accumulation_cycle标签，暗示主力资金正在低位吸纳。中长期可关注支撑确认，短期仍需警惕下行惯性。"
+  },
+  "symbols": [
+    "Sagittarius",
+    "new"
+  ],
+  "risk_tags": [
+    "下降趋势",
+    "回撤风险",
+    "正常波动"
+  ],
+  "visual": {},
+  "raw_ref": "runs/11d7e8e58760/debug/cards/2026-05-17-1942/DJI/astrology.json",
+  "error": null,
+  "result_en": {
+    "score": 45,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "transition",
+    "headline": "Sagittarius asset ushers in new moon turn in Capricorn season",
+    "subline": "DJI Deep Callback Coexists with Accumulated Signals",
+    "short_reading": "The new moon opens a new cycle, but the strong downward trend has not disappeared, and the market is in the bottoming accumulation stage.",
+    "long_reading": "The current new moon phase symbolizes sowing and beginning, Sagittarius assets (DJI&#39;s ecliptic) are in Capricorn season, and the earth elephant energy is suppressing expansion. The market is strong_downtrend but volatile, and the pullback has reached a material level, combined with the accumulation_cycle label, suggesting that the main funds are being absorbed at a low level. Medium-and long-term can focus on support confirmation, short-term still need to be alert to the downside inertia."
+  }
+}

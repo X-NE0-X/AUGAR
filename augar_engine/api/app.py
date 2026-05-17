@@ -92,6 +92,17 @@ def health_codex() -> dict:
         return {"available": True, "logged_in": result.returncode == 0, "path": path}
     except Exception as e:
         return {"available": False, "reason": str(e)}
+@app.get("/periods")
+def list_periods() -> dict:
+    """Return available periods from public/data/cards/."""
+    cards_dir = Path(DEFAULT_OUTPUT_ROOT) / "cards"
+    periods: list[str] = []
+    if cards_dir.is_dir():
+        for entry in sorted(cards_dir.iterdir(), reverse=True):
+            if entry.is_dir():
+                periods.append(entry.name)
+    return {"periods": periods}
+
 @app.get("/health")
 def health() -> dict:
     data = DataProcessing()
