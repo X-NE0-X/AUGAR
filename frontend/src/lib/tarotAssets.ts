@@ -79,6 +79,7 @@ const KNOWN_TAROT_SLUGS = new Set([
   'king-of-pentacles',
 ])
 
+
 export const normalizeTarotName = (value: string): string => {
   return String(value)
     .split(':')[0]
@@ -92,5 +93,7 @@ export const normalizeTarotName = (value: string): string => {
 
 export const getTarotImage = (value: string): string | null => {
   const slug = normalizeTarotName(value)
-  return KNOWN_TAROT_SLUGS.has(slug) ? `/tarots/${slug}.png` : null
+  return KNOWN_TAROT_SLUGS.has(slug)
+    ? `${import.meta.env.BASE_URL}tarots/${slug}.png`
+    : null
 }

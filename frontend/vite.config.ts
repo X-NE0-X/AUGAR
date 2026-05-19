@@ -1,9 +1,16 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+declare const process: {
+  env: Record<string, string | undefined>
+}
+
+const isGitHubPages = process.env.GITHUB_PAGES === 'true'
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: isGitHubPages ? '/AUGAR/' : '/',
   publicDir: '../public',
   server: {
     port: 3000,

@@ -2,17 +2,18 @@
 **Ask Universe, Get A Reading.**
 
 
-## 五维玄学市场预测框架 | The 5-Dimension Divination Market Forecasting Framework
+## 六维玄学市场预测框架 | The 5-Dimension Divination Market Forecasting Framework
 
 ***“当你在K线里找不到答案，也许答案写在星星里。”***
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
-[![Build Status](https://img.shields.io/badge/准确率-看缘分-brightgreen)]()
+[![Build Status](https://img.shields.io/badge/准确率-看缘分-red)]()
 [![Coverage](https://img.shields.io/badge/玄学覆盖率-500%25-purple)]()
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)]()
 
 
 ## 🤔 这是什么
-
 **AUGAR** 是一个基于五行八字、六爻八卦、紫微斗数、古典占星、塔罗牌，加上量化市场脉冲的市场周期解读系统。
 
 它 **不保证** 帮你赚钱。它也不保证比猩猩掷飞镖更准。
@@ -23,13 +24,12 @@
 
 
 ## 🧠 六维引擎架构
-
 | 维度 | 玄学体系 | 市场职责 | 核心逻辑 |
 |------|----------|----------|----------|
 | **🔴 八字** | 四柱命理 | 宏观大势基调 | `日主` × `十神` × `五行行业映射` |
 | **🟣 紫微** | 斗数飞星 | 月度情绪与资金流向 | `流月四化` × `12宫位资金池` |
 | **🟢 八卦** | 六爻纳甲 | 短线拐点与日内波动 | `价格`/`时间起卦` → `六亲持世` → `涨跌爻辞` |
-| **🔵 占星** | 古典占星 | 全球性风险事件 | `外行星相位` → `入庙擢升/落陷受克` |
+| **🔵 占星** | 古典占星 | 全球性风险事件 | `外行星相位` → `入庙擢升`/`落陷受克` |
 | **🟡 塔罗** | 伟特体系 | 周期叙事与情绪 | `Celtic Cross 十张牌` → `正逆位解读` |
 | **⚪ 市场脉冲** | 量化指标 | 现实派校验 | `动量`·`波动`·`回撤` → `三脉合参` |
 
@@ -51,7 +51,6 @@ LLM 以中文 prompt 生成中文解读，后端通过 `translators` 库（Googl
 
 
 ## 🚀 快速开始
-
 ```bash
 git clone https://github.com/X-NE0-X/AUGAR.git
 cd AUGAR
@@ -75,8 +74,7 @@ augar --help
 **环境变量**：复制 `.env.example` → `.env`，填入 `DEEPSEEK_API_KEY` 或 `OPENAI_API_KEY`。`augar` 命令启动时自动加载。
 
 
-## 🏗 实际架构
-
+## 🏗️ 实际架构
 ```
 CLI (augar generate / serve)         Web Frontend (React + Vite)
             │                                    │
@@ -101,7 +99,6 @@ LLM 只负责 **解读**（`interpreter.py`），输出标准化 OracleCard JSON
 
 
 ## 📦 项目结构
-
 ```
 AUGAR/
   augar_engine/           ← Python 包
@@ -127,7 +124,6 @@ AUGAR/
 
 
 ## 📄 标准输出格式
-
 每个引擎输出同一 JSON 结构，前端不做模型分歧处理：
 
 ```json
@@ -150,7 +146,6 @@ AUGAR/
 
 
 ## 🔌 支持的 LLM Provider
-
 | Provider | 认证 | 备注 |
 |----------|------|------|
 | `deepseek` | `DEEPSEEK_API_KEY` 环境变量 | deepseek-v4-flash / deepseek-v4-pro |
@@ -163,6 +158,8 @@ AUGAR/
 ## 📄 开源协议
 **[WTFPL](http://www.wtfpl.net/about/) —— Do What The Fuck You Want To Public License**
 
+其实是 **MIT**。
+
 
 ## ⚠️ 免责声明
 本项目为 **娱乐目的** 创建。**不构成任何投资建议。**
@@ -172,6 +169,8 @@ AUGAR/
 
 
 ## 🙏 鸣谢
-本项目深受 **中信里昂证券风水指数** 启发。多年来，CSLA 以券商研报的严谨格式书写玄学，证明了金融圈不只有冰冷的数字，还有炽热的五行。AUGAR 试图将这份精神开源化、多维度化，让每个人都拥有自己的风水。
+本项目深受 [**中信里昂证券风水指数**](https://www.clsa.com/special/FSI/2026/cn) 启发。
 
-向 CSLA 致敬。
+多年来，CLSA 以券商研报的严谨格式书写玄学，证明了金融圈不只有冰冷的数字，还有炽热的五行。AUGAR 试图将这份精神开源化、多维度化，让每个人都拥有自己的风水。
+
+向 CLSA 致敬。

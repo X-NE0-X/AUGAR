@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Routes, Route } from 'react-router-dom'
 import { ToastProvider } from './components/Toast'
 import { Layout } from './components/Layout'
 import { ConfigProvider } from './context/ConfigContext'
@@ -8,6 +8,8 @@ import ReadingOverview from './views/ReadingOverview'
 import EngineDetail from './views/EngineDetail'
 import Almanac from './views/Almanac'
 import Methodology from './views/Methodology'
+
+const Router = import.meta.env.BASE_URL === '/AUGAR/' ? HashRouter : BrowserRouter
 
 function App() {
   return (
