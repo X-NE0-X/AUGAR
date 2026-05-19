@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "bazi",
@@ -21,10 +21,10 @@
     "polarity": "positive",
     "intensity": "strong",
     "omen_type": "auspicious",
-    "headline": "FTSE April 2026: Auspicious Earth-Fire Support",
-    "subline": "Beneficial elemental alignment reinforces stable growth.",
-    "short_reading": "April 2026 shows favorable cosmic energies for the FTSE. The strong Wood day master benefits from Fire and Earth elements, with current luck cycle JiWu and the month of Chen providing direct support. Expect a positive trend with controlled volatility.",
-    "long_reading": "The BaZi reading for April 2026 indicates a constructive period for the FTSE. The day master Jia Wood is strong (score 7), and the useful gods are Output (Fire) and Wealth (Earth). The current luck cycle JiWu (Earth-Fire, 2017-2026) aligns well with these needs. Furthermore, the year 2026 BingWu (Fire Horse) and the month of Chen (Earth Dragon) add reinforcing Fire and Earth. This combination suggests upward momentum and reduced downside risk, though the strong Wood warns of potential overheating. The market context confirms shallow drawdown and normal volatility, supporting a steady advance. Overall, a bullish outlook tempered by structural checks."
+    "headline": "富时2026年4月: 吉祥地火支持",
+    "subline": "有益的元素排列加强了稳定的增长。",
+    "short_reading": "2026年4月显示了FTSE的有利宇宙能量。强大的木日大师受益于火和土元素，当前的运气周期JiWu和陈月提供直接支持。预计波动性可控的积极趋势。",
+    "long_reading": "2026年4月的BaZi读数表明FTSE处于建设性时期。天法师佳木强 (7分)，有用的神是输出 (火) 和财富 (土)。当前的运气周期JiWu (土-火，2017-2026) 与这些需求非常吻合。此外，2026年的冰武 (火马) 和陈月 (土龙) 增加了火土。尽管强劲的木材警告潜在的过热，但这种组合表明了上升的动力和下降的下行风险。市场背景证实了小幅下跌和正常波动，支持稳步推进。总体而言，看涨的前景受到结构性检查的影响。"
   },
   "symbols": [
     "Fire",
@@ -37,6 +37,16 @@
     "overbought potential"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/bazi.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/FTSE/bazi.json",
+  "error": null,
+  "result_en": {
+    "score": 75,
+    "polarity": "positive",
+    "intensity": "strong",
+    "omen_type": "auspicious",
+    "headline": "FTSE April 2026: Auspicious Earth-Fire Support",
+    "subline": "Beneficial elemental alignment reinforces stable growth.",
+    "short_reading": "April 2026 shows favorable cosmic energies for the FTSE. The strong Wood day master benefits from Fire and Earth elements, with current luck cycle JiWu and the month of Chen providing direct support. Expect a positive trend with controlled volatility.",
+    "long_reading": "The BaZi reading for April 2026 indicates a constructive period for the FTSE. The day master Jia Wood is strong (score 7), and the useful gods are Output (Fire) and Wealth (Earth). The current luck cycle JiWu (Earth-Fire, 2017-2026) aligns well with these needs. Furthermore, the year 2026 BingWu (Fire Horse) and the month of Chen (Earth Dragon) add reinforcing Fire and Earth. This combination suggests upward momentum and reduced downside risk, though the strong Wood warns of potential overheating. The market context confirms shallow drawdown and normal volatility, supporting a steady advance. Overall, a bullish outlook tempered by structural checks."
+  }
 }

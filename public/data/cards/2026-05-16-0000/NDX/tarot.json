@@ -1,51 +1,59 @@
-﻿{
-    "schema_version":  "0.1",
-    "asset":  {
-                  "ticker":  "NDX",
-                  "name":  "NDX",
-                  "region":  "US",
-                  "asset_class":  "INDEX"
-              },
-    "period":  {
-                   "id":  "2026-04-M",
-                   "label":  "April 2026",
-                   "freq":  "M"
-               },
-    "engine":  {
-                   "id":  "tarot",
-                   "name":  "Tarot Celtic Cross",
-                   "display_name":  "塔罗"
-               },
-    "result":  {
-                   "score":  45,
-                   "polarity":  "mixed",
-                   "intensity":  "6",
-                   "omen_type":  "caution",
-                   "headline":  "Burden and Expansion: NDX Faces Stressful Road to Recovery",
-                   "subline":  "Despite emotional renewal, heavy responsibilities and conflict cloud the path.",
-                   "short_reading":  "The Ace of Cups suggests a fresh emotional start, but is undercut by the King of Pentacles\u0027 material stability and the oppressive Ten of Wands. Past indecision (reversed Chariot) and stubbornness (reversed Eight of Cups) weigh on progress. The outcome Three of Wands hints at eventual expansion after navigating conflict and self-doubt.",
-                   "long_reading":  "The Celtic Cross for NDX in April 2026 reveals a market caught between emotional renewal and material strain. At present, the Ace of Cups signals a potential uplift in sentiment, but the crossing King of Pentacles reminds us that financial foundations are solid yet cautious. Deep-rooted resistance to change (Eight of Cups reversed) and a history of lost momentum (Chariot reversed) create a heavy ground. The goal of confident leadership (Queen of Wands reversed) is hampered by self-doubt, while the near future Ten of Wands warns of increasing burdens. With the High Priestess as your guide, intuition is key to navigating the competitive, conflict-ridden environment (Five of Wands). Hopes for joyful cooperation (Three of Cups) may be tested, but the final card, Three of Wands, points to cautious expansion and foresight—success will come after sustained effort. Overall, the reading suggests a grinding, volatile month with a chance of stabilization late in the period."
-               },
-    "symbols":  [
-                    "Ace of Cups upright",
-                    "King of Pentacles upright",
-                    "Eight of Cups reversed",
-                    "The Chariot reversed",
-                    "Queen of Wands reversed",
-                    "Ten of Wands upright",
-                    "The High Priestess upright",
-                    "Five of Wands upright",
-                    "Three of Cups upright",
-                    "Three of Wands upright"
-                ],
-    "risk_tags":  [
-                      "downside_risk",
-                      "volatility",
-                      "resolution_needed"
-                  ],
-    "visual":  {
-
-               },
-    "raw_ref":  "runs/e071b65d59c4/debug/cards/2026-04-M/NDX/tarot.json",
-    "error":  null
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "NDX",
+    "name": "NDX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "tarot",
+    "name": "Tarot Celtic Cross",
+    "display_name": "塔罗"
+  },
+  "result": {
+    "score": 45,
+    "polarity": "mixed",
+    "intensity": "6",
+    "omen_type": "caution",
+    "headline": "负担和扩张: NDX面临着紧张的复苏之路",
+    "subline": "尽管情感上的更新，沉重的责任和冲突笼罩着道路。",
+    "short_reading": "杯子的王牌暗示了一个新的情感开始，但被五角大楼之王的物质稳定性和令人压抑的十个魔杖削弱了。过去的犹豫 (反转战车) 和固执 (反转八杯) 影响着进步。魔杖的结果三暗示了在经历冲突和自我怀疑之后最终的扩张。",
+    "long_reading": "2026年4月NDX的凯尔特人十字架揭示了一个介于情感更新和物质压力之间的市场。目前，奖杯王牌预示着市场情绪的潜在提升，但五角大楼的交叉之王提醒我们，财务基础坚实但谨慎。根深蒂固的抵制变革 (八杯倒转) 和失去动力的历史 (战车倒转) 创造了一个沉重的地面。自信领导的目标 (魔杖女王倒转) 受到自我怀疑的阻碍，而不久的将来十个魔杖警告说负担会增加。以女祭司为指导，直觉是在竞争激烈，充满冲突的环境中导航的关键 (五个魔杖)。快乐合作的希望 (三个杯子) 可能会受到考验，但最后一张牌，三个魔杖，指向谨慎的扩张和远见-成功将在持续的努力之后。总体而言，该数据表明该月是一个动荡，动荡的月份，并有可能在该时期后期稳定下来。"
+  },
+  "symbols": [
+    "Ace of Cups upright",
+    "King of Pentacles upright",
+    "Eight of Cups reversed",
+    "The Chariot reversed",
+    "Queen of Wands reversed",
+    "Ten of Wands upright",
+    "The High Priestess upright",
+    "Five of Wands upright",
+    "Three of Cups upright",
+    "Three of Wands upright"
+  ],
+  "risk_tags": [
+    "downside_risk",
+    "volatility",
+    "resolution_needed"
+  ],
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/NDX/tarot.json",
+  "error": null,
+  "result_en": {
+    "score": 45,
+    "polarity": "mixed",
+    "intensity": "6",
+    "omen_type": "caution",
+    "headline": "Burden and Expansion: NDX Faces Stressful Road to Recovery",
+    "subline": "Despite emotional renewal, heavy responsibilities and conflict cloud the path.",
+    "short_reading": "The Ace of Cups suggests a fresh emotional start, but is undercut by the King of Pentacles' material stability and the oppressive Ten of Wands. Past indecision (reversed Chariot) and stubbornness (reversed Eight of Cups) weigh on progress. The outcome Three of Wands hints at eventual expansion after navigating conflict and self-doubt.",
+    "long_reading": "The Celtic Cross for NDX in April 2026 reveals a market caught between emotional renewal and material strain. At present, the Ace of Cups signals a potential uplift in sentiment, but the crossing King of Pentacles reminds us that financial foundations are solid yet cautious. Deep-rooted resistance to change (Eight of Cups reversed) and a history of lost momentum (Chariot reversed) create a heavy ground. The goal of confident leadership (Queen of Wands reversed) is hampered by self-doubt, while the near future Ten of Wands warns of increasing burdens. With the High Priestess as your guide, intuition is key to navigating the competitive, conflict-ridden environment (Five of Wands). Hopes for joyful cooperation (Three of Cups) may be tested, but the final card, Three of Wands, points to cautious expansion and foresight—success will come after sustained effort. Overall, the reading suggests a grinding, volatile month with a chance of stabilization late in the period."
+  }
 }

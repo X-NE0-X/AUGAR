@@ -1,55 +1,63 @@
-﻿{
-    "schema_version":  "0.1",
-    "asset":  {
-                  "ticker":  "DJI",
-                  "name":  "DJI",
-                  "region":  "US",
-                  "asset_class":  "INDEX"
-              },
-    "period":  {
-                   "id":  "2026-04-M",
-                   "label":  "April 2026",
-                   "freq":  "M"
-               },
-    "engine":  {
-                   "id":  "tarot",
-                   "name":  "Tarot Celtic Cross",
-                   "display_name":  "塔罗"
-               },
-    "result":  {
-                   "score":  35,
-                   "polarity":  "negative",
-                   "intensity":  "moderate",
-                   "omen_type":  "bearish transition",
-                   "headline":  "Resilience Under Siege",
-                   "subline":  "Transformation and caution define April\u0027s path.",
-                   "short_reading":  "The cards suggest a month of continued defense and transformation. King of Wands indicates strong leadership but facing the Nine of Wands\u0027 last stand. Death signals necessary endings, while the outcome of Seven of Pentacles calls for patience. The market may see further decline before stabilising.",
-                   "long_reading":  "The Celtic Cross reveals a market caught in a painful yet necessary transformation. The King of Wands in the present shows that influential forces are trying to steer the market, but the crossing Nine of Wands warns of exhaustion and defensive battles. The Magician at the root suggests that the underlying skills to manage this are present, but the reversed Four of Wands indicates that the past foundation of growth is shaky. The goal of Eight of Cups hints that investors may want to walk away from current positions, seeking deeper value elsewhere. Near future Six of Cups brings a nostalgic pull, perhaps a bounce tied to past support levels, but the Death card in the \u0027You\u0027 position reinforces that the previous structure must die. The environment of Seven of Swords cautions against deception or hidden moves. Meanwhile, reversed Six of Wands in hopes and fears shows a fear of failure or lack of recognition. Finally, the outcome Seven of Pentacles advises patience and long-term assessment. The DJI is likely to experience further downside or a period of low volatility as it finds a new base. A recovery is not imminent; the month is for reevaluation."
-               },
-    "symbols":  [
-                    "King of Wands upright",
-                    "Nine of Wands upright",
-                    "The Magician upright",
-                    "Four of Wands reversed",
-                    "Eight of Cups upright",
-                    "Six of Cups upright",
-                    "Death upright",
-                    "Seven of Swords upright",
-                    "Six of Wands reversed",
-                    "Seven of Pentacles upright"
-                ],
-    "risk_tags":  [
-                      "bearish",
-                      "decline",
-                      "transformation",
-                      "defensive",
-                      "volatility",
-                      "deception",
-                      "patience"
-                  ],
-    "visual":  {
-
-               },
-    "raw_ref":  "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/tarot.json",
-    "error":  null
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "DJI",
+    "name": "DJI",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "tarot",
+    "name": "Tarot Celtic Cross",
+    "display_name": "塔罗"
+  },
+  "result": {
+    "score": 35,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "bearish transition",
+    "headline": "围攻下的韧性",
+    "subline": "转型和谨慎定义了4月的道路。",
+    "short_reading": "这些卡片暗示了一个月的持续防御和转型。魔杖之王表示强大的领导能力，但面对Wands的九个最后立场。死亡预示着必要的结局，而七个五角的结局则需要耐心。市场在企稳之前可能会进一步下跌。",
+    "long_reading": "凯尔特十字架揭示了一个陷入痛苦但必要的转型的市场。目前的魔杖之王表明，有影响力的力量正在试图引导市场，但魔杖的交叉九警告疲惫和防御战。魔术师的根源表明，管理这一点的基本技能是存在的，但颠倒的四根魔杖表明过去的增长基础是不稳定的。八杯的目标暗示投资者可能希望摆脱目前的头寸，在其他地方寻求更深层次的价值。在不久的将来，六个杯子会带来怀旧的吸引力，也许是与过去的支撑位相关的反弹，但是 “您” 位置的死亡卡强化了以前的结构必须死亡。七剑的环境告诫不要欺骗或隐藏的动作。同时，在希望和恐惧中颠倒了六个魔杖，显示出对失败或缺乏认可的恐惧。最后，五角星的结果七建议耐心和长期评估。随着DJI找到新的基础，它可能会经历进一步的下行或一段低波动时期。复苏不是迫在眉睫; 这个月是重新评估的月份。"
+  },
+  "symbols": [
+    "King of Wands upright",
+    "Nine of Wands upright",
+    "The Magician upright",
+    "Four of Wands reversed",
+    "Eight of Cups upright",
+    "Six of Cups upright",
+    "Death upright",
+    "Seven of Swords upright",
+    "Six of Wands reversed",
+    "Seven of Pentacles upright"
+  ],
+  "risk_tags": [
+    "bearish",
+    "decline",
+    "transformation",
+    "defensive",
+    "volatility",
+    "deception",
+    "patience"
+  ],
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/DJI/tarot.json",
+  "error": null,
+  "result_en": {
+    "score": 35,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "bearish transition",
+    "headline": "Resilience Under Siege",
+    "subline": "Transformation and caution define April's path.",
+    "short_reading": "The cards suggest a month of continued defense and transformation. King of Wands indicates strong leadership but facing the Nine of Wands' last stand. Death signals necessary endings, while the outcome of Seven of Pentacles calls for patience. The market may see further decline before stabilising.",
+    "long_reading": "The Celtic Cross reveals a market caught in a painful yet necessary transformation. The King of Wands in the present shows that influential forces are trying to steer the market, but the crossing Nine of Wands warns of exhaustion and defensive battles. The Magician at the root suggests that the underlying skills to manage this are present, but the reversed Four of Wands indicates that the past foundation of growth is shaky. The goal of Eight of Cups hints that investors may want to walk away from current positions, seeking deeper value elsewhere. Near future Six of Cups brings a nostalgic pull, perhaps a bounce tied to past support levels, but the Death card in the 'You' position reinforces that the previous structure must die. The environment of Seven of Swords cautions against deception or hidden moves. Meanwhile, reversed Six of Wands in hopes and fears shows a fear of failure or lack of recognition. Finally, the outcome Seven of Pentacles advises patience and long-term assessment. The DJI is likely to experience further downside or a period of low volatility as it finds a new base. A recovery is not imminent; the month is for reevaluation."
+  }
 }

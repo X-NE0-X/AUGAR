@@ -7,17 +7,10 @@ import { useConfig } from '../context/ConfigContext'
 import { readReading } from '../lib/artifacts'
 import { getTarotImage } from '../lib/tarotAssets'
 
-const MONTHS = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-
 const formatPeriod = (raw: string | undefined): string => {
   if (!raw) return ''
-  const m = raw.match(/^(\d{4})-(\d{2})-([WMQY])$/)
-  if (!m) return raw
-  const [, year, unit, freq] = m
-  const u = parseInt(unit, 10)
-  if (freq === 'M') return `${MONTHS[u] || unit} ${year}`
-  if (freq === 'Q') return `Q${u} ${year}`
-  if (freq === 'W') return `W${u} ${year}`
+  const tm = raw.match(/^(\d{4})-(\d{2})-(\d{2})-(\d{2})(\d{2})$/)
+  if (tm) return `${tm[1]}-${tm[2]}-${tm[3]} ${tm[4]}:${tm[5]} UTC`
   return raw
 }
 
@@ -54,7 +47,7 @@ const ReadingOverview = () => {
   const [configModel, setConfigModel] = useState('gpt-5.5')
   const [configBaseUrl, setConfigBaseUrl] = useState('')
   const [configApiKey, setConfigApiKey] = useState('')
-  const [configPeriod, setConfigPeriod] = useState(period || '2026-04-M')
+  const [configPeriod, setConfigPeriod] = useState(period || '2026-05-17-1942')
   const [generating, setGenerating] = useState(false)
   const [generatingElapsed, setGeneratingElapsed] = useState(0)
   const [providerConnected, setProviderConnected] = useState<boolean | null>(null)
@@ -273,7 +266,7 @@ const ReadingOverview = () => {
             {[
               [ui.polarity, trLabel(composite.polarity || 'neutral')],
               [ui.intensity, trLabel(composite.intensity || 'medium')],
-              [ui.period, formatPeriod(period) || '2026-04-M'],
+              [ui.period, formatPeriod(period) || '2026-05-17-1942'],
             ].map(([lbl, value]) => (
               <div className="metric-row" key={String(lbl)}>
                 <span>{lbl}</span>

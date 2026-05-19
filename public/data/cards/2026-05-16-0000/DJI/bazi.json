@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "bazi",
@@ -21,10 +21,10 @@
     "polarity": "negative",
     "intensity": "medium",
     "omen_type": "warning",
-    "headline": "Downtrend persists amidst overwhelming Water energy",
-    "subline": "Metal star struggles against flood of Output, seeking Wood balance",
-    "short_reading": "The current month of April 2026 is dominated by Water elements, overwhelming the Day Master Geng Metal. The useful gods of Wood are weak, making recovery difficult. Caution advised.",
-    "long_reading": "In April 2026, the Dow's BaZi chart is heavily influenced by the Water element, which acts as Output draining the Metal Day Master. The Metal star is balanced but struggles to assert itself against the flood. The current luck cycle JiWu brings some stabilizing Earth and Fire, but it is not enough to counteract the strong Water. The asset continues its downtrend with material drawdown. The imbalance suggests volatility and further downside risk unless Wood energy appears to regulate the cycle. Investors should remain defensive."
+    "headline": "下降趋势在压倒性的水能中持续存在",
+    "subline": "Metal star与产量泛滥作斗争，寻求木材平衡",
+    "short_reading": "当前的2026年4月月份以水元素为主，压倒了耿师傅的金属。有用的木神是弱，使恢复困难。建议谨慎。",
+    "long_reading": "在2026年4月，道指的BaZi图表受水元素的影响很大，水元素充当了产出消耗金属日主。金属星是平衡的，但努力在洪水中坚持自己。当前的运气周期吉武带来了一些稳定的土火，但不足以抵消强大的水。该资产继续其下降趋势与材料回撤。这种不平衡表明波动性和进一步的下行风险，除非木材能源似乎可以调节周期。投资者应该保持防御性。"
   },
   "symbols": [
     "Water",
@@ -41,6 +41,16 @@
     "volatility"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/bazi.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/DJI/bazi.json",
+  "error": null,
+  "result_en": {
+    "score": 30,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "warning",
+    "headline": "Downtrend persists amidst overwhelming Water energy",
+    "subline": "Metal star struggles against flood of Output, seeking Wood balance",
+    "short_reading": "The current month of April 2026 is dominated by Water elements, overwhelming the Day Master Geng Metal. The useful gods of Wood are weak, making recovery difficult. Caution advised.",
+    "long_reading": "In April 2026, the Dow's BaZi chart is heavily influenced by the Water element, which acts as Output draining the Metal Day Master. The Metal star is balanced but struggles to assert itself against the flood. The current luck cycle JiWu brings some stabilizing Earth and Fire, but it is not enough to counteract the strong Water. The asset continues its downtrend with material drawdown. The imbalance suggests volatility and further downside risk unless Wood energy appears to regulate the cycle. Investors should remain defensive."
+  }
 }

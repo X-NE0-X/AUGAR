@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "market_pulse",
@@ -41,6 +41,16 @@
     "shape": "circle",
     "icon": "caution"
   },
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/000300.SS/market_pulse.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/000300.SS/market_pulse.json",
+  "error": null,
+  "result_en": {
+    "score": 35,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "caution",
+    "headline": "The market is under short-term pressure, the pattern of volatility continues.",
+    "subline": "The CSI 300 index has fallen in recent months, with normal volatility and shallow retracement.",
+    "short_reading": "The index fell back in the short term, but volatility and retracement were at normal levels, and market sentiment was weak but not panic. Momentum indicators show a downward trend, but the magnitude is limited, maintaining the volatility judgment.",
+    "long_reading": "According to market pulse engine analysis, the latest closing price of the CSI 300 index was 4502.57, with a return of -4.75 per cent in the last 21 days and -1.10 per cent in the last 63 days, indicating a short-term decline but stabilization in the medium term. Volatility is 14.65 on day 63, which is in the normal range; the maximum retracement on day 252 is 6.01, which is a shallow retracement. The momentum label is &#39;down&#39;, the volatility label is &#39;normal&#39;, and the retracement label is &#39;shallow &#39;. On the whole, the market is in a volatile downward channel, but does not trigger extreme risk. April outlook: need to pay attention to policy and capital changes, short-term support 4400 near, resistance level 4600. It is recommended to be cautious in operation and control positions."
+  }
 }

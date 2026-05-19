@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "ziwei",
@@ -21,10 +21,10 @@
     "polarity": "mixed",
     "intensity": "high",
     "omen_type": "mixed",
-    "headline": "Volatility and Opportunity in Shadow of Crisis",
-    "subline": "A period of intense transformation where auspicious forces in property and social circles meet deep-seated fears.",
-    "short_reading": "The chart reveals a powerful convergence of wealth stars in the Property palace, offset by a volatile Life Palace. The VIX index mirrors market anxiety, yet the stars suggest strategic gains through careful positioning.",
-    "long_reading": "The Ziwei chart for VIX in April 2026 shows a complex interplay of forces. The Life Palace, with Huoxing and Hua Ji, indicates an underlying restlessness and potential setbacks, reflecting the index's inherent volatility. However, the Children Palace shines with Ziwei, Tianfu, Qisha, Zuofu, Lucun, and natal Hua Lu, signifying strong support and auspicious beginnings in speculative ventures or new market phases. The Property Palace (body palace) features Wuqu, Jumen, and Hua Ke, pointing to recognition and mastery in wealth management. The annual flow settles in the Friends Palace (Taiyang, Tanlang, period Hua Quan), highlighting the influence of social networks and alliances in career and wealth outcomes (the focus palaces). The current major limit of Travel (Youbi, natal Hua Quan) suggests proactive movement and adaptability are key. The three-sides-four-orthodox grouping (Children, Friends, Parents, Property) forms a solid foundation: Parents with Tiantong, Tianxiang, Wenchang, Tuoluo, Tianyue implies a need to balance talent and obstacles from external authorities or past patterns. Overall, this is a period where high volatility (extreme in market context) is both a risk and an opportunity, with auspicious elements favoring those who navigate with discipline and awareness of emotional triggers."
+    "headline": "危机阴影下的波动与机遇",
+    "subline": "一个激烈的转变时期，财产和社交圈中的吉祥力量遇到了根深蒂固的恐惧。",
+    "short_reading": "该图表揭示了财产宫殿中财富之星的强大融合，被动荡的生命宫殿所抵消。VIX指数反映了市场焦虑，但明星们建议通过谨慎定位获得战略收益。",
+    "long_reading": "2026年4月VIX的紫薇图显示了复杂的力量相互作用。生命宫，有火星和华记，预示着潜在的躁动和潜在的挫折，反映了指数的内在波动性。然而，少年宫闪耀着紫薇、天府、七沙、左夫、吕村和纳塔尔华禄，标志着投机企业或新市场阶段的强大支持和吉祥开端。产宫 (体宫) 以五曲、居门、华科为特色，指向对财富管理的认可和精通。年度流量定居在朋友宫 (太阳，谭朗，期华全)，突出了社交网络和联盟对职业和财富成果的影响 (焦点宫)。当前旅行的主要限制 (Youbi，natal Hua Quan) 表明，积极的运动和适应性是关键。三面四正统的分组 (孩子，朋友，父母，财产) 构成了坚实的基础: 天童，天祥，文昌，托罗，天悦的父母意味着需要平衡才能和来自外部权威或过去模式的障碍。总的来说，这是一个高波动 (在市场背景下是极端的) 既是风险也是机会的时期，吉祥的元素有利于那些有纪律和对情绪触发的意识的人。"
   },
   "symbols": [
     "Ziwei",
@@ -44,6 +44,16 @@
     "external obstacles"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/VIX/ziwei.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/VIX/ziwei.json",
+  "error": null,
+  "result_en": {
+    "score": 65,
+    "polarity": "mixed",
+    "intensity": "high",
+    "omen_type": "mixed",
+    "headline": "Volatility and Opportunity in Shadow of Crisis",
+    "subline": "A period of intense transformation where auspicious forces in property and social circles meet deep-seated fears.",
+    "short_reading": "The chart reveals a powerful convergence of wealth stars in the Property palace, offset by a volatile Life Palace. The VIX index mirrors market anxiety, yet the stars suggest strategic gains through careful positioning.",
+    "long_reading": "The Ziwei chart for VIX in April 2026 shows a complex interplay of forces. The Life Palace, with Huoxing and Hua Ji, indicates an underlying restlessness and potential setbacks, reflecting the index's inherent volatility. However, the Children Palace shines with Ziwei, Tianfu, Qisha, Zuofu, Lucun, and natal Hua Lu, signifying strong support and auspicious beginnings in speculative ventures or new market phases. The Property Palace (body palace) features Wuqu, Jumen, and Hua Ke, pointing to recognition and mastery in wealth management. The annual flow settles in the Friends Palace (Taiyang, Tanlang, period Hua Quan), highlighting the influence of social networks and alliances in career and wealth outcomes (the focus palaces). The current major limit of Travel (Youbi, natal Hua Quan) suggests proactive movement and adaptability are key. The three-sides-four-orthodox grouping (Children, Friends, Parents, Property) forms a solid foundation: Parents with Tiantong, Tianxiang, Wenchang, Tuoluo, Tianyue implies a need to balance talent and obstacles from external authorities or past patterns. Overall, this is a period where high volatility (extreme in market context) is both a risk and an opportunity, with auspicious elements favoring those who navigate with discipline and awareness of emotional triggers."
+  }
 }

@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "wenwang",
@@ -21,10 +21,10 @@
     "polarity": "neutral",
     "intensity": "moderate",
     "omen_type": "transformation",
-    "headline": "Thunder Stirring the Mountain, Earth Receiving the Sky",
-    "subline": "Moving lines signal a shift from shock to acceptance",
-    "short_reading": "April 2026 for NDX shows a market in transition. Initial turbulence gives way to a calmer, more receptive phase. Caution is warranted but the groundwork for recovery may be laid.",
-    "long_reading": "The primary hexagram Thunder over Mountain (Zhen above Gen) depicts sudden movement atop stillness — a volatile breakout or shock. Meanwhile, the changed hexagram Earth over Heaven (Kun above Qian) indicates the macro environment turning receptive and creative. Three moving lines (1, 2, 4) underscore this shift: the first two yin lines turning yang resolve early downside pressure, while the fourth yang turning yin tempers overreaction. The static Wealth line in the response position suggests underlying value, but the self line remains parents (information), urging reliance on data. Given the strong downtrend and normal volatility, NDX may experience a volatile first half of April before finding a bottom, with gradual stabilization toward month-end. The overall message is one of cautious optimism — a necessary clearing before a potential change in trend."
+    "headline": "雷声搅动山，大地接收天空",
+    "subline": "移动线路标志着从休克到接受的转变",
+    "short_reading": "NDX的2026年4月显示了一个转型中的市场。最初的湍流让位于更平静，更容易接受的阶段。谨慎是必要的，但可以为恢复奠定基础。",
+    "long_reading": "山上的主要六角形雷声 (Gen上方的Zhen) 描绘了寂静之上的突然运动-动荡的爆发或休克。同时，天上变化的卦地 (钱以上的昆) 表明宏观环境转向接受和创造性。三条移动线 (1、2、4) 强调了这种转变: 前两条阴线转阳解决了早期的下行压力，而第四条阳线转阴脾气过度反应。回复位置的静态财富线提示潜在价值，但自我线仍然是父母 (信息)，敦促依赖数据。鉴于强劲的下跌趋势和正常的波动性，NDX可能会在4月上半年经历波动，然后才能找到底部，并在月末逐步稳定。总体信息是谨慎乐观的消息之一-在趋势潜在变化之前进行必要的清算。"
   },
   "symbols": [
     "Zhen (Thunder)",
@@ -41,6 +41,16 @@
     "drawdown"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/NDX/wenwang.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/NDX/wenwang.json",
+  "error": null,
+  "result_en": {
+    "score": 55,
+    "polarity": "neutral",
+    "intensity": "moderate",
+    "omen_type": "transformation",
+    "headline": "Thunder Stirring the Mountain, Earth Receiving the Sky",
+    "subline": "Moving lines signal a shift from shock to acceptance",
+    "short_reading": "April 2026 for NDX shows a market in transition. Initial turbulence gives way to a calmer, more receptive phase. Caution is warranted but the groundwork for recovery may be laid.",
+    "long_reading": "The primary hexagram Thunder over Mountain (Zhen above Gen) depicts sudden movement atop stillness — a volatile breakout or shock. Meanwhile, the changed hexagram Earth over Heaven (Kun above Qian) indicates the macro environment turning receptive and creative. Three moving lines (1, 2, 4) underscore this shift: the first two yin lines turning yang resolve early downside pressure, while the fourth yang turning yin tempers overreaction. The static Wealth line in the response position suggests underlying value, but the self line remains parents (information), urging reliance on data. Given the strong downtrend and normal volatility, NDX may experience a volatile first half of April before finding a bottom, with gradual stabilization toward month-end. The overall message is one of cautious optimism — a necessary clearing before a potential change in trend."
+  }
 }

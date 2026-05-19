@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "composite": {
     "score": 40,
@@ -35,9 +35,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "tarot",
@@ -49,20 +49,22 @@
         "polarity": "negative",
         "intensity": "moderate",
         "omen_type": "bearish transition",
-        "headline": "Resilience Under Siege",
-        "subline": "Transformation and caution define April's path.",
-        "short_reading": "The cards suggest a month of continued defense and transformation. King of Wands indicates strong leadership but facing the Nine of Wands' last stand. Death signals necessary endings, while the outcome of Seven of Pentacles calls for patience. The market may see further decline before stabilising.",
-        "long_reading": "The Celtic Cross reveals a market caught in a painful yet necessary transformation. The King of Wands in the present shows that influential forces are trying to steer the market, but the crossing Nine of Wands warns of exhaustion and defensive battles. The Magician at the root suggests that the underlying skills to manage this are present, but the reversed Four of Wands indicates that the past foundation of growth is shaky. The goal of Eight of Cups hints that investors may want to walk away from current positions, seeking deeper value elsewhere. Near future Six of Cups brings a nostalgic pull, perhaps a bounce tied to past support levels, but the Death card in the 'You' position reinforces that the previous structure must die. The environment of Seven of Swords cautions against deception or hidden moves. Meanwhile, reversed Six of Wands in hopes and fears shows a fear of failure or lack of recognition. Finally, the outcome Seven of Pentacles advises patience and long-term assessment. The DJI is likely to experience further downside or a period of low volatility as it finds a new base. A recovery is not imminent; the month is for reevaluation."
+        "headline": "围攻下的韧性",
+        "subline": "转型和谨慎定义了4月的道路。",
+        "short_reading": "这些卡片暗示了一个月的持续防御和转型。魔杖之王表示强大的领导能力，但面对Wands的九个最后立场。死亡预示着必要的结局，而七个五角的结局则需要耐心。市场在企稳之前可能会进一步下跌。",
+        "long_reading": "凯尔特十字架揭示了一个陷入痛苦但必要的转型的市场。目前的魔杖之王表明，有影响力的力量正在试图引导市场，但魔杖的交叉九警告疲惫和防御战。魔术师的根源表明，管理这一点的基本技能是存在的，但颠倒的四根魔杖表明过去的增长基础是不稳定的。八杯的目标暗示投资者可能希望摆脱目前的头寸，在其他地方寻求更深层次的价值。在不久的将来，六个杯子会带来怀旧的吸引力，也许是与过去的支撑位相关的反弹，但是 “您” 位置的死亡卡强化了以前的结构必须死亡。七剑的环境告诫不要欺骗或隐藏的动作。同时，在希望和恐惧中颠倒了六个魔杖，显示出对失败或缺乏认可的恐惧。最后，五角星的结果七建议耐心和长期评估。随着DJI找到新的基础，它可能会经历进一步的下行或一段低波动时期。复苏不是迫在眉睫; 这个月是重新评估的月份。"
       },
       "symbols": [
-        "King of Wands",
-        "Nine of Wands",
-        "The Magician",
+        "King of Wands upright",
+        "Nine of Wands upright",
+        "The Magician upright",
         "Four of Wands reversed",
-        "Eight of Cups",
-        "Six of Cups",
-        "Death",
-        "Seven of Swords"
+        "Eight of Cups upright",
+        "Six of Cups upright",
+        "Death upright",
+        "Seven of Swords upright",
+        "Six of Wands reversed",
+        "Seven of Pentacles upright"
       ],
       "risk_tags": [
         "bearish",
@@ -74,8 +76,18 @@
         "patience"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/tarot.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/DJI/tarot.json",
+      "error": null,
+      "result_en": {
+        "score": 35,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "bearish transition",
+        "headline": "Resilience Under Siege",
+        "subline": "Transformation and caution define April's path.",
+        "short_reading": "The cards suggest a month of continued defense and transformation. King of Wands indicates strong leadership but facing the Nine of Wands' last stand. Death signals necessary endings, while the outcome of Seven of Pentacles calls for patience. The market may see further decline before stabilising.",
+        "long_reading": "The Celtic Cross reveals a market caught in a painful yet necessary transformation. The King of Wands in the present shows that influential forces are trying to steer the market, but the crossing Nine of Wands warns of exhaustion and defensive battles. The Magician at the root suggests that the underlying skills to manage this are present, but the reversed Four of Wands indicates that the past foundation of growth is shaky. The goal of Eight of Cups hints that investors may want to walk away from current positions, seeking deeper value elsewhere. Near future Six of Cups brings a nostalgic pull, perhaps a bounce tied to past support levels, but the Death card in the 'You' position reinforces that the previous structure must die. The environment of Seven of Swords cautions against deception or hidden moves. Meanwhile, reversed Six of Wands in hopes and fears shows a fear of failure or lack of recognition. Finally, the outcome Seven of Pentacles advises patience and long-term assessment. The DJI is likely to experience further downside or a period of low volatility as it finds a new base. A recovery is not imminent; the month is for reevaluation."
+      }
     },
     {
       "schema_version": "0.1",
@@ -86,9 +98,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "wenwang",
@@ -100,10 +112,10 @@
         "polarity": "slightly_bullish",
         "intensity": "medium",
         "omen_type": "transition",
-        "headline": "Thunder stirs the wind: a shift in momentum",
-        "subline": "From sibling rivalry to offspring emergence",
-        "short_reading": "Primary hexagram Thunder over Wind suggests agitation and penetration. Moving lines indicate competition (Siblings) transforming into creative drive (Offspring), potentially sparking a reversal. Wealth line remains stable but passive, awaiting activation. The changed hexagram Water over Wind warns of underlying danger but also adaptability. Overall, April 2026 may see a bottoming process with tentative upside.",
-        "long_reading": "The reading begins with Zhen (Thunder) over Xun (Wind), a configuration of sudden movement meeting gentle penetration. The market is in a strong downtrend, yet the moving lines reveal a shift: line 4 (Siblings, Vermilion Bird) changes from yang to yin, dissolving competitive pressure and panic; line 5 (Offspring, Flying Serpent) changes from yin to yang, awakening speculative energy and new capital inflows. The useful god Wealth (line 6) sits quietly in the response position, not yet engaged but supported by Parents (line 3, Black Tortoise) – indicating fundamental or policy backing. The changed hexagram Kan over Xun (Water over Wind) brings a theme of danger navigated by flexibility. This is not a full-fledged bull signal but a transitional omen: the worst of the drawdown may pass, giving way to a volatile consolidation or tentative recovery. The month branch Si and day branch Wu, with xun_kong (Si, Wu) cautioning that the near term may still feel empty – low confidence. Yet the offspring energy breaking through suggests young bulls testing the waters. Risk tags: continued volatility, potential for false breakout."
+        "headline": "雷声搅动风: 动量的转变",
+        "subline": "从兄弟姐妹的竞争到后代的出现",
+        "short_reading": "风上的初级六角雷声表明搅动和渗透。移动的线条表明竞争 (兄弟姐妹) 转化为创造力 (后代)，可能引发逆转。财富线保持稳定但被动，等待激活。风中变化的卦水警告潜在的危险，但也警告适应性。总体而言，2026年4月可能会看到一个触底过程，并有试探性的上行空间。",
+        "long_reading": "阅读从Zhen (雷声) 到Xun (风) 开始，这是一种突然的动作，会遇到柔和的渗透。市场处于强势下跌趋势中，然而移动的线条却透露出转变: 4号线 (兄弟姐妹、朱雀) 由阳转阴，化解了竞争压力和恐慌; 5号线 (后代、飞蛇) 由阴转阳，唤醒了投机能量和新的资金流入。有用的神财富 (第6行) 静静地坐在响应位置，尚未从事但得到父母的支持 (第3行，黑乌龟)-表明基本面或政策支持。在Xun (水在风) 上变化的卦Kan带来了通过灵活性导航的危险主题。这不是一个成熟的牛市信号，而是一个过渡性的预兆: 最糟糕的下跌可能会过去，让位于不稳定的盘整或试探性的复苏。月支Si和日支Wu，xun_kong (Si，Wu) 提醒，近期可能仍感觉空-低信心。然而，后代的能量突破表明年轻的公牛正在试水。风险标签: 持续波动，可能出现虚假突破。"
       },
       "symbols": [
         "Thunder",
@@ -120,8 +132,18 @@
         "bottoming_process"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/wenwang.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/DJI/wenwang.json",
+      "error": null,
+      "result_en": {
+        "score": 25,
+        "polarity": "slightly_bullish",
+        "intensity": "medium",
+        "omen_type": "transition",
+        "headline": "Thunder stirs the wind: a shift in momentum",
+        "subline": "From sibling rivalry to offspring emergence",
+        "short_reading": "Primary hexagram Thunder over Wind suggests agitation and penetration. Moving lines indicate competition (Siblings) transforming into creative drive (Offspring), potentially sparking a reversal. Wealth line remains stable but passive, awaiting activation. The changed hexagram Water over Wind warns of underlying danger but also adaptability. Overall, April 2026 may see a bottoming process with tentative upside.",
+        "long_reading": "The reading begins with Zhen (Thunder) over Xun (Wind), a configuration of sudden movement meeting gentle penetration. The market is in a strong downtrend, yet the moving lines reveal a shift: line 4 (Siblings, Vermilion Bird) changes from yang to yin, dissolving competitive pressure and panic; line 5 (Offspring, Flying Serpent) changes from yin to yang, awakening speculative energy and new capital inflows. The useful god Wealth (line 6) sits quietly in the response position, not yet engaged but supported by Parents (line 3, Black Tortoise) – indicating fundamental or policy backing. The changed hexagram Kan over Xun (Water over Wind) brings a theme of danger navigated by flexibility. This is not a full-fledged bull signal but a transitional omen: the worst of the drawdown may pass, giving way to a volatile consolidation or tentative recovery. The month branch Si and day branch Wu, with xun_kong (Si, Wu) cautioning that the near term may still feel empty – low confidence. Yet the offspring energy breaking through suggests young bulls testing the waters. Risk tags: continued volatility, potential for false breakout."
+      }
     },
     {
       "schema_version": "0.1",
@@ -132,9 +154,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "bazi",
@@ -146,10 +168,10 @@
         "polarity": "negative",
         "intensity": "medium",
         "omen_type": "warning",
-        "headline": "Downtrend persists amidst overwhelming Water energy",
-        "subline": "Metal star struggles against flood of Output, seeking Wood balance",
-        "short_reading": "The current month of April 2026 is dominated by Water elements, overwhelming the Day Master Geng Metal. The useful gods of Wood are weak, making recovery difficult. Caution advised.",
-        "long_reading": "In April 2026, the Dow's BaZi chart is heavily influenced by the Water element, which acts as Output draining the Metal Day Master. The Metal star is balanced but struggles to assert itself against the flood. The current luck cycle JiWu brings some stabilizing Earth and Fire, but it is not enough to counteract the strong Water. The asset continues its downtrend with material drawdown. The imbalance suggests volatility and further downside risk unless Wood energy appears to regulate the cycle. Investors should remain defensive."
+        "headline": "下降趋势在压倒性的水能中持续存在",
+        "subline": "Metal star与产量泛滥作斗争，寻求木材平衡",
+        "short_reading": "当前的2026年4月月份以水元素为主，压倒了耿师傅的金属。有用的木神是弱，使恢复困难。建议谨慎。",
+        "long_reading": "在2026年4月，道指的BaZi图表受水元素的影响很大，水元素充当了产出消耗金属日主。金属星是平衡的，但努力在洪水中坚持自己。当前的运气周期吉武带来了一些稳定的土火，但不足以抵消强大的水。该资产继续其下降趋势与材料回撤。这种不平衡表明波动性和进一步的下行风险，除非木材能源似乎可以调节周期。投资者应该保持防御性。"
       },
       "symbols": [
         "Water",
@@ -166,8 +188,18 @@
         "volatility"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/bazi.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/DJI/bazi.json",
+      "error": null,
+      "result_en": {
+        "score": 30,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "warning",
+        "headline": "Downtrend persists amidst overwhelming Water energy",
+        "subline": "Metal star struggles against flood of Output, seeking Wood balance",
+        "short_reading": "The current month of April 2026 is dominated by Water elements, overwhelming the Day Master Geng Metal. The useful gods of Wood are weak, making recovery difficult. Caution advised.",
+        "long_reading": "In April 2026, the Dow's BaZi chart is heavily influenced by the Water element, which acts as Output draining the Metal Day Master. The Metal star is balanced but struggles to assert itself against the flood. The current luck cycle JiWu brings some stabilizing Earth and Fire, but it is not enough to counteract the strong Water. The asset continues its downtrend with material drawdown. The imbalance suggests volatility and further downside risk unless Wood energy appears to regulate the cycle. Investors should remain defensive."
+      }
     },
     {
       "schema_version": "0.1",
@@ -178,9 +210,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "ziwei",
@@ -192,10 +224,10 @@
         "polarity": "positive",
         "intensity": "high",
         "omen_type": "propitious",
-        "headline": "Empowered asset palace with strong financial stars, but turbulence persists",
-        "subline": "Ziwei Tianfu Qisha with Hua Lu in Property suggests wealth opportunity, while annual flow Taiyang Tanlang with Hua Quan indicates dynamic competition",
-        "short_reading": "April 2026 brings favorable alignment for the Dow Jones, with strong wealth stars in the asset palace and empowerment in the current limit. However, aggressive stars warn of volatility and sharp moves. This is a time for strategic action rather than passive holding.",
-        "long_reading": "The chart for the Dow Jones in April 2026 reveals a powerful configuration. The Property palace, which serves as the Life palace for this index, hosts the sovereign stars Ziwei and Tianfu alongside the executioner Qisha, all blessed by the natal Hua Lu transformation. This indicates a strong foundation for assets and potential for accumulation. The current major limit is the Life palace itself, which, though empty of main stars, carries the natal Hua Quan empowerment, lending decisive force to the market’s direction. The annual flow falls in the Siblings palace, where Taiyang (Sun) and Tanlang (Greedy Wolf) combine with a period Hua Quan, signifying active competition and possible sudden moves. The three sides and four orthodox include Property, Siblings, Health (Tiantong Tianxiang), and Children (Wuqu Jumen with Hua Ke), reinforcing themes of wealth, partnerships, stability, and analytical support. Minor stars like Lingxing in Fortune bring friction, but are offset by Lucun and period Hua Lu. Overall, the astrological signals are positive for a turn or at least a strong volatile rebound, though the market’s recent downtrend suggests that this energy may manifest as sharp reversals rather than smooth ascent. Investors should watch for opportunities in destabilized conditions."
+        "headline": "拥有强大金融明星的资产宫殿，但动荡依然存在",
+        "subline": "紫薇天府奇沙与华璐在财产上暗示财富机会，而年度流量泰阳坦朗与华泉则表示动态竞争",
+        "short_reading": "2026年4月为道琼斯带来利好排列，资产宫强势财富星，当前极限赋能。然而，激进的明星警告说波动和剧烈的波动。现在是采取战略行动而不是被动持有的时候。",
+        "long_reading": "2026年4月道琼斯指数的图表揭示了一个强大的配置。作为该指数的生命宫殿的财产宫，在The子手Qisha的旁边，拥有主权明星紫薇和天府，所有这些都受到了纳塔尔华鲁转型的祝福。这表明资产的坚实基础和积累潜力。目前的主要限制是生命宫本身，虽然没有主要明星，但它承载着本命性的华全授权，为市场的方向提供了决定性的力量。每年的流量落在兄弟姐妹宫，太阳 (太阳) 和谭朗 (贪婪的狼) 与一段时间的华泉结合在一起，标志着积极的竞争和可能的突然举动。三个方面和四个正统包括财产，兄弟姐妹，健康 (天童天祥) 和儿童 (华科的武曲居门)，加强了财富，伙伴关系，稳定和分析支持的主题。像《财富》中的灵星这样的小明星带来了摩擦，但被Lucun和时期的华露所抵消。总体而言，尽管市场最近的下跌趋势表明，这种能量可能表现为急剧逆转而不是平稳上升，但占星信号对于转弯或至少是强劲的波动反弹是积极的。投资者应该在不稳定的条件下手表机会。"
       },
       "symbols": [
         "Ziwei",
@@ -214,8 +246,18 @@
         "competition"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/ziwei.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/DJI/ziwei.json",
+      "error": null,
+      "result_en": {
+        "score": 68,
+        "polarity": "positive",
+        "intensity": "high",
+        "omen_type": "propitious",
+        "headline": "Empowered asset palace with strong financial stars, but turbulence persists",
+        "subline": "Ziwei Tianfu Qisha with Hua Lu in Property suggests wealth opportunity, while annual flow Taiyang Tanlang with Hua Quan indicates dynamic competition",
+        "short_reading": "April 2026 brings favorable alignment for the Dow Jones, with strong wealth stars in the asset palace and empowerment in the current limit. However, aggressive stars warn of volatility and sharp moves. This is a time for strategic action rather than passive holding.",
+        "long_reading": "The chart for the Dow Jones in April 2026 reveals a powerful configuration. The Property palace, which serves as the Life palace for this index, hosts the sovereign stars Ziwei and Tianfu alongside the executioner Qisha, all blessed by the natal Hua Lu transformation. This indicates a strong foundation for assets and potential for accumulation. The current major limit is the Life palace itself, which, though empty of main stars, carries the natal Hua Quan empowerment, lending decisive force to the market’s direction. The annual flow falls in the Siblings palace, where Taiyang (Sun) and Tanlang (Greedy Wolf) combine with a period Hua Quan, signifying active competition and possible sudden moves. The three sides and four orthodox include Property, Siblings, Health (Tiantong Tianxiang), and Children (Wuqu Jumen with Hua Ke), reinforcing themes of wealth, partnerships, stability, and analytical support. Minor stars like Lingxing in Fortune bring friction, but are offset by Lucun and period Hua Lu. Overall, the astrological signals are positive for a turn or at least a strong volatile rebound, though the market’s recent downtrend suggests that this energy may manifest as sharp reversals rather than smooth ascent. Investors should watch for opportunities in destabilized conditions."
+      }
     },
     {
       "schema_version": "0.1",
@@ -226,9 +268,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "astrology",
@@ -256,8 +298,18 @@
         "积累周期"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/astrology.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/DJI/astrology.json",
+      "error": null,
+      "result_en": {
+        "score": 45,
+        "polarity": "bearish",
+        "intensity": "medium",
+        "omen_type": "transition",
+        "headline": "April Outlook: Accumulation Opportunities in Adjustment",
+        "subline": "Scorpio assets face test in Aries season",
+        "short_reading": "The current market is in a strong downward trend, but the volatility is normal, showing the characteristics of the accumulation cycle. The full moon phase implies a high emotional point and needs to pay attention to the turning point.",
+        "long_reading": "The asset sign is Scorpio. This month enters the Aries season. Fire and fixed water signs form tension, indicating deep adjustments and potential changes. The full moon cycle amplifies market sentiment, along with the accumulation cycle label, indicating that the current decline may be the bottom suction stage. Despite the 21-day decline of more than 8%, 63-day volatility is normal, 252-day retreat of only 10%, has not yet entered the extreme area. Investors should remain calm, avoid emotional decision-making, and pay attention to whether the technical support is held."
+      }
     },
     {
       "schema_version": "0.1",
@@ -268,9 +320,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "market_pulse",
@@ -298,8 +350,18 @@
         "动能减弱"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/market_pulse.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/DJI/market_pulse.json",
+      "error": null,
+      "result_en": {
+        "score": 35,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "caution",
+        "headline": "Dow April Outlook: Falling Continues, Wary Pullback Deepens",
+        "subline": "Weak short-term momentum, manageable volatility, focus on key support",
+        "short_reading": "The Dow is currently in a strong downtrend, down 8.75 percent on the 21st and retreating more than 10 percent. Volatility is normal, but downside risks persist.",
+        "long_reading": "Based on data on March 27, 2026, the Dow reported 45166.64, down 8.75 percent in the last month and 7.31 percent in the last 3 months, showing a strong downward trend. Although volatility is at normal levels (13.75 per cent), the 252-day pullback has reached 10 per cent, which is a material pullback. Momentum is labeled strong_downtrend, indicating bearish dominance. Entering the earnings season and Fed meeting window in April, the downside could accelerate if key supports (e. g., 44000 points) are lost. For the time being, you should maintain a defensive posture and wait for the trend reversal signal."
+      }
     }
   ],
   "run_id": "e071b65d59c4"

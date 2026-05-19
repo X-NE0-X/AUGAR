@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "market_pulse",
@@ -39,6 +39,16 @@
     "drawdown"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/NDX/market_pulse.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/NDX/market_pulse.json",
+  "error": null,
+  "result_en": {
+    "score": 25,
+    "polarity": "negative",
+    "intensity": "strong",
+    "omen_type": "ominous",
+    "headline": "Nasdaq 100 Index April Outlook: Continued downtrend",
+    "subline": "Momentum shows strong declines, normal volatility, large retracement",
+    "short_reading": "The index has fallen sharply recently, down 7.6 per cent in 21 days and 9.8 per cent in 63 days, with momentum labeling a strong downtrend. Volatility was normal but the pullback reached 11.4 per cent and market sentiment was pessimistic.",
+    "long_reading": "According to market pulse data, the NASDAQ 100 Index faces continued downward pressure in April 2026. Momentum confirms a strong downtrend with negative returns over the last 21 and 63 days and deepening declines. Volatility is at normal levels, indicating that the current decline is not caused by extreme panic, but is a trend decline. The 252-day pullback of 11.4 is a substantial pullback. Investors should be alert to further downside risks, which may be difficult to break through the downward channel in the short term."
+  }
 }

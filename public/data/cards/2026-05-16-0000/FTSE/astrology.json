@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "astrology",
@@ -37,6 +37,16 @@
     "积累阶段"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/astrology.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/FTSE/astrology.json",
+  "error": null,
+  "result_en": {
+    "score": 62,
+    "polarity": "positive",
+    "intensity": "mild",
+    "omen_type": "auspicious",
+    "headline": "steady accumulation",
+    "subline": "April FTSE Index Contained Opportunities in Stability",
+    "short_reading": "The current market sentiment is cautious, but the accumulation cycle appears, long-term good.",
+    "long_reading": "Based on astrological analysis, the FTSE index showed a stable accumulation pattern in April 2026. Aquarius asset stars are in tune with the Aries cycle season, and the moon&#39;s gradual loss implies a fall in short-term sentiment, but the accumulation cycle label indicates that the main funds are being laid out at a low level. The volatility is normal and the drawdown is shallow, which is suitable for steady investors to gradually build positions. On the whole, this month is the window to sort out the momentum and wait patiently for the breakthrough signal."
+  }
 }

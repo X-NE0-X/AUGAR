@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "bazi",
@@ -38,6 +38,16 @@
     "流动性紧缩"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/HSI/bazi.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/HSI/bazi.json",
+  "error": null,
+  "result_en": {
+    "score": 1,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "caution",
+    "headline": "HSI April 2026: Fire threat but soil support-cautious stability",
+    "subline": "Weak gold Japanese Lord in the moon to get earth help, but the annual fire is still suppressed",
+    "short_reading": "Renchen Moon brings soil and water to provide some support for weak Xin Jin. However, the excessive fire of the year and fortune continues to pressure. The trend may be mixed, if the soil element is enhanced is expected to rebound.",
+    "long_reading": "According to HSI&#39;s horoscope, the Japanese Lord Xin Jin is weak and his root qi is insufficient. At present, the Universiade has not provided earth (Indian star), but it has also brought fire (official star). In 2026, the fire was extremely strong in the year of 2026, forming restraint. In April, Ren Chen Zhu introduced soil (seal) and water (food injury). The soil is favorable, but the water may further drain the host. Chen in the Tibetan E, B, Gui. Overall this month slightly eased but not completely reversed. The pattern is still a weak Japanese Lord, who likes to use God as earth and gold. Investors should focus on policy changes (fire) and seek defensive sectors (soil)."
+  }
 }

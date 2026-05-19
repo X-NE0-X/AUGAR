@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "astrology",
@@ -37,6 +37,16 @@
     "volatility normal"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/SPX/astrology.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/SPX/astrology.json",
+  "error": null,
+  "result_en": {
+    "score": 40,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "caution",
+    "headline": "April Turns: Aries and Sagittarius Turns",
+    "subline": "The market is in an accumulation cycle, but downward pressure remains.",
+    "short_reading": "The SPX faces downward inertia in April 2026, but signs of accumulation suggest a bottom may be forming. Sagittarius asset requires caution in the Aries season.",
+    "long_reading": "According to astrological interpretation, the asset zodiac of SPX is Sagittarius, while the current zodiac season is Aries. Aries initiative combined with Sagittarius spirit of exploration can trigger market volatility. The moon phase is gradually losing, symbolizing the energy decline, in line with the current downward trend. However, the accumulation_cycle in the cycle label implies that smart money is being laid out. It is recommended to focus on key support levels and wait for trend reversal signals."
+  }
 }

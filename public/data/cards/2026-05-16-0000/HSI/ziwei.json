@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "ziwei",
@@ -41,6 +41,16 @@
     "汇率风险"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/HSI/ziwei.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/HSI/ziwei.json",
+  "error": null,
+  "result_en": {
+    "score": 65,
+    "polarity": "positive",
+    "intensity": "moderate",
+    "omen_type": "wealth_and_authority",
+    "headline": "Financial power double, but need to prevent sudden fluctuations.",
+    "subline": "Hang Seng Index Trend Outlook for April 2026",
+    "short_reading": "This month&#39;s life plate shows that the wealth and silk palace purple micro-Lu, the official Lu palace sun-power, the financial power of the two boom, the index is expected to rebound. However, the relocation of the palace to break the army is turbulent, and the official Lu palace is holding sheep. It is necessary to be alert to the sharp rise and fall brought about by emergencies.",
+    "long_reading": "According to the purple micro bucket number calculation, in April 2026, the Hang Seng index by the wealth palace (purple micro Tianfu seven kill Lu Cun) the impact of the money, the capital surface is abundant, the value of stocks or support. Official Lugong (sun greedy wolf Qing sheep Tiankui) power, market sentiment is optimistic, policy or industry good to promote the index upward. However, the relocation of the palace is too dark and the army is not auspicious, and the couple&#39;s palace is taboo, international relations, exchange rate or cooperation issues may bring interference. Fude Palace Wuqu Giant Gate, investor confidence restored, but need to remain rational. The overall trend is adjusted first and then up, and there may be a risk of a correction at the end of the month. Key point reference 24800 support, 25500 pressure."
+  }
 }

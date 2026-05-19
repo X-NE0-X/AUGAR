@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "astrology",
@@ -39,6 +39,16 @@
     "uncertainty"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/NDX/astrology.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/NDX/astrology.json",
+  "error": null,
+  "result_en": {
+    "score": 45,
+    "polarity": "bearish",
+    "intensity": "medium",
+    "omen_type": "caution",
+    "headline": "Aries Full Moon Intensified Volatility, Accumulation Cycle Suggests Bottom",
+    "subline": "Technical downtrend continues, but lunar phases and planetary cycles show signs of bottoming",
+    "short_reading": "The April full moon falls in Aries and may amplify short-term volatility, but the accumulation cycle and normal volatility suggest that the market is looking for bottom support.",
+    "long_reading": "The NDX is currently in a strong downtrend, but volatility is normal and the retracement is acceptable. At the astrological level, the asset sign Aquarius forms a wind-fire interaction with the cycle sign Aries, suggesting an intertwining of innovation and impulse. The full moon often brings emotional climax and trend turning point, which, together with the accumulation cycle label, suggests that April may be a key bottoming period. Investors are advised to remain cautious, pay attention to technical support confirmation, and do not rush to chase short."
+  }
 }

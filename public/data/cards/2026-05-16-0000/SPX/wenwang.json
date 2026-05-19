@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "wenwang",
@@ -21,10 +21,10 @@
     "polarity": "negative",
     "intensity": "medium",
     "omen_type": "caution",
-    "headline": "Waters Recede, Mountain Rises – A Market at a Standstill",
-    "subline": "From the Army to the Mountain: a period of consolidation and potential further downside if forced action is taken.",
-    "short_reading": "The primary hexagram Shi (Army) suggests collective movement, but moving lines indicate internal difficulties and lack of momentum. The change to Gen (Mountain) calls for stillness and caution. The market may experience a pause, but risk remains elevated.",
-    "long_reading": "The reading begins with Hexagram 7 (Shi, The Army) – Earth over Water, suggesting a time of organized effort but also potential conflict. The moving lines at positions 2, 3, and 6 highlight key dynamics. Line 2 (Self) is moving from yang to yin and falls in the empty branch Si, indicating that the market's internal drive is lacking substance. Line 3 (Parents) moves from yin to yang, warning of misfortune if pressing forward – akin to 'the army with many wagons' leading to trouble. Line 6 (Wealth) moves from yin to yang, offering a glimmer of eventual stabilization as the 'great prince' establishes order. However, the resulting Hexagram 52 (Gen, Keeping Still) represents a mountain, a time to stop and reflect. The market, already in a strong downtrend, may find a temporary bottom or slow decline, but the risk of further drops remains unless patience is exercised. The empty Self and the month/day branches in Si and Chen suggest that current conditions are unstable. Overall, the oracle advises against aggressive action and recommends waiting for clearer signs."
+    "headline": "水域退去，山峰上升-市场停滞不前",
+    "subline": "从军队到山区: 如果采取强制行动，这是一个巩固和潜在的进一步下跌的时期。",
+    "short_reading": "主卦石 (军队) 表示集体运动，但动线表示内部困难和缺乏动力。变更为Gen (山) 需要静止和谨慎。市场可能会经历停顿，但风险仍然很高。",
+    "long_reading": "阅读从六边形7 (Shi，陆军) 开始-地球在水上，这表明有组织的努力，但也有潜在的冲突。位置2、3和6处的移动线突出显示关键动态。2线 (自身) 由阳转阴，在空支Si中下跌，说明市场内在驱动力缺乏实质。3号线 (父母) 从阴到阳，警告如果向前推进会带来不幸-类似于 “有很多货车的军队” 导致麻烦。第6行 (财富) 从阴到阳，随着 “伟大的王子” 建立秩序，提供了最终稳定的曙光。然而，产生的六边形52 (Gen，保持静止) 代表一座山，是停止和反射的时间。已经处于强劲下跌趋势的市场可能会发现暂时的底部或缓慢下跌，但除非耐心等待，否则进一步下跌的风险仍然存在。Si和Chen的空自和月/日分支表明当前状况不稳定。总体而言，oracle建议不要采取激进的行动，并建议等待更清晰的迹象。"
   },
   "symbols": [
     "Water",
@@ -44,6 +44,16 @@
     "caution advised"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/SPX/wenwang.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/SPX/wenwang.json",
+  "error": null,
+  "result_en": {
+    "score": 35,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "caution",
+    "headline": "Waters Recede, Mountain Rises – A Market at a Standstill",
+    "subline": "From the Army to the Mountain: a period of consolidation and potential further downside if forced action is taken.",
+    "short_reading": "The primary hexagram Shi (Army) suggests collective movement, but moving lines indicate internal difficulties and lack of momentum. The change to Gen (Mountain) calls for stillness and caution. The market may experience a pause, but risk remains elevated.",
+    "long_reading": "The reading begins with Hexagram 7 (Shi, The Army) – Earth over Water, suggesting a time of organized effort but also potential conflict. The moving lines at positions 2, 3, and 6 highlight key dynamics. Line 2 (Self) is moving from yang to yin and falls in the empty branch Si, indicating that the market's internal drive is lacking substance. Line 3 (Parents) moves from yin to yang, warning of misfortune if pressing forward – akin to 'the army with many wagons' leading to trouble. Line 6 (Wealth) moves from yin to yang, offering a glimmer of eventual stabilization as the 'great prince' establishes order. However, the resulting Hexagram 52 (Gen, Keeping Still) represents a mountain, a time to stop and reflect. The market, already in a strong downtrend, may find a temporary bottom or slow decline, but the risk of further drops remains unless patience is exercised. The empty Self and the month/day branches in Si and Chen suggest that current conditions are unstable. Overall, the oracle advises against aggressive action and recommends waiting for clearer signs."
+  }
 }

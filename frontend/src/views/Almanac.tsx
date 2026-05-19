@@ -7,16 +7,9 @@ import { Trophy } from 'lucide-react'
 
 const PERIOD = '2026-05-17-1942'
 
-const MONTH_NAMES = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-
 const formatPeriod = (raw: string): string => {
-  const m = raw.match(/^(\d{4})-(\d{2})-([WMQY])$/)
-  if (!m) return raw
-  const [, year, unit, freq] = m
-  const u = parseInt(unit, 10)
-  if (freq === 'M') return `${MONTH_NAMES[u] || unit} ${year}`
-  if (freq === 'Q') return `Q${u} ${year}`
-  if (freq === 'W') return `W${u} ${year}`
+  const tm = raw.match(/^(\d{4})-(\d{2})-(\d{2})-(\d{2})(\d{2})$/)
+  if (tm) return `${tm[1]}-${tm[2]}-${tm[3]} ${tm[4]}:${tm[5]} UTC`
   return raw
 }
 
@@ -62,7 +55,7 @@ const Almanac = () => {
           <h1 className="display gold-title">{t('alm.title')}</h1>
           <p>
             {t('alm.subtext')}{' '}
-            <span className="period-label-tooltip" title={`Format: YYYY-MM-FREQ (${PERIOD})`}>{formatPeriod(PERIOD)}</span>
+            <span className="period-label-tooltip" title={`Format: YYYY-MM-DD-HHMM (${PERIOD})`}>{formatPeriod(PERIOD)}</span>
           </p>
         </header>
 

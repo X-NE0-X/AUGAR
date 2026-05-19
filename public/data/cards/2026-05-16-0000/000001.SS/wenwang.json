@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "wenwang",
@@ -46,6 +46,16 @@
     "icon": "flame-over-reeds",
     "card_style": "calm analytical oracle card with restrained market-grid texture"
   },
-  "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/wenwang.json",
-  "error": null
+  "raw_ref": "runs/8408c2bbf831/debug/cards/2026-05-16-0000/000001.SS/wenwang.json",
+  "error": null,
+  "result_en": {
+    "score": 54,
+    "polarity": "neutral_bullish",
+    "intensity": "moderate",
+    "omen_type": "静卦观望 / Fire-over-Wind consolidation",
+    "headline": "There is fire in the wind, the momentum does not leave the field",
+    "subline": "The April tilt is not a strong attack, but a shock to retain the upward fire.",
+    "short_reading": "This hexagram has no moving lines, and the main trend continues rather than flips violently. Wealth should be on top, indicating that there is still visible traction on the price side, but Self and Parents fall into the sky, and the market&#39;s own confidence and basic support are weak. Combined with the recent 21-day pullback, 63-day light positive earnings and normal volatility, April is more like a range repair, repeated testing, rather than a one-sided rally.",
+    "long_reading": "Sir, the main hexagram and the change hexagram are both Fire over Wind, and there is no moving lines. the core signal is the stable but not explosive. Li fire on, Xun wind under, said that sentiment, policy narrative or financial expectations can still ignite the disk, but the bottom of the way to promote partial penetration, gradual, not a direct breakthrough structure. With God to take Wealth, wealth in the sixth line, for the response, indicating that the market price of the target sense in the external position, may be driven by external expectations, policy window, capital or index heavyweight performance. The third line where Self is located is Parents, and Zi enters the ten-day space. The second line Hai also enters the ten-day space. The implication here is that the market is not self-confirming enough, the supporting narrative seems to exist but the actual carrying capacity is weak, and it is prone to look back after the rush, shrink after news stimulation, or traders waiting for confirmation. Officer at the beginning of the line and with White Tiger, stress and risk exist in the low background, more like stock concerns than sudden collapse. Flying Serpent fell Siblings, suggesting that intraday divergence, rotation and financial restraint would be more pronounced. Vermilion Bird is on both Offspring and Wealth at the same time, indicating that news, expected expressions and risk appetite can directly affect price readings. Comprehensive market context: 21-day earnings are negative, 63-day slightly positive, volatility is normal, retracement shallow, momentum mixed. Diagrams are consistent with the data: April tilt to the shock bias repair, low to undertake is OK, but the upside needs to be traded and confirmed. A more reasonable judgment is that mild positive bias inside a choppy range, rather than a trend bull market start. If there is a volume breakthrough within the month, the wealth in the should position can be activated."
+  }
 }

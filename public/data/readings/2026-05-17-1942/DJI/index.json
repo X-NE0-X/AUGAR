@@ -78,10 +78,10 @@
         "polarity": "-1",
         "intensity": "6",
         "omen_type": "warning",
-        "headline": "熊市阴影下的忍耐与修复期",
-        "subline": "希望与挫折共存，短期需谨慎",
-        "short_reading": "当前市场处于下跌后的评估阶段，但潜在希望（星星）与冲突（五剑）交织。逆位钱币一显示财务机会受阻，需耐心学习（八币）提升技能以待时机。",
-        "long_reading": "七枚钱币正位暗示您正仔细审视近期下跌的成果与投资组合，市场需要时间沉淀。但星星正位交叉带来一丝曙光，可能是指标修复或外部利好预期，然而根部双剑揭示内在犹豫与信息不对称。过去皇后象征之前牛市或增长积累，但当前目标三剑直指需要面对亏损或割肉的痛苦抉择。近未来五剑正位预示短期可能出现价格竞争、恐慌抛售或机构博弈导致的进一步下跌。逆位Ace of Pentacles代表财务新机会未能落地，或是您错失了抄底窗口。环境教皇强调传统金融规则、美联储政策或大型机构行为主导市场节奏。逆位Ace of Wands暗示多头能量不足，新资金入场意愿低迷。最终八枚钱币正位鼓励通过专注基础研究、技能提升或分批定投来度过震荡期。整体而言，这是一个需要耐心、纪律和直面损失的阶段，短期不宜激进抄底，而应等待更明确的企稳信号。"
+        "headline": "The Period of Patience and Repair in the Shadow of a Bear Market",
+        "subline": "Hope and frustration coexist, short-term need to be cautious",
+        "short_reading": "The current market is in the evaluation stage after the decline, but the potential hope (stars) and conflict (5 sword) intertwined. The reverse coin 1 shows that financial opportunities are blocked, and you need to learn patiently (eight coins) to improve your skills to wait for the opportunity.",
+        "long_reading": "The seven coins are in position to suggest that you are carefully examining the results of the recent decline and the portfolio, the market needs time to settle. But the stars are crossing to bring a glimmer of light, may be the indicator repair or external positive expectations, however, the root double sword reveals the inherent hesitation and information asymmetry. In the past, the queen symbolized the previous bull market or growth accumulation, but the current goal three swords directly pointed to the need to face the painful choice of loss or cut meat. The near future 5 sword position indicates that there may be further declines caused by price competition, panic selling or institutional games in the short term. The inverse Ace of Pentacles means that new financial opportunities have not landed, or you have missed the bottom window. The environmental pope emphasized that traditional financial rules, Federal Reserve policy or large institutional behavior dominate the pace of the market. The reverse Ace of Wands suggests that the bulls are short of energy and the willingness to enter new funds is low. The final eight coins are encouraged to survive the shock period by focusing on basic research, skill upgrading or batching. On the whole, this is a stage that requires patience, discipline and face-to-face losses. In the short term, it is not appropriate to aggressively copy the bottom, but to wait for a clearer signal of stabilization."
       }
     },
     {
@@ -129,10 +129,10 @@
         "polarity": "negative",
         "intensity": "moderate",
         "omen_type": "warning",
-        "headline": "山泽损化夬，承压待变",
-        "subline": "市场延续下行，关注风险释放",
-        "short_reading": "损卦示现当前承压下行，动爻初、二官鬼与自身位，外部压力与内部调整并行。变卦夬，终将决断方向，但短期弱势未改。",
-        "long_reading": "主卦山泽损，上兑下艮，山上有泽，有损下益上之象，对应市场资金流出或利润压缩。动爻在初、二：初爻官鬼辰土动，代表外部监管或利空因素扰动；二爻自身巳火动，但旬空（巳午空），自身信心不足或动能缺失。财星酉金在六爻应位，虽得日建申金相合，但合而不化，财气被牵制。变卦泽天夬，上兑下乾，泽在天上，有决断、打破僵局之意，暗示后续可能加速赶底或出现关键转折。当前标签strong_downtrend与卦象吻合，整体宜观望或减仓，等待夬卦的明确信号。"
+        "headline": "Yamazawa damaged block, pressure bearing to be changed",
+        "subline": "Market Continues Downturn, Focus on Risk Release",
+        "short_reading": "The loss of the hexagram shows the current pressure downward, moving the beginning, 2 the official ghost and its own position, external pressure and internal adjustment in parallel. The change will eventually decide the direction, but the short-term weakness has not changed.",
+        "long_reading": "The main gua mountain ze loss, up against the next gen, the mountain has ze, damage to the next benefit on the image, corresponding to the market capital outflow or profit compression. Moving the line at the beginning and 2: the first line official ghost Chen earth movement, on behalf of external supervision or negative factors disturbance; Two lines themselves have been on fire, but ten days empty (afternoon empty), their own confidence is insufficient or lack of kinetic energy. The financial star Youjin should be in the position of Liuyao. Although it is necessary to build and apply gold on the day, it is not combined, and wealth is restrained. The change of divination and Ze Tianyuan, up and down, Ze in the sky, has the meaning of decision-making and breaking the deadlock, suggesting that the follow-up may accelerate the bottom or a key turning point. The current label strong_downtrend is consistent with the divination, so it is advisable to wait and see or reduce the position as a whole, waiting for a clear signal from the divination."
       }
     },
     {
@@ -181,10 +181,10 @@
         "polarity": "negative",
         "intensity": "medium",
         "omen_type": "inauspicious",
-        "headline": "水势滔天，金沉深渊",
-        "subline": "庚金遇旺水，市场承压未解",
-        "short_reading": "命盘水极旺，庚金日主被泄，市场情绪悲观，短期难以逆转。",
-        "long_reading": "当前八字中水占七分，金占五分，水势远强于金。庚金虽得比肩帮扶，但月令子水当权，年干壬水透出，时支辰土虽为印星却藏癸水，湿土难制水。日主身弱，喜土金而忌水木。流年丙午，流月乙巳，木火齐来，木生火克金，忌神加剧，市场下行压力显著。虽有用神木可泄水，但日主弱不胜财，短期反弹力度有限，需待土金旺势方能企稳。"
+        "headline": "The water is monstrous, and the gold sinks into the abyss.",
+        "subline": "Gengjin meets prosperous water, the market is under pressure.",
+        "short_reading": "The fate of the water is very strong, the gold day was released, the market sentiment is pessimistic, short-term difficult to reverse.",
+        "long_reading": "At present, water accounts for seven points and gold accounts for five points in the eight characters. The water potential is far stronger than gold. Although Gengjin has to be helped shoulder to shoulder, the moon makes Zishui in power, and the annual dry water penetrates out. Although Zichen soil is Yinxing, it hides Gui water, and wet soil is difficult to make water. The Japanese Lord is weak, likes earth gold and avoid water wood. The year of the year, the flow of the moon, wood fire together, wood fire gram gold, avoid god intensified, the market downward pressure is significant. Although useful Shenmu can drain water, but the Japanese main weak not win money, short-term rebound strength is limited, need to wait for the earth gold boom to stabilize."
       }
     },
     {
@@ -233,10 +233,10 @@
         "polarity": "neutral",
         "intensity": "medium",
         "omen_type": "transitional",
-        "headline": "紫微七杀化禄夫妻，命宫化忌守心",
-        "subline": "财帛破军跃动，官禄武曲化科显机",
-        "short_reading": "当前星盘显示命宫受流年化忌冲击，易有内心压力或计划受阻；但夫妻宫紫微天府七杀得本命化禄，合作与贵人运强。财帛宫天机太阴破军遇禄存铃星，财路波动中藏机遇。官禄宫武曲巨门文昌化科，事业名望可期。迁移宫太阳贪狼化权，出行外拓有利。",
-        "long_reading": "此盘以紫微天府七杀坐夫妻宫为枢纽，本命化禄注入温情与资源，暗示市场虽处下行趋势（近期回撤-10%），但结构性合作或核心资产仍受眷顾。命宫廉贞天梁逢流年化忌，叠加文昌，主情绪敏感与决策反复，不宜激进抄底。财帛宫天机太阴破军配禄存铃星，财路如暗流涌动，短线投机风险高，但长线布局可借破军突破之力。官禄宫武曲巨门化科，文昌加持，专业判断与沟通策略将获认可。迁移宫太阳贪狼化权，主动探索新领域或海外市场可引动转机。当前大限（2024-2033）走到健康宫，虽无主星，但天魁本命化权，暗示需以稳健身心应对风波。综合来看，神谕指向「变中求稳」——利用贵人网络（夫妻宫化禄）化解个人焦虑（命宫化忌），并在财帛波动中保持纪律。"
+        "headline": "Ziwei Seven Kills the Husband and Wife of Lu, Life Palace",
+        "subline": "Money and silk break the army leap, official Lu Wuqu branch show machine",
+        "short_reading": "The current astrolabe shows that the palace of life is subject to the impact of the year, and it is easy to have inner pressure or plan blocked. However, the Ziwei Tianfu of the husband and wife palace has been able to kill seven people, and cooperation with noble people will be strong. Caibo Palace Tianji Taiyin Breaking Army Encountered Lu Cun Ling Star, Financial Road Fluctuations Hidden Opportunities. Guanlugong Wuqu Giant Gate Wenchang Chemical Branch, career reputation can be expected. The sun is greedy for the right to move the palace, and it is beneficial to travel outside.",
+        "long_reading": "This disk to the purple micro Tianfu seven kill sit husband and wife palace as the hub, the local life of Lu injected warmth and resources, suggesting that although the market in the downward trend (recent retreat-10%), but structural cooperation or core assets are still favored. Life Palace Lian Zhen Tian Liang meets the time of year taboo, superposition Wenchang, the main emotional sensitivity and decision-making repeated, not aggressive bottom. Caibo palace sky machine Taiyin broken army with Lu save the bell star, financial road such as undercurrent surging, short-term speculation risk is high, but the long-term layout can borrow the force of breaking the army breakthrough. Guan Lu Gong Wu Qu Jumenhua, Wenchang blessing, professional judgment and communication strategy will be recognized. Move the palace sun greedy wolf right, take the initiative to explore new areas or overseas markets can lead to a turnaround. The current deadline (2024-2033) to the health palace, although there is no main star, but the right of the chief of the day, suggesting the need to deal with the storm with a steady body and mind. On the whole, the oracle points to &quot;seeking stability in the midst of change&quot;-using the noble network (husband and wife palace) to resolve personal anxiety (fate palace taboo) and maintain discipline in the fluctuation of wealth."
       }
     },
     {
@@ -284,10 +284,10 @@
         "polarity": "negative",
         "intensity": "moderate",
         "omen_type": "transition",
-        "headline": "射手座资产在摩羯季节中迎来新月转折",
-        "subline": "DJI深度回调与积累信号并存",
-        "short_reading": "新月开启新周期，但强下降趋势未消，市场处于筑底积累阶段。",
-        "long_reading": "当前新月相位象征播种与开端，射手座资产（DJI所属黄道）处于摩羯座季节，土象能量压制扩张。市场处于strong_downtrend但波动正常，回撤已至material级别，结合accumulation_cycle标签，暗示主力资金正在低位吸纳。中长期可关注支撑确认，短期仍需警惕下行惯性。"
+        "headline": "Sagittarius asset ushers in new moon turn in Capricorn season",
+        "subline": "DJI Deep Callback Coexists with Accumulated Signals",
+        "short_reading": "The new moon opens a new cycle, but the strong downward trend has not disappeared, and the market is in the bottoming accumulation stage.",
+        "long_reading": "The current new moon phase symbolizes sowing and beginning, Sagittarius assets (DJI&#39;s ecliptic) are in Capricorn season, and the earth elephant energy is suppressing expansion. The market is strong_downtrend but volatile, and the pullback has reached a material level, combined with the accumulation_cycle label, suggesting that the main funds are being absorbed at a low level. Medium-and long-term can focus on support confirmation, short-term still need to be alert to the downside inertia."
       }
     },
     {
@@ -338,10 +338,10 @@
         "polarity": "negative",
         "intensity": "moderate",
         "omen_type": "downward_trend",
-        "headline": "道指下行趋势持续，实质性回撤信号显现",
-        "subline": "21日跌幅达8.75%，63日波动率正常但回撤超10%",
-        "short_reading": "当前道指处于强下行通道，近期跌幅与中期回撤均属实质性压力，短期反弹动能不足。",
-        "long_reading": "根据市场脉搏引擎分析，道琼斯工业指数（DJI）最新收盘45166.64点，21日回报-8.75%，63日回报-7.31%，呈现强下行趋势标签。63日波动率13.75%处于正常区间，但252日回撤-10.01%被标记为实质性，暗示累积跌幅已触发中期风险警示。波动正常背景下趋势持续走弱，需关注下方支撑有效性及反弹力度。"
+        "headline": "The Dow&#39;s downward trend continues, and substantial retracement signals appear.",
+        "subline": "21-day decline of 8.75 per cent, 63-day volatility normal but pullback of more than 10 per cent",
+        "short_reading": "The current Dow is in a strong downward channel, the recent decline and medium-term retracement are substantial pressure, short-term rebound momentum is insufficient.",
+        "long_reading": "According to market pulse engine analysis, the Dow Jones Industrial Average (DJI) recently closed at 45166.64 points, with a 21-day return of -8.75 percent and a 63-day return of -7.31 percent, showing a strong downward trend label. 63-day volatility of 13.75 per cent is in the normal range, but the 252-day pullback of -10.01 per cent is marked as material, suggesting that the cumulative decline has triggered a medium-term risk warning. Under the background of normal fluctuations, the trend continues to weaken, and we need to pay attention to the effectiveness of the support below and the strength of the rebound."
       }
     }
   ],

@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "bazi",
@@ -47,6 +47,16 @@
     "icon": "bent young tree under metal weight",
     "card_style": "restrained analytical omen card with sharp borders and low saturation"
   },
-  "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/bazi.json",
-  "error": null
+  "raw_ref": "runs/8408c2bbf831/debug/cards/2026-05-16-0000/000001.SS/bazi.json",
+  "error": null,
+  "result_en": {
+    "score": 42,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "constraint_pressure",
+    "headline": "The official kill is heavy, the wood is weak and the pressure is on.",
+    "subline": "April 2026 shows pressure before recovery; structure is defensive, not trend-following.",
+    "short_reading": "This elephant is centered on weak armour and heavy gold. Metal is the most abundant in the plate, with more Officer, representing rules, pressure, external constraints and valuation suppression; Wood&#39;s root gas is insufficient, Resource and Peer are gods, but water wood support is less. Combined with the state of the market, nearly 21 days of withdrawal is obvious, 63 days is still slightly positive, indicating that not completely broken, but short-term pressure, mixed direction.",
+    "long_reading": "The four pillars show a weak Japanese pattern: Jia Wood was born in Xu Yue, with thick earth and gold. Geng and Xin are seen in the sky, and the momentum of Officer is concentrated. For the index, this is more like a consolidation period when the liquidity and policy expectation are compressed, rather than a month of smooth upside. Wealth is high at the same time as Officer, which usually means that funds are still calculated in the face of earnings expectations, but the trading environment is constrained by regulation, macro data, exchange rates or external risk pricing, making it difficult for risk appetite to expand naturally.\n\nWith God falling on Resource, Peer, and Wood, it&#39;s not stronger gold and soil pressure that really improves the situation, but incremental liquidity, earnings expectations repair, policy confirmation, or internal market resonance. The current market_context shows that 21d return is negative, 63d return is slightly positive, volatility normal,drawdown shallow; This set of data is consistent with the fate: it is not a deep crisis, but a compression phase with pressure above and support below.\n\nTherefore, the reading of April 2026 is cautious. If there is a rebound, it is more likely to be a technical repair after being pressed, rather than a trend confirmation. If the gold gas continues to strengthen, it is easy to show that the weight index is under pressure, the volume of transactions is shrinking, and the rebound is not sustainable. A better signal should come from the image of Shui Mu: capital return, policy support, growth or domestic demand sector proliferation, and the index back to the key moving average after the volume can be confirmed."
+  }
 }

@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "ziwei",
@@ -49,6 +49,16 @@
     "icon": "fortified palace under crossing winds",
     "card_style": "calm analytical oracle card with firm central axis and fractured outer ring"
   },
-  "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/ziwei.json",
-  "error": null
+  "raw_ref": "runs/8408c2bbf831/debug/cards/2026-05-16-0000/000001.SS/ziwei.json",
+  "error": null,
+  "result_en": {
+    "score": 42,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "结构承压 / 分歧放大",
+    "headline": "The foundation has stars, the outer edge is out of balance.",
+    "subline": "The disk surface of April 2026 is not a collapse phase, but the center of gravity is still there, and the trading level is easy to be divided and repeatedly consumed.",
+    "short_reading": "The plate is based on the Property Palace, with Ziwei, Tianfu and Qisha sitting together and with natal Hua Lu, indicating that the underlying weights, institutional support and long-term asset anchors still exist. However, Siblings the year falls, Taiyang and Tanlang will bring period Hua Quan, and the market voice, plate rotation and capital differences will be magnified. See period Hua Ji in the Friends Palace, and natal Hua Ji in the Travel Palace, where external flows, peer risk appetite and cross-market disturbances are the main stressors. Combined with the recent 21-day pullback negative and 63-day momentum slightly positive, it is a mixed omen that is weak in the short term but not completely destroyed in the midline.",
+    "long_reading": "The core structure is not empty. Life Palace falls Property, and Property Palace has Ziwei, Tianfu, Qisha and natal Hua Lu. This is 1 combination of &quot;the chassis is still thick, but the driving force is hard&quot;: the index is still supported by policies, weights and valuation anchors. The real problem is not that it has not been accepted, but that the upward momentum needs stronger consensus to be released. Qisha makes the rhythm more like switching and clearing rather than smooth fixing.\n\nApril 2026&#39;s annual flow focuses on Siblings and affects Career, Wealth and Fortune. Siblings Palace Taiyang and Tanlang plus period Hua Quan represent the enhancement of expression rights within the market: hot spots, narratives and style rotation will be more active, but it is also easier to push differences to the front. Although there are Wenchang, Tianyue and period Hua Ke in the Wealth Palace, it shows that the capital is not completely out of order and there is still a window for rational pricing and repair. However, Tuoluo is present, which makes the rising process even more delayed and prone to a state of seemingly opportunity and actual progress not going well.\n\nRisk points focus on Friends and Travel. Friends Palace Lianzhen, Tianliang, Wenqu meet period Hua Ji, suggesting that market alliances, institutional consensus, external interpretation framework can easily become a burden; Travel Palace natal Hua Ji points to the interference of external markets, exchange rates, cross-border funds or macro news. The only Huoxing seen in Career Palace means that there will be sudden impulse at the executive level: short-term fluctuations caused by urgent pull, urgent kill, policy expectations or industry news may occur.\n\nSo this month&#39;s judgment is cautious: not a systemic deep fall, but the short-term risk is significantly higher than the homeopathic gains. A more reasonable interpretation is to &quot;keep the foundation, avoid chasing, and wait for confirmation&quot;. If the index can hold the shallow retracement zone and re-condense the positive signal of Wealth/Fortune, there is still room for repair; if Friends/Travel&#39;s Hua Ji is triggered by an external event, it is prone to a double dip or high volatility."
+  }
 }

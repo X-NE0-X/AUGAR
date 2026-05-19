@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "astrology",
@@ -38,6 +38,16 @@
     "trend_shifting"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/VIX/astrology.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/VIX/astrology.json",
+  "error": null,
+  "result_en": {
+    "score": 65,
+    "polarity": "neutral",
+    "intensity": "high",
+    "omen_type": "stable",
+    "headline": "Market volatility remains high, trend stable",
+    "subline": "The fear index is in the extreme range, but the stable sign suggests that the risk is manageable.",
+    "short_reading": "The VIX was at a high level in April, with the full moon superimposed on the Aries season, and market sentiment was extremely high but balanced.",
+    "long_reading": "Based on the astrological proxy model, the VIX (Sagittarius asset) shows signs of stability in April 2026 (Aries season). The full-month phase exacerbates short-term volatility, but the accumulation of cycle labels suggests that this round of panic may be part of the suction phase. Technically, extreme volatility and strong uptrends coexist, deep retracements have been digested, and the market is looking for a new equilibrium. It is recommended to be vigilant but not overly pessimistic."
+  }
 }

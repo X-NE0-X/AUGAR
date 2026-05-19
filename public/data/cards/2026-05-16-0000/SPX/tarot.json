@@ -1,51 +1,59 @@
-﻿{
-    "schema_version":  "0.1",
-    "asset":  {
-                  "ticker":  "SPX",
-                  "name":  "SPX",
-                  "region":  "US",
-                  "asset_class":  "INDEX"
-              },
-    "period":  {
-                   "id":  "2026-04-M",
-                   "label":  "April 2026",
-                   "freq":  "M"
-               },
-    "engine":  {
-                   "id":  "tarot",
-                   "name":  "Tarot Celtic Cross",
-                   "display_name":  "塔罗"
-               },
-    "result":  {
-                   "score":  72,
-                   "polarity":  "positive",
-                   "intensity":  "moderate",
-                   "omen_type":  "transition",
-                   "headline":  "Turning of the Wheel: From Conflict to Stability",
-                   "subline":  "Anxiety lifts as new opportunities and social harmony emerge.",
-                   "short_reading":  "The cards indicate that the recent downtrend\u0027s anxiety is fading. Conflicts and illusions give way to a stable outcome. The Wheel of Fortune suggests a positive shift in April.",
-                   "long_reading":  "The Nine of Swords reversed shows that the market\u0027s recent anxiety is dissipating. The Seven of Cups warns against being seduced by false hopes; many options exist but clarity is needed. The root cause is ongoing competition (Five of Wands). Past emotional letdowns (Page of Cups reversed) are behind you. Your goal is fresh energy (Page of Wands). In the near future, tangible stability and wealth emerge (Ten of Pentacles). You are defending your position (Seven of Wands) amid a generally positive environment (Three of Cups). Your hopes for a new start (Ace of Pentacles) are aligned with the outcome: the Wheel of Fortune, indicating a fortunate turn of events. Overall, April 2026 appears to be a month of resolution and positive change for SPX."
-               },
-    "symbols":  [
-                    "Nine of Swords reversed",
-                    "Seven of Cups upright",
-                    "Five of Wands upright",
-                    "Page of Cups reversed",
-                    "Page of Wands upright",
-                    "Ten of Pentacles upright",
-                    "Seven of Wands upright",
-                    "Three of Cups upright",
-                    "Ace of Pentacles upright",
-                    "Wheel of Fortune upright"
-                ],
-    "risk_tags":  [
-                      "illusion",
-                      "conflict",
-                      "overoptimism"
-                  ],
-    "visual":  {
-
-               },
-    "raw_ref":  "runs/5e510e5089a1/debug/cards/2026-04-M/SPX/tarot.json",
-    "error":  null
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "SPX",
+    "name": "SPX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "tarot",
+    "name": "Tarot Celtic Cross",
+    "display_name": "塔罗"
+  },
+  "result": {
+    "score": 72,
+    "polarity": "positive",
+    "intensity": "moderate",
+    "omen_type": "transition",
+    "headline": "车轮的转动: 从冲突到稳定",
+    "subline": "随着新的机遇和社会和谐的出现，焦虑得以提升。",
+    "short_reading": "这些牌表明最近的下降趋势的焦虑正在消退。冲突和幻想让位于稳定的结果。命运之轮暗示着4月的积极转变。",
+    "long_reading": "九剑反转表明市场近期的焦虑正在消散。七杯警告不要被虚假的希望所诱惑; 存在许多选择，但需要明确。根本原因是持续的竞争 (五根魔杖)。过去的情绪低落 (倒转杯子的页面) 在您身后。你的目标是新鲜能量 (魔杖页)。在不久的将来，有形的稳定和财富出现 (十个五角星)。你在一个普遍积极的环境 (三个杯子) 中捍卫你的位置 (七个魔杖)。您对新开始的希望 (五角星王牌) 与结果保持一致: 命运之轮，表明事件的幸运转折。总的来说，SPX似乎2026年4月一个月的解决方案和积极的变化。"
+  },
+  "symbols": [
+    "Nine of Swords reversed",
+    "Seven of Cups upright",
+    "Five of Wands upright",
+    "Page of Cups reversed",
+    "Page of Wands upright",
+    "Ten of Pentacles upright",
+    "Seven of Wands upright",
+    "Three of Cups upright",
+    "Ace of Pentacles upright",
+    "Wheel of Fortune upright"
+  ],
+  "risk_tags": [
+    "illusion",
+    "conflict",
+    "overoptimism"
+  ],
+  "visual": {},
+  "raw_ref": "runs/5e510e5089a1/debug/cards/2026-05-16-0000/SPX/tarot.json",
+  "error": null,
+  "result_en": {
+    "score": 72,
+    "polarity": "positive",
+    "intensity": "moderate",
+    "omen_type": "transition",
+    "headline": "Turning of the Wheel: From Conflict to Stability",
+    "subline": "Anxiety lifts as new opportunities and social harmony emerge.",
+    "short_reading": "The cards indicate that the recent downtrend's anxiety is fading. Conflicts and illusions give way to a stable outcome. The Wheel of Fortune suggests a positive shift in April.",
+    "long_reading": "The Nine of Swords reversed shows that the market's recent anxiety is dissipating. The Seven of Cups warns against being seduced by false hopes; many options exist but clarity is needed. The root cause is ongoing competition (Five of Wands). Past emotional letdowns (Page of Cups reversed) are behind you. Your goal is fresh energy (Page of Wands). In the near future, tangible stability and wealth emerge (Ten of Pentacles). You are defending your position (Seven of Wands) amid a generally positive environment (Three of Cups). Your hopes for a new start (Ace of Pentacles) are aligned with the outcome: the Wheel of Fortune, indicating a fortunate turn of events. Overall, April 2026 appears to be a month of resolution and positive change for SPX."
+  }
 }

@@ -1,53 +1,61 @@
-﻿{
-    "schema_version":  "0.1",
-    "asset":  {
-                  "ticker":  "VIX",
-                  "name":  "VIX",
-                  "region":  "US",
-                  "asset_class":  "INDEX"
-              },
-    "period":  {
-                   "id":  "2026-04-M",
-                   "label":  "April 2026",
-                   "freq":  "M"
-               },
-    "engine":  {
-                   "id":  "tarot",
-                   "name":  "Tarot Celtic Cross",
-                   "display_name":  "塔罗"
-               },
-    "result":  {
-                   "score":  70,
-                   "polarity":  "positive",
-                   "intensity":  "moderate",
-                   "omen_type":  "favorable",
-                   "headline":  "From Suspension to Stability: VIX Set to Decline in April",
-                   "subline":  "The Celtic Cross reveals a turn from crisis to calm, with The Fool signaling a new beginning for volatility.",
-                   "short_reading":  "The Hanged Man in the present suggests a waiting period for VIX, while the reversed Ten of Swords indicates that the worst of the recent spike may be over. Temperance at the root blends extremes, pointing toward balance. The Knight of Cups in the environment and Nine of Cups as the querent\u0027s wish fulfillment suggest rising optimism. The Moon in hopes and fears warns of lingering uncertainty, but the Outcome card, The Fool, heralds a fresh start. Overall, April 2026 likely sees a decline in VIX toward calmer levels.",
-                   "long_reading":  "The Celtic Cross spread for VIX in April 2026 tells a story of transition from a period of deep fear (Five of Pentacles past) to a more balanced and controlled environment. The Present card, The Hanged Man upright, indicates a pause or sacrifice—perhaps the market is waiting for a catalyst. The Crossing card, Ten of Swords reversed, suggests that the worst pain is behind and recovery is underway. The Root is Temperance, emphasizing the need for moderation after extreme volatility. The Past card, Five of Pentacles, confirms recent hardship and a sense of being left out in the cold. The Goal is King of Cups, advocating emotional mastery and steady leadership in these volatile times. The Near Future card, King of Pentacles, promises stability and material success, implying that volatility will subside as markets find solid ground. The You card, Nine of Cups, shows a wish fulfillment—investors\u0027 desire for calm may be granted. The Environment card, Knight of Cups, brings a hopeful sentiment. The Hopes \u0026 Fears card, Moon upright, reveals that the biggest challenge is the fear of the unknown and hidden risks, but the Outcome card, The Fool, encourages a leap of faith into new beginnings. This combination of cards, especially with many Cups and Pentacles, suggests that emotional optimism and practical grounding will prevail over anxiety. For VIX, this means a likely decline from current elevated levels toward a more moderate volatility regime. However, the Moon reminds us that not all is clear, and the Fool advises trusting the process despite uncertainty. Overall, the oracle points to a favorable stability for VIX investors favoring bearish directional bets on the index."
-               },
-    "symbols":  [
-                    "The Hanged Man upright",
-                    "Ten of Swords reversed",
-                    "Temperance upright",
-                    "Five of Pentacles upright",
-                    "King of Cups upright",
-                    "King of Pentacles upright",
-                    "Nine of Cups upright",
-                    "Knight of Cups upright",
-                    "The Moon upright",
-                    "The Fool upright"
-                ],
-    "risk_tags":  [
-                      "volatility decline",
-                      "crisis recovery",
-                      "optimistic sentiment",
-                      "uncertainty",
-                      "fresh start"
-                  ],
-    "visual":  {
-
-               },
-    "raw_ref":  "runs/e071b65d59c4/debug/cards/2026-04-M/VIX/tarot.json",
-    "error":  null
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "VIX",
+    "name": "VIX",
+    "region": "US",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "tarot",
+    "name": "Tarot Celtic Cross",
+    "display_name": "塔罗"
+  },
+  "result": {
+    "score": 70,
+    "polarity": "positive",
+    "intensity": "moderate",
+    "omen_type": "favorable",
+    "headline": "从暂停到稳定: VIX将在4月下降",
+    "subline": "凯尔特人的十字架揭示了从危机到平静的转变，傻瓜标志着波动的新开始。",
+    "short_reading": "目前的绞死人暗示了VIX的等待期，而倒转的十剑则表明最近高峰的最糟糕时期可能已经过去。根部的节制融合了极端，指向平衡。环境中的杯子骑士和九个杯子作为querent的愿望实现，表明乐观情绪正在上升。希望和恐惧中的月亮发出了挥之不去的不确定性的警告，但结果卡，傻瓜，预示着一个新的开始。总体而言，2026年4月可能会看到VIX下降至更平静的水平。",
+    "long_reading": "2026年4月波动率指数的凯尔特十字架讲述了一个从深深的恐惧时期 (过去的五个五角) 过渡到更加平衡和受控的环境的故事。目前的牌，被绞死的人直立，表示暂停或牺牲-也许市场正在等待催化剂。十字牌，十剑颠倒，表明最严重的痛苦已经过去，恢复正在进行中。根源在于节制，强调极端波动后需要适度。过去的卡片，五个五角，证实了最近的困难和被冷落的感觉。目标是杯中之王，在这个动荡的时代倡导情感上的掌握和稳定的领导能力。不久的将来，五角星之王的卡有望获得稳定和物质上的成功，这意味着随着市场找到坚实的基础，波动性将会减弱。You卡，九杯，显示了愿望的实现-投资者对平静的渴望可能会被授予。环境卡，杯子骑士，带来了充满希望的情感。希望与恐惧卡，月亮直立，揭示了最大的挑战是对未知和隐藏的风险的恐惧，但结果卡，傻瓜，鼓励信仰的飞跃进入新的开始。卡片的这种组合，尤其是带有许多杯子和五角星的卡片，表明情感乐观和实际基础将胜过焦虑。对于VIX而言，这意味着可能会从当前的高位下降到更温和的波动状态。然而，月亮提醒我们，并不是所有的事情都清楚，傻瓜建议相信这个过程，尽管存在不确定性。总体而言，甲骨文指出，波动率指数投资者的稳定性良好，倾向于看跌指数的定向押注。"
+  },
+  "symbols": [
+    "The Hanged Man upright",
+    "Ten of Swords reversed",
+    "Temperance upright",
+    "Five of Pentacles upright",
+    "King of Cups upright",
+    "King of Pentacles upright",
+    "Nine of Cups upright",
+    "Knight of Cups upright",
+    "The Moon upright",
+    "The Fool upright"
+  ],
+  "risk_tags": [
+    "volatility decline",
+    "crisis recovery",
+    "optimistic sentiment",
+    "uncertainty",
+    "fresh start"
+  ],
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/VIX/tarot.json",
+  "error": null,
+  "result_en": {
+    "score": 70,
+    "polarity": "positive",
+    "intensity": "moderate",
+    "omen_type": "favorable",
+    "headline": "From Suspension to Stability: VIX Set to Decline in April",
+    "subline": "The Celtic Cross reveals a turn from crisis to calm, with The Fool signaling a new beginning for volatility.",
+    "short_reading": "The Hanged Man in the present suggests a waiting period for VIX, while the reversed Ten of Swords indicates that the worst of the recent spike may be over. Temperance at the root blends extremes, pointing toward balance. The Knight of Cups in the environment and Nine of Cups as the querent's wish fulfillment suggest rising optimism. The Moon in hopes and fears warns of lingering uncertainty, but the Outcome card, The Fool, heralds a fresh start. Overall, April 2026 likely sees a decline in VIX toward calmer levels.",
+    "long_reading": "The Celtic Cross spread for VIX in April 2026 tells a story of transition from a period of deep fear (Five of Pentacles past) to a more balanced and controlled environment. The Present card, The Hanged Man upright, indicates a pause or sacrifice—perhaps the market is waiting for a catalyst. The Crossing card, Ten of Swords reversed, suggests that the worst pain is behind and recovery is underway. The Root is Temperance, emphasizing the need for moderation after extreme volatility. The Past card, Five of Pentacles, confirms recent hardship and a sense of being left out in the cold. The Goal is King of Cups, advocating emotional mastery and steady leadership in these volatile times. The Near Future card, King of Pentacles, promises stability and material success, implying that volatility will subside as markets find solid ground. The You card, Nine of Cups, shows a wish fulfillment—investors' desire for calm may be granted. The Environment card, Knight of Cups, brings a hopeful sentiment. The Hopes & Fears card, Moon upright, reveals that the biggest challenge is the fear of the unknown and hidden risks, but the Outcome card, The Fool, encourages a leap of faith into new beginnings. This combination of cards, especially with many Cups and Pentacles, suggests that emotional optimism and practical grounding will prevail over anxiety. For VIX, this means a likely decline from current elevated levels toward a more moderate volatility regime. However, the Moon reminds us that not all is clear, and the Fool advises trusting the process despite uncertainty. Overall, the oracle points to a favorable stability for VIX investors favoring bearish directional bets on the index."
+  }
 }

@@ -87,7 +87,7 @@ class WenwangGenerator(BaseGenerator):
                 "image": f"{changed_upper_symbol} over {changed_lower_symbol}",
             },
             "installed_lines": installed_lines,
-            "month_branch": BRANCHES[(int(period.id[5:7]) + 1) % 12] if period.freq == "M" else BRANCHES[0],
+            "month_branch": BRANCHES[(int(period.id[5:7]) + 1) % 12],
             "day_branch": BRANCHES[self.rng(asset, period, seed).randrange(12)],
             "xun_kong": [BRANCHES[(len(asset.ticker) + 2) % 12], BRANCHES[(len(asset.ticker) + 3) % 12]],
             "useful_god": {

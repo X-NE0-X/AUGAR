@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "market_pulse",
@@ -36,6 +36,16 @@
     "强势上涨"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/VIX/market_pulse.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/VIX/market_pulse.json",
+  "error": null,
+  "result_en": {
+    "score": 80,
+    "polarity": "negative",
+    "intensity": "high",
+    "omen_type": "warning",
+    "headline": "VIX soars above 30 on extreme volatility alert",
+    "subline": "Strong short-term momentum, panic in market sentiment",
+    "short_reading": "Market panic intensifies and volatility remains at extreme levels",
+    "long_reading": "The VIX index is currently at 31.05, with a 21-day return of 66.7 per cent and a 63-day return of 130.5 per cent, indicating a strong uptrend in both the short and medium term. The 63-day volatility is as high as 136.7 per cent, which is an extreme level. Despite the 40.7 per cent retracement in the past 252 days, the speed and magnitude of the recent rise suggest a strong risk aversion in the market. Funding pressures or uncertain events may have pushed up volatility. It is recommended to pay close attention to market trends."
+  }
 }

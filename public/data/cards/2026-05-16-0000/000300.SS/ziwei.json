@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "ziwei",
@@ -21,10 +21,10 @@
     "polarity": "neutral",
     "intensity": "moderate",
     "omen_type": "mixed",
-    "headline": "Foundation Strong but Core Obstructed; External Influence Key in April",
-    "subline": "Children Palace Lu Fuels Underlying Strength, But Life Palace Ji Signals Caution; Annual Flow in Friends with Quan Indicates Social/External Dynamics",
-    "short_reading": "For April 2026, the CSI 300 index shows a mixed omen. The major limit in Children Palace with Ziwei, Tianfu, Qisha and Hua Lu suggests underlying strength and potential for growth, but the Life Palace's Hua Ji and the falling momentum warns of core obstacles. The annual flow in Friends Palace with Taiyang, Tanlang, and Hua Quan highlights the importance of external factors and social dynamics. Market may experience volatility but could find support from property-related sectors.",
-    "long_reading": "The Ziwei chart for 000300.SS in April 2026 reveals a nuanced outlook. The current major limit, centered on the Children Palace (palace 4), is anchored by the triple stellar combination of Ziwei, Tianfu, and Qisha, with a natal Hua Lu. This configuration typically denotes a period of structural consolidation and potential expansion—Ziwei as the emperor provides authority, Tianfu adds stability, and Qisha brings assertive action. The Hua Lu transformation amplifies gains, particularly in areas related to future growth and investments. However, the Life Palace (palace 1) is empty of main stars and carries a natal Hua Ji, indicating a fundamental weakness or hidden obstruction at the core of the entity. This duality creates a tension between outward strength and internal fragility.\n\nThe annual flow for April 2026 lands on the Friends Palace (palace 8), where Taiyang and Tanlang meet a period Hua Quan. Taiyang symbolizes visibility, leadership, and openness, while Tanlang represents desire, networking, and sudden changes. Hua Quan gives control over these forces, suggesting that external relationships, market sentiment, or policy moves will be decisive. The three sides four orthodox (Children, Friends, Parents, Property) highlight the interplay: Property Palace (palace 10) with Wuqu, Jumen, and natal Hua Ke points to recognition in asset valuation and real estate, but the Parents Palace (palace 12) with Tiantong, Tianxiang, and Tuoluo hints at bureaucratic delays or conservative influences.\n\nMarket context shows a recent decline with nearly -5% over 21 days and -1.1% over 63 days, with normal volatility. The chart indicates that while the underlying trend may find a floor due to the strong Children Palace, the Life Palace's Ji could cause false breaks or internal issues. The wealth sector (palace 5) receives a period Hua Lu, offering a short-term boost, but the falling momentum suggests caution. April may see choppy trading with possible late-month recovery if external factors turn favorable. Risk management is advised, particularly around mid-month when the transformational energies conflict."
+    "headline": "基础牢固但核心受阻; 外部影响关键在4月",
+    "subline": "陆少年宫助长了潜在的力量，但生命宫姬发出谨慎信号; 与Quan的朋友中的年度流量表明社会/外部动态",
+    "short_reading": "2026年4月，中证300指数显示出喜忧参半的预兆。紫薇，天府，奇沙和华璐的少年宫的主要限制表明了潜在的实力和增长潜力，但生命宫的华基和下降的势头警告了核心障碍。与太阳，谭朗和华权的朋友宫的年度流量突出了外部因素和社会动态的重要性。市场可能会经历波动，但可能会从房地产相关行业获得支持。",
+    "long_reading": "2026年4月000300.SS的紫薇图表揭示了一个微妙的前景。当前的主要限制，以少年宫 (第4宫) 为中心，由紫薇，天府和七沙的三重恒星组合与出生的华禄锚定。这种配置通常表示结构巩固和潜在扩张的时期-紫薇作为皇帝提供权威，天府增加稳定性，而七沙则采取果断行动。华陆转型放大了收益，特别是在与未来增长和投资相关的领域。然而，生命宫殿 (宫殿1) 没有主要的星星，并带有一个出生的华姬，表明实体核心的基本弱点或隐藏的障碍。这种二元性在外在的力量和内在的脆弱之间产生了张力。\n\n2026年4月的年度流量落在朋友宫 (宫8) 上，太阳城和谭朗在这里相遇了一段华泉。太阳象征着可见性，领导力和开放性，而Tanlang代表渴望，网络和突然的变化。华全给出了对这些力量的控制权，表明外部关系、市场情绪或政策动向将是决定性的。三面四正统 (子女、朋友、父母、物业) 凸显相互作用: 物业宫 (宫十) 与五曲、居门、本家华科指向资产评估和房地产方面的认可，但父母宫 (宫十二) 与天童、天香、托罗暗示了官僚主义的拖延或保守的影响。\n\n市场背景显示近期下跌，21天下跌近5%，63天下跌-1.1%，波动正常。图表显示，虽然潜在的趋势可能会因为强大的儿童宫殿而找到一个底线，但生命宫的Ji可能会导致错误的休息或内部问题。财富板块 (宫5) 收周期华鲁，提供短期提振，但下跌动能提示谨慎。如果外部因素变得有利，4月可能会看到波涛汹涌的交易，并可能在月末复苏。建议进行风险管理，尤其是在转型能量发生冲突的月中。"
   },
   "symbols": [
     "Ziwei",
@@ -121,6 +121,16 @@
     "volatility": "normal",
     "drawdown": "shallow"
   },
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/000300.SS/ziwei.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/000300.SS/ziwei.json",
+  "error": null,
+  "result_en": {
+    "score": 1,
+    "polarity": "neutral",
+    "intensity": "moderate",
+    "omen_type": "mixed",
+    "headline": "Foundation Strong but Core Obstructed; External Influence Key in April",
+    "subline": "Children Palace Lu Fuels Underlying Strength, But Life Palace Ji Signals Caution; Annual Flow in Friends with Quan Indicates Social/External Dynamics",
+    "short_reading": "For April 2026, the CSI 300 index shows a mixed omen. The major limit in Children Palace with Ziwei, Tianfu, Qisha and Hua Lu suggests underlying strength and potential for growth, but the Life Palace's Hua Ji and the falling momentum warns of core obstacles. The annual flow in Friends Palace with Taiyang, Tanlang, and Hua Quan highlights the importance of external factors and social dynamics. Market may experience volatility but could find support from property-related sectors.",
+    "long_reading": "The Ziwei chart for 000300.SS in April 2026 reveals a nuanced outlook. The current major limit, centered on the Children Palace (palace 4), is anchored by the triple stellar combination of Ziwei, Tianfu, and Qisha, with a natal Hua Lu. This configuration typically denotes a period of structural consolidation and potential expansion—Ziwei as the emperor provides authority, Tianfu adds stability, and Qisha brings assertive action. The Hua Lu transformation amplifies gains, particularly in areas related to future growth and investments. However, the Life Palace (palace 1) is empty of main stars and carries a natal Hua Ji, indicating a fundamental weakness or hidden obstruction at the core of the entity. This duality creates a tension between outward strength and internal fragility.\n\nThe annual flow for April 2026 lands on the Friends Palace (palace 8), where Taiyang and Tanlang meet a period Hua Quan. Taiyang symbolizes visibility, leadership, and openness, while Tanlang represents desire, networking, and sudden changes. Hua Quan gives control over these forces, suggesting that external relationships, market sentiment, or policy moves will be decisive. The three sides four orthodox (Children, Friends, Parents, Property) highlight the interplay: Property Palace (palace 10) with Wuqu, Jumen, and natal Hua Ke points to recognition in asset valuation and real estate, but the Parents Palace (palace 12) with Tiantong, Tianxiang, and Tuoluo hints at bureaucratic delays or conservative influences.\n\nMarket context shows a recent decline with nearly -5% over 21 days and -1.1% over 63 days, with normal volatility. The chart indicates that while the underlying trend may find a floor due to the strong Children Palace, the Life Palace's Ji could cause false breaks or internal issues. The wealth sector (palace 5) receives a period Hua Lu, offering a short-term boost, but the falling momentum suggests caution. April may see choppy trading with possible late-month recovery if external factors turn favorable. Risk management is advised, particularly around mid-month when the transformational energies conflict."
+  }
 }

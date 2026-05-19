@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "market_pulse",
@@ -46,6 +46,16 @@
     "icon": "waning crescent over index line",
     "card_style": "calm analytical market oracle card with restrained contrast"
   },
-  "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/market_pulse.json",
-  "error": null
+  "raw_ref": "runs/8408c2bbf831/debug/cards/2026-05-16-0000/000001.SS/market_pulse.json",
+  "error": null,
+  "result_en": {
+    "score": 42,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "mixed_momentum_pullback",
+    "headline": "Short-term retracement presses the disk surface",
+    "subline": "The 21-day kinetic energy weakened significantly, but the 63-day was still slightly positive, and the structure was more like consolidation than trend collapse.",
+    "short_reading": "000001.SS&#39;s pulse in April 2026 is cautious: the return on the past 21 days is about -5.62, indicating that short-term selling pressure has dominated. However, there are still about +0.96 in the past 63 days, indicating that the medium-term structure has not completely turned empty. Volatility is normal, with a 252-day pullback of about -6.43 per cent, which is a shallow drawdown. The overall signal is mixed momentum: the market is giving back its previous gains, but has not yet entered a state of high volatility out of control.",
+    "long_reading": "The core of this set of artifact is not a catastrophe, but a short-term momentum deterioration. The 3913.72 latest close fit-a 21-day return of 5.62 per cent-suggests that recent funding behaviour has been defensive and prices are experiencing a clear round of downward pressure or profit-taking. At the same time, 63-day returns remain slightly positive, meaning that a trend break has not been confirmed for a longer window. In other words, the short-term trend has cooled, but the medium-term framework has not yet fully turned into a bear regime.\n\nThe volatility_63d is about 14.64 percent and the label is normal, which is critical. If the decline is accompanied by abnormal volatility, the interpretation will be closer to the panic or forced liquidation; however, the current volatility is not significantly amplified, indicating that the market is more like an orderly cooling. The drawdown_252d of about -6.43 percent, labeled shallow, also supports this judgment: the pullback is stressful, but not deep enough to pose serious structural damage.\n\nTherefore, the oracle reading should fall in the cautious consolidation: short-term risk is negative, medium-term still retain room for repair. Be wary that if the 21-day negative momentum continues to extend and the 63-day return is also dragged into a significantly negative range, the signal will shift from mixed to bearish continuation. Conversely, if prices can stabilize in a low volatility environment and return to positive 21-day returns, then this pullback may just be a trend digestion."
+  }
 }

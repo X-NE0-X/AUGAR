@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "bazi",
@@ -21,10 +21,10 @@
     "polarity": "mixed",
     "intensity": "medium",
     "omen_type": "transition",
-    "headline": "Fire's Ascent Amidst Earth's Weight",
-    "subline": "April 2026 brings supportive Fire energy but lingering Earth drag",
-    "short_reading": "The NDX faces a critical juncture where strong Fire from the year offers a rebound potential, but Earth excess from the month and luck cycle may cap gains. Caution is warranted.",
-    "long_reading": "The natal chart shows a Bing Fire day master weakened by excessive Earth (output). The useful gods are Wood and Fire to support the weak flame. Currently in the JiWu luck cycle (2020-2029), both Earth (Ji) and Fire (Wu) are present – Fire helps, Earth aggravates. The year 2026 BingWu pours in even more Fire, creating a temporary surge of strength. However, the month of April (GengChen) adds Metal (wealth) and Earth (output), which can drain Fire through overwork and bring unexpected losses. The market context reflects a strong downtrend and material drawdown, aligning with Earth's heavy influence. This month may see attempted rallies (Fire) that fail to sustain due to underlying Earth pressure. Traders should look for quick moves but be ready for reversals. The hidden stems hint at opportunities from Resource (Wood) sectors like technology or innovation, but avoid overexposure to real estate or commodity-linked names. Overall, a month of high potential but high risk."
+    "headline": "火在地球的重量中上升",
+    "subline": "2026年4月带来了支持性的火力，但挥之不去的地球阻力",
+    "short_reading": "NDX面临一个关键时刻，今年的强劲火力提供了反弹的潜力，但本月和运气周期的地球过剩可能会限制收益。谨慎是必要的。",
+    "long_reading": "出生图显示Bing Fire day master因过多的土 (输出) 而减弱。有用的神是木头和火，以支持微弱的火焰。目前在吉武运周期 (2020-2029) 中，土 (吉) 和火 (吴) 都存在-火帮助，土加重。2026年的冰武倾注了更多的火焰，创造了暂时的力量。而4月 (庚辰) 月加金属 (财富) 加土 (产出)，可以通过过劳放火，带来意想不到的损失。市场环境反映了强劲的下跌趋势和材料回撤，与地球的重大影响保持一致。本月可能会看到由于潜在的地球压力而无法维持的企图集会 (大火)。交易者应该寻找快速的动作，但要为逆转做好准备。隐藏的词干暗示了技术或创新等资源 (木材) 行业的机会，但要避免过度暴露于房地产或与商品相关的名称。总体而言，一个月的高潜力，但高风险。"
   },
   "symbols": [
     "Fire",
@@ -39,6 +39,16 @@
     "earnings season"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/NDX/bazi.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/NDX/bazi.json",
+  "error": null,
+  "result_en": {
+    "score": 55,
+    "polarity": "mixed",
+    "intensity": "medium",
+    "omen_type": "transition",
+    "headline": "Fire's Ascent Amidst Earth's Weight",
+    "subline": "April 2026 brings supportive Fire energy but lingering Earth drag",
+    "short_reading": "The NDX faces a critical juncture where strong Fire from the year offers a rebound potential, but Earth excess from the month and luck cycle may cap gains. Caution is warranted.",
+    "long_reading": "The natal chart shows a Bing Fire day master weakened by excessive Earth (output). The useful gods are Wood and Fire to support the weak flame. Currently in the JiWu luck cycle (2020-2029), both Earth (Ji) and Fire (Wu) are present – Fire helps, Earth aggravates. The year 2026 BingWu pours in even more Fire, creating a temporary surge of strength. However, the month of April (GengChen) adds Metal (wealth) and Earth (output), which can drain Fire through overwork and bring unexpected losses. The market context reflects a strong downtrend and material drawdown, aligning with Earth's heavy influence. This month may see attempted rallies (Fire) that fail to sustain due to underlying Earth pressure. Traders should look for quick moves but be ready for reversals. The hidden stems hint at opportunities from Resource (Wood) sectors like technology or innovation, but avoid overexposure to real estate or commodity-linked names. Overall, a month of high potential but high risk."
+  }
 }

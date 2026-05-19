@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "composite": {
     "score": 46,
@@ -35,9 +35,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "tarot",
@@ -55,11 +55,16 @@
         "long_reading": "Present 的 Five of Swords reversed 显示前期冲突或杀跌情绪正在退潮，但不是胜利后的扩张，而是市场开始避免继续消耗。Crossing 的 Six of Swords upright 指向迁移、换仓与风险再平衡，说明 April 2026 的核心不是强攻，而是从压力区转向相对稳定区。\n\nRoot 的 Nine of Wands reversed 暗示底层承接疲弱，连续防守后的耐心下降；Past 的 The Empress upright 说明此前仍有流动性、政策预期或估值修复带来的滋养，但 Goal 的 Five of Pentacles upright 把目标层压低到避险、修补损失和寻找安全边际。Near Future 的 Four of Pentacles upright 强化了这个判断：资金会更重视保住已有仓位和控制回撤，而不是主动追高。\n\nYou 位的 The Devil upright 是风险点，代表市场容易被短线诱惑、杠杆情绪或旧有套牢结构牵引。Environment 的 Four of Cups upright 则说明外部环境偏冷淡，增量买盘兴趣有限。Hopes & Fears 的 Three of Swords reversed 有修复伤口的愿望，但 Outcome 的 The Emperor reversed 表明 April 2026 缺少稳定领导性力量，指数即便企稳，也可能表现为上有压力、下有支撑的拉锯。\n\n结合 artifact 中 21d return 为 -5.62%、63d return 小幅正、63d volatility normal、252d drawdown shallow，牌面与市场状态一致：不是深熊崩坏，也不是强趋势突破，更像浅回撤后的 defensive consolidation。策略含义上，应关注关键支撑是否守住、反弹是否有成交与权重板块确认；若缺少确认，追涨的 risk-reward 不佳。"
       },
       "symbols": [
-        "Five of Swords reversed: 冲突降温但信心未复原",
-        "Six of Swords upright: 迁移、换仓、风险再平衡",
-        "Four of Pentacles upright: 防守仓位、流动性收缩",
-        "The Devil upright: 杠杆诱惑、套牢牵引、短线依赖",
-        "The Emperor reversed: 缺少稳定主导与趋势纪律"
+        "Five of Swords reversed",
+        "Six of Swords upright",
+        "Nine of Wands reversed",
+        "The Empress upright",
+        "Five of Pentacles upright",
+        "Four of Pentacles upright",
+        "The Devil upright",
+        "Four of Cups upright",
+        "Three of Swords reversed",
+        "The Emperor reversed"
       ],
       "risk_tags": [
         "weak_leadership",
@@ -74,8 +79,18 @@
         "icon": "reversed emperor crown over a narrow price channel",
         "card_style": "calm analytical tarot-market card with restrained contrast and defensive geometry"
       },
-      "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/tarot.json",
-      "error": null
+      "raw_ref": "runs/8408c2bbf831/debug/cards/2026-05-16-0000/000001.SS/tarot.json",
+      "error": null,
+      "result_en": {
+        "score": 41,
+        "polarity": "bearish-neutral",
+        "intensity": "moderate",
+        "omen_type": "defensive_consolidation",
+        "headline": "Defend not stable, rebound lack of control",
+        "subline": "The face of April 2026 is more like cautious defense in shock repair than trend attack.",
+        "short_reading": "This group of Celtic Cross gives a cautious signal to 000001.SS: the market has the intention of transition and repair after the short-term decline, but the dominant force is insufficient, and funds are more inclined to contract, defend and wait. If there is a rebound, it is easy to show up as a technical backfill rather than a clear trend reversal.",
+        "long_reading": "The Present Five of Swords reversed shows that the early conflict or kill sentiment is ebb, but not the expansion after the victory, but the market began to avoid continued consumption. The Crossing Six of Swords upright points to migration, position change and risk rebalancing, indicating that the core of April 2026 is not a strong attack, but a shift from a pressure zone to a relatively stable zone.\n\nRoot&#39;s Nine of Wands reversed suggests that the underlying undertaking is weak and patience after continuous defense is declining. Past&#39;s The Empress upright shows that there was still liquidity, policy expectations or nourishment brought by valuation repair before, but Goal&#39;s Five of Pentacles upright lowered the target laminate to avoid danger, repair losses and find a margin of safety. Near Future&#39;s Four of Pentacles upright reinforces this judgment: funds will place more emphasis on keeping existing positions and controlling withdrawals, rather than actively chasing higher.\n\nThe Devil upright in You is a risk point, representing that the market is easily pulled by short-term temptation, leverage sentiment or old lock-in structure. The Environment Four of Cups upright, on the other hand, indicates a cold external environment with limited incremental buying interest. Hopes & Fears&#39;s Three of Swords reversed have the desire to repair the wound, but the Outcome The Emperor reversed shows that April 2026 lacks stable leadership. Even if the index stabilizes, it may show a see-saw with pressure on the top and support on the bottom.\n\nCombined with the artifact 21d return of -5.62%, 63d return slightly positive, 63d volatility normal, 252d drawdown shallow, the card face is consistent with the market state: not a deep bear collapse, nor a strong trend breakthrough, more like a defensive consolidation after a shallow pullback. In terms of strategic meaning, attention should be paid to whether the key support is held, whether the rebound has a success and weight plate confirmation."
+      }
     },
     {
       "schema_version": "0.1",
@@ -86,9 +101,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "wenwang",
@@ -125,8 +140,18 @@
         "icon": "flame-over-reeds",
         "card_style": "calm analytical oracle card with restrained market-grid texture"
       },
-      "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/wenwang.json",
-      "error": null
+      "raw_ref": "runs/8408c2bbf831/debug/cards/2026-05-16-0000/000001.SS/wenwang.json",
+      "error": null,
+      "result_en": {
+        "score": 54,
+        "polarity": "neutral_bullish",
+        "intensity": "moderate",
+        "omen_type": "静卦观望 / Fire-over-Wind consolidation",
+        "headline": "There is fire in the wind, the momentum does not leave the field",
+        "subline": "The April tilt is not a strong attack, but a shock to retain the upward fire.",
+        "short_reading": "This hexagram has no moving lines, and the main trend continues rather than flips violently. Wealth should be on top, indicating that there is still visible traction on the price side, but Self and Parents fall into the sky, and the market&#39;s own confidence and basic support are weak. Combined with the recent 21-day pullback, 63-day light positive earnings and normal volatility, April is more like a range repair, repeated testing, rather than a one-sided rally.",
+        "long_reading": "Sir, the main hexagram and the change hexagram are both Fire over Wind, and there is no moving lines. the core signal is the stable but not explosive. Li fire on, Xun wind under, said that sentiment, policy narrative or financial expectations can still ignite the disk, but the bottom of the way to promote partial penetration, gradual, not a direct breakthrough structure. With God to take Wealth, wealth in the sixth line, for the response, indicating that the market price of the target sense in the external position, may be driven by external expectations, policy window, capital or index heavyweight performance. The third line where Self is located is Parents, and Zi enters the ten-day space. The second line Hai also enters the ten-day space. The implication here is that the market is not self-confirming enough, the supporting narrative seems to exist but the actual carrying capacity is weak, and it is prone to look back after the rush, shrink after news stimulation, or traders waiting for confirmation. Officer at the beginning of the line and with White Tiger, stress and risk exist in the low background, more like stock concerns than sudden collapse. Flying Serpent fell Siblings, suggesting that intraday divergence, rotation and financial restraint would be more pronounced. Vermilion Bird is on both Offspring and Wealth at the same time, indicating that news, expected expressions and risk appetite can directly affect price readings. Comprehensive market context: 21-day earnings are negative, 63-day slightly positive, volatility is normal, retracement shallow, momentum mixed. Diagrams are consistent with the data: April tilt to the shock bias repair, low to undertake is OK, but the upside needs to be traded and confirmed. A more reasonable judgment is that mild positive bias inside a choppy range, rather than a trend bull market start. If there is a volume breakthrough within the month, the wealth in the should position can be activated."
+      }
     },
     {
       "schema_version": "0.1",
@@ -137,9 +162,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "bazi",
@@ -177,8 +202,18 @@
         "icon": "bent young tree under metal weight",
         "card_style": "restrained analytical omen card with sharp borders and low saturation"
       },
-      "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/bazi.json",
-      "error": null
+      "raw_ref": "runs/8408c2bbf831/debug/cards/2026-05-16-0000/000001.SS/bazi.json",
+      "error": null,
+      "result_en": {
+        "score": 42,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "constraint_pressure",
+        "headline": "The official kill is heavy, the wood is weak and the pressure is on.",
+        "subline": "April 2026 shows pressure before recovery; structure is defensive, not trend-following.",
+        "short_reading": "This elephant is centered on weak armour and heavy gold. Metal is the most abundant in the plate, with more Officer, representing rules, pressure, external constraints and valuation suppression; Wood&#39;s root gas is insufficient, Resource and Peer are gods, but water wood support is less. Combined with the state of the market, nearly 21 days of withdrawal is obvious, 63 days is still slightly positive, indicating that not completely broken, but short-term pressure, mixed direction.",
+        "long_reading": "The four pillars show a weak Japanese pattern: Jia Wood was born in Xu Yue, with thick earth and gold. Geng and Xin are seen in the sky, and the momentum of Officer is concentrated. For the index, this is more like a consolidation period when the liquidity and policy expectation are compressed, rather than a month of smooth upside. Wealth is high at the same time as Officer, which usually means that funds are still calculated in the face of earnings expectations, but the trading environment is constrained by regulation, macro data, exchange rates or external risk pricing, making it difficult for risk appetite to expand naturally.\n\nWith God falling on Resource, Peer, and Wood, it&#39;s not stronger gold and soil pressure that really improves the situation, but incremental liquidity, earnings expectations repair, policy confirmation, or internal market resonance. The current market_context shows that 21d return is negative, 63d return is slightly positive, volatility normal,drawdown shallow; This set of data is consistent with the fate: it is not a deep crisis, but a compression phase with pressure above and support below.\n\nTherefore, the reading of April 2026 is cautious. If there is a rebound, it is more likely to be a technical repair after being pressed, rather than a trend confirmation. If the gold gas continues to strengthen, it is easy to show that the weight index is under pressure, the volume of transactions is shrinking, and the rebound is not sustainable. A better signal should come from the image of Shui Mu: capital return, policy support, growth or domestic demand sector proliferation, and the index back to the key moving average after the volume can be confirmed."
+      }
     },
     {
       "schema_version": "0.1",
@@ -189,9 +224,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "ziwei",
@@ -231,8 +266,18 @@
         "icon": "fortified palace under crossing winds",
         "card_style": "calm analytical oracle card with firm central axis and fractured outer ring"
       },
-      "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/ziwei.json",
-      "error": null
+      "raw_ref": "runs/8408c2bbf831/debug/cards/2026-05-16-0000/000001.SS/ziwei.json",
+      "error": null,
+      "result_en": {
+        "score": 42,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "结构承压 / 分歧放大",
+        "headline": "The foundation has stars, the outer edge is out of balance.",
+        "subline": "The disk surface of April 2026 is not a collapse phase, but the center of gravity is still there, and the trading level is easy to be divided and repeatedly consumed.",
+        "short_reading": "The plate is based on the Property Palace, with Ziwei, Tianfu and Qisha sitting together and with natal Hua Lu, indicating that the underlying weights, institutional support and long-term asset anchors still exist. However, Siblings the year falls, Taiyang and Tanlang will bring period Hua Quan, and the market voice, plate rotation and capital differences will be magnified. See period Hua Ji in the Friends Palace, and natal Hua Ji in the Travel Palace, where external flows, peer risk appetite and cross-market disturbances are the main stressors. Combined with the recent 21-day pullback negative and 63-day momentum slightly positive, it is a mixed omen that is weak in the short term but not completely destroyed in the midline.",
+        "long_reading": "The core structure is not empty. Life Palace falls Property, and Property Palace has Ziwei, Tianfu, Qisha and natal Hua Lu. This is 1 combination of &quot;the chassis is still thick, but the driving force is hard&quot;: the index is still supported by policies, weights and valuation anchors. The real problem is not that it has not been accepted, but that the upward momentum needs stronger consensus to be released. Qisha makes the rhythm more like switching and clearing rather than smooth fixing.\n\nApril 2026&#39;s annual flow focuses on Siblings and affects Career, Wealth and Fortune. Siblings Palace Taiyang and Tanlang plus period Hua Quan represent the enhancement of expression rights within the market: hot spots, narratives and style rotation will be more active, but it is also easier to push differences to the front. Although there are Wenchang, Tianyue and period Hua Ke in the Wealth Palace, it shows that the capital is not completely out of order and there is still a window for rational pricing and repair. However, Tuoluo is present, which makes the rising process even more delayed and prone to a state of seemingly opportunity and actual progress not going well.\n\nRisk points focus on Friends and Travel. Friends Palace Lianzhen, Tianliang, Wenqu meet period Hua Ji, suggesting that market alliances, institutional consensus, external interpretation framework can easily become a burden; Travel Palace natal Hua Ji points to the interference of external markets, exchange rates, cross-border funds or macro news. The only Huoxing seen in Career Palace means that there will be sudden impulse at the executive level: short-term fluctuations caused by urgent pull, urgent kill, policy expectations or industry news may occur.\n\nSo this month&#39;s judgment is cautious: not a systemic deep fall, but the short-term risk is significantly higher than the homeopathic gains. A more reasonable interpretation is to &quot;keep the foundation, avoid chasing, and wait for confirmation&quot;. If the index can hold the shallow retracement zone and re-condense the positive signal of Wealth/Fortune, there is still room for repair; if Friends/Travel&#39;s Hua Ji is triggered by an external event, it is prone to a double dip or high volatility."
+      }
     },
     {
       "schema_version": "0.1",
@@ -243,9 +288,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "astrology",
@@ -282,8 +327,18 @@
         "icon": "new_moon_with_twin_winds",
         "card_style": "calm_analytical_oracle"
       },
-      "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/astrology.json",
-      "error": null
+      "raw_ref": "runs/8408c2bbf831/debug/cards/2026-05-16-0000/000001.SS/astrology.json",
+      "error": null,
+      "result_en": {
+        "score": 58,
+        "polarity": "neutral_positive",
+        "intensity": "moderate",
+        "omen_type": "air_fire_new_cycle",
+        "headline": "New fire lit, wind direction undetermined",
+        "subline": "Gemini asset meets Aries season under a new-cycle proxy: initiative exists, but confirmation is still thin.",
+        "short_reading": "This month&#39;s signals are moderate and constructive. Aries season brings a sense of initiation and Gemini proxy enhances information flow and rotation sensitivity; however, the pullback in the last 21 days is still in place, indicating that the market has not yet completed direction confirmation. It&#39;s more like an early period of accumulation_cycle than the unfolding of a stabilizing trend.",
+        "long_reading": "000001.SS presents a combination of &quot;wind meets fire&quot; in April 2026&#39;s astrological agency structure: Gemini corresponds to differentiation, switching, message-driven, Aries corresponds to beginning, impulse and repricing. The new moon proxy works with the accumulation_cycle to reorganize the readings in favor of low, rather than a clear break.\n\nThe realistic undertone given by the market context is not extreme: the 63-day fluctuation is normal and the 252-day drawdown is shallow, indicating limited systemic pressure; however, the 21-day return is about -5.62 per cent, and there is still inertial pressure in the short term. 63-day earnings are slightly positive, suggesting that the medium-term structure is not completely destroyed. Taken together, this month is more appropriately interpreted as a &quot;tentative repair window&quot;: funds may look for reasons to reprice, but prices need stronger confirmation to turn tentative into a trend.\n\nThe main risk is that the Gemini-Aries portfolio is prone to rapid narrative switching: policy, liquidity, risk appetite or industry rotation may change the center of gravity in a short period of time. If the rise lacks trading and breadth support, it is easy to evolve into a rebound rather than a reversal. If the downside expands, shallow drawdown may be repriced into deeper risk releases."
+      }
     },
     {
       "schema_version": "0.1",
@@ -294,9 +349,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "market_pulse",
@@ -333,8 +388,18 @@
         "icon": "waning crescent over index line",
         "card_style": "calm analytical market oracle card with restrained contrast"
       },
-      "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/market_pulse.json",
-      "error": null
+      "raw_ref": "runs/8408c2bbf831/debug/cards/2026-05-16-0000/000001.SS/market_pulse.json",
+      "error": null,
+      "result_en": {
+        "score": 42,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "mixed_momentum_pullback",
+        "headline": "Short-term retracement presses the disk surface",
+        "subline": "The 21-day kinetic energy weakened significantly, but the 63-day was still slightly positive, and the structure was more like consolidation than trend collapse.",
+        "short_reading": "000001.SS&#39;s pulse in April 2026 is cautious: the return on the past 21 days is about -5.62, indicating that short-term selling pressure has dominated. However, there are still about +0.96 in the past 63 days, indicating that the medium-term structure has not completely turned empty. Volatility is normal, with a 252-day pullback of about -6.43 per cent, which is a shallow drawdown. The overall signal is mixed momentum: the market is giving back its previous gains, but has not yet entered a state of high volatility out of control.",
+        "long_reading": "The core of this set of artifact is not a catastrophe, but a short-term momentum deterioration. The 3913.72 latest close fit-a 21-day return of 5.62 per cent-suggests that recent funding behaviour has been defensive and prices are experiencing a clear round of downward pressure or profit-taking. At the same time, 63-day returns remain slightly positive, meaning that a trend break has not been confirmed for a longer window. In other words, the short-term trend has cooled, but the medium-term framework has not yet fully turned into a bear regime.\n\nThe volatility_63d is about 14.64 percent and the label is normal, which is critical. If the decline is accompanied by abnormal volatility, the interpretation will be closer to the panic or forced liquidation; however, the current volatility is not significantly amplified, indicating that the market is more like an orderly cooling. The drawdown_252d of about -6.43 percent, labeled shallow, also supports this judgment: the pullback is stressful, but not deep enough to pose serious structural damage.\n\nTherefore, the oracle reading should fall in the cautious consolidation: short-term risk is negative, medium-term still retain room for repair. Be wary that if the 21-day negative momentum continues to extend and the 63-day return is also dragged into a significantly negative range, the signal will shift from mixed to bearish continuation. Conversely, if prices can stabilize in a low volatility environment and return to positive 21-day returns, then this pullback may just be a trend digestion."
+      }
     }
   ],
   "run_id": "5d643889d4c9"

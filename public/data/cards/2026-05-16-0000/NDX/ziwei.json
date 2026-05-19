@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "ziwei",
@@ -21,10 +21,10 @@
     "polarity": "neutral-positive",
     "intensity": "high",
     "omen_type": "transformative volatility",
-    "headline": "Transformative Winds: Fortune Favors the Prepared",
-    "subline": "Wealth Palace receives Ke; Fortune Palace receives Lu – but Qisha and Pojun warn of upheaval.",
-    "short_reading": "April 2026 brings a potent mix of auspicious transformations and destabilizing forces. The Wealth Palace's Wuqu-Jumen with Hua Ke signals financial recognition through skill, but the Life Palace's Pojun and auxiliary stars suggest abrupt shifts. The Fortune Palace's Ziwei-Tianfu-Qisha with Hua Lu points to gains from bold moves, yet Lingxing implies hidden friction. The annual flow into the Spouse Palace (Taiyang-Tanlang with Hua Quan) emphasizes partnerships and external catalysts. Overall, a month of high-stakes opportunity requiring careful navigation.",
-    "long_reading": "The Ziwei chart for NDX in April 2026 paints a complex picture. The asset's recent strong downtrend (21d -7.6%, 63d -9.8%) aligns with the Life Palace's Pojun (upheaval) and Taiyin (hidden currents) with Tianji (strategy). The presence of Zuofu (assistance) suggests that support from institutional or algorithmic forces may emerge. The Wealth Palace (Wuqu, Jumen, Hua Ke) indicates that monetary gains are tied to intellectual property, tech, or legal clarity – a positive sign for NDX constituents. The Fortune Palace (Ziwei, Tianfu, Qisha, Lucun, Lingxing, Hua Lu) is remarkably strong: Ziwei as emperor grants leadership, Tianfu stability, Qisha daring, Lucun wealth, but Lingxing injects unexpected disruptions. Hua Lu here amplifies fortune, yet the combination is like a double-edged sword – gains may come with sudden reversals. The annual flow touches the Spouse Palace (Taiyang, Tanlang, Hua Quan) – external partnerships, regulatory news, or market sentiment shifts (Sun) combined with speculative fervor (Tanlang) and empowerment (Hua Quan) could trigger sharp moves. The Three Sides and Four Orthodox include Fortune, Spouse, Travel, and Wealth - reinforcing that external relations and bold financial actions will dominate. Risk is elevated, but the potential for a significant rebound exists if key support holds. Watch for volatility around earnings season and macro events. This is not a time for complacency but for strategic agility."
+    "headline": "变革性的风: 财富有利于有准备的人",
+    "subline": "财富宫收柯; 财富宫收陆-但其沙和泊君警告动乱。",
+    "short_reading": "2026年4月带来了吉祥的转变和破坏稳定的力量。财富宫的五曲居门与华科通过技能发出财务认可的信号，但生命宫的泊君与辅助明星则暗示了突变。财富宫的紫薇-天府-七沙与华璐指向大胆的举动带来的收益，而灵星则暗示着隐藏的摩擦。年流入配偶宫 (太阳-谈郎与华全) 强调伙伴关系和外部催化剂。总体而言，一个月的高风险机会需要仔细导航。",
+    "long_reading": "2026年4月NDX的紫薇图描绘了一幅复杂的图景。资产近期强劲跌势 (21d -7.6% 、63d -9.8%) 与生命宫的泊君 (剧变) 、泰银 (潜流) 与天际 (策略) 一致。Zuofu (援助) 的存在表明，可能会出现来自机构或算法力量的支持。财富宫 (Wuqu，Jumen，Hua Ke) 表明，货币收益与知识产权，技术或法律清晰度有关，这对NDX成员来说是一个积极的信号。财宫 (紫薇、天府、七沙、吕村、灵星、华禄) 实力非常强: 紫薇为天皇授领导，天府稳定，七沙大胆，吕村财富，但灵星注入了意想不到的干扰。华璐在这里放大了财富，但这种结合就像一把双刃剑 -- 收益可能伴随着突然的逆转。年度流量触及配偶宫 (太阳、谭浪、华泉)-外部合作关系、监管消息或市场情绪转变 (太阳) 结合投机狂热 (谭浪) 和赋能 (华泉) 可能引发大幅波动。三个方面和四个正统包括财富，配偶，旅行和财富-强化了外部关系和大胆的财务行动将占主导地位。风险升高，但如果关键支撑持续存在，则存在大幅反弹的可能性。关注收益季节和宏观事件的波动。现在不是自满的时候，而是战略敏捷的时候。"
   },
   "symbols": [
     "Ziwei",
@@ -44,6 +44,16 @@
     "regulation"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/NDX/ziwei.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/NDX/ziwei.json",
+  "error": null,
+  "result_en": {
+    "score": 60,
+    "polarity": "neutral-positive",
+    "intensity": "high",
+    "omen_type": "transformative volatility",
+    "headline": "Transformative Winds: Fortune Favors the Prepared",
+    "subline": "Wealth Palace receives Ke; Fortune Palace receives Lu – but Qisha and Pojun warn of upheaval.",
+    "short_reading": "April 2026 brings a potent mix of auspicious transformations and destabilizing forces. The Wealth Palace's Wuqu-Jumen with Hua Ke signals financial recognition through skill, but the Life Palace's Pojun and auxiliary stars suggest abrupt shifts. The Fortune Palace's Ziwei-Tianfu-Qisha with Hua Lu points to gains from bold moves, yet Lingxing implies hidden friction. The annual flow into the Spouse Palace (Taiyang-Tanlang with Hua Quan) emphasizes partnerships and external catalysts. Overall, a month of high-stakes opportunity requiring careful navigation.",
+    "long_reading": "The Ziwei chart for NDX in April 2026 paints a complex picture. The asset's recent strong downtrend (21d -7.6%, 63d -9.8%) aligns with the Life Palace's Pojun (upheaval) and Taiyin (hidden currents) with Tianji (strategy). The presence of Zuofu (assistance) suggests that support from institutional or algorithmic forces may emerge. The Wealth Palace (Wuqu, Jumen, Hua Ke) indicates that monetary gains are tied to intellectual property, tech, or legal clarity – a positive sign for NDX constituents. The Fortune Palace (Ziwei, Tianfu, Qisha, Lucun, Lingxing, Hua Lu) is remarkably strong: Ziwei as emperor grants leadership, Tianfu stability, Qisha daring, Lucun wealth, but Lingxing injects unexpected disruptions. Hua Lu here amplifies fortune, yet the combination is like a double-edged sword – gains may come with sudden reversals. The annual flow touches the Spouse Palace (Taiyang, Tanlang, Hua Quan) – external partnerships, regulatory news, or market sentiment shifts (Sun) combined with speculative fervor (Tanlang) and empowerment (Hua Quan) could trigger sharp moves. The Three Sides and Four Orthodox include Fortune, Spouse, Travel, and Wealth - reinforcing that external relations and bold financial actions will dominate. Risk is elevated, but the potential for a significant rebound exists if key support holds. Watch for volatility around earnings season and macro events. This is not a time for complacency but for strategic agility."
+  }
 }

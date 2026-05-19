@@ -12,13 +12,6 @@ const formatPeriod = (raw: string): string => {
   // timestamp: YYYY-MM-DD-HHMM
   const tm = raw.match(/^(\d{4})-(\d{2})-(\d{2})-(\d{2})(\d{2})$/)
   if (tm) return `${tm[1]}-${tm[2]}-${tm[3]} ${tm[4]}:${tm[5]} UTC`
-  // legacy: YYYY-MM-FREQ
-  const m = raw.match(/^(\d{4})-(\d{2})-([WMQY])$/)
-  if (m) {
-    const months = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
-    const u = parseInt(m[2],10)
-    return ({M:`${months[u]||m[2]} ${m[1]}`, Q:`Q${u} ${m[1]}`, W:`W${u} ${m[1]}`, Y:m[1]}[m[3]] || raw)
-  }
   return raw
 }
 
@@ -104,7 +97,6 @@ const ReadingsIndex = () => {
 }
 
 export default ReadingsIndex
-
 
 
 

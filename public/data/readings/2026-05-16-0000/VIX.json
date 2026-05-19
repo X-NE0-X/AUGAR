@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "composite": {
     "score": 56,
@@ -35,9 +35,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "tarot",
@@ -49,20 +49,22 @@
         "polarity": "positive",
         "intensity": "moderate",
         "omen_type": "favorable",
-        "headline": "From Suspension to Stability: VIX Set to Decline in April",
-        "subline": "The Celtic Cross reveals a turn from crisis to calm, with The Fool signaling a new beginning for volatility.",
-        "short_reading": "The Hanged Man in the present suggests a waiting period for VIX, while the reversed Ten of Swords indicates that the worst of the recent spike may be over. Temperance at the root blends extremes, pointing toward balance. The Knight of Cups in the environment and Nine of Cups as the querent's wish fulfillment suggest rising optimism. The Moon in hopes and fears warns of lingering uncertainty, but the Outcome card, The Fool, heralds a fresh start. Overall, April 2026 likely sees a decline in VIX toward calmer levels.",
-        "long_reading": "The Celtic Cross spread for VIX in April 2026 tells a story of transition from a period of deep fear (Five of Pentacles past) to a more balanced and controlled environment. The Present card, The Hanged Man upright, indicates a pause or sacrifice—perhaps the market is waiting for a catalyst. The Crossing card, Ten of Swords reversed, suggests that the worst pain is behind and recovery is underway. The Root is Temperance, emphasizing the need for moderation after extreme volatility. The Past card, Five of Pentacles, confirms recent hardship and a sense of being left out in the cold. The Goal is King of Cups, advocating emotional mastery and steady leadership in these volatile times. The Near Future card, King of Pentacles, promises stability and material success, implying that volatility will subside as markets find solid ground. The You card, Nine of Cups, shows a wish fulfillment—investors' desire for calm may be granted. The Environment card, Knight of Cups, brings a hopeful sentiment. The Hopes & Fears card, Moon upright, reveals that the biggest challenge is the fear of the unknown and hidden risks, but the Outcome card, The Fool, encourages a leap of faith into new beginnings. This combination of cards, especially with many Cups and Pentacles, suggests that emotional optimism and practical grounding will prevail over anxiety. For VIX, this means a likely decline from current elevated levels toward a more moderate volatility regime. However, the Moon reminds us that not all is clear, and the Fool advises trusting the process despite uncertainty. Overall, the oracle points to a favorable stability for VIX investors favoring bearish directional bets on the index."
+        "headline": "从暂停到稳定: VIX将在4月下降",
+        "subline": "凯尔特人的十字架揭示了从危机到平静的转变，傻瓜标志着波动的新开始。",
+        "short_reading": "目前的绞死人暗示了VIX的等待期，而倒转的十剑则表明最近高峰的最糟糕时期可能已经过去。根部的节制融合了极端，指向平衡。环境中的杯子骑士和九个杯子作为querent的愿望实现，表明乐观情绪正在上升。希望和恐惧中的月亮发出了挥之不去的不确定性的警告，但结果卡，傻瓜，预示着一个新的开始。总体而言，2026年4月可能会看到VIX下降至更平静的水平。",
+        "long_reading": "2026年4月波动率指数的凯尔特十字架讲述了一个从深深的恐惧时期 (过去的五个五角) 过渡到更加平衡和受控的环境的故事。目前的牌，被绞死的人直立，表示暂停或牺牲-也许市场正在等待催化剂。十字牌，十剑颠倒，表明最严重的痛苦已经过去，恢复正在进行中。根源在于节制，强调极端波动后需要适度。过去的卡片，五个五角，证实了最近的困难和被冷落的感觉。目标是杯中之王，在这个动荡的时代倡导情感上的掌握和稳定的领导能力。不久的将来，五角星之王的卡有望获得稳定和物质上的成功，这意味着随着市场找到坚实的基础，波动性将会减弱。You卡，九杯，显示了愿望的实现-投资者对平静的渴望可能会被授予。环境卡，杯子骑士，带来了充满希望的情感。希望与恐惧卡，月亮直立，揭示了最大的挑战是对未知和隐藏的风险的恐惧，但结果卡，傻瓜，鼓励信仰的飞跃进入新的开始。卡片的这种组合，尤其是带有许多杯子和五角星的卡片，表明情感乐观和实际基础将胜过焦虑。对于VIX而言，这意味着可能会从当前的高位下降到更温和的波动状态。然而，月亮提醒我们，并不是所有的事情都清楚，傻瓜建议相信这个过程，尽管存在不确定性。总体而言，甲骨文指出，波动率指数投资者的稳定性良好，倾向于看跌指数的定向押注。"
       },
       "symbols": [
-        "The Hanged Man",
+        "The Hanged Man upright",
         "Ten of Swords reversed",
-        "Temperance",
-        "Five of Pentacles",
-        "King of Cups",
-        "King of Pentacles",
-        "Nine of Cups",
-        "Knight of Cups"
+        "Temperance upright",
+        "Five of Pentacles upright",
+        "King of Cups upright",
+        "King of Pentacles upright",
+        "Nine of Cups upright",
+        "Knight of Cups upright",
+        "The Moon upright",
+        "The Fool upright"
       ],
       "risk_tags": [
         "volatility decline",
@@ -72,8 +74,18 @@
         "fresh start"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/VIX/tarot.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/VIX/tarot.json",
+      "error": null,
+      "result_en": {
+        "score": 70,
+        "polarity": "positive",
+        "intensity": "moderate",
+        "omen_type": "favorable",
+        "headline": "From Suspension to Stability: VIX Set to Decline in April",
+        "subline": "The Celtic Cross reveals a turn from crisis to calm, with The Fool signaling a new beginning for volatility.",
+        "short_reading": "The Hanged Man in the present suggests a waiting period for VIX, while the reversed Ten of Swords indicates that the worst of the recent spike may be over. Temperance at the root blends extremes, pointing toward balance. The Knight of Cups in the environment and Nine of Cups as the querent's wish fulfillment suggest rising optimism. The Moon in hopes and fears warns of lingering uncertainty, but the Outcome card, The Fool, heralds a fresh start. Overall, April 2026 likely sees a decline in VIX toward calmer levels.",
+        "long_reading": "The Celtic Cross spread for VIX in April 2026 tells a story of transition from a period of deep fear (Five of Pentacles past) to a more balanced and controlled environment. The Present card, The Hanged Man upright, indicates a pause or sacrifice—perhaps the market is waiting for a catalyst. The Crossing card, Ten of Swords reversed, suggests that the worst pain is behind and recovery is underway. The Root is Temperance, emphasizing the need for moderation after extreme volatility. The Past card, Five of Pentacles, confirms recent hardship and a sense of being left out in the cold. The Goal is King of Cups, advocating emotional mastery and steady leadership in these volatile times. The Near Future card, King of Pentacles, promises stability and material success, implying that volatility will subside as markets find solid ground. The You card, Nine of Cups, shows a wish fulfillment—investors' desire for calm may be granted. The Environment card, Knight of Cups, brings a hopeful sentiment. The Hopes & Fears card, Moon upright, reveals that the biggest challenge is the fear of the unknown and hidden risks, but the Outcome card, The Fool, encourages a leap of faith into new beginnings. This combination of cards, especially with many Cups and Pentacles, suggests that emotional optimism and practical grounding will prevail over anxiety. For VIX, this means a likely decline from current elevated levels toward a more moderate volatility regime. However, the Moon reminds us that not all is clear, and the Fool advises trusting the process despite uncertainty. Overall, the oracle points to a favorable stability for VIX investors favoring bearish directional bets on the index."
+      }
     },
     {
       "schema_version": "0.1",
@@ -84,9 +96,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "wenwang",
@@ -98,10 +110,10 @@
         "polarity": "mixed",
         "intensity": "moderate",
         "omen_type": "transformation",
-        "headline": "Lake Stirred by Wind: Volatility in Transition",
-        "subline": "Static Wealth anchors yet moving Officer and Parents signal underlying shifts.",
-        "short_reading": "The primary hexagram Dui (Lake) with moving lines 1 and 3 transforms into Dui over Xun (Wind). Wealth line sits static as Response, indicating the VIX level may hold, but moving Officer (risk) and Parents (foundation) suggest increasing turbulence. The void month and day branches (Si, Wu) empty the fire control, allowing Metal elements to move. Expect a volatile period with potential sharp moves, yet the core level may remain range-bound.",
-        "long_reading": "This reading for VIX in April 2026 reveals a scene of stillness beneath a stirring wind. The primary hexagram, Dui double lake, represents joy and openness but also the danger of shallows. Moving lines at the bottom (Officer) and third (Parents) indicate that the pressure of risk and the foundation of information are undergoing change. Officer changing from yang to yin suggests a softening of risk? Actually moving from old yang to yin: the risk could become less aggressive? But then Parents moving from yin to yang indicates strengthening of support/ news. The changed hexagram 'Lake over Wind' (Dui over Xun) is known as 'The Joyful Lake with Wind beneath' - implies that the surface appears calm but winds blow underneath, creating waves. The Wealth line (line 6) is static and occupies the response position, suggesting the ultimate outcome (market level) may stay relatively stable, but the path could be choppy. The month and day branches Si and Wu (Fire) are in the void (xun kong), meaning the controlling element is empty, which may allow the Metal of the Wealth line and other lines to express more freely, possibly leading to erratic moves. Given VIX's recent strong uptrend and extreme volatility, this reading warns to expect continued high volatility but not necessarily a breakout to new highs; rather a sideways volatile pattern. The moving Officer line at the bottom suggests that initial risk may diminish, but the moving Parents indicates that fundamentals or news will drive subsequent action. The self line (line3) is moving, indicating the querent's own position (or the market's internal dynamics) are in flux. Overall, a period of transformation where old patterns break and new ones form. Caution advised, but not alarm."
+        "headline": "风搅动的湖泊: 过渡中的波动性",
+        "subline": "静态财富锚定，但不断变化的官员和父母发出潜在转变的信号。",
+        "short_reading": "具有移动线1和3的主六边形Dui (湖) 转换为Dui over un (风)。财富线作为响应处于静态，表明VIX水平可能保持不变，但移动官员 (风险) 和父母 (基础) 表明动荡加剧。虚空的月和日分支 (Si，Wu) 清空了火控，允许金属元素移动。预计会有一个动荡的时期，可能会有剧烈的波动，但核心水平可能会保持区间波动。",
+        "long_reading": "2026年4月VIX的读数揭示了狂风之下的寂静景象。主卦Dui double lake代表喜悦和开放，但也代表浅滩的危险。底部 (官员) 和第三 (父母) 的移动线表明风险的压力和信息的基础正在发生变化。军官由阳转阴暗示风险软化？实际上从旧阳转向阴: 风险可能会变得不那么激进？但是父母从阴到阳表明支持/新闻的加强。变化的六角形 “风上的湖” (Dui over Xun) 被称为 “有风的快乐湖”-意味着表面看起来很平静，但风在下面吹，形成波浪。财富线 (第6行) 是静态的，占据了响应位置，表明最终结果 (市场水平) 可能保持相对稳定，但路径可能是波涛汹涌的。月份和日期分支Si和Wu (火) 在虚空 (xun kong) 中，这意味着控制元素是空的，这可能使财富线和其他线的金属更自由地表达，可能导致不稳定的举动。鉴于VIX最近的强劲上升趋势和极端波动，这一读数警告预计将持续高波动，但不一定突破新高; 而是横向波动模式。底部的移动官员线表明初始风险可能会减少，但移动父母表示基本面或新闻将推动后续行动。自我线 (线3) 正在移动，表明querent自己的位置 (或市场的内部动态) 正在变化。总的来说，这是一个转变的时期，旧的模式打破了，新的模式形成了。建议谨慎，但不要报警。"
       },
       "symbols": [
         "Lake",
@@ -120,8 +132,18 @@
         "uncertainty"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/VIX/wenwang.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/VIX/wenwang.json",
+      "error": null,
+      "result_en": {
+        "score": 55,
+        "polarity": "mixed",
+        "intensity": "moderate",
+        "omen_type": "transformation",
+        "headline": "Lake Stirred by Wind: Volatility in Transition",
+        "subline": "Static Wealth anchors yet moving Officer and Parents signal underlying shifts.",
+        "short_reading": "The primary hexagram Dui (Lake) with moving lines 1 and 3 transforms into Dui over Xun (Wind). Wealth line sits static as Response, indicating the VIX level may hold, but moving Officer (risk) and Parents (foundation) suggest increasing turbulence. The void month and day branches (Si, Wu) empty the fire control, allowing Metal elements to move. Expect a volatile period with potential sharp moves, yet the core level may remain range-bound.",
+        "long_reading": "This reading for VIX in April 2026 reveals a scene of stillness beneath a stirring wind. The primary hexagram, Dui double lake, represents joy and openness but also the danger of shallows. Moving lines at the bottom (Officer) and third (Parents) indicate that the pressure of risk and the foundation of information are undergoing change. Officer changing from yang to yin suggests a softening of risk? Actually moving from old yang to yin: the risk could become less aggressive? But then Parents moving from yin to yang indicates strengthening of support/ news. The changed hexagram 'Lake over Wind' (Dui over Xun) is known as 'The Joyful Lake with Wind beneath' - implies that the surface appears calm but winds blow underneath, creating waves. The Wealth line (line 6) is static and occupies the response position, suggesting the ultimate outcome (market level) may stay relatively stable, but the path could be choppy. The month and day branches Si and Wu (Fire) are in the void (xun kong), meaning the controlling element is empty, which may allow the Metal of the Wealth line and other lines to express more freely, possibly leading to erratic moves. Given VIX's recent strong uptrend and extreme volatility, this reading warns to expect continued high volatility but not necessarily a breakout to new highs; rather a sideways volatile pattern. The moving Officer line at the bottom suggests that initial risk may diminish, but the moving Parents indicates that fundamentals or news will drive subsequent action. The self line (line3) is moving, indicating the querent's own position (or the market's internal dynamics) are in flux. Overall, a period of transformation where old patterns break and new ones form. Caution advised, but not alarm."
+      }
     },
     {
       "schema_version": "0.1",
@@ -132,9 +154,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "bazi",
@@ -146,10 +168,10 @@
         "polarity": "negative",
         "intensity": "medium",
         "omen_type": "transition",
-        "headline": "Fire calms the Wood of fear – VIX may ease.",
-        "subline": "April 2026: Stabilizing Qi dampens extreme volatility.",
-        "short_reading": "The Bazi chart reveals a balanced Earth day master (Ji) under strong Wood influence from the Mao month. However, the incoming Fire of the WuSi luck pillar and BingWu year pillar supports Earth and tempers Wood. For VIX, this suggests a moderation of the recent fear-driven surge, with potential for a decline or consolidation.",
-        "long_reading": "This oracle examines the VIX’s Bazi birth chart in the context of April 2026. The day master, Ji Earth, is born in Mao (Wood) month – a controlling relationship (Wood over Earth). The Earth element scores 5, balanced, but the seasonal Wood is strong. The current luck cycle (2018–2027, WuSi) and the year 2026 (BingWu) both bring abundant Fire. Fire is the Resource element for Earth, nourishing the day master and also transforming Wood’s control into creative energy. For a volatility index, Wood often correlates with anxiety and rapid moves, while Fire brings clarity and stability. Therefore, April 2026 likely sees a calming of extreme fear, possibly leading to a decrease in VIX. However, the deep drawdown label warns that underlying market stress remains. The overall reading is a transition from high tension to a more manageable state, but not a complete dissipation of risk. Traders should watch for a volatility crush rather than a spike."
+        "headline": "火平息了恐惧的木头 -- VIX可能会缓解。",
+        "subline": "2026年4月: 稳气抑制极端波动。",
+        "short_reading": "Bazi图表揭示了一个平衡的地球日大师 (Ji) 受到毛月的强烈木材影响。然而，五四运柱和宾武年柱的来火支撑着泥土和磨练木材。对于VIX而言，这表明近期恐惧驱动的飙升有所缓和，可能会出现下跌或整合。",
+        "long_reading": "这篇oracle在2026年4月的背景下研究了VIX的Bazi出生图。天主纪·地球出生在毛 (木) 月-一种控制关系 (木在地球上)。土元素得分5，平衡，但季节性木材较强。本轮运气周期 (2018-2027，五四) 和2026年 (冰火) 双双带来充沛火力。火是地球的资源元素，滋养着白天的主人，也将木材的控制转化为创造力。对于波动率指数，木材通常与焦虑和快速移动相关，而火灾则带来清晰度和稳定性。因此，2026年4月可能会看到极端恐惧的平静，可能导致VIX的减少。然而，深度下跌标签警告说，潜在的市场压力仍然存在。整体读数是从高度紧张到更可控状态的过渡，但不是风险的完全消散。交易者应该手表波动性崩溃而不是飙升。"
       },
       "symbols": [
         "Fire",
@@ -164,8 +186,18 @@
         "support"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/VIX/bazi.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/VIX/bazi.json",
+      "error": null,
+      "result_en": {
+        "score": 1,
+        "polarity": "negative",
+        "intensity": "medium",
+        "omen_type": "transition",
+        "headline": "Fire calms the Wood of fear – VIX may ease.",
+        "subline": "April 2026: Stabilizing Qi dampens extreme volatility.",
+        "short_reading": "The Bazi chart reveals a balanced Earth day master (Ji) under strong Wood influence from the Mao month. However, the incoming Fire of the WuSi luck pillar and BingWu year pillar supports Earth and tempers Wood. For VIX, this suggests a moderation of the recent fear-driven surge, with potential for a decline or consolidation.",
+        "long_reading": "This oracle examines the VIX’s Bazi birth chart in the context of April 2026. The day master, Ji Earth, is born in Mao (Wood) month – a controlling relationship (Wood over Earth). The Earth element scores 5, balanced, but the seasonal Wood is strong. The current luck cycle (2018–2027, WuSi) and the year 2026 (BingWu) both bring abundant Fire. Fire is the Resource element for Earth, nourishing the day master and also transforming Wood’s control into creative energy. For a volatility index, Wood often correlates with anxiety and rapid moves, while Fire brings clarity and stability. Therefore, April 2026 likely sees a calming of extreme fear, possibly leading to a decrease in VIX. However, the deep drawdown label warns that underlying market stress remains. The overall reading is a transition from high tension to a more manageable state, but not a complete dissipation of risk. Traders should watch for a volatility crush rather than a spike."
+      }
     },
     {
       "schema_version": "0.1",
@@ -176,9 +208,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "ziwei",
@@ -190,10 +222,10 @@
         "polarity": "mixed",
         "intensity": "high",
         "omen_type": "mixed",
-        "headline": "Volatility and Opportunity in Shadow of Crisis",
-        "subline": "A period of intense transformation where auspicious forces in property and social circles meet deep-seated fears.",
-        "short_reading": "The chart reveals a powerful convergence of wealth stars in the Property palace, offset by a volatile Life Palace. The VIX index mirrors market anxiety, yet the stars suggest strategic gains through careful positioning.",
-        "long_reading": "The Ziwei chart for VIX in April 2026 shows a complex interplay of forces. The Life Palace, with Huoxing and Hua Ji, indicates an underlying restlessness and potential setbacks, reflecting the index's inherent volatility. However, the Children Palace shines with Ziwei, Tianfu, Qisha, Zuofu, Lucun, and natal Hua Lu, signifying strong support and auspicious beginnings in speculative ventures or new market phases. The Property Palace (body palace) features Wuqu, Jumen, and Hua Ke, pointing to recognition and mastery in wealth management. The annual flow settles in the Friends Palace (Taiyang, Tanlang, period Hua Quan), highlighting the influence of social networks and alliances in career and wealth outcomes (the focus palaces). The current major limit of Travel (Youbi, natal Hua Quan) suggests proactive movement and adaptability are key. The three-sides-four-orthodox grouping (Children, Friends, Parents, Property) forms a solid foundation: Parents with Tiantong, Tianxiang, Wenchang, Tuoluo, Tianyue implies a need to balance talent and obstacles from external authorities or past patterns. Overall, this is a period where high volatility (extreme in market context) is both a risk and an opportunity, with auspicious elements favoring those who navigate with discipline and awareness of emotional triggers."
+        "headline": "危机阴影下的波动与机遇",
+        "subline": "一个激烈的转变时期，财产和社交圈中的吉祥力量遇到了根深蒂固的恐惧。",
+        "short_reading": "该图表揭示了财产宫殿中财富之星的强大融合，被动荡的生命宫殿所抵消。VIX指数反映了市场焦虑，但明星们建议通过谨慎定位获得战略收益。",
+        "long_reading": "2026年4月VIX的紫薇图显示了复杂的力量相互作用。生命宫，有火星和华记，预示着潜在的躁动和潜在的挫折，反映了指数的内在波动性。然而，少年宫闪耀着紫薇、天府、七沙、左夫、吕村和纳塔尔华禄，标志着投机企业或新市场阶段的强大支持和吉祥开端。产宫 (体宫) 以五曲、居门、华科为特色，指向对财富管理的认可和精通。年度流量定居在朋友宫 (太阳，谭朗，期华全)，突出了社交网络和联盟对职业和财富成果的影响 (焦点宫)。当前旅行的主要限制 (Youbi，natal Hua Quan) 表明，积极的运动和适应性是关键。三面四正统的分组 (孩子，朋友，父母，财产) 构成了坚实的基础: 天童，天祥，文昌，托罗，天悦的父母意味着需要平衡才能和来自外部权威或过去模式的障碍。总的来说，这是一个高波动 (在市场背景下是极端的) 既是风险也是机会的时期，吉祥的元素有利于那些有纪律和对情绪触发的意识的人。"
       },
       "symbols": [
         "Ziwei",
@@ -213,8 +245,18 @@
         "external obstacles"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/VIX/ziwei.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/VIX/ziwei.json",
+      "error": null,
+      "result_en": {
+        "score": 65,
+        "polarity": "mixed",
+        "intensity": "high",
+        "omen_type": "mixed",
+        "headline": "Volatility and Opportunity in Shadow of Crisis",
+        "subline": "A period of intense transformation where auspicious forces in property and social circles meet deep-seated fears.",
+        "short_reading": "The chart reveals a powerful convergence of wealth stars in the Property palace, offset by a volatile Life Palace. The VIX index mirrors market anxiety, yet the stars suggest strategic gains through careful positioning.",
+        "long_reading": "The Ziwei chart for VIX in April 2026 shows a complex interplay of forces. The Life Palace, with Huoxing and Hua Ji, indicates an underlying restlessness and potential setbacks, reflecting the index's inherent volatility. However, the Children Palace shines with Ziwei, Tianfu, Qisha, Zuofu, Lucun, and natal Hua Lu, signifying strong support and auspicious beginnings in speculative ventures or new market phases. The Property Palace (body palace) features Wuqu, Jumen, and Hua Ke, pointing to recognition and mastery in wealth management. The annual flow settles in the Friends Palace (Taiyang, Tanlang, period Hua Quan), highlighting the influence of social networks and alliances in career and wealth outcomes (the focus palaces). The current major limit of Travel (Youbi, natal Hua Quan) suggests proactive movement and adaptability are key. The three-sides-four-orthodox grouping (Children, Friends, Parents, Property) forms a solid foundation: Parents with Tiantong, Tianxiang, Wenchang, Tuoluo, Tianyue implies a need to balance talent and obstacles from external authorities or past patterns. Overall, this is a period where high volatility (extreme in market context) is both a risk and an opportunity, with auspicious elements favoring those who navigate with discipline and awareness of emotional triggers."
+      }
     },
     {
       "schema_version": "0.1",
@@ -225,9 +267,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "astrology",
@@ -256,8 +298,18 @@
         "trend_shifting"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/VIX/astrology.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/VIX/astrology.json",
+      "error": null,
+      "result_en": {
+        "score": 65,
+        "polarity": "neutral",
+        "intensity": "high",
+        "omen_type": "stable",
+        "headline": "Market volatility remains high, trend stable",
+        "subline": "The fear index is in the extreme range, but the stable sign suggests that the risk is manageable.",
+        "short_reading": "The VIX was at a high level in April, with the full moon superimposed on the Aries season, and market sentiment was extremely high but balanced.",
+        "long_reading": "Based on the astrological proxy model, the VIX (Sagittarius asset) shows signs of stability in April 2026 (Aries season). The full-month phase exacerbates short-term volatility, but the accumulation of cycle labels suggests that this round of panic may be part of the suction phase. Technically, extreme volatility and strong uptrends coexist, deep retracements have been digested, and the market is looking for a new equilibrium. It is recommended to be vigilant but not overly pessimistic."
+      }
     },
     {
       "schema_version": "0.1",
@@ -268,9 +320,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "market_pulse",
@@ -297,8 +349,18 @@
         "强势上涨"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/VIX/market_pulse.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/VIX/market_pulse.json",
+      "error": null,
+      "result_en": {
+        "score": 80,
+        "polarity": "negative",
+        "intensity": "high",
+        "omen_type": "warning",
+        "headline": "VIX soars above 30 on extreme volatility alert",
+        "subline": "Strong short-term momentum, panic in market sentiment",
+        "short_reading": "Market panic intensifies and volatility remains at extreme levels",
+        "long_reading": "The VIX index is currently at 31.05, with a 21-day return of 66.7 per cent and a 63-day return of 130.5 per cent, indicating a strong uptrend in both the short and medium term. The 63-day volatility is as high as 136.7 per cent, which is an extreme level. Despite the 40.7 per cent retracement in the past 252 days, the speed and magnitude of the recent rise suggest a strong risk aversion in the market. Funding pressures or uncertain events may have pushed up volatility. It is recommended to pay close attention to market trends."
+      }
     }
   ],
   "run_id": "e071b65d59c4"

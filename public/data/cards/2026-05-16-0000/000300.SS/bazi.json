@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "bazi",
@@ -21,10 +21,10 @@
     "polarity": "positive",
     "intensity": "medium",
     "omen_type": "auspicious",
-    "headline": "Favorable Winds for CSI 300 in April 2026",
-    "subline": "Luck cycle BingMao brings Fire and Wood, vitalizing the market.",
-    "short_reading": "The strong Xin Metal day master benefits from the BingMao luck cycle's Fire and Wood, which are its useful gods. This combination should reverse the recent falling trend and bring positive momentum to the CSI 300 in April 2026.",
-    "long_reading": "BaZi analysis reveals a strong Xin Metal day master with Earth and Metal excess. The pattern calls for Output (Wood) and Officer (Fire) to regulate and release the energy. The current luck cycle BingMao (Bing Fire, Mao Wood) precisely supplies these elements. Fire controls Metal, preventing stagnation, while Wood channels Metal's productivity. In the context of the CSI 300, this suggests a shift from the recent negative momentum to a period of recovery and growth. However, the strong Earth base may cause resistance, and the excess Metal could lead to sudden volatility. Overall, the outlook for April 2026 is auspicious, with moderate intensity."
+    "headline": "2026年4月CSI 300的有利风向",
+    "subline": "运气循环冰茂带来火与木，振兴市场。",
+    "short_reading": "强大的辛金属天主受益于兵猫运周期的火和木，是它的有用之神。这种组合应该会扭转近期的下跌趋势，并为2026年4月的中证300指数带来积极的动力。",
+    "long_reading": "BaZi分析揭示了一个强大的Xin金属日大师，地球和金属过剩。该模式要求输出 (木材) 和官员 (火) 来调节和释放能量。当前的运气周期冰茂 (Bing Fire，Mao Wood) 恰恰提供了这些元素。火控制金属，防止停滞，而木材通道金属的生产力。在中证300的背景下，这表明从近期的负动能转向复苏和增长期。但是，强大的地球基础可能会引起阻力，而多余的金属可能会导致突然的波动。总体而言，2026年4月的前景是吉祥的，强度适中。"
   },
   "symbols": [
     "Wood (Output)",
@@ -37,6 +37,16 @@
     "earth stability"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/000300.SS/bazi.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/000300.SS/bazi.json",
+  "error": null,
+  "result_en": {
+    "score": 75,
+    "polarity": "positive",
+    "intensity": "medium",
+    "omen_type": "auspicious",
+    "headline": "Favorable Winds for CSI 300 in April 2026",
+    "subline": "Luck cycle BingMao brings Fire and Wood, vitalizing the market.",
+    "short_reading": "The strong Xin Metal day master benefits from the BingMao luck cycle's Fire and Wood, which are its useful gods. This combination should reverse the recent falling trend and bring positive momentum to the CSI 300 in April 2026.",
+    "long_reading": "BaZi analysis reveals a strong Xin Metal day master with Earth and Metal excess. The pattern calls for Output (Wood) and Officer (Fire) to regulate and release the energy. The current luck cycle BingMao (Bing Fire, Mao Wood) precisely supplies these elements. Fire controls Metal, preventing stagnation, while Wood channels Metal's productivity. In the context of the CSI 300, this suggests a shift from the recent negative momentum to a period of recovery and growth. However, the strong Earth base may cause resistance, and the excess Metal could lead to sudden volatility. Overall, the outlook for April 2026 is auspicious, with moderate intensity."
+  }
 }

@@ -61,7 +61,7 @@ class ZiweiGenerator(BaseGenerator):
             "major_limits": major_limits,
             "annual_flow": {
                 "period": period.id,
-                "flow_palace": palaces[(offset + int(period.id[5:7])) % 12]["name"] if period.freq == "M" else palaces[offset]["name"],
+                "flow_palace": palaces[(offset + int(period.id[5:7])) % 12]["name"],
                 "focus": ["Career", "Wealth", "Fortune"],
             },
             "three_sides_four_orthodox": self._triads(palaces, life_idx),

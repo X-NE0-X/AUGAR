@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "composite": {
     "score": 36,
@@ -35,9 +35,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "tarot",
@@ -49,20 +49,22 @@
         "polarity": "neutral",
         "intensity": "moderate",
         "omen_type": "warning",
-        "headline": "Steady undercurrents with surface calm",
-        "subline": "Patience required as market digests prior gains",
-        "short_reading": "A mixed April for HSI, with underlying strength but lacking momentum. Expect a period of consolidation and methodical progress rather than sharp moves.",
-        "long_reading": "The Celtic Cross spread reveals a market rooted in growth (The Empress upright) and past clarity (Ace of Swords), yet currently facing a challenge of waning enthusiasm (Page of Wands reversed). The goal of a full rally (Ten of Cups reversed) may not be realized, suggesting a degree of disappointment. The near future calls for patience and assessment (Seven of Pentacles), while the environment is heavy with material concerns (The Devil upright). Hopes lean toward recovery (Five of Pentacles reversed), and the final outcome is steady, diligent progress (Knight of Pentacles). Overall, the tendency is cautious, with no strong directional bias—slow accumulation rather than exuberance."
+        "headline": "表面平静的稳定暗流",
+        "subline": "随着市场消化先前的收益，需要耐心",
+        "short_reading": "恒生指数4月喜忧参半，具有潜在的实力，但缺乏动力。期待一段时间的整合和有条不紊的进展，而不是急剧的行动。",
+        "long_reading": "凯尔特人的交叉传播揭示了一个植根于增长 (皇后直立) 和过去的清晰度 (剑的王牌) 的市场，但目前正面临着热情减弱的挑战 (魔杖的页面颠倒)。全面反弹的目标 (十杯倒转) 可能无法实现，这表明一定程度的失望。不久的将来需要耐心和评估 (七种五角星)，而环境却充满了物质问题 (魔鬼直立)。希望倾向于恢复 (五个五角倒转)，最终的结果是稳定，勤奋的进步 (五角骑士)。总体而言，趋势是谨慎的，没有强烈的方向性偏差-缓慢积累而不是繁荣。"
       },
       "symbols": [
-        "T",
-        "h",
-        "e",
-        " ",
-        "E",
-        "m",
-        "p",
-        "r"
+        "Two of Wands upright",
+        "Page of Wands reversed",
+        "The Empress upright",
+        "Ace of Swords upright",
+        "Ten of Cups reversed",
+        "Seven of Pentacles upright",
+        "Knight of Wands upright",
+        "The Devil upright",
+        "Five of Pentacles reversed",
+        "Knight of Pentacles upright"
       ],
       "risk_tags": [
         "consolidation",
@@ -70,8 +72,18 @@
         "fear environment"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/HSI/tarot.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/HSI/tarot.json",
+      "error": null,
+      "result_en": {
+        "score": 45,
+        "polarity": "neutral",
+        "intensity": "moderate",
+        "omen_type": "warning",
+        "headline": "Steady undercurrents with surface calm",
+        "subline": "Patience required as market digests prior gains",
+        "short_reading": "A mixed April for HSI, with underlying strength but lacking momentum. Expect a period of consolidation and methodical progress rather than sharp moves.",
+        "long_reading": "The Celtic Cross spread reveals a market rooted in growth (The Empress upright) and past clarity (Ace of Swords), yet currently facing a challenge of waning enthusiasm (Page of Wands reversed). The goal of a full rally (Ten of Cups reversed) may not be realized, suggesting a degree of disappointment. The near future calls for patience and assessment (Seven of Pentacles), while the environment is heavy with material concerns (The Devil upright). Hopes lean toward recovery (Five of Pentacles reversed), and the final outcome is steady, diligent progress (Knight of Pentacles). Overall, the tendency is cautious, with no strong directional bias—slow accumulation rather than exuberance."
+      }
     },
     {
       "schema_version": "0.1",
@@ -82,9 +94,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "wenwang",
@@ -96,10 +108,10 @@
         "polarity": "positive",
         "intensity": "medium",
         "omen_type": "transitional",
-        "headline": "Pressure transforms into opportunity",
-        "subline": "Officer moves to generate Wealth, market finds support.",
-        "short_reading": "The reading points to initial external pressure or regulatory concerns early in April, but the moving Officer line generates Wealth, indicating that these pressures will likely resolve into favorable conditions. The market may experience volatility but should stabilize and recover.",
-        "long_reading": "The primary hexagram Fire over Mountain (The Wanderer) suggests a transient, cautious phase. The moving line 1 (Officer) indicates that a risk factor is active, possibly related to external policies or market sentiment. However, the Officer (Earth) generates the Wealth (Metal) line at the top, showing that this pressure ultimately supports gains. In the changed hexagram Fire over Fire (The Clinging Fire), the message is to remain adaptable, hold on, and trust the process. The self line (Parents) indicates that news or fundamental support will be key. Overall, the energy is bullish once initial uncertainty passes. Wealth appears in the response position (line 6), confirming a positive outcome. Rating: slightly optimistic."
+        "headline": "压力转化为机遇",
+        "subline": "官员行动创造财富，市场找到支持。",
+        "short_reading": "读数指向4月初的初始外部压力或监管问题，但移动官员线产生财富，表明这些压力可能会解决为有利的条件。市场可能会经历波动，但应该会企稳并复苏。",
+        "long_reading": "山上的主要卦火 (流浪者) 暗示了一个短暂的谨慎阶段。移动线1 (Officer) 表示某个风险因素活跃，可能与外部政策或市场情绪有关。然而，官员 (地球) 在顶部产生财富 (金属) 线，表明这种压力最终支持收益。在改变了的六边形火对火 (紧贴的火) 中，信息是保持适应性，坚持并信任该过程。自我线 (父母) 表示新闻或基本支持将是关键。总体而言，一旦最初的不确定性过去，能源是看涨的。财富出现在响应位置 (第6行)，确认了积极的结果。评级: 略为乐观。"
       },
       "symbols": [
         "Fire over Mountain",
@@ -114,8 +126,18 @@
         "external shock"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/HSI/wenwang.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/HSI/wenwang.json",
+      "error": null,
+      "result_en": {
+        "score": 62,
+        "polarity": "positive",
+        "intensity": "medium",
+        "omen_type": "transitional",
+        "headline": "Pressure transforms into opportunity",
+        "subline": "Officer moves to generate Wealth, market finds support.",
+        "short_reading": "The reading points to initial external pressure or regulatory concerns early in April, but the moving Officer line generates Wealth, indicating that these pressures will likely resolve into favorable conditions. The market may experience volatility but should stabilize and recover.",
+        "long_reading": "The primary hexagram Fire over Mountain (The Wanderer) suggests a transient, cautious phase. The moving line 1 (Officer) indicates that a risk factor is active, possibly related to external policies or market sentiment. However, the Officer (Earth) generates the Wealth (Metal) line at the top, showing that this pressure ultimately supports gains. In the changed hexagram Fire over Fire (The Clinging Fire), the message is to remain adaptable, hold on, and trust the process. The self line (Parents) indicates that news or fundamental support will be key. Overall, the energy is bullish once initial uncertainty passes. Wealth appears in the response position (line 6), confirming a positive outcome. Rating: slightly optimistic."
+      }
     },
     {
       "schema_version": "0.1",
@@ -126,9 +148,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "bazi",
@@ -157,8 +179,18 @@
         "流动性紧缩"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/HSI/bazi.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/HSI/bazi.json",
+      "error": null,
+      "result_en": {
+        "score": 1,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "caution",
+        "headline": "HSI April 2026: Fire threat but soil support-cautious stability",
+        "subline": "Weak gold Japanese Lord in the moon to get earth help, but the annual fire is still suppressed",
+        "short_reading": "Renchen Moon brings soil and water to provide some support for weak Xin Jin. However, the excessive fire of the year and fortune continues to pressure. The trend may be mixed, if the soil element is enhanced is expected to rebound.",
+        "long_reading": "According to HSI&#39;s horoscope, the Japanese Lord Xin Jin is weak and his root qi is insufficient. At present, the Universiade has not provided earth (Indian star), but it has also brought fire (official star). In 2026, the fire was extremely strong in the year of 2026, forming restraint. In April, Ren Chen Zhu introduced soil (seal) and water (food injury). The soil is favorable, but the water may further drain the host. Chen in the Tibetan E, B, Gui. Overall this month slightly eased but not completely reversed. The pattern is still a weak Japanese Lord, who likes to use God as earth and gold. Investors should focus on policy changes (fire) and seek defensive sectors (soil)."
+      }
     },
     {
       "schema_version": "0.1",
@@ -169,9 +201,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "ziwei",
@@ -203,8 +235,18 @@
         "汇率风险"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/HSI/ziwei.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/HSI/ziwei.json",
+      "error": null,
+      "result_en": {
+        "score": 65,
+        "polarity": "positive",
+        "intensity": "moderate",
+        "omen_type": "wealth_and_authority",
+        "headline": "Financial power double, but need to prevent sudden fluctuations.",
+        "subline": "Hang Seng Index Trend Outlook for April 2026",
+        "short_reading": "This month&#39;s life plate shows that the wealth and silk palace purple micro-Lu, the official Lu palace sun-power, the financial power of the two boom, the index is expected to rebound. However, the relocation of the palace to break the army is turbulent, and the official Lu palace is holding sheep. It is necessary to be alert to the sharp rise and fall brought about by emergencies.",
+        "long_reading": "According to the purple micro bucket number calculation, in April 2026, the Hang Seng index by the wealth palace (purple micro Tianfu seven kill Lu Cun) the impact of the money, the capital surface is abundant, the value of stocks or support. Official Lugong (sun greedy wolf Qing sheep Tiankui) power, market sentiment is optimistic, policy or industry good to promote the index upward. However, the relocation of the palace is too dark and the army is not auspicious, and the couple&#39;s palace is taboo, international relations, exchange rate or cooperation issues may bring interference. Fude Palace Wuqu Giant Gate, investor confidence restored, but need to remain rational. The overall trend is adjusted first and then up, and there may be a risk of a correction at the end of the month. Key point reference 24800 support, 25500 pressure."
+      }
     },
     {
       "schema_version": "0.1",
@@ -215,9 +257,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "astrology",
@@ -248,8 +290,18 @@
         "seasonal transition"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/HSI/astrology.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/HSI/astrology.json",
+      "error": null,
+      "result_en": {
+        "score": 45,
+        "polarity": "neutral",
+        "intensity": "medium",
+        "omen_type": "transition",
+        "headline": "Spring Moon Glimpting, Hang Seng Index Pending Change",
+        "subline": "Technical Callback and Accumulation Cycle Resonance",
+        "short_reading": "HSI April is in the spring constellation transition period, with the energy of the first quarter moon, the accumulation of signals emerge.",
+        "long_reading": "Based on the stellar disk, the HSI zodiac is Virgo, April is the Aries season, and the fire and earth elements are intertwined. The market is down in the short term but volatility is normal, and the cumulative cycle implies that the bottom is approaching. The first quarter moon symbolizes action and should be observed for breakthrough signals."
+      }
     },
     {
       "schema_version": "0.1",
@@ -260,9 +312,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "market_pulse",
@@ -288,8 +340,18 @@
         "drawdown_risk"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/HSI/market_pulse.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/HSI/market_pulse.json",
+      "error": null,
+      "result_en": {
+        "score": 1,
+        "polarity": "negative",
+        "intensity": "moderate",
+        "omen_type": "market_pulse",
+        "headline": "Hang Seng Index bears pressure in April, momentum weakens",
+        "subline": "Short-term declines are limited, but the trend is bearish.",
+        "short_reading": "April HSI or maintain the shock downward, supporting the focus on 24500 points.",
+        "long_reading": "According to market pulse data, the Hang Seng Index closed at 24952 at the end of March, with a 21-day return of -5.4 and a 63-day return of -3.3, indicating a downward trend in both short-term and medium-term momentum. Volatility of 21.5 per cent is in the normal range, indicating that there is no panic selling in the market; however, the 252-day pullback of 10.8 per cent has touched an important threshold, suggesting structural risk. Overall, the market may continue to be weak in April, but the downside is limited by normal volatility and should not be overly pessimistic. Focus on 24500 point support and kinetic energy reversal signals."
+      }
     }
   ],
   "run_id": "4a2f9d91ebf7"

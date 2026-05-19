@@ -37,7 +37,7 @@ def main(argv: list[str] | None = None) -> None:
     artifact = {
         "engine_id": "market_pulse",
         "asset": {"ticker": "SPX"},
-        "period": {"id": "2026-04-M", "label": "April 2026"},
+        "period": {"id": "2026-05-17-1942", "label": "2026-05-17 19:42 UTC", "freq": "T"},
         "market_context": {"ticker": "SPX", "return_63d": 0.01, "volatility_63d": 0.15, "drawdown_252d": -0.02, "momentum_label": "rising", "volatility_label": "normal"},
     }
     result = client.interpret("market_pulse", artifact)

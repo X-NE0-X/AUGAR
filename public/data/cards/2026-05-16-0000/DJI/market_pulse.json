@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "market_pulse",
@@ -37,6 +37,16 @@
     "动能减弱"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/market_pulse.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/DJI/market_pulse.json",
+  "error": null,
+  "result_en": {
+    "score": 35,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "caution",
+    "headline": "Dow April Outlook: Falling Continues, Wary Pullback Deepens",
+    "subline": "Weak short-term momentum, manageable volatility, focus on key support",
+    "short_reading": "The Dow is currently in a strong downtrend, down 8.75 percent on the 21st and retreating more than 10 percent. Volatility is normal, but downside risks persist.",
+    "long_reading": "Based on data on March 27, 2026, the Dow reported 45166.64, down 8.75 percent in the last month and 7.31 percent in the last 3 months, showing a strong downward trend. Although volatility is at normal levels (13.75 per cent), the 252-day pullback has reached 10 per cent, which is a material pullback. Momentum is labeled strong_downtrend, indicating bearish dominance. Entering the earnings season and Fed meeting window in April, the downside could accelerate if key supports (e. g., 44000 points) are lost. For the time being, you should maintain a defensive posture and wait for the trend reversal signal."
+  }
 }

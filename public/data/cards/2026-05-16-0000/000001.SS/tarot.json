@@ -1,56 +1,66 @@
-﻿{
-    "schema_version":  "0.1",
-    "asset":  {
-                  "ticker":  "000001.SS",
-                  "name":  "000001.SS",
-                  "region":  "CN",
-                  "asset_class":  "INDEX"
-              },
-    "period":  {
-                   "id":  "2026-04-M",
-                   "label":  "April 2026",
-                   "freq":  "M"
-               },
-    "engine":  {
-                   "id":  "tarot",
-                   "name":  "Tarot Celtic Cross",
-                   "display_name":  "塔罗"
-               },
-    "result":  {
-                   "score":  41,
-                   "polarity":  "bearish-neutral",
-                   "intensity":  "moderate",
-                   "omen_type":  "defensive_consolidation",
-                   "headline":  "守势未稳，反弹缺少统御力",
-                   "subline":  "April 2026 的牌面更像震荡修复中的谨慎防守，而不是趋势性上攻。",
-                   "short_reading":  "这组 Celtic Cross 对 000001.SS 给出偏谨慎的信号：短期下跌后的市场有过渡与修复意图，但主导力量不足，资金更倾向收缩、防守和等待。若有反弹，容易表现为技术性回补，而非清晰趋势 reversal。",
-                   "long_reading":  "Present 的 Five of Swords reversed 显示前期冲突或杀跌情绪正在退潮，但不是胜利后的扩张，而是市场开始避免继续消耗。Crossing 的 Six of Swords upright 指向迁移、换仓与风险再平衡，说明 April 2026 的核心不是强攻，而是从压力区转向相对稳定区。\n\nRoot 的 Nine of Wands reversed 暗示底层承接疲弱，连续防守后的耐心下降；Past 的 The Empress upright 说明此前仍有流动性、政策预期或估值修复带来的滋养，但 Goal 的 Five of Pentacles upright 把目标层压低到避险、修补损失和寻找安全边际。Near Future 的 Four of Pentacles upright 强化了这个判断：资金会更重视保住已有仓位和控制回撤，而不是主动追高。\n\nYou 位的 The Devil upright 是风险点，代表市场容易被短线诱惑、杠杆情绪或旧有套牢结构牵引。Environment 的 Four of Cups upright 则说明外部环境偏冷淡，增量买盘兴趣有限。Hopes \u0026 Fears 的 Three of Swords reversed 有修复伤口的愿望，但 Outcome 的 The Emperor reversed 表明 April 2026 缺少稳定领导性力量，指数即便企稳，也可能表现为上有压力、下有支撑的拉锯。\n\n结合 artifact 中 21d return 为 -5.62%、63d return 小幅正、63d volatility normal、252d drawdown shallow，牌面与市场状态一致：不是深熊崩坏，也不是强趋势突破，更像浅回撤后的 defensive consolidation。策略含义上，应关注关键支撑是否守住、反弹是否有成交与权重板块确认；若缺少确认，追涨的 risk-reward 不佳。"
-               },
-    "symbols":  [
-                    "Five of Swords reversed",
-                    "Six of Swords upright",
-                    "Nine of Wands reversed",
-                    "The Empress upright",
-                    "Five of Pentacles upright",
-                    "Four of Pentacles upright",
-                    "The Devil upright",
-                    "Four of Cups upright",
-                    "Three of Swords reversed",
-                    "The Emperor reversed"
-                ],
-    "risk_tags":  [
-                      "weak_leadership",
-                      "range_bound_market",
-                      "low_conviction_rebound",
-                      "defensive_positioning",
-                      "chasing_risk",
-                      "sentiment_fatigue"
-                  ],
-    "visual":  {
-                   "palette":  "muted steel blue, graphite, pale gold accent",
-                   "icon":  "reversed emperor crown over a narrow price channel",
-                   "card_style":  "calm analytical tarot-market card with restrained contrast and defensive geometry"
-               },
-    "raw_ref":  "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/tarot.json",
-    "error":  null
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "000001.SS",
+    "name": "000001.SS",
+    "region": "CN",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "tarot",
+    "name": "Tarot Celtic Cross",
+    "display_name": "塔罗"
+  },
+  "result": {
+    "score": 41,
+    "polarity": "bearish-neutral",
+    "intensity": "moderate",
+    "omen_type": "defensive_consolidation",
+    "headline": "守势未稳，反弹缺少统御力",
+    "subline": "April 2026 的牌面更像震荡修复中的谨慎防守，而不是趋势性上攻。",
+    "short_reading": "这组 Celtic Cross 对 000001.SS 给出偏谨慎的信号：短期下跌后的市场有过渡与修复意图，但主导力量不足，资金更倾向收缩、防守和等待。若有反弹，容易表现为技术性回补，而非清晰趋势 reversal。",
+    "long_reading": "Present 的 Five of Swords reversed 显示前期冲突或杀跌情绪正在退潮，但不是胜利后的扩张，而是市场开始避免继续消耗。Crossing 的 Six of Swords upright 指向迁移、换仓与风险再平衡，说明 April 2026 的核心不是强攻，而是从压力区转向相对稳定区。\n\nRoot 的 Nine of Wands reversed 暗示底层承接疲弱，连续防守后的耐心下降；Past 的 The Empress upright 说明此前仍有流动性、政策预期或估值修复带来的滋养，但 Goal 的 Five of Pentacles upright 把目标层压低到避险、修补损失和寻找安全边际。Near Future 的 Four of Pentacles upright 强化了这个判断：资金会更重视保住已有仓位和控制回撤，而不是主动追高。\n\nYou 位的 The Devil upright 是风险点，代表市场容易被短线诱惑、杠杆情绪或旧有套牢结构牵引。Environment 的 Four of Cups upright 则说明外部环境偏冷淡，增量买盘兴趣有限。Hopes & Fears 的 Three of Swords reversed 有修复伤口的愿望，但 Outcome 的 The Emperor reversed 表明 April 2026 缺少稳定领导性力量，指数即便企稳，也可能表现为上有压力、下有支撑的拉锯。\n\n结合 artifact 中 21d return 为 -5.62%、63d return 小幅正、63d volatility normal、252d drawdown shallow，牌面与市场状态一致：不是深熊崩坏，也不是强趋势突破，更像浅回撤后的 defensive consolidation。策略含义上，应关注关键支撑是否守住、反弹是否有成交与权重板块确认；若缺少确认，追涨的 risk-reward 不佳。"
+  },
+  "symbols": [
+    "Five of Swords reversed",
+    "Six of Swords upright",
+    "Nine of Wands reversed",
+    "The Empress upright",
+    "Five of Pentacles upright",
+    "Four of Pentacles upright",
+    "The Devil upright",
+    "Four of Cups upright",
+    "Three of Swords reversed",
+    "The Emperor reversed"
+  ],
+  "risk_tags": [
+    "weak_leadership",
+    "range_bound_market",
+    "low_conviction_rebound",
+    "defensive_positioning",
+    "chasing_risk",
+    "sentiment_fatigue"
+  ],
+  "visual": {
+    "palette": "muted steel blue, graphite, pale gold accent",
+    "icon": "reversed emperor crown over a narrow price channel",
+    "card_style": "calm analytical tarot-market card with restrained contrast and defensive geometry"
+  },
+  "raw_ref": "runs/8408c2bbf831/debug/cards/2026-05-16-0000/000001.SS/tarot.json",
+  "error": null,
+  "result_en": {
+    "score": 41,
+    "polarity": "bearish-neutral",
+    "intensity": "moderate",
+    "omen_type": "defensive_consolidation",
+    "headline": "Defend not stable, rebound lack of control",
+    "subline": "The face of April 2026 is more like cautious defense in shock repair than trend attack.",
+    "short_reading": "This group of Celtic Cross gives a cautious signal to 000001.SS: the market has the intention of transition and repair after the short-term decline, but the dominant force is insufficient, and funds are more inclined to contract, defend and wait. If there is a rebound, it is easy to show up as a technical backfill rather than a clear trend reversal.",
+    "long_reading": "The Present Five of Swords reversed shows that the early conflict or kill sentiment is ebb, but not the expansion after the victory, but the market began to avoid continued consumption. The Crossing Six of Swords upright points to migration, position change and risk rebalancing, indicating that the core of April 2026 is not a strong attack, but a shift from a pressure zone to a relatively stable zone.\n\nRoot&#39;s Nine of Wands reversed suggests that the underlying undertaking is weak and patience after continuous defense is declining. Past&#39;s The Empress upright shows that there was still liquidity, policy expectations or nourishment brought by valuation repair before, but Goal&#39;s Five of Pentacles upright lowered the target laminate to avoid danger, repair losses and find a margin of safety. Near Future&#39;s Four of Pentacles upright reinforces this judgment: funds will place more emphasis on keeping existing positions and controlling withdrawals, rather than actively chasing higher.\n\nThe Devil upright in You is a risk point, representing that the market is easily pulled by short-term temptation, leverage sentiment or old lock-in structure. The Environment Four of Cups upright, on the other hand, indicates a cold external environment with limited incremental buying interest. Hopes & Fears&#39;s Three of Swords reversed have the desire to repair the wound, but the Outcome The Emperor reversed shows that April 2026 lacks stable leadership. Even if the index stabilizes, it may show a see-saw with pressure on the top and support on the bottom.\n\nCombined with the artifact 21d return of -5.62%, 63d return slightly positive, 63d volatility normal, 252d drawdown shallow, the card face is consistent with the market state: not a deep bear collapse, nor a strong trend breakthrough, more like a defensive consolidation after a shallow pullback. In terms of strategic meaning, attention should be paid to whether the key support is held, whether the rebound has a success and weight plate confirmation."
+  }
 }

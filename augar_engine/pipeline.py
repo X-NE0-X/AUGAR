@@ -278,6 +278,7 @@ def _card_from_public_json(path: Path) -> OracleCard:
     period = PeriodRef(**data["period"])
     engine = EngineRef(**data["engine"])
     result = CardResult(**data["result"])
+    result_en = CardResult(**data["result_en"]) if isinstance(data.get("result_en"), dict) else None
     return OracleCard(
         schema_version=data.get("schema_version", SCHEMA_VERSION),
         asset=asset,
@@ -291,4 +292,5 @@ def _card_from_public_json(path: Path) -> OracleCard:
         market_context=data.get("market_context"),
         raw_ref=data.get("raw_ref"),
         error=data.get("error"),
+        result_en=result_en,
     )

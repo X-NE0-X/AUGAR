@@ -12,7 +12,7 @@ class AstrologyGenerator(BaseGenerator):
     engine_id = "astrology"
 
     def generate(self, asset: AssetRef, period: PeriodRef, market_context: Dict[str, Any], seed: int | None = None) -> Dict[str, Any]:
-        month = int(period.id[5:7]) if period.freq == "M" else 1
+        month = int(period.id[5:7])
         rng = self.rng(asset, period, seed)
         artifact = self.base_artifact(asset, period, market_context, seed)
         artifact.update({

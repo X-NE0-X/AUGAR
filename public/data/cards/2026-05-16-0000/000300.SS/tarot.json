@@ -1,52 +1,60 @@
-﻿{
-    "schema_version":  "0.1",
-    "asset":  {
-                  "ticker":  "000300.SS",
-                  "name":  "000300.SS",
-                  "region":  "CN",
-                  "asset_class":  "INDEX"
-              },
-    "period":  {
-                   "id":  "2026-04-M",
-                   "label":  "April 2026",
-                   "freq":  "M"
-               },
-    "engine":  {
-                   "id":  "tarot",
-                   "name":  "Tarot Celtic Cross",
-                   "display_name":  "塔罗"
-               },
-    "result":  {
-                   "score":  65,
-                   "polarity":  "positive",
-                   "intensity":  "moderate",
-                   "omen_type":  "opportunity",
-                   "headline":  "Shift from Chaos to Clarity: CSI 300 Seeks Stability in April",
-                   "subline":  "Revisiting fundamentals and institutional guidance after a period of imbalance.",
-                   "short_reading":  "The Celtic Cross reveals a market moving from hasty reactions and indecision toward a grounded, intuition-led recovery. April 2026 likely sees the index consolidating with a cautious upward bias, guided by traditional indicators and policy signals.",
-                   "long_reading":  "The present card Temperance reversed indicates an imbalance or overreaction in the market, while the crossing card The World upright suggests a major cycle completing. The root of the situation is a release from stalemate (Two of Swords reversed), and past impulsive moves (Knight of Swords reversed) are being replaced by a goal of deep intuition (The High Priestess). The near future calls for realism and choosiness (Seven of Cups reversed), and the querent\u0027s own stance shifts from apathy to renewal (Four of Cups reversed). The environment is analytical and clear (Queen of Swords upright), hopes are for collective joy and rally (Three of Cups upright), but the outcome leans toward tradition and established rules (The Hierophant upright). Overall, April 2026 is a period of recalibration: while volatility may persist early in the month, the path clarifies toward a more orderly and fundamentals-driven market. The falling momentum label and shallow drawdown support a potential bottoming process. Expect defensive sectors and policy-led moves to gain favour."
-               },
-    "symbols":  [
-                    "Temperance reversed",
-                    "The World upright",
-                    "Two of Swords reversed",
-                    "Knight of Swords reversed",
-                    "The High Priestess upright",
-                    "Seven of Cups reversed",
-                    "Four of Cups reversed",
-                    "Queen of Swords upright",
-                    "Three of Cups upright",
-                    "The Hierophant upright"
-                ],
-    "risk_tags":  [
-                      "volatility",
-                      "regulatory shifts",
-                      "sentiment overreaction",
-                      "global macro events"
-                  ],
-    "visual":  {
-
-               },
-    "raw_ref":  "runs/e071b65d59c4/debug/cards/2026-04-M/000300.SS/tarot.json",
-    "error":  null
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "000300.SS",
+    "name": "000300.SS",
+    "region": "CN",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "tarot",
+    "name": "Tarot Celtic Cross",
+    "display_name": "塔罗"
+  },
+  "result": {
+    "score": 65,
+    "polarity": "positive",
+    "intensity": "moderate",
+    "omen_type": "opportunity",
+    "headline": "从混乱到清晰: CSI 300寻求4月的稳定",
+    "subline": "在经历了一段时间的失衡之后，重新审视基本面和机构指导。",
+    "short_reading": "凯尔特人的十字架揭示了一个市场，从仓促的反应和决策转向有基础的，直觉引导的复苏。在传统指标和政策信号的引导下，2026年4月可能会看到该指数在谨慎向上的情况下盘整。",
+    "long_reading": "当前的卡节制反转表明市场失衡或反应过度，而交叉卡The World upright则表明主要周期完成。这种情况的根源是从僵局中解脱出来 (两把剑颠倒了)，过去的冲动举动 (剑的骑士颠倒了) 被深层直觉的目标 (大祭司) 所取代。不久的将来需要现实主义和选择 (七个杯子颠倒了)，而querent自己的立场从冷漠转变为更新 (四个杯子颠倒了)。环境是分析性的和清晰的 (剑直立的女王)，希望是集体的快乐和集会 (直立的三个杯子)，但结果倾向于传统和既定的规则 (直立的姿势)。总体而言，2026年4月是一个重新调整的时期: 虽然波动可能会在本月初持续，但这条道路澄清了一个更加有序和基本面驱动的市场。下跌动量标签和浅度回撤支持潜在的筑底过程。预计防御性板块和政策主导的举措将获得青睐。"
+  },
+  "symbols": [
+    "Temperance reversed",
+    "The World upright",
+    "Two of Swords reversed",
+    "Knight of Swords reversed",
+    "The High Priestess upright",
+    "Seven of Cups reversed",
+    "Four of Cups reversed",
+    "Queen of Swords upright",
+    "Three of Cups upright",
+    "The Hierophant upright"
+  ],
+  "risk_tags": [
+    "volatility",
+    "regulatory shifts",
+    "sentiment overreaction",
+    "global macro events"
+  ],
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/000300.SS/tarot.json",
+  "error": null,
+  "result_en": {
+    "score": 65,
+    "polarity": "positive",
+    "intensity": "moderate",
+    "omen_type": "opportunity",
+    "headline": "Shift from Chaos to Clarity: CSI 300 Seeks Stability in April",
+    "subline": "Revisiting fundamentals and institutional guidance after a period of imbalance.",
+    "short_reading": "The Celtic Cross reveals a market moving from hasty reactions and indecision toward a grounded, intuition-led recovery. April 2026 likely sees the index consolidating with a cautious upward bias, guided by traditional indicators and policy signals.",
+    "long_reading": "The present card Temperance reversed indicates an imbalance or overreaction in the market, while the crossing card The World upright suggests a major cycle completing. The root of the situation is a release from stalemate (Two of Swords reversed), and past impulsive moves (Knight of Swords reversed) are being replaced by a goal of deep intuition (The High Priestess). The near future calls for realism and choosiness (Seven of Cups reversed), and the querent's own stance shifts from apathy to renewal (Four of Cups reversed). The environment is analytical and clear (Queen of Swords upright), hopes are for collective joy and rally (Three of Cups upright), but the outcome leans toward tradition and established rules (The Hierophant upright). Overall, April 2026 is a period of recalibration: while volatility may persist early in the month, the path clarifies toward a more orderly and fundamentals-driven market. The falling momentum label and shallow drawdown support a potential bottoming process. Expect defensive sectors and policy-led moves to gain favour."
+  }
 }

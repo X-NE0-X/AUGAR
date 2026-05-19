@@ -1,5 +1,5 @@
 {
-  "period": "2026-04-M",
+  "period": "2026-05-17-1942",
   "symbols": ["SPX"],
   "engines": ["market_pulse"],
   "provider": "openai",

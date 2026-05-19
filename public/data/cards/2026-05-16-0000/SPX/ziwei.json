@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "ziwei",
@@ -21,10 +21,10 @@
     "polarity": "positive",
     "intensity": "medium",
     "omen_type": "mixed",
-    "headline": "Resilient Foundation Amid Market Turbulence",
-    "subline": "Property luxuriance and period blessings offer support, but headwinds from Travel limit and market downtrend demand caution.",
-    "short_reading": "April 2026 shows a strong life palace in Property with Ziwei and Tianfu, indicating solid institutional support, but the current Travel major limit carries a Huoxing-Hua Ji combination, suggesting external volatility. The month's flow to Siblings palace with Taiyang and period Hua Quan points to active competition and expansion moves. Focus on Career, Wealth, and Fortune palaces benefits from period Hua Ke and Hua Lu. Overall, auspicious internal strength but mixed external signals.",
-    "long_reading": "The Zi Wei chart for SPX April 2026 places the Life Palace in Property (Wu branch), anchored by Ziwei, Tianfu, Qisha, and Lingxing. The natal Hua Lu in this palace strengthens foundational wealth and asset stability, even as the broader market experiences a strong downtrend (momentum_label: strong_downtrend). The Body Palace in Children (Zi branch) hosts Wuqu, Jumen, Wenchang, Tuoluo, Tianyue, and natal Hua Ke, indicating that the market’s next-phase growth involves step-by-step progress through obstacles, with support from scholarly and noble influences.\n\nCurrently, the market is in the Travel major limit (2019-2028, Palace 7 Mao), where Wenqu (literary talent) and Huoxing (fire) combine with natal Hua Ji. This decade invites strategic but volatile movements; Huoxing’s fire can ignite sudden shocks, while Hua Ji may create stagnation or reversal in planned actions. The 2026 annual flow shifts to Siblings Palace (Xu branch), where Taiyang (Sun) and Tanlang (Wood/Lust) meet period Hua Quan. This suggests increased competitive dynamics, possibly aggressive positioning by peers, but also the power to control expansions. The flow focus on Career, Wealth, and Fortune is bolstered by period Hua Ke in Wealth and period Hua Lu in Fortune, implying that despite external turbulence, the market’s underlying wealth-generation engines and long-term fortune are receiving favorable qi.\n\nThe Three Sides Four Orthodox grouping (Property, Siblings, Health, Children) reinforces a narrative where the core (Property) is strong, but health (current limit’s influence) and children (future growth) require attention to volatile elements. Traders should watch for sudden moves around the Travel and Siblings palaces, which may correspond to policy shifts or competitor actions. Yet the presence of Zuofu and Lucun in Fortune (period Hua Lu) suggests a supportive tailwind for those positioned wisely.\n\nIn essence, the chart portrays a market with solid intrinsic value (Property Hua Lu) facing a period of externally driven volatility (Travel Hua Ji, Huoxing). The April flow encourages engaging competition with controlled aggression (Taiyang + Tanlang + Hua Quan). The reading advises holding core positions while preparing for sharp, short-lived dislocations."
+    "headline": "市场动荡中的弹性基础",
+    "subline": "房地产豪华和期间祝福提供了支持，但旅行限制和市场下跌趋势带来的不利因素需要谨慎。",
+    "short_reading": "2026年4月显示地产与紫薇、天府的生命宫较强，显示机构支撑扎实，但当前游资涨停承载火星-华姬组合，提示外部波动。月流与太阳和期间华泉的兄弟姐妹宫指向积极的竞争和扩张行动。专注于事业，财富和财富宫殿受益于时期华科和华露。总体而言，吉祥的内在力量，但混合外部信号。",
+    "long_reading": "SPX 2026年4月的Zi Wei图表将Life Palace置于财产中 (Wu分支)，由Zi Wei，天府，Qisha和Lingxing锚定。即使大盘经历了强劲的下跌趋势 (momentum_label: strong_downtrend)，本宫的纳塔尔·华鲁也加强了基础财富和资产的稳定性。儿童中的身体宫 (Zi分支) 拥有五曲，居门，文昌，托罗，天悦和纳塔尔华科，这表明市场的下一阶段增长涉及在学术和贵族的支持下逐步克服障碍。影响。\n\n目前，市场处于旅游专业极限 (2019-2028，宫7毛)，文曲 (文才) 和火星 (火) 与本命花季结合。这十年邀请了战略性但不稳定的运动; 火星之火可以点燃突然的冲击，而华记可能会在计划的行动中造成停滞或逆转。每年2026的流量转移到兄弟姐妹宫 (徐分公司)，太阳城 (孙) 和谭郎 (木/欲望) 在华泉时期相遇。这表明竞争动力增强，可能是同行的积极定位，但也有控制扩张的力量。对职业、财富和财富的关注得到了财富的时期华科和财富的时期华鲁的支持，这意味着尽管有外部动荡，市场潜在的财富生成引擎和长期财富正在获得有利的qi。\n\n三方四个正统分组 (财产，兄弟姐妹，健康，儿童) 强化了核心 (财产) 强大的叙述，但健康 (当前限制的影响) 和儿童 (未来的增长) 需要注意不稳定的因素。交易者应该手表旅行和兄弟姐妹宫殿周围的突然移动，这可能对应于政策转变或竞争对手的行动。然而，《财富》 (华陆时期) 中左夫和卢村的存在为那些明智的人提供了支持。\n\n从本质上讲，该图描绘了一个具有坚实内在价值的市场 (物业华陆)，面临着外部驱动的波动时期 (旅游华记，霍兴)。4月流程鼓励与受控攻击 (太阳谭郎华全) 进行竞争。该读数建议在准备急剧，短暂的错位时保持核心位置。"
   },
   "symbols": [
     "Ziwei",
@@ -44,6 +44,16 @@
     "Siblings competition pressure"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/SPX/ziwei.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/SPX/ziwei.json",
+  "error": null,
+  "result_en": {
+    "score": 62,
+    "polarity": "positive",
+    "intensity": "medium",
+    "omen_type": "mixed",
+    "headline": "Resilient Foundation Amid Market Turbulence",
+    "subline": "Property luxuriance and period blessings offer support, but headwinds from Travel limit and market downtrend demand caution.",
+    "short_reading": "April 2026 shows a strong life palace in Property with Ziwei and Tianfu, indicating solid institutional support, but the current Travel major limit carries a Huoxing-Hua Ji combination, suggesting external volatility. The month's flow to Siblings palace with Taiyang and period Hua Quan points to active competition and expansion moves. Focus on Career, Wealth, and Fortune palaces benefits from period Hua Ke and Hua Lu. Overall, auspicious internal strength but mixed external signals.",
+    "long_reading": "The Zi Wei chart for SPX April 2026 places the Life Palace in Property (Wu branch), anchored by Ziwei, Tianfu, Qisha, and Lingxing. The natal Hua Lu in this palace strengthens foundational wealth and asset stability, even as the broader market experiences a strong downtrend (momentum_label: strong_downtrend). The Body Palace in Children (Zi branch) hosts Wuqu, Jumen, Wenchang, Tuoluo, Tianyue, and natal Hua Ke, indicating that the market’s next-phase growth involves step-by-step progress through obstacles, with support from scholarly and noble influences.\n\nCurrently, the market is in the Travel major limit (2019-2028, Palace 7 Mao), where Wenqu (literary talent) and Huoxing (fire) combine with natal Hua Ji. This decade invites strategic but volatile movements; Huoxing’s fire can ignite sudden shocks, while Hua Ji may create stagnation or reversal in planned actions. The 2026 annual flow shifts to Siblings Palace (Xu branch), where Taiyang (Sun) and Tanlang (Wood/Lust) meet period Hua Quan. This suggests increased competitive dynamics, possibly aggressive positioning by peers, but also the power to control expansions. The flow focus on Career, Wealth, and Fortune is bolstered by period Hua Ke in Wealth and period Hua Lu in Fortune, implying that despite external turbulence, the market’s underlying wealth-generation engines and long-term fortune are receiving favorable qi.\n\nThe Three Sides Four Orthodox grouping (Property, Siblings, Health, Children) reinforces a narrative where the core (Property) is strong, but health (current limit’s influence) and children (future growth) require attention to volatile elements. Traders should watch for sudden moves around the Travel and Siblings palaces, which may correspond to policy shifts or competitor actions. Yet the presence of Zuofu and Lucun in Fortune (period Hua Lu) suggests a supportive tailwind for those positioned wisely.\n\nIn essence, the chart portrays a market with solid intrinsic value (Property Hua Lu) facing a period of externally driven volatility (Travel Hua Ji, Huoxing). The April flow encourages engaging competition with controlled aggression (Taiyang + Tanlang + Hua Quan). The reading advises holding core positions while preparing for sharp, short-lived dislocations."
+  }
 }

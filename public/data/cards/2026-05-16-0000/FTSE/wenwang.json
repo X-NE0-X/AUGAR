@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "wenwang",
@@ -21,10 +21,10 @@
     "polarity": "positive",
     "intensity": "medium",
     "omen_type": "mixed",
-    "headline": "Mountain Wind Dispersion — Corrective Phase Shifts to Expansion",
-    "subline": "Wealth anchored above, but inner support may waver.",
-    "short_reading": "The Gu hexagram of correction evolves into Huan dispersion. Wealth stays firm at the top, but emptiness near the self and moving support lines suggest a volatile shift. Expect initial turbulence, then gradual improvement.",
-    "long_reading": "The primary hexagram Gu (Work on the Decayed) indicates a market that has been correcting or dealing with accumulated problems. The moving lines at the third and fifth positions mark key transitions. Line 3 (Parents, moving from yang to yin) suggests that fundamental support may weaken or change nature. Line 5 (Offspring, moving from yin to yang) suggests increased trading activity or speculation that could lead to a breakout. The change to Huan (Dispersion) implies that this energy will spread out, perhaps leading to a broader rally. However, the self line (line 2) is in the Xun Kong (void), indicating a lack of clear direction or confidence initially. Wealth line (line 6) is strong and unchanging, providing a solid foundation for prices. Overall, the omen favors a bullish tendency for April 2026, but warns of a shaky start and the need to clear out old positions."
+    "headline": "山风扩散-校正相移到扩展",
+    "subline": "财富锚定在上面，但内心的支持可能会动摇。",
+    "short_reading": "修正的古六面体演变为欢散。财富在顶部保持坚挺，但自我附近的空虚和移动的支撑线表明了一个不稳定的转变。预计最初的动荡，然后逐步改善。",
+    "long_reading": "主卦 (对衰变的工作) 表示市场一直在纠正或处理累积的问题。第三和第五位置处的移动线标记键过渡。第3行 (父母，从阳到阴) 表明基本支持可能会削弱或改变自然。第5行 (后代，从阴到阳) 表明交易活动或投机活动增加，可能导致突破。改变为Huan (分散) 意味着这种能量将扩散出去，也许会导致更广泛的反弹。然而，自我线 (线2) 在Xun Kong (无效) 中，表明最初缺乏明确的方向或信心。财富线 (6号线) 坚挺不变，为价格提供了坚实的基础。总体而言，预兆有利于2026年4月的看涨趋势，但警告说，开局不稳定，需要清理旧头寸。"
   },
   "symbols": [
     "Mountain",
@@ -39,6 +39,16 @@
     "volatility"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/wenwang.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/FTSE/wenwang.json",
+  "error": null,
+  "result_en": {
+    "score": 60,
+    "polarity": "positive",
+    "intensity": "medium",
+    "omen_type": "mixed",
+    "headline": "Mountain Wind Dispersion — Corrective Phase Shifts to Expansion",
+    "subline": "Wealth anchored above, but inner support may waver.",
+    "short_reading": "The Gu hexagram of correction evolves into Huan dispersion. Wealth stays firm at the top, but emptiness near the self and moving support lines suggest a volatile shift. Expect initial turbulence, then gradual improvement.",
+    "long_reading": "The primary hexagram Gu (Work on the Decayed) indicates a market that has been correcting or dealing with accumulated problems. The moving lines at the third and fifth positions mark key transitions. Line 3 (Parents, moving from yang to yin) suggests that fundamental support may weaken or change nature. Line 5 (Offspring, moving from yin to yang) suggests increased trading activity or speculation that could lead to a breakout. The change to Huan (Dispersion) implies that this energy will spread out, perhaps leading to a broader rally. However, the self line (line 2) is in the Xun Kong (void), indicating a lack of clear direction or confidence initially. Wealth line (line 6) is strong and unchanging, providing a solid foundation for prices. Overall, the omen favors a bullish tendency for April 2026, but warns of a shaky start and the need to clear out old positions."
+  }
 }

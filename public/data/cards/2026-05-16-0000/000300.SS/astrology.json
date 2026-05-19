@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "astrology",
@@ -44,6 +44,16 @@
     "shape": "圆形与波浪",
     "lunar": "满月"
   },
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/000300.SS/astrology.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/000300.SS/astrology.json",
+  "error": null,
+  "result_en": {
+    "score": 1,
+    "polarity": "negative",
+    "intensity": "moderate",
+    "omen_type": "warning",
+    "headline": "The accumulation period under the full moon in Aries",
+    "subline": "Short-term weak, center line bottoming",
+    "short_reading": "In April, the Shanghai and Shenzhen 300 index was in the Aries full moon cycle, Aquarius assets were affected by the fire like impulse, and market sentiment was volatile. Although the short-term trend is weak, the accumulation cycle suggests that the bottom area is forming and it is advisable to watch the support level patiently.",
+    "long_reading": "The current cosmic configuration shows that 000300.SS, as a symbolic asset of Aquarius, has a short-term kinetic energy decay superimposed on the accumulation cycle under the full moon of the Aries season. The moon phase amplifies the ups and downs of market sentiment, but at a deeper level, it is building up strength for the next round of rise. At the technical level, the recent decline is a normal correction, volatility is at normal levels, the pullback is still shallow, did not undermine the long-term structure. Investors should remain calm and pay attention to the effectiveness of support in the 4200-4300 point area. If the range stabilizes, the medium-term rebound can be expected. On the risk side, we need to be alert to short-term disturbances caused by changes in external liquidity and policy expectations."
+  }
 }

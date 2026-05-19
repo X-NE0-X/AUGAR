@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "composite": {
     "score": 52,
@@ -35,9 +35,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "tarot",
@@ -49,19 +49,22 @@
         "polarity": "neutral",
         "intensity": "medium",
         "omen_type": "ambiguous",
-        "headline": "Grounding Energies Meet Sudden Spark: FTSE Eyes Cautious Optimism",
-        "subline": "A foundation of patience and new potential is disturbed by a wave of inspiration, but emotional disconnects urge restraint.",
-        "short_reading": "The FTSE is poised between steady accumulation and a sudden energetic shift. While the ground is fertile for gains, internal and external dissonance call for a measured approach.",
-        "long_reading": "The Celtic Cross reveals a market deeply rooted in earthy discipline (Ace of Pentacles, Knight of Pentacles) yet facing a restful pause (Four of Swords) before a burst of creative energy (Ace of Wands). The reversal of Two of Cups and Knight of Cups suggests that investor sentiment is out of sync, possibly ignoring fundamental signals. Hopes & Fears show a release of anxiety (Nine of Swords reversed), paving the way for a more open stance. The outcome reversed Four of Pentacles indicates a reluctance to hold tightly, hinting at profit-taking or distribution. Overall, the period is one of transition: old patterns are loosening, new impulses are arriving, and the index may oscillate before finding direction. Patience and adaptability will serve better than rigid expectations."
+        "headline": "接地能量突然爆发: FTSE谨慎乐观",
+        "subline": "耐心和新潜力的基础受到一波灵感的干扰，但情感上的断开促使克制。",
+        "short_reading": "富时指数介于稳定的积累和突然的精力充沛的转变之间。虽然土壤肥沃，但内部和外部的不和谐要求采取审慎的方法。",
+        "long_reading": "凯尔特十字架揭示了一个深深植根于泥土纪律的市场 (五角星王牌，五角星骑士)，但在创造力爆发 (魔杖王牌) 之前面临着宁静的停顿 (四把剑)。两个杯子和杯子骑士的逆转表明投资者情绪不同步，可能忽略了基本信号。希望与恐惧显示出焦虑的释放 (九把剑颠倒了)，为更开放的立场铺平了道路。结果颠倒了四个五角星，表明不愿紧紧抓住，暗示获利了结或分配。总体而言，该时期是过渡时期之一: 旧的模式正在松动，新的冲动正在到来，并且在找到方向之前，指数可能会振荡。耐心和适应性将比严格的期望更好。"
       },
       "symbols": [
-        "pentacle",
-        "knight",
-        "sword",
-        "ace of wands",
-        "two of cups reversed",
-        "four of pentacles reversed",
-        "nine of swords reversed"
+        "Knight of Pentacles upright",
+        "Four of Swords upright",
+        "Ace of Pentacles upright",
+        "Seven of Pentacles upright",
+        "Page of Pentacles upright",
+        "Ace of Wands upright",
+        "Two of Cups reversed",
+        "Knight of Cups reversed",
+        "Nine of Swords reversed",
+        "Four of Pentacles reversed"
       ],
       "risk_tags": [
         "market pause",
@@ -84,8 +87,18 @@
         ],
         "mood": "grounded yet dynamic"
       },
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/tarot.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/FTSE/tarot.json",
+      "error": null,
+      "result_en": {
+        "score": 62,
+        "polarity": "neutral",
+        "intensity": "medium",
+        "omen_type": "ambiguous",
+        "headline": "Grounding Energies Meet Sudden Spark: FTSE Eyes Cautious Optimism",
+        "subline": "A foundation of patience and new potential is disturbed by a wave of inspiration, but emotional disconnects urge restraint.",
+        "short_reading": "The FTSE is poised between steady accumulation and a sudden energetic shift. While the ground is fertile for gains, internal and external dissonance call for a measured approach.",
+        "long_reading": "The Celtic Cross reveals a market deeply rooted in earthy discipline (Ace of Pentacles, Knight of Pentacles) yet facing a restful pause (Four of Swords) before a burst of creative energy (Ace of Wands). The reversal of Two of Cups and Knight of Cups suggests that investor sentiment is out of sync, possibly ignoring fundamental signals. Hopes & Fears show a release of anxiety (Nine of Swords reversed), paving the way for a more open stance. The outcome reversed Four of Pentacles indicates a reluctance to hold tightly, hinting at profit-taking or distribution. Overall, the period is one of transition: old patterns are loosening, new impulses are arriving, and the index may oscillate before finding direction. Patience and adaptability will serve better than rigid expectations."
+      }
     },
     {
       "schema_version": "0.1",
@@ -96,9 +109,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "wenwang",
@@ -110,10 +123,10 @@
         "polarity": "positive",
         "intensity": "medium",
         "omen_type": "mixed",
-        "headline": "Mountain Wind Dispersion — Corrective Phase Shifts to Expansion",
-        "subline": "Wealth anchored above, but inner support may waver.",
-        "short_reading": "The Gu hexagram of correction evolves into Huan dispersion. Wealth stays firm at the top, but emptiness near the self and moving support lines suggest a volatile shift. Expect initial turbulence, then gradual improvement.",
-        "long_reading": "The primary hexagram Gu (Work on the Decayed) indicates a market that has been correcting or dealing with accumulated problems. The moving lines at the third and fifth positions mark key transitions. Line 3 (Parents, moving from yang to yin) suggests that fundamental support may weaken or change nature. Line 5 (Offspring, moving from yin to yang) suggests increased trading activity or speculation that could lead to a breakout. The change to Huan (Dispersion) implies that this energy will spread out, perhaps leading to a broader rally. However, the self line (line 2) is in the Xun Kong (void), indicating a lack of clear direction or confidence initially. Wealth line (line 6) is strong and unchanging, providing a solid foundation for prices. Overall, the omen favors a bullish tendency for April 2026, but warns of a shaky start and the need to clear out old positions."
+        "headline": "山风扩散-校正相移到扩展",
+        "subline": "财富锚定在上面，但内心的支持可能会动摇。",
+        "short_reading": "修正的古六面体演变为欢散。财富在顶部保持坚挺，但自我附近的空虚和移动的支撑线表明了一个不稳定的转变。预计最初的动荡，然后逐步改善。",
+        "long_reading": "主卦 (对衰变的工作) 表示市场一直在纠正或处理累积的问题。第三和第五位置处的移动线标记键过渡。第3行 (父母，从阳到阴) 表明基本支持可能会削弱或改变自然。第5行 (后代，从阴到阳) 表明交易活动或投机活动增加，可能导致突破。改变为Huan (分散) 意味着这种能量将扩散出去，也许会导致更广泛的反弹。然而，自我线 (线2) 在Xun Kong (无效) 中，表明最初缺乏明确的方向或信心。财富线 (6号线) 坚挺不变，为价格提供了坚实的基础。总体而言，预兆有利于2026年4月的看涨趋势，但警告说，开局不稳定，需要清理旧头寸。"
       },
       "symbols": [
         "Mountain",
@@ -128,8 +141,18 @@
         "volatility"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/wenwang.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/FTSE/wenwang.json",
+      "error": null,
+      "result_en": {
+        "score": 60,
+        "polarity": "positive",
+        "intensity": "medium",
+        "omen_type": "mixed",
+        "headline": "Mountain Wind Dispersion — Corrective Phase Shifts to Expansion",
+        "subline": "Wealth anchored above, but inner support may waver.",
+        "short_reading": "The Gu hexagram of correction evolves into Huan dispersion. Wealth stays firm at the top, but emptiness near the self and moving support lines suggest a volatile shift. Expect initial turbulence, then gradual improvement.",
+        "long_reading": "The primary hexagram Gu (Work on the Decayed) indicates a market that has been correcting or dealing with accumulated problems. The moving lines at the third and fifth positions mark key transitions. Line 3 (Parents, moving from yang to yin) suggests that fundamental support may weaken or change nature. Line 5 (Offspring, moving from yin to yang) suggests increased trading activity or speculation that could lead to a breakout. The change to Huan (Dispersion) implies that this energy will spread out, perhaps leading to a broader rally. However, the self line (line 2) is in the Xun Kong (void), indicating a lack of clear direction or confidence initially. Wealth line (line 6) is strong and unchanging, providing a solid foundation for prices. Overall, the omen favors a bullish tendency for April 2026, but warns of a shaky start and the need to clear out old positions."
+      }
     },
     {
       "schema_version": "0.1",
@@ -140,9 +163,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "bazi",
@@ -154,10 +177,10 @@
         "polarity": "positive",
         "intensity": "strong",
         "omen_type": "auspicious",
-        "headline": "FTSE April 2026: Auspicious Earth-Fire Support",
-        "subline": "Beneficial elemental alignment reinforces stable growth.",
-        "short_reading": "April 2026 shows favorable cosmic energies for the FTSE. The strong Wood day master benefits from Fire and Earth elements, with current luck cycle JiWu and the month of Chen providing direct support. Expect a positive trend with controlled volatility.",
-        "long_reading": "The BaZi reading for April 2026 indicates a constructive period for the FTSE. The day master Jia Wood is strong (score 7), and the useful gods are Output (Fire) and Wealth (Earth). The current luck cycle JiWu (Earth-Fire, 2017-2026) aligns well with these needs. Furthermore, the year 2026 BingWu (Fire Horse) and the month of Chen (Earth Dragon) add reinforcing Fire and Earth. This combination suggests upward momentum and reduced downside risk, though the strong Wood warns of potential overheating. The market context confirms shallow drawdown and normal volatility, supporting a steady advance. Overall, a bullish outlook tempered by structural checks."
+        "headline": "富时2026年4月: 吉祥地火支持",
+        "subline": "有益的元素排列加强了稳定的增长。",
+        "short_reading": "2026年4月显示了FTSE的有利宇宙能量。强大的木日大师受益于火和土元素，当前的运气周期JiWu和陈月提供直接支持。预计波动性可控的积极趋势。",
+        "long_reading": "2026年4月的BaZi读数表明FTSE处于建设性时期。天法师佳木强 (7分)，有用的神是输出 (火) 和财富 (土)。当前的运气周期JiWu (土-火，2017-2026) 与这些需求非常吻合。此外，2026年的冰武 (火马) 和陈月 (土龙) 增加了火土。尽管强劲的木材警告潜在的过热，但这种组合表明了上升的动力和下降的下行风险。市场背景证实了小幅下跌和正常波动，支持稳步推进。总体而言，看涨的前景受到结构性检查的影响。"
       },
       "symbols": [
         "Fire",
@@ -170,8 +193,18 @@
         "overbought potential"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/bazi.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/FTSE/bazi.json",
+      "error": null,
+      "result_en": {
+        "score": 75,
+        "polarity": "positive",
+        "intensity": "strong",
+        "omen_type": "auspicious",
+        "headline": "FTSE April 2026: Auspicious Earth-Fire Support",
+        "subline": "Beneficial elemental alignment reinforces stable growth.",
+        "short_reading": "April 2026 shows favorable cosmic energies for the FTSE. The strong Wood day master benefits from Fire and Earth elements, with current luck cycle JiWu and the month of Chen providing direct support. Expect a positive trend with controlled volatility.",
+        "long_reading": "The BaZi reading for April 2026 indicates a constructive period for the FTSE. The day master Jia Wood is strong (score 7), and the useful gods are Output (Fire) and Wealth (Earth). The current luck cycle JiWu (Earth-Fire, 2017-2026) aligns well with these needs. Furthermore, the year 2026 BingWu (Fire Horse) and the month of Chen (Earth Dragon) add reinforcing Fire and Earth. This combination suggests upward momentum and reduced downside risk, though the strong Wood warns of potential overheating. The market context confirms shallow drawdown and normal volatility, supporting a steady advance. Overall, a bullish outlook tempered by structural checks."
+      }
     },
     {
       "schema_version": "0.1",
@@ -182,9 +215,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "ziwei",
@@ -196,10 +229,10 @@
         "polarity": "mixed",
         "intensity": "medium",
         "omen_type": "transitional",
-        "headline": "Steady advance under dual suns, yet hidden edge draws near",
-        "subline": "Career and Life palaces brighten, but Health and Travel carry cautionary transformations",
-        "short_reading": "April 2026 presents a period of balanced energies for FTSE. The Life palace gains authority through Taiyang and Tanlang with Hua Quan, while Career sees abundance from Ziwei and Tianfu with Hua Lu. However, Health and Travel contain Hua Ji and Huoxing, suggesting underlying friction and unexpected moves.",
-        "long_reading": "The monthly chart for April 2026 reveals a tapestry of mixed but navigable fortunes. The Life palace, activated as both the annual flow and the current major limit, hosts Taiyang (Sun) and Tanlang (Greedy Wolf) with period power transformation (Hua Quan). This signals a surge in confidence and aggressive positioning, but also a tendency to overreach. The Career palace, fortified by Ziwei (Emperor), Tianfu (Great Wealth), and Qisha (General) receiving natal prosperity (Hua Lu), points to institutional support and long-term structural gains for the index. Wealth palace, though quieter with Tiantong and Tianxiang, is tempered by Tuoluo, indicating that liquidity or momentum may encounter a temporary bottleneck. The three sides form a rounded base around Life, Career, Wealth, and Spouse, with the Spouse palace’s Wuqu and Jumen gaining reputation (Hua Ke), suggesting that partnerships or external endorsements will be favorable. Yet caution is warranted: Health palace carries natal Hua Ji and the presence of Wenqu and Huoxing, a literary-fire combination that can lead to over-analysis or sudden inflammatory events. Travel palace also suffers period Hua Ji with Lianzhen and Tianliang, warning of delays or miscommunications in international or cross-regional transactions. The Fortune palace, featuring Tianji, Taiyin, and Pojun, is volatile and may bring abrupt shifts after mid-month. Overall, the oracle counsels a steady hand, leveraging career and life momentum while guarding against overconfidence and external friction."
+        "headline": "在双重太阳下稳定前进，但隐藏的边缘越来越近",
+        "subline": "职业和生活宫殿明亮，但健康和旅行带来了警示转变",
+        "short_reading": "2026年4月为富时指数提供了一个平衡能量的时期。生命宫通过太阳和谭郎与华权获得权威，而职业生涯则从紫薇和天府与华路获得了丰富。然而，健康和旅行包含了华姬和霍星，暗示了潜在的摩擦和意想不到的举动。",
+        "long_reading": "2026年4月的月度图表揭示了喜忧参半但可导航的命运。生命宫，作为年度流量和当前主要限制被激活，主办了太阳阳 (太阳) 和坦朗 (贪婪的狼)，并进行了时期的力量转换 (华全)。这表明信心和激进的定位激增，但也有过度的趋势。由紫薇 (皇帝)，天府 (大财富) 和奇沙 (将军) 接收纳塔尔繁荣 (华璐) 加强的职业宫指出了该指数的机构支持和长期结构性收益。财富宫虽然与天通、天翔比较安静，但被托罗锤炼，说明流动性或动量可能会遇到暂时的瓶颈。三方围绕生活、事业、财富、配偶形成一个圆形的基础，配偶宫的五曲和居门获得了声誉 (华科)，这表明合伙企业或外部代言将是有利的。然而，谨慎是必要的: 健康宫携带着纳塔尔·华吉以及文曲和霍兴的存在，这是一种文学火的组合，可能导致过度分析或突然的炎症事件。Travel palace还遭受了与Lianzhen和Tianliang的时期，警告国际或跨区域交易的延误或沟通不善。以天机，太阴和Pojun为特色的财富宫动荡不安，可能在月中之后带来突然的变化。总体而言，oracle建议保持稳定，利用职业和生活动力，同时防止过度自信和外部摩擦。"
       },
       "symbols": [
         "Sun ascending",
@@ -222,8 +255,18 @@
         "shape": "circle with a central diamond",
         "imagery": "A calm sea under a bright sun with a distant storm cloud"
       },
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/ziwei.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/FTSE/ziwei.json",
+      "error": null,
+      "result_en": {
+        "score": 1,
+        "polarity": "mixed",
+        "intensity": "medium",
+        "omen_type": "transitional",
+        "headline": "Steady advance under dual suns, yet hidden edge draws near",
+        "subline": "Career and Life palaces brighten, but Health and Travel carry cautionary transformations",
+        "short_reading": "April 2026 presents a period of balanced energies for FTSE. The Life palace gains authority through Taiyang and Tanlang with Hua Quan, while Career sees abundance from Ziwei and Tianfu with Hua Lu. However, Health and Travel contain Hua Ji and Huoxing, suggesting underlying friction and unexpected moves.",
+        "long_reading": "The monthly chart for April 2026 reveals a tapestry of mixed but navigable fortunes. The Life palace, activated as both the annual flow and the current major limit, hosts Taiyang (Sun) and Tanlang (Greedy Wolf) with period power transformation (Hua Quan). This signals a surge in confidence and aggressive positioning, but also a tendency to overreach. The Career palace, fortified by Ziwei (Emperor), Tianfu (Great Wealth), and Qisha (General) receiving natal prosperity (Hua Lu), points to institutional support and long-term structural gains for the index. Wealth palace, though quieter with Tiantong and Tianxiang, is tempered by Tuoluo, indicating that liquidity or momentum may encounter a temporary bottleneck. The three sides form a rounded base around Life, Career, Wealth, and Spouse, with the Spouse palace’s Wuqu and Jumen gaining reputation (Hua Ke), suggesting that partnerships or external endorsements will be favorable. Yet caution is warranted: Health palace carries natal Hua Ji and the presence of Wenqu and Huoxing, a literary-fire combination that can lead to over-analysis or sudden inflammatory events. Travel palace also suffers period Hua Ji with Lianzhen and Tianliang, warning of delays or miscommunications in international or cross-regional transactions. The Fortune palace, featuring Tianji, Taiyin, and Pojun, is volatile and may bring abrupt shifts after mid-month. Overall, the oracle counsels a steady hand, leveraging career and life momentum while guarding against overconfidence and external friction."
+      }
     },
     {
       "schema_version": "0.1",
@@ -234,9 +277,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "astrology",
@@ -264,8 +307,18 @@
         "积累阶段"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/astrology.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/FTSE/astrology.json",
+      "error": null,
+      "result_en": {
+        "score": 62,
+        "polarity": "positive",
+        "intensity": "mild",
+        "omen_type": "auspicious",
+        "headline": "steady accumulation",
+        "subline": "April FTSE Index Contained Opportunities in Stability",
+        "short_reading": "The current market sentiment is cautious, but the accumulation cycle appears, long-term good.",
+        "long_reading": "Based on astrological analysis, the FTSE index showed a stable accumulation pattern in April 2026. Aquarius asset stars are in tune with the Aries cycle season, and the moon&#39;s gradual loss implies a fall in short-term sentiment, but the accumulation cycle label indicates that the main funds are being laid out at a low level. The volatility is normal and the drawdown is shallow, which is suitable for steady investors to gradually build positions. On the whole, this month is the window to sort out the momentum and wait patiently for the breakthrough signal."
+      }
     },
     {
       "schema_version": "0.1",
@@ -276,9 +329,9 @@
         "asset_class": "INDEX"
       },
       "period": {
-        "id": "2026-04-M",
-        "label": "April 2026",
-        "freq": "M"
+        "id": "2026-05-16-0000",
+        "label": "2026-05-16 00:00 UTC",
+        "freq": "T"
       },
       "engine": {
         "id": "market_pulse",
@@ -304,8 +357,18 @@
         "方向不明"
       ],
       "visual": {},
-      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/market_pulse.json",
-      "error": null
+      "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/FTSE/market_pulse.json",
+      "error": null,
+      "result_en": {
+        "score": 50,
+        "polarity": "neutral",
+        "intensity": "medium",
+        "omen_type": "transition",
+        "headline": "FTSE under short-term pressure, long-term trend to be clear",
+        "subline": "April market or current direction choice",
+        "short_reading": "The market short-term correction, but long-term momentum still exists, investors need to be cautious.",
+        "long_reading": "The FTSE closed at 9967.4, down 8.1 per cent in the last 21 days, with short-term selling pressure evident, but still edged up 1.0 per cent on 63, with the long-term trend unbroken. Volatility is normal, with a pullback of only 8.6 per cent, which is a shallow adjustment. Momentum is mixed, indicating that the market is in a period of direction decision. April may usher in a key breakthrough, it is recommended to focus on support and resistance levels."
+      }
     }
   ],
   "run_id": "4a2f9d91ebf7"

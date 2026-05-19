@@ -1,51 +1,59 @@
-﻿{
-    "schema_version":  "0.1",
-    "asset":  {
-                  "ticker":  "HSI",
-                  "name":  "HSI",
-                  "region":  "HK",
-                  "asset_class":  "INDEX"
-              },
-    "period":  {
-                   "id":  "2026-04-M",
-                   "label":  "April 2026",
-                   "freq":  "M"
-               },
-    "engine":  {
-                   "id":  "tarot",
-                   "name":  "Tarot Celtic Cross",
-                   "display_name":  "塔罗"
-               },
-    "result":  {
-                   "score":  45,
-                   "polarity":  "neutral",
-                   "intensity":  "moderate",
-                   "omen_type":  "warning",
-                   "headline":  "Steady undercurrents with surface calm",
-                   "subline":  "Patience required as market digests prior gains",
-                   "short_reading":  "A mixed April for HSI, with underlying strength but lacking momentum. Expect a period of consolidation and methodical progress rather than sharp moves.",
-                   "long_reading":  "The Celtic Cross spread reveals a market rooted in growth (The Empress upright) and past clarity (Ace of Swords), yet currently facing a challenge of waning enthusiasm (Page of Wands reversed). The goal of a full rally (Ten of Cups reversed) may not be realized, suggesting a degree of disappointment. The near future calls for patience and assessment (Seven of Pentacles), while the environment is heavy with material concerns (The Devil upright). Hopes lean toward recovery (Five of Pentacles reversed), and the final outcome is steady, diligent progress (Knight of Pentacles). Overall, the tendency is cautious, with no strong directional bias—slow accumulation rather than exuberance."
-               },
-    "symbols":  [
-                    "Two of Wands upright",
-                    "Page of Wands reversed",
-                    "The Empress upright",
-                    "Ace of Swords upright",
-                    "Ten of Cups reversed",
-                    "Seven of Pentacles upright",
-                    "Knight of Wands upright",
-                    "The Devil upright",
-                    "Five of Pentacles reversed",
-                    "Knight of Pentacles upright"
-                ],
-    "risk_tags":  [
-                      "consolidation",
-                      "lack of momentum",
-                      "fear environment"
-                  ],
-    "visual":  {
-
-               },
-    "raw_ref":  "runs/e071b65d59c4/debug/cards/2026-04-M/HSI/tarot.json",
-    "error":  null
+{
+  "schema_version": "0.1",
+  "asset": {
+    "ticker": "HSI",
+    "name": "HSI",
+    "region": "HK",
+    "asset_class": "INDEX"
+  },
+  "period": {
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
+  },
+  "engine": {
+    "id": "tarot",
+    "name": "Tarot Celtic Cross",
+    "display_name": "塔罗"
+  },
+  "result": {
+    "score": 45,
+    "polarity": "neutral",
+    "intensity": "moderate",
+    "omen_type": "warning",
+    "headline": "表面平静的稳定暗流",
+    "subline": "随着市场消化先前的收益，需要耐心",
+    "short_reading": "恒生指数4月喜忧参半，具有潜在的实力，但缺乏动力。期待一段时间的整合和有条不紊的进展，而不是急剧的行动。",
+    "long_reading": "凯尔特人的交叉传播揭示了一个植根于增长 (皇后直立) 和过去的清晰度 (剑的王牌) 的市场，但目前正面临着热情减弱的挑战 (魔杖的页面颠倒)。全面反弹的目标 (十杯倒转) 可能无法实现，这表明一定程度的失望。不久的将来需要耐心和评估 (七种五角星)，而环境却充满了物质问题 (魔鬼直立)。希望倾向于恢复 (五个五角倒转)，最终的结果是稳定，勤奋的进步 (五角骑士)。总体而言，趋势是谨慎的，没有强烈的方向性偏差-缓慢积累而不是繁荣。"
+  },
+  "symbols": [
+    "Two of Wands upright",
+    "Page of Wands reversed",
+    "The Empress upright",
+    "Ace of Swords upright",
+    "Ten of Cups reversed",
+    "Seven of Pentacles upright",
+    "Knight of Wands upright",
+    "The Devil upright",
+    "Five of Pentacles reversed",
+    "Knight of Pentacles upright"
+  ],
+  "risk_tags": [
+    "consolidation",
+    "lack of momentum",
+    "fear environment"
+  ],
+  "visual": {},
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/HSI/tarot.json",
+  "error": null,
+  "result_en": {
+    "score": 45,
+    "polarity": "neutral",
+    "intensity": "moderate",
+    "omen_type": "warning",
+    "headline": "Steady undercurrents with surface calm",
+    "subline": "Patience required as market digests prior gains",
+    "short_reading": "A mixed April for HSI, with underlying strength but lacking momentum. Expect a period of consolidation and methodical progress rather than sharp moves.",
+    "long_reading": "The Celtic Cross spread reveals a market rooted in growth (The Empress upright) and past clarity (Ace of Swords), yet currently facing a challenge of waning enthusiasm (Page of Wands reversed). The goal of a full rally (Ten of Cups reversed) may not be realized, suggesting a degree of disappointment. The near future calls for patience and assessment (Seven of Pentacles), while the environment is heavy with material concerns (The Devil upright). Hopes lean toward recovery (Five of Pentacles reversed), and the final outcome is steady, diligent progress (Knight of Pentacles). Overall, the tendency is cautious, with no strong directional bias—slow accumulation rather than exuberance."
+  }
 }

@@ -25,7 +25,7 @@ def main(argv: list[str] | None = None) -> None:
         description="Generate AUGAR oracle cards.",
     )
     parser.add_argument("--config", help="Optional JSON config file. CLI flags override config values.")
-    parser.add_argument("--period", required=False, help="Period identifier (YYYY-MM-DD-HHMM or YYYY-MM-FREQ). Default: current UTC timestamp.")
+    parser.add_argument("--period", required=False, help="Period identifier (YYYY-MM-DD-HHMM). Default: current UTC timestamp.")
     parser.add_argument("--all-indexes", action="store_true")
     parser.add_argument("--symbols", default="")
     parser.add_argument("--engines")

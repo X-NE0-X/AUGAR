@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "astrology",
@@ -46,6 +46,16 @@
     "icon": "new_moon_with_twin_winds",
     "card_style": "calm_analytical_oracle"
   },
-  "raw_ref": "runs/8408c2bbf831/debug/cards/2026-04-M/000001.SS/astrology.json",
-  "error": null
+  "raw_ref": "runs/8408c2bbf831/debug/cards/2026-05-16-0000/000001.SS/astrology.json",
+  "error": null,
+  "result_en": {
+    "score": 58,
+    "polarity": "neutral_positive",
+    "intensity": "moderate",
+    "omen_type": "air_fire_new_cycle",
+    "headline": "New fire lit, wind direction undetermined",
+    "subline": "Gemini asset meets Aries season under a new-cycle proxy: initiative exists, but confirmation is still thin.",
+    "short_reading": "This month&#39;s signals are moderate and constructive. Aries season brings a sense of initiation and Gemini proxy enhances information flow and rotation sensitivity; however, the pullback in the last 21 days is still in place, indicating that the market has not yet completed direction confirmation. It&#39;s more like an early period of accumulation_cycle than the unfolding of a stabilizing trend.",
+    "long_reading": "000001.SS presents a combination of &quot;wind meets fire&quot; in April 2026&#39;s astrological agency structure: Gemini corresponds to differentiation, switching, message-driven, Aries corresponds to beginning, impulse and repricing. The new moon proxy works with the accumulation_cycle to reorganize the readings in favor of low, rather than a clear break.\n\nThe realistic undertone given by the market context is not extreme: the 63-day fluctuation is normal and the 252-day drawdown is shallow, indicating limited systemic pressure; however, the 21-day return is about -5.62 per cent, and there is still inertial pressure in the short term. 63-day earnings are slightly positive, suggesting that the medium-term structure is not completely destroyed. Taken together, this month is more appropriately interpreted as a &quot;tentative repair window&quot;: funds may look for reasons to reprice, but prices need stronger confirmation to turn tentative into a trend.\n\nThe main risk is that the Gemini-Aries portfolio is prone to rapid narrative switching: policy, liquidity, risk appetite or industry rotation may change the center of gravity in a short period of time. If the rise lacks trading and breadth support, it is easy to evolve into a rebound rather than a reversal. If the downside expands, shallow drawdown may be repriced into deeper risk releases."
+  }
 }

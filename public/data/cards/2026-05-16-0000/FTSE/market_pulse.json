@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "market_pulse",
@@ -35,6 +35,16 @@
     "方向不明"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/FTSE/market_pulse.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/FTSE/market_pulse.json",
+  "error": null,
+  "result_en": {
+    "score": 50,
+    "polarity": "neutral",
+    "intensity": "medium",
+    "omen_type": "transition",
+    "headline": "FTSE under short-term pressure, long-term trend to be clear",
+    "subline": "April market or current direction choice",
+    "short_reading": "The market short-term correction, but long-term momentum still exists, investors need to be cautious.",
+    "long_reading": "The FTSE closed at 9967.4, down 8.1 per cent in the last 21 days, with short-term selling pressure evident, but still edged up 1.0 per cent on 63, with the long-term trend unbroken. Volatility is normal, with a pullback of only 8.6 per cent, which is a shallow adjustment. Momentum is mixed, indicating that the market is in a period of direction decision. April may usher in a key breakthrough, it is recommended to focus on support and resistance levels."
+  }
 }

@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "market_pulse",
@@ -21,10 +21,10 @@
     "polarity": "negative",
     "intensity": "medium",
     "omen_type": "decline",
-    "headline": "SPX in Strong Downtrend with Normal Volatility",
-    "subline": "Index down 7.8% over 21 days, drawdown remains shallow at 8.7%",
-    "short_reading": "The market pulse indicates a strong downtrend, yet volatility and drawdown are contained.",
-    "long_reading": "As of March 27, 2026, SPX closed at 6368.85. Returns over 21 and 63 days are -7.8% and -8.1% respectively, confirming a strong downtrend. However, 63-day volatility is 12.9% (normal) and 252-day drawdown is -8.7% (shallow). This suggests persistent selling without panic. The outlook for April 2026 warrants caution, but moderate drawdown may provide structural support. Watch for stabilization or further acceleration."
+    "headline": "SPX处于正常波动的强劲下降趋势",
+    "subline": "指数在21天内7.8% 下跌，跌幅保持在8.7%",
+    "short_reading": "市场脉冲显示出强劲的下跌趋势，但波动性和回撤受到控制。",
+    "long_reading": "截至2026 3月27日，SPX收于6368.85。21天和63天的回报率分别为-7.8% 和-8.1%，证实了强劲的下降趋势。但63天波动率12.9% (正常)，252天回撤为-8.7% (浅)。这表明持续的抛售没有恐慌。2026年4月前景值得谨慎，但适度的回撤可能会提供结构性支撑。注意稳定或进一步加速。"
   },
   "symbols": [
     "SPX"
@@ -35,6 +35,16 @@
     "shallow drawdown"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/SPX/market_pulse.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/SPX/market_pulse.json",
+  "error": null,
+  "result_en": {
+    "score": 1,
+    "polarity": "negative",
+    "intensity": "medium",
+    "omen_type": "decline",
+    "headline": "SPX in Strong Downtrend with Normal Volatility",
+    "subline": "Index down 7.8% over 21 days, drawdown remains shallow at 8.7%",
+    "short_reading": "The market pulse indicates a strong downtrend, yet volatility and drawdown are contained.",
+    "long_reading": "As of March 27, 2026, SPX closed at 6368.85. Returns over 21 and 63 days are -7.8% and -8.1% respectively, confirming a strong downtrend. However, 63-day volatility is 12.9% (normal) and 252-day drawdown is -8.7% (shallow). This suggests persistent selling without panic. The outlook for April 2026 warrants caution, but moderate drawdown may provide structural support. Watch for stabilization or further acceleration."
+  }
 }

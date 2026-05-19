@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "astrology",
@@ -40,6 +40,16 @@
     "seasonal transition"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/HSI/astrology.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/HSI/astrology.json",
+  "error": null,
+  "result_en": {
+    "score": 45,
+    "polarity": "neutral",
+    "intensity": "medium",
+    "omen_type": "transition",
+    "headline": "Spring Moon Glimpting, Hang Seng Index Pending Change",
+    "subline": "Technical Callback and Accumulation Cycle Resonance",
+    "short_reading": "HSI April is in the spring constellation transition period, with the energy of the first quarter moon, the accumulation of signals emerge.",
+    "long_reading": "Based on the stellar disk, the HSI zodiac is Virgo, April is the Aries season, and the fire and earth elements are intertwined. The market is down in the short term but volatility is normal, and the cumulative cycle implies that the bottom is approaching. The first quarter moon symbolizes action and should be observed for breakthrough signals."
+  }
 }

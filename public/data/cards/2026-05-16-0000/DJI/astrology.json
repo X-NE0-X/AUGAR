@@ -7,9 +7,9 @@
     "asset_class": "INDEX"
   },
   "period": {
-    "id": "2026-04-M",
-    "label": "April 2026",
-    "freq": "M"
+    "id": "2026-05-16-0000",
+    "label": "2026-05-16 00:00 UTC",
+    "freq": "T"
   },
   "engine": {
     "id": "astrology",
@@ -37,6 +37,16 @@
     "积累周期"
   ],
   "visual": {},
-  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-04-M/DJI/astrology.json",
-  "error": null
+  "raw_ref": "runs/e071b65d59c4/debug/cards/2026-05-16-0000/DJI/astrology.json",
+  "error": null,
+  "result_en": {
+    "score": 45,
+    "polarity": "bearish",
+    "intensity": "medium",
+    "omen_type": "transition",
+    "headline": "April Outlook: Accumulation Opportunities in Adjustment",
+    "subline": "Scorpio assets face test in Aries season",
+    "short_reading": "The current market is in a strong downward trend, but the volatility is normal, showing the characteristics of the accumulation cycle. The full moon phase implies a high emotional point and needs to pay attention to the turning point.",
+    "long_reading": "The asset sign is Scorpio. This month enters the Aries season. Fire and fixed water signs form tension, indicating deep adjustments and potential changes. The full moon cycle amplifies market sentiment, along with the accumulation cycle label, indicating that the current decline may be the bottom suction stage. Despite the 21-day decline of more than 8%, 63-day volatility is normal, 252-day retreat of only 10%, has not yet entered the extreme area. Investors should remain calm, avoid emotional decision-making, and pay attention to whether the technical support is held."
+  }
 }
