@@ -41,9 +41,9 @@ const ReadingsIndex = () => {
         <div>
           <p className="mono readings-kicker">{t('idx.kicker')}</p>
           {lang === 'zh'
-            ? <h1 className="display">{t('idx.headline')}</h1>
+            ? <h1 className="display gold-title">{t('idx.headline')}</h1>
             : (
-              <h1 className="display two-line-title">
+              <h1 className="display gold-title two-line-title">
                 <span>{t('idx.headline.first')}</span>
                 <span>{t('idx.headline.second')}</span>
               </h1>

@@ -102,6 +102,7 @@ def main(argv: list[str] | None = None) -> None:
               augar generate --period 2026-05-17-1942 --all-indexes --provider openai
               augar check --provider chatgpt_oauth
               augar build
+              augar compare
         """),
     )
     sub = parser.add_subparsers(dest="command")
@@ -109,6 +110,7 @@ def main(argv: list[str] | None = None) -> None:
     sub.add_parser("build", help="Rebuild the frontend static assets")
     sub.add_parser("check", help="Check LLM provider connectivity")
     sub.add_parser("generate", help="Generate oracle cards")
+    sub.add_parser("compare", help="Build AUGAR vs CLSA vs price comparison data")
     args, unknown = parser.parse_known_args(argv)
 
     # no subcommand → default action
@@ -124,6 +126,8 @@ def main(argv: list[str] | None = None) -> None:
         from augar_engine.check_llm_provider import main as _chk; _chk(unknown)
     elif args.command == "generate":
         from augar_engine.cli import main as _gen; _gen(unknown)
+    elif args.command == "compare":
+        from augar_engine.comparison import main as _cmp; _cmp(unknown)
 
 
 if __name__ == "__main__":

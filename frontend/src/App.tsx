@@ -8,6 +8,8 @@ import ReadingOverview from './views/ReadingOverview'
 import EngineDetail from './views/EngineDetail'
 import Almanac from './views/Almanac'
 import Methodology from './views/Methodology'
+import ForecastComparison from './views/ForecastComparison'
+import FreeOracle from './views/FreeOracle'
 
 const Router = import.meta.env.BASE_URL === '/AUGAR/' ? HashRouter : BrowserRouter
 
@@ -22,7 +24,11 @@ function App() {
               <Route path="/readings" element={<ReadingsIndex />} />
               <Route path="/readings/:period/:ticker" element={<ReadingOverview />} />
               <Route path="/readings/:period/:ticker/:engine" element={<EngineDetail />} />
+              <Route path="/questions/:period/:ticker" element={<ReadingOverview />} />
+              <Route path="/questions/:period/:ticker/:engine" element={<EngineDetail />} />
               <Route path="/almanac" element={<Almanac />} />
+              <Route path="/comparison" element={<ForecastComparison />} />
+              <Route path="/oracle" element={<FreeOracle />} />
               <Route path="/methodology" element={<Methodology />} />
             </Routes>
           </Layout>

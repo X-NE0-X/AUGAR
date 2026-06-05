@@ -1,10 +1,10 @@
 import { useEffect, useMemo, useState, type CSSProperties } from 'react'
-import { Link, useNavigate, useParams } from 'react-router-dom'
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { ChevronDown, ChevronLeft, RefreshCw, Share2, SlidersHorizontal, Sparkles, X } from 'lucide-react'
 import { useToast } from '../components/Toast'
 import { useConfig } from '../context/ConfigContext'
-import { readReading } from '../lib/artifacts'
+import { readQuestionReading, readReading } from '../lib/artifacts'
 import { getTarotImage } from '../lib/tarotAssets'
 
 const formatPeriod = (raw: string | undefined): string => {
@@ -31,8 +31,16 @@ const getResult = (card: any, lang: string) => {
   return card?.result || {}
 }
 
+const compositeTitle = (composite: any, lang: string, trLabel: (value: string) => string) => {
+  const polarity = trLabel(composite?.polarity || 'neutral')
+  const intensity = trLabel(composite?.intensity || 'medium')
+  if (lang === 'zh') return `六爻既成，天机渐显。象呈${polarity}，气蕴${intensity}`
+  return `The oracles lean ${polarity} with ${intensity} intensity`
+}
+
 const ReadingOverview = () => {
   const { period, ticker } = useParams()
+  const location = useLocation()
   const navigate = useNavigate()
   const { showToast } = useToast()
   const { lang, label: trLabel, t } = useConfig()
@@ -52,6 +60,7 @@ const ReadingOverview = () => {
   const [generatingElapsed, setGeneratingElapsed] = useState(0)
   const [providerConnected, setProviderConnected] = useState<boolean | null>(null)
   const [providerChecking, setProviderChecking] = useState(false)
+  const isQuestionReading = location.pathname.startsWith('/questions/')
 
   useEffect(() => {
     let cancelled = false
@@ -88,7 +97,8 @@ const ReadingOverview = () => {
   useEffect(() => {
     let cancelled = false
     setLoading(true)
-    readReading(period, ticker)
+    const reader = isQuestionReading ? readQuestionReading : readReading
+    reader(period, ticker)
       .then((json) => {
         if (cancelled) return
         setData(json)
@@ -100,7 +110,7 @@ const ReadingOverview = () => {
         setLoading(false)
       })
     return () => { cancelled = true }
-  }, [period, ticker, showToast, t])
+  }, [period, ticker, showToast, t, isQuestionReading])
 
   const composite = data?.composite || {}
   const ui = {
@@ -210,13 +220,13 @@ const ReadingOverview = () => {
     <motion.section className="reading-page page" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <header className="reading-actionbar glass">
         <div className="reading-identity">
-          <Link to="/" className="back-link">
+          <Link to={isQuestionReading ? "/oracle" : "/"} className="back-link">
             <ChevronLeft size={18} />
             <span className="mono">{ui.ask}</span>
           </Link>
           <div className="identity-rule" />
           <div>
-            <h2>{ticker}</h2>
+            <h2>{data?.asset?.name || ticker}</h2>
             <p className="mono">{formatPeriod(period)}</p>
           </div>
         </div>
@@ -238,7 +248,7 @@ const ReadingOverview = () => {
           <motion.div className="composite-panel glass" initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }}>
             <div className="composite-copy">
               <p className="mono panel-kicker">{ui.composite.toUpperCase()}</p>
-              <h1 className="display gold-title">{composite.headline || composite.polarity || 'Composite Signal'}</h1>
+              <h1 className="display gold-title">{compositeTitle(composite, lang, trLabel)}</h1>
               <p>
                 {lang === 'zh'
                   ? <>{t('reading.compositeLead')}<b>{trLabel(composite.polarity || 'neutral')}</b>{t('reading.compositeMiddle')}<b>{trLabel(composite.intensity || 'medium')}</b></>
@@ -273,15 +283,17 @@ const ReadingOverview = () => {
                 <b>{value}</b>
               </div>
             ))}
-            <button className="glass-button primary-button" onClick={() => navigate(`/readings/${period}/${ticker}/market_pulse`)}>
-              {ui.openPulse}
-            </button>
+            {!isQuestionReading && (
+              <button className="glass-button primary-button" onClick={() => navigate(`/readings/${period}/${ticker}/market_pulse`)}>
+                {ui.openPulse}
+              </button>
+            )}
           </aside>
         </section>
 
         <section className="engine-orbit-strip glass">
           {cards.map((card: any, index: number) => (
-            <button key={card.engine?.id} onClick={() => navigate(`/readings/${period}/${ticker}/${card.engine?.id}`)}>
+            <button key={card.engine?.id} onClick={() => navigate(`${isQuestionReading ? '/questions' : '/readings'}/${period}/${ticker}/${card.engine?.id}`)}>
               <span>{engineLabels[card.engine?.id] || card.engine?.display_name}</span>
               <b>{card.result.score}</b>
               <small>{trLabel(card.result.polarity)}</small>

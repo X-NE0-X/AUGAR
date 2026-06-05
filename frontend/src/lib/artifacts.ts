@@ -48,6 +48,15 @@ export const readReading = async (period: string | undefined, ticker: string | u
   ])
 }
 
+export const readQuestionReading = async (period: string | undefined, ticker: string | undefined): Promise<any> => {
+  if (!period || !ticker) throw new Error('Missing period or ticker')
+  return readJson<any>([
+    `/api/questions/readings/${period}/${ticker}`,
+    basePath(`data/questions/readings/${period}/${ticker}.json`),
+    basePath(`data/questions/readings/${period}/${ticker}/index.json`),
+  ])
+}
+
 export const readCard = async (
   period: string | undefined,
   ticker: string | undefined,
@@ -57,5 +66,30 @@ export const readCard = async (
   return readJson<any>([
     `/api/cards/${period}/${ticker}/${engine}`,
     basePath(`data/cards/${period}/${ticker}/${engine}.json`),
+  ])
+}
+
+export const readQuestionCard = async (
+  period: string | undefined,
+  ticker: string | undefined,
+  engine: string | undefined,
+): Promise<any> => {
+  if (!period || !ticker || !engine) throw new Error('Missing period, ticker, or engine')
+  return readJson<any>([
+    `/api/questions/cards/${period}/${ticker}/${engine}`,
+    basePath(`data/questions/cards/${period}/${ticker}/${engine}.json`),
+  ])
+}
+
+export const readComparison = async (): Promise<any> => {
+  return readJson<any>([
+    basePath('data/comparison/hsi_fsi_2020_2026.json'),
+  ])
+}
+
+export const readQuestionHistory = async (): Promise<any> => {
+  return readJson<any>([
+    '/api/questions',
+    basePath('data/questions/index.json'),
   ])
 }

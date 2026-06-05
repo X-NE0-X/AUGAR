@@ -134,15 +134,25 @@ class LLMClient:
             raise RuntimeError("OPENAI_API_KEY, DEEPSEEK_API_KEY, or AUGAR_LLM_API_KEY is required for non-mock providers")
         base_url = (self.params.base_url or default_base).rstrip("/")
         url = f"{base_url}/chat/completions"
-        prompt = (
-            "你是AUGAR神谕解读器。根据原始artifact输出严格JSON，键名英文（score, polarity, intensity, omen_type, headline, subline, short_reading, long_reading, symbols, risk_tags, visual）。"
-            "所有文本内容(headline,subline,short_reading,long_reading)必须用中文。不可包含markdown。原始artifact：\n"
-            + json.dumps(raw_artifact, ensure_ascii=False, default=str)
-        )
+        if isinstance(raw_artifact.get("user_question"), dict):
+            prompt = (
+                "你是AUGAR神谕解读器。用户提出了一个自由问题，不一定与市场有关。"
+                "请根据当前玄学引擎的raw artifact直接回答用户问题，输出严格JSON，键名英文（score, polarity, intensity, omen_type, headline, subline, short_reading, long_reading, symbols, risk_tags, visual）。"
+                "所有文本内容(headline,subline,short_reading,long_reading)必须用中文。不可包含markdown。原始artifact：\n"
+                + json.dumps(raw_artifact, ensure_ascii=False, default=str)
+            )
+            system_content = "仅输出合法JSON。回答用户自由问题，所有文本用中文。键名英文。"
+        else:
+            prompt = (
+                "你是AUGAR神谕解读器。根据原始artifact输出严格JSON，键名英文（score, polarity, intensity, omen_type, headline, subline, short_reading, long_reading, symbols, risk_tags, visual）。"
+                "所有文本内容(headline,subline,short_reading,long_reading)必须用中文。不可包含markdown。原始artifact：\n"
+                + json.dumps(raw_artifact, ensure_ascii=False, default=str)
+            )
+            system_content = "仅输出合法JSON，所有文本用中文。键名英文。"
         payload: Dict[str, Any] = {
             "model": self.params.model,
             "messages": [
-                {"role": "system", "content": "仅输出合法JSON，所有文本用中文。键名英文。"},
+                {"role": "system", "content": system_content},
                 {"role": "user", "content": prompt},
             ],
             "temperature": self.params.temperature,

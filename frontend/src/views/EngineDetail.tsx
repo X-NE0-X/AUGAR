@@ -1,10 +1,10 @@
 import { useEffect, useMemo, useState, type CSSProperties } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useLocation, useParams } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Check, ChevronLeft, Copy, Share2, Terminal } from 'lucide-react'
 import { useToast } from '../components/Toast'
 import { useConfig } from '../context/ConfigContext'
-import { readCard } from '../lib/artifacts'
+import { readCard, readQuestionCard } from '../lib/artifacts'
 import { getTarotImage } from '../lib/tarotAssets'
 
 const engineLabels: Record<string, string> = {
@@ -20,15 +20,18 @@ const cleanTag = (value: string): string => String(value).split(':')[0].trim()
 
 const EngineDetail = () => {
   const { period, ticker, engine } = useParams()
+  const location = useLocation()
   const { showToast } = useToast()
   const { t, label: trLabel, lang } = useConfig()
   const [card, setCard] = useState<any>(null)
   const [terminalMode, setTerminalMode] = useState(false)
   const [copied, setCopied] = useState(false)
+  const isQuestionReading = location.pathname.startsWith('/questions/')
 
   useEffect(() => {
     let cancelled = false
-    readCard(period, ticker, engine)
+    const reader = isQuestionReading ? readQuestionCard : readCard
+    reader(period, ticker, engine)
       .then((json) => {
         if (!cancelled) setCard(json)
       })
@@ -36,7 +39,7 @@ const EngineDetail = () => {
         if (!cancelled) showToast(t('detail.loadFailed'), 'error')
       })
     return () => { cancelled = true }
-  }, [period, ticker, engine, showToast, t])
+  }, [period, ticker, engine, showToast, t, isQuestionReading])
 
   const rawPayload = useMemo(() => {
     return JSON.stringify(card?.raw_artifact || card?.raw_ref || card || {}, null, 2)
@@ -78,7 +81,7 @@ const EngineDetail = () => {
     <motion.section className={`engine-detail-page page engine-${id}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <header className="engine-detail-bar glass">
         <div className="engine-detail-identity">
-          <Link to={`/readings/${period}/${ticker}`} className="back-link">
+          <Link to={`${isQuestionReading ? '/questions' : '/readings'}/${period}/${ticker}`} className="back-link">
             <ChevronLeft size={18} />
             <span className="mono">{t('detail.overview')}</span>
           </Link>

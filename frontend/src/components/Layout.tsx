@@ -28,6 +28,8 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
           <NavLink to="/">{t('nav.ask')}</NavLink>
           <NavLink to="/readings">{t('nav.readings')}</NavLink>
           <NavLink to="/almanac">{t('nav.almanac')}</NavLink>
+          <NavLink to="/comparison">{t('nav.comparison')}</NavLink>
+          <NavLink to="/oracle">{t('nav.oracle')}</NavLink>
           <NavLink to="/methodology">{t('nav.methodology')}</NavLink>
         </nav>
 

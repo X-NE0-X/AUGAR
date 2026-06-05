@@ -29,6 +29,7 @@ from ..constants import (
 )
 from ..data import DataProcessing
 from ..pipeline import GenerateRequest, run_generation
+from ..question import ask_question
 
 app = FastAPI(title=API_TITLE, version=API_VERSION)
 
@@ -77,6 +78,13 @@ class GenerateBody(BaseModel):
     api_key: Optional[str] = None
 
 
+class QuestionBody(BaseModel):
+    title: str
+    question: str
+    provider: str = "deepseek"
+    model: str = "deepseek-v4-flash"
+
+
 @app.get("/health/codex")
 def health_codex() -> dict:
     try:
@@ -94,12 +102,16 @@ def health_codex() -> dict:
         return {"available": False, "reason": str(e)}
 @app.get("/periods")
 def list_periods() -> dict:
-    """Return available periods from public/data/cards/."""
+    """Return available market periods from public/data/cards/."""
     cards_dir = Path(DEFAULT_OUTPUT_ROOT) / "cards"
+    market_symbols = set(DataProcessing().discover_symbols())
     periods: list[str] = []
     if cards_dir.is_dir():
         for entry in sorted(cards_dir.iterdir(), reverse=True):
-            if entry.is_dir():
+            if not entry.is_dir():
+                continue
+            has_market_symbol = any(child.is_dir() and child.name.upper() in market_symbols for child in entry.iterdir())
+            if has_market_symbol:
                 periods.append(entry.name)
     return {"periods": periods}
 
@@ -133,6 +145,39 @@ def metadata_options() -> dict:
 def generate(body: GenerateBody) -> dict:
     payload = body.model_dump() if hasattr(body, "model_dump") else body.dict()
     return run_generation(GenerateRequest(**payload))
+
+
+@app.post("/questions")
+def create_question(body: QuestionBody) -> dict:
+    payload = body.model_dump() if hasattr(body, "model_dump") else body.dict()
+    return ask_question(**payload)
+
+
+@app.get("/questions")
+def list_questions() -> dict:
+    path = Path(DEFAULT_OUTPUT_ROOT) / "questions" / "index.json"
+    if not path.exists():
+        return {"schema_version": "0.1", "records": []}
+    import json
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+@app.get("/questions/readings/{period}/{ticker}")
+def get_question_reading(period: str, ticker: str) -> dict:
+    path = Path(DEFAULT_OUTPUT_ROOT) / "questions" / "readings" / period / f"{ticker.upper()}.json"
+    if not path.exists():
+        raise HTTPException(status_code=404, detail="question reading not found")
+    import json
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+@app.get("/questions/cards/{period}/{ticker}/{engine}")
+def get_question_card(period: str, ticker: str, engine: str) -> dict:
+    path = Path(DEFAULT_OUTPUT_ROOT) / "questions" / "cards" / period / ticker.upper() / f"{engine}.json"
+    if not path.exists():
+        raise HTTPException(status_code=404, detail="question card not found")
+    import json
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 @app.get("/readings/{period}/{ticker}")
