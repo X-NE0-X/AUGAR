@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { useToast } from '../components/Toast'
 import { useConfig } from '../context/ConfigContext'
 import { Trophy } from 'lucide-react'
+import { readAvailableSymbols, readReading } from '../lib/artifacts'
 
 const PERIOD = '2026-05-17-1942'
 
@@ -22,15 +23,11 @@ const Almanac = () => {
   useEffect(() => {
     (async () => {
       try {
-        const healthResp = await fetch('/api/health')
-        const health = await healthResp.json()
-        const symbols: string[] = health.symbols?.length ? health.symbols : []
+        const symbols = await readAvailableSymbols()
         const results: any[] = []
         for (const symbol of symbols) {
           try {
-            const r = await fetch(`/api/readings/${PERIOD}/${symbol}`)
-            if (!r.ok) continue
-            const reading = await r.json()
+            const reading = await readReading(PERIOD, symbol)
             results.push({
               symbol,
               score: reading.composite?.score ?? 50,
